@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Datos comparación"
+	#define STR0002 "Metas"
+	#define STR0003 "De cálculo"
+	#define STR0004 "A cálculo"
+	#define STR0005 "De fecha"
+	#define STR0006 "A fecha"
+	#define STR0007 "No existen datos suficientes para efectuar la búsqueda."
+	#define STR0008 "Informe por lo menos los parámetros De cálculo y A cálculo, antes de efectuar la consulta."
+	#define STR0009 "Búsqueda de metas"
+	#define STR0010 "Actualizando estatus"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Comparing Data"
+		#define STR0002 "Goals"
+		#define STR0003 "Calculation from"
+		#define STR0004 "Calculation to"
+		#define STR0005 "Date from"
+		#define STR0006 "Date to"
+		#define STR0007 "No data enough to perform research."
+		#define STR0008 "Enter, at least, the parameters Calculation from and Calculation to, before query."
+		#define STR0009 "Goals Survey"
+		#define STR0010 "Updating Status"
+	#else
+		#define STR0001 "Dados comparação"
+		#define STR0002 "Metas"
+		#define STR0003 "Apuração de"
+		#define STR0004 "Apuração até"
+		#define STR0005 "Data de"
+		#define STR0006 "Data até"
+		#define STR0007 "Não há dados suficientes para efetuar a pesquisa."
+		#define STR0008 "Informe ao menos os parâmetros Apuração de e Apuração até, antes de efetuar a consulta."
+		#define STR0009 "Pesquisa de Metas"
+		#define STR0010 "Atualizando status"
+	#endif
+#endif

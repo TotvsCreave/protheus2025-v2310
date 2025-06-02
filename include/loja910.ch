@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0100 "No Processado"
+	#define STR0101 "Conciliado Normal"
+	#define STR0102 "Divergente"
+	#define STR0103 "Conciliado Manual"
+	#define STR0104 "Descartado"
+	#define STR0105 "Conciliacion"
+	#define STR0106 "Visualizar"
+	#define STR0107 "Modificar"
+	#define STR0108 "Listado Reg"
+	#define STR0109 "Leyenda"
+#else
+	#ifdef ENGLISH
+		#define STR0100 "Not Processed"
+		#define STR0101 "Conciliated Normal"
+		#define STR0102 "Divergent"
+		#define STR0103 "Conciliated Manual"
+		#define STR0104 "Discarded"
+		#define STR0105 "Conciliation"
+		#define STR0106 "View"
+		#define STR0107 "Edit"
+		#define STR0108 "Reg Listing"
+		#define STR0109 "Caption"
+	#else
+		#define STR0100 "Não Processado"
+		#define STR0101 "Conciliado Normal"
+		#define STR0102 "Divergente"
+		#define STR0103 "Conciliado Manual"
+		#define STR0104 "Descartado"
+		#define STR0105 "Conciliacao"
+		#define STR0106 "Visualizar"
+		#define STR0107 "Alterar"
+		#define STR0108 "Listagem Reg"
+		#define STR0109 "Legenda"
+	#endif
+#endif

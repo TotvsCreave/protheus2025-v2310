@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 'Lista de servidores con licencias o permisos'
+	#define STR0002 'Este informe se emitirá basado en los datos contenidos en el registro de licencias y permisos.'
+	#define STR0003 'Servidores'
+	#define STR0004 'Matricula'
+	#define STR0005 'Nombre'
+	#define STR0006 'Cargo/Función'
+	#define STR0007 'Tipo licencia'
+	#define STR0008 'Fecha Inicio'
+	#define STR0009 'Fecha final'
+	#define STR0010 'Sucursales'
+#else
+	#ifdef ENGLISH
+		#define STR0001 'Listing of Servants on Leave'
+		#define STR0002 'This report is issued based on information from Leave register.'
+		#define STR0003 'Servants'
+		#define STR0004 'Registration'
+		#define STR0005 'Name'
+		#define STR0006 'Position/Role'
+		#define STR0007 'Leave Type'
+		#define STR0008 'Start Date'
+		#define STR0009 'End Date'
+		#define STR0010 'Branches'
+	#else
+		#define STR0001 'Relação de Servidores Afastados'
+		#define STR0002 'Esse relatório será emitido com base nas informações contidas no cadastro de Licenças e Afastamentos.'
+		#define STR0003 'Servidores'
+		#define STR0004 'Matrícula'
+		#define STR0005 'Nome'
+		#define STR0006 'Cargo/Função'
+		#define STR0007 'Tipo Afastamento'
+		#define STR0008 'Data Inicio'
+		#define STR0009 'Data Fim'
+		#define STR0010 'Filiais'
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "003 - El e-CT-e aún no se transmitió - espere la transmisión"
+	#define STR0002 "NO FUE POSIBLE REALIZAR LA ANULACIÓN DEL CONTRATO."
+	#define STR0003 "Entre en contacto con la REPOM para que los valores del contrato no queden disponibles para el proveedor."
+	#define STR0004 "Si desea interrumpir el contrato automáticamente"
+	#define STR0005 "seleccione la opción SÍ."
+	#define STR0006 "No fue posible realizar la interrupción del contrato."
+	#define STR0007 " Si desea borrar el viaje de todas maneras"
+	#define STR0008 "El viaje no puede modificarse, porque el contrato de número: "
+	#define STR0009 " está activo en la Operadora de flete y no fue posible anularlo"
+	#define STR0010 "Después de borrar el viaje, solo el administrador del sistema conseguirá obtener el número del contrato del REPOM."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "003 - The CT-e was not sent yet - wait for transmission"
+		#define STR0002 "UNABLE TO CANCEL CONTRACT!"
+		#define STR0003 "Contact REPOM so the values of the contract are not available for the supplier!"
+		#define STR0004 "Automatically interrupt the contract"
+		#define STR0005 "select YES option!"
+		#define STR0006 "Unable to interrupt contract!"
+		#define STR0007 " In case you want to delete even so"
+		#define STR0008 "The trip cannot be edited as it has contract number: "
+		#define STR0009 " is active in the Freight Operation and it was not possible to cancel it"
+		#define STR0010 "After execution of the trip, only the system administrator obtains the number of REPOM contract."
+	#else
+		#define STR0001 "003 - O CT-e ainda não foi transmitida - aguarde a transmissão"
+		#define STR0002 "NÃO FOI POSSÍVEL FAZER O CANCELAMENTO DO CONTRATO!"
+		#define STR0003 "Entre em contato com a REPOM para que os valores do contrato não fiquem disponíveis para o fornecedor!"
+		#define STR0004 "Caso deseje interromper o contrato automaticamente"
+		#define STR0005 "selecione a opção SIM!"
+		#define STR0006 "Não foi possível fazer a interrupção do contrato!"
+		#define STR0007 " Caso deseje excluir a viagem mesmo assim"
+		#define STR0008 "A viagem não pode ser alterada, pois o contrato de numero: "
+		#define STR0009 " está ativo na Operadora de Frete e não foi possível cancelá-lo"
+		#define STR0010 "Após a exclusão da viagem apenas o administrador do sistema conseguirá obter o número do contrato da REPOM."
+	#endif
+#endif

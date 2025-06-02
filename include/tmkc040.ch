@@ -1,0 +1,153 @@
+#ifdef SPANISH
+	#define STR0001 "Analisis Gerencial de la Cuenta"
+	#define STR0002 "Pizza"
+	#define STR0003 "Barras"
+	#define STR0004 "Total Registrado"
+	#define STR0005 "Total No Calificado"
+	#define STR0006 "Total Calificado"
+	#define STR0007 "Tasa de Calificacion"
+	#define STR0008 "Tiempo Promedio de Calificacion"
+	#define STR0009 "Calificado vs. No Calificado"
+	#define STR0010 "Indicadores de Conversion"
+	#define STR0011 "Ente"
+	#define STR0012 "Total Registrado"
+	#define STR0013 "Total No Calificado"
+	#define STR0014 "Total Calificado"
+	#define STR0015 "Tasa de Calificacion"
+	#define STR0016 "Tiempo Promedio de Calificacion"
+	#define STR0017 "Grafico Indicadores de Conversion"
+	#define STR0018 "Tipo de Grafico:"
+	#define STR0019 "Criterio:"
+	#define STR0020 "Tiempo de Permanencia de la Cuenta"
+	#define STR0021 "Salir"
+	#define STR0022 "Suspects"
+	#define STR0023 "Prospects"
+	#define STR0024 "Clientes"
+	#define STR0025 "Anos"
+	#define STR0026 "Dias"
+	#define STR0027 "Horas"
+	#define STR0028 "Minutos"
+	#define STR0029 "Tiempo de Permanencia:"
+	#define STR0030 "Indefinido"
+	#define STR0031 "Suspect"
+	#define STR0032 "Prospect"
+	#define STR0033 "Cliente"
+	#define STR0034 "Visualizar"
+	#define STR0035 "Oportunidades"
+	#define STR0036 "De Suspect:"
+	#define STR0037 "A Suspect:"
+	#define STR0038 "De Prospect:"
+	#define STR0039 "A Prospect:"
+	#define STR0040 "De cliente:"
+	#define STR0041 "A cliente:"
+	#define STR0042 "¿Filtra por vendedor?"
+	#define STR0043 "De vendedor:"
+	#define STR0044 "A vendedor:"
+	#define STR0045 "Si"
+	#define STR0046 "No"
+	#define STR0047 "Espere"
+	#define STR0048 "Generando los indicadores de conversion..."
+	#define STR0049 "Filtro del CRM"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Account Management Analysis"
+		#define STR0002 "Pie Chart"
+		#define STR0003 "Bars"
+		#define STR0004 "Total Registered"
+		#define STR0005 "Total Not Classified"
+		#define STR0006 "Total Classified"
+		#define STR0007 "Qualification Rate"
+		#define STR0008 "Qualification Average Time"
+		#define STR0009 "Qualified X Not Qualified"
+		#define STR0010 "Conversion Indicators"
+		#define STR0011 "Entity"
+		#define STR0012 "Total Registered"
+		#define STR0013 "Total Not Classified"
+		#define STR0014 "Total Classified"
+		#define STR0015 "Qualification Rate"
+		#define STR0016 "Qualification Average Time"
+		#define STR0017 "Conversion Indicators Graph"
+		#define STR0018 "Type oh Chart:"
+		#define STR0019 "Criterion:"
+		#define STR0020 "Stay Time in Account"
+		#define STR0021 "Exit"
+		#define STR0022 "Suspects"
+		#define STR0023 "Prospects"
+		#define STR0024 "Clients"
+		#define STR0025 "Years"
+		#define STR0026 "Days"
+		#define STR0027 "Hours"
+		#define STR0028 "Minutes"
+		#define STR0029 "Stay Time:"
+		#define STR0030 "Indefinite"
+		#define STR0031 "Suspect"
+		#define STR0032 "Prospect"
+		#define STR0033 "Client"
+		#define STR0034 "View"
+		#define STR0035 "Opportunities"
+		#define STR0036 "Suspect from:"
+		#define STR0037 "Suspect to:"
+		#define STR0038 "Prospect from:"
+		#define STR0039 "Prospect to:"
+		#define STR0040 "Customer from:"
+		#define STR0041 "Customer to:"
+		#define STR0042 "Filter by sales rep.?"
+		#define STR0043 "Sales Representative from:"
+		#define STR0044 "Sales Representative to:"
+		#define STR0045 "Yes"
+		#define STR0046 "No"
+		#define STR0047 "Wait"
+		#define STR0048 "Generating conversion indicators..."
+		#define STR0049 "CRM Filter"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Análise de Gestão da Conta", "Análise Gerencial da Conta" )
+		#define STR0002 "Pizza"
+		#define STR0003 "Barras"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Total registado", "Total Cadastrado" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Total não qualificado", "Total Não Qualificado" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Total qualificado", "Total Qualificado" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Taxa de qualificação", "Taxa de Qualificação" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Tempo médio de qualificação", "Tempo Médio de Qualificação" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Qualificado x Não qualificado", "Qualificado x Não Qualificado" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Indicadores de conversão", "Indicadores de Conversão" )
+		#define STR0011 "Entidade"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Total registado", "Total Cadastrado" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Total não qualificado", "Total Não Qualificado" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Total qualificado", "Total Qualificado" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Taxa de qualificação", "Taxa de Qualificação" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Tempo médio de qualificação", "Tempo Médio de Qualificação" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Gráfico indicadores de conversão", "Gráfico Indicadores de Conversão" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Tipo de gráfico:", "Tipo de Gráfico:" )
+		#define STR0019 "Critério:"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Tempo de permanência da conta", "Tempo de Permanência da Conta" )
+		#define STR0021 "Sair"
+		#define STR0022 "Suspects"
+		#define STR0023 "Prospects"
+		#define STR0024 "Clientes"
+		#define STR0025 "Anos"
+		#define STR0026 "Dias"
+		#define STR0027 "Horas"
+		#define STR0028 "Minutos"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Tempo de permanência:", "Tempo de Permanência:" )
+		#define STR0030 "Indefinido"
+		#define STR0031 "Suspect"
+		#define STR0032 "Prospect"
+		#define STR0033 "Cliente"
+		#define STR0034 "Visualizar"
+		#define STR0035 "Oportunidades"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "De Suspect:", "Suspect de:" )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Até Suspect:", "Suspect até:" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "De Prospect:", "Prospect de:" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Até Prospect:", "Prospect até:" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "De cliente:", "Cliente de:" )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Até cliente:", "Cliente até:" )
+		#define STR0042 "Filtrar por vendedor?"
+		#define STR0043 "Vendedor de:"
+		#define STR0044 "Vendedor até:"
+		#define STR0045 "Sim"
+		#define STR0046 "Não"
+		#define STR0047 "Aguarde"
+		#define STR0048 "Gerando os indicadores de conversão..."
+		#define STR0049 "Filtro do CRM"
+	#endif
+#endif

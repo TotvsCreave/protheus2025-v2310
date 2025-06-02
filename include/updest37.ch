@@ -1,0 +1,150 @@
+#ifdef SPANISH
+	#define STR0001 "Update UPDEST37"
+	#define STR0002 "Integracion con RM Solum"
+	#define STR0003 "Progreso del ajuste de cada tabla:"
+	#define STR0004 "Atencion: ¡para que pueda efectuarse el ajuste NINGUN usuário puede estar utilizando el sistema!"
+	#define STR0005 "Esta rutina tiene como objetivo preparar el modulo de Stock/Costos para que este apto para procesar todas las funcionalidades da integracion con la aplicacion RM Solum."
+	#define STR0006 "Antes de iniciar la actualizacion, debe leer y aceptar los terminos y las condiciones siguientes. Despues de aceptarlos podra proseguir con la actualizacion."
+	#define STR0007 "AVISO:"
+	#define STR0008 "Este compatibilizador procesara actualizaciones en los diccionarios de datos de la(s) empresa(s) selecionada(s) modificando el tamano del campo Observacion (CP_OBS) de las solicitudes al almmacen para compatibilizar los datos utilizados por la integracion."
+	#define STR0009 "IMPORTANTE: El funcionamiento de la integrecion dependera, ademas del procesamiento de este update, de la ejecucion de los procedimientos descritos en el boletin tecnico."
+	#define STR0010 "¡SIGAMAT.EMP con problemas!"
+	#define STR0011 "SIGAEST - Update"
+	#define STR0012 "Anular"
+	#define STR0013 "&Avanzar >>"
+	#define STR0014 "Bienvenido"
+	#define STR0015 "Lea con atencion"
+	#define STR0016 "Lei y estoy conciente."
+	#define STR0017 "Codigo"
+	#define STR0018 "Empresa"
+	#define STR0019 "Procesamiento total del ajuste:"
+	#define STR0020 "Ejecucion del ajuste"
+	#define STR0021 "Procesamiento parcial del ajuste:"
+	#define STR0022 "Ajuste finalizado"
+	#define STR0023 "Ajuste de tablas finalizado"
+	#define STR0024 "Seleccione la empresa"
+	#define STR0025 "Grabar Log"
+	#define STR0026 "&Finalizar"
+	#define STR0027 "SIGAMAT.EMP en uso"
+	#define STR0028 "Ejecutando compatibilizador para la empresa: "
+	#define STR0029 "Inicializando entorno para la empresa "
+	#define STR0030 "Espere..."
+	#define STR0031 ">> Ajuste iniciado el "
+	#define STR0032 ", a las "
+	#define STR0033 "LOG del update "
+	#define STR0034 "Empresa: "
+	#define STR0035 "Resultado final de la ejecucion del UPD:"
+	#define STR0036 "Actualizando el archivo "
+	#define STR0037 "*Ajuste realizado en las tablas de la empresa "
+	#define STR0038 "Encerrando entorno para la empresa "
+	#define STR0039 "Archivos de Log (*.LOG) |*.log|"
+	#define STR0040 "Este LOG se grabo automaticamente como "
+	#define STR0041 " en el directorio de los SXs."
+	#define STR0042 "La extension '.LOG' se agrego al archivo que se grabo del directorio elegido ("
+	#define STR0043 "Actualizando estructura del banco de datos"
+	#define STR0044 "Se actualizo la estructura fisica de los archivos: "
+	#define STR0045 "Actualizando estructura fisica del archivo "
+	#define STR0046 "Error al actualizar la estructura fisica del archivo "
+	#define STR0047 "Actualizada la estructura del archivo: "
+	#define STR0048 "Actualizando la estructura del archivo "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Update UPDEST37"
+		#define STR0002 "Integration with RM Solum"
+		#define STR0003 "Progress of adjustment of each table:"
+		#define STR0004 "Attention: for addjustment to be made, NO user can be using the system!"
+		#define STR0005 "This routine prepares module Stock/Costs so it can process all functionalities of the integration with application RM Solum."
+		#define STR0006 "Before updating, you must read and accpt the following terms and conditions. After accepting them, you can proceede with the update."
+		#define STR0007 "WARNING:"
+		#define STR0008 "This compatibility program processes updates in the data dictionaries of the selected companies, altering the size of the Note field (CP_OBS) of warehouse requests in order to support the data traveling through the integration."
+		#define STR0009 "IMPORTANT: Integration functioning depends on the execution of the procedures described in the Technical Bulletin, besides the processing of this update."
+		#define STR0010 "SIGAMAT.EMP with problems!"
+		#define STR0011 "SIGAEST - Update"
+		#define STR0012 "&Cancel"
+		#define STR0013 "&Next >>"
+		#define STR0014 "Welcome!"
+		#define STR0015 "Read it carefully!"
+		#define STR0016 "I have read it and I am aware of it."
+		#define STR0017 "Code"
+		#define STR0018 "Company"
+		#define STR0019 "Adjustment total processing:"
+		#define STR0020 "Adjustment execution"
+		#define STR0021 "Adjustment partial processing:"
+		#define STR0022 "Adjustment completed!"
+		#define STR0023 "Table adjustment completed!"
+		#define STR0024 "Select the company"
+		#define STR0025 "&Save Log"
+		#define STR0026 "&Finish"
+		#define STR0027 "SIGAMAT.EMP in use!"
+		#define STR0028 "Running compatibility program for the company: "
+		#define STR0029 "Starting environment for the company "
+		#define STR0030 "Wait..."
+		#define STR0031 ">> Adjustment started on "
+		#define STR0032 ", at "
+		#define STR0033 "LOG of update "
+		#define STR0034 "Company: "
+		#define STR0035 "Final result of UPD execution:"
+		#define STR0036 "Updating file "
+		#define STR0037 "*Adjustment made in company tables "
+		#define STR0038 "Closing environment for the company "
+		#define STR0039 "Log files (*.LOG) |*.log|"
+		#define STR0040 "This LOG was automatically saved as "
+		#define STR0041 " in SX directory."
+		#define STR0042 "The extension '.LOG' was added to the file, which was saved from the directory chosen ("
+		#define STR0043 "Updating database structure"
+		#define STR0044 "File physical structure updated: "
+		#define STR0045 "Updating file physical structure "
+		#define STR0046 "Failure to update file physical structure "
+		#define STR0047 "File structure updated: "
+		#define STR0048 "Updating file structure  "
+	#else
+		#define STR0001 "Update UPDEST37"
+		#define STR0002 "Integração com RM Solum"
+		#define STR0003 "Andamento do ajuste de cada tabela:"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Atenção: para que o ajuste possa ser efectuado NENHUM utilizador pode estar a usar o sistema!", "Atenção: para que o ajuste possa ser efetuado NENHUM usuário pode estar utilizando o sistema!" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Este procedimento tem como objectivo preparar o módulo de Stock/Custos para que este esteja apto a processar todas as funcionalidades da integração com a aplicação RM Solum.", "Esta rotina tem como objetivo preparar o módulo de Estoque/Custos para que este esteja apto a processar todas as funcionalidades da integração com o aplicativo RM Solum." )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Antes de iniciar a actualização, você deve ler e aceitar os termos e as condições a seguir. Após aceitá-los, você pode prosseguir com a actualização.", "Antes de iniciar a atualização, você deve ler e aceitar os termos e as condições a seguir. Após aceitá-los, você pode prosseguir com a atualização." )
+		#define STR0007 "AVISO:"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Este compatibilizador processará actualizações nos dicionários de dados da(s) empresa(s) seleccionada(s) alterando o tamanho do campo Observação (CP_OBS) das solicitações ao almoxarifado para suportar os dados trafegados pela integração.", "Este compatibilizador irá processar atualizações nos dicionários de dados da(s) empresa(s) selecionada(s) alterando o tamanho do campo Observação (CP_OBS) das solicitações ao almoxarifado para suportar os dados trafegados pela integração." )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "IMPORTANTE: O funcionamento da integração dependerá, além do processamento deste update, da execução dos procedimentos descritos no boletim técnico.", "IMPORTANTE: O funcionamento da integreção dependerá, além do processamento deste update, da execução dos procedimentos descritos no boletim técnico." )
+		#define STR0010 "SIGAMAT.EMP com problemas!"
+		#define STR0011 "SIGAEST - Update"
+		#define STR0012 "&Cancelar"
+		#define STR0013 "&Avançar >>"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Bem-vindo!", "Bem-Vindo!" )
+		#define STR0015 "Leia com atenção!"
+		#define STR0016 "Li e estou ciente."
+		#define STR0017 "Código"
+		#define STR0018 "Empresa"
+		#define STR0019 "Processamento total do ajuste:"
+		#define STR0020 "Execução do ajuste"
+		#define STR0021 "Processamento parcial do ajuste:"
+		#define STR0022 "Ajuste finalizado!"
+		#define STR0023 "Ajuste das tabelas finalizado!"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Seleccione a empresa", "Selecione a empresa" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "&Gravar Log", "&Salvar Log" )
+		#define STR0026 "&Finalizar"
+		#define STR0027 "SIGAMAT.EMP em uso!"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "A executar compatibilizador para a empresa: ", "Executando compatibilizador para a empresa: " )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Inicializar ambiente para a empresa ", "Inicializando ambiente para a empresa " )
+		#define STR0030 "Aguarde..."
+		#define STR0031 ">> Ajuste iniciado em "
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", ", às ", ", as " )
+		#define STR0033 "LOG do update "
+		#define STR0034 "Empresa: "
+		#define STR0035 "Resultado final da execução do UPD:"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "A actualizar o ficheiro ", "Atualizando o arquivo " )
+		#define STR0037 "*Ajuste feito nas tabelas da empresa "
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "A encerrar ambiente para a empresa ", "Encerrando ambiente para a empresa " )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Ficheiros de Log (*.LOG) |*.log|", "Arquivos de Log (*.LOG) |*.log|" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Este LOG foi gravado automaticamente como ", "Este LOG foi salvo automaticamente como " )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", " no directório dos SXs.", " no diretorio dos SXs." )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "A extensão '.LOG' foi adicionada ao ficheiro, que foi gravado do directório escolhido (", "A extencao '.LOG' foi adicionada ao arquivo, que foi salvo do diretorio escolhido (" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "A actualizar estrutura da base de dados", "Atualizando estrutura do banco de dados" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Actualizada a estrutura física dos ficheiros: ", "Atualizada a estrutura física dos arquivos: " )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "A actualizar estrutura física do ficheiro ", "Atualizando estrutura física do arquivo " )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Falha ao actualizar a estrutura física do ficheiro ", "Falha ao atualizar a estrutura física do arquivo " )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Actualizada a estrutura do ficheiro: ", "Atualizada a estrutura do arquivo: " )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "A actualizar a estrutura do ficheiro ", "Atualizando a estrutura do arquivo " )
+	#endif
+#endif

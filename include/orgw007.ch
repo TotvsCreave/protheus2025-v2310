@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Servicio REST para archivo de estructura QN0"
+	#define STR0002 "Consulta de estructura de la visión"
+	#define STR0003 "Update de estructura"
+	#define STR0004 "Insert de estructura"
+	#define STR0005 "delete de estructura"
+	#define STR0006 "Estructura no encontrada"
+	#define STR0007 "Id de la estructura obligatorio"
+	#define STR0008 "Campos no válidos"
+	#define STR0009 "Obligatorio el campo código de la visión"
+	#define STR0010 "Servicio no válido"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "REST Service for register of QN0 Structure"
+		#define STR0002 "Query of View Structure"
+		#define STR0003 "Structure Update"
+		#define STR0004 "Structure Insert"
+		#define STR0005 "Structure delete"
+		#define STR0006 "Structure not found"
+		#define STR0007 "Mandatory structure Id"
+		#define STR0008 "Invalid Fields"
+		#define STR0009 "View Code field is mandatory"
+		#define STR0010 "Invalid service"
+	#else
+		#define STR0001 "Serviço REST para cadastro de Estrutura QN0"
+		#define STR0002 "Consulta de Estrutura da Visão"
+		#define STR0003 "Update de Estrutura"
+		#define STR0004 "Insert de Estrutura"
+		#define STR0005 "delete de Estrutura"
+		#define STR0006 "Estrutura não encontrada"
+		#define STR0007 "Id da estrutura obrigatório"
+		#define STR0008 "Campos inválidos"
+		#define STR0009 "Campo Código da Visão é obrigatório"
+		#define STR0010 "Serviço inválido"
+	#endif
+#endif

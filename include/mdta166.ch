@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Funciones"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Descripción"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Descripción de la función"
+	#define STR0009 "ATENCIÓN"
+	#define STR0010 "No se permite informar fechas menores que 01/01/2004."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Functions"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Description"
+		#define STR0005 "Add"
+		#define STR0006 "Edit"
+		#define STR0007 "Delete"
+		#define STR0008 "Description of the Function."
+		#define STR0009 "ATTENTION"
+		#define STR0010 "You cannot enter dates earlier than 01/01/2004."
+	#else
+		#define STR0001 "Funções"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Descrição"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 "Excluir"
+		#define STR0008 "Descrição da Função"
+		#define STR0009 "ATENÇÃO"
+		#define STR0010 "Não é permitido informar datas menores que 01/01/2004."
+	#endif
+#endif

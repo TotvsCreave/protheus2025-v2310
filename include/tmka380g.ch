@@ -1,0 +1,186 @@
+#ifdef SPANISH
+	#define STR0001 "Analisis de Cliente"
+	#define STR0002 "Generando Visualizacion, Espere..."
+	#define STR0003 "Lista de productos mas comprados"
+	#define STR0004 "Productos"
+	#define STR0005 "Analisis de Credito"
+	#define STR0006 "Vencimiento limite de credito"
+	#define STR0007 "Limite de credito"
+	#define STR0008 "Saldo de la deuda"
+	#define STR0009 "Saldo del limite"
+	#define STR0010 "Ctd. cheque devuelto"
+	#define STR0011 "Ultima devolucion"
+	#define STR0012 "Ctd. protestos"
+	#define STR0013 "Ultimo protesto"
+	#define STR0014 "Mayor atraso y Grado de riesgo"
+	#define STR0015 "Leyendas analisis de credito."
+	#define STR0016 "Valores correctos"
+	#define STR0017 "Valores proximos a expirar"
+	#define STR0018 "Valores críticos"
+	#define STR0019 "Titulos Vencidos no Pagados"
+	#define STR0020 "Vencidos y atrasados"
+	#define STR0021 "Vencidos y protestados"
+	#define STR0022 "Pedidos Pendientes"
+	#define STR0023 "Ultimas Compras"
+	#define STR0024 "Venc. Real"
+	#define STR0025 "Venc. Original"
+	#define STR0026 "Valor"
+	#define STR0027 "Saldo"
+	#define STR0028 "Descuento"
+	#define STR0029 "Multa"
+	#define STR0030 "Intereses"
+	#define STR0031 "Correccion"
+	#define STR0032 "IRRF"
+	#define STR0033 "ISS"
+	#define STR0034 "Producto"
+	#define STR0035 "Descripcion Producto"
+	#define STR0036 "Pedido"
+	#define STR0037 "Cant."
+	#define STR0038 "Val.Unit"
+	#define STR0039 "Ctd. Lib."
+	#define STR0040 "Ctd. Pend."
+	#define STR0041 "Val. Desc."
+	#define STR0042 "TES"
+	#define STR0043 "CF"
+	#define STR0044 "Depos."
+	#define STR0045 "Lote"
+	#define STR0046 "Sublote"
+	#define STR0047 "Validez"
+	#define STR0048 "Factura"
+	#define STR0049 "Serie"
+	#define STR0050 "Emision"
+	#define STR0051 "UM"
+	#define STR0052 "Valor Producto"
+	#define STR0053 "Valor IPI"
+	#define STR0054 "Valor. ICM"
+	#define STR0055 "Valor Total"
+	#define STR0056 "Codigo"
+	#define STR0057 "Ult. Valor"
+	#define STR0058 "Ult. Compra"
+	#define STR0059 "Vendedor"
+	#define STR0060 "Nombre"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Customer Analysis "
+		#define STR0002 "Generating View, please wait...."
+		#define STR0003 "List of most purchased products   "
+		#define STR0004 "Products"
+		#define STR0005 "Credit Analysis   "
+		#define STR0006 "Credit Limit Due Date       "
+		#define STR0007 "Credit limit     "
+		#define STR0008 "Debt balance   "
+		#define STR0009 "Limit balance  "
+		#define STR0010 "No. of returned check"
+		#define STR0011 "Last return     "
+		#define STR0012 "No. of protest"
+		#define STR0013 "Last protest   "
+		#define STR0014 "Highest delay and risk level"
+		#define STR0015 "Credit analysis captions.   "
+		#define STR0016 "Correct Values  "
+		#define STR0017 "Values close to expiring  "
+		#define STR0018 "Critic values   "
+		#define STR0019 "Due Bills not Paid        "
+		#define STR0020 "Overdue             "
+		#define STR0021 "Due and protested     "
+		#define STR0022 "Pending Orders   "
+		#define STR0023 "Last Purchases "
+		#define STR0024 "Real D.Dt."
+		#define STR0025 "Original D.Dt."
+		#define STR0026 "Value"
+		#define STR0027 "Balance"
+		#define STR0028 "Discount"
+		#define STR0029 "Fine "
+		#define STR0030 "Interest"
+		#define STR0031 "Indexation"
+		#define STR0032 "IRRF"
+		#define STR0033 "ISS"
+		#define STR0034 "Product"
+		#define STR0035 "Product Descript."
+		#define STR0036 "Order "
+		#define STR0037 "Quantity"
+		#define STR0038 "Unit Vl."
+		#define STR0039 "Rel. Qty."
+		#define STR0040 "Pend. Qty."
+		#define STR0041 "Disc. Val."
+		#define STR0042 "TIO"
+		#define STR0043 "CF"
+		#define STR0044 "Wrhse."
+		#define STR0045 "Lot "
+		#define STR0046 "Sublot  "
+		#define STR0047 "Validity"
+		#define STR0048 "Invoice  "
+		#define STR0049 "Series"
+		#define STR0050 "Issue  "
+		#define STR0051 "UM"
+		#define STR0052 "Product Value"
+		#define STR0053 "IPI Value"
+		#define STR0054 "ICM Value "
+		#define STR0055 "Grand Total"
+		#define STR0056 "Code  "
+		#define STR0057 "Last Value"
+		#define STR0058 "Last Purchase"
+		#define STR0059 "Seller  "
+		#define STR0060 "Name"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Análise De Cliente", "Análise de Cliente" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "A Visualizar, Aguarde...", "Gerando Visualização, Aguarde..." )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Relação de artigos mais comprados", "Relação de produtos mais comprados" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Artigos", "Produtos" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Análise De Crédito", "Análise de Crédito" )
+		#define STR0006 "Vencimento limite de crédito"
+		#define STR0007 "Limite de crédito"
+		#define STR0008 "Saldo da dívida"
+		#define STR0009 "Saldo do limite"
+		#define STR0010 "Qtd. cheque devolvido"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "última devolução", "Ultima devolução" )
+		#define STR0012 "Qtd. protestos"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Último protesto", "Ultimo protesto" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Maior atraso e grau de risco", "Maior atrazo e Grau de risco" )
+		#define STR0015 "Legendas análise de crédito."
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Valores correctos", "Valores corretos" )
+		#define STR0017 "Valores próximos a expirar"
+		#define STR0018 "Valores críticos"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Títulos Vencidos Não Pagos", "Títulos Vencidos não Pagos" )
+		#define STR0020 "Vencidos e atrasados"
+		#define STR0021 "Vencidos e protestados"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Pedidos Em Aberto", "Pedidos em Aberto" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "últimas Compras", "Ultimas Compras" )
+		#define STR0024 "Venc. Real"
+		#define STR0025 "Venc. Original"
+		#define STR0026 "Valor"
+		#define STR0027 "Saldo"
+		#define STR0028 "Desconto"
+		#define STR0029 "Multa"
+		#define STR0030 "Juros"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Correcção", "Correção" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "IRS", "IRRF" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Segurança social", "ISS" )
+		#define STR0034 "Produto"
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Descrição Artigo", "Descrição Produto" )
+		#define STR0036 "Pedido"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Quantidade", "Qtdade" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Val.unit", "Val.Unit" )
+		#define STR0039 "Qtd. Lib."
+		#define STR0040 "Qtd. Pend."
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Val. Descont.", "Val. Desc." )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Tes", "TES" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Cf", "CF" )
+		#define STR0044 "Almox."
+		#define STR0045 "Lote"
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Sub-lote", "Sub-Lote" )
+		#define STR0047 "Validade"
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Fact.", "N. Fiscal" )
+		#define STR0049 "Série"
+		#define STR0050 "Emissão"
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "Um", "UM" )
+		#define STR0052 If( cPaisLoc $ "ANG|PTG", "Valor Artigo", "Valor Produto" )
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "Valor Ipi", "Valor IPI" )
+		#define STR0054 If( cPaisLoc $ "ANG|PTG", "Valor. Icms", "Valor. ICM" )
+		#define STR0055 "Valor Total"
+		#define STR0056 If( cPaisLoc $ "ANG|PTG", "Código", "Codigo" )
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Últ. Valor", "Ult. Valor" )
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Últ. Compra", "Ult. Compra" )
+		#define STR0059 "Vendedor"
+		#define STR0060 "Nome"
+	#endif
+#endif

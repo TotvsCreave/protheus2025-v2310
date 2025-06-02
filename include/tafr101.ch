@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "No existe relacion para las tablas "
+	#define STR0002 "No se encontro estructura Nivel 2 para las tablas:  "
+	#define STR0003 "No se encontro estructura Nivel 3 para las tablas:  "
+	#define STR0004 "No se encontro estructura Nivel 4 para las tablas:  "
+	#define STR0005 "No se encontro estructura Nivel 5 para las tablas:  "
+	#define STR0006 "Fecha Emis Inicio Ent/Salida : "
+	#define STR0007 "Fecha Emis Final Ent/Salida : "
+	#define STR0008 "Informe la fecha inicial de emision de los "
+	#define STR0009 "Documento de entrada/salida "
+	#define STR0010 "Informe la fecha final de emision de los "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "No relationship for tables "
+		#define STR0002 "Structure of level 2 not found for tables:  "
+		#define STR0003 "Structure of level 3 not found for tables:  "
+		#define STR0004 "Structure of level 4 not found for tables:  "
+		#define STR0005 "Structure of level 5 not found for tables:  "
+		#define STR0006 "Issue Date Start Infl/Outfl: "
+		#define STR0007 "Issue Date Final Infl/Outfl: "
+		#define STR0008 "Enter start date of issue of "
+		#define STR0009 "inflow/outflow documents "
+		#define STR0010 "Enter end date of issue of "
+	#else
+		#define STR0001 "Não existe relacionamento para as tabelas "
+		#define STR0002 "Não encontrada estrutura Nivel 2 para as tabelas:  "
+		#define STR0003 "Não encontrada estrutura Nivel 3 para as tabelas:  "
+		#define STR0004 "Não encontrada estrutura Nivel 4 para as tabelas:  "
+		#define STR0005 "Não encontrada estrutura Nivel 5 para as tabelas:  "
+		#define STR0006 "Data Emis Inicio Ent/Saida : "
+		#define STR0007 "Data Emis Final Ent/Saida: "
+		#define STR0008 "Informe a data inicial de emissão dos "
+		#define STR0009 "documentos de entrada/saida "
+		#define STR0010 "Informe a data final de emissão dos "
+	#endif
+#endif

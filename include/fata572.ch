@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Actualizacion de Tipo de Regla de Alternancia"
+	#define STR0003 "Buscar"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Mantenimiento "
+	#define STR0009 "Campos del Sistema"
+	#define STR0010 "Campo"
+	#define STR0011 "Descripcion"
+	#define STR0012 "X3_DESCRIC"
+	#define STR0013 "Prioridad"
+	#define STR0014 "Solicite al administrador que ejecute el update 'U_UpdRODZ' antes de ejecutar esta rutina"
+	#define STR0015 "Prioridad"
+	#define STR0016 "Atencion"
+	#define STR0017 "Este tipo de regla se esta utilizando por una tabla - Reglas de Alternancia y no podra borrarse."
+	#define STR0018 "Peso en blanco o registrado para otro registro."
+	#define STR0019 "Informe solamente caracteres numéricos en el campo Peso."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Update of Rotation Rule Type"
+		#define STR0003 "Search"
+		#define STR0004 "View"
+		#define STR0005 "Add"
+		#define STR0006 "Edit"
+		#define STR0007 "Delete"
+		#define STR0008 "Maintenance"
+		#define STR0009 "System Fields"
+		#define STR0010 "Field"
+		#define STR0011 "Description"
+		#define STR0012 "X3_DESCRIC"
+		#define STR0013 "Priority"
+		#define STR0014 "Ask administrator to run update 'U_UpdRODZ' before running this routine"
+		#define STR0015 "Priority"
+		#define STR0016 "Attention"
+		#define STR0017 "This rule type is being used by a table - Rotation Rules and cannot be deleted."
+		#define STR0018 "Weight in blank or registered to other record."
+		#define STR0019 "Enter only numeric characters in the Weight field."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Actualização de tipo de regra de rodízio", "Atualização de Tipo de Regra de Rodízio" )
+		#define STR0003 "Pesquisar"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 "Excluir"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Manutenção ", "Manutencao " )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Campos do sistema", "Campos do Sistema" )
+		#define STR0010 "Campo"
+		#define STR0011 "Descrição"
+		#define STR0012 "X3_DESCRIC"
+		#define STR0013 "Prioridade"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Solicite ao administrador que execute o update U_TkUpdADJ antes de acessar esta rotina.", "Solicite ao administrador que execute o update 'U_UpdRODZ' antes de executar esta rotina" )
+		#define STR0015 "Prioridade"
+		#define STR0016 "Atenção"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Este tipo de regra está a ser utilizado por uma tabela - Regras de rodízio, e não poderá ser eliminado.", "Este tipo de regra esta sendo utilizado por uma tabela - Regras de Rodízio e nao podera ser excluido." )
+		#define STR0018 "Peso em branco ou cadastrado para outro registro."
+		#define STR0019 "Informar somente caracteres numéricos no campo Peso."
+	#endif
+#endif

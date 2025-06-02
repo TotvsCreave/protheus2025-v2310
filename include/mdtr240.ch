@@ -1,0 +1,108 @@
+#ifdef SPANISH
+	#define STR0001 "¿De Acreditado/Tda.?"
+	#define STR0002 "¿A Acreditado/Tienda?"
+	#define STR0003 "Tda."
+	#define STR0004 "Informe de los medicos por acreditado"
+	#define STR0005 "Medicos por acreditado"
+	#define STR0006 "Acreditado"
+	#define STR0007 "Tda."
+	#define STR0008 "Nomb del acreditado"
+	#define STR0009 "Medico"
+	#define STR0010 "Impresion del informe"
+	#define STR0011 "Procesando la informacion..."
+	#define STR0012 "El valor del campo "
+	#define STR0013 " esta vacio. Inf. algun codigo en este campo."
+	#define STR0014 "¿De region?"
+	#define STR0015 "¿A region?"
+	#define STR0016 "¿De Prov. ?"
+	#define STR0017 "¿A Prov. ?"
+	#define STR0018 "¿Ciudad?"
+	#define STR0019 "¿Tipo impresion?"
+	#define STR0020 "Codigo del acreditado. El campo puede estar vacio para considerar desde el primer codigo."
+	#define STR0021 "Codigo de la tienda del acreditado. El campo puede estar vacio para considerar desde el primer codigo"
+	#define STR0022 "Codigo del acreditado. El campo puede completarse con Z hasta el final para considerar el ultimo codigo"
+	#define STR0023 "Codigo de la tienda del acreditado. El campo puede completarse con Z hasta el final para considerar el ultimo codigo"
+	#define STR0024 "Define si la impresion sera en disco o via spool."
+	#define STR0025 "Codigo de la region. El campo puede estar vacio para considerar desde el primer codigo."
+	#define STR0026 "Codigo de la region. El campo puede completarse con Z hasta el final para considerar el ultimo codigo."
+	#define STR0027 "Codigo de la Prov. El campo puede estar vacio para considerar desde el primer codigo."
+	#define STR0028 "Codigo de la Prov. El campo puede completarse con Z hasta el final para considerar el ultimo codigo."
+	#define STR0029 "Codigo de la ciudad. El campo puede estar vacio para considerar desde el primer codigo."
+	#define STR0030 "Codigo de la ciudad. El campo puede completarse con Z hasta el final para considerar el ultimo codigo."
+	#define STR0031 "No hay nada para imprimir en el informe"
+	#define STR0032 "¿De Ciud.?"
+	#define STR0033 "¿A Ciudad?"
+	#define STR0034 "Esta rutina solo podra utilizarse en modo Prestador de servicio."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "From Certified Practitioner/Unit ?"
+		#define STR0002 "To Certified Practitioner/Unit ?"
+		#define STR0003 "Unit"
+		#define STR0004 "Report of doctors per certified practitioner"
+		#define STR0005 "Doctors per certified practitioner"
+		#define STR0006 "Certified Practitioner"
+		#define STR0007 "Unit"
+		#define STR0008 "Certified Practitioner Name"
+		#define STR0009 "Doctor"
+		#define STR0010 "Report print"
+		#define STR0011 "Processing data..."
+		#define STR0012 "The value found in field "
+		#define STR0013 " is blank. Enter a code in this field."
+		#define STR0014 "From Region?"
+		#define STR0015 "To Region?"
+		#define STR0016 "From State?"
+		#define STR0017 "To State?"
+		#define STR0018 "City?"
+		#define STR0019 "Print Type?"
+		#define STR0020 "Certified Practitioner code. The field can be left blank to consider codes since the first one."
+		#define STR0021 "Code of certified practitioner unit. The field can be left blank to consider codes since the first one."
+		#define STR0022 "Certified Practitioner code. Fill the field with Z up to the end to consider up to the last code."
+		#define STR0023 "Code of certified practitioner unit. Fill the field with Z up to the end to consider up to the last code."
+		#define STR0024 "Define whether print will be disc or spool."
+		#define STR0025 "Region code. The field can be left blank to consider codes since the first one."
+		#define STR0026 "Region code. Fill the field with Z up to the end to consider up to the last code."
+		#define STR0027 "State code. The field can be left blank to consider codes since the first one."
+		#define STR0028 "State code. Fill the field with Z up to the end to consider up to the last code."
+		#define STR0029 "City code. The field can be left blank to consider codes since the first one."
+		#define STR0030 "City code. Fill the field with Z up to the end to consider up to the last code."
+		#define STR0031 "There is nothing to be printed in the report."
+		#define STR0032 "From City?"
+		#define STR0033 "To City?"
+		#define STR0034 "This routine can only be used in Service Provider mode."
+	#else
+		#define STR0001 "De Credenciado/Loja?"
+		#define STR0002 "Até Credenciado/Loja?"
+		#define STR0003 "Loja"
+		#define STR0004 "Relatório dos Médicos por Credenciado"
+		#define STR0005 "Médicos por credenciado"
+		#define STR0006 "Credenciado"
+		#define STR0007 "Loja"
+		#define STR0008 "Nome do credenciado"
+		#define STR0009 "Médico"
+		#define STR0010 "Impressão do relatório"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A processar as informações...", "Processando as informações..." )
+		#define STR0012 "O valor contido no campo "
+		#define STR0013 " está vazio. Informe algum código neste campo."
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "De região ?", "De Região ?" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Até região ?", "Ate Região ?" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "De distrito ?", "De Estado ?" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Até distrito ?", "Até Estado ?" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Município ?", "Cidade ?" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Tipo impressão ?", "Tipo Impressao ?" )
+		#define STR0020 "Código do credenciado. O campo pode permanecer vazio para considerar desde o primeiro código."
+		#define STR0021 "Código da loja do credenciado. O campo pode permanecer vazio para considerar desde o primeiro código."
+		#define STR0022 "Código do credenciado. O campo pode ser preenchido com a letra Z até o final para considerar o último código."
+		#define STR0023 "Código da loja do credenciado. O campo pode ser preenchido com a letra Z até o final para considerar o último código."
+		#define STR0024 "Define se a impressão será em disco ou via spool."
+		#define STR0025 "Código da região. O campo pode permanecer vazio para considerar desde o primeiro código."
+		#define STR0026 "Código da região. O campo pode ser preenchido com a letra Z até o final para considerar o último código."
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Código do Distrito. O campo pode permanecer vazio para considerar desde o primeiro código.", "Código do Estado. O campo pode permanecer vazio para considerar desde o primeiro código." )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Código do Distrito. O campo pode ser preenchido com a letra Z até o final para considerar o último código.", "Código do Estado. O campo pode ser preenchido com a letra Z até o final para considerar o último código." )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Código do município. O campo pode permanecer vazio para considerar desde o primeiro código.", "Código da cidade. O campo pode permanecer vazio para considerar desde o primeiro código." )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Código do município. O campo pode ser preenchido com a letra Z até o final para considerar o último código.", "Código da cidade. O campo pode ser preenchido com a letra Z até o final para considerar o último código." )
+		#define STR0031 "Não há nada para imprimir no relatório."
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "De município?", "De Cidade?" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Até município?", "Até Cidade?" )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Este procedimento somente poderá ser utilizado em modo Prestador de Serviço.", "Esta rotina somente poderá ser utilizada em modo Prestador de Serviço." )
+	#endif
+#endif

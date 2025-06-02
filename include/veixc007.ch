@@ -1,0 +1,177 @@
+#ifdef SPANISH
+	#define STR0001 "Pendientes"
+	#define STR0002 "Recibidos"
+	#define STR0003 "Financieramente"
+	#define STR0004 "Fisicamente"
+	#define STR0005 "Vencimiento"
+	#define STR0006 "Aprobacion"
+	#define STR0007 "Facturacion"
+	#define STR0008 "Todas"
+	#define STR0009 "Atrasados"
+	#define STR0010 "Fecha vencimiento"
+	#define STR0011 "Tipo pago"
+	#define STR0012 "Propuesta"
+	#define STR0013 "Control de cuotas pendientes"
+	#define STR0014 "Filtros:"
+	#define STR0015 "Periodo: "
+	#define STR0016 "Fecha inicial: "
+	#define STR0017 "Fecha final: "
+	#define STR0018 "Lista titulos: "
+	#define STR0019 "Cuotas: "
+	#define STR0020 "Tipo pago: "
+	#define STR0021 "Sucursales: "
+	#define STR0022 "FILTRAR"
+	#define STR0023 "Cant."
+	#define STR0024 "Saldo total"
+	#define STR0025 "Cliente"
+	#define STR0026 "Emision"
+	#define STR0027 "Sucursal"
+	#define STR0028 "Vendedor"
+	#define STR0029 "Tp Facturacion"
+	#define STR0030 "Chasis"
+	#define STR0031 "Nº Factura"
+	#define STR0032 "Tipo"
+	#define STR0033 "Descripcion"
+	#define STR0034 "Vencto"
+	#define STR0035 "Valor"
+	#define STR0036 "Saldo"
+	#define STR0037 "Orden: "
+	#define STR0038 "Propuesta: "
+	#define STR0039 "IMPRIMIR"
+	#define STR0040 "SALIR"
+	#define STR0041 "Nuevo      "
+	#define STR0042 "Usado     "
+	#define STR0043 "Fact.Directo"
+	#define STR0044 "¡Busqueda no encontrada!"
+	#define STR0045 "Atencion"
+	#define STR0046 "Empresas"
+	#define STR0047 "Descripcion"
+	#define STR0048 "Grupo de Emp.  "
+	#define STR0049 "Nombre del Grupo Emp.  "
+	#define STR0050 "Nombre de la Sucursal"
+	#define STR0051 "Emp"
+	#define STR0052 "Empresa"
+	#define STR0053 "Nombre"
+	#define STR0054 "Informe de cuotas pendientes"
+	#define STR0055 "Cliente                        Propuesta   Emision  Sucursal Vendedor                      Tp.Factur.      Chasis                    Nro Factura      Tipo                          Vento         Valor       Saldo"
+	#define STR0056 "TOTAL = "
+	#define STR0057 "Nombre de la Sucursal"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Pending"
+		#define STR0002 "Received"
+		#define STR0003 "Financially"
+		#define STR0004 "Physically"
+		#define STR0005 "Due Date"
+		#define STR0006 "Approval"
+		#define STR0007 "Invoicing"
+		#define STR0008 "All"
+		#define STR0009 "Past due"
+		#define STR0010 "Due Date"
+		#define STR0011 "Paym Type"
+		#define STR0012 "Proposal"
+		#define STR0013 "Control of pending installments"
+		#define STR0014 "Filters:"
+		#define STR0015 "Period: "
+		#define STR0016 "Start Date: "
+		#define STR0017 "End Date: "
+		#define STR0018 "List Bills: "
+		#define STR0019 "Installments: "
+		#define STR0020 "Paym. Type: "
+		#define STR0021 "Branches: "
+		#define STR0022 "FILTER"
+		#define STR0023 "Qty."
+		#define STR0024 "Total Balance"
+		#define STR0025 "Customer"
+		#define STR0026 "Issue"
+		#define STR0027 "Branch"
+		#define STR0028 "Sales Representative"
+		#define STR0029 "Invoicing Tp"
+		#define STR0030 "Chassis"
+		#define STR0031 "Invoice No."
+		#define STR0032 "Type"
+		#define STR0033 "Description"
+		#define STR0034 "Due date"
+		#define STR0035 "Value"
+		#define STR0036 "Balance"
+		#define STR0037 "Order: "
+		#define STR0038 "Proposal: "
+		#define STR0039 "PRINT"
+		#define STR0040 "QUIT"
+		#define STR0041 "New      "
+		#define STR0042 "Used     "
+		#define STR0043 "Direct Inv."
+		#define STR0044 "Search not found!"
+		#define STR0045 "Attention"
+		#define STR0046 "Companies"
+		#define STR0047 "Description"
+		#define STR0048 "Comp. Group  "
+		#define STR0049 "Comp. Group Name  "
+		#define STR0050 "Branch Name"
+		#define STR0051 "Comp"
+		#define STR0052 "Company"
+		#define STR0053 "Name"
+		#define STR0054 "Report of pending installments"
+		#define STR0055 "Custom.                        Proposal   Issue    Branch Sal.Rep.                      Inv. Tp.       Chassis                   Inv. No.      Type                          Due Dt         Value       Balan"
+		#define STR0056 "TOTAL = "
+		#define STR0057 "Branch Name"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Em abertos", "Em Abertos" )
+		#define STR0002 "Recebidos"
+		#define STR0003 "Financeiramente"
+		#define STR0004 "Fisicamente"
+		#define STR0005 "Vencimento"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Aprovação", "Aprovacao" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Facturação", "Faturamento" )
+		#define STR0008 "Todas"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Em atraso", "Em Atraso" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Data vencimento", "Data Vencimento" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Tipo pgt.", "Tipo Pagto" )
+		#define STR0012 "Proposta"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Controlo de parcelas pendentes", "Controle de parcelas pendentes" )
+		#define STR0014 "Filtros:"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Período: ", "Periodo: " )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Data inicial: ", "Data Inicial: " )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Data final: ", "Data Final: " )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Lista títulos: ", "Lista Titulos: " )
+		#define STR0019 "Parcelas: "
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Tipo pgt.: ", "Tipo Pagto: " )
+		#define STR0021 "Filiais: "
+		#define STR0022 "FILTRAR"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Qtd.", "Qtde" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Saldo total", "Saldo Total" )
+		#define STR0025 "Cliente"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Emissão", "Emissao" )
+		#define STR0027 "Filial"
+		#define STR0028 "Vendedor"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Tp.Facturação", "Tp Faturamento" )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Chassis", "Chassi" )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "No.Fact.", "Nro Nota" )
+		#define STR0032 "Tipo"
+		#define STR0033 "Descrição"
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Venc.", "Vencto" )
+		#define STR0035 "Valor"
+		#define STR0036 "Saldo"
+		#define STR0037 "Ordem: "
+		#define STR0038 "Proposta: "
+		#define STR0039 "IMPRIMIR"
+		#define STR0040 "SAIR"
+		#define STR0041 "Novo      "
+		#define STR0042 "Usado     "
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Fact.Directo", "Fat.Direto" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Pesquisa não encontrada.", "Pesquisa nao encontrada!" )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Atenção", "Atencao" )
+		#define STR0046 "Empresas"
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0048 "Grupo de Emp.  "
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Nome do grupo emp.  ", "Nome do Grupo Emp.  " )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Nome da filial", "Nome da Filial" )
+		#define STR0051 "Emp"
+		#define STR0052 "Empresa"
+		#define STR0053 "Nome"
+		#define STR0054 If( cPaisLoc $ "ANG|PTG", "Relatório de parcelas pendentes", "Relatorio de parcelas pendentes" )
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "Cliente                        Proposta   Emissão  Filial Vendedor                      Tp.Fact.       Chassis                   No.Fact.      Tipo                          Vencto         Valor       Saldo", "Cliente                        Proposta   Emissao  Filial Vendedor                      Tp.Fatur.      Chassi                    Nro Nota      Tipo                          Vencto         Valor       Saldo" )
+		#define STR0056 "TOTAL = "
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Nome da filial", "Nome da Filial" )
+	#endif
+#endif

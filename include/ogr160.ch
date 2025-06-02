@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Impresion de movimientos de ente"
+	#define STR0002 "Este informe imprimira una lista de movimientos de entes."
+	#define STR0003 "Ente"
+	#define STR0004 "Movimiento"
+	#define STR0005 "Saldos"
+	#define STR0006 "Sld. Fisico"
+	#define STR0007 "Sld. Fiscal"
+	#define STR0008 "Val. Fiscal"
+	#define STR0009 "Sld. Bloqueado"
+	#define STR0010 "Complemento"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Printing Entity Movements"
+		#define STR0002 "This report prints a list of entity transactions."
+		#define STR0003 "Entity"
+		#define STR0004 "Transaction"
+		#define STR0005 "Balance"
+		#define STR0006 "Bal. Physical"
+		#define STR0007 "Bal. Taxes"
+		#define STR0008 "Value Taxes"
+		#define STR0009 "Bal. Blocked"
+		#define STR0010 "Complement"
+	#else
+		#define STR0001 "Impressao de Movimentos da Entidade"
+		#define STR0002 "Este relatorio ira imprimir uma relação de movimentos da entidade."
+		#define STR0003 "Entidade"
+		#define STR0004 "Movimento"
+		#define STR0005 "Saldos"
+		#define STR0006 "Sld. Fisico"
+		#define STR0007 "Sld. Fiscal"
+		#define STR0008 "Val. Fiscal"
+		#define STR0009 "Sld. Bloqueado"
+		#define STR0010 "Complemento"
+	#endif
+#endif

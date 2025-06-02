@@ -1,0 +1,72 @@
+#ifdef SPANISH
+	#define STR0001 "Consulta grafica de bienes depreciados"
+	#define STR0002 "Buscar"
+	#define STR0003 "Consultar"
+	#define STR0004 "Periodo excede el maximo permitido para la consulta, que es un ano"
+	#define STR0005 "Atencion"
+	#define STR0006 "Depreciacion "
+	#define STR0007 " en el periodo de "
+	#define STR0008 " a "
+	#define STR0009 "Lineas"
+	#define STR0010 "Barras"
+	#define STR0011 "Bienes Depreciados"
+	#define STR0012 "Rotacion &-"
+	#define STR0013 "Rotacion &+"
+	#define STR0014 "Graba &BMP"
+	#define STR0015 "&Imprime"
+	#define STR0016 "Depreciacion"
+	#define STR0017 "&Salir"
+	#define STR0018 "Meses"
+	#define STR0019 "Valores"
+	#define STR0020 "No fue posible crear la serie"
+	#define STR0021 "Consulta"
+	#define STR0022 "&E-mail"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Graphical query of depreciated assets"
+		#define STR0002 "Search"
+		#define STR0003 "To Query"
+		#define STR0004 "Period surpasses the maximum allowed for the query, which is a year"
+		#define STR0005 "Attention"
+		#define STR0006 "Depreciation "
+		#define STR0007 " in the period from "
+		#define STR0008 " to "
+		#define STR0009 "Rows"
+		#define STR0010 "Bars"
+		#define STR0011 "Depreciated Assets"
+		#define STR0012 "Rotation &-"
+		#define STR0013 "Rotation &+"
+		#define STR0014 "Save &BMP"
+		#define STR0015 "&Print"
+		#define STR0016 "Depreciation"
+		#define STR0017 "&Exit"
+		#define STR0018 "Months"
+		#define STR0019 "Values"
+		#define STR0020 "Could not create the series"
+		#define STR0021 "Query"
+		#define STR0022 "&E-mail"
+	#else
+		#define STR0001 "Consulta gráfica de bens depreciados"
+		#define STR0002 "Pesquisa"
+		#define STR0003 "Consultar"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Período ultrapassa o máximo permitido de um ano para a consulta", "Perído ultrapassa o máximo permitido para a consulta, que é um ano" )
+		#define STR0005 "Atenção"
+		#define STR0006 "Depreciação "
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", " no período de ", " no perído de " )
+		#define STR0008 " a "
+		#define STR0009 "Linhas"
+		#define STR0010 "Barras"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Artigos Depreciados", "Bens Depreciados" )
+		#define STR0012 "Rotação &-"
+		#define STR0013 "Rotação &+"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Gravar &bmp", "Salva &BMP" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "&imprimir", "&Imprime" )
+		#define STR0016 "Depreciação"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "&sair", "&Sair" )
+		#define STR0018 "Meses"
+		#define STR0019 "Valores"
+		#define STR0020 "Não foi possível criar a série"
+		#define STR0021 "Consulta"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "&e-mail", "&E-mail" )
+	#endif
+#endif

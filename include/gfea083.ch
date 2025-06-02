@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Generacion Calculos Adicionales"
+	#define STR0002 "Rentrega"
+	#define STR0003 "Devolucion"
+	#define STR0004 "Servicio"
+	#define STR0005 "Parametros"
+	#define STR0006 "Copiar"
+	#define STR0007 "Componentes de Flete"
+	#define STR0008 "Doc. Carga."
+	#define STR0009 "Cantidad"
+	#define STR0010 "Valor Servicio"
+	#define STR0011 "OK"
+	#define STR0012 "Anular"
+	#define STR0013 "Calculo no tiene componente de servicio"
+	#define STR0014 "¡Valor del componente no puede ser cero!"
+	#define STR0015 "No se informo ningun documento de carga"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Generation of Additional Calculation"
+		#define STR0002 "Redelivery"
+		#define STR0003 "Return"
+		#define STR0004 "Service"
+		#define STR0005 "Parameters"
+		#define STR0006 "Copy"
+		#define STR0007 "Freight Components"
+		#define STR0008 "Shippment Doc."
+		#define STR0009 "Amount"
+		#define STR0010 "Service Value"
+		#define STR0011 "OK"
+		#define STR0012 "Cancel"
+		#define STR0013 "Calculation has no service component."
+		#define STR0014 "Component value cannot be zero."
+		#define STR0015 "No shipping document was informed."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Geração cálculos adicionais", "Geração Cálculos Adicionais" )
+		#define STR0002 "Reentrega"
+		#define STR0003 "Devolução"
+		#define STR0004 "Serviço"
+		#define STR0005 "Parâmetros"
+		#define STR0006 "Copiar"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Componentes de frete", "Componentes de Frete" )
+		#define STR0008 "Doc. Carga."
+		#define STR0009 "Quantidade"
+		#define STR0010 "Valor Serviço"
+		#define STR0011 "OK"
+		#define STR0012 "Cancelar"
+		#define STR0013 "Cálculo não possui componente de serviço"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "O valor do componente não pode ser zero!", "Valor do componente não pode ser zero!" )
+		#define STR0015 "Não foi informado nenhum documento de carga"
+	#endif
+#endif

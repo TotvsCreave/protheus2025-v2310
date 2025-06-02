@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Reajuste de Ts embarque"
+	#define STR0002 "Reajustes"
+	#define STR0003 "Vigencia"
+	#define STR0004 "Vigencia"
+	#define STR0005 "Valor"
+	#define STR0006 "Valor"
+	#define STR0007 "Reajuste de tarifas"
+	#define STR0008 "Vigencia"
+	#define STR0009 "Vigencia"
+	#define STR0010 "Aplicando reajustes..."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Shipment Fee Adjustment"
+		#define STR0002 "Adjustments"
+		#define STR0003 "Validity"
+		#define STR0004 "Validity"
+		#define STR0005 "Value"
+		#define STR0006 "Value"
+		#define STR0007 "Fee Adjustment"
+		#define STR0008 "Validity"
+		#define STR0009 "Validity"
+		#define STR0010 "Applying readjustments..."
+	#else
+		#define STR0001 "Reajuste de Tx Embarque"
+		#define STR0002 "Reajustes"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Reajustar"
+		#define STR0005 "Excluir"
+		#define STR0006 "GTPA703"
+		#define STR0007 "001 - TAXAS DE EMBARQUE REAJUSTADAS COM SUCESSO"
+		#define STR0008 "002 - ESTA OPERAÇÃO NÃO EXCLUI O VALOR REAJUSTADO DO TRECHO, SOMENTE O HISTÓRICO."
+		#define STR0009 "Buscar"
+		#define STR0010 "Aplicando reajustes..."
+	#endif
+#endif

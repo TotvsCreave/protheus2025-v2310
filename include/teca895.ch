@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Ítems intercambiables"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Productos intercambiables"
+	#define STR0007 "Atención"
+	#define STR0008 "El producto principal no puede vincularse con el ítem intercambiable. Elija otro producto"
+	#define STR0009 "Producto no puede seleccionarse, porque no está definido como material de implantación o consumo."
+	#define STR0010 "Seleccione un producto que esté definido como Material de implantación o Material de consumo en el archivo Complemento de productos."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Exchangeable items"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Exchangeable products"
+		#define STR0007 "Attention"
+		#define STR0008 "Main product cannot be related to Exchangeable Item. Choose another Product"
+		#define STR0009 "Unable to select product because it is not set as deployment or consumption material."
+		#define STR0010 "Select a product defined as Deployment or Consumption Material in the Product Complement register."
+	#else
+		#define STR0001 "Itens Intercambiaveis"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Produtos Intercambiaveis"
+		#define STR0007 "Atenção"
+		#define STR0008 "O Produto principal não pode ser relacionado com o Item Intercambiavel. Escolha outro Produto"
+		#define STR0009 "Produto não pode ser selecionado pois não está definido como material de implantação ou consumo."
+		#define STR0010 "Selecione um produto que esteja definido como Material de Implantação ou Material de Consumo no cadastro de Complemento de Produtos."
+	#endif
+#endif

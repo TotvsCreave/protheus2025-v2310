@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "VIAJES DE TRANSPORTE"
+	#define STR0002 "Sucursal de origen"
+	#define STR0003 "Numero del viaje"
+	#define STR0004 "Ruta"
+	#define STR0005 "Tipo de transporte"
+	#define STR0006 "Visualizar"
+	#define STR0007 "Ultimo dia"
+	#define STR0008 "Ultimos 7 dias"
+	#define STR0009 "Ultimos 30 dias"
+	#define STR0010 "Ultimos 365 dias"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "TRANSPORT TRIPS"
+		#define STR0002 "Origin branch"
+		#define STR0003 "Trip Number"
+		#define STR0004 "Route"
+		#define STR0005 "Transportation Type"
+		#define STR0006 "View"
+		#define STR0007 "Last day"
+		#define STR0008 "Last 7 days"
+		#define STR0009 "Last 30 days"
+		#define STR0010 "Last 365 days"
+	#else
+		#define STR0001 "VIAGENS DE TRANSPORTE"
+		#define STR0002 "Filial de Origem"
+		#define STR0003 "Numero da Viagem"
+		#define STR0004 "Rota"
+		#define STR0005 "Tipo de Transporte"
+		#define STR0006 "Visualizar"
+		#define STR0007 "Ultimo dia"
+		#define STR0008 "Ultimos 7 dias"
+		#define STR0009 "Ultimos 30 dias"
+		#define STR0010 "Ultimos 365 dias"
+	#endif
+#endif

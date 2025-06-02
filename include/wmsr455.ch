@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Situación detallada del stock por ubicación"
+	#define STR0002 "En este informe es posible obtener una situación de cantidad por"
+	#define STR0003 "producto/lote/ubicación/estatus, lo cual permite el mapeo perfecto"
+	#define STR0004 "de cada ubicación."
+	#define STR0005 " Almacén + Grupo + Producto "
+	#define STR0006 " Producto + Almacén "
+	#define STR0007 "Productos"
+	#define STR0008 "Total del producto"
+	#define STR0009 "Direcciones"
+	#define STR0010 "Disponible"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Position Detailed of Stock per Address"
+		#define STR0002 "In this report, you can get the position of quantity per"
+		#define STR0003 "product/batch/address/status, allowing a perfect mapping"
+		#define STR0004 "of each address."
+		#define STR0005 " Warehouse + Group + Product "
+		#define STR0006 " Product + Warehouse "
+		#define STR0007 "Products"
+		#define STR0008 "Product Total"
+		#define STR0009 "Addresses"
+		#define STR0010 "Available"
+	#else
+		#define STR0001 "Posicao Detalhada do Estoque por Endereco"
+		#define STR0002 "Neste relatório é possivel obter uma posição de quantidade por"
+		#define STR0003 "produto/lote/endereco/status, o que permite o mapeamento perfeito"
+		#define STR0004 "de cada endereço."
+		#define STR0005 " Armazem + Grupo + Produto "
+		#define STR0006 " Produto + Armazem "
+		#define STR0007 "Produtos"
+		#define STR0008 "Total do Produto"
+		#define STR0009 "Enderecos"
+		#define STR0010 "Disponivel"
+	#endif
+#endif

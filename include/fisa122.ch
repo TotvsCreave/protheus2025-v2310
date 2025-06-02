@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Facturas para atribución de crédito estimado"
+	#define STR0002 "¡Tabla F0S aun no se creó!"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Imprimir"
+	#define STR0005 "Nota de crédito"
+	#define STR0006 "Facturas que forman parte del crédito"
+	#define STR0007 "Borrar Documento"
+	#define STR0008 "Operación permitida solo para Fac Prev"
+	#define STR0009 "¿Confirma?"
+	#define STR0010 "Borrar ITEM"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Invoices for Presumed Credit Appropriation"
+		#define STR0002 "Table F0S not created."
+		#define STR0003 "View"
+		#define STR0004 "Print"
+		#define STR0005 "Credit Note"
+		#define STR0006 "Invoices that compose Credit"
+		#define STR0007 "Delete Document"
+		#define STR0008 "Operation allowed for Proforma Invoice only"
+		#define STR0009 "Confirm it?"
+		#define STR0010 "Delete ITEM"
+	#else
+		#define STR0001 "Notas Fiscais para Apropriação de Crédito Presumido"
+		#define STR0002 "Tabela F0S ainda não foi criada!"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Imprimir"
+		#define STR0005 "Nota de Crédito"
+		#define STR0006 "Notas que compôem o Crédito"
+		#define STR0007 "Excluir Documento"
+		#define STR0008 "Operação permitida apenas para Pré-Nota"
+		#define STR0009 "Confirma?"
+		#define STR0010 "Excluir ITEM"
+	#endif
+#endif

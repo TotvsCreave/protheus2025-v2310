@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Ejecutar función"
+	#define STR0002 "Es necesario pasar solamente la función en la URL"
+	#define STR0003 "No se pudo identificar la función: '#1'"
+	#define STR0004 "Error no identificado"
+	#define STR0005 "No se pudo encontrar TAG de 'PARAMETROS' en el XML"
+	#define STR0006 "No se pudo leer el Body, simplemente se acepta JSON o XML"
+	#define STR0007 "¡La observación del WO 'cMsgWo' es un campo obligatorio!"
+	#define STR0008 "¡El código de participante 'cCodPart' está como no válido!"
+	#define STR0009 "¡El código del motivo de WO 'cCodMotv' está como no válido!"
+	#define STR0010 "¡Es obligatorio informar por lo menos un Time Sheet 'aCodTs'/'cCodTs'!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Run Function"
+		#define STR0002 "É necessário passar apenas a função na URL"
+		#define STR0003 "Unable to identify function: '#1'"
+		#define STR0004 "Error was not identified."
+		#define STR0005 "Unable to find TAG of 'PARAMETERS' in XML"
+		#define STR0006 "Unable to read the Body, only JSON or XML are accepted"
+		#define STR0007 "The observation of WO 'cMsgWo' is mandatory!"
+		#define STR0008 "Code of employee 'cCodPart' is invalid!"
+		#define STR0009 "The code of reason of WO 'cCodMotv' is invalid!"
+		#define STR0010 "Enter at least one Time Sheet 'aCodTs'/'cCodTs'!"
+	#else
+		#define STR0001 "Executar Função"
+		#define STR0002 "É necessário passar apenas a função na URL"
+		#define STR0003 "Não foi possível identificar a função: '#1'"
+		#define STR0004 "Erro não identificado"
+		#define STR0005 "Não foi possível encontrar TAG de 'PARAMETROS' no XML"
+		#define STR0006 "Não foi possível ler o Body, é apenas aceito JSON ou XML"
+		#define STR0007 "A observação do WO 'cMsgWo' é um campo obrigatório!"
+		#define STR0008 "O código de participante 'cCodPart' está inválido!"
+		#define STR0009 "O código do motivo de WO 'cCodMotv' está inválido!"
+		#define STR0010 "É obrigatório informar ao menos um Time Sheet 'aCodTs'/'cCodTs'!"
+	#endif
+#endif

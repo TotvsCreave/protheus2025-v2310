@@ -1,0 +1,63 @@
+#ifdef SPANISH
+	#define STR0001 "Variables Utilizadas en las Formulas"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Los campos Cod. Paramet y Orden son obligatorios."
+	#define STR0008 "Problema en la linea "
+	#define STR0009 "Los siguientes parametros no pueden borrarse, "
+	#define STR0010 "pues se estan utilizando en el archivo Parametros Por Indicador (TZ7)."
+	#define STR0011 "Parametros: "
+	#define STR0012 "Atencion"
+	#define STR0013 "Informe solamente el nombre de la funcion, sin parentesis."
+	#define STR0014 "La funcion no existe en el repositorio."
+	#define STR0015 "No se permite la modificación de variables estándares del sistema."
+	#define STR0016 "No se permite el borrado de variables estándares del sistema."
+	#define STR0017 "Prefijo no válido"
+	#define STR0018 "Los prefijos 'MNTV', 'MDTV' y 'SGAV', son reservados por el sistema y no se deben utilizar."
+	#define STR0019 "Modifique el prefijo del código de la variable."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Variables Used in Formulas"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Fields Cod. Paramet and Order are mandatory."
+		#define STR0008 "Problem in line "
+		#define STR0009 "The following parameters cannot be excluded "
+		#define STR0010 "because they are used in the file Parameters by Indicator (TZ7)."
+		#define STR0011 "Parameters: "
+		#define STR0012 "Attention"
+		#define STR0013 "Indicate only function name, without parenthesis."
+		#define STR0014 "Function does not exist in repository."
+		#define STR0015 "Change the standard variable of system."
+		#define STR0016 "You cannot delete the standard variable of system."
+		#define STR0017 "Invalid prefix"
+		#define STR0018 "Prefix 'MNTV', 'MDTV' and 'SGAV', are reserved by system and cannot be used."
+		#define STR0019 "Change prefix of variable code."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Variáveis utilizadas nas fórmulas", "Variáveis Utilizadas nas Fórmulas" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Eliminar", "Excluir" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Os campos Cód. Parâmet. e Ordem são obrigatórios.", "Os campos Cod. Paramet e Ordem são obrigatórios." )
+		#define STR0008 "Problema na linha "
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Os seguintes parâmetros não poderão ser eliminados, ", "Os seguintes parâmetros não poderão ser excluídos, " )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "pois estão a ser utilizados no ficheiro Parâmetros Por Indicador (TZ7).", "pois estão sendo utilizados no arquivo Parâmetros Por Indicador (TZ7)." )
+		#define STR0011 "Parâmetros: "
+		#define STR0012 "Atenção"
+		#define STR0013 "Informe apenas o nome da função, sem os parênteses."
+		#define STR0014 "Função não existe no repositório."
+		#define STR0015 "Não é permitida a alteração de variáveis padrões do sistema."
+		#define STR0016 "Não é permitida a exlusão de variáveis padrões do sistema."
+		#define STR0017 "Prefixo invalido"
+		#define STR0018 "Os prefixos 'MNTV', 'MDTV' e 'SGAV', são reservados pelo sistema e não podem ser utilizados."
+		#define STR0019 "Altere o prefixo do código da variável."
+	#endif
+#endif

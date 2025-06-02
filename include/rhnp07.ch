@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Servicios de contexto"
+	#define STR0002 "Devuelve los contextos del usuario para selección."
+	#define STR0003 "Devuelve el contexto actual del usuario."
+	#define STR0004 "Actualiza el contexto seleccionado."
+	#define STR0005 "Datos no válidos para validación del contexto."
+	#define STR0006 "Datos no válidos para información del contexto."
+	#define STR0007 "No fue posible actualizar el contexto."
+	#define STR0008 "No se encontró ninguna matrícula en el servicio de contexto."
+	#define STR0009 "¡No fue posible actualizar el contexto!"
+	#define STR0010 "¡No fue posible buscar el contexto!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Context Services"
+		#define STR0002 "Returns user contexts for selection."
+		#define STR0003 "Returns current context of user."
+		#define STR0004 "Updates the context selected."
+		#define STR0005 "Data not valid for context validation."
+		#define STR0006 "Data not valid for context information."
+		#define STR0007 "Could not update context."
+		#define STR0008 "No registration found in the context service"
+		#define STR0009 "Unable to update context."
+		#define STR0010 "Unable to search context."
+	#else
+		#define STR0001 "Serviços de Contexto"
+		#define STR0002 "Retorna os contextos do usuário para seleção."
+		#define STR0003 "Retorna o contexto corrente do usuário."
+		#define STR0004 "Atualiza o contexto selecionado."
+		#define STR0005 "Dados inválidos para validação do contexto."
+		#define STR0006 "Dados inválidos para informação do contexto."
+		#define STR0007 "Não foi possível atualizar o contexto."
+		#define STR0008 "Nenhuma matrícula localizada no serviço de contexto."
+		#define STR0009 "Não foi possível atualizar o contexto!"
+		#define STR0010 "Não foi possível buscar o contexto!"
+	#endif
+#endif

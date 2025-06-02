@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Pesquisar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Alterar"
+	#define STR0005 "Excluir"
+	#define STR0006 "Tipo de Destinacion"
+	#define STR0007 "Relacionar documento"
+	#define STR0008 "Rel.Doc."
+	#define STR0009 "Conocimiento"
+	#define STR0010 "Atencion"
+	#define STR0011 "Que desea hacer"
+	#define STR0012 "Relacionar un documento"
+	#define STR0013 "Visualizar documento relacionado"
+	#define STR0014 "Borrar un Documento de Relacionamiento"
+	#define STR0015 "No existe documento asociado a este Tipo de Destino"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search   "
+		#define STR0002 "View      "
+		#define STR0003 "Insert "
+		#define STR0004 "Edit   "
+		#define STR0005 "Delete "
+		#define STR0006 "Destination type  "
+		#define STR0007 "Relate document"
+		#define STR0008 "Rel.Doc."
+		#define STR0009 "Knowledge"
+		#define STR0010 "Attention"
+		#define STR0011 "What do you want to do?"
+		#define STR0012 "Relate a document"
+		#define STR0013 "View a related document"
+		#define STR0014 "Delete a related document"
+		#define STR0015 "There is no document associated with this Destination Type."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Tipo De Destino", "Tipo de Destinacäo" )
+		#define STR0007 "Relacionar documento"
+		#define STR0008 "Rel.Doc."
+		#define STR0009 "Conhecimento"
+		#define STR0010 "Atenção"
+		#define STR0011 "O que deseja fazer ?"
+		#define STR0012 "Relacionar um documento"
+		#define STR0013 "Visualizar documento relacionado"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Apagar um documento relacionamento", "Apagar um Documento Relacionamento" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Não existe documento associado a este Tipo de Destinação", "Nao existe documento associado a este Tipo de Destinação" )
+	#endif
+#endif

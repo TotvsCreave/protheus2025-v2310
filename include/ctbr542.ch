@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Generando Informe. Espere..."
+	#define STR0002 "DRE + AV y AH"
+	#define STR0003 "Analisis Vertical"
+	#define STR0004 "Analisis Horizontal"
+	#define STR0005 "Absoluto"
+	#define STR0006 "Creando archivo temporario..."
+	#define STR0007 "Relativos"
+	#define STR0008 "% Tot"
+	#define STR0009 "Acumulado"
+	#define STR0010 "Demostrativo de Resultado con Analisis Vertical y Horizontal"
+	#define STR0011 "a"
+	#define STR0012 "de"
+	#define STR0013 "Periodo"
+	#define STR0014 "%"
+	#define STR0015 "Responsables"
+	#define STR0016 "Este programa imprime el Demostrativo de Resultado,"
+	#define STR0017 "de acuerdo con los parametros informados por el usuario. "
+	#define STR0018 "Detalle"
+	#define STR0019 "Cuenta"
+	#define STR0020 "Los demostrativos contables obligatoriamente deben tener un plan gerencial asociado al libro.Verifique la configuración de libros escogida."
+	#define STR0021 "Cuenta"
+	#define STR0022 "Cuenta Superior"
+	#define STR0023 "Sld Ant"
+	#define STR0024 "Mov. en Periodo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Generating Report. Wait..."
+		#define STR0002 "DRE + AV and AH"
+		#define STR0003 "Vertical Analysis"
+		#define STR0004 "Horizontal Analysis"
+		#define STR0005 "Absolute"
+		#define STR0006 "Creating temporary file..."
+		#define STR0007 "Relative"
+		#define STR0008 "% Tot"
+		#define STR0009 "Accrued"
+		#define STR0010 "Result Statement with Vertical and Horizontal Analysis"
+		#define STR0011 "to"
+		#define STR0012 "from"
+		#define STR0013 "Period"
+		#define STR0014 "%"
+		#define STR0015 "Responsible People"
+		#define STR0016 "This program prints Result Statement,"
+		#define STR0017 "according to parameters configured by the user. "
+		#define STR0018 "Detail"
+		#define STR0019 "Account"
+		#define STR0020 "Accounting statements must have a management plan associated with the record. Check the record configuration chosen."
+		#define STR0021 "Account"
+		#define STR0022 "Higher account"
+		#define STR0023 "Prev. Bal."
+		#define STR0024 "Transaction in the Period"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "A gerar relatório. Aguarde...", "Gerando Relatório. Aguarde..." )
+		#define STR0002 "DRE + AV e AH"
+		#define STR0003 "Análise Vertical"
+		#define STR0004 "Análise Horizontal"
+		#define STR0005 "Absoluto"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "A criar ficheiro temporário...", "Criando arquivo temporário..." )
+		#define STR0007 "Relativos"
+		#define STR0008 "% Tot"
+		#define STR0009 "Acumulado"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Demonstrativo de Resultado com Análise Vertical e Horizontal", "Demonstrativo de Resultado com Analise Vertical e Horizontal" )
+		#define STR0011 "até"
+		#define STR0012 "de"
+		#define STR0013 "Período"
+		#define STR0014 "%"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Responsáveis", "Resposáveis" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Este programa imprimirá o Demonstrativo de Resultado,", "Este programa ira imprimir o Demonstrativo de Resultado," )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "de acordo com os parâmetros informados pelo utilizador. ", "de acordo com os parâmetros informados pelo usuário. " )
+		#define STR0018 "Detalhe"
+		#define STR0019 "Conta"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Os demonstrativos contabilísticos obrigatoriamente devem ter um plano de gestão associado ao livro. Verifique a configuração de livros escolhida.", "Os demonstrativos contábeis obrigatóriamente devem ter um plano gerencial associado ao livro.Verifique a configuração de livros escolhida." )
+		#define STR0021 "Conta"
+		#define STR0022 "Conta Superior"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Sld.Ant.", "Sld Ant" )
+		#define STR0024 "Mov. no Período"
+	#endif
+#endif

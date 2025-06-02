@@ -1,0 +1,180 @@
+#ifdef SPANISH
+	#define STR0001 "Serie de Factura invalida."
+	#define STR0002 "   Grabando remesa..."
+	#define STR0003 "1=Salida por Remesa"
+	#define STR0004 "2=Retorno de la Entrada por Remesa"
+	#define STR0005 "Tipo de Remesa"
+	#define STR0006 "Tipo"
+	#define STR0007 "Factura"
+	#define STR0008 "Serie"
+	#define STR0009 "Valor"
+	#define STR0010 "Transaccion"
+	#define STR0011 "Fecha"
+	#define STR0012 "Proveedor"
+	#define STR0013 "Tienda"
+	#define STR0014 "Remesa"
+	#define STR0015 "Remesa de Vehiculo"
+	#define STR0016 "Este vehiculo ya esta vendido..."
+	#define STR0017 "íAtencion!"
+	#define STR0018 "Datos de la Devolucion"
+	#define STR0019 "Cliente"
+	#define STR0020 "TES"
+	#define STR0021 "Es necesario informar el codigo del Destinatario..."
+	#define STR0022 "íAtencion!"
+	#define STR0023 "Es necesario informar el Tipo de Salida (TES)..."
+	#define STR0024 "íAtencion! el TES informado no mueve estoque..."
+	#define STR0025 "0=Nuevo"
+	#define STR0026 "1=Usado"
+	#define STR0027 "Remesa de vehiculos"
+	#define STR0028 "Datos de la Remesa"
+	#define STR0029 "Para anular primero anule el retorno del envio.."
+	#define STR0030 "Confirma"
+	#define STR0031 "Anula"
+	#define STR0032 "Imprimiendo Factura..."
+	#define STR0033 "¿Anula el Envio? "
+	#define STR0034 "Datos de la Devolucion"
+	#define STR0035 "Proveedor"
+	#define STR0036 "El TES Informado se refiere a una ENTRADA, informe un TES correcto de SALIDA..."
+	#define STR0037 "Observacion"
+	#define STR0038 "Envio"
+	#define STR0039 "Retorno de la Entrada de Envio"
+	#define STR0040 "Vehiculo de Envio Normal Retornado"
+	#define STR0041 "Leyenda"
+	#define STR0042 "Vehiulo no encontrado"
+	#define STR0043 "¡Vehiculo no esta en el stock!"
+	#define STR0044 "Buscar"
+	#define STR0045 "Consultar"
+	#define STR0046 "Incluir"
+	#define STR0047 "Anular"
+	#define STR0048 "Leyenda"
+	#define STR0049 "Buscar Chasis"
+	#define STR0050 "Busca Chasis"
+	#define STR0051 "Vehiculo:"
+	#define STR0052 "SALIR"
+	#define STR0053 "Sucursal"
+	#define STR0054 "Fch.Movimiento"
+	#define STR0055 "Fact/Serie"
+	#define STR0056 "Valor"
+	#define STR0057 "Cliente"
+	#define STR0058 "Ninguna Salida de Envio para el Chasis "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Invalid Invoice Series."
+		#define STR0002 "   Saving Remittance..."
+		#define STR0003 "1=Outflow by Remittance"
+		#define STR0004 "2=Inflow Reverse by Remittance"
+		#define STR0005 "Remittance Type"
+		#define STR0006 "Type"
+		#define STR0007 "Invoice"
+		#define STR0008 "Series"
+		#define STR0009 "Value"
+		#define STR0010 "Transaction"
+		#define STR0011 "Date"
+		#define STR0012 "Supplier"
+		#define STR0013 "Unit"
+		#define STR0014 "Remittance"
+		#define STR0015 "Vehicle Remittance"
+		#define STR0016 "Vehicle already sold..."
+		#define STR0017 "Warning!"
+		#define STR0018 "Return Data"
+		#define STR0019 "Customer"
+		#define STR0020 "TIO"
+		#define STR0021 "Required ti inform the addressee code..."
+		#define STR0022 "Warning!"
+		#define STR0023 "Required to inform the Outflow Type (TIO)..."
+		#define STR0024 "Warning, the informed TIO does not move stock..."
+		#define STR0025 "0=Brand New"
+		#define STR0026 "1=Second Hand"
+		#define STR0027 "Vehicle Remittance"
+		#define STR0028 "Remittance Data"
+		#define STR0029 "In order to cancel it, cancel the remittance return first..."
+		#define STR0030 "Confirm"
+		#define STR0031 "Cancel"
+		#define STR0032 "Printing Invoice..."
+		#define STR0033 "Do you want to cancel the remittance? "
+		#define STR0034 "Return Data"
+		#define STR0035 "Supplier"
+		#define STR0036 "TES Indicated refers to an ENTRY. Indicate a correct TES of EXIT..."
+		#define STR0037 "Observation"
+		#define STR0038 "Remittance"
+		#define STR0039 "Return of Consignee Entry"
+		#define STR0040 "Vehicle of Normal Remittance was returned"
+		#define STR0041 "Caption"
+		#define STR0042 "Vehicle not found"
+		#define STR0043 "Vehicle is not in stock!"
+		#define STR0044 "Search"
+		#define STR0045 "Query"
+		#define STR0046 "Add"
+		#define STR0047 "Cancel"
+		#define STR0048 "Caption"
+		#define STR0049 "Search Chassis"
+		#define STR0050 "Chassis Search"
+		#define STR0051 "Vehicle:"
+		#define STR0052 "EXIT"
+		#define STR0053 "Branch"
+		#define STR0054 "Movement Dt."
+		#define STR0055 "Series/NF"
+		#define STR0056 "Value"
+		#define STR0057 "Customer"
+		#define STR0058 "No Remittance Issue for the Chassis "
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Serie de factura   inválida.", "Serie de Nota Fiscal invalida." )
+		#define STR0002 "   Gravando Remessa..."
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "1=saída Por Remessa", "1=Saida por Remessa" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "2=retorno Da Entrada Por Remessa", "2=Retorno da Entrada por Remessa" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Tipo De Remessa", "Tipo de Remessa" )
+		#define STR0006 "Tipo"
+		#define STR0007 "Nota"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Série", "Serie" )
+		#define STR0009 "Valor"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Transacção", "Transacao" )
+		#define STR0011 "Data"
+		#define STR0012 "Fornecedor"
+		#define STR0013 "Loja"
+		#define STR0014 "Remessa"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Remessa De Veiculo", "Remessa de Veiculo" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Este veiculo já esta vendido...", "Este Veiculo ja esta vendido..." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Atenção!", "Atencao!" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Dados Da Devolução", "Dados da Devolucao" )
+		#define STR0019 "Cliente"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Tes", "TES" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "E Necessário Informar O Código  Do Destinatario...", "E necessario informar o codigo do Destinatario..." )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Atenção!", "Atencao!" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "E necessário informar o tipo de saida (tes)...", "E necessario informar o Tipo de Saida (TES)..." )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Atenção o tes informado não movimenta stock...", "Atencao o TES informado nao movimenta estoque..." )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "0=novo", "0=Novo" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "1=usado", "1=Usado" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Remessa De Veiculos", "Remessa de Veiculos" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Dados Da Remessa", "Dados da Remessa" )
+		#define STR0029 "Para cancelar primeiro cancele o retorno da remessa..."
+		#define STR0030 "Confirma"
+		#define STR0031 "Cancela"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "A imprimir factura...", "Imprimindo Nota Fiscal..." )
+		#define STR0033 "Cancela a Remessa? "
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Dados da Devolução", "Dados da Devolucao" )
+		#define STR0035 "Fornecedor"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "O TES Informado refere-se a uma ENTRADA, informe um TES correcto de SAÍDA...", "O TES Informado se refere a uma ENTRADA, informe um TES correto de SAIDA..." )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Observação", "Observacao" )
+		#define STR0038 "Remessa"
+		#define STR0039 "Retorno da Entrada de Remessa"
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Veículo de Remessa Normal Retornado", "Veiculo de Remessa Normal Retornado" )
+		#define STR0041 "Legenda"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Veículo não encontrado", "Veiculo nao encontrado" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Veículo não está no stock!", "Veiculo nao esta no estoque!" )
+		#define STR0044 "Pesquisar"
+		#define STR0045 "Consultar"
+		#define STR0046 "Incluir"
+		#define STR0047 "Cancelar"
+		#define STR0048 "Legenda"
+		#define STR0049 "Pesquisar Chassi"
+		#define STR0050 "Pesquisa Chassi"
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "Veículo:", "Veiculo:" )
+		#define STR0052 "SAIR"
+		#define STR0053 "Filial"
+		#define STR0054 "Dt.Movimento"
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "Fact./Série", "NF/Serie" )
+		#define STR0056 "Valor"
+		#define STR0057 "Cliente"
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Nenhuma Saída de Remessa para o Chassi ", "Nenhuma Saida de Remessa para o Chassi " )
+	#endif
+#endif

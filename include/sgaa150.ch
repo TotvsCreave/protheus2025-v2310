@@ -1,0 +1,162 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Excluir"
+	#define STR0006 "Ocurrencia de Residuos"
+	#define STR0007 "Localizacion de Residuo"
+	#define STR0008 "Destino"
+	#define STR0009 "Elija el area clicando dos veces sobre la carpeta"
+	#define STR0010 "Deposito "
+	#define STR0011 "de destino "
+	#define STR0012 "esta en el limite de tolerancia"
+	#define STR0013 "Desea enviarlo de la misma forma ?"
+	#define STR0014 "ATENCiON"
+	#define STR0015 "ultrapaso el limite maximo de almacenamiento"
+	#define STR0016 "ATENCION"
+	#define STR0017 "Total enviado para Destino difiere del total generado"
+	#define STR0018 "Esse destino ja esta cadastrado para receber o residuo especificado"
+	#define STR0019 "Cantidad deve ser informada"
+	#define STR0020 "Informe el codigo de residuo antes de informar el destino"
+	#define STR0021 "Respuesta de los Criterios de Control"
+	#define STR0022 "Residuo"
+	#define STR0023 "Descriocion"
+	#define STR0024 "Criterio de control "
+	#define STR0025 " esta fuera del limite"
+	#define STR0026 "Cuando el residuo sea solido el campo factor de conversion se debe  informar!"
+	#define STR0027 "Por favor, seleccione una Carpeta de la Estructura."
+	#define STR0028 "Escoja la ubicacion haciendo clic dos veces sobre la carpeta"
+	#define STR0029 "Los siguientes criterios de control estan fuera de los limites de control:"
+	#define STR0030 "Desea continuar"
+	#define STR0031 "Atencion"
+	#define STR0032 "Numero del lote no corresponde al producto que se "
+	#define STR0033 "informo. Digite un lote correspondiente."
+	#define STR0034 "Numero del sublote no corresponde al producto que se "
+	#define STR0035 "informo. Digite un sublote correspondiente."
+	#define STR0036 "Aguarde..."
+	#define STR0037 "Cargando Estructura..."
+	#define STR0038 "Solo es posible marcar una ubicacion por ocurrencia."
+	#define STR0039 "¿Desea enviar el Workflow relacionado a las No Conformidades a los responsables por los criterios de control?"
+	#define STR0040 "Si"
+	#define STR0041 "No"
+	#define STR0042 "Volver"
+	#define STR0043 "El relleno del campo 'Informacion Complementaria' es obligatorio."
+	#define STR0044 "Rellene el campo con el detalle de la conformidad."
+	#define STR0045 "La seleccion de areas esta inhabilitada"
+	#define STR0046 "Fecha inválida, la fecha no puede ser superior a la fecha actual."
+	#define STR0047 "¡Hora inválida! Debe informarse una hora inferior o igual a la actual."
+	#define STR0048 "El residuo"
+	#define STR0049 "no está definido en esta localización, ¿realmente desea marcar este nivel?"
+	#define STR0050 "no está definido en esta localización, ¿desea mantener este nivel seleccionado?"
+	#define STR0051 "Es necesario que el campo de Residuo esté rellenado para marcar una localización."
+	#define STR0052 "está definido en esta localización, ¿desea mantener este nivel seleccionado?"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search   "
+		#define STR0002 "View      "
+		#define STR0003 "Insert"
+		#define STR0004 "Edit   "
+		#define STR0005 "Delete "
+		#define STR0006 "Residue occurrence    "
+		#define STR0007 "Residue Location      "
+		#define STR0008 "Destin."
+		#define STR0009 "Select the area by clicking twice on the folder"
+		#define STR0010 "The Warehouse "
+		#define STR0011 "of destinat"
+		#define STR0012 "is at the tolerance limit"
+		#define STR0013 "Send anyway?               "
+		#define STR0014 "WARNING"
+		#define STR0015 "exceeded the maximum storage limit"
+		#define STR0016 "WARNING"
+		#define STR0017 "Total sent to Destn. differs from total generated"
+		#define STR0018 "This destination is already registered to receive specified residue"
+		#define STR0019 "Quantity must be entered"
+		#define STR0020 "Enter the residue code before entering the destination"
+		#define STR0021 "Response of Control Criteria"
+		#define STR0022 "Residue"
+		#define STR0023 "Descriptn"
+		#define STR0024 "The control criteria "
+		#define STR0025 " is over the limit"
+		#define STR0026 "When disposal is solid, the field conversion factor must be indicated!"
+		#define STR0027 "Please select a Structure Folder"
+		#define STR0028 "Choose the location by double-clicking the folder"
+		#define STR0029 "The following control criteria are out of the control limits:"
+		#define STR0030 "Do you want to continue?"
+		#define STR0031 "Attention"
+		#define STR0032 "Lot number does not match product "
+		#define STR0033 "informed. Type the corresponding lot."
+		#define STR0034 "Sub-lot number does not match product "
+		#define STR0035 "informed. Type the corresponding sub-lot."
+		#define STR0036 "Wait..."
+		#define STR0037 "Loading structure..."
+		#define STR0038 "You can only select one location per occurrence."
+		#define STR0039 "Want to send Workflow related to Non Conformities to people in charge of control criteria?"
+		#define STR0040 "Yes"
+		#define STR0041 "No"
+		#define STR0042 "Back"
+		#define STR0043 "Completion of Complement field is mandatory!"
+		#define STR0044 "Fill out field with Conformity detail."
+		#define STR0045 "Area selection is disabled"
+		#define STR0046 "Invalid Date cannot be after current date."
+		#define STR0047 "Invalid time! Enter time before or equal to the current one."
+		#define STR0048 "The residue"
+		#define STR0049 "is not defined in this location, flag this level anyway?"
+		#define STR0050 "is not defined in this location, keep this level selected?"
+		#define STR0051 "The Residue field must be completed to flag a location."
+		#define STR0052 "is defined in this location, keep this level selected?"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Ocorrência De Resíduos", "Ocorrencia de Residuos" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Localização Do Resíduo", "Localizacao do Residuo" )
+		#define STR0008 "Destino"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Escolha a área clicando duas vezes sobre a pasta", "Escolha a area clicando duas vezes sobre a pasta" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "O almoxarifado ", "O Almoxarifado " )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Do destino ", "do destino " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Está no limite de tolerância", "esta no limite de tolerancia" )
+		#define STR0013 "Deseja enviar mesmo assim ?"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Atenção", "ATENCAO" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Ultrapassou o limite máximo de armazenamento", "ultrapassou o limite maximo de armazenamento" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Atenção", "ATENCÄO" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Total enviado para destino difere do total criado", "Total enviado para Destino difere do total gerado" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Este destino já está registado para receber o resíduo especificado", "Esse destino ja esta cadastrado para receber o residuo especificado" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Quantidade deve ser introduzida", "Quantidade deve ser informada" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Introduza o código do resíduo antes de introduzir o destino", "Informe o codigo do residuo antes de informar o destino" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Resposta Dos Critérios De Controle", "Resposta dos Criterios de Controle" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Resíduo", "Residuo" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "O critério de controle ", "O criterio de controle " )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", " está fora do limite", " esta fora do limite" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Quando o resíduo for sólido o campo factor de conversão deve ser informado!", "Quando o residuo for solido o campo fator de conversão deve ser informado!" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Por favor, seleccione uma Pasta da Estrutura.", "Por favor, selecione uma Pasta da Estrutura." )
+		#define STR0028 "Escolha a localização clicando duas vezes sobre a pasta"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Os seguintes critérios de controlo estão fora dos limites de controlo:", "Os seguintes critérios de controle estão fora dos limites de controle:" )
+		#define STR0030 "Deseja continuar?"
+		#define STR0031 "Atenção"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Número do lote não corresponde ao artigo que foi ", "Número do lote não corresponde ao produto que foi " )
+		#define STR0033 "informado. Digite um lote correspondente."
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Número do sublote não corresponde ao artigo que foi ", "Número do sub-lote não corresponde ao produto que foi " )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "informado. Digite um sublote correspondente.", "informado. Digite um sub-lote correspondente." )
+		#define STR0036 "Aguarde..."
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "A Carregar Estrutura...", "Carregando Estrutura..." )
+		#define STR0038 "Só é possível marcar uma localização por ocorrência."
+		#define STR0039 "Deseja enviar o Workflow referente as Não Conformidades aos responsáveis pelos critérios de controle?"
+		#define STR0040 "Sim"
+		#define STR0041 "Não"
+		#define STR0042 "Voltar"
+		#define STR0043 "O preenchimento do campo Complemento é obrigatório!"
+		#define STR0044 "Preencha o campo com o detalhamento da Conformidade."
+		#define STR0045 "A seleção de áreas está desabilitada"
+		#define STR0046 "Data inválida, a data não pode ser maior do que a data atual."
+		#define STR0047 "Hora Inválida! Deve ser informado uma hora menor ou igual a atual."
+		#define STR0048 "O resíduo"
+		#define STR0049 "não está definido nesta localização, deseja realmente marcar este nível?"
+		#define STR0050 "não está definido nesta localização, deseja manter este nível selecionado?"
+		#define STR0051 "É necessário que o campo de Resíduo esteja preenchido para marcar uma localização."
+		#define STR0052 "está definido nesta localização, deseja manter este nível selecionado?"
+	#endif
+#endif

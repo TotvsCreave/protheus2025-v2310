@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "De Sucursal:"
+	#define STR0002 "A Sucursal:"
+	#define STR0003 "De Fecha:"
+	#define STR0004 "A Fecha:"
+	#define STR0005 "De Operador:"
+	#define STR0006 "A Operador:"
+	#define STR0007 "De Grupo DAC:"
+	#define STR0008 "A Grupo DAC:"
+	#define STR0009 "De Motivo:"
+	#define STR0010 "A Motivo:"
+	#define STR0011 "Tipo de informe:"
+	#define STR0012 "Agrupar por:"
+	#define STR0013 "Informe de Motivos de Llamadas Anotadas"
+	#define STR0014 "Cantidad total de llamadas en el periodo"
+	#define STR0015 "Analitico"
+	#define STR0016 "Sintetico"
+	#define STR0017 "Grupo DAC:"
+	#define STR0018 "¡Informe disponible solamente para TOPCONNECT!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Branch from:"
+		#define STR0002 "Branch To:"
+		#define STR0003 "Date from:"
+		#define STR0004 "Date To:"
+		#define STR0005 "Operator from:"
+		#define STR0006 "Operator To:"
+		#define STR0007 "DAC Group from:"
+		#define STR0008 "DAC Group to:"
+		#define STR0009 "Reason from:"
+		#define STR0010 "Reason To:"
+		#define STR0011 "Report type:"
+		#define STR0012 "Group by:"
+		#define STR0013 "Report of Reason for Calls Annotated"
+		#define STR0014 "Total number of calls within the period"
+		#define STR0015 "Detailed"
+		#define STR0016 "Summarized"
+		#define STR0017 "DAC Group:"
+		#define STR0018 "Report available only for TOPCONNECT!"
+	#else
+		#define STR0001 "Filial de:"
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Filial até:", "Filial Até:" )
+		#define STR0003 "Data de:"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Data até:", "Data Até:" )
+		#define STR0005 "Operador de:"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Operador até:", "Operador Até:" )
+		#define STR0007 "Grupo DAC de:"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Grupo DAC até:", "Grupo DAC Até:" )
+		#define STR0009 "Motivo de:"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Motivo até:", "Motivo Até:" )
+		#define STR0011 "Tipo de relatório:"
+		#define STR0012 "Agrupar por:"
+		#define STR0013 "Relatório de Motivos de Ligações Anotadas"
+		#define STR0014 "Quantidade total de ligações no período"
+		#define STR0015 "Analítico"
+		#define STR0016 "Sintético"
+		#define STR0017 "Grupo DAC:"
+		#define STR0018 "Relatório disponível somente para TOPCONNECT!"
+	#endif
+#endif

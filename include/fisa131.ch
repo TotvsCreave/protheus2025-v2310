@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Tabla F0G no registrada en el sistema o campos que necesitan de actualizaciones. Por favor, verifique el diccionario de datos."
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Copiar"
+	#define STR0007 "CEST - Código Especificador de Sustitución Tributaria"
+	#define STR0008 "Ya existe registro con estos datos"
+	#define STR0009 "Formulario de registro CEST"
+	#define STR0010 "Informe el proveedor"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "FOG table not registered in the system or fields in need of updating. Check data dictionary!"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Copy"
+		#define STR0007 "CEST - Specifier Code of Tax Substitution"
+		#define STR0008 "There is a record with the same data"
+		#define STR0009 "CEST registration form"
+		#define STR0010 "Enter supplier"
+	#else
+		#define STR0001 "Tabela F0G não cadastrada no sistema ou campos que precisam de atualizações. Favor verificar o dicionário de dados!"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Copiar"
+		#define STR0007 "CEST - Código Especificador da Substituição Tributária"
+		#define STR0008 "Já existe registro com esses dados"
+		#define STR0009 "Formulário de cadastro CEST"
+		#define STR0010 "Informe o Fornecedor"
+	#endif
+#endif

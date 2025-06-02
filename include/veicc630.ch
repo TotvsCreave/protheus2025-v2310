@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Intereses de Clientes vs. Stock/Pedidos"
+	#define STR0002 "Vendedor"
+	#define STR0003 "Interes"
+	#define STR0004 "a"
+	#define STR0005 "Vehiculo"
+	#define STR0006 "Filtrar"
+	#define STR0007 "Marca"
+	#define STR0008 "Modelo"
+	#define STR0009 "Cant."
+	#define STR0010 "Color"
+	#define STR0011 "Cliente"
+	#define STR0012 "Telefono"
+	#define STR0013 "Ciudad-R/E/P"
+	#define STR0014 "Chasis"
+	#define STR0015 "Vehiculo(s)"
+	#define STR0016 "Marca y Modelo iguales"
+	#define STR0017 "Marca y Grupo de Modelo iguales"
+	#define STR0018 "No se encontro"
+	#define STR0019 "Sucursal Stock"
+	#define STR0020 "Stock"
+	#define STR0021 "Pedido"
+	#define STR0022 "Nuevo"
+	#define STR0023 "Usado"
+	#define STR0024 "Fase"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Customer x Stock/Order Interests"
+		#define STR0002 "Sales Representative"
+		#define STR0003 "Interest"
+		#define STR0004 "to"
+		#define STR0005 "Vehicle"
+		#define STR0006 "Filter"
+		#define STR0007 "Brand"
+		#define STR0008 "Model"
+		#define STR0009 "Qty."
+		#define STR0010 "Color"
+		#define STR0011 "Customer"
+		#define STR0012 "Telephone Number"
+		#define STR0013 "City-State"
+		#define STR0014 "Chassis"
+		#define STR0015 "Vehicles(s)"
+		#define STR0016 "Same Brand and Model"
+		#define STR0017 "Same Brand and Model Group"
+		#define STR0018 "Not found"
+		#define STR0019 "Stock Branch"
+		#define STR0020 "Stock"
+		#define STR0021 "Order"
+		#define STR0022 "New"
+		#define STR0023 "Used"
+		#define STR0024 "Phase"
+	#else
+		#define STR0001 "Interesses de Clientes x Estoque/Pedidos"
+		#define STR0002 "Vendedor"
+		#define STR0003 "Interesse"
+		#define STR0004 "a"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Veículo", "Veiculo" )
+		#define STR0006 "Filtrar"
+		#define STR0007 "Marca"
+		#define STR0008 "Modelo"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Qtd.", "Qtde" )
+		#define STR0010 "Cor"
+		#define STR0011 "Cliente"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Telefone", "Fone" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Município-Distrito", "Cidade-UF" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Chassis", "Chassi" )
+		#define STR0015 "Veiculo(s)"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Marca e modelo iguais", "Marca e Modelo iguais" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Marca e grupo de modelo iguais", "Marca e Grupo de Modelo iguais" )
+		#define STR0018 "Não encontrado"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Filial stock", "Filial Estoque" )
+		#define STR0020 "Estoque"
+		#define STR0021 "Pedido"
+		#define STR0022 "Novo"
+		#define STR0023 "Usado"
+		#define STR0024 "Fase"
+	#endif
+#endif

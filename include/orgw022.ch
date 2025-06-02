@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Servicio REST para consulta de impresión reloj registrador"
+	#define STR0002 "Consulta de impresión reloj registrador electrónico"
+	#define STR0003 "Visión es un parámetro obligatorio"
+	#define STR0004 "Estructura no encontrada"
+	#define STR0005 "Sucursal/Matrícula son campo obligatorios"
+	#define STR0006 "Datos no encontrados"
+	#define STR0007 "Original"
+	#define STR0008 "Incluido"
+	#define STR0009 "Marcado"
+	#define STR0010 "¡Empleado solicitado no pertenece a su equipo!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "REST service for query of Attendance Control"
+		#define STR0002 "Query Attendance Control"
+		#define STR0003 "View is a mandatory parameter"
+		#define STR0004 "Structure not found"
+		#define STR0005 "Branch/Registration are mandatory fields"
+		#define STR0006 "Data not found"
+		#define STR0007 "Original"
+		#define STR0008 "Added"
+		#define STR0009 "Signaled"
+		#define STR0010 "Employee requested does not belong to this team!"
+	#else
+		#define STR0001 "Serviço REST para consulta de Espelho de Ponto"
+		#define STR0002 "Consulta de Espelho de Ponto"
+		#define STR0003 "Visão é um parâmetro obrigatório"
+		#define STR0004 "Estrutura não encontrada"
+		#define STR0005 "Filial/Matricula são campo obrigatórios"
+		#define STR0006 "Dados não encontrados"
+		#define STR0007 "Original"
+		#define STR0008 "Incluído"
+		#define STR0009 "Assinalado"
+		#define STR0010 "Funcionário solicitado não pertence a sua equipe!"
+	#endif
+#endif

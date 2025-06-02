@@ -1,0 +1,13 @@
+#INCLUDE "RWMAKE.CH"
+
+User Function VALRET()
+
+If M->E1_VALOR > M->E1_XVALRET
+	M->E1_DECRESC := M->E1_VALOR - M->E1_XVALRET
+	M->E1_ACRESC  := 0	
+Else
+	M->E1_ACRESC  := M->E1_XVALRET - M->E1_VALOR
+	M->E1_DECRESC := 0
+Endif
+
+Return .T.

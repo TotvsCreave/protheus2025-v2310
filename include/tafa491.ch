@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Recursos transferidos para Asociación deportiva"
+	#define STR0002 "Detalle de recursos transferidos"
+	#define STR0003 "Información de procesos"
+	#define STR0004 "Totalizador de recursos transferidos"
+	#define STR0005 "Recibo de transmisión"
+	#define STR0006 "Visualizar"
+	#define STR0007 "Diccionario incompatible"
+	#define STR0008 "Finalizar"
+	#define STR0009 "Información de identificación del evento"
+	#define STR0010 "Identificación del establecimiento"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Resources Transfered for Sports Association"
+		#define STR0002 "Resources Transfered Detail"
+		#define STR0003 "Information on Lawsuits"
+		#define STR0004 "Resources Transfered Totalizer"
+		#define STR0005 "Transmission Receipt"
+		#define STR0006 "View"
+		#define STR0007 "Dictionary Not Compatible"
+		#define STR0008 "Close"
+		#define STR0009 "Event identification information"
+		#define STR0010 "Company Identification"
+	#else
+		#define STR0001 "Recursos Repassados para Associação Desportiva"
+		#define STR0002 "Detalhamento Recursos Repassados"
+		#define STR0003 "Informações de Processos"
+		#define STR0004 "Totalizador Recursos Repassados"
+		#define STR0005 "Recibo de Transmissão"
+		#define STR0006 "Visualizar"
+		#define STR0007 "Dicionário Incompatível"
+		#define STR0008 "Encerrar"
+		#define STR0009 "Informações de Identificação do Evento"
+		#define STR0010 "Identificação do Estabelecimento"
+	#endif
+#endif

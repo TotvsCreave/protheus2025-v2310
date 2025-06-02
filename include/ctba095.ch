@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Generando tablas, campo y mnemonicos del sistema. Espere..."
+	#define STR0002 "Generando tablas por cada punto de asiento. Espere..."
+	#define STR0003 "Cargando tablas..."
+	#define STR0004 "Cargando campos…"
+	#define STR0005 "Cargando mnemonicos..."
+	#define STR0006 "No se ha encontrado el campo:"
+	#define STR0007 "en el diccionario de datos."
+	#define STR0008 "No se ha encontrado la tabla:"
+	#define STR0009 "en la tabla de mnemonicos (CWH)."
+	#define STR0010 "Cargando tablas para los puntos de asiento."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Generating tables, fields and system mnemonics. Please wait..."
+		#define STR0002 "Generating tables for each transaction point. Please wait..."
+		#define STR0003 "Loading tables..."
+		#define STR0004 "Loading fields..."
+		#define STR0005 "Loading mnemonics..."
+		#define STR0006 "Field not found:"
+		#define STR0007 "in data dictionary."
+		#define STR0008 "Table not found:"
+		#define STR0009 "on mnemonics table (CWH)."
+		#define STR0010 "Loading tables for transaction points."
+	#else
+		#define STR0001 "Gerando tabelas, campo e mnemônicos do sistema. Espere..."
+		#define STR0002 "Gerando tabelas por cada ponto de lançamento. Espere..."
+		#define STR0003 "Carregando tabelas..."
+		#define STR0004 "Cargando campos…"
+		#define STR0005 "Carregando mnemônicos..."
+		#define STR0006 "Não foi encontrado o campo:"
+		#define STR0007 "no dicionário de dados."
+		#define STR0008 "Não foi encontrada a tabela:"
+		#define STR0009 "na tabela de mnemônicos (CWH)."
+		#define STR0010 "Carregando tabelas para os pontos de lançamento."
+	#endif
+#endif

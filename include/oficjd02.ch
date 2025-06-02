@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Suc. Ori."
+	#define STR0002 "Ítem"
+	#define STR0003 "Presupuesto"
+	#define STR0004 "Buscar"
+	#define STR0005 "Sucursal"
+	#define STR0006 "Cantidad"
+	#define STR0007 "Consulta stock encomendado DPM"
+	#define STR0008 "Filtro"
+	#define STR0009 "Detalles"
+	#define STR0010 "Ítems agrupados"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Or.Branch"
+		#define STR0002 "Item"
+		#define STR0003 "Budget"
+		#define STR0004 "Search"
+		#define STR0005 "Branch"
+		#define STR0006 "Quantity"
+		#define STR0007 "Query DPM ordered stock"
+		#define STR0008 "Filter"
+		#define STR0009 "Details"
+		#define STR0010 "Grouped Items"
+	#else
+		#define STR0001 "Fil. Ori."
+		#define STR0002 "Item"
+		#define STR0003 "Orçamento"
+		#define STR0004 "Buscar"
+		#define STR0005 "Filial"
+		#define STR0006 "Quantidade"
+		#define STR0007 "Consulta estoque encomendado DPM"
+		#define STR0008 "Filtro"
+		#define STR0009 "Detalhes"
+		#define STR0010 "Itens Agrupados"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Exportación del archivo de comunicación entre DMS y AGILE"
+	#define STR0002 "Exportado por el DMS - Datos iniciales para carga en el sistema"
+	#define STR0003 "Versión 9.00 - 22/08/11"
+	#define STR0004 "Espere..."
+	#define STR0005 "Exportando archivo texto"
+	#define STR0006 "La operación se realizó con éxito"
+	#define STR0007 "Atención"
+	#define STR0008 "Directorio"
+	#define STR0009 "Código de la empresa"
+	#define STR0010 "Grupos considerados"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Export of Communication file between DMS and AGILE"
+		#define STR0002 "Exported by DMS - Initial data for load in system"
+		#define STR0003 "Version 9.00 - 08/22/11"
+		#define STR0004 "Wait..."
+		#define STR0005 "Exporting Text File"
+		#define STR0006 "Operation successfully performed"
+		#define STR0007 "Attention"
+		#define STR0008 "Directory"
+		#define STR0009 "Company Code"
+		#define STR0010 "Considered Groups"
+	#else
+		#define STR0001 "Exportação do arquivo de Comunicação entre DMS e AGILE"
+		#define STR0002 "Exportado pelo DMS - Dados iniciais para carga no sistema"
+		#define STR0003 "Versão 9.00 - 22/08/11"
+		#define STR0004 "Aguarde..."
+		#define STR0005 "Exportando Arquivo Texto"
+		#define STR0006 "A operação foi realizada com sucesso"
+		#define STR0007 "Atenção"
+		#define STR0008 "Diretório"
+		#define STR0009 "Código da Empresa"
+		#define STR0010 "Grupos Considerados"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Actualización automática pedidos Jhonn Deere"
+	#define STR0002 "Rutina usada para actualizar los estatus de los pedidos con la JD"
+	#define STR0003 "¿Solo desea corregir los pedidos con factura?"
+	#define STR0004 "Atención"
+	#define STR0005 "ERROR al sincronizar datos con Webservice Jhonn Deere, ejecute la rutina por el menú, para mayores detalles."
+	#define STR0006 "Sincronizando pedido: "
+	#define STR0007 " de "
+	#define STR0008 "Sincronizando pedido:"
+	#define STR0009 "Proceso cancelado"
+	#define STR0010 "Finalizado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Jhonn Deere orders automatic update"
+		#define STR0002 "Routine used to update the status of orders with JD"
+		#define STR0003 "Correct only orders with invoice?"
+		#define STR0004 "Attention"
+		#define STR0005 "ERROR when synchronizing data with Webservice Jhonn Deere, run routine through the menu for further details."
+		#define STR0006 "Synchronizing Order: "
+		#define STR0007 " from "
+		#define STR0008 "Synchronizing Order:"
+		#define STR0009 "Process canceled"
+		#define STR0010 "Finished"
+	#else
+		#define STR0001 "Atualização automatica pedidos Jhonn Deere"
+		#define STR0002 "Rotina usada para atualizar os status dos pedidos com a JD"
+		#define STR0003 "Deseja somente corrigir os pedidos com nota?"
+		#define STR0004 "Atenção"
+		#define STR0005 "ERRO ao sincronizar dados com Webservice Jhonn Deere, execute a rotina pelo menu para mais detalhes."
+		#define STR0006 "Sincronizando Pedido: "
+		#define STR0007 " de "
+		#define STR0008 "Sincronizando Pedido:"
+		#define STR0009 "Processo cancelado"
+		#define STR0010 "Finalizado"
+	#endif
+#endif

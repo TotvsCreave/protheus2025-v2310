@@ -1,0 +1,48 @@
+#ifdef SPANISH
+	#define STR0001 "ADQUISIC."
+	#define STR0002 "EJEMPLAR"
+	#define STR0003 "NUM.LLAMADA"
+	#define STR0004 "INV."
+	#define STR0005 "TITULO"
+	#define STR0006 "ADQUISICIONES POR PERIODO"
+	#define STR0007 "Fcha:"
+	#define STR0008 "Hora:"
+	#define STR0009 "Parametros"
+	#define STR0010 "De fecha adquisicion :"
+	#define STR0011 "A Fecha adquisicion : "
+	#define STR0012 "Cantidad de ejemplares: "
+	#define STR0013 "De lugar: "
+	#define STR0014 "A lugar: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "ACQUISIT."
+		#define STR0002 "COPY    "
+		#define STR0003 "CALL NUMBER"
+		#define STR0004 "INVENTORY"
+		#define STR0005 "BILL  "
+		#define STR0006 "ACQUISITIONS BY PERIOD"
+		#define STR0007 "Date:"
+		#define STR0008 "Time:"
+		#define STR0009 "Parameters"
+		#define STR0010 "From acquis. date: "
+		#define STR0011 "To acquisit. date:  "
+		#define STR0012 "Number of copies:         "
+		#define STR0013 "From loc: "
+		#define STR0014 "To locat.: "
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Aquisição", "AQUISICÄO" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Exemplar", "EXEMPLAR" )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Num.chamada", "NUM.CHAMADA" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Tombo", "TOMBO" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Título", "TITULO" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Aquisições Por Período", "AQUISICÖES POR PERIODO" )
+		#define STR0007 "Data:"
+		#define STR0008 "Hora:"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Parâmetros", "Parametros" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Data aquisição de: ", "Data aquisicäo de: " )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Data aquisição até: ", "Data aquisicäo ate: " )
+		#define STR0012 "Quantidade de exemplares: "
+		#define STR0013 "Local de: "
+		#define STR0014 "Local até: "
+	#endif
+#endif

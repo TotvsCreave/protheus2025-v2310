@@ -1,0 +1,123 @@
+#ifdef SPANISH
+	#define STR0001 "MTBF y MTTR."
+	#define STR0002 "El usuario puede seleccionar los campos que deberan exhibirse,"
+	#define STR0003 "asi como informar los parametros de seleccion para la impresion."
+	#define STR0004 "A Rayas"
+	#define STR0005 "Administracion"
+	#define STR0006 "Centro Costo          Descripc.                   C.Trabajo  Descripc."
+	#define STR0007 "Familia Decripción               Bien             Descripción                                 MTBF               MTTR               Disponibilidad "
+	#define STR0008 "Procesando Archivo..."
+	#define STR0009 "Normal"
+	#define STR0010 "Historial"
+	#define STR0011 "Selecionando Registros..."
+	#define STR0012 "Centro Costo"
+	#define STR0013 "Descripc."
+	#define STR0014 "C.Trabajo"
+	#define STR0015 "Grupo"
+	#define STR0016 "Bien"
+	#define STR0017 "Nomb. Bien"
+	#define STR0018 "MTBF"
+	#define STR0019 "MTTR"
+	#define STR0020 "Familias"
+	#define STR0021 "¿Ordenar Por ?"
+	#define STR0022 "Bien               Descripción                 Centro Costo         Descripción             Familia Descripción                        MTBF               MTTR               Disponibilidad"
+	#define STR0023 "Promedio General:"
+	#define STR0024 "¿Consid. Calendario del Bien ?"
+	#define STR0025 "Si"
+	#define STR0026 "No"
+	#define STR0027 "¿Consid. Tiempo Antes/Despues ?"
+	#define STR0028 "Informe 'Si' para considerar solamente el intervalo de tiempo definido en el calendario del bien, o 'No' para el tiempo recorrido."
+	#define STR0029 "Informe si desea considerar el intervalo de acuerdo con el parametro fecha, incluso los periodos de antes y despues de los mantenimientos."
+	#define STR0030 "Considerar ¿De tiempo?"
+	#define STR0031 "Parada de la O.S."
+	#define STR0032 "Ejecucion de la O.S."
+	#define STR0033 "Informe si desea considerar el tiempo de parada o de ejecucion de la O.S. o ambos."
+	#define STR0034 "Ambos"
+	#define STR0035 "Para la opcion 'Ambos' el sistema utilizara el tiempo de parada, si no, utilizara el tiempo de ejecucion."
+	#define STR0036 "ATENCIÓN"
+	#define STR0037 "De acuerdo con la parametrización, no existen datos para elaborar el informe."
+	#define STR0038 "Disponibilidad"
+	#define STR0039 "¡No existen datos para mostrar en el informe! Finalizando ejecución."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "MTBF and MTTR."
+		#define STR0002 "The user can select which field will be shown, as well as "
+		#define STR0003 "inform selection parameters for printing."
+		#define STR0004 "Z.Form"
+		#define STR0005 "Management"
+		#define STR0006 "Cost Center           Descript.                   WorkCenter Descript."
+		#define STR0007 "Family Description                 Asset              Description                                   MTBF               MTTR               Availability"
+		#define STR0008 "Processing File..."
+		#define STR0009 "Normal"
+		#define STR0010 "History"
+		#define STR0011 "Selecting records ...  "
+		#define STR0012 "Cost center "
+		#define STR0013 "Descript."
+		#define STR0014 "WorkCenter"
+		#define STR0015 "Family "
+		#define STR0016 "Asst"
+		#define STR0017 "Asset name "
+		#define STR0018 "MTBF"
+		#define STR0019 "MTTR"
+		#define STR0020 "Families"
+		#define STR0021 "Sort by?"
+		#define STR0022 "Asset               Description                 Cost Center         Description             Family Description                        MTBF               MTTR               Availability"
+		#define STR0023 "General Average:"
+		#define STR0024 "Consid. Assets Calendar?"
+		#define STR0025 "Yes"
+		#define STR0026 "No"
+		#define STR0027 "Consid. Before/After Time?"
+		#define STR0028 "Inform 'Yes' to consider only the time interval defined in assets calendar, or 'No' for running time."
+		#define STR0029 "Inform whether you want to consider the interval according to date parameter, including periods before and after maintenances."
+		#define STR0030 "Consider Time from?"
+		#define STR0031 "O.S. Stop"
+		#define STR0032 "O.S. Execution"
+		#define STR0033 "Enter whether you wish to consider the Stoppage time of S.O. Execution or Both;"
+		#define STR0034 "Both"
+		#define STR0035 "For option Both, the system uses the stoppage - otherwise, the execution time."
+		#define STR0036 "ATTENTION"
+		#define STR0037 "According to the parameters, there are no data to generate the report."
+		#define STR0038 "Availability"
+		#define STR0039 "There are data to be displayed on the report! Closing execution."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Mtbf E Mttr.", "MTBF e MTTR." )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "O utilizador pode seleccionar quais os campos que deverão ser mostrados,", "O usuario pode selecionar quais os campos que deverao ser mostrados," )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Bem como introduzir parâmetros de selecção para a impressão.", "bem como informar parametros de selecao para a impressao." )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Centro Custo          Descrição                   C.trabalho Descrição", "Centro Custo          Descricao                   C.Trabalho Descricao" )
+		#define STR0007 "Familia Decrição                 Bem              Descrição                                   MTBF               MTTR               Disponibilidade"
+		#define STR0008 "Processando Arquivo..."
+		#define STR0009 "Normal"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Histórico", "Historico" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A Seleccionar Registos...", "Selecionando Registros..." )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Centro De Custo", "Centro Custo" )
+		#define STR0013 "Descrição"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "C.trabalho", "C.Trabalho" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Família", "Familia" )
+		#define STR0016 "Bem"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Nome Do Bem", "Nome do Bem" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Mtbf", "MTBF" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Mttr", "MTTR" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Famílias", "Familias" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Ordenar por ?", "Ordenar Por ?" )
+		#define STR0022 "Bem               Descrição                 Centro Custo         Descrição             Familia Descrição                        MTBF               MTTR               Disponibilidade"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Média geral:", "Média Geral:" )
+		#define STR0024 "Consid. Calendário do Bem ?"
+		#define STR0025 "Sim"
+		#define STR0026 "Nao"
+		#define STR0027 "Consid. Tempo Antes/Depois ?"
+		#define STR0028 "Informe 'Sim' para considerar apenas o intervalo de tempo definido no calendário do bem, ou 'Não' para tempo corrido."
+		#define STR0029 "Informe se deseja considerar o intervalo conforme parâmetro data, incluindo os períodos de antes e depois das manutenções."
+		#define STR0030 "Considerar Tempo de ?"
+		#define STR0031 "Parada da O.S."
+		#define STR0032 "Execução da O.S."
+		#define STR0033 "Informe se deseja considerar o tempo de Parada, de Execução da O.S. ou Ambos."
+		#define STR0034 "Ambos"
+		#define STR0035 "Para a opção 'Ambos' o sistema irá utilizar o tempo de parada, não havendo, utilizará o tempo de execução."
+		#define STR0036 "ATENÇÃO"
+		#define STR0037 "Segundo parametrização, não há dados para montar o relatório."
+		#define STR0038 "Disponibilidade"
+		#define STR0039 "Não há dados para serem exibidos no relatório! Encerrando execução."
+	#endif
+#endif

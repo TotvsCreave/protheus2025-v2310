@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Indicadores económicos"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Excluir"
+	#define STR0007 "Consultar valores"
+	#define STR0008 "Historial"
+	#define STR0009 "Ejecutar actualización"
+	#define STR0010 "Imprimir"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Economic Indicators"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Check Values"
+		#define STR0008 "History"
+		#define STR0009 "Run update"
+		#define STR0010 "Print"
+	#else
+		#define STR0001 "Indicadores Econômicos"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Consultar Valores"
+		#define STR0008 "Histórico"
+		#define STR0009 "Executar atualização"
+		#define STR0010 "Imprimir"
+	#endif
+#endif

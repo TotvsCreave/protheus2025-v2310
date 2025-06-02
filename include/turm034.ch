@@ -1,0 +1,66 @@
+#ifdef SPANISH
+	#define STR0001 "Espere"
+	#define STR0002 "Aplicando Acuerdos..."
+	#define STR0003 "Debe seleccionarse por lo menos un segmento de negocio"
+	#define STR0004 "No hay registros a procesar."
+	#define STR0005 "Falla"
+	#define STR0006 "Procesando R.V "
+	#define STR0007 " Ítem: "
+	#define STR0008 " Secuencia: "
+	#define STR0009 "La aplicación del Acuerdo se realizó con éxito"
+	#define STR0010 "Éxito"
+	#define STR0011 "Hubo un error en la aplicación del Acuerdo"
+	#define STR0012 "Atención"
+	#define STR0013 "Registro: "
+	#define STR0014 " --> Falla al aplicar el Acuerdo"
+	#define STR0015 "Devolvió el siguiente error: "
+	#define STR0016 ' Referencia:'
+	#define STR0017 'Solución - '
+	#define STR0018 " --> Aplicado con éxito"
+	#define STR0019 "Registro bloqueado con otro usuario"
+	#define STR0020 "Sucursal: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Wait"
+		#define STR0002 "Applying agreement..."
+		#define STR0003 "Select at least one Business Segment"
+		#define STR0004 "There are no records to process"
+		#define STR0005 "Failure"
+		#define STR0006 "Processing R.V "
+		#define STR0007 " Item: "
+		#define STR0008 " Sequence: "
+		#define STR0009 "Application of Agreement performed successfully"
+		#define STR0010 "Success"
+		#define STR0011 "Error while applying agreement"
+		#define STR0012 "Attention"
+		#define STR0013 "Record: "
+		#define STR0014 " --> Failure when applying agreement"
+		#define STR0015 "The following error was displayed: "
+		#define STR0016 ' Reference:'
+		#define STR0017 'Solution - '
+		#define STR0018 " --> Applied with success"
+		#define STR0019 "Record blocked with another user"
+		#define STR0020 "Branch: "
+	#else
+		#define STR0001 "Aguarde"
+		#define STR0002 "Aplicando acordos..."
+		#define STR0003 "Deve ser selecionado pelo menos um Segmento de Negócio"
+		#define STR0004 "Não há registros a serem processados"
+		#define STR0005 "Falha"
+		#define STR0006 "Processando R.V "
+		#define STR0007 " Item: "
+		#define STR0008 " Sequencia: "
+		#define STR0009 "Aplicação de Acordo realizada com sucesso"
+		#define STR0010 "Sucesso"
+		#define STR0011 "Houve erro na aplicação de acordo"
+		#define STR0012 "Atenção"
+		#define STR0013 "Registro: "
+		#define STR0014 " --> Falha ao aplicar acordo"
+		#define STR0015 "Foi retornado o seguinte erro: "
+		#define STR0016 ' Referencia:'
+		#define STR0017 'Solução - '
+		#define STR0018 " --> Aplicado com sucesso"
+		#define STR0019 "Registro bloqueado com outro usuário"
+		#define STR0020 "Filial: "
+	#endif
+#endif

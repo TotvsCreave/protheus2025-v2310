@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de Follow-up Estadistico - Totales"
+	#define STR0002 "Totalizadores/Tipo Asientos"
+	#define STR0003 "Total"
+	#define STR0004 "Bajados"
+	#define STR0005 "Pendientes"
+	#define STR0006 "Fichas N.C."
+	#define STR0007 "Plan Accion"
+	#define STR0008 "Totales de Ficha de Ocurrencias/No-Conformidades por Mes (Ano"
+	#define STR0009 "M  E  S  E  S"
+	#define STR0010 "Total Ano"
+	#define STR0011 "Porcentaje Total"
+	#define STR0012 "Totais de Plan de Accion por Mes (Ano"
+	#define STR0013 "Ene."
+	#define STR0014 "Feb."
+	#define STR0015 "Mar."
+	#define STR0016 "Abr."
+	#define STR0017 "Mayo"
+	#define STR0018 "Jun."
+	#define STR0019 "Jul."
+	#define STR0020 "Agos."
+	#define STR0021 "Sept."
+	#define STR0022 "Oct."
+	#define STR0023 "Nov."
+	#define STR0024 "Dic."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Statistical Follow-up Report - Totals"
+		#define STR0002 "Totalizers/Entry Types"
+		#define STR0003 "Total"
+		#define STR0004 "Posted"
+		#define STR0005 "Pending"
+		#define STR0006 "N.C. Forms"
+		#define STR0007 "Action Plan"
+		#define STR0008 "Total of Occurrence Form/Non-Conformances by Month (Year"
+		#define STR0009 "M O N T H S"
+		#define STR0010 "Total of Year"
+		#define STR0011 "Total Percentage"
+		#define STR0012 "Total of Action Plan by Month (Year"
+		#define STR0013 "Jan."
+		#define STR0014 "Feb."
+		#define STR0015 "Mar."
+		#define STR0016 "Apr."
+		#define STR0017 "May"
+		#define STR0018 "Jun."
+		#define STR0019 "Jul."
+		#define STR0020 "Aug."
+		#define STR0021 "Sept."
+		#define STR0022 "Oct."
+		#define STR0023 "Nov."
+		#define STR0024 "Dec."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Relatório De Follow-up Estatístico - Totais", "Relatorio de Follow-up Estatistico - Totais" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Totalizadores/tipos Lactos", "Totalizadores/Tipos Lactos" )
+		#define STR0003 "Total"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Liquidados", "Baixados" )
+		#define STR0005 "Pendentes"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Fichas N.c.", "Fichas N.C." )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Plano Acção", "Plano Acao" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Totais de Ficha de Ocorrências/Não-Conformidades por Mês (Ano", "Totais de Ficha de Ocorrencias/Nao-Conformidades por Mes (Ano" )
+		#define STR0009 "M  E  S  E  S"
+		#define STR0010 "Total Ano"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Percentagem Total", "Percentual Total" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Totais de Plano de Acção por Mês (Ano", "Totais de Plano de Acao por Mes (Ano" )
+		#define STR0013 "Jan."
+		#define STR0014 "Fev."
+		#define STR0015 "Mar."
+		#define STR0016 "Abr."
+		#define STR0017 "Maio"
+		#define STR0018 "Jun."
+		#define STR0019 "Jul."
+		#define STR0020 "Agos."
+		#define STR0021 "Set."
+		#define STR0022 "Out."
+		#define STR0023 "Nov."
+		#define STR0024 "Dez."
+	#endif
+#endif

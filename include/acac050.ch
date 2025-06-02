@@ -1,0 +1,150 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Consulta"
+	#define STR0003 "Consulta de Notas/Media por Alumno"
+	#define STR0004 "Notas de las Actividades"
+	#define STR0005 "No se aplica"
+	#define STR0006 "Esta asignatura no se evaluara por actividades."
+	#define STR0007 "Problema"
+	#define STR0008 "La Evaluacion "
+	#define STR0009 " no existe en el archivo de evaluaciones."
+	#define STR0010 "Descripción del curso"
+	#define STR0011 "Nombre del Alumno"
+	#define STR0012 "Media Mat. Rep."
+	#define STR0013 "Média para disciplinas en DP"
+	#define STR0014 "El alumno no posee disciplinas en Dependencia"
+	#define STR0015 "¡ Aviso !"
+	#define STR0016 "Nota Act."
+	#define STR0017 "Notas y Faltas del Alumno"
+	#define STR0018 "¡No existe asiento de Notas y Faltas para el referido Alumno!"
+	#define STR0019 "¡El Alumno no tiene Asignacion activa!. ¡Regrese y seleccione otro Alumno!"
+	#define STR0020 "Materia"
+	#define STR0021 "Descripcion"
+	#define STR0022 "Faltas"
+	#define STR0023 "Promedio Final"
+	#define STR0024 "Situacion"
+	#define STR0025 "Evaluacion"
+	#define STR0026 "Actividad"
+	#define STR0027 "Descripcion"
+	#define STR0028 "Nota"
+	#define STR0029 "Peso"
+	#define STR0030 "Ano"
+	#define STR0031 "Per.Lectivo"
+	#define STR0032 "Nota Evaluaciones"
+	#define STR0033 "Nota Eval."
+	#define STR0034 "¡No existe asiento de Notas para el referido Alumno!"
+	#define STR0035 "Notas de las Evaluaciones"
+	#define STR0036 "Curso Asignat."
+	#define STR0037 "Grupo"
+	#define STR0038 "Habilitacion"
+	#define STR0039 "Materia Principal"
+	#define STR0040 "Abono/Faltas"
+	#define STR0041 "Justificacion"
+	#define STR0042 "¡Campo RA de rellenado Obligatorio !"
+	#define STR0043 "Ok"
+	#define STR0044 "Faltas y abonos"
+	#define STR0045 "Es obligatorio rellenar el campo de justificacion en la modificacion de faltas o abono para el alumno."
+	#define STR0046 "Es obligatorio rellenar el campo de justificacion cuando se modifique la nota del alumno."
+	#define STR0047 "El alumno no se encuentra mas activo en este curso"
+	#define STR0048 "No existe apuntamiento de notas y faltas para este alumno."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "Lookup"
+		#define STR0003 "Grades/Average Grades Lookup per Student"
+		#define STR0004 "Activity Grades"
+		#define STR0005 "It is not applicable"
+		#define STR0006 "This subject is not evaluated per activities."
+		#define STR0007 "Problem"
+		#define STR0008 "The evaluation "
+		#define STR0009 " is not found in the evaluation file."
+		#define STR0010 "Course Description"
+		#define STR0011 "Student´s Name"
+		#define STR0012 "Averg DPs"
+		#define STR0013 "Average for disciplines inDP"
+		#define STR0014 "Student doesnt have disciplines pending"
+		#define STR0015 "Warn.!"
+		#define STR0016 "Inv. Act."
+		#define STR0017 "Student Grades and Absences"
+		#define STR0018 "There is no Grade and Absence entry for the student referred!   "
+		#define STR0019 "The Student does not have active Allocation! Return and select another Student!"
+		#define STR0020 "Discipline"
+		#define STR0021 "Description"
+		#define STR0022 "Absens"
+		#define STR0023 "Final Average"
+		#define STR0024 "Status"
+		#define STR0025 "Assessmt."
+		#define STR0026 "Activity"
+		#define STR0027 "Description"
+		#define STR0028 "Note"
+		#define STR0029 "Weight"
+		#define STR0030 "Year"
+		#define STR0031 "Academic Per."
+		#define STR0032 "Evaluations Grade"
+		#define STR0033 "Eval.Grade"
+		#define STR0034 "No entry of Grades for the Student in question!"
+		#define STR0035 "Grades of Evaluations"
+		#define STR0036 "Course Disci."
+		#define STR0037 "Group"
+		#define STR0038 "Qualification"
+		#define STR0039 "Main Subject"
+		#define STR0040 "Bonus/Absences"
+		#define STR0041 "Justification"
+		#define STR0042 "SR field is mandatory"
+		#define STR0043 "Ok"
+		#define STR0044 "Absences and bonus"
+		#define STR0045 "Fill in the Justification field when changing absences or bonus for the student."
+		#define STR0046 "Fill in the Justification field when changing the student grade."
+		#define STR0047 "The student is no longer active in this course."
+		#define STR0048 "There is no annotation of grades of absences for this student."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Consulta"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Consulta De Notas/médias Por Aluno", "Consulta de Notas/Medias por Aluno" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Notas Das Actividades", "Notas das Atividades" )
+		#define STR0005 "Não se aplica"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Esta disciplina não é avaliada por actividades.", "Esta disciplina não é avaliada por atividades." )
+		#define STR0007 "Problema"
+		#define STR0008 "A avaliação "
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", " não existe no registo de avaliações.", " não existe no cadastro de avaliações." )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Descrição Do Curso", "Descrição do Curso" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Nome Do Aluno", "Nome do Aluno" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Média Dps", "Média DPs" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Média Para Disciplinas Em Dp", "Média para disciplinas em DP" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "O Aluno Não Possui Disciplinas Em Dependência", "O aluno não possui disciplinas em Dependência" )
+		#define STR0015 "Aviso!"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Nota Actv.", "Nota Atv." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Notas E Faltas Do Aluno", "Notas e Faltas do Aluno" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Não existe movimento de notas e faltas para o aluno em questão !", "Não existe lançamento de Notas e Faltas para o Aluno em questão !" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "O Aluno Não Possui Alocação Activa! Retornar E Seleccionar Outro Aluno!", "O Aluno não possui Alocação ativa! Retorne e selecione outro Aluno!" )
+		#define STR0020 "Disciplina"
+		#define STR0021 "Descrição"
+		#define STR0022 "Faltas"
+		#define STR0023 "Média Final"
+		#define STR0024 "Situação"
+		#define STR0025 "Avaliação"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Actividade", "Atividade" )
+		#define STR0027 "Descrição"
+		#define STR0028 "Nota"
+		#define STR0029 "Peso"
+		#define STR0030 "Ano"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Per.lectivo", "Per.Letivo" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Nota avaliações", "Nota Avaliações" )
+		#define STR0033 "Nota Aval."
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Não existe movimento de notas para o aluno em questão!", "Não existe lançamento de Notas para o Aluno em questão!" )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Notas das avaliações", "Notas das Avaliações" )
+		#define STR0036 "Curso Discip."
+		#define STR0037 "Turma"
+		#define STR0038 "Habilitação"
+		#define STR0039 "Disciplina Pai"
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Abono/faltas", "Abono/Faltas" )
+		#define STR0041 "Justificativa"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Campo ra de preenchimento obrigatório !", "Campo RA de preenchimento Obrigatório !" )
+		#define STR0043 "Ok"
+		#define STR0044 "Faltas e abonos"
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "E obrigatorio o preenchimento do campo de justificativa na alteração de faltas ou abono para o aluno.", "É obrigatório o preenchimento do campo de justificativa na alteração de faltas ou abono para o aluno." )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "E obrigatorio o preenchimento do campo de justificativa na alteração da nota do aluno.", "É obrigatório o preenchimento do campo de justificativa na alteração da nota do aluno." )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "O aluno não se encontra mais activo neste curso", "O aluno não se encontra mais ativo neste curso" )
+		#define STR0048 "Não existe apontamento de notas e faltas para este aluno."
+	#endif
+#endif

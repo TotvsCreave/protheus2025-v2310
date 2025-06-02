@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Planilla"
+	#define STR0002 "Manejar"
+	#define STR0003 "Ejecutar"
+	#define STR0004 "Nuevo Modelo"
+	#define STR0005 "Confirmar"
+	#define STR0006 "Planilla Precio"
+	#define STR0007 "Exportar a Excel"
+	#define STR0008 "Acciones"
+	#define STR0009 "Consulta Estandar"
+	#define STR0010 "Codigo"
+	#define STR0011 "Descripcion"
+	#define STR0012 "Revision"
+	#define STR0013 "Salir"
+	#define STR0014 'ASIGNACIÓN DE EQUIPAMIENTOS'
+	#define STR0015 "¿Copiar la ejecución de la Planilla en todos los lugares de atención que utilizan este mismo facilitador? "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Spreadsheet"
+		#define STR0002 "Manipulate"
+		#define STR0003 "Run"
+		#define STR0004 "New Model"
+		#define STR0005 "Confirm"
+		#define STR0006 "Price Spreadsheet"
+		#define STR0007 "Export to Excel"
+		#define STR0008 "Actions"
+		#define STR0009 "Default Query"
+		#define STR0010 "Code"
+		#define STR0011 "Description"
+		#define STR0012 "Review"
+		#define STR0013 "Exit"
+		#define STR0014 'EQUIPMENT RENTAL'
+		#define STR0015 "Copy spreadsheet execution to all service location that use the same facilitator? "
+	#else
+		#define STR0001 "Planilha"
+		#define STR0002 "Manipular"
+		#define STR0003 "Executar"
+		#define STR0004 "Novo Modelo"
+		#define STR0005 "Confirmar"
+		#define STR0006 "Planilha Preço"
+		#define STR0007 "Exportar para Excel"
+		#define STR0008 "Ações"
+		#define STR0009 "Consulta Padrão"
+		#define STR0010 "Código"
+		#define STR0011 "Descrição"
+		#define STR0012 "Revisão"
+		#define STR0013 "Sair"
+		#define STR0014 'LOCAÇÃO DE EQUIPAMENTOS'
+		#define STR0015 "Replicar a execução da Planilha para todos locais de atendimento que utilizam este mesmo facilitador? "
+	#endif
+#endif

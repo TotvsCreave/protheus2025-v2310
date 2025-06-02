@@ -1,0 +1,120 @@
+#ifdef SPANISH
+	#define STR0001 "Empresa"
+	#define STR0002 "Sucursal"
+	#define STR0003 "Configuracion no valida de Sucursal"
+	#define STR0004 "Verificar Empresa/Sucursal en los Jobs"
+	#define STR0005 "Iniciando el Workflow"
+	#define STR0006 "Fecha"
+	#define STR0007 "Hora"
+	#define STR0008 "No se encontro el archivo"
+	#define STR0009 "El conductor Sr."
+	#define STR0010 "cometio la siguiente infraccion"
+	#define STR0011 "Si el infractor desea reclamar por la multa, el mismo debera entrar en contacto"
+	#define STR0012 "con la Gestion de Riesgos para las debidas orientaciones"
+	#define STR0013 "Fecha Infraccion"
+	#define STR0014 "Horario"
+	#define STR0015 "Local"
+	#define STR0016 "Municipio"
+	#define STR0017 "UF"
+	#define STR0018 "Placa/Vehiculo"
+	#define STR0019 "Acto de Infraccion"
+	#define STR0020 "Infraccion"
+	#define STR0021 "Descripcion"
+	#define STR0022 "Observacion"
+	#define STR0023 "Puntos"
+	#define STR0024 "Aviso de Inclusion de Multa"
+	#define STR0025 "(INICIO)Proceso: "
+	#define STR0026 "Aviso de Inclusion de Multa enviado para"
+	#define STR0027 "Atención"
+	#define STR0028 "Verifique los parámetros de configuración."
+	#define STR0029 "¡Servidor SMTP no informado! Por favor, verifique parámetro MV_RELSERV. ¡Envío de e-mail anulado!"
+	#define STR0030 "Verifique los parámetros de configuración: MV_RELAUSR y MV_RELAUTH. ¡Envío de e-mail anulado!"
+	#define STR0031 "¡Problemas en el envío de Workflow!"
+	#define STR0032 "Destinatario del e-mail no informado. Por favor, verifique el parámetro MV_RELACNT ¡Envío de e-mail anulado!"
+	#define STR0033 "NOTIFICACIÓN"
+	#define STR0034 "Aviso de inclusión de notificación enviado a"
+	#define STR0035 "Aviso de inclusión de notificación"
+	#define STR0036 "Si el infractor desea recurrir de la notificación, este debe entrar en contacto"
+	#define STR0037 "El conductor no fue informado cuando cometió la infracción"
+	#define STR0038 "¡El Workflow no se envió, porque el destinatario del E-mail no se informó! Por favor, verifique el parámetro MV_NGRESMU."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Company"
+		#define STR0002 "Branch"
+		#define STR0003 "Branch configuration is invalid"
+		#define STR0004 "Check Company/Branch in Jobs"
+		#define STR0005 "Starting Workflow"
+		#define STR0006 "Date"
+		#define STR0007 "Time"
+		#define STR0008 "File not found"
+		#define STR0009 "Driver"
+		#define STR0010 "committed the following violation"
+		#define STR0011 "If the violator desires to appeal against the fine, it is necessary to contact "
+		#define STR0012 "the Risk Management for further instructions."
+		#define STR0013 "Violation Date"
+		#define STR0014 "Time"
+		#define STR0015 "Location"
+		#define STR0016 "City"
+		#define STR0017 "ST"
+		#define STR0018 "Plate/Vehicle"
+		#define STR0019 "Violation Report"
+		#define STR0020 "Violation"
+		#define STR0021 "Description"
+		#define STR0022 "Notes"
+		#define STR0023 "Score"
+		#define STR0024 "Notice of Fine Inclusion"
+		#define STR0025 "(START)Process: "
+		#define STR0026 "Notice of Fine Inclusion sent to"
+		#define STR0027 "Attention"
+		#define STR0028 "Check configuration parameters."
+		#define STR0029 "SMTP Server not entered! Please, check parameter MV_RESERV. Email sending canceled!"
+		#define STR0030 "Check e-mail configuration parameters. MV_RELAUSR e MV_RELAUTH. Email sending canceled!"
+		#define STR0031 "Problems in Workflow dispatch."
+		#define STR0032 "E-mail addressee not entered. Please, check parameter MV_RELACNT Email sending canceled!"
+		#define STR0033 "NOTIFICATION"
+		#define STR0034 "Notice of inclusion of notification send to"
+		#define STR0035 "Notice of Inclusion of Notification"
+		#define STR0036 "If the offender wishes to appeal the notification, he must contact"
+		#define STR0037 "The driver was not entered in infringement"
+		#define STR0038 "Workflow not sent, as recipient of e-mail was not informed! Please, check parameter MV_NGRESMU."
+	#else
+		#define STR0001 "Empresa"
+		#define STR0002 "Filial"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Configuração inválida de filial", "Configuração invalida de Filial" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Verificar Empresa/filial Nos Jobs", "Verificar Empresa/Filial nos Jobs" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "A Iniciar O Procedimento", "Iniciando o Workflow" )
+		#define STR0006 "Data"
+		#define STR0007 "Hora"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Não foi encontrado o ficheiro", "Nao foi encontrado o arquivo" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "O Condutor Sr.", "O motorista Sr." )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Cometeu o seguinte acto infraccional", "cometeu o seguinte ato infracional" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Caso o infractor queira recorrer da multa, o mesmo deverá entrar em contacto", "Caso o infrator queira recorrer da multa, o mesmo deverá entrar em contato" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Com a gestão de riscos para as devidas orientações", "com a Gestão de Riscos para as devidas orientações" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Data Da Infracção", "Data Infração" )
+		#define STR0014 "Horário"
+		#define STR0015 "Local"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Concelho", "Município" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Uf", "UF" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Registo/veículo", "Placa/Veículo" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Auto De Infracção", "Auto de Infração" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Infracção", "Infração" )
+		#define STR0021 "Descrição"
+		#define STR0022 "Observação"
+		#define STR0023 "Pontos"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Aviso De Inclusão De Multa", "Aviso de Inclusão de Multa" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "(início)processo: ", "(INICIO)Processo: " )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Aviso de inclusão de multa enviado para", "Aviso de Inclusão de Multa enviado para" )
+		#define STR0027 "Atenção"
+		#define STR0028 "Verifique os parâmetros de configuração."
+		#define STR0029 "Servidor SMTP não informado! Favor, verificar parâmetro MV_RELSERV. Envio do e-mail cancelado!"
+		#define STR0030 "Verifique os parâmetros de configuração: MV_RELAUSR e MV_RELAUTH. Envio do e-mail cancelado!"
+		#define STR0031 "Problema no envio de Workflow!"
+		#define STR0032 "Destinatário do E-mail não informado! Favor, verificar parâmetro MV_RELACNT. Envio do e-mail cancelado!"
+		#define STR0033 "NOTIFICACAO"
+		#define STR0034 "Aviso de Inclusão de Notificação enviado para"
+		#define STR0035 "Aviso de Inclusão de Notificação"
+		#define STR0036 "Caso o infrator queira recorrer da notificação, o mesmo deverá entrar em contato"
+		#define STR0037 "O motorista não foi informado no ato infracional"
+		#define STR0038 "Workflow não foi enviado, pois o destinatário do E-mail não informado! Favor, verificar parâmetro MV_NGRESMU."
+	#endif
+#endif

@@ -1,0 +1,81 @@
+#ifdef SPANISH
+	#define STR0001 "Lugares Evaluados en el Laudo"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Laudo vs. Plan Emergencial"
+	#define STR0005 "Laudo"
+	#define STR0006 "Nombre Laudo"
+	#define STR0007 "Planes Emerg."
+	#define STR0008 "Cod. Plan"
+	#define STR0009 "Desc. Plan Emerg."
+	#define STR0010 "Laudo vs. Plan Emergencia"
+	#define STR0011 "No Existen planes registrados"
+	#define STR0012 "ATENCION"
+	#define STR0013 "Estos son los planes registrados en el sistema"
+	#define STR0014 "Seleccione aquellos que fueron evaluados en el laudo."
+	#define STR0015 "Buscando Planes..."
+	#define STR0016 "Espere"
+	#define STR0017 "Planes de Emergencia"
+	#define STR0018 "Modulo"
+	#define STR0019 "Codigo+Descripcion"
+	#define STR0020 "Descripcion+Codigo"
+	#define STR0021 "Marcados"
+	#define STR0022 "ATENCION"
+	#define STR0023 "Valor no encontrado."
+	#define STR0024 "Indice no encontrado."
+	#define STR0025 "Contacte el administrador del sistema."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Locations Evaluated in the Report"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Report x Emerg. Plan"
+		#define STR0005 "Report"
+		#define STR0006 "Report Name"
+		#define STR0007 "Emerg. Plan"
+		#define STR0008 "Plan Code"
+		#define STR0009 "Desc. Emerg. Plan"
+		#define STR0010 "Report x Emergency Plan"
+		#define STR0011 "No plans registered"
+		#define STR0012 "ATTENTION"
+		#define STR0013 "They are plans registered in the system"
+		#define STR0014 "Select those ones evaluated in the report."
+		#define STR0015 "Searching plans..."
+		#define STR0016 "Wait"
+		#define STR0017 "Emergency Plans"
+		#define STR0018 "Module"
+		#define STR0019 "Code+Description"
+		#define STR0020 "Description+Code"
+		#define STR0021 "Checked"
+		#define STR0022 "ATTENTION"
+		#define STR0023 "Value not found."
+		#define STR0024 "Index not found."
+		#define STR0025 "Contact the system administrator."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Locais avaliados no laudo", "Locais Avaliados no Laudo" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Laudo x Plano Emerg."
+		#define STR0005 "Laudo"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Nome laudo", "Nome Laudo" )
+		#define STR0007 "Planos Emerg."
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Cód. Plano", "Cod. Plano" )
+		#define STR0009 "Desc. Plano Emerg."
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Laudo x Plano emergencial", "Laudo x Plano Emergencial" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Não existem planos registados", "Não existem planos cadastrados" )
+		#define STR0012 "ATENÇÃO"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Estes são os planos registados no sistema", "Estes são os planos cadastrados no sistema" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Seleccione aqueles que foram avaliados no laudo.", "Selecione aqueles que foram avaliados no laudo." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "A buscar planos...", "Buscando Planos..." )
+		#define STR0016 "Aguarde"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Planos emergenciais", "Planos Emergenciais" )
+		#define STR0018 "Módulo"
+		#define STR0019 "Código+Descrição"
+		#define STR0020 "Descrição+Código"
+		#define STR0021 "Marcados"
+		#define STR0022 "ATENÇÃO"
+		#define STR0023 "Valor não encontrado."
+		#define STR0024 "Índice não encontrado."
+		#define STR0025 "Contate o administrador do sistema."
+	#endif
+#endif

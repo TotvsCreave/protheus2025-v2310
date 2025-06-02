@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Gestion del Capital Humano"
+	#define STR0002 "Login: "
+	#define STR0003 "Matrícula: "
+	#define STR0004 "Portal Vida laboral"
+	#define STR0005 "Notificaciones"
+	#define STR0006 "Evaluación"
+	#define STR0007 "Fecha"
+	#define STR0008 "Sin notificaciones"
+	#define STR0009 "Ahora usted puede utilizar recursos de su RRHH Online directamente de su smartphone. ¡Descargue ahora la aplicación TOTVS Mi RRHH, disponible en las plataformas Android e IOS!"
+	#define STR0010 "No muestre nuevamente."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Human Capital Management"
+		#define STR0002 "Login: "
+		#define STR0003 "Registration: "
+		#define STR0004 "Functional Life Portal"
+		#define STR0005 "Notification"
+		#define STR0006 "Evaluation"
+		#define STR0007 "Date"
+		#define STR0008 "Without notifications"
+		#define STR0009 "Now you can use HR Online features on your phone. Download the TOTVS My HR application available for Android and iOS."
+		#define STR0010 "Do not show it again."
+	#else
+		#define STR0001 "Gestão do Capital Humano"
+		#define STR0002 "Login: "
+		#define STR0003 "Matrícula: "
+		#define STR0004 "Portal Vida Funcional"
+		#define STR0005 "Notificações"
+		#define STR0006 "Avaliação"
+		#define STR0007 "Data"
+		#define STR0008 "Sem notificações"
+		#define STR0009 "Agora você já pode usar recursos do seu RH Online direto do seu smartphone. Baixe agora o aplicativo TOTVS Meu RH, disponível nas plataformas Android e IOS!"
+		#define STR0010 "Não exibir novamente."
+	#endif
+#endif

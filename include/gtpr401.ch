@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Líneas por escala"
+	#define STR0002 "Sector"
+	#define STR0003 "Desc. Sector"
+	#define STR0004 "Escala"
+	#define STR0005 "Línea"
+	#define STR0006 "Desc. Línea"
+	#define STR0007 "Vehículos"
+	#define STR0008 "Utilización"
+	#define STR0009 "KM acumula"
+	#define STR0010 "Total de vehículos"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Lines by Scale"
+		#define STR0002 "Sector"
+		#define STR0003 "Desc. Sector"
+		#define STR0004 "Scale"
+		#define STR0005 "Row"
+		#define STR0006 "Desc. Row"
+		#define STR0007 "Vehicles"
+		#define STR0008 "Use"
+		#define STR0009 "Accumul. Miles"
+		#define STR0010 "Vehicle Total"
+	#else
+		#define STR0001 "Linhas por Escala"
+		#define STR0002 "Setor"
+		#define STR0003 "Desc. Setor"
+		#define STR0004 "Escala"
+		#define STR0005 "Linha"
+		#define STR0006 "Desc. Linha"
+		#define STR0007 "Veiculos"
+		#define STR0008 "Utilizacao"
+		#define STR0009 "Km Acumula"
+		#define STR0010 "Total de Veiculos"
+	#endif
+#endif

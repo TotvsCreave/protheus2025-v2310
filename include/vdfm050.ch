@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Aviso de Plazos para que sea vitalicio"
+	#define STR0002 "Esta rutina tiene como objetivo enviar un único email con avisos de plazo para presentación del informe para la vitalización."
+	#define STR0003 "El email se enviará a las direcciones que constan en el parámetro MV_VDFVIT2."
+	#define STR0004 "¿Realmente desea continuar?"
+	#define STR0005 "Atención"
+	#define STR0006 "No existen destinatarios informados en el parámetro MV_VDFVIT2."
+	#define STR0007 "No existen miembros dentro del plazo para envío de email de vitalización."
+	#define STR0008 "Email de vitalización enviado con "
+	#define STR0009 "avisos de solicitudes de informes."
+	#define STR0010 "No existe mensaje estándar en el parámetro MV_VDFVIT2."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Warning of Terms for Life Tenancy"
+		#define STR0002 "The purpose of this routine is to send a single email notifying the stated period to turn in the report for the Lifelong Position."
+		#define STR0003 "The email is sent to the addresses found in parameter MV_VDFVIT2."
+		#define STR0004 "Do you really want to continue?"
+		#define STR0005 "Attention"
+		#define STR0006 "No addressees entered in parameter MV_VDFVIT2."
+		#define STR0007 "No members found within the stated period to send the Lifelong Position email."
+		#define STR0008 "Lifelong Position email sent containing"
+		#define STR0009 "report request notices."
+		#define STR0010 "No default message found in parameter MV_VDFVIT2."
+	#else
+		#define STR0001 "Aviso de Prazos para Vitaliciamento"
+		#define STR0002 "Esta rotina tem o objetivo de enviar um único email contendo avisos de prazo para apresentação do relatório para o vitaliciamento."
+		#define STR0003 "O email será enviado para os endereços constantes no parâmetro MV_VDFVIT2."
+		#define STR0004 "Deseja realmente continuar ?"
+		#define STR0005 "Atenção"
+		#define STR0006 "Não há destinatários informados no parâmetro MV_VDFVIT2."
+		#define STR0007 "Não há membros dentro do prazo para envio de email de vitaliciamento."
+		#define STR0008 "Email de Vitaliciamento enviado contendo"
+		#define STR0009 "avisos de solicitações de relatórios."
+		#define STR0010 "Não há mensagem padrão no parâmetro MV_VDFVIT2."
+	#endif
+#endif

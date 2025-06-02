@@ -1,0 +1,42 @@
+#ifdef SPANISH
+	#define STR0001 "Transferiendo "
+	#define STR0002 "Protheus Crystal Integration"
+	#define STR0003 "¡La integración con el Crystal en el SmartClient HTML está disponible solamente para utilización en el servidor!"
+	#define STR0004 "¡Informe no encontrado en el Servidor!"
+	#define STR0005 "¡El archivo CRYSINI no esta configurado en el servidor!"
+	#define STR0006 "¡El archivo CRWINI no esta configurado en el servidor!"
+	#define STR0007 "¡La clave CRWINSTALLPATH no esta configurada en el servidor!"
+	#define STR0008 "Archivo de integracion con el Crystal Reports actualizado con exito en el cliente: "
+	#define STR0009 "¡El archivo SGCRYS32 no se puede actualizar en el cliente!"
+	#define STR0010 "¡No se pudo copiar el informe para la estacion!"
+	#define STR0011 "¡No se pudo ejecutar el informe solicitado!"
+	#define STR0012 "El parametro de tablas de excepcion informado debe ser del tipo Array."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Transferring "
+		#define STR0002 "Protheus Crystal Integration"
+		#define STR0003 "Integration with Crystal in SmartClient HTML is available only to use in server!"
+		#define STR0004 "Report was not found in the server!"
+		#define STR0005 "File CRYSINI was not configured in the server!"
+		#define STR0006 "File CRWINI was not configured in the server!"
+		#define STR0007 "Key CRWINSTALLPATH was not configured in the server!"
+		#define STR0008 "Integration with Crystal Reports file was successfully updated in the customer: "
+		#define STR0009 "File SGCRYS32 was not updated in the customer!"
+		#define STR0010 "Report could not be copied to the station!"
+		#define STR0011 "Requested report could not be performed!"
+		#define STR0012 "The Parameter of exception tables informed must be of Array type."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "A transferir ", "Transferindo " )
+		#define STR0002 "Protheus Crystal Integration"
+		#define STR0003 "A Integração com o Crystal no SmartClient HTML está disponível apenas para utilização em servidor!"
+		#define STR0004 "Relatório não encontrado no servidor!"
+		#define STR0005 "O arquivo CRYSINI não está configurado no servidor!"
+		#define STR0006 "O arquivo CRWINI não está configurado no servidor!"
+		#define STR0007 "A chave CRWINSTALLPATH não está configurada no servidor!"
+		#define STR0008 "Arquivo de integração com o Crystal Reports atualizado com sucesso no cliente: "
+		#define STR0009 "O arquivo SGCRYS32 não pôde ser atualizado no cliente!"
+		#define STR0010 "Não foi possível copiar o relatório para a estação!"
+		#define STR0011 "Não foi possível executar o relatório solicitado!"
+		#define STR0012 "O Parâmetro de tabelas de exceção informado deve ser do tipo Array."
+	#endif
+#endif

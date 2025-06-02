@@ -1,0 +1,90 @@
+#ifdef SPANISH
+	#define STR0001 "Informe IBAMA de Materia Prima e Insumos"
+	#define STR0002 "SGAR280"
+	#define STR0003 "A rayas"
+	#define STR0004 "Administracion"
+	#define STR0005 "Informe IBAMA - Materia Prima e Insumos"
+	#define STR0006 "Procesando Registros..."
+	#define STR0007 "Ano   Cod. ProdList    Descr ProdList                 Unidad"
+	#define STR0008 "Espere"
+	#define STR0009 "Procesando Registros"
+	#define STR0010 "_______________________________________________________________________________________________________________________Saldo Consumido (por Un. ProdList):"
+	#define STR0011 "Desc Producto                                         Unidad c        Consumos           Dev. Consumos        Sld. Consumos    Procedencia  Tipo Almacenamiento      Origen"
+	#define STR0012 "No existen datos para elaborar el informe."
+	#define STR0013 "CONSUMO"
+	#define STR0014 "DEVCONSUMO"
+	#define STR0015 "SALDOCONS"
+	#define STR0016 "Saldo Consumido (por Un. ProdList)"
+	#define STR0017 "Ano"
+	#define STR0018 "Cod. ProdList"
+	#define STR0019 "Descr ProdList"
+	#define STR0020 "Un."
+	#define STR0021 "Descr Producto"
+	#define STR0022 "Consumos"
+	#define STR0023 "Dev. Consumos"
+	#define STR0024 "Sald. Consumos"
+	#define STR0025 "Procedencia"
+	#define STR0026 "Tipo almacenamiento"
+	#define STR0027 "Origen"
+	#define STR0028 "¿Ano ?"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "IBAMA Report of Raw Material and Inputs"
+		#define STR0002 "SGAR280"
+		#define STR0003 "Z-form"
+		#define STR0004 "Management"
+		#define STR0005 "IBAMA Report - Raw Materials and Intermediate Products"
+		#define STR0006 "Processing records..."
+		#define STR0007 "Year  Code ProdList    Descr ProdList                 Unit"
+		#define STR0008 "Wait"
+		#define STR0009 "Processing records"
+		#define STR0010 "_______________________________________________________________________________________________________________________Cons.Balance (per Un. ProdList):"
+		#define STR0011 "Product Descr                                         Unit         Consumption           Dev. Consumption        Consumption Bal.    Provenance  Storage Type      Origin"
+		#define STR0012 "There are no data to generate the report."
+		#define STR0013 "CONSUMPTION"
+		#define STR0014 "DEVCONSUMPTION"
+		#define STR0015 "CONSBALNCE"
+		#define STR0016 "Consumption Blc (per Un. ProdList)"
+		#define STR0017 "Year"
+		#define STR0018 "Code ProdList)"
+		#define STR0019 "Descr ProdList"
+		#define STR0020 "Un."
+		#define STR0021 "Product Descr."
+		#define STR0022 "Consumption"
+		#define STR0023 "Dev. Consumption"
+		#define STR0024 "Blc. Consumption"
+		#define STR0025 "Provenance"
+		#define STR0026 "Storage Type"
+		#define STR0027 "Source"
+		#define STR0028 "Year?"
+	#else
+		#define STR0001 "Relatório IBAMA de Matéria Prima e Insumos"
+		#define STR0002 "SGAR280"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0005 "Relatório IBAMA - Matéria Prima e Insumos"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "A processar registos...", "Processando Registros..." )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Ano   Cód. ProdList    Desc.ProdList                 Unidade", "Ano   Cod. ProdList    Descr ProdList                 Unidade" )
+		#define STR0008 "Aguarde"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "A processar registos", "Processando Registros" )
+		#define STR0010 "_______________________________________________________________________________________________________________________Saldo Consumido (por Un. ProdList):"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Desc. Artigo                                          Unidade         Consumos           Dev. Consumos        Sld. Consumos    Procedência  Tipo Armazenamento      Origem", "Descr Produto                                         Unidade         Consumos           Dev. Consumos        Sld. Consumos    Procedência  Tipo Armazenamento      Origem" )
+		#define STR0012 "Não existem dados para montar o relatório."
+		#define STR0013 "CONSUMO"
+		#define STR0014 "DEVCONSUMO"
+		#define STR0015 "SALDOCONS"
+		#define STR0016 "Saldo Consumido (por Un. ProdList)"
+		#define STR0017 "Ano"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Cód. ProdList", "Cod. ProdList" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Desc. ProdList", "Descr ProdList" )
+		#define STR0020 "Un."
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Desc. Artigo", "Descr Produto" )
+		#define STR0022 "Consumos"
+		#define STR0023 "Dev. Consumos"
+		#define STR0024 "Sld. Consumos"
+		#define STR0025 "Procedência"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Tipo armazenamento", "Tipo Armazenamento" )
+		#define STR0027 "Origem"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Ano?", "Ano ?" )
+	#endif
+#endif

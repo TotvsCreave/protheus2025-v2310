@@ -1,0 +1,153 @@
+#ifdef SPANISH
+	#define STR0001 "Informe del resultado de los examenes por centro de costos        "
+	#define STR0002 "Demostrativo de resultados de exames realizados dentro de un      "
+	#define STR0003 "periodo, clasificados por Centro de Costo y resultado del examen. "
+	#define STR0004 "A Rayas"
+	#define STR0005 "Administracion"
+	#define STR0006 "Resultado de Examenes Por C. de Costo"
+	#define STR0007 "Centro de Costo          Descripcion"
+	#define STR0008 "Admis."
+	#define STR0009 "Period"
+	#define STR0010 "Cambio"
+	#define STR0011 "Retorn"
+	#define STR0012 "Despid"
+	#define STR0013 "       Examen       Descripcion                                Resultado  Descripcion                                 Matricula  Funcionario                               Realizacion  Modalidad"
+	#define STR0014 "ANULADO POR EL OPERADOR"
+	#define STR0015 "Cliente..: "
+	#define STR0016 "Codigo"
+	#define STR0017 "Centro de Costo"
+	#define STR0018 "Exam."
+	#define STR0019 "Descripcion"
+	#define STR0020 "Obs.:"
+	#define STR0021 "Resultado"
+	#define STR0022 "Matricula"
+	#define STR0023 "Empleado"
+	#define STR0024 "Realizac."
+	#define STR0025 "Modalid."
+	#define STR0026 "Cliente"
+	#define STR0027 "Nomb"
+	#define STR0028 "Observac."
+	#define STR0029 "¿De Cliente ?"
+	#define STR0030 "Tienda"
+	#define STR0031 "¿A Cliente ?"
+	#define STR0032 "Codigo del cliente. Elcampo puede permanecer vacio para considerar desde el primer codigo."
+	#define STR0033 "Codigo de la tienda del cliente. El campo puede permanecer vacio para considerar desde el primer codigo."
+	#define STR0034 "Codigo del cliente. El campo puede rellenarse con la letra Z hasta el final para considerar el ultimo codigo."
+	#define STR0035 "Codigo de la tienda del cliente. El campo puede rellenarse con la letra Z hasta el final para considerar el ultimo codigo."
+	#define STR0036 "Examenes"
+	#define STR0037 "Observacion: "
+	#define STR0038 "No hay nada para imprimir en el informe."
+	#define STR0039 "Cliente/Tienda: "
+	#define STR0040 "¿De Centro de Costo ?"
+	#define STR0041 "¿A Centro de Costo ?"
+	#define STR0042 "Listar Obs. ¿Examenes ?"
+	#define STR0043 "¿Medicina ?"
+	#define STR0044 "¿A Fecha Resultado     ?"
+	#define STR0045 "¿De Fecha Resultado ?"
+	#define STR0046 "¿A Resultado Examen ?"
+	#define STR0047 "¿De Resultado Examen ?"
+	#define STR0048 "¿A Examen ?"
+	#define STR0049 "¿De Examen ?"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of exams result per Cost Center                               "
+		#define STR0002 "Demonstrative of exams results executed within a                     "
+		#define STR0003 "period  classified per Cost Center and exam result.                  "
+		#define STR0004 "Z. Form"
+		#define STR0005 "Management   "
+		#define STR0006 "Exam results by cost center             "
+		#define STR0007 "Cost Center          Description"
+		#define STR0008 "Admiss"
+		#define STR0009 "Period"
+		#define STR0010 "Change"
+		#define STR0011 "Return"
+		#define STR0012 "Dismis"
+		#define STR0013 "       Exam       Description                            Result     Description                            Employee Registration                               Realization  Class"
+		#define STR0014 "CANCELLED BY THE OPERATOR"
+		#define STR0015 "Customer.: "
+		#define STR0016 "Code  "
+		#define STR0017 "Cost center    "
+		#define STR0018 "Exam "
+		#define STR0019 "Description"
+		#define STR0020 "Note:"
+		#define STR0021 "Result"
+		#define STR0022 "Registr. "
+		#define STR0023 "Employee   "
+		#define STR0024 "Performance"
+		#define STR0025 "Class   "
+		#define STR0026 "Customer"
+		#define STR0027 "Name"
+		#define STR0028 "Note      "
+		#define STR0029 "From Customer? "
+		#define STR0030 "Unit"
+		#define STR0031 "To Customer? "
+		#define STR0032 "Customer code. Keep the field in blank if you want to consider the first code."
+		#define STR0033 "Customer unit code. Keep the field in blank if you want to consider the first code."
+		#define STR0034 "Customer code. Fill in the field with Z up to the end to consider the last code."
+		#define STR0035 "Customer unit code. Fill in the field with Z up to the end to consider the last code."
+		#define STR0036 "Exams"
+		#define STR0037 "Note:       "
+		#define STR0038 "Nothing to print in the report."
+		#define STR0039 "Customer/Unit:"
+		#define STR0040 "From Cost Center?"
+		#define STR0041 "To Cost Center?"
+		#define STR0042 "List Obs. Exams?"
+		#define STR0043 "Medicine?"
+		#define STR0044 "To Result Date?"
+		#define STR0045 "From Result Date?"
+		#define STR0046 "To Exam Result?"
+		#define STR0047 "From Exam Result?"
+		#define STR0048 "To Exam?"
+		#define STR0049 "From Exam?"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Relatório do resultado dos exames por centro de custo                ", "Relatorio do Resultado dos exames por Centro de Custo                " )
+		#define STR0002 "Demonstrativo dos resultados dos exames realizados dentro de um      "
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Período classificados por centro de custo e resultado do exame.      ", "periodo classificados por Centro de Custo e resultado do exame.      " )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Resultado Dos Exames Por Centro De Custo", "Resultado dos Exames Por Centro de Custo" )
+		#define STR0007 "Centro de Custo          Descrição"
+		#define STR0008 "Admiss"
+		#define STR0009 "Period"
+		#define STR0010 "Mudanc"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Retorno", "Retorn" )
+		#define STR0012 "Demiss"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "       Exame       Descrição                                 Resultado  Descrição                                 Matrícula  Colaborador                               Realização  Natureza", "       Exame       Descrição                                 Resultado  Descrição                                 Matrícula  Funcionário                               Realização  Natureza" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Cancelado Pelo Operador", "CANCELADO PELO OPERADOR" )
+		#define STR0015 "Cliente..: "
+		#define STR0016 "Código"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Centro De Custo", "Centro de Custo" )
+		#define STR0018 "Exame"
+		#define STR0019 "Descrição"
+		#define STR0020 "Obs.:"
+		#define STR0021 "Resultado"
+		#define STR0022 "Matrícula"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Empregado", "Funcionário" )
+		#define STR0024 "Realização"
+		#define STR0025 "Natureza"
+		#define STR0026 "Cliente"
+		#define STR0027 "Nome"
+		#define STR0028 "Observação"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "De cliente ?", "De Cliente ?" )
+		#define STR0030 "Loja"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Até cliente ?", "Até Cliente ?" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Código  do cliente. o campo pode permanecer vazio para considerar desde o primeiro código.", "Código do cliente. O campo pode permanecer vazio para considerar desde o primeiro código." )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Código  da loja do cliente. o campo pode permanecer vazio para considerar desde o primeiro código.", "Código da loja do cliente. O campo pode permanecer vazio para considerar desde o primeiro código." )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Código  do cliente. o campo pode ser preenchido com a letra z até  o final para considerar o último código.", "Código do cliente. O campo pode ser preenchido com a letra Z até o final para considerar o último código." )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Código  da loja do cliente. o campo pode ser preenchido com a letra z até  o final para considerar o último código.", "Código da loja do cliente. O campo pode ser preenchido com a letra Z até o final para considerar o último código." )
+		#define STR0036 "Exames"
+		#define STR0037 "Observação: "
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Não existe informação para imprimir no relatório.", "Não há nada para imprimir no relatório." )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Cliente/loja: ", "Cliente/Loja: " )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "De Centro de Custo?", "De  Centro de Custo ?" )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Até Centro de Custo?", "Ate Centro de Custo ?" )
+		#define STR0042 "Listar Obs. Exames ?"
+		#define STR0043 "Medicina ?"
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Até Data Resultado ?", "Ate Data Resultado ?" )
+		#define STR0045 "De  Data Resultado ?"
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Até Resultado Exame ?", "Ate Resultado Exame ?" )
+		#define STR0047 "De  Resultado Exame ?"
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Até Exame ?", "Ate Exame ?" )
+		#define STR0049 "De  Exame ?"
+	#endif
+#endif

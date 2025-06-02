@@ -1,0 +1,102 @@
+#ifdef SPANISH
+	#define STR0001 "Comparacion Facturacion vs. Pagos"
+	#define STR0002 "¿Cliente           ?"
+	#define STR0003 "¿Tienda            ?"
+	#define STR0004 "¿Pedido Facturacion?"
+	#define STR0005 "¿Tipo informe      ?"
+	#define STR0006 "Analitico"
+	#define STR0007 "Sintetico"
+	#define STR0008 "¿Informar Total por?"
+	#define STR0009 "Empresa"
+	#define STR0010 "Unidad y Empr."
+	#define STR0011 "¿Tipo impresion    ?"
+	#define STR0012 "Pant"
+	#define STR0013 "Via Spool"
+	#define STR0014 "Preparando registros para impresion..."
+	#define STR0015 "Imprimiendo el informe..."
+	#define STR0016 "PERCAPITA      "
+	#define STR0017 "TOTAL PERCAPITA"
+	#define STR0018 "COMPLEMENTARIO "
+	#define STR0019 "TOTAL COMPLEMENTAR."
+	#define STR0020 "TOTAL GRAL."
+	#define STR0021 "Gananc/Perjuicio: R$"
+	#define STR0022 "TOTAL UNIDAD - "
+	#define STR0023 "PERIODO"
+	#define STR0024 " a "
+	#define STR0025 "Nº PEDIDO"
+	#define STR0026 "CLIENTE"
+	#define STR0027 "FACTURACION"
+	#define STR0028 "PAGOS"
+	#define STR0029 "Produc."
+	#define STR0030 "Cantidad"
+	#define STR0031 "Valor"
+	#define STR0032 "Esta rutina solo podra utilizarse en modo Prestador de servicio."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Invoicing x Payments Comparative"
+		#define STR0002 "Customer            ?"
+		#define STR0003 "Store               ?"
+		#define STR0004 "Invoicing Request?"
+		#define STR0005 "Report Type     ?"
+		#define STR0006 "Detailed"
+		#define STR0007 "Summarized"
+		#define STR0008 "Enter Total per ?"
+		#define STR0009 "Company"
+		#define STR0010 "Unit and Company"
+		#define STR0011 "Print Type     ?"
+		#define STR0012 "Screen"
+		#define STR0013 "Via Spool"
+		#define STR0014 "Preparing records for printing..."
+		#define STR0015 "Printing report..."
+		#define STR0016 "PER CAPITA      "
+		#define STR0017 "PER CAPITA TOTAL"
+		#define STR0018 "SUPPLEMENTAL   "
+		#define STR0019 "SUPPLEMENTALS TOTAL"
+		#define STR0020 "GRAND TOTAL"
+		#define STR0021 "Profit/Loss.: R$ "
+		#define STR0022 "UNIT TOTAL - "
+		#define STR0023 "PERIOD"
+		#define STR0024 " to "
+		#define STR0025 "ORDER #"
+		#define STR0026 "CUSTOMER"
+		#define STR0027 "INVOICING"
+		#define STR0028 "PAYMENTS"
+		#define STR0029 "Product"
+		#define STR0030 "Amount"
+		#define STR0031 "Value"
+		#define STR0032 "This routine can only be used in Service Provider mode."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Comparativo Facturação x Pagamentos", "Comparativo Faturamento x Pagamentos" )
+		#define STR0002 "Cliente            ?"
+		#define STR0003 "Loja               ?"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Pedido Facturação ?", "Pedido Faturamento ?" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Tipo Relatório     ?", "Tipo Relatorio     ?" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Analítico", "Analitico" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Sintético", "Sintetico" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Informar total por ?", "Informar Total por ?" )
+		#define STR0009 "Empresa"
+		#define STR0010 "Unidade e Empr."
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Tipo impressão     ?", "Tipo Impressao     ?" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Ecrã", "Tela" )
+		#define STR0013 "Via Spool"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "A preparar os registos para impressão...", "Preparando os registros para impressão..." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "A imprimir o relatório...", "Imprimindo o relatório..." )
+		#define STR0016 "PERCAPITA      "
+		#define STR0017 "TOTAL PERCAPITA"
+		#define STR0018 "COMPLEMENTAR   "
+		#define STR0019 "TOTAL COMPLEMENTARES"
+		#define STR0020 "TOTAL GERAL"
+		#define STR0021 "Lucro/Prejuízo.: R$ "
+		#define STR0022 "TOTAL UNIDADE - "
+		#define STR0023 "PERÍODO"
+		#define STR0024 " à "
+		#define STR0025 "Nº PEDIDO"
+		#define STR0026 "CLIENTE"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "FACTURAÇÃO", "FATURAMENTO" )
+		#define STR0028 "PAGAMENTOS"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Artigo", "Produto" )
+		#define STR0030 "Quantidade"
+		#define STR0031 "Valor"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Este procedimento somente poderá ser utilizado em modo Prestador de Serviço.", "Esta rotina somente poderá ser utilizada em modo Prestador de Serviço." )
+	#endif
+#endif

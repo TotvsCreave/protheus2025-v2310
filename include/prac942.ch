@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "2.17 Caja de mensajes cambiadas con la RFB"
+	#define STR0002 "Fecha inicial"
+	#define STR0003 "Fecha final"
+	#define STR0004 "Periodo"
+	#define STR0005 "Por favor, seleccione solo un item de filtro."
+	#define STR0006 "Fecha/Hora"
+	#define STR0007 "Remitente"
+	#define STR0008 "Destinatario(s)"
+	#define STR0009 "Asunto"
+	#define STR0010 "Mensaje"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "2.17 Message box exchanged with the RFB"
+		#define STR0002 "Start Date"
+		#define STR0003 "End Date"
+		#define STR0004 "Period"
+		#define STR0005 "Please select only one filter item."
+		#define STR0006 "Date/Time"
+		#define STR0007 "Sender"
+		#define STR0008 "Addressee(s)"
+		#define STR0009 "Subject"
+		#define STR0010 "Message"
+	#else
+		#define STR0001 "2.17 Caixa de mensagens trocadas com a RFB"
+		#define STR0002 "Data Inicial"
+		#define STR0003 "Data Final"
+		#define STR0004 "Periodo"
+		#define STR0005 "Favor selecionar apenas um item de filtro."
+		#define STR0006 "Data/Hora"
+		#define STR0007 "Remetente"
+		#define STR0008 "Destinatário(s)"
+		#define STR0009 "Assunto"
+		#define STR0010 "Mensagem"
+	#endif
+#endif

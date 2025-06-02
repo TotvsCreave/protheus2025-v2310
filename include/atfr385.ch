@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Funcion disponible solamente para entornos TopConnect"
+	#define STR0002 "Funcion disponible solamente para TReport, por favor actualice el entorno y verifique el parametro MV_TREPORT"
+	#define STR0003 "Para utilizar este informe, se necesita ejecutar el compatibilizador U_UPDATF. Por favor, actualice el entorno"
+	#define STR0004 "INFORME PROCESOS AJUSTE VALOR POSITIVO/NEGATIVO SOCIETARIO"
+	#define STR0005 "PROCESOS DE AJUSTES "
+	#define STR0006 "Bienes por ajustar"
+	#define STR0007 "Sucursal/Proceso: "
+	#define STR0008 "Total proceso: "
+	#define STR0009 "Sucursal: "
+	#define STR0010 "Total sucursal: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Function available for TopConnect environments only"
+		#define STR0002 "Function available for TReport only, please update environment and check MV_TREPORT parameter"
+		#define STR0003 "To use this process, you must first run the function U_UPDATEF. Please, update the environment"
+		#define STR0004 "PROCESS ADJUSTMENT REPORT POSITIVE/NEGATIVE CORPORATE VALUE"
+		#define STR0005 "ADJUSTMENT PROCESSES "
+		#define STR0006 "Assets to Adjust"
+		#define STR0007 "Branch / Process: "
+		#define STR0008 "Process Total: "
+		#define STR0009 "Branch: "
+		#define STR0010 "Branch Total: "
+	#else
+		#define STR0001 "Função disponível apenas para ambientes TopConnect"
+		#define STR0002 "Função disponível apenas para TReport, por favor atualizar ambiente e verificar parametro MV_TREPORT"
+		#define STR0003 "Para utilizar este relatorio, e necessário executar o compatibilizador U_UPDATF. Por favor, atualize o ambiente"
+		#define STR0004 "RELATORIO PROCESSOS AJUSTE VALOR POSITIVO/NEGATIVO SOCIETARIO"
+		#define STR0005 "PROCESSOS DE AJUSTES "
+		#define STR0006 "Bens a Ajustar"
+		#define STR0007 "Filial / Processo: "
+		#define STR0008 "Total Processo: "
+		#define STR0009 "Filial : "
+		#define STR0010 "Total Filial: "
+	#endif
+#endif

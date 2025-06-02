@@ -1,0 +1,120 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Preguntas"
+	#define STR0004 "Cuestionario"
+	#define STR0005 "Pregunta"
+	#define STR0006 "Descripcion Pregunta"
+	#define STR0007 "Cuestionario - "
+	#define STR0008 "&Grafico"
+	#define STR0009 "&Imprimir"
+	#define STR0010 "Nombre Pregunta"
+	#define STR0011 "Si"
+	#define STR0012 "No"
+	#define STR0013 "No existen datos para representar en el grafico..."
+	#define STR0014 "ATENCION"
+	#define STR0015 "Cantidades"
+	#define STR0016 "Preguntas"
+	#define STR0017 "SI"
+	#define STR0018 "NO"
+	#define STR0019 "A Rayas"
+	#define STR0020 "Administracion"
+	#define STR0021 "No existen datos para imprimir..."
+	#define STR0022 "ANULADO POR EL OPERADOR"
+	#define STR0023 "TOTAL"
+	#define STR0024 "Emision: "
+	#define STR0025 "Pag.: "
+	#define STR0026 "Preg. Descripcion de la Pregunta                                          Si        No"
+	#define STR0027 "Clientes"
+	#define STR0028 "Cuestionarios"
+	#define STR0029 "Sin"
+	#define STR0030 "No"
+	#define STR0031 "Preg. Descripcion de la Pregunta                                                                                       Si       No"
+	#define STR0032 "Pregunta Descripcion de la Pregunta                                                                                       Si       No"
+	#define STR0033 "De fecha Real. ?"
+	#define STR0034 "A fecha Real. ?"
+	#define STR0035 "Resultado"
+	#define STR0036 "ATENCION"
+	#define STR0037 "No tiene pregunta marcada."
+	#define STR0038 "Por favor, seleccione como minimo una pregunta para que se verifique el resultado."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "search"
+		#define STR0002 "View"
+		#define STR0003 "Questions"
+		#define STR0004 "Questionnaire"
+		#define STR0005 "Question"
+		#define STR0006 "Question Description"
+		#define STR0007 "Questionnaire - "
+		#define STR0008 "&Graph"
+		#define STR0009 "Print"
+		#define STR0010 "Question Name"
+		#define STR0011 "Yes"
+		#define STR0012 "No"
+		#define STR0013 "There is no data to set up the graphic ..."
+		#define STR0014 "ATTENTION"
+		#define STR0015 "Quantities"
+		#define STR0016 "Questions"
+		#define STR0017 "YES"
+		#define STR0018 "NO"
+		#define STR0019 "Z. Form"
+		#define STR0020 "Management"
+		#define STR0021 "There are no data to print..."
+		#define STR0022 "CANCELED BY OPERATOR"
+		#define STR0023 "TOTAL"
+		#define STR0024 "Issue: "
+		#define STR0025 "Pag.: "
+		#define STR0026 "Quest. Description of question                                            Yes       No "
+		#define STR0027 "Customers"
+		#define STR0028 "Questionnaires"
+		#define STR0029 "Yes"
+		#define STR0030 "No"
+		#define STR0031 "Quest. Description of Question                                                                                     Yes       No"
+		#define STR0032 "Question   Description of Question                                                                                                                                                                     Yes       No"
+		#define STR0033 "From Actual date. ?"
+		#define STR0034 "To Actual date. ?"
+		#define STR0035 "Result"
+		#define STR0036 "ATTENTION"
+		#define STR0037 "Do not have a marked question."
+		#define STR0038 "Please select at least one question to check the result."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Questões", "Questoes" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Questionário", "Questionario" )
+		#define STR0005 "Pergunta"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Descrição Pergunta", "Descricao Pergunta" )
+		#define STR0007 "Questionario - "
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "&gráfico", "&Grafico" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "&imprimir", "&Imprimir" )
+		#define STR0010 "Nome Pergunta"
+		#define STR0011 "Sim"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Não", "Nao" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Não existem dados para montar o grafico...", "Nao existem dados para montar o grafico..." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Atenção", "ATENCAO" )
+		#define STR0015 "Quatidades"
+		#define STR0016 "Perguntas"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Sim", "SIM" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Não", "NAO" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Não existem dados para imprimir...", "Nao existem dados para imprimir..." )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Cancelado Pelo Operador", "CANCELADO PELO OPERADOR" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Total", "TOTAL" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Emissão: ", "Emissao: " )
+		#define STR0025 "Pag.: "
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Perg. Descrição Da Pergunta                                               Sim       Não", "Perg. Descricao da Pergunta                                               Sim       Nao" )
+		#define STR0027 "Clientes"
+		#define STR0028 "Questionários"
+		#define STR0029 "Sim"
+		#define STR0030 "Não"
+		#define STR0031 "Perg. Descrição da Pergunta                                                                                       Sim       Não"
+		#define STR0032 "Pergunta   Descrição da Pergunta                                                                                                                                                                       Sim       Não"
+		#define STR0033 "De data Real. ?"
+		#define STR0034 "Ate data Real. ?"
+		#define STR0035 "Resultado"
+		#define STR0036 "ATENÇÃO"
+		#define STR0037 "Não possui pergunta marcada."
+		#define STR0038 "Favor selecionar no minímo uma pergunta para verificar o resultado."
+	#endif
+#endif

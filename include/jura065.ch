@@ -1,0 +1,57 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Muestra Saldo"
+	#define STR0007 "Saldo de Anticipos"
+	#define STR0008 "Codigo"
+	#define STR0009 "Razon Social"
+	#define STR0010 "Moneda"
+	#define STR0011 "Saldo"
+	#define STR0012 "Tienda"
+	#define STR0013 "Modelo de Datos de Saldo de Anticipos"
+	#define STR0014 "Datos de Saldo de Anticipos"
+	#define STR0015 "Caso"
+	#define STR0016 "Titulo"
+	#define STR0017 "Tipo Anticipo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Display Balance"
+		#define STR0007 "Advance Balance"
+		#define STR0008 "Code"
+		#define STR0009 "Company Name"
+		#define STR0010 "Currency"
+		#define STR0011 "Balance"
+		#define STR0012 "Store"
+		#define STR0013 "Data Model of Advance Balance"
+		#define STR0014 "Data of Advance Balance"
+		#define STR0015 "Case"
+		#define STR0016 "Bill"
+		#define STR0017 "Advance Type"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Mostra saldo", "Mostra Saldo" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Saldo de adiantamentos", "Saldo de Adiantamentos" )
+		#define STR0008 "Código"
+		#define STR0009 "Razão Social"
+		#define STR0010 "Moeda"
+		#define STR0011 "Saldo"
+		#define STR0012 "Loja"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Modelo de dados de saldo de adiantamentos", "Modelo de Dados de Saldo de Adiantamentos" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Dados de saldo de adiantamentos", "Dados de Saldo de Adiantamentos" )
+		#define STR0015 "Caso"
+		#define STR0016 "Título"
+		#define STR0017 "Tipo Adiantamento"
+	#endif
+#endif

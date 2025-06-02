@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Su base de datos no fue compatibilizada para la creacion de los campos del eSocial, layouts 1.0 y/o 1.1. Ejecute el compatibilizador 218"
+	#define STR0002 "Iniciando update de los indicativos de decision en la tabla RE0..."
+	#define STR0003 "El indicativo de decision"
+	#define STR0004 "se modifico para"
+	#define STR0005 "en el proceso:"
+	#define STR0006 "Final de modificaciones en la tabla RE0."
+	#define STR0007 "No ocurrieron modificaciones en la tabla RE0."
+	#define STR0008 "Ningun compatibilizador se ejecuto, pues el item 242 debera ejecutarse aisladamente."
+	#define STR0009 "Ningun compatibilizador se ejecuto, pues el item 204 debera ejecutarse aisladamente."
+	#define STR0010 "Su base de datos no fue compatibilizada para la creacion de los campos del eSocial, layouts 1.0 y/o 1.1. Ejecute el compatibilizador 198"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Its database was not made compatible for the creation of eSocial fields, layout 1.0 and/or 1.1. Execute the compatibilizer 218"
+		#define STR0002 "Starting update of decision indications on table RE0..."
+		#define STR0003 "The decision indicative"
+		#define STR0004 "was changed to"
+		#define STR0005 "in the process:"
+		#define STR0006 "End of changes in table RE0."
+		#define STR0007 "Changes did not happen in table RE0."
+		#define STR0008 "No compatibility tool is executed, because item 242 must be executed in isolation."
+		#define STR0009 "No compatibility tool is executed, because item 204 must be executed in isolation."
+		#define STR0010 "Its database was not made compatible for the creation of eSocial fields, layout 1.0 and/or 1.1. Execute the compatibilizer 198"
+	#else
+		#define STR0001 "Sua base de dados não foi compatibilizada para a criação dos campos do eSocial, leiautes 1.0 e/ou 1.1. Execute o compatibilizador 218"
+		#define STR0002 "Iniciando update dos indicativos de decisão na tabela RE0..."
+		#define STR0003 "O indicativo de decisão"
+		#define STR0004 "foi alterado para"
+		#define STR0005 "no processo:"
+		#define STR0006 "Fim das alterações na tabela RE0."
+		#define STR0007 "Não ocorreram alteraçãos na tabela RE0."
+		#define STR0008 "Nenhum compatibilizador foi executado, pois o item 242 deverá ser executado isoladamente."
+		#define STR0009 "Nenhum compatibilizador foi executado, pois o item 204 deverá ser executado isoladamente."
+		#define STR0010 "Sua base de dados não foi compatibilizada para a criação dos campos do eSocial, leiautes 1.0 e/ou 1.1. Execute o compatibilizador 198"
+	#endif
+#endif

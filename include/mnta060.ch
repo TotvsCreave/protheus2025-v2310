@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Desgaste por producción"
+	#define STR0007 "Desgastes informados"
+	#define STR0008 "ATENCIÓN"
+	#define STR0009 "Es necesario informar un Código de familia o Código del bien"
+	#define STR0010 "El Factor debe ser superior a cero."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Insert"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Wear per Production"
+		#define STR0007 "Entered Wear"
+		#define STR0008 "ATTENTION"
+		#define STR0009 "Enter a Family Code or Asset Code"
+		#define STR0010 "Factor must be greater than zero"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Desgaste por Produção"
+		#define STR0007 "Desgaste Informados"
+		#define STR0008 "ATENÇÃO"
+		#define STR0009 "É necessário informar um Código de Família ou Código de Bem"
+		#define STR0010 "O Fator deve ser maior que zero."
+	#endif
+#endif

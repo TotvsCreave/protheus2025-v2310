@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Enero"
+	#define STR0002 "Febrero"
+	#define STR0003 "Marzo"
+	#define STR0004 "Abril"
+	#define STR0005 "Mayo"
+	#define STR0006 "Junio"
+	#define STR0007 "Julio"
+	#define STR0008 "Agosto"
+	#define STR0009 "Septiembre"
+	#define STR0010 "Octubre"
+	#define STR0011 "Noviembre"
+	#define STR0012 "Diciembre"
+	#define STR0013 "Buscando Datos..."
+	#define STR0014 "COMPROMISOS DE EXPORTACION"
+	#define STR0015 "MsExcel no instalado."
+	#define STR0016 "Total General:"
+	#define STR0017 "Total Sucursal "
+	#define STR0018 "Contratos "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "January"
+		#define STR0002 "February"
+		#define STR0003 "March"
+		#define STR0004 "April"
+		#define STR0005 "May"
+		#define STR0006 "June"
+		#define STR0007 "July"
+		#define STR0008 "August"
+		#define STR0009 "September"
+		#define STR0010 "October"
+		#define STR0011 "November"
+		#define STR0012 "December"
+		#define STR0013 "Searching Data..."
+		#define STR0014 "EXPORT COMMITMENTS        "
+		#define STR0015 "MsExcel not installed."
+		#define STR0016 "Grand Total:"
+		#define STR0017 "Branch Total "
+		#define STR0018 "Contracts "
+	#else
+		#define STR0001 "Janeiro"
+		#define STR0002 "Fevereiro"
+		#define STR0003 "Marco"
+		#define STR0004 "Abril"
+		#define STR0005 "Maio"
+		#define STR0006 "Junho"
+		#define STR0007 "Julho"
+		#define STR0008 "Agosto"
+		#define STR0009 "Setembro"
+		#define STR0010 "Outubro"
+		#define STR0011 "Novembro"
+		#define STR0012 "Dezembro"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "A Pesquisar Dados...", "Pesquisando Dados..." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Compromissos De Exportação", "COMPROMISSOS DE EXPORTACAO" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Msexcel não instalado.", "MsExcel näo instalado." )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Total Crial:", "Total Geral:" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Total filial ", "Total Filial " )
+		#define STR0018 "Contratos "
+	#endif
+#endif

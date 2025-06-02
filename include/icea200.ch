@@ -1,0 +1,240 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Evaluar"
+	#define STR0004 "Leyenda"
+	#define STR0005 "Evaluacion de Riesgos"
+	#define STR0006 "Metodo Mosler"
+	#define STR0007 "Metodo T. Fine"
+	#define STR0008 "Metodo Estadistico"
+	#define STR0009 "FCS"
+	#define STR0010 "Impactos >>"
+	#define STR0011 "Grafico >>"
+	#define STR0012 "Riesgos..."
+	#define STR0013 "Clasificacion de criterios"
+	#define STR0014 "Riesgo"
+	#define STR0015 "Muy Alto"
+	#define STR0016 "Alto"
+	#define STR0017 "Normal"
+	#define STR0018 "Bajo"
+	#define STR0019 "Muy Bajo"
+	#define STR0020 "Muy Alta"
+	#define STR0021 "Alta"
+	#define STR0022 "Normal"
+	#define STR0023 "Baja"
+	#define STR0024 "Muy Baja"
+	#define STR0025 "1. Probabilidad"
+	#define STR0026 "2. Impacto"
+	#define STR0027 "Descripcion."
+	#define STR0028 "Tipo del Riesgo"
+	#define STR0029 "¡Hay riesgos sin clasificacion de probabilidad e impactos!"
+	#define STR0030 "Muy Grave"
+	#define STR0031 "Gravemente"
+	#define STR0032 "Medianamente"
+	#define STR0033 "Levemente"
+	#define STR0034 "Muy Leve"
+	#define STR0035 "Muy Dificil"
+	#define STR0036 "Dificilmente"
+	#define STR0037 "Sin muchas dificultades"
+	#define STR0038 "Facilmente"
+	#define STR0039 "Muy Facil"
+	#define STR0040 "Muy Graves"
+	#define STR0041 "Graves"
+	#define STR0042 "Limitadas"
+	#define STR0043 "Leves"
+	#define STR0044 "Muy Leves"
+	#define STR0045 "Caracter Internacional"
+	#define STR0046 "Caracter Nacional"
+	#define STR0047 "Regional"
+	#define STR0048 "Local"
+	#define STR0049 "Caracter Individual"
+	#define STR0050 "1. Criterio de la Funcion"
+	#define STR0051 "2. Criterio de la Sustitucion"
+	#define STR0052 "3. Criterio de la Profundidad"
+	#define STR0053 "4. Criterio de la Extension"
+	#define STR0054 "5. Criterio de la Probabilidad"
+	#define STR0055 "6. Criterio del Impacto Financiero"
+	#define STR0056 "<<Anterior"
+	#define STR0057 "Siguiente>>"
+	#define STR0058 "Plan de Accion"
+	#define STR0059 "Desarrollo del Plan de Accion"
+	#define STR0060 "Fecha de Implantacion"
+	#define STR0061 "Responsable"
+	#define STR0062 " - Registro"
+	#define STR0063 "Impactos"
+	#define STR0064 "Impacto Vulnerabilidad"
+	#define STR0065 "Probabilidad"
+	#define STR0066 "Impacto Financiero"
+	#define STR0067 "Perdida Esperada"
+	#define STR0068 "Plan de Accion"
+	#define STR0069 "Registra >>..."
+	#define STR0070 "¡Plan de Accion ya registrado!"
+	#define STR0071 "Clasificacion"
+	#define STR0072 "Matriz de Vulnerabilidad"
+	#define STR0073 "Clasificacion de Riesgos"
+	#define STR0074 "&Imprime"
+	#define STR0075 "&e-mail"
+	#define STR0076 "&Salir"
+	#define STR0077 "El Parametro MV_QICEMEP debe menor o igual al numero de Hechos. ¡Realice el Ajuste!"
+	#define STR0078 "Rellene el campo correctamente"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View      "
+		#define STR0003 "To Value"
+		#define STR0004 "Caption"
+		#define STR0005 "Risks Valuation"
+		#define STR0006 "Mosler Method"
+		#define STR0007 "T. Fine Method"
+		#define STR0008 "Statistic Method"
+		#define STR0009 "CSF"
+		#define STR0010 "Impacts >>"
+		#define STR0011 "Graphic >>"
+		#define STR0012 "Risks..."
+		#define STR0013 "Classification of criteria"
+		#define STR0014 "Risk"
+		#define STR0015 "Very High"
+		#define STR0016 "High"
+		#define STR0017 "Normal"
+		#define STR0018 "Low"
+		#define STR0019 "Very Low"
+		#define STR0020 "Very High"
+		#define STR0021 "High"
+		#define STR0022 "Normal"
+		#define STR0023 "Low"
+		#define STR0024 "Very Low"
+		#define STR0025 "1. Probability"
+		#define STR0026 "2. Impact "
+		#define STR0027 "Descriptn."
+		#define STR0028 "Type of Risk"
+		#define STR0029 "There are risks without probablity and impact classification!"
+		#define STR0030 "Very Serious"
+		#define STR0031 "Serioulsy"
+		#define STR0032 "Midle"
+		#define STR0033 "Lightly"
+		#define STR0034 "Very Light"
+		#define STR0035 "Very Difficult"
+		#define STR0036 "Difficult"
+		#define STR0037 "No more Difficulties"
+		#define STR0038 "Easily"
+		#define STR0039 "Very Easy"
+		#define STR0040 "Very Serious"
+		#define STR0041 "Serious"
+		#define STR0042 "Limited"
+		#define STR0043 "Light"
+		#define STR0044 "Very Light"
+		#define STR0045 "International Character"
+		#define STR0046 "National Character"
+		#define STR0047 "Regional"
+		#define STR0048 "Local"
+		#define STR0049 "Individual Character"
+		#define STR0050 "1. Criterion of Function"
+		#define STR0051 "2. Criterion of Replace"
+		#define STR0052 "3. Criterion of Depth"
+		#define STR0053 "4. Criterion of Extent"
+		#define STR0054 "5. Criterion of Probability"
+		#define STR0055 "6. Criterion of Financial Impact"
+		#define STR0056 "<<Back"
+		#define STR0057 "Next>>"
+		#define STR0058 "Action Plan    "
+		#define STR0059 "Development of Action Plan    "
+		#define STR0060 "Implementation date  "
+		#define STR0061 "Responsable"
+		#define STR0062 " - Record"
+		#define STR0063 "Impacts"
+		#define STR0064 "Vulnerability Impact"
+		#define STR0065 "Probability"
+		#define STR0066 "Financial Impact"
+		#define STR0067 "Expected loss"
+		#define STR0068 "Action Plan    "
+		#define STR0069 "Record >>..."
+		#define STR0070 "Action Plan already reg!"
+		#define STR0071 "Classification"
+		#define STR0072 "Vulnerability Matrix"
+		#define STR0073 "Risk Classification"
+		#define STR0074 "Pr&int"
+		#define STR0075 "&E-mail"
+		#define STR0076 "&Exit"
+		#define STR0077 "The parameter MV_QICEMEP must be lower than or equal to the number of Facts. Adjust it!"
+		#define STR0078 "Fill in the field correctly!"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Avaliar"
+		#define STR0004 "Legenda"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Avaliação De Riscos", "Avaliacao de Riscos" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Método Mosler", "Metodo Mosler" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Método T. Fine", "Metodo T. Fine" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Método Estatístico", "Metodo Estatistico" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Fcs", "FCS" )
+		#define STR0010 "Impactos >>"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Gráfico >>", "Grafico >>" )
+		#define STR0012 "Riscos..."
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Classificação De Critérios", "Classificacao de Criterios" )
+		#define STR0014 "Risco"
+		#define STR0015 "Muito Alto"
+		#define STR0016 "Alto"
+		#define STR0017 "Normal"
+		#define STR0018 "Baixo"
+		#define STR0019 "Muito Baixo"
+		#define STR0020 "Muito Alta"
+		#define STR0021 "Alta"
+		#define STR0022 "Normal"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Liquidação", "Baixa" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Muito Liquidação", "Muito Baixa" )
+		#define STR0025 "1. Probabilidade"
+		#define STR0026 "2. Impacto"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Descrição.", "Descricao." )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Tipo De Risco", "Tipo de Risco" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Há riscos sem classificação de probabilidades e impactos!", "Ha riscos sem classificacao de probabilidades e impactos!" )
+		#define STR0030 "Muito Grave"
+		#define STR0031 "Gravemente"
+		#define STR0032 "Medianamente"
+		#define STR0033 "Levemente"
+		#define STR0034 "Muito Leve"
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Muito Difícil", "Muito Dificil" )
+		#define STR0036 "Dificilmente"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Sem Muitas Dificuldades", "Sem muitas Dificuldades" )
+		#define STR0038 "Facilmente"
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Muito Fácil", "Muito Facil" )
+		#define STR0040 "Muito Graves"
+		#define STR0041 "Graves"
+		#define STR0042 "Limitadas"
+		#define STR0043 "Leves"
+		#define STR0044 "Muito Leves"
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Carácter Internacional", "Carater Internacional" )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Carácter Nacional", "Carater Nacional" )
+		#define STR0047 "Regional"
+		#define STR0048 "Local"
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Carácter Individual", "Carater Individual" )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "1. Critério Da Função", "1. Criterio da Funcao" )
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "2. Critério Da Substituição", "2. Criterio da Substituicao" )
+		#define STR0052 If( cPaisLoc $ "ANG|PTG", "3. Critério Da Profundidade", "3. Criterio da Profundidade" )
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "4. Critério Da Extensão", "4. Criterio da Extensao" )
+		#define STR0054 If( cPaisLoc $ "ANG|PTG", "5. Critério Da Probabilidade", "5. Criterio da Probabilidade" )
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "6. Critério Do Impacto Financeiro", "6. Criterio do Impacto Financeiro" )
+		#define STR0056 If( cPaisLoc $ "ANG|PTG", "<<anterior", "<<Anterior" )
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Próxima>>", "Proxima>>" )
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Plano De Acção", "Plano de Acao" )
+		#define STR0059 If( cPaisLoc $ "ANG|PTG", "Desenvolvimento Do Plano De Acção", "Desenvolvimento do Plano de Acao" )
+		#define STR0060 If( cPaisLoc $ "ANG|PTG", "Data Para Implantação", "Data para Implantacao" )
+		#define STR0061 If( cPaisLoc $ "ANG|PTG", "Responsável", "Responsavel" )
+		#define STR0062 If( cPaisLoc $ "ANG|PTG", " - Registo", " - Registro" )
+		#define STR0063 "Impactos"
+		#define STR0064 "Impacto Vulnerabilidade"
+		#define STR0065 "Probabilidade"
+		#define STR0066 "Impacto Financeiro"
+		#define STR0067 "Perda Esperada"
+		#define STR0068 If( cPaisLoc $ "ANG|PTG", "Plano De Acção", "Plano de Acao" )
+		#define STR0069 If( cPaisLoc $ "ANG|PTG", "Registar >>...", "Registra >>..." )
+		#define STR0070 If( cPaisLoc $ "ANG|PTG", "Plano de acção já registado!", "Plano de Acao ja registrado!" )
+		#define STR0071 If( cPaisLoc $ "ANG|PTG", "Classificação", "Classificacao" )
+		#define STR0072 If( cPaisLoc $ "ANG|PTG", "Matriz De Vulnerabilidade", "Matriz de Vulnerabilidade" )
+		#define STR0073 If( cPaisLoc $ "ANG|PTG", "Classificação De Riscos", "Classificacao de Riscos" )
+		#define STR0074 If( cPaisLoc $ "ANG|PTG", "&imprimir", "&Imprime" )
+		#define STR0075 "&e-mail"
+		#define STR0076 If( cPaisLoc $ "ANG|PTG", "&sair", "&Sair" )
+		#define STR0077 If( cPaisLoc $ "ANG|PTG", "O Parâmetro Mv_qicemep Deve Ser Menor  Ou Igual Ao Número De Factor. Realizar O Ajuste!", "O Parametro MV_QICEMEP deve  ser menor  ou igual ao numero de Fatos. Realize o Ajuste!" )
+		#define STR0078 If( cPaisLoc $ "ANG|PTG", "Preencha o campo correctamente!", "Preencha o campo corretamente!" )
+	#endif
+#endif

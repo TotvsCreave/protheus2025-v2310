@@ -1,0 +1,93 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo apuntes de produccion"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Produccion"
+	#define STR0008 "Retorno"
+	#define STR0009 "Cierre"
+	#define STR0010 "Reversion"
+	#define STR0011 "Leyenda"
+	#define STR0012 "Mano de obra"
+	#define STR0013 "Equipos"
+	#define STR0014 "Productos"
+	#define STR0015 "Esta Aplicacion esta finalizada."
+	#define STR0016 "¡No es posible incluir nuevos retornos!"
+	#define STR0017 ">> Importar Mano de Obra <<"
+	#define STR0018 "Import.MO"
+	#define STR0019 ">> Importar Equipo <<"
+	#define STR0020 "Import.EQ"
+	#define STR0021 ">> Importar Producto <<"
+	#define STR0022 "Import.PD"
+	#define STR0023 "No es posible hacer el cierre nuevamente."
+	#define STR0024 "¿Esta seguro(a) que desea finalizar esta aplicacion?"
+	#define STR0025 "Finalizar"
+	#define STR0026 "Esta aplicacion aun no tiene retornos para revertirse."
+	#define STR0027 "Seleccionando Registros"
+	#define STR0028 "Seleccione los items para revertir"
+	#define STR0029 "Seleccione los items para importar"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Return on Investment"
+		#define STR0002 "Search "
+		#define STR0003 "View "
+		#define STR0004 "Add "
+		#define STR0005 "Edit "
+		#define STR0006 "Delete "
+		#define STR0007 "Production"
+		#define STR0008 "Return"
+		#define STR0009 "Closing"
+		#define STR0010 "Reversal"
+		#define STR0011 "Caption"
+		#define STR0012 "Labor Force"
+		#define STR0013 "Equipment"
+		#define STR0014 "Products"
+		#define STR0015 "This Application is closed."
+		#define STR0016 "You cannot add new returns!"
+		#define STR0017 ">> Import Labor Force <<"
+		#define STR0018 "Import.LF"
+		#define STR0019 ">> Import Equipment <<"
+		#define STR0020 "Import.EQ"
+		#define STR0021 ">> Import Product <<"
+		#define STR0022 "Import.PD"
+		#define STR0023 "You cannot close again."
+		#define STR0024 "Are you sure you want to close this application?"
+		#define STR0025 "Close"
+		#define STR0026 "This application still has no returns to be reversed."
+		#define STR0027 "Selecting records"
+		#define STR0028 "Select the items for reversal."
+		#define STR0029 "Select the items for import."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Retorno De Aplicação", "Retorno de Aplicacao" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Produção", "Producao" )
+		#define STR0008 "Retorno"
+		#define STR0009 "Fechamento"
+		#define STR0010 "Estorno"
+		#define STR0011 "Legenda"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Mão de obra", "Mão de Obra" )
+		#define STR0013 "Equipamentos"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Artigos", "Produtos" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Esta aplicação está fechada.", "Esta Aplicação esta fechada." )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Não é possível incluir novos retornos.", "Não é possivel incluir novos retornos!" )
+		#define STR0017 ">> Importar Mão de Obra <<"
+		#define STR0018 "Import.MO"
+		#define STR0019 ">> Importar Equipamento <<"
+		#define STR0020 "Import.EQ"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", ">> Importar Artigo <<", ">> Importar Produto <<" )
+		#define STR0022 "Import.PD"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Não é possível fazer o fechamento novamente.", "Não é possivel fazer o fechamento novamente." )
+		#define STR0024 "Tem certeza que deseja fechar esta aplicação?"
+		#define STR0025 "Fechar"
+		#define STR0026 "Esta aplicação ainda não tem retornos para serem estornados."
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "A seleccionar registos", "Selecionando Registros" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Seleccione os itens para estonar", "Selecione os itens para estonar" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Seleccione os itens para importar", "Selecione os itens para importar" )
+	#endif
+#endif

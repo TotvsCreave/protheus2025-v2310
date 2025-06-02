@@ -1,0 +1,42 @@
+#ifdef SPANISH
+	#define STR0001 "Programa de Produccion Nro."
+	#define STR0002 "DISTRIBUCION ORDEN DE PRODUCCION POR OPERADOR"
+	#define STR0003 "Para usar este informe debe ser superior a MP8 R4 version"
+	#define STR0004 "Programa"
+	#define STR0005 "Fecha"
+	#define STR0006 "Operacion"
+	#define STR0007 "Operacion Aux."
+	#define STR0008 "TOTAL"
+	#define STR0009 "Asignado"
+	#define STR0010 "No asignado"
+	#define STR0011 "TOTAL---"
+	#define STR0012 "TOTAL---PROGRAMA"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Production Program No."
+		#define STR0002 "DISTRIBUTION OF PRODUCTION ORDER BY OPERATOR"
+		#define STR0003 "This version must be higher than MP8 R4, if you want to use this report!"
+		#define STR0004 "Program"
+		#define STR0005 "Date"
+		#define STR0006 "Operation"
+		#define STR0007 "Aux Operation"
+		#define STR0008 "TOTAL"
+		#define STR0009 "Allocated"
+		#define STR0010 "Not allocated"
+		#define STR0011 "TOTAL---"
+		#define STR0012 "TOTAL---PROGRAM"
+	#else
+		#define STR0001 "Programa de Produção No."
+		#define STR0002 "DISTRIBUIÇÃO ORDEM DE PRODUÇÃO POR OPERADOR"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Para usar esta listagem, a versão deve ser maior que MP8 R4!", "Para usar este relatório deve ser maior que MP8 R4 versão!" )
+		#define STR0004 "Programa"
+		#define STR0005 "Data"
+		#define STR0006 "Operação"
+		#define STR0007 "Operação Aux."
+		#define STR0008 "TOTAL"
+		#define STR0009 "Alocado"
+		#define STR0010 "Não alocado"
+		#define STR0011 "TOTAL---"
+		#define STR0012 "TOTAL---PROGRAMA"
+	#endif
+#endif

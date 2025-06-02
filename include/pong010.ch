@@ -1,0 +1,153 @@
+#ifdef SPANISH
+	#define STR0001 "Linea"
+	#define STR0002 "Area"
+	#define STR0003 "Puntos"
+	#define STR0004 "Barras"
+	#define STR0005 "Piramide"
+	#define STR0006 "Cilindro"
+	#define STR0007 "Barras Horizontal"
+	#define STR0008 "Piramide Horizontal"
+	#define STR0009 "Cilindro Horizontal"
+	#define STR0010 "Pizza"
+	#define STR0011 "Forma"
+	#define STR0012 "Linea rapida"
+	#define STR0013 "Teclas de direccion"
+	#define STR0014 "GANTT"
+	#define STR0015 "Burbujas"
+	#define STR0016 "Tipo Nao Disponivel Para este Grafico."
+	#define STR0017 "Salir <F4>"
+	#define STR0018 "Dimension <F5>"
+	#define STR0019 "Salva BMP <F6>"
+	#define STR0020 "Rotacion - <F7>"
+	#define STR0021 "Rotacion + <F8>"
+	#define STR0022 "Leyenda <F9>"
+	#define STR0023 "Imprimir Grafico <F10>"
+	#define STR0024 "Enviar por e-Mail <F11>"
+	#define STR0025 "Configura Grafico <F12>"
+	#define STR0026 "Tipos de Graficos"
+	#define STR0027 "Tabla de Datos"
+	#define STR0028 "Mueve hacia Izquierda"
+	#define STR0029 "Mueve hacia Derecha"
+	#define STR0030 "Mueve hacia Arriba"
+	#define STR0031 "Mueve hacia Abajo"
+	#define STR0032 "Mas Zoom"
+	#define STR0033 "Menos Zoom"
+	#define STR0117 "Salir"
+	#define STR0118 "Dimension"
+	#define STR0119 "Grabar"
+	#define STR0120 "Rot. - "
+	#define STR0121 "Rot. + "
+	#define STR0122 "Leyenda"
+	#define STR0123 "Imprimir"
+	#define STR0124 "Enviar"
+	#define STR0125 "Config"
+	#define STR0127 "Tabla"
+	#define STR0128 "Izquierda"
+	#define STR0129 "Derecha"
+	#define STR0130 "Tope"
+	#define STR0131 "Bajo"
+	#define STR0132 "+ Zoom"
+	#define STR0133 "- Zoom"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Row"
+		#define STR0002 "Area"
+		#define STR0003 "Points"
+		#define STR0004 "Bars"
+		#define STR0005 "Pyramid"
+		#define STR0006 "Cylinder"
+		#define STR0007 "Horizontal Bars"
+		#define STR0008 "Horizontal Pyramid"
+		#define STR0009 "Horizontal Cylinder"
+		#define STR0010 "Pie"
+		#define STR0011 "Form"
+		#define STR0012 "Fast Row"
+		#define STR0013 "Arrows"
+		#define STR0014 "GANTT"
+		#define STR0015 "Bubble"
+		#define STR0016 "Type not available for this graph."
+		#define STR0017 "Exit <F4>"
+		#define STR0018 "Dimension <F5>"
+		#define STR0019 "Save BMP <F6>"
+		#define STR0020 "Rotation - <F7>"
+		#define STR0021 "Rotation + <F8>"
+		#define STR0022 "Caption <F9>"
+		#define STR0023 "Print graph <F10>"
+		#define STR0024 "Send per e-maill <F11>"
+		#define STR0025 "Set up Graph <F12>"
+		#define STR0026 "Graph Type"
+		#define STR0027 "Data Table"
+		#define STR0028 "Move to the Left"
+		#define STR0029 "Move to the Right"
+		#define STR0030 "Move Upwards"
+		#define STR0031 "Move Downwards"
+		#define STR0032 "More Zoom"
+		#define STR0033 "Less Zoom"
+		#define STR0117 "Exit"
+		#define STR0118 "Dimension"
+		#define STR0119 "Save"
+		#define STR0120 "Rot. - "
+		#define STR0121 "Rot. + "
+		#define STR0122 "Caption"
+		#define STR0123 "Print"
+		#define STR0124 "Send"
+		#define STR0125 "Setup"
+		#define STR0127 "Table"
+		#define STR0128 "Left"
+		#define STR0129 "Right"
+		#define STR0130 "Up"
+		#define STR0131 "Down"
+		#define STR0132 "+ Zoom"
+		#define STR0133 "- Zoom"
+	#else
+		#define STR0001 "Linha"
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "área", "Area" )
+		#define STR0003 "Pontos"
+		#define STR0004 "Barras"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Pirâmide", "Piramide" )
+		#define STR0006 "Cilindro"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Barras Na Horizontal", "Barras Horizontal" )
+		#define STR0008 "Piramide Horizontal"
+		#define STR0009 "Cilindro Horizontal"
+		#define STR0010 "Pizza"
+		#define STR0011 "Forma"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Linha rápida", "Linha rapida" )
+		#define STR0013 "Flexas"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Gantt", "GANTT" )
+		#define STR0015 "Bolha"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Tipo não disponível para este gráfico.", "Tipo Nao Disponivel para este grafico." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Sair <f4>", "Sair <F4>" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Dimensão <f5>", "Dimensao <F5>" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Guardar bmp <f6>", "Salva BMP <F6>" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Rotação - <f7>", "Rotacao - <F7>" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Rotação + <f8>", "Rotacao + <F8>" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Legenda <f9>", "Legenda <F9>" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Imprimir gráfico <f10>", "Imprimir grafico <F10>" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Enviar por e-mail <f11>", "Enviar por E-Mail <F11>" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Configurar gráfico <f12>", "Configura Grafico <F12>" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Tipos De Gráficos", "Tipos de Graficos" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Tabela De Dados", "Tabela de Dados" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Move Para Esquerda", "Move para Esquerda" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Move Para Direita", "Move para Direita" )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Mover Para Cima", "Move para Cima" )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Mover Para Baixo", "Move para Baixo" )
+		#define STR0032 "Mais Zoom"
+		#define STR0033 "Menos Zoom"
+		#define STR0117 "Sair"
+		#define STR0118 If( cPaisLoc $ "ANG|PTG", "Dimensão", "Dimensao" )
+		#define STR0119 If( cPaisLoc $ "ANG|PTG", "Guardar", "Salvar" )
+		#define STR0120 "Rot. - "
+		#define STR0121 "Rot. + "
+		#define STR0122 "Legenda"
+		#define STR0123 "Imprimir"
+		#define STR0124 "Enviar"
+		#define STR0125 "Config"
+		#define STR0127 "Tabela"
+		#define STR0128 "Esquerda"
+		#define STR0129 "Direita"
+		#define STR0130 "Cima"
+		#define STR0131 "Baixo"
+		#define STR0132 "+ Zoom"
+		#define STR0133 "- Zoom"
+	#endif
+#endif

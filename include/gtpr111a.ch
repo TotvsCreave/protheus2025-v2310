@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Rendición de cuentas de vales"
+	#define STR0002 "Informe de rendición de cuentas de vale."
+	#define STR0003 "Código de la rendición de cuentas"
+	#define STR0004 "Nombre del empleado"
+	#define STR0005 "Número del vale"
+	#define STR0006 "Fecha de rendición de cuentas"
+	#define STR0007 "Valor de rendición de cuentas"
+	#define STR0008 "Saldo deudor del vale"
+	#define STR0009 "Código del empleado"
+	#define STR0010 "Parámetros no informados de manera correcta."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Voucher Accounts Rendering"
+		#define STR0002 "Voucher Accounts Rendering Report."
+		#define STR0003 "Rendering Code"
+		#define STR0004 "Employee Name"
+		#define STR0005 "Voucher Number"
+		#define STR0006 "Rendering Date"
+		#define STR0007 "Rendering Value"
+		#define STR0008 "Voucher Debit Balance"
+		#define STR0009 "Employee Code"
+		#define STR0010 "Parameters not properly indicated."
+	#else
+		#define STR0001 "Prestação de Contas de Vales"
+		#define STR0002 "Relatório de prestação de contas de vale."
+		#define STR0003 "Código da Prestação"
+		#define STR0004 "Nome do Funcionário"
+		#define STR0005 "Número do Vale"
+		#define STR0006 "Data de Prestação"
+		#define STR0007 "Valor Prestação"
+		#define STR0008 "Saldo Devedor do Vale"
+		#define STR0009 "Código do Funcionário"
+		#define STR0010 "Parâmetros não informados de forma correta."
+	#endif
+#endif

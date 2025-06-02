@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de movimientos de plazos PIS/COFINS"
+	#define STR0002 "Procesamiento"
+	#define STR0003 "¡Tabla CCX no registrada! Verificar los procedimientos para ejecucion de compatibilizador UPDFIS."
+	#define STR0004 "Visualizar"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Saldo Inicial"
+	#define STR0009 "Plazo de PIS y COFINS"
+	#define STR0010 "Informe el periodo para procesar saldo inicial del plazo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "PIS/COFINS Deferral Transactions Register"
+		#define STR0002 "Processing"
+		#define STR0003 "Table CCX not registered! Please check procedures to run the compatibility program UPDFIS."
+		#define STR0004 "View"
+		#define STR0005 "Add"
+		#define STR0006 "Change"
+		#define STR0007 "Delete"
+		#define STR0008 "Initial Balance"
+		#define STR0009 "PIS and COFINS deferral"
+		#define STR0010 "Enter period to process deferral initial balance"
+	#else
+		#define STR0001 "Cadastro de Movimentações de Diferimento PIS/COFINS"
+		#define STR0002 "Processamento"
+		#define STR0003 "Tabela CCX não cadastrada! Favor Verificar os procedimentos para execução do compatibilizador UPDFIS."
+		#define STR0004 "Visualizar"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 "Excluir"
+		#define STR0008 "Saldo Inicial"
+		#define STR0009 "Diferimento de PIS e COFINS"
+		#define STR0010 "Informe o período para processar saldo inicial de diferimento"
+	#endif
+#endif

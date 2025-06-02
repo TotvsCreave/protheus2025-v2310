@@ -1,0 +1,66 @@
+#ifdef SPANISH
+	#define STR0001 "Extracto de movimiento"
+	#define STR0002 "Lote"
+	#define STR0003 "Buscar"
+	#define STR0004 "Por favor, seleccione para continuar."
+	#define STR0005 "Campo lote obligatorio"
+	#define STR0006 "Lote invalido"
+	#define STR0007 "Beneficiario"
+	#define STR0008 "Conocimiento"
+	#define STR0009 "Codigo almacen"
+	#define STR0010 "Descripcion almacen"
+	#define STR0011 "Cuadra"
+	#define STR0012 "Calle"
+	#define STR0013 "Bloque"
+	#define STR0014 "Estante"
+	#define STR0015 "Nivel"
+	#define STR0016 "Posicion"
+	#define STR0017 "Cantidad"
+	#define STR0018 "Fecha"
+	#define STR0019 "Hora"
+	#define STR0020 "Lote sistema"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Movement statement"
+		#define STR0002 "Lot"
+		#define STR0003 "Search"
+		#define STR0004 "Please select it to continue"
+		#define STR0005 "Lot field is mandatory!"
+		#define STR0006 "Invalid lot!"
+		#define STR0007 "Beneficiary"
+		#define STR0008 "Knowledge"
+		#define STR0009 "Warehouse Code"
+		#define STR0010 "Warehouse Description"
+		#define STR0011 "Block"
+		#define STR0012 "Street"
+		#define STR0013 "Section"
+		#define STR0014 "Shelf"
+		#define STR0015 "Level"
+		#define STR0016 "Position"
+		#define STR0017 "Quantity"
+		#define STR0018 "Date"
+		#define STR0019 "Time"
+		#define STR0020 "System lot"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Extracto de movimentação", "Extrato de movimentação" )
+		#define STR0002 "Lote"
+		#define STR0003 "Pesquisar"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Por favor, seleccione para continuar.", "Favor selecionar para continuar." )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Campo lote obrigatório.", "Campo Lote obrigatório!" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Lote inválido.", "Lote inválido!" )
+		#define STR0007 "Beneficiário"
+		#define STR0008 "Conhecimento"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Código armazém", "Código Armazem" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Descrição armazém", "Descrição Armazem" )
+		#define STR0011 "Quadra"
+		#define STR0012 "Rua"
+		#define STR0013 "Bloco"
+		#define STR0014 "Prateleira"
+		#define STR0015 "Nível"
+		#define STR0016 "Posição"
+		#define STR0017 "Quantidade"
+		#define STR0018 "Data"
+		#define STR0019 "Hora"
+		#define STR0020 "Lote sistema"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Giro del producto"
+	#define STR0002 "Total del producto"
+	#define STR0003 "Almacen"
+	#define STR0004 "Producto"
+	#define STR0005 "Descripcion"
+	#define STR0006 "Direccion"
+	#define STR0007 "Entrada"
+	#define STR0008 "Movimientos"
+	#define STR0009 "Salida"
+	#define STR0010 "Informe Giro del producto"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Product Turnover"
+		#define STR0002 "Product Total"
+		#define STR0003 "Warehouse"
+		#define STR0004 "Product"
+		#define STR0005 "Description"
+		#define STR0006 "Address"
+		#define STR0007 "Inflow"
+		#define STR0008 "Transactions"
+		#define STR0009 "Turnover"
+		#define STR0010 "Product Turnover Report"
+	#else
+		#define STR0001 "Giro do Produto"
+		#define STR0002 "Total do Produto"
+		#define STR0003 "Armazem"
+		#define STR0004 "Produto"
+		#define STR0005 "Descrição"
+		#define STR0006 "Endereço"
+		#define STR0007 "Entrada"
+		#define STR0008 "Movimentos"
+		#define STR0009 "Saída"
+		#define STR0010 "Relatório Giro do Produto"
+	#endif
+#endif

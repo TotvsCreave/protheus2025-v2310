@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Comercialización de la producción por productor Rural PJ/Agroindustria"
+	#define STR0002 "Identificación del establecimiento"
+	#define STR0003 "Ingreso bruto por 'tipo' de comercialización"
+	#define STR0004 "Procesos administrativos/judiciales"
+	#define STR0005 "Recibo de transmisión"
+	#define STR0006 "Finalizar"
+	#define STR0007 "Diccionario incompatible"
+	#define STR0008 "Finalizar"
+	#define STR0009 "Información de identificación del evento"
+	#define STR0010 "Información de identificación del evento"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Trading of Production per Rural Producer LE/Agribusiness"
+		#define STR0002 "Company Identification"
+		#define STR0003 "Receita Bruta por 'tipo' de comercialização"
+		#define STR0004 "Administrative/Legal Processes"
+		#define STR0005 "Transmission Receipt"
+		#define STR0006 "Close"
+		#define STR0007 "Dictionary Not Compatible"
+		#define STR0008 "Close"
+		#define STR0009 "Event identification information"
+		#define STR0010 "Event identification information"
+	#else
+		#define STR0001 "Comercialização da Produção por Produtor Rural PJ/Agroindústria"
+		#define STR0002 "Identificação do Estabelecimento"
+		#define STR0003 "Receita Bruta por 'tipo' de comercialização"
+		#define STR0004 "Processos Administrativos/Judiciais"
+		#define STR0005 "Recibo de Transmissão"
+		#define STR0006 "Fechar"
+		#define STR0007 "Dicionário Incompatível"
+		#define STR0008 "Encerrar"
+		#define STR0009 "Informações de Identificação do Evento"
+		#define STR0010 "Informações de Identificação do Evento"
+	#endif
+#endif

@@ -1,0 +1,57 @@
+#ifdef SPANISH
+	#define STR0001 "Cliente"
+	#define STR0002 "Codigo"
+	#define STR0003 "Tienda"
+	#define STR0004 "Cerrar"
+	#define STR0005 "Detalles"
+	#define STR0006 "Posicion Financiera"
+	#define STR0007 "Calculando, espere..."
+	#define STR0008 "iNo se selecciono ningun Cliente!"
+	#define STR0009 "Aviso"
+	#define STR0010 "Facts. Credito"
+	#define STR0011 "Tipo"
+	#define STR0012 "Emision"
+	#define STR0013 "Venc."
+	#define STR0014 "Valor"
+	#define STR0015 "Titulo N."
+	#define STR0016 "Dias Atrasado"
+	#define STR0017 "Volver"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Customer"
+		#define STR0002 "Code"
+		#define STR0003 "Unit"
+		#define STR0004 "Close"
+		#define STR0005 "Details"
+		#define STR0006 "Financial Status"
+		#define STR0007 "Calculating, wait..."
+		#define STR0008 "No Customer Selected!"
+		#define STR0009 "Notice"
+		#define STR0010 "Trade Notes"
+		#define STR0011 "Back"
+		#define STR0012 "Issue"
+		#define STR0013 "Due Date"
+		#define STR0014 "Value"
+		#define STR0015 "Bill Number "
+		#define STR0016 "Days in Arrears"
+		#define STR0017 "Return"
+	#else
+		#define STR0001 "Cliente"
+		#define STR0002 "Código"
+		#define STR0003 "Loja"
+		#define STR0004 "Fechar"
+		#define STR0005 "Detalhes"
+		#define STR0006 "Posição Financeira"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "A calcular, aguarde...", "Calculando, aguarde..." )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Nenhum cliente foi seleccionado!", "Nenhum cliente foi selecionado!" )
+		#define STR0009 "Aviso"
+		#define STR0010 "Duplicatas"
+		#define STR0011 "Tipo"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Emissão", "Emissao" )
+		#define STR0013 "Vencto."
+		#define STR0014 "Valor"
+		#define STR0015 "Título N."
+		#define STR0016 "Dias Atrasado"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Recuperar", "Retornar" )
+	#endif
+#endif

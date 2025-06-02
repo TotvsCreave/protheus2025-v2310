@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "¿Tipo de documento?"
+	#define STR0002 "1-Pedido Venta"
+	#define STR0003 "2-Form. Trans."
+	#define STR0004 "3-Form. Envio"
+	#define STR0005 "4-Factura"
+	#define STR0006 "5-Nota Debito"
+	#define STR0007 "Agregando Parametros"
+	#define STR0008 "Informe los tipos de documentos por"
+	#define STR0009 " imprimirse:"
+	#define STR0010 "1-Pedido de Venta"
+	#define STR0011 "2-Form. de Transporte"
+	#define STR0012 "3-Form. de Envio"
+	#define STR0013 "5-Nota de Debito"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Document Type?"
+		#define STR0002 "1-Sale Order"
+		#define STR0003 "2-Trans. Form"
+		#define STR0004 "3-Remittance Slip"
+		#define STR0005 "4-Factura"
+		#define STR0006 "5-Debit Note"
+		#define STR0007 "Adding Parameters"
+		#define STR0008 "Enter document types"
+		#define STR0009 "to print:"
+		#define STR0010 "1-Sale Order"
+		#define STR0011 "2-Transport Form"
+		#define STR0012 "3-Remittance Slip"
+		#define STR0013 "5-Debit Note"
+	#else
+		#define STR0001 "Tipo de documento?"
+		#define STR0002 "1-Pedido Venda"
+		#define STR0003 "2-Guia Trans."
+		#define STR0004 "3-Guia Remessa"
+		#define STR0005 "4-Factura"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "5-Nota Débito", "5-Nota Debito" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "A adicionar parâmetros", "Adicionando Parametros" )
+		#define STR0008 "Informe os tipos de documentos a"
+		#define STR0009 "serem impressos:"
+		#define STR0010 "1-Pedido de Venda"
+		#define STR0011 "2-Guia de Transporte"
+		#define STR0012 "3-Guia de Remessa"
+		#define STR0013 "5-Nota de Débito"
+	#endif
+#endif

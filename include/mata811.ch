@@ -1,0 +1,48 @@
+#ifdef SPANISH
+	#define STR0001 "Operaciones por Linea de Produccion"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Actualizar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Las claves de Operador no pueden repetirse"
+	#define STR0008 "¿Desea realmente eliminar?"
+	#define STR0009 "Registro eliminado"
+	#define STR0010 "Todos los datos son obligatorios"
+	#define STR0011 "¡No existen operaciones asociadas!"
+	#define STR0012 "¡Solo se permite atribuir operadores a ordenes pendientes!"
+	#define STR0013 "¡El operador no tiene operacion auxiliar asociada!"
+	#define STR0014 "Linea "
+	#define STR0015 "Validacion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Operations by Production Line"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Update"
+		#define STR0006 "Delete"
+		#define STR0007 "Operator keys cannot be repeated"
+		#define STR0008 "Do you really want to delete it?"
+		#define STR0009 "Register deleted"
+		#define STR0010 "All data are mandatory"
+		#define STR0011 "There are no operations associated!"
+		#define STR0012 "Operators can be attributed only to Pending orders!"
+		#define STR0013 "Operator without auxiliary operation associated!"
+		#define STR0014 "Row: "
+		#define STR0015 "Validation"
+	#else
+		#define STR0001 "Operações por Linha de Produção"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Actualizar", "Atualizar" )
+		#define STR0006 "Apagar"
+		#define STR0007 "As chaves de Operador não podem ser repetidas"
+		#define STR0008 "Deseja realmente eliminar?"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Registo eliminado", "Registro eliminado" )
+		#define STR0010 "Todos os dados são obrigatórios"
+		#define STR0011 "Não existem operações associadas!"
+		#define STR0012 "Só é permitido atribuir operadores a ordens em Aberto!"
+		#define STR0013 "O operador não tem operação auxiliar associada!"
+		#define STR0014 "Linha : "
+		#define STR0015 "Validação"
+	#endif
+#endif

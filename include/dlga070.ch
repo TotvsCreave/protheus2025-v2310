@@ -1,0 +1,57 @@
+#ifdef SPANISH
+	#define STR0001 "Servicio vs. Tarea"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "El vector devuelto por el punto de entrada DLA070ENC no se definio correctamente"
+	#define STR0008 "El campo "
+	#define STR0009 " devuelto por el punto de entrada DLA070ENC no se definio en el diccionario de datos SX3"
+	#define STR0010 " devuelto por el punto de entrada DLA070ENC no se encontro en la estructura del archivo DC5"
+	#define STR0011 "Ejecute el Update TMS10R134"
+	#define STR0012 "Servicio"
+	#define STR0013 "Tareas"
+	#define STR0014 "Copiar"
+	#define STR0015 "Borrar"
+	#define STR0016 "Actualizar"
+	#define STR0017 "Opcion invalida informada en la llama de la funcion."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Service x Task"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Insert"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "The vector returned by the entry point DLA070ENC was not defined correctly."
+		#define STR0008 "Field"
+		#define STR0009 "returned by the entry point DLA070ENC not defined in the data dictionary SX3"
+		#define STR0010 " returned by the entry point DLA070ENC not found in the file structure DC5"
+		#define STR0011 "Execute the Update TMS10R134"
+		#define STR0012 "Service"
+		#define STR0013 "Tasks"
+		#define STR0014 "Copy"
+		#define STR0015 "Delete"
+		#define STR0016 "Update"
+		#define STR0017 "Option not valid entered in function call."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Serviço X Actividade", "Servico x Tarefa" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "O vector devolvido pelo ponto de entrada dla070enc não foi definido correctamente", "O vetor retornado pelo ponto de entrada DLA070ENC nao foi definido corretamente" )
+		#define STR0008 "O campo "
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", " Devolvido Pelo Ponto De Entrada Dla070enc Não Foi Definido No Dicionário De Dados Sx3", " retornado pelo ponto de entrada DLA070ENC nao foi definido no dicionario de dados SX3" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", " Devolvido Pelo Ponto De Entrada Dla070enc Não Foi Encontrado Na Estrutura Do Ficheiro Dc5", " retornado pelo ponto de entrada DLA070ENC nao foi encontrado na estrutura do arquivo DC5" )
+		#define STR0011 "Execute o Update TMS10R134"
+		#define STR0012 "Serviço"
+		#define STR0013 "Tarefas"
+		#define STR0014 "Copiar"
+		#define STR0015 "Deletar"
+		#define STR0016 "Atualizar"
+		#define STR0017 "Opção inválida informada na chamada da função."
+	#endif
+#endif

@@ -1,0 +1,63 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Epis"
+	#define STR0004 "EPIS Necesarios"
+	#define STR0005 "No existen Epis necesarios para este empleado."
+	#define STR0006 "Matricula"
+	#define STR0007 "Nombre"
+	#define STR0008 "Fecha Nasc."
+	#define STR0009 "Edad"
+	#define STR0010 "Sexo"
+	#define STR0011 "C.Costo"
+	#define STR0012 "Nombre C.Costo"
+	#define STR0013 "Funcion"
+	#define STR0014 "Puesto"
+	#define STR0015 "Nombre Func."
+	#define STR0016 "Nome Puesto"
+	#define STR0017 "Fecha de ingreso"
+	#define STR0018 "Clientes"
+	#define STR0019 "Empleados"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search   "
+		#define STR0002 "View "
+		#define STR0003 "Ipes"
+		#define STR0004 "IPEs needed"
+		#define STR0005 "There are no Ipes required for this employee."
+		#define STR0006 "Registration"
+		#define STR0007 "Name"
+		#define STR0008 "Birth Date"
+		#define STR0009 "Age  "
+		#define STR0010 "Sex "
+		#define STR0011 "Cost C."
+		#define STR0012 "C. Center Name"
+		#define STR0013 "Role"
+		#define STR0014 "Pos. "
+		#define STR0015 "Empl. Name"
+		#define STR0016 "Pos. Name "
+		#define STR0017 "Admission Date"
+		#define STR0018 "Customers"
+		#define STR0019 "Employees"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Epis"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Epis Necessários", "EPIs Necessários" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Não existem epis necessários para este empregado .", "Não existem Epis necessários para este funcionário." )
+		#define STR0006 "Matrícula"
+		#define STR0007 "Nome"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Data De Nasc.", "Data Nasc." )
+		#define STR0009 "Idade"
+		#define STR0010 "Sexo"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "C.custo", "C.Custo" )
+		#define STR0012 "Nome C.Custo"
+		#define STR0013 "Função"
+		#define STR0014 "Posto"
+		#define STR0015 "Nome Func."
+		#define STR0016 "Nome Posto"
+		#define STR0017 "Data Admissão"
+		#define STR0018 "Clientes"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Empregados", "Funcionários" )
+	#endif
+#endif

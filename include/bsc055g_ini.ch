@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Error en la creacion del archivo ["
+	#define STR0002 "Operacion interrumpida"
+	#define STR0003 "Libro Estrategico - Iniciativas"
+	#define STR0004 "Organizacion"
+	#define STR0005 "Estrategia"
+	#define STR0006 "Perspectiva"
+	#define STR0007 "Objetivo"
+	#define STR0008 "Responsable"
+	#define STR0009 "Iniciativa"
+	#define STR0010 "Descripcion"
+	#define STR0011 "Fecha Inicial"
+	#define STR0012 "Fecha Final"
+	#define STR0013 "% Completo"
+	#define STR0014 "Estatus"
+	#define STR0015 "Estimado"
+	#define STR0016 "Real"
+	#define STR0017 "Horas"
+	#define STR0018 "Costos"
+	#define STR0019 "Lista de Tareas"
+	#define STR0020 "Tarea"
+	#define STR0021 "Descripcion"
+	#define STR0022 "Lista de Documentos"
+	#define STR0023 "Documento"
+	#define STR0024 "Enlace"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Error creating file ["
+		#define STR0002 "Operation aborted"
+		#define STR0003 "Strategic book - Iniciatives "
+		#define STR0004 "Organization"
+		#define STR0005 "Strategy "
+		#define STR0006 "Perspective"
+		#define STR0007 "Objective"
+		#define STR0008 "Responsible"
+		#define STR0009 "Initiative"
+		#define STR0010 "Description"
+		#define STR0011 "Initial date"
+		#define STR0012 "Final date"
+		#define STR0013 "% Complete"
+		#define STR0014 "Status"
+		#define STR0015 "Estimated"
+		#define STR0016 "Actual"
+		#define STR0017 "Times"
+		#define STR0018 "Costs "
+		#define STR0019 "Task lists "
+		#define STR0020 "Task "
+		#define STR0021 "Description"
+		#define STR0022 "Documents list "
+		#define STR0023 "Document "
+		#define STR0024 "Link"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Erro na criação do ficheiro [", "Erro na criação do arquivo [" )
+		#define STR0002 "Operação abortada"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Livro estratégico - iniciativas", "Book Estratégico - Iniciativas" )
+		#define STR0004 "Organização"
+		#define STR0005 "Estratégia"
+		#define STR0006 "Perspectiva"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Objectivo", "Objetivo" )
+		#define STR0008 "Responsável"
+		#define STR0009 "Iniciativa"
+		#define STR0010 "Descrição"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Data De Início", "Data Inicio" )
+		#define STR0012 "Data Final"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "% Completa", "% Completo" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0015 "Estimado"
+		#define STR0016 "Real"
+		#define STR0017 "Horas"
+		#define STR0018 "Custos"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Lista De Tarefas", "Lista de Tarefas" )
+		#define STR0020 "Tarefa"
+		#define STR0021 "Descrição"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Lista De Documentos", "Lista de Documentos" )
+		#define STR0023 "Documento"
+		#define STR0024 "Link"
+	#endif
+#endif

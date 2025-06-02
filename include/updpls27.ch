@@ -1,0 +1,129 @@
+#ifdef SPANISH
+	#define STR0001 "Archivos Texto (*.TXT) |*.txt|"
+	#define STR0002 "Verificando integridad de los diccionarios..."
+	#define STR0003 "Empresa: "
+	#define STR0004 "Actualizando diccionario de campos..."
+	#define STR0005 "Actualizando estructuras. Aguarde... "
+	#define STR0006 "¡Atencion!"
+	#define STR0007 "Hubo un error desconocido durante la actualizacion de la tabla : "
+	#define STR0008 "Verifique la integridad del diccionario y de la tabla."
+	#define STR0009 "Continuar"
+	#define STR0010 "Ocurrio un error desconocido durante la actualizacion de la estructura de la tabla: "
+	#define STR0011 "Log de actualizacion "
+	#define STR0012 "No se selecciono ninguna empresa para Actualizacion"
+	#define STR0013 "Actualizacion concluida."
+	#define STR0014 "Compatibilizador de Diccionarios vs. Base de datos"
+	#define STR0015 "Permitir Incidencia de Horario Especial"
+	#define STR0016 "Esta rutina efectuara la compatibilizacion de los diccionarios y base de datos"
+	#define STR0017 "y demas ajustes referentes a la siguiente fnc:"
+	#define STR0018 "   FNC: "
+	#define STR0019 "   Referencia: "
+	#define STR0020 "Atencion: efectuar backup de los diccionarios y de la base de datos previamente "
+	#define STR0021 "Compatibilizador"
+	#define STR0022 "¿Desea confirmar el procesamiento del compatibilizador?"
+	#define STR0023 "Si"
+	#define STR0024 "No"
+	#define STR0025 "Procesando"
+	#define STR0026 "Espere, procesando preparacion de los archivos"
+	#define STR0027 "Habilite para calcular Horario Especial para "
+	#define STR0028 'Incluido el Parametro:'
+	#define STR0029 "¡No fue posible la apertura de la tabla de empresas de forma exclusiva!"
+	#define STR0030 "Ok"
+	#define STR0031 "Seleccione la(s) Empresa(s) que se Actualizara(n)"
+	#define STR0032 "No existen bases para consultar"
+	#define STR0033 "Cod. Empresa"
+	#define STR0034 "Cod. Sucursal"
+	#define STR0035 "Empresa/Sucursal"
+	#define STR0036 "Marca/Desmarca"
+	#define STR0037 "via Remote campo BE1_TIPADM igual a MV_PLSCDIU "
+	#define STR0038 "via Portal si el campo 22 es Urgencia o Emergencia."
+	#define STR0039 "Se inserto indice orden 20 (K) en la tabla BEA con la siguiente clave: BEA_FILIAL+BEA_OPEMOV+BEA_ANOAUT+BEA_MESAUT+BEA_NUMAUT+BEA_DATPRO+BEA_HORPRO"
+	#define STR0040 "Oper. Movto. + Ano Autoriz. + Mes Autoriz. + Num Autoriz. + Fecha Proc."
+	#define STR0041 "Actualizando SIX - Diccionario de Indices..."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Text files (*.TXT) |*.txt|"
+		#define STR0002 "Checking dictionary integrity..."
+		#define STR0003 "Company: "
+		#define STR0004 "Updating field dictionary..."
+		#define STR0005 "Updating structures. Wait... "
+		#define STR0006 "Attention!"
+		#define STR0007 "There was an unknown error during table update: "
+		#define STR0008 "Check dictionary and table integrity."
+		#define STR0009 "Continue"
+		#define STR0010 "There was an unknown error during table structure update: "
+		#define STR0011 "Update Log "
+		#define STR0012 "No company was selected for update"
+		#define STR0013 "Update completed."
+		#define STR0014 "Compatibility Program of Dictionaries x Database"
+		#define STR0015 "Allow to Incur Special Hours"
+		#define STR0016 "This routine makes dictionaries and database compatible,"
+		#define STR0017 "an other adjusts regarding the following FNC:"
+		#define STR0018 "   FNC: "
+		#define STR0019 "   Reference: "
+		#define STR0020 "Attention: Previously back up dictionaries and database "
+		#define STR0021 "Compatibility Program"
+		#define STR0022 "Do you want to confirm compatibility program processing?"
+		#define STR0023 "Yes"
+		#define STR0024 "No"
+		#define STR0025 "Processing"
+		#define STR0026 "Please wait, processing file preparation"
+		#define STR0027 "Enable to calculate Special Hours for "
+		#define STR0028 'Added Parameter:'
+		#define STR0029 "Company table could not be opened in exclusive mode!"
+		#define STR0030 "OK"
+		#define STR0031 "Choose companies to be updated"
+		#define STR0032 "There are no banks to be queried"
+		#define STR0033 "Company Code"
+		#define STR0034 "Branch Code"
+		#define STR0035 "Company/Branch"
+		#define STR0036 "Select/Clear"
+		#define STR0037 "via Remote field BE1_TIPADM equal to MV_PLSCDIU "
+		#define STR0038 "via Portal field 22 is Urgent or Emergency."
+		#define STR0039 "Index order 20 (K) inserted in table BEA with the following key: BEA_FILIAL+BEA_OPEMOV+BEA_ANOAUT+BEA_MESAUT+BEA_NUMAUT+BEA_DATPRO+BEA_HORPRO"
+		#define STR0040 "Trans. Oper. + Authoriz. Year + Authoriz. No. + Proc. Date"
+		#define STR0041 "Updating SIX - Index Dictionary..."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Ficheiros Texto (*.TXT) |*.txt|", "Arquivos Texto (*.TXT) |*.txt|" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "A verificar integridade dos dicionários...", "Verificando integridade dos dicionários..." )
+		#define STR0003 "Empresa: "
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "A actualizar dicionário de campos...", "Atualizando dicionário de campos..." )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "A actualizar estruturas. Aguarde... ", "Atualizando estruturas. Aguarde... " )
+		#define STR0006 "Atenção!"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Ocorreu um erro desconhecido durante a actualização da tabela: ", "Ocorreu um erro desconhecido durante a atualização da tabela: " )
+		#define STR0008 "Verifique a integridade do dicionário e da tabela."
+		#define STR0009 "Continuar"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Ocorreu um erro desconhecido durante a actualização da estrutura da tabela: ", "Ocorreu um erro desconhecido durante a atualização da estrutura da tabela: " )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Log da actualização ", "Log da atualização " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Não foi seleccionada nenhuma empresa para Actualização", "Não foram selecionadas nenhuma empresa para Atualização" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Actualização concluída.", "Atualização concluída." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Compatibilizador de Dicionários x Base de dados", "Compatibilizador de Dicionários x Banco de dados" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Permitir incidência de horário especial", "Permitir Incidencia de Horario Especial" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Este procedimento efectuará a compatibilização dos dicionários, base de dados,", "Esta rotina irá efetuar a compatibilização dos dicionários e banco de dados," )
+		#define STR0017 "e demais ajustes referente a FNC abaixo:"
+		#define STR0018 "   FNC: "
+		#define STR0019 "   Referência: "
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Atenção: efectuar backup dos dicionários e da base de dados previamente ", "Atenção: efetuar backup dos dicionários e do banco de dados previamente " )
+		#define STR0021 "Compatibilizador"
+		#define STR0022 "Deseja confirmar o processamento do compatibilizador ?"
+		#define STR0023 "Sim"
+		#define STR0024 "Não"
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "A Processar", "Processando" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Aguarde, a processar preparação dos ficheiros", "Aguarde, processando preparação dos arquivos" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Habilite para calcular Horário Especial para ", "Habilite para calcular Horario Especial para " )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", 'A incluir o parâmetro:', 'Incluido o Parametro:' )
+		#define STR0029 "Não foi possível a abertura da tabela de empresas de forma exclusiva !"
+		#define STR0030 "Ok"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Escolha a(s) empresa(s) que será(ão) actualizada(s)", "Escolha a(s) Empresa(s) que será(ão) Atualizada(s)" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Nao existem bases a consultar", "Nao existe bancos a consultar" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Cód.Empresa", "Cod Empresa" )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Cód.Filial", "Cod Filial" )
+		#define STR0035 "Empresa /Filial"
+		#define STR0036 "Marca/Desmarca"
+		#define STR0037 "via Remote campo BE1_TIPADM igual a MV_PLSCDIU "
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "via Portal o campo 22 for Urgência ou Emergência.", "via Portal o campo 22 for Urgência ou Emergencia." )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Inserido o índice ordem 20 (K) na tabela BEA com a seguinte chave: BEA_FILIAL+BEA_OPEMOV+BEA_ANOAUT+BEA_MESAUT+BEA_NUMAUT+BEA_DATPRO+BEA_HORPRO", "Inserido indice ordem 20 (K) na tabela BEA com a seguinte chave: BEA_FILIAL+BEA_OPEMOV+BEA_ANOAUT+BEA_MESAUT+BEA_NUMAUT+BEA_DATPRO+BEA_HORPRO" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Oper. Movto. + Ano Autoriz. + Mês Autoriz. + Nr.Autoriz. + Data Proc.", "Oper. Movto. + Ano Autoriz. + Mes Autoriz. + Num Autoriz. + Data Proc." )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "A actualizar SIX - Dicionário de Índices...", "Atualizando SIX - Dicionário de Indices..." )
+	#endif
+#endif

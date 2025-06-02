@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Servicio REST para consulta de historial de ABSENTISMO"
+	#define STR0002 "Consulta de Absentismo"
+	#define STR0003 "Visión es un parámetro obligatorio"
+	#define STR0004 "Estructura no encontrada"
+	#define STR0005 "Datos no encontrados"
+	#define STR0006 " Vuelve en el mes "
+	#define STR0007 " Vuelve fuera del mes "
+	#define STR0008 "ACCIDENTE TRABAJO"
+	#define STR0009 "ENFERMEDAD"
+	#define STR0010 "OTROS"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "REST service for query of ABSENTEEISM"
+		#define STR0002 "Absenteeism Search"
+		#define STR0003 "View is a mandatory parameter"
+		#define STR0004 "Structure not found"
+		#define STR0005 "Data not found"
+		#define STR0006 " back to Month "
+		#define STR0007 " back out of Month "
+		#define STR0008 "WORK RELATED ACCIDENT"
+		#define STR0009 "DISEASE"
+		#define STR0010 "OTHER"
+	#else
+		#define STR0001 "Serviço REST para consulta de ABSENTEISMO"
+		#define STR0002 "Consulta de Absenteismo"
+		#define STR0003 "Visão é um parâmetro obrigatório"
+		#define STR0004 "Estrutura não encontrada"
+		#define STR0005 "Dados não encontrados"
+		#define STR0006 " volta no Mês "
+		#define STR0007 " volta fora do Mês "
+		#define STR0008 "ACIDENTE TRABALHO"
+		#define STR0009 "DOENÇA"
+		#define STR0010 "OUTROS"
+	#endif
+#endif

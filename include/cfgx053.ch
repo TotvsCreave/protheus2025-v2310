@@ -1,0 +1,123 @@
+#ifdef SPANISH
+	#define STR0001 "        Este programa tiene por objetivo realizar consulta de LOG de modificaciones"
+	#define STR0002 "de archivos conforme configurado en los parametros abajo.                "
+	#define STR0003 "Consulta de LOG de archivos"
+	#define STR0004 "Inclusion"
+	#define STR0005 "Modificacion"
+	#define STR0006 "Borrado"
+	#define STR0007 "Alias"
+	#define STR0008 "Identificacion"
+	#define STR0009 "Operacion"
+	#define STR0010 "Usuario"
+	#define STR0011 "Fecha"
+	#define STR0012 "Hora"
+	#define STR0013 "No existen tablas para seleccionar."
+	#define STR0014 "Atencion"
+	#define STR0015 "Campo"
+	#define STR0016 "Valor Antiguo"
+	#define STR0017 "Valor Nuevo"
+	#define STR0018 "Recno"
+	#define STR0019 "Clave unica"
+	#define STR0020 "Informaciones de la clave unica"
+	#define STR0021 "Clave alias"
+	#define STR0022 "Impresion"
+	#define STR0023 "Emision de los LOG de archivo"
+	#define STR0024 "Imprimira los datos de los registros"
+	#define STR0025 "de acuerdo con los parametros del informe"
+	#define STR0026 "A rayas"
+	#define STR0027 "Administracion"
+	#define STR0028 "Parametros del informe"
+	#define STR0029 "Familia de archivos para visualizacion de los LOGS"
+	#define STR0030 "De Usuario"
+	#define STR0031 "A Usuario"
+	#define STR0032 "De Fecha"
+	#define STR0033 "A Fecha"
+	#define STR0034 "De Hora"
+	#define STR0035 "A Hora"
+	#define STR0036 "Tipo de LOG"
+	#define STR0037 "Ambos"
+	#define STR0038 "Tabla: "
+	#define STR0039 "Ultimo Valor"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "          The aim of this program is to accomplish the records LOG changes"
+		#define STR0002 " query as configured in the parameters below.                           "
+		#define STR0003 "Records LOG Query"
+		#define STR0004 "Insertion"
+		#define STR0005 "Editing"
+		#define STR0006 "Deletion"
+		#define STR0007 "Alias"
+		#define STR0008 "Identification"
+		#define STR0009 "Operation"
+		#define STR0010 "User"
+		#define STR0011 "Date"
+		#define STR0012 "Time"
+		#define STR0013 "There are no tables to be selected."
+		#define STR0014 "Warning"
+		#define STR0015 "Field"
+		#define STR0016 "Old Value"
+		#define STR0017 "New Value"
+		#define STR0018 "Recno"
+		#define STR0019 "Unique Key"
+		#define STR0020 "Unique Key information"
+		#define STR0021 "Alias Key"
+		#define STR0022 "Print"
+		#define STR0023 "Generation of record LOGs"
+		#define STR0024 "Prints record data"
+		#define STR0025 "according to report parameters"
+		#define STR0026 "Z-form"
+		#define STR0027 "Administration"
+		#define STR0028 "Report parameters"
+		#define STR0029 "Family of files to view LOGS"
+		#define STR0030 "User from"
+		#define STR0031 "User to"
+		#define STR0032 "Date from"
+		#define STR0033 "Date to"
+		#define STR0034 "Time from"
+		#define STR0035 "Time to:"
+		#define STR0036 "LOG type"
+		#define STR0037 "Both"
+		#define STR0038 "Table: "
+		#define STR0039 "Last value"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "          este programa tem como objectivo efectuar a consulta do diário de alterações", "          Este programa tem por objetivo efetuar a consulta de LOG de alteracöes" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "De registos conforme configurado nos parâmetros abaixo.                ", "de cadastros conforme configurado nos parametros abaixo.                " )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Consulta de diário de registos", "Consulta de LOG de cadastros" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Inclusão", "Inclusäo" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Alteração", "Alteracäo" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Exclusão", "Exclusäo" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Aliás", "Alias" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Identificação", "Identificacäo" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Operação", "Operacäo" )
+		#define STR0010 "Usuario"
+		#define STR0011 "Data"
+		#define STR0012 "Hora"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Não existem tabelas para serem seleccionadas.", "Näo existe tabelas para serem selecionados." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Atenção", "Atencäo" )
+		#define STR0015 "Campo"
+		#define STR0016 "Valor Antigo"
+		#define STR0017 "Valor Novo"
+		#define STR0018 "Recno"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Chave única", "Chave Única" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Informações da chave única", "Informações da Chave Única" )
+		#define STR0021 "Chave Alias"
+		#define STR0022 "Impressão"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Emissão dos LOGs de registo", "Emissão dos LOGs de cadastro" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Imprimirá os dados dos registos", "Irá imprimir os dados dos registros" )
+		#define STR0025 "de acordo com os parâmetros do relatório"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Cód.de Barras", "Zebrado" )
+		#define STR0027 "Administração"
+		#define STR0028 "Parâmetros do relatório"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Família de ficheiros para visualização dos LOGS", "Família de arquivos para visualização dos LOGS" )
+		#define STR0030 "Usuário de"
+		#define STR0031 "Usuário até"
+		#define STR0032 "Data de"
+		#define STR0033 "Data até"
+		#define STR0034 "Hora de"
+		#define STR0035 "Hora até"
+		#define STR0036 "Tipo de LOG"
+		#define STR0037 "Ambos"
+		#define STR0038 "Tabela: "
+		#define STR0039 "Último Valor"
+	#endif
+#endif

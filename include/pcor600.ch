@@ -1,0 +1,72 @@
+#ifdef SPANISH
+	#define STR0001 "Cubos Comparativos - Informe de Saldo Mes a Mes (Volumen Hasta el Mes)"
+	#define STR0002 "Previsto"
+	#define STR0003 "Realizado"
+	#define STR0004 "Verif. el mes informado."
+	#define STR0005 "Codigo"
+	#define STR0006 "Descripc."
+	#define STR0007 "Ano-"
+	#define STR0008 "Codigo/Descripc."
+	#define STR0009 "Ene"
+	#define STR0010 "Feb"
+	#define STR0011 "Mar"
+	#define STR0012 "Abr"
+	#define STR0013 "May"
+	#define STR0014 "Jun"
+	#define STR0015 "Jul"
+	#define STR0016 "Ago"
+	#define STR0017 "Sep"
+	#define STR0018 "Nov"
+	#define STR0019 "Dic"
+	#define STR0020 "Atenc. "
+	#define STR0021 "Cubos Comparativos"
+	#define STR0022 "Oct"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Comparative cubes - Statement of balance month by month (Volume up to month)"
+		#define STR0002 "Estimated"
+		#define STR0003 "Actual   "
+		#define STR0004 "Check the month entered. "
+		#define STR0005 "Code "
+		#define STR0006 "Descript."
+		#define STR0007 "Year-"
+		#define STR0008 "Code/Description"
+		#define STR0009 "Jan"
+		#define STR0010 "Feb"
+		#define STR0011 "Mar"
+		#define STR0012 "Apr"
+		#define STR0013 "May"
+		#define STR0014 "Jun"
+		#define STR0015 "Jul"
+		#define STR0016 "Aug"
+		#define STR0017 "Sep"
+		#define STR0018 "Nov"
+		#define STR0019 "Dec"
+		#define STR0020 "Attention"
+		#define STR0021 "Comparative cubes "
+		#define STR0022 "Oct"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Cubos Comparativos - Demonstrativo De Saldo Mês A Mês (volume Até Ao Mês)", "Cubos Comparativos - Demonstrativo de Saldo Mes a Mes (Volume Ate o Mes)" )
+		#define STR0002 "Previsto"
+		#define STR0003 "Realizado"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Verifique o mês introduzido.", "Verifique o mes informado." )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Código", "Codigo" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0007 "Ano-"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Código/descrição", "Codigo/Descricao" )
+		#define STR0009 "Jan"
+		#define STR0010 "Fev"
+		#define STR0011 "Mar"
+		#define STR0012 "Abr"
+		#define STR0013 "Mai"
+		#define STR0014 "Jun"
+		#define STR0015 "Jul"
+		#define STR0016 "Ago"
+		#define STR0017 "Set"
+		#define STR0018 "Nov"
+		#define STR0019 "Dez"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Atenção", "Atencao" )
+		#define STR0021 "Cubos Comparativos"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Nov", "Out" )
+	#endif
+#endif

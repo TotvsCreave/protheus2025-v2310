@@ -1,0 +1,57 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de Meta de Ventas"
+	#define STR0002 "PerIodo"
+	#define STR0003 "Inicial"
+	#define STR0004 "1º Rev."
+	#define STR0005 "2º Rev."
+	#define STR0006 "3º Rev."
+	#define STR0007 "Datos del Presupuesto :"
+	#define STR0008 "Niveles :"
+	#define STR0009 "Criterio :"
+	#define STR0010 "Buscar"
+	#define STR0011 "Visualizar"
+	#define STR0012 "Incluir"
+	#define STR0013 "Modificar"
+	#define STR0014 "Borrar"
+	#define STR0015 "Ano :"
+	#define STR0016 "Confirma el borrado del Periodo de "
+	#define STR0017 "Borrar Registro(s)"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Sales Goal File"
+		#define STR0002 "Period"
+		#define STR0003 "Initial"
+		#define STR0004 "1st Rev."
+		#define STR0005 "2nd Rev."
+		#define STR0006 "3rd Rev."
+		#define STR0007 "Budget Data:"
+		#define STR0008 "Levels :"
+		#define STR0009 "Criterion:"
+		#define STR0010 "Search"
+		#define STR0011 "View"
+		#define STR0012 "Add"
+		#define STR0013 "Edit"
+		#define STR0014 "Delete"
+		#define STR0015 "Year: "
+		#define STR0016 "Confirm deletion of the period "
+		#define STR0017 "Delete Record(s)"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Registo De Objectivo De Vendas", "Cadastro de Meta de Vendas" )
+		#define STR0002 "Período"
+		#define STR0003 "Inicial"
+		#define STR0004 "1º Rev."
+		#define STR0005 "2º Rev."
+		#define STR0006 "3º Rev."
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Dados do orçamento :", "Dados do Orçamento :" )
+		#define STR0008 "Níveis :"
+		#define STR0009 "Critério :"
+		#define STR0010 "Pesquisar"
+		#define STR0011 "Visualizar"
+		#define STR0012 "Incluir"
+		#define STR0013 "Alterar"
+		#define STR0014 "Excluir"
+		#define STR0015 "Ano :"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Confirmar a eliminação do período de ", "Confirma a exclusão do Período de " )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Eliminar Registo(s)", "Excluir Registro(s)" )
+	#endif
+#endif

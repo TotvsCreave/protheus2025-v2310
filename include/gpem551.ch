@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Seg. Priv. Complementario por empleado"
+	#define STR0002 "Este programa tiene como objetivo generar datos en la tabla Seg. Privada complementaria por empleado SMU, que se utilizará en la generación del archivo de la DIRF"
+	#define STR0003 "Al solicitar el procesamiento, se grabarán los datos del Proveedor de la seguridad privada para el cual aportarán los empleados, así como el período de aporte."
+	#define STR0004 "Durante la generación de la DIRF, buscaremos los conceptos que están vinculados en la Tabla S073 y que están presentes en la tabla de acumulados del empleado."
+	#define STR0005 "Procesando registros..."
+	#define STR0006 "Matrícula:"
+	#define STR0007 "Seguridad privada complementaria"
+	#define STR0008 "Final del procesamiento."
+	#define STR0009 "Procesamiento anulado"
+	#define STR0010 "Ok"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Complementary Welfare by Employee"
+		#define STR0002 "The purpose of this program is to generate data in the table Complementary Welfare by Employee SMU used in the generation of DIRF file"
+		#define STR0003 "When requesting the processing, it saves the data of the Supplier of Social Security to which employees contributed, as well as contribution period."
+		#define STR0004 "During DIRF generation, search for funds related to Table S073 and displayed in the table of employee's accrued earnings."
+		#define STR0005 "Processing Records..."
+		#define STR0006 "Enrollment:"
+		#define STR0007 "Complementary Welfare"
+		#define STR0008 "End of processing."
+		#define STR0009 "Processing canceled"
+		#define STR0010 "Ok"
+	#else
+		#define STR0001 "Previdência Complementar por Funcionário"
+		#define STR0002 "Este programa tem como objetivo gerar dados na tabela Previdência Complementar por Funcionário SMU, que será utilizada na geração do arquivo da DIRF"
+		#define STR0003 "Ao solicitar o processamento, serão gravados os dados do Fornecedor de previdência para o qual os funcionários contribuíram, assim como o período de contribuição."
+		#define STR0004 "Durante a geração da DIRF, buscaremos as verbas que estão vinculadas na Tabela S073 e que estão presentes na tabela de acumulados do funcionário."
+		#define STR0005 "Processando Registros..."
+		#define STR0006 "Matricula:"
+		#define STR0007 "Previdência Complementar"
+		#define STR0008 "Fim do Processamento."
+		#define STR0009 "Processamento Cancelado"
+		#define STR0010 "Ok"
+	#endif
+#endif

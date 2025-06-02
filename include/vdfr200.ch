@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 'Control de promotores electorales'
+	#define STR0002 'Este informe tiene por objeto auxiliar la administracion de los periodos de ejercicio de los miembros como promotores electorales.'
+	#define STR0003 'Atencion. ¡Es obligatorio seleccionar los cargos de promotor!'
+	#define STR0004 'Sucursales'
+	#define STR0005 'Distrito judicial'
+	#define STR0006 'Servidores'
+	#define STR0007 'Inicio del ultimo mandato'
+	#define STR0008 'Final del ultimo mandato'
+	#define STR0009 'Zona electoral'
+	#define STR0010 'NUNCA ASUMIO ELECTORAL'
+#else
+	#ifdef ENGLISH
+		#define STR0001 'Electoral Prosecutor Control'
+		#define STR0002 'This report helps managing the assignment periods of members as electoral attorneys.'
+		#define STR0003 'Attention. You must select the prosecution office positions!'
+		#define STR0004 'Branches'
+		#define STR0005 'Judicial District'
+		#define STR0006 'Servants'
+		#define STR0007 'Start of Last Term of Office'
+		#define STR0008 'End of Last Term of Office'
+		#define STR0009 'Electoral Zone'
+		#define STR0010 'NEVER ACCEPTED ELECTORAL'
+	#else
+		#define STR0001 'Controle de Promotores Eleitorais'
+		#define STR0002 'Este relatório visa auxiliar o gerenciamento dos períodos de exercício dos membros como promotores eleitorais.'
+		#define STR0003 'Atenção. É obrigatório selecionar os cargos de promotoria !'
+		#define STR0004 'Filiais'
+		#define STR0005 'Comarca'
+		#define STR0006 'Servidores'
+		#define STR0007 'Início do Último Mandato'
+		#define STR0008 'Fim do Último Mandato'
+		#define STR0009 'Zona Eleitoral'
+		#define STR0010 'NUNCA ASSUMIU ELEITORAL'
+	#endif
+#endif

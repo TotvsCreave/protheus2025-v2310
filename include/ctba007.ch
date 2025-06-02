@@ -1,0 +1,48 @@
+#ifdef SPANISH
+	#define STR0001 "Datos Auxiliares CTB"
+	#define STR0002 "NO SE PUEDE EJECUTAR, FALTA"
+	#define STR0003 "Tabla:"
+	#define STR0004 "Descripcion:"
+	#define STR0005 "Por favor, cree por lo menos un item"
+	#define STR0006 "Linea Duplicada"
+	#define STR0007 "Tabla 00 exclusivo para el sistema"
+	#define STR0008 "Buscar"
+	#define STR0009 "Visualizar"
+	#define STR0010 "Incluir"
+	#define STR0011 "Modificar"
+	#define STR0012 "Borrar"
+	#define STR0013 "¡Los registros del cálculo de la ganancia y pérdidas son de uso interno del sistema, y no se deben modificar!"
+	#define STR0014 "Acceso restringido"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "CTB Auxiliary Data"
+		#define STR0002 "UNABLE TO EXECUTE, FAIL"
+		#define STR0003 "Table:"
+		#define STR0004 "Description:"
+		#define STR0005 "Create at least one item."
+		#define STR0006 "Duplicate Row"
+		#define STR0007 "Table 00 system exclusive"
+		#define STR0008 "Search"
+		#define STR0009 "View"
+		#define STR0010 "Add"
+		#define STR0011 "Edit"
+		#define STR0012 "Delete"
+		#define STR0013 "Calculation Registers of Profits and Losses are of internal use of the system, it must not be modified!"
+		#define STR0014 "Restricted Access"
+	#else
+		#define STR0001 "Dados Auxiliares CTB"
+		#define STR0002 "NÃO É POSSÍVEL EXECUTAR, FALTA"
+		#define STR0003 "Tabela:"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Descrição:", "Descricao:" )
+		#define STR0005 "Por favor, crie pelo menos um item"
+		#define STR0006 "Linha Duplicada"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Tabela 00 exclusiva para o sistema", "Tabela 00 exclusivo para o sistema" )
+		#define STR0008 "Pesquisar"
+		#define STR0009 "Visualizar"
+		#define STR0010 "Incluir"
+		#define STR0011 "Alterar"
+		#define STR0012 "Excluir"
+		#define STR0013 "Registros de Apuração de Lucros e Perdas são de uso interno do sistema, não devem ser modificados!"
+		#define STR0014 "Acesso Restrito"
+	#endif
+#endif

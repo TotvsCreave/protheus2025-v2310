@@ -1,0 +1,48 @@
+#ifdef SPANISH
+	#define STR0000 "Operacion"
+	#define STR0001 "Descripcion"
+	#define STR0002 "Condicion"
+	#define STR0003 "Estatus"
+	#define STR0004 "Borrar"
+	#define STR0005 "Borrar proceso"
+	#define STR0006 "Editar"
+	#define STR0007 "Editar proceso"
+	#define STR0008 "Incluir"
+	#define STR0009 "Incluir proceso"
+	#define STR0010 "Proceso"
+	#define STR0011 "Anular"
+	#define STR0012 "Confirmar"
+	#define STR0013 "Operaciones"
+#else
+	#ifdef ENGLISH
+		#define STR0000 "Transaction"
+		#define STR0001 "Description"
+		#define STR0002 "Condition"
+		#define STR0003 "Status"
+		#define STR0004 "Delete"
+		#define STR0005 "Delete process"
+		#define STR0006 "Edit"
+		#define STR0007 "Edit process"
+		#define STR0008 "Add"
+		#define STR0009 "Add process"
+		#define STR0010 "Process"
+		#define STR0011 "Cancel"
+		#define STR0012 "Confirm"
+		#define STR0013 "Transactions"
+	#else
+		#define STR0000 "Operação"
+		#define STR0001 "Descrição"
+		#define STR0002 "Condição"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0004 "Excluir"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Eliminar processo", "Excluir processo" )
+		#define STR0006 "Editar"
+		#define STR0007 "Editar processo"
+		#define STR0008 "Incluir"
+		#define STR0009 "Incluir processo"
+		#define STR0010 "Processo"
+		#define STR0011 "Cancelar"
+		#define STR0012 "Confirmar"
+		#define STR0013 "Operações"
+	#endif
+#endif

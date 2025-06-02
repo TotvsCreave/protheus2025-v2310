@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Medicion de Dosimetro"
+	#define STR0007 "La fecha de realizacion de la medicion del dosimetro no puede ser mayor que la fecha actual."
+	#define STR0008 "Atencion"
+	#define STR0009 "Informe una fecha menor o igual a: "
+	#define STR0010 "La fecha de realizacion de medicion de dosimetro no puede ser anterior a la fecha de admision del empleado"
+	#define STR0011 "Informe una fecha posterior a: "
+	#define STR0012 "La fecha de realizacion de la medicion de dosimetro no puede ser posterior a la fecha de despido del empleado"
+	#define STR0013 "Informe una fecha anterior a: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Change"
+		#define STR0005 "Delete"
+		#define STR0006 "Dosimetry Measurement"
+		#define STR0007 "Dosimetry measure execution date cannot be later current date."
+		#define STR0008 "Attention"
+		#define STR0009 "Enter a date after or equal to "
+		#define STR0010 "The date of the measurement of a dosimeter dosimeter cannot be before the employee's date of admission"
+		#define STR0011 "Enter a date subsequent to: "
+		#define STR0012 "The date to measure a dosimeter cannot be after the date of employee dismissal"
+		#define STR0013 "Enter a date before: "
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Eliminar", "Excluir" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Medição de dosimetro", "Medição de Dosimetro" )
+		#define STR0007 "A data da realização da medição de dosímetro não pode ser maior que a data atual."
+		#define STR0008 "Atenção"
+		#define STR0009 "Informe uma data menor ou igual a: "
+		#define STR0010 "A data de realização da medição de dosímetro não pode ser anterior a data de admissão do funcionário"
+		#define STR0011 "Informe uma data posterior a: "
+		#define STR0012 "A data de realização da medição de dosímetro não pode ser posterior a data de demissão do funcionário"
+		#define STR0013 "Informe uma data anterior a: "
+	#endif
+#endif

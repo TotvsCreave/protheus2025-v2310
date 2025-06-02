@@ -1,0 +1,72 @@
+#ifdef SPANISH
+	#define STR0001 "Estructura de clientes"
+	#define STR0002 "Anexa cliente"
+	#define STR0003 "Borra cliente"
+	#define STR0004 "Visualiza"
+	#define STR0005 "Anexa grupo"
+	#define STR0006 "Borra grupo"
+	#define STR0007 "Busca"
+	#define STR0008 "Opciones"
+	#define STR0009 "Construyendo estructura..."
+	#define STR0010 "Cliente"
+	#define STR0011 "Grupo"
+	#define STR0012 "Buscar entidad"
+	#define STR0013 "Entidad"
+	#define STR0014 "Clave"
+	#define STR0015 "Recortar"
+	#define STR0016 "Colar"
+	#define STR0017 "Borra area temporal"
+	#define STR0018 "Atencion"
+	#define STR0019 "Todos los datos del area temporal se perderán. ¿Confirma ?"
+	#define STR0020 "Si"
+	#define STR0021 "No"
+	#define STR0022 "Cliente / Tienda"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Customers Structure"
+		#define STR0002 "Attach Customer"
+		#define STR0003 "Delete Customer"
+		#define STR0004 "View"
+		#define STR0005 "Attach group"
+		#define STR0006 "Delete group"
+		#define STR0007 "Search"
+		#define STR0008 "Options"
+		#define STR0009 "Building Structure..."
+		#define STR0010 "Customer"
+		#define STR0011 "Group"
+		#define STR0012 "Search Entity"
+		#define STR0013 "Entity"
+		#define STR0014 "Key"
+		#define STR0015 "Cut"
+		#define STR0016 "Paste"
+		#define STR0017 "Clear temporary area"
+		#define STR0018 "Attention"
+		#define STR0019 "All information in the temporary area will be lost. Confirm?"
+		#define STR0020 "Yes"
+		#define STR0021 "No"
+		#define STR0022 "Customer/Store"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Estrutura De Clientes", "Estrutura de Clientes" )
+		#define STR0002 "Anexa Cliente"
+		#define STR0003 "Exclui Cliente"
+		#define STR0004 "Visualiza"
+		#define STR0005 "Anexa grupo"
+		#define STR0006 "Exclui grupo"
+		#define STR0007 "Pesquisa"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Opções", "Opcoes" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "A Construir Estrutura...", "Construindo Estrutura..." )
+		#define STR0010 "Cliente"
+		#define STR0011 "Grupo"
+		#define STR0012 "Pesquisar Entidade"
+		#define STR0013 "Entidade"
+		#define STR0014 "Chave"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Cortar", "Recortar" )
+		#define STR0016 "Colar"
+		#define STR0017 "Limpa area temporaria"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Atenção", "Atencao" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Todos os dados da área temporária serão perdidos. confirma ?", "Todos os dados da area temporaria serao perdidos. Confirma ?" )
+		#define STR0020 "Sim"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Não", "Nao" )
+		#define STR0022 "Cliente / Loja"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Generación de lotes en masa"
+	#define STR0002 "Existen inconsistencias en las requisiciones del lote "
+	#define STR0003 "Verifique el intervalo de requisiciones incluido en el lote."
+	#define STR0004 "Error al generar el lote"
+	#define STR0005 "Complete todos los campos del filtro."
+	#define STR0006 "Error"
+	#define STR0007 "El procesamiento finalizó, pero ocurrieron problemas."
+	#define STR0008 "Para más información, consulte los archivos de log generados por medio del directorio "
+	#define STR0009 "¡Procesamiento concluido con éxito!"
+	#define STR0010 "Finalizado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Generation of Mass Batches"
+		#define STR0002 "There are inconsistencies in the batch requests "
+		#define STR0003 "Check the range of requests in the batch."
+		#define STR0004 "Error generating batch"
+		#define STR0005 "Enter all fields of the filter."
+		#define STR0006 "Error"
+		#define STR0007 "Processing has finished, but there are problems."
+		#define STR0008 "For further information, query log files generated through directory. "
+		#define STR0009 "Processing concluded successfully."
+		#define STR0010 "Finished"
+	#else
+		#define STR0001 "Geração de Lotes em Massa"
+		#define STR0002 "Existem inconsistências nas requsições do lote "
+		#define STR0003 "Verifique o range de requisições contido no lote."
+		#define STR0004 "Erro ao Gerar o Lote"
+		#define STR0005 "Preencha todos os campos do filtro."
+		#define STR0006 "Erro"
+		#define STR0007 "O processamento, finalizou, mas ocorreram problemas."
+		#define STR0008 "Para maiores informações, consulte os arquivos de log gerados através do diretório "
+		#define STR0009 "Processamento finalizado com sucesso!"
+		#define STR0010 "Finalizado"
+	#endif
+#endif

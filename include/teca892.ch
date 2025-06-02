@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Registro de Kit de materiales"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Cant. Apunte"
+	#define STR0008 "Almacén"
+	#define STR0009 "Saldo del Kit"
+	#define STR0010 "El producto seleccionado ya se utilizó en el registro de Kit de productos."
+	#define STR0011 "Solo pueden seleccionarse productos del tipo 'KT'."
+	#define STR0012 "Los productos que conforman un Kit de productos no pueden ser del tipo KT."
+	#define STR0013 'Producto inválido'
+	#define STR0014 "Solo se permiten productos configurados como material de consumo o material de implantación."
+	#define STR0015 "Acceda al archivo de complemento de productos si desea configurarlo."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Material Kit Register"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Qty. Annotation"
+		#define STR0008 "Warehouse"
+		#define STR0009 "Kit Balance"
+		#define STR0010 "The selected product has already used in the Product Kit register."
+		#define STR0011 "Only products of KT type can be selected."
+		#define STR0012 "The products that compose a kit of products cannot be of KT type."
+		#define STR0013 'Invalid Product'
+		#define STR0014 "Only products set as consumption material or implementation material are allowed!"
+		#define STR0015 "Access register of products complement to set it."
+	#else
+		#define STR0001 "Cadastro de Kit de Materiais"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Qtd. Apontamento"
+		#define STR0008 "Armazem"
+		#define STR0009 "Saldo do Kit"
+		#define STR0010 "O produto selecionado já foi utilizado no cadastro de Kit de Produtos."
+		#define STR0011 "Somente produtos do tipo 'KT' podem ser selecionados."
+		#define STR0012 "Os produtos que compõe um Kit de Produtos não podem ser do tipo KT."
+		#define STR0013 'Produto Inválido'
+		#define STR0014 "São permitidos apenas produtos configurados como material de consumo ou material de implantação!"
+		#define STR0015 "Acesse o cadastro de complemento de produtos caso queira configurá-lo."
+	#endif
+#endif

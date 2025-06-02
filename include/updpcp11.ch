@@ -1,0 +1,150 @@
+#ifdef SPANISH
+	#define STR0001 "Update UPDPCP11"
+	#define STR0002 "Nuevo tratamiento en la generacion de OPs intermediarias"
+	#define STR0003 "Desarrollo del ajuste de cada tabla:"
+	#define STR0004 "Atencion: Para que pueda realizarse el Ajuste, ¡NINGUN usuario puede estar utilizando el sistema!"
+	#define STR0005 "La rutina de actualizacion creara los campos necesarios para la utilizacion del nuevo tratamiento que sustituira el archivo Batch al generar las OPs."
+	#define STR0006 "Antes que se inicie la actualizacion, debe leer y aceptar los terminos y las siguientes condiciones. Después de aceptarlos, puede continuar con la actualización."
+	#define STR0007 "¡ATENCION!"
+	#define STR0008 "Este update tiene como objetivo crear los campos C2_BATCH, C2_BATUSR, C2_BATROT, C2_BATORCA."
+	#define STR0009 "Con estos nuevos atributos que se crearan en el diccionario el control de generacion de OPs intermediarias se hara directamente por la tabla (SC2) y no mas por el archivo local batchxx.op."
+	#define STR0010 "¡SIGAMAT.EMP con problemas!"
+	#define STR0011 "SIGAPCP - Update"
+	#define STR0012 "Anular"
+	#define STR0013 "Avanzar"
+	#define STR0014 "&Finalizar"
+	#define STR0015 "¡Bienvenido!"
+	#define STR0016 "¡Lea con atencion!"
+	#define STR0017 "Si, lei y acepto el termino mencionado anteriormente."
+	#define STR0018 "Codigo"
+	#define STR0019 "Empresa:"
+	#define STR0020 "Actualizaciones Realizadas:"
+	#define STR0021 "Ejecucion del ajuste"
+	#define STR0022 "¡Ajuste finalizado!"
+	#define STR0023 "¡Ajuste de las tablas finalizado!"
+	#define STR0024 "Seleccione la empresa"
+	#define STR0025 "&Grabar Log"
+	#define STR0026 "¡SIGAMAT.EMP en uso!"
+	#define STR0027 "Ejecutando compatibilizador para la empresa: "
+	#define STR0028 "Iniciando entorno para la empresa "
+	#define STR0029 "Espere..."
+	#define STR0030 ">> Ajuste Iniciado el "
+	#define STR0031 ", a las "
+	#define STR0032 "LOG del update "
+	#define STR0033 "UPDPCP11 ..........:"
+	#define STR0034 "Empresa: "
+	#define STR0035 "Resultado final de la ejecucion del UPD:"
+	#define STR0036 "Actualizando el archivo "
+	#define STR0037 "Actualizando estructura del banco de datos"
+	#define STR0038 "Se actualizo la estructura fisica de los archivos:"
+	#define STR0039 "Actualizando estructura fisica del archivo "
+	#define STR0040 "Error al actualizar la estructura fisica del archivo "
+	#define STR0041 "*Ajuste realizado en las tablas de la sucursal"
+	#define STR0042 "Espere... Finalizando Entorno de la Empresa "
+	#define STR0043 "Archivos de Log (*.LOG) |*.log|"
+	#define STR0044 "Este LOG se grabo automaticamente como "
+	#define STR0045 "en el directorio de los SXs."
+	#define STR0046 "La extension '.LOG' se agrego al archivo que se grabo del directorio elegido ("
+	#define STR0047 "Actualizando la estructura del archivo "
+	#define STR0048 "Actualizada la estructura del archivo: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Update UPDPCP11"
+		#define STR0002 "New process in creation of intermediary POs"
+		#define STR0003 "Adjustment process of each table:"
+		#define STR0004 "Attention: to make the adjustment, NOT ONE user must be using the system!"
+		#define STR0005 "The update routine will create the fields needed to use of the new process that replace the Batch file when creating the POs."
+		#define STR0006 "Before updating, you must read and accept the following terms and conditions. After accepting them, you may continue the update."
+		#define STR0007 "ATTENTION:"
+		#define STR0008 "This update aims to create fields C2_BATCH, C2_BATUSR, C2_BATROT, C2_BATORCA."
+		#define STR0009 "With these new attributes to be created in the dictionary, the generation of intermediate POs will be controlled directly by the table (SC2) and not by local file batchxx.op anymore."
+		#define STR0010 "SIGAMAT.EMP with problems!"
+		#define STR0011 "SIGAPCP - Update"
+		#define STR0012 "Cancel"
+		#define STR0013 "Next"
+		#define STR0014 "&Finish"
+		#define STR0015 "Welcome!"
+		#define STR0016 "Read carefully!"
+		#define STR0017 "Yes, I read and accept the term above."
+		#define STR0018 "Code"
+		#define STR0019 "Company"
+		#define STR0020 "Updates accomplished:"
+		#define STR0021 "Adjustment execution"
+		#define STR0022 "Adjustment concluded!"
+		#define STR0023 "Adjustment of tables concluded!"
+		#define STR0024 "Select company"
+		#define STR0025 "&Save Log"
+		#define STR0026 "SIGAMAT.EMP in use!"
+		#define STR0027 "Executing compatibility program for the company: "
+		#define STR0028 "Starting environment for the company "
+		#define STR0029 "Please, wait..."
+		#define STR0030 ">> Adjustment started in "
+		#define STR0031 ", as "
+		#define STR0032 "LOG of update "
+		#define STR0033 "UPDPCP11"
+		#define STR0034 "Company: "
+		#define STR0035 "Final result of UPD accomplishment:"
+		#define STR0036 "Updating file "
+		#define STR0037 "Updating database structure"
+		#define STR0038 "Physical structure of files updated:"
+		#define STR0039 "Updating physical structure of file "
+		#define STR0040 "Failure updating file physical structure "
+		#define STR0041 "*Adjustment made in branch tables"
+		#define STR0042 "Please, wait... Finishing Company Environment "
+		#define STR0043 "Log files (*.LOG) |*.log|"
+		#define STR0044 "This LOG was automatically saved as "
+		#define STR0045 "in the directory of SXs."
+		#define STR0046 "The extension '.LOG' was added to the file, which was saved from the directory chosen ("
+		#define STR0047 "Updating file structure  "
+		#define STR0048 "File structure updated: "
+	#else
+		#define STR0001 "Update UPDPCP11"
+		#define STR0002 "Novo tratamento na geração de OPs intermediárias"
+		#define STR0003 "Andamento do ajuste de cada tabela:"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Atenção: para que o ajuste possa ser efectuado, NENHUM utilizador pode estar a utilizar o Sistema!", "Atenção: para que o ajuste possa ser efetuado NENHUM usuário pode estar utilizando o sistema!" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "A rotina de actualização criará os campos necessários para a utilização do novo tratamento que substituirá o ficheiro Batch ao criar as OPs.", "A rotina de atualização irá criar os campos necessários para a utilização do novo tratamento que irá substituir o arquivo Batch ao gerar as OPs." )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Antes de iniciar a actualização, você deve ler e aceitar os termos e as condições a seguir. Após aceitá-los, prossiga a actualização.", "Antes de iniciar a atualização, você deve ler e aceitar os termos e as condições a seguir. Após aceitá-los, você pode prosseguir com a atualização." )
+		#define STR0007 "ATENÇÃO:"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Este update cria os campos C2_BATCH, C2_BATUSR, C2_BATROT, C2_BATORCA.", "Este update tem como objetivo criar os campos C2_BATCH, C2_BATUSR, C2_BATROT, C2_BATORCA." )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Com estes novos atributos que serão criados no diccionário, o controlo de criação de OPs intermediárias será feito direto pela tabela (SC2) e não mais pelo ficheiro local batchxx.op.", "Com estes novos atributos que serão criados no dicionário o controle de geração de OPs intermediárias será feito direto pela tabela (SC2) e não mais pelo arquivo local batchxx.op." )
+		#define STR0010 "SIGAMAT.EMP com problemas!"
+		#define STR0011 "SIGAPCP - Update"
+		#define STR0012 "Cancelar"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Avançar", "Avancar" )
+		#define STR0014 "&Finalizar"
+		#define STR0015 "Bem-Vindo!"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Leia com atenção!", "Leia com atencao!" )
+		#define STR0017 "Sim, li e aceito o termo acima."
+		#define STR0018 "Código"
+		#define STR0019 "Empresa"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Actualizações Realizadas:", "Atualizações Realizadas:" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Execução do ajuste", "Execucao do ajuste" )
+		#define STR0022 "Ajuste finalizado!"
+		#define STR0023 "Ajuste das tabelas finalizado!"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Seleccione a empresa", "Selecione a empresa" )
+		#define STR0025 "&Salvar Log"
+		#define STR0026 "SIGAMAT.EMP em uso!"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "A executar compatibilizador para a empresa: ", "Executando compatibilizador para a empresa: " )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "A inicializar ambiente para a empresa ", "Inicializando ambiente para a empresa " )
+		#define STR0029 "Aguarde..."
+		#define STR0030 ">> Ajuste iniciado em "
+		#define STR0031 ", as "
+		#define STR0032 "LOG do update "
+		#define STR0033 "UPDPCP11"
+		#define STR0034 "Empresa: "
+		#define STR0035 "Resultado final da execução do UPD:"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "A actualizar o ficheiro ", "Atualizando o arquivo " )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "A actualizar estructura do banco de dados", "Atualizando estrutura do banco de dados" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Actualizada a estructura física dos ficheiros:", "Atualizada a estrutura física dos arquivos:" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Actualiza estructura física do ficheiro ", "Atualizando estrutura física do arquivo " )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Falha ao actualizar a estructura física do ficheiro ", "Falha ao atualizar a estrutura física do arquivo " )
+		#define STR0041 "*Ajuste feito nas tabelas da filial"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Aguarde... A finalizar Ambiente da Empresa ", "Aguarde... Finalizando Ambiente da Empresa " )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Ficheiros de Log (*.LOG) |*.log|", "Arquivos de Log (*.LOG) |*.log|" )
+		#define STR0044 "Este LOG foi salvo automaticamente como "
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "no directório dos SXs.", "no diretorio dos SXs." )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "A extenção '.LOG' foi adicionada ao ficheiro, que foi salvo do directório escolhido (", "A extencao '.LOG' foi adicionada ao arquivo, que foi salvo do diretorio escolhido (" )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "A actualizar a estructura do ficheiro ", "Atualizando a estrutura do arquivo " )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Actualizada a estructura do ficheiro: ", "Atualizada a estrutura do arquivo: " )
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Atencion, por favor no utilice esa reserva."
+	#define STR0002 "Archivo servicio"
+	#define STR0003 "Producto seleccionado no es de tipo SF (Servicio financiero)."
+	#define STR0004 "Producto no localizado."
+	#define STR0005 "¡Producto registrado como servicio!"
+	#define STR0006 "Existen vinculos a ese servicio que tambien se borraran si se confirma el borrado"
+	#define STR0007 "El producto "
+	#define STR0008 " de tipo servicio financiero se creo con exito y se asocio al registro del servicio, verifique si se necesita hacer el calculo de precio!"
+	#define STR0009 "Atencion"
+	#define STR0010 "Hay vinculos para ese servicio, ¿desea borrarlos?"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Attention do not use this reservation."
+		#define STR0002 "Service Register"
+		#define STR0003 "Selected product not SF (Financial Service)."
+		#define STR0004 "Product not located."
+		#define STR0005 "Product already registered as service!"
+		#define STR0006 "There are bindings to this services which will also be deleted if the deletion is confirmed"
+		#define STR0007 "Product "
+		#define STR0008 " financial service type was successfully created and bound to service register, check if necessary specify it!"
+		#define STR0009 "Attention"
+		#define STR0010 "There are attachments to this service, delete them?"
+	#else
+		#define STR0001 "Atencao nao usar essa reserva."
+		#define STR0002 "Cadastro de Serviço"
+		#define STR0003 "Produto selecionado não é do tipo SF (Serviço Financeiro)."
+		#define STR0004 "Produto não localizado."
+		#define STR0005 "Produto ja cadastrado como serviço!"
+		#define STR0006 "Existem atrelamentos a esse serviço e também serão apagados se confirmada a exclusão"
+		#define STR0007 "O produto "
+		#define STR0008 " do tipo serviço financeiro foi criado com sucesso e associado ao cadastro do serviço, verifique se é necessário precificá-lo!"
+		#define STR0009 "Atenção"
+		#define STR0010 "Existem atrelamentos a esse serviço, deseja excluí-los?"
+	#endif
+#endif

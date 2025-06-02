@@ -1,0 +1,225 @@
+#ifdef SPANISH
+	#define STR0001 "Usuario sin permiso."
+	#define STR0002 "Atencion"
+	#define STR0003 "Usuario sin permiso para visualizar el registro."
+	#define STR0004 "Atencion"
+	#define STR0005 "Usuario sin permiso para borrar el registro."
+	#define STR0006 "Atencion"
+	#define STR0007 "Usuario sin permiso para incluir registros. Por favor, entre en contacto con el administrador del sistema."
+	#define STR0008 "Atencion"
+	#define STR0009 "Visualizar registro - "
+	#define STR0010 "Nuevo registro - "
+	#define STR0011 "Editar registro - "
+	#define STR0012 "Borrar registro - "
+	#define STR0013 "Usuario sin permiso para incluir Tabla "
+	#define STR0014 "Atencion"
+	#define STR0015 "Distribucion automatica de paises"
+	#define STR0016 "Registro informado."
+	#define STR0017 "Atencion"
+	#define STR0018 "Modificado"
+	#define STR0019 "Incluido"
+	#define STR0020 "Borrado"
+	#define STR0021 "Historial de modificaciones"
+	#define STR0022 "Espere, grabando modificaciones."
+	#define STR0023 "Grabar..."
+	#define STR0024 "Anular..."
+	#define STR0025 "Informe las siguientes modificaciones:"
+	#define STR0026 "Pais"
+	#define STR0027 "Valor inicial"
+	#define STR0028 "Valor final"
+	#define STR0029 "Estatus"
+	#define STR0030 "El historial informado no es valido."
+	#define STR0031 "Atencion"
+	#define STR0032 "Tabla "
+	#define STR0033 "Tabla "
+	#define STR0034 "Pais registrado."
+	#define STR0035 "Atencion"
+	#define STR0036 "Pais registrado, pero borrado."
+	#define STR0037 "Atencion"
+	#define STR0038 "Borre todos los registros para incluir ALL."
+	#define STR0039 "Atencion"
+	#define STR0040 "Borre la referencia ALL o distribuya los paises."
+	#define STR0041 "Atencion"
+	#define STR0042 "Desmarque el borrado del pais."
+	#define STR0043 "Atencion"
+	#define STR0044 "Valor del campo "
+	#define STR0045 " invalido."
+	#define STR0046 "Atencion"
+	#define STR0047 "Historial de modificaciones"
+	#define STR0048 "El historial informado no es valido."
+	#define STR0049 "Espere, grabando modificaciones..."
+	#define STR0050 "Grabar..."
+	#define STR0051 "Anular..."
+	#define STR0052 "Historial"
+	#define STR0053 "Seleccion de paises"
+	#define STR0054 "Marcar todos"
+	#define STR0055 "Invertir marca"
+	#define STR0056 "Confirmar..."
+	#define STR0057 "Anular..."
+	#define STR0058 "Seleccione los paises que se distribuiran:"
+	#define STR0059 "Sigla"
+	#define STR0060 "Paises"
+	#define STR0061 "Utilice la opcion Borrar."
+	#define STR0062 "Atencion"
+	#define STR0063 "Visualizar registro - "
+	#define STR0064 "Nuevo registro - "
+	#define STR0065 "Editar registro - "
+	#define STR0066 "Borrar registro - "
+	#define STR0067 "Tabla "
+	#define STR0068 "Historial"
+	#define STR0069 "Grabar..."
+	#define STR0070 "Anular..."
+	#define STR0071 "Historial"
+	#define STR0072 "Atencion"
+	#define STR0073 "Atencion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "User not allowed!"
+		#define STR0002 "Attention"
+		#define STR0003 "User not allowed to view the record!"
+		#define STR0004 "Attention"
+		#define STR0005 "User not allowed to delete the record!"
+		#define STR0006 "Attention"
+		#define STR0007 "User without permission to import registers. Contact the system administrator."
+		#define STR0008 "Attention"
+		#define STR0009 "View Record - "
+		#define STR0010 "New Record - "
+		#define STR0011 "Edit Record - "
+		#define STR0012 "Delete Record - "
+		#define STR0013 "User not allowed to add table "
+		#define STR0014 "Attention"
+		#define STR0015 "Automatic distribution of countries"
+		#define STR0016 "Record already registered!"
+		#define STR0017 "Attention"
+		#define STR0018 "Changed"
+		#define STR0019 "Added"
+		#define STR0020 "Deleted"
+		#define STR0021 "History of Changes"
+		#define STR0022 "Wait, saving changes..."
+		#define STR0023 "Save..."
+		#define STR0024 "Cancel..."
+		#define STR0025 "Enter changes below:"
+		#define STR0026 "Country"
+		#define STR0027 "Initial Value"
+		#define STR0028 "Final Value"
+		#define STR0029 "Status"
+		#define STR0030 "The history entered is not valid!"
+		#define STR0031 "Attention"
+		#define STR0032 "Table "
+		#define STR0033 "Table "
+		#define STR0034 "Country already registered!"
+		#define STR0035 "Attention"
+		#define STR0036 "Country already registered, but deleted!"
+		#define STR0037 "Attention"
+		#define STR0038 "Delete all records to add ALL!"
+		#define STR0039 "Attention"
+		#define STR0040 "Delete the reference ALL or distribute countries!"
+		#define STR0041 "Attention"
+		#define STR0042 "Clear country deletion!"
+		#define STR0043 "Attention"
+		#define STR0044 "Field Value "
+		#define STR0045 " invalid!"
+		#define STR0046 "Attention"
+		#define STR0047 "History of Changes"
+		#define STR0048 "The history entered is not valid!"
+		#define STR0049 "Wait, saving changes..."
+		#define STR0050 "Save..."
+		#define STR0051 "Cancel..."
+		#define STR0052 "History"
+		#define STR0053 "Selection of Countries"
+		#define STR0054 "Select all"
+		#define STR0055 "Invert selection"
+		#define STR0056 "Confirm..."
+		#define STR0057 "Cancel..."
+		#define STR0058 "Select countries to be distributed:"
+		#define STR0059 "Acronym"
+		#define STR0060 "Countries"
+		#define STR0061 "Use the Delete option!"
+		#define STR0062 "Attention"
+		#define STR0063 "View Record - "
+		#define STR0064 "New Record - "
+		#define STR0065 "Edit Record - "
+		#define STR0066 "Delete Record - "
+		#define STR0067 "Table "
+		#define STR0068 "History"
+		#define STR0069 "Save..."
+		#define STR0070 "Cancel..."
+		#define STR0071 "History"
+		#define STR0072 "Attention"
+		#define STR0073 "Attention"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Utilizador sem permissão.", "Usuário sem permissão!" )
+		#define STR0002 "Atenção"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Utilizador sem permissão para visualizar o registo.", "Usuário sem permissão para visualizar o registro!" )
+		#define STR0004 "Atenção"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Utilizador sem permissão para excluir o registo.", "Usuário sem permissão para excluir o registro!" )
+		#define STR0006 "Atenção"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Utilizador sem permissão para incluir registos. Por favor, entre em contacto com o administrador do sistema.", "Usuário sem permissão para incluir registros. Favor entrar em contato com o administrador do sistema." )
+		#define STR0008 "Atenção"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Visualizar registo - ", "Visualizar Registro - " )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Novo registo - ", "Novo Registro - " )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Editar registo - ", "Editar Registro - " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Excluir registo - ", "Excluir Registro - " )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Utilizador sem permissão para incluir tabela ", "Usuário sem permissão para incluir Tabela " )
+		#define STR0014 "Atenção"
+		#define STR0015 "Distribuição automática de países"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Registo já incluído.", "Registro já cadastrado!" )
+		#define STR0017 "Atenção"
+		#define STR0018 "Alterado"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Incluído", "Incluido" )
+		#define STR0020 "Deletado"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Histórico de alterações", "Histórico de Alterações" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Aguarde, a gravar alterações...", "Aguarde, salvando alterações..." )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Gravar...", "Salvar..." )
+		#define STR0024 "Cancelar..."
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Informe, abaixo, as alterações:", "Informe abaixo as alterações:" )
+		#define STR0026 "País"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Valor inicial", "Valor Inicial" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Valor final", "Valor Final" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "O histórico informado não é válido.", "O histórico informado não é válido!" )
+		#define STR0031 "Atenção"
+		#define STR0032 "Tabela "
+		#define STR0033 "Tabela "
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "País já registado.", "País já cadastrado!" )
+		#define STR0035 "Atenção"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "Pais já registado, mas deletado.", "Pais já cadastrado mas deletado!" )
+		#define STR0037 "Atenção"
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Exclua todos os registos para incluir ALL.", "Exclua todos os registros para incluir ALL!" )
+		#define STR0039 "Atenção"
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Exclua a referência ALL ou distribua os países.", "Exclua a referência ALL ou distribua os países!" )
+		#define STR0041 "Atenção"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Desmarque a deleção do país.", "Desmarque a deleção do país!" )
+		#define STR0043 "Atenção"
+		#define STR0044 "Valor do campo "
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", " inválido.", " inválido!" )
+		#define STR0046 "Atenção"
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Histórico de alterações", "Histórico de Alterações" )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "O histórico informado não é válido.", "O histórico informado não é válido!" )
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Aguarde, a gravar alterações...", "Aguarde, salvando alterações..." )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Gravar...", "Salvar..." )
+		#define STR0051 "Cancelar..."
+		#define STR0052 "Histórico"
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "Selecção de países", "Seleção de Países" )
+		#define STR0054 "Marcar todos"
+		#define STR0055 "Inverter marca"
+		#define STR0056 "Confirmar..."
+		#define STR0057 "Cancelar..."
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Seleccione os países a serem distribuídos:", "Selecione os países a serem distribuídos:" )
+		#define STR0059 "Sigla"
+		#define STR0060 If( cPaisLoc $ "ANG|PTG", "Países", "Paises" )
+		#define STR0061 If( cPaisLoc $ "ANG|PTG", "Utilize a opção Excluir.", "Utilize a opção Excluir!" )
+		#define STR0062 "Atenção"
+		#define STR0063 If( cPaisLoc $ "ANG|PTG", "Visualizar registo - ", "Visualizar Registro - " )
+		#define STR0064 If( cPaisLoc $ "ANG|PTG", "Novo registo - ", "Novo Registro - " )
+		#define STR0065 If( cPaisLoc $ "ANG|PTG", "Editar registo - ", "Editar Registro - " )
+		#define STR0066 If( cPaisLoc $ "ANG|PTG", "Excluir registo - ", "Excluir Registro - " )
+		#define STR0067 "Tabela "
+		#define STR0068 "Histórico"
+		#define STR0069 If( cPaisLoc $ "ANG|PTG", "Gravar...", "Salvar..." )
+		#define STR0070 "Cancelar..."
+		#define STR0071 "Histórico"
+		#define STR0072 "Atenção"
+		#define STR0073 "Atenção"
+	#endif
+#endif

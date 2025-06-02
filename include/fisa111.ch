@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Registro ficha 5G - Cat83"
+	#define STR0002 "¡Tabla CLV no registrada en el sistema!"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Copiar"
+	#define STR0008 "Insumos y sus respectivos valores"
+	#define STR0009 "Ya existe este insumo para el producto: "
+	#define STR0010 "Se eliminarán todos los insumos listados. ¿Realmente desea eliminar?"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "5G - Cat83 File Record"
+		#define STR0002 "CLV table not registered in the system!"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Copy"
+		#define STR0008 "Inputs and their respective values"
+		#define STR0009 "This Input already exists for Product: "
+		#define STR0010 "The system will delete all Inputs listed. Do you really wish to delete them?"
+	#else
+		#define STR0001 "Cadastro Ficha 5G - Cat83"
+		#define STR0002 "Tabela CLV não cadastrada no sistema!"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Copiar"
+		#define STR0008 "Insumos e seus respectivos valores"
+		#define STR0009 "Já existe este Insumo para o Produto: "
+		#define STR0010 "Serão excluidos todos os Insumos listados. Deseja Realmente excluir?"
+	#endif
+#endif

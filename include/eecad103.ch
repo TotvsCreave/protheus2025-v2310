@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Anular"
+	#define STR0006 "Mantenimiento de Internaciones de Recursos"
+	#define STR0007 "Espere"
+	#define STR0008 "Verificando el saldo de la cuenta informada."
+	#define STR0009 "La cuenta informada no tiene saldo suficiente para la internacion."
+	#define STR0010 "Aviso"
+	#define STR0011 "Efectuando la liquidacion de las cuotas de cambio (###)."
+	#define STR0012 "Distribuyendo valores que se internaran (###)."
+	#define STR0013 "Verificando los procesos embarcados en los ultimos ### meses."
+	#define STR0014 "Verificando procesos embarcados en: "
+	#define STR0015 "Cancelando internacion de recursos."
+	#define STR0016 "Atencion"
+	#define STR0017 "La cuenta ### informada no existe en el registro de bancos."
+	#define STR0018 "Escoja una cuenta valida."
+	#define STR0019 "de origen"
+	#define STR0020 "de liquidacion"
+	#define STR0021 "de destino"
+	#define STR0022 "No hay saldo suficiente de disponibilidades de invoices de exportacion para liquidacion."
+	#define STR0023 "Saldo disponible: "
+	#define STR0024 "Cambio simultaneo solicitado: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Cancel"
+		#define STR0006 "Maintenance of Transfer of Funds"
+		#define STR0007 "Wait"
+		#define STR0008 "Checking balance of account informed."
+		#define STR0009 "Account informed does not have balance enough for transfer."
+		#define STR0010 "Warning"
+		#define STR0011 "Liquidating exchange installments (###)."
+		#define STR0012 "Distributing values to be transferred (###)."
+		#define STR0013 "Checking processes embarked in the last ### months."
+		#define STR0014 "Checking processes embarked in: "
+		#define STR0015 "Canceling transfer of funds."
+		#define STR0016 "Attention"
+		#define STR0017 "Account ### indicated does not exist in bank file."
+		#define STR0018 "Choose a valid account."
+		#define STR0019 "of origin"
+		#define STR0020 "of liquidation"
+		#define STR0021 "of destination"
+		#define STR0022 "There is not balance enough of availabilities of export invoices for liquidation."
+		#define STR0023 "Balance available: "
+		#define STR0024 "Requested simultaneous exchange: "
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Cancelar"
+		#define STR0006 "Manutenção de Internações de Recursos"
+		#define STR0007 "Aguarde"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "A verificar o saldo da conta informada.", "Verificando o saldo da conta informada." )
+		#define STR0009 "A conta informada não possui saldo suficiente para internação."
+		#define STR0010 "Aviso"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A efetuar a liquidação das parcelas de câmbio (###).", "Efetuando a liquidação das parcelas de câmbio (###)." )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "A distribuir valores que serão internados (###).", "Distribuindo valores que serão internados (###)." )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "A verificar os processos embarcados nos últimos ### meses.", "Verificando os processos embarcados nos ultimos ### meses." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "A verificar os processos embarcados em: ", "Verificando processos embarcados em: " )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "A cancelar internação de recursos.", "Cancelando internação de recursos." )
+		#define STR0016 "Atenção"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "A conta ### informada não existe no ficheiro de bancos.", "A conta ### informada não existe no cadastro de bancos." )
+		#define STR0018 "Escolha uma conta válida."
+		#define STR0019 "de origem"
+		#define STR0020 "de liquidação"
+		#define STR0021 "de destino"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Não existe saldo suficiente de disponibilidades de invoices de exportação para liquidação.", "Não há saldo suficiente de disponibilidades de invoices de exportação para liquidação." )
+		#define STR0023 "Saldo disponível: "
+		#define STR0024 "Câmbio simultâneo solicitado: "
+	#endif
+#endif

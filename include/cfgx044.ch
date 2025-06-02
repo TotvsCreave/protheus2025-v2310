@@ -1,0 +1,111 @@
+#ifdef SPANISH
+	#define STR0001 "Estructuracion SisPag"
+	#define STR0002 "Archivos de layout utilizados en SisPag"
+	#define STR0003 "Nuevo"
+	#define STR0004 "Archivo de comunicacion SisPag | "
+	#define STR0005 "Restaura"
+	#define STR0006 "Borrar"
+	#define STR0007 "Anular"
+	#define STR0008 "Seleccione archivo "
+	#define STR0011 "Sispag       "
+	#define STR0012 "Archivo      "
+	#define STR0013 "Lote - Seg. A"
+	#define STR0014 "Lote - Seg. B"
+	#define STR0015 "Lote - Seg. J"
+	#define STR0016 "Header       "
+	#define STR0017 "Detail       "
+	#define STR0018 "Trailler     "
+	#define STR0019 "Incluir"
+	#define STR0020 "Borrar"
+	#define STR0021 "Editar"
+	#define STR0022 "Campo"
+	#define STR0023 "Sit. Inicial"
+	#define STR0024 "Sit. Final"
+	#define STR0025 "Decimales"
+	#define STR0026 "Contenido"
+	#define STR0027 "No hay datos para modificar"
+	#define STR0028 "No hay datos para borrar"
+	#define STR0029 "Confirma borrado"
+	#define STR0030 "Situacion inicial invalida"
+	#define STR0031 "Situacion final menor que la inicial"
+	#define STR0032 "Borra archivo "
+	#define STR0033 "Archivo de estruturacion Sispag ya existe. Graba encima"
+	#define STR0034 "Confirma grabacion"
+	#define STR0035 "Lote - Seg. N"
+	#define STR0036 "Lote - Seg. O"
+	#define STR0037 "Lote - Seg. W"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "SisPag Structure"
+		#define STR0002 "Lay-Out files used in SisPag"
+		#define STR0003 "New"
+		#define STR0004 "SisPag Communication file | "
+		#define STR0005 "Restore"
+		#define STR0006 "Delete"
+		#define STR0007 "Cancel"
+		#define STR0008 "Select file "
+		#define STR0011 "Sispag       "
+		#define STR0012 "File         "
+		#define STR0013 "Lot  - Seg. A"
+		#define STR0014 "Lot  - Seg. B"
+		#define STR0015 "Lot  - Seg. J"
+		#define STR0016 "Header       "
+		#define STR0017 "Detail       "
+		#define STR0018 "Trailler     "
+		#define STR0019 "Insert"
+		#define STR0020 "Delete"
+		#define STR0021 "Edit"
+		#define STR0022 "Field"
+		#define STR0023 "Initial Pos."
+		#define STR0024 "Final Pos."
+		#define STR0025 "Decimals"
+		#define STR0026 "Contents"
+		#define STR0027 "There are no data to edit"
+		#define STR0028 "There are no data to delete"
+		#define STR0029 "Delete anyway"
+		#define STR0030 "Invalid Initial Position"
+		#define STR0031 "Final position smaller than initial"
+		#define STR0032 "Delete file "
+		#define STR0033 "Sispag structure file already exists. Overwrite"
+		#define STR0034 "Confirm saving"
+		#define STR0035 "Lot - Seg. N"
+		#define STR0036 "Lot - Seg. O"
+		#define STR0037 "Lot - Seg. W"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Estruturação sispag", "Estruturação SisPag" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Arquivos De Desenho Utilizados Em Sispag", "Arquivos de LayOut utilizados em SisPag" )
+		#define STR0003 "Novo"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Arquivo de comunicação sispag | ", "Arquivo de Comunicação SisPag | " )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Restaurar", "Restaura" )
+		#define STR0006 "Excluir"
+		#define STR0007 "Cancelar"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Seleccionar ficheiro ", "Selecione arquivo " )
+		#define STR0011 "Sispag       "
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Ficheiro      ", "Arquivo      " )
+		#define STR0013 "Lote - Seg. A"
+		#define STR0014 "Lote - Seg. B"
+		#define STR0015 "Lote - Seg. J"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Cabeçalho       ", "Header       " )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Detalhe       ", "Detail       " )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Apresentação     ", "Trailler     " )
+		#define STR0019 "Incluir"
+		#define STR0020 "Excluir"
+		#define STR0021 "Editar"
+		#define STR0022 "Campo"
+		#define STR0023 "Pos. Inicial"
+		#define STR0024 "Pos. Final"
+		#define STR0025 "Decimais"
+		#define STR0026 "Conteúdo"
+		#define STR0027 "Não há dados para alteração"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Não há dados para apagar", "Não há dados para deleção" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Confirmar eliminação", "Confirma deleção" )
+		#define STR0030 "Posição inicial inválida"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Posicão final menor que a inicial", "Posição final menor que a inicial" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Apagar arquivo ", "Apaga arquivo " )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Arquivo de estruturação sispag já existente. guardar por cima", "Arquivo de Estruturação Sispag já existe. Grava por cima" )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Confirmar guardar", "Confirma gravação" )
+		#define STR0035 "Lote - Seg. N"
+		#define STR0036 "Lote - Seg. O"
+		#define STR0037 "Lote - Seg. W"
+	#endif
+#endif

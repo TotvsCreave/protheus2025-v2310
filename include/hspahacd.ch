@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Servicio\Clasificacion"
+	#define STR0004 "Habilitacion"
+	#define STR0005 "Especialidad de la Cama"
+	#define STR0006 "Modalidad"
+	#define STR0007 "Instrumento de Registro"
+	#define STR0008 "Grupo de Procedimentos"
+	#define STR0009 "Subgrupo de Procedimiento"
+	#define STR0010 "Forma de Organizacion"
+	#define STR0011 "Detalle"
+	#define STR0012 "Procedimiento vs. Detalle"
+	#define STR0013 "CNAER SUS"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Service\Classification"
+		#define STR0004 "Specialty"
+		#define STR0005 "Room Specialty"
+		#define STR0006 "Mode"
+		#define STR0007 "Registration Tool"
+		#define STR0008 "Group of Procedure"
+		#define STR0009 "Subgroup of Procedure"
+		#define STR0010 "Type of Organization"
+		#define STR0011 "Detail"
+		#define STR0012 "Procedure X Detail"
+		#define STR0013 "CNAER SUS"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Serviço\Classificação"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Habilitação", "Habiliatação" )
+		#define STR0005 "Especilidade do Leito"
+		#define STR0006 "Modalidade"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Instrumento de Registo", "Instrumento de Registro" )
+		#define STR0008 "Grupo de Procedimento"
+		#define STR0009 "Subgrupo de Procedimento"
+		#define STR0010 "Forma de Organização"
+		#define STR0011 "Detalhe"
+		#define STR0012 "Procedimento X Detalhe"
+		#define STR0013 "CNAER SUS"
+	#endif
+#endif

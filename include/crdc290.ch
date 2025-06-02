@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Posicion de tarjeta Fidelidad"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Imprimir"
+	#define STR0005 "Modelo de Datos Posicion de tarjeta fidelidad"
+	#define STR0006 "Datos de la tarjeta"
+	#define STR0007 "Recargas de la tarjeta fidelidad"
+	#define STR0008 "Movimientos de la tarjeta fidelidad"
+	#define STR0009 "Recarga"
+	#define STR0010 "Saldo"
+	#define STR0011 "Ventas"
+	#define STR0012 "Tarjeta Fidelidad"
+	#define STR0013 "Recargas"
+	#define STR0014 "Ventas"
+	#define STR0015 "Totales"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Loyalty card position"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Print"
+		#define STR0005 "Loyalty card Data Position Model"
+		#define STR0006 "Card Data"
+		#define STR0007 "Loyalty Card recharge"
+		#define STR0008 "Loyalty Card Transactions"
+		#define STR0009 "Recharge"
+		#define STR0010 "Balance"
+		#define STR0011 "Sales"
+		#define STR0012 "Loyalty Card"
+		#define STR0013 "Recharge"
+		#define STR0014 "Sales"
+		#define STR0015 "Totals"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Posição de Cartão Fidelidade", "Posição de cartao Fidelidade" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Imprimir"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Modelo de dados posição de cartão fidelidade", "Modelo de Dados Posição de cartão fidelidade" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Dados do cartão", "Dados do cartao" )
+		#define STR0007 "Recargas do cartão fidelidade"
+		#define STR0008 "Movimentos do cartão fidelidade"
+		#define STR0009 "Recarga"
+		#define STR0010 "Saldo"
+		#define STR0011 "Vendas"
+		#define STR0012 "Cartão Fidelidade"
+		#define STR0013 "Recargas"
+		#define STR0014 "Vendas"
+		#define STR0015 "Totais"
+	#endif
+#endif

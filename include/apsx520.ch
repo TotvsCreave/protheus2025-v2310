@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de flavour vs. Regla"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Archivo de Flavour vs. Reglas"
+	#define STR0007 "Flavour"
+	#define STR0008 "Reglas"
+	#define STR0009 "Flavour"
+	#define STR0010 "Items"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Flavour register X Rule"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Flavour register X Rules"
+		#define STR0007 "Flavour"
+		#define STR0008 "Rules"
+		#define STR0009 "Flavour"
+		#define STR0010 "Items"
+	#else
+		#define STR0001 "Cadastro de flavour X Regra"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Cadastro de Flavour X Regras"
+		#define STR0007 "Flavour"
+		#define STR0008 "Regras"
+		#define STR0009 "Flavour"
+		#define STR0010 "Itens"
+	#endif
+#endif

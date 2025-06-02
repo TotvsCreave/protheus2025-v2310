@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "¿Desea iniciar el proceso de junta médica?"
+	#define STR0002 "¿Desea finalizar el proceso de junta médica?"
+	#define STR0003 "Junta médica"
+	#define STR0004 "¿Desea realmente generar la carta y enviarle e-mail al beneficiario?"
+	#define STR0005 "¿Desea realmente generar la carta y enviar e-mail al prestador?"
+	#define STR0006 "¿Desea realmente generar la carta y enviar e-mail al prestador y beneficiario?"
+	#define STR0007 "Es necesario separar los e-mail con punto y coma."
+	#define STR0008 "Seleccione el local para guardar el anexo"
+	#define STR0009 "Generación de anexo finalizada con éxito."
+	#define STR0010 "Opción no disponible para la rutina genérica."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Start the medical board process ?"
+		#define STR0002 "End the medical board process ?"
+		#define STR0003 "Medical Board"
+		#define STR0004 "Generate the letter and submit email to the Beneficiary anyway ?"
+		#define STR0005 "Generate the letter and submit email to the Provider anyway ?"
+		#define STR0006 "Generate the letter and submit email to Provider and Beneficiary anyway ?"
+		#define STR0007 "You must separate the emails with semicolons."
+		#define STR0008 "Select the Location to Save the Log"
+		#define STR0009 "Annex generation successfully completed."
+		#define STR0010 "Option not available for Generic Routine"
+	#else
+		#define STR0001 "Deseja iniciar o processo de junta médica ?"
+		#define STR0002 "Deseja finalizar o processo de junta médica ?"
+		#define STR0003 "Junta Médica"
+		#define STR0004 "Deseja realmente gerar a carta e enviar e-mail para o Beneficiário ?"
+		#define STR0005 "Deseja realmente gerar a carta e enviar e-mail para o Prestador ?"
+		#define STR0006 "Deseja realmente gerar a carta e enviar e-mail para o Prestador e Beneficiário ?"
+		#define STR0007 "É necessário separar os e-mails por ponto e vírgula."
+		#define STR0008 "Selecione o Local para Salvar o Anexo"
+		#define STR0009 "Geração de anexo finalizada com sucesso."
+		#define STR0010 "Opção não disponível para Rotina Genérica"
+	#endif
+#endif

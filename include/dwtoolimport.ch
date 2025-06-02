@@ -1,0 +1,198 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo generado en "
+	#define STR0002 " por "
+	#define STR0003 "<br>por la version SigaDW "
+	#define STR0004 "CONEXIONES"
+	#define STR0005 "Importando conexion"
+	#define STR0006 "Importacion de Conexion ignorada."
+	#define STR0007 "Conexion adicionada con exito."
+	#define STR0008 "Error al adicionar la conexion"
+	#define STR0009 "DIMENSIONES<br>Identificador (orden)=campo clave"
+	#define STR0010 "Importando dimension"
+	#define STR0011 "Borrando dimension existente."
+	#define STR0012 "Adicionando los atributos"
+	#define STR0013 "Dimension ["
+	#define STR0014 " inexistente. No se importo el atributo."
+	#define STR0015 "Definicion no tiene atributos."
+	#define STR0016 "Adicionando las fuentes de datos"
+	#define STR0017 "Adicionando procedimientos a la fuente de datos"
+	#define STR0018 "El campo ["
+	#define STR0019 "inexistente."
+	#define STR0020 "No se puede importar el procedimiento."
+	#define STR0021 "Adicionando a la fuente de datos, programacion en agenda"
+	#define STR0022 "Programacion en Agenda [ I:"
+	#define STR0023 "Programacion en agenda no se puede importar."
+	#define STR0024 "La conexion ["
+	#define STR0025 ") inexistente."
+	#define STR0026 "Definicion no tiene fuente de datos."
+	#define STR0027 "Inicializando dimension."
+	#define STR0028 "Dimension adicionada con exito."
+	#define STR0029 "Error al adicionar la dimension."
+	#define STR0030 "CUBOS<br>Identificador (orden)=campo clave"
+	#define STR0031 "Importando cubo"
+	#define STR0032 "Borrando cubo ya existente."
+	#define STR0033 "Adicionando los indicadores"
+	#define STR0034 "La definicion no tiene indicadores."
+	#define STR0035 "Adicionando los indicadores virtuales"
+	#define STR0036 "Inicializando cubo."
+	#define STR0037 "Cubo adicionado con exito."
+	#define STR0038 "CONSULTAS"
+	#define STR0039 "Importando consulta"
+	#define STR0040 "Borrando consulta existente."
+	#define STR0041 "Indicadores virtuales"
+	#define STR0042 "Importando definiciones de la tabla"
+	#define STR0043 "Importando definiciones del gráfico"
+	#define STR0044 "Importando filtros de la consulta"
+	#define STR0045 "el filtro [ "
+	#define STR0046 " ] no se puede importar."
+	#define STR0047 " ] no se puede importar, pues la dimension ["
+	#define STR0048 "] inexiste."
+	#define STR0049 " ] no se puede importar, pues el campo ["
+	#define STR0050 "Importando alertas de la consulta"
+	#define STR0051 "Consulta importada"
+	#define STR0052 "Error al adicionar la consulta"
+	#define STR0053 "Cubo ["
+	#define STR0054 "] inexistente"
+	#define STR0055 "El archivo suministrado para importacion no tiene ninguna entrada valida para importacion"
+	#define STR0056 "Proceso de importacion concluido."
+	#define STR0057 "Importacion de archivos de metadatos"
+	#define STR0058 "Seleccione el archivo con las definiciones que se importaran"
+	#define STR0059 "Archivo metadatos"
+	#define STR0060 "Por favor, elija un archivo valido de metadatos para la importacion."
+	#define STR0061 "Consulta no tiene agregadores en los ejes X o Y."
+	#define STR0062 "Atributo ["
+	#define STR0063 "] inexistente."
+	#define STR0064 "Consulta no tiene indicadores."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "File generated on "
+		#define STR0002 " by "
+		#define STR0003 "<br>by version SigaDW "
+		#define STR0004 "CONNECT."
+		#define STR0005 "Importing connect."
+		#define STR0006 "Import of Connection ignored."
+		#define STR0007 "Connection added successfully."
+		#define STR0008 "Error while adding connect."
+		#define STR0009 "DIMENSIONS<br>Identifier (order)=key field"
+		#define STR0010 "Importing dimension"
+		#define STR0011 "Removing existing dimension."
+		#define STR0012 "Adding attributes"
+		#define STR0013 "Dimension["
+		#define STR0014 "does not exist.Attribute not imported"
+		#define STR0015 "Definition doesnt have attribs."
+		#define STR0016 "Adding data sources"
+		#define STR0017 "Adding data source scripts"
+		#define STR0018 "The field"
+		#define STR0019 "doesnt exist"
+		#define STR0020 "Script cannot be imported."
+		#define STR0021 "Adding scheduling of data scripts"
+		#define STR0022 "Scheduling [ I:"
+		#define STR0023 "Scheduling cannot be imported."
+		#define STR0024 "Connection["
+		#define STR0025 ")doesnt exist."
+		#define STR0026 "Definition doesnt have data source."
+		#define STR0027 "Starting dimension."
+		#define STR0028 "Dimension added successfully."
+		#define STR0029 "Error while adding dimension."
+		#define STR0030 "CUBES<br>Identifier (order)=key field"
+		#define STR0031 "Importing cube"
+		#define STR0032 "Removing existing cube."
+		#define STR0033 "Adding the indicators"
+		#define STR0034 "Definition doesnt have indicators"
+		#define STR0035 "Adding virtual indicators"
+		#define STR0036 "Initializing cube."
+		#define STR0037 "Cube added successfully."
+		#define STR0038 "QUERIES"
+		#define STR0039 "Importing query"
+		#define STR0040 "Deleting existing query."
+		#define STR0041 "Virtual indicators"
+		#define STR0042 "Importing table definitions"
+		#define STR0043 "Importing graph definitions"
+		#define STR0044 "Importing query filters"
+		#define STR0045 "the filter["
+		#define STR0046 " ] cannot be imported."
+		#define STR0047 " ] cannot be imported because the dimension["
+		#define STR0048 "]inexistent"
+		#define STR0049 " ] cannot be imported because the field ["
+		#define STR0050 "Importing query alerts"
+		#define STR0051 "Query imported"
+		#define STR0052 "Error adding query"
+		#define STR0053 "Cube ["
+		#define STR0054 "]doesnt exist"
+		#define STR0055 "File provided for import does not have any valid entry for import"
+		#define STR0056 "Import process finished."
+		#define STR0057 "Import of metadata files"
+		#define STR0058 "Select the file with the definitions to be imported"
+		#define STR0059 "Metadata file"
+		#define STR0060 "Please select a valid metadata file for import."
+		#define STR0061 "Query doesnt have aggregators in X or Y axes."
+		#define STR0062 "Attribute["
+		#define STR0063 "]doesnt exist."
+		#define STR0064 "Query doesnt have indicators."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Ficheiro criado em ", "Arquivo gerado em " )
+		#define STR0002 " por "
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "<br>pela versão sigadw ", "<br>pela versão SigaDW " )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Conexões", "CONEXÕES" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "A importar ligação", "Importando conexão" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Importação da ligação ignorada.", "Importação da Conexão ignorada." )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Ligação adicionada com sucesso.", "Conexão adicionada com sucesso." )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Erro ao adicionar a conexoo", "Erro ao adicionar a conexäo" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Dimensões<br>identificador (ordem)=campo-chave", "DIMENSÕES<br>Identificador (ordem)=campo-chave" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "A importar dimensão", "Importando dimensão" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A eliminar dimensão já existente.", "Removendo dimensão já existente." )
+		#define STR0012 "Adicionando os atributos"
+		#define STR0013 "Dimensão ["
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", " inexistente. atributo não importado.", " inexistente. Atributo não importado." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Definição não possuí atributos.", "Definição não possui atributos." )
+		#define STR0016 "Adicionando as fontes de dados"
+		#define STR0017 "Adicionando roteiros a fonte de dados"
+		#define STR0018 "O campo ["
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Inexistente.", "inexistente." )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Lista não pode ser importado.", "Roteiro não pode ser importado." )
+		#define STR0021 "Adicionando agendamentos a fonte de dados"
+		#define STR0022 "Agendamento [ I:"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Marcação não pode ser importada.", "Agendamento não pode ser importado." )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "A conexão [", "A conexäo [" )
+		#define STR0025 ") inexistente."
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Definição não possuí fonte de dados.", "Definição não possui fonte de dados." )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "A iniciar dimensão.", "Inicializando dimensão." )
+		#define STR0028 "Dimensão adicionada com sucesso."
+		#define STR0029 "Erro ao adicionar a dimensão."
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Cubos<br>identificador (ordem)=campo-chave", "CUBOS<br>Identificador (ordem)=campo-chave" )
+		#define STR0031 "Importando cubo"
+		#define STR0032 "Removendo cubo já existente."
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "A adicionar os indicadores", "Adicionando os indicadores" )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Definição não possuí indicadores.", "Definição não possui indicadores." )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "A adicionar os indicadores virtuais", "Adicionando os indicadores virtuais" )
+		#define STR0036 "Inicializando cubo."
+		#define STR0037 "Cubo adicionado com sucesso."
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Consultas", "CONSULTAS" )
+		#define STR0039 "Importando consulta"
+		#define STR0040 "Removendo consulta já existente."
+		#define STR0041 "Indicadores virtuais"
+		#define STR0042 "Importando definições da tabela"
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Importando definições do grafico", "Importando definições do gráfico" )
+		#define STR0044 "Importando filtros da consulta"
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "O filtro [ ", "o filtro [ " )
+		#define STR0046 " ] não pode ser importado."
+		#define STR0047 " ] não pode ser importado, pois a dimensão ["
+		#define STR0048 "] inexiste."
+		#define STR0049 " ] não pode ser importado, pois o campo ["
+		#define STR0050 "Importando alertas da consulta"
+		#define STR0051 "Consulta importada"
+		#define STR0052 "Erro ao adicionar a consulta"
+		#define STR0053 "Cubo ["
+		#define STR0054 "] inexistente"
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "O ficheiro fornecido para importação não possuí nenhuma entrada válida para importação", "O arquivo fornecido para importação não possui nenhuma entrada válida para importação" )
+		#define STR0056 If( cPaisLoc $ "ANG|PTG", "Processo de importação concluído.", "Processo de importação finalizado." )
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Importação de ficheiros de metadados", "Importação de arquivos de metadados" )
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Seleccione o arquivo com as definições a serem importadas", "Selecione o arquivo com as definições a serem importadas" )
+		#define STR0059 "Arquivo metadados"
+		#define STR0060 If( cPaisLoc $ "ANG|PTG", "Por favor, seleccione um ficheiro válido de metadados para a importação.", "Por favor, selecione um arquivo válido de metadados para a importação." )
+		#define STR0061 If( cPaisLoc $ "ANG|PTG", "Consulta Não Possuí Agregadores Nos Eixo X Ou Y.", "Consulta não possui agregadores nos eixo X ou Y." )
+		#define STR0062 "Atributo ["
+		#define STR0063 "] inexistente."
+		#define STR0064 If( cPaisLoc $ "ANG|PTG", "Consulta não possuí indicadores.", "Consulta não possui indicadores." )
+	#endif
+#endif

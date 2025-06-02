@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Estatus del Contrato"
+	#define STR0002 "   Este programa imprime el Informe de Estatus del Contrato, "
+	#define STR0003 "de acuerdo con los parametros solicitados."
+	#define STR0004 ""
+	#define STR0005 "Oportunidad de Venta"
+	#define STR0006 "Propuesta Comercial"
+	#define STR0007 "Contrato de Mantenimiento"
+	#define STR0008 "Grupo de Cobertura"
+	#define STR0009 "O/S - Generadas"
+	#define STR0010 "Pedidos de Venta"
+	#define STR0011 "Contrato de Servicio"
+	#define STR0012 "Tipo de Contrato"
+	#define STR0013 "Ninguno"
+	#define STR0014 "Predeterminado"
+	#define STR0015 "Fijo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Contract Status"
+		#define STR0002 "   This program will print the Contract Status Report, "
+		#define STR0003 "according to the parameters requested."
+		#define STR0004 ""
+		#define STR0005 "Sales Opportunity"
+		#define STR0006 "Business Proposal"
+		#define STR0007 "Maintenance Contract"
+		#define STR0008 "Coverage Group"
+		#define STR0009 "S/O - Generated"
+		#define STR0010 "Sales Orders"
+		#define STR0011 "Service Contract"
+		#define STR0012 "Type of Contract"
+		#define STR0013 "None"
+		#define STR0014 "Predefined"
+		#define STR0015 "Fixed"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Estado do Contrato", "Status do Contrato" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "   Este programa ira imprimir a Listagem de Estado do Contrato, ", "   Este programa ira imprimir o Relatório de Status do Contrato, " )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "conforme os parâmetros solicitados.", "conforme os parametros solicitados." )
+		#define STR0004 ""
+		#define STR0005 "Oportunidade de Venda"
+		#define STR0006 "Proposta Comercial"
+		#define STR0007 "Contrato de Manutenção"
+		#define STR0008 "Grupo de Cobertura"
+		#define STR0009 "O/S - Geradas"
+		#define STR0010 "Pedidos de Venda"
+		#define STR0011 "Contrato de Serviço"
+		#define STR0012 "Tipo do Contrato"
+		#define STR0013 "Nenhum"
+		#define STR0014 "Pré-Determinado"
+		#define STR0015 "Fixo"
+	#endif
+#endif

@@ -1,0 +1,117 @@
+#ifdef SPANISH
+	#define STR0001 "Aviso"
+	#define STR0002 "Atencion"
+	#define STR0003 "¡Archivos generados con exito!"
+	#define STR0004 "No existe RE para este proceso."
+	#define STR0005 "Seleccione el Proceso para modificacion"
+	#define STR0006 "Seleccione el proceso"
+	#define STR0007 "Procesando..."
+	#define STR0008 "No se seleccionaron RE para modificacion."
+	#define STR0009 "Problema: ¡No se encontro el parametro MV_AVG0030!"
+	#define STR0010 "Solucion: Registre el parametro en el modulo Configurador, MV_AVG0030 - Tipo: Caracter - Descripcion: Codigo de la U.M. Tonelada - Contenido: ??"
+	#define STR0011 "Error en la creacion del archivo: "
+	#define STR0012 "Seleccion de Usuario"
+	#define STR0013 "Modificacion de RE"
+	#define STR0014 "Amulacion de RE"
+	#define STR0015 "Retorno Anulacion de RE"
+	#define STR0016 "Seleccione el Proceso para Anulacion"
+	#define STR0017 "Archivo de retorno no encontrado"
+	#define STR0018 "Error al abrir el archivo(DOS)"
+	#define STR0019 "Retorno de la anulacion de la RE"
+	#define STR0020 "Proceso : "
+	#define STR0021 "Nº. RE   : "
+	#define STR0022 "Fecha    : "
+	#define STR0023 "Hora     : "
+	#define STR0024 "Para confirmar la anulacion de la RE, seleccione el botón Ok, sino"
+	#define STR0025 "Anule."
+	#define STR0026 "Numero de RE no concuerda."
+	#define STR0027 "Anulacion de RE concluida con exito."
+	#define STR0028 "Ctd.Unid.Comercial"
+	#define STR0029 "Ctd.Unid.Mercaderia"
+	#define STR0030 "Precio Cond. Venta"
+	#define STR0031 "Precio Local de Embarque"
+	#define STR0032 "Escoja  el R.E."
+	#define STR0033 "Seleccione el R.E. para modificacion:"
+	#define STR0034 "Agrupamientos"
+	#define STR0035 "Para anular, haga click en el boton 'Cancelar'."
+	#define STR0036 "Para retornar a la seleccion de usuario, haga click en el boton 'Volver'."
+	#define STR0037 "Para proseguir, haga click en el boton 'Avanzar'."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Note"
+		#define STR0002 "Attention"
+		#define STR0003 "Files successfully generated!"
+		#define STR0004 "There is no RE for this process."
+		#define STR0005 "Choose Process to change"
+		#define STR0006 "Choose process"
+		#define STR0007 "Processing..."
+		#define STR0008 "No RE was selected to change."
+		#define STR0009 "Problem: Parameter MV_AVG0030 was not found!"
+		#define STR0010 "Solution: Register the parameter in the module Configurator, MV_AVG0030 - Type: Character - Description: Code of the M.U. Ton - Content: ??"
+		#define STR0011 "Error creating file: "
+		#define STR0012 "User Selection"
+		#define STR0013 "Change of RE"
+		#define STR0014 "Cancellation of RE"
+		#define STR0015 "RE Cancellation Return"
+		#define STR0016 "Choose Process to Cancel"
+		#define STR0017 "Return file not found"
+		#define STR0018 "Error opening file (DOS)"
+		#define STR0019 "RE cancellation return"
+		#define STR0020 "Process: "
+		#define STR0021 "Nr. RE: "
+		#define STR0022 "Date: "
+		#define STR0023 "Hour: "
+		#define STR0024 "To confirm cancellation of RE, choose OK; otherwise,"
+		#define STR0025 "Cancel it"
+		#define STR0026 "RE number does not match."
+		#define STR0027 "Cancellation of RE successfully concluded."
+		#define STR0028 "Commercial Unit Amt."
+		#define STR0029 "Goods Unit Amount"
+		#define STR0030 "Cond.Price Sales"
+		#define STR0031 "Shipment Local Price"
+		#define STR0032 "R.E.Choice"
+		#define STR0033 "Select R.E. for changes:"
+		#define STR0034 "Groups"
+		#define STR0035 "To abort, click Cancel."
+		#define STR0036 "To return to user selection, click Return."
+		#define STR0037 "To continue, click Advance."
+	#else
+		#define STR0001 "Aviso"
+		#define STR0002 "Atenção"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Ficheiros criados com successo !", "Arquivos gerados com sucesso !" )
+		#define STR0004 "Não existe RE para neste processo."
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Escolha o processo para alteração", "Escolha o Processo para alteração" )
+		#define STR0006 "Escolha o processo"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "A processar...", "Processando..." )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Não foram selecionados REs para alteração.", "Não foram selecionados RE's para alteração." )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Problema: O parâmetro MV_AVG0030 não foi encontrado!", "Problema: O parametro MV_AVG0030 não foi encontrado !" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Solução: Cadastre o parâmetro no módulo Configurador, MV_AVG0030 - Tipo: Caracter - Descrição: Código da U.M. Tonelada - Conteúdo: ??", "Solução: Cadastre o parametro no módulo Configurador, MV_AVG0030 - Tipo: Caracter - Descrição: Código da U.M. Tonelada - Conteúdo: ??" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Erro na criação do ficheiro: ", "Erro na criação do arquivo: " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Selecção de Utilizador", "Seleção de Usuário" )
+		#define STR0013 "Alteração de RE"
+		#define STR0014 "Cancelamento de RE"
+		#define STR0015 "Retorno Cancelamento de RE"
+		#define STR0016 "Escolha o Processo para Cancelamento"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Ficheiro de retorno não encontrado", "Arquivo de retorno não encontrado" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Erro ao abrir o ficheiro(DOS)", "Erro ao abrir o arquivo(DOS)" )
+		#define STR0019 "Retorno do cancelamento da RE"
+		#define STR0020 "Processo : "
+		#define STR0021 "Nº. RE   : "
+		#define STR0022 "Data     : "
+		#define STR0023 "Hora     : "
+		#define STR0024 "Para confirmar o cancelamento da RE, escolha o botão Ok, caso contrário"
+		#define STR0025 "Cancele."
+		#define STR0026 "Número de RE não confere."
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Cancelamento de RE concluído com successo.", "Cancelamento de RE concluído com sucesso." )
+		#define STR0028 "Qtd.Unid.Comercial"
+		#define STR0029 "Qtd.Unid.Mercadoria"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Preço Cond. Venda", "Preco Cond. Venda" )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Preço Local de Embarque", "Preco Local de Embarque" )
+		#define STR0032 "Escolha de R.E."
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Seleccione o R.E. para alteração:", "Selecione o R.E. para alteração:" )
+		#define STR0034 "Agrupamentos"
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Para anular, clique no botão 'Cancelar'.", "Para abortar, clique no botão 'Cancelar'." )
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "Para retornar à selecção de utilizador, clique no botão 'Voltar'.", "Para retornar à seleção de usuário, clique no botão 'Voltar'." )
+		#define STR0037 "Para prosseguir, clique no botão 'Avançar'."
+	#endif
+#endif

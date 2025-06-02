@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Incluir"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Plazo de estimación del término"
+	#define STR0008 "Ya existen registros con las informaciones utilizadas."
+	#define STR0009 "Datos del plazo de estimación del término"
+	#define STR0010 "Verifique la información utilizada en los campos Tipo de asunto, Área jurídica, Acto procesal y Asunto."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "Add"
+		#define STR0003 "View"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Print"
+		#define STR0007 "End Estimation Deadline"
+		#define STR0008 "There already are records with used information."
+		#define STR0009 "Deadline Data of End Estimation"
+		#define STR0010 "Check information used in fields: Matter Type, Legal Area, Procedural Act and Matter."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Incluir"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Prazo de Estimativa de Término"
+		#define STR0008 "Já existem registros com as informações utilizadas."
+		#define STR0009 "Dados do Prazo de Estimativa de Término"
+		#define STR0010 "Verifique as informações utilizadas nos campos de Tipo de assunto, Área jurídica, Ato processual e Assunto."
+	#endif
+#endif

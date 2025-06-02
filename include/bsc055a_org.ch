@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Error en la creacion del archivo ["
+	#define STR0002 "Operacion interrumpida"
+	#define STR0003 "Organizacion"
+	#define STR0004 "Mision"
+	#define STR0005 "Vision"
+	#define STR0006 "Facturas"
+	#define STR0007 "Politica de calidad"
+	#define STR0008 "Valores"
+	#define STR0009 "Descripcion"
+	#define STR0010 "Estrategia"
+	#define STR0011 "Lista de estrategias"
+	#define STR0012 "Fecha Inicial"
+	#define STR0013 "Fecha Final"
+	#define STR0014 "Lista de Usuarios"
+	#define STR0015 "Persona"
+	#define STR0016 "Cargo"
+	#define STR0017 "Grupo"
+	#define STR0018 "Libro Estrategico - Organizacion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Error creating file ["
+		#define STR0002 "Operation aborted"
+		#define STR0003 "Organization"
+		#define STR0004 "Mission"
+		#define STR0005 "Vision"
+		#define STR0006 "Notes"
+		#define STR0007 "Quality policy "
+		#define STR0008 "Values "
+		#define STR0009 "Description"
+		#define STR0010 "Strategy "
+		#define STR0011 "Strategy list"
+		#define STR0012 "Start date "
+		#define STR0013 "End date "
+		#define STR0014 "User list "
+		#define STR0015 "Person"
+		#define STR0016 "Position"
+		#define STR0017 "Group"
+		#define STR0018 "Strategic book - Organization "
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Erro na criação do ficheiro [", "Erro na criação do arquivo [" )
+		#define STR0002 "Operação abortada"
+		#define STR0003 "Organização"
+		#define STR0004 "Missão"
+		#define STR0005 "Visão"
+		#define STR0006 "Notas"
+		#define STR0007 "Política de qualidade"
+		#define STR0008 "Valores"
+		#define STR0009 "Descrição"
+		#define STR0010 "Estratégia"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Lista das estratégias", "Lista das Estratégias" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Data De Início", "Data Inicio" )
+		#define STR0013 "Data Final"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Lista de utilizadores", "Lista de Usuários" )
+		#define STR0015 "Pessoa"
+		#define STR0016 "Cargo"
+		#define STR0017 "Grupo"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Livro estratégico - organização", "Book Estratégico - Organização" )
+	#endif
+#endif

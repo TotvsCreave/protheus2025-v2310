@@ -1,0 +1,96 @@
+#ifdef SPANISH
+	#define STR0001 "Ene"
+	#define STR0002 "Feb"
+	#define STR0003 "Mar"
+	#define STR0004 "Abr"
+	#define STR0005 "May"
+	#define STR0006 "Jun"
+	#define STR0007 "Jul"
+	#define STR0008 "Ago"
+	#define STR0009 "Set"
+	#define STR0010 "Oct"
+	#define STR0011 "Nov"
+	#define STR0012 "Dic"
+	#define STR0013 " D  L  M  M  J  V  S "
+	#define STR0014 "Buscar"
+	#define STR0015 "Buscar proxima ocurrencia"
+	#define STR0016 "Buscar texto"
+	#define STR0017 "Utilizar busqueda exacta"
+	#define STR0018 "Buscar a partir del inicio del Gantt"
+	#define STR0019 "Coincidir mayusculas e minusculas"
+	#define STR0020 "Expresion: "
+	#define STR0021 " no encontrada."
+	#define STR0022 "Grabar como"
+	#define STR0023 "Grabar Gantt"
+	#define STR0024 "Archivos"
+	#define STR0025 "Abrir Archivo"
+	#define STR0026 "Archivo incompatible"
+	#define STR0027 "El archivo seleccionado no es compatible con este visualizador. Verifique el archivo seleccionado y su integridad."
+	#define STR0028 "Cerrar"
+	#define STR0029 "Archivo no encontrado"
+	#define STR0030 "No se encontro el archivo seleccionado. Verifique el nombre del archivo seleccionado y la carpeta donde se encuentra."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Jan"
+		#define STR0002 "Feb"
+		#define STR0003 "Mar"
+		#define STR0004 "Apr"
+		#define STR0005 "May"
+		#define STR0006 "Jun"
+		#define STR0007 "Jul"
+		#define STR0008 "Aug"
+		#define STR0009 "Sep"
+		#define STR0010 "Oct"
+		#define STR0011 "Nov"
+		#define STR0012 "Dec"
+		#define STR0013 " S  M  T  W  T  F  S "
+		#define STR0014 "Search"
+		#define STR0015 "Search next event"
+		#define STR0016 "Search text"
+		#define STR0017 "Use exact match search"
+		#define STR0018 "Search from Gantt's beginning"
+		#define STR0019 "Match uppercase and lowercase"
+		#define STR0020 "Expression: "
+		#define STR0021 " not found."
+		#define STR0022 "Save as"
+		#define STR0023 "Save Gantt"
+		#define STR0024 "Files"
+		#define STR0025 "Open file"
+		#define STR0026 "Incompatible file!"
+		#define STR0027 "Selected file uncompatible with this viewer. Check the selected file and its integrity."
+		#define STR0028 "Close"
+		#define STR0029 "File not found!"
+		#define STR0030 "Selected file not found. Check the name of the selected file and the folder where it is."
+	#else
+		#define STR0001 "Jan"
+		#define STR0002 "Fev"
+		#define STR0003 "Mar"
+		#define STR0004 "Abr"
+		#define STR0005 "Mai"
+		#define STR0006 "Jun"
+		#define STR0007 "Jul"
+		#define STR0008 "Ago"
+		#define STR0009 "Set"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Nov", "Out" )
+		#define STR0011 "Nov"
+		#define STR0012 "Dez"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", " d  s  t  q  q  s  s ", " D  S  T  Q  Q  S  S " )
+		#define STR0014 "Pesquisar"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Pesquisar próxima ocorrência", "Pesquisar próxima ocorrencia" )
+		#define STR0016 "Pesquisar texto"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Utilizar pesquisa exacta", "Utilizar pesquisa exata" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Pesquisar a partir do início do gantt", "Pesquisar a partir do inicio do gantt" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Coincidir maiúsculas e minúsculas", "Coincidir maiusculas e minusculas" )
+		#define STR0020 "Expressão: "
+		#define STR0021 " não encontrada."
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Guardar como", "Salvar como" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Guardar Gantt", "Salvar Gantt" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Ficheiros", "Arquivos" )
+		#define STR0025 "Abrir Arquivo"
+		#define STR0026 "Arquivo incompativel!"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "O arquivo selecionado não e compativel com este visualizador. verifique o arquivo selecionado e a sua integridade.", "O arquivo selecionado não é compativel com este visualizador. Verifique o arquivo selecionado e a sua integridade." )
+		#define STR0028 "Fechar"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Arquivo não achado!", "Arquivo nao achado!" )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "O arquivo selecionado não foi achado. verifique o nome do arquivo selecionado e a pasta onde ele se encontra.", "O arquivo selecionado nao foi achado. Verifique o nome do arquivo selecionado e a pasta onde ele se encontra." )
+	#endif
+#endif

@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Procedimientos SUS"
+	#define STR0007 "El codigo debe rellenarse 10 digitos."
+	#define STR0008 "Atencion"
+	#define STR0009 "Archivo de Procedimientos SUS"
+	#define STR0010 "Codigo del Grupo de Procedimiento no encontrado"
+	#define STR0011 "Archivo Procedimiento SUS"
+	#define STR0012 "Codigo del Subgrupo de Procedimiento no encontrado"
+	#define STR0013 "Codigo de Forma Organizacion no encontrado"
+	#define STR0014 "Edad maxima no puede ser menor que la edad minima"
+	#define STR0015 "Edad maxima solo puede tener valor a cero si la edad minima tambien estuviera con el valor a cero"
+	#define STR0016 "&1-CID-10"
+	#define STR0017 "&2-Habilitacion"
+	#define STR0018 "&3-Especialidad Cama"
+	#define STR0019 "&4-Modalidad"
+	#define STR0020 "&5-ServicioXClasificacion"
+	#define STR0021 "&6-Instrumento Registro"
+	#define STR0022 "&7-Incremento"
+	#define STR0023 "&8-OPM"
+	#define STR0024 "&9-C. B. O."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "SUS Procedures"
+		#define STR0007 "Code must contain 10 digits."
+		#define STR0008 "Attention"
+		#define STR0009 "SUS Procedure File"
+		#define STR0010 "Procedure Group Code not found"
+		#define STR0011 "SUS Procedure File"
+		#define STR0012 "Procedure SubGroup Code not found"
+		#define STR0013 "Organization Mode Code not found"
+		#define STR0014 "Maximum age cannot be lower than minimum age."
+		#define STR0015 "Maximum age can be zeroed only if minimum age is also zeroed."
+		#define STR0016 "&1-ICD-10"
+		#define STR0017 "&2-Specialization"
+		#define STR0018 "&3-Room Specialty"
+		#define STR0019 "&4-Mode"
+		#define STR0020 "&5-Service x Classification"
+		#define STR0021 "&6-Registration Tool"
+		#define STR0022 "&7-Progression"
+		#define STR0023 "&8-OPM"
+		#define STR0024 "&9-C. B. O."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Procedimentos Sus", "Procedimentos SUS" )
+		#define STR0007 "O código deve ser preenchido com 10 dígitos."
+		#define STR0008 "Atenção"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Registo De Procedimentos Sus", "Cadastro de Procedimentos SUS" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Código do grupo de procedimento não encontrado", "Código do Grupo de Procedimento não encontrado" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Registo De Procedimento Sus", "Cadastro Procedimento SUS" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Código do sub-grupo de procedimento não encontrado", "Código do SubGrupo de Procedimento não encontrado" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Código da forma organização não encontrado", "Código da Forma Organização não encontrado" )
+		#define STR0014 "Idade máxima não pode ser menor que a idade mínima"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Idade máxima só pode ter valor saldado se a idade mínima também estiver com o valor saldado", "Idade máxima só pode ter valor zerado se a idade mínima tamb´m estiver com o valor zerado" )
+		#define STR0016 "&1-CID-10"
+		#define STR0017 "&2-Habilitação"
+		#define STR0018 "&3-Especialidade Leito"
+		#define STR0019 "&4-Modalidade"
+		#define STR0020 "&5-ServiçoXClassificação"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "&6-Instrumento Registo", "&6-Instrumento Registro" )
+		#define STR0022 "&7-Incremento"
+		#define STR0023 "&8-OPM"
+		#define STR0024 "&9-C. B. O."
+	#endif
+#endif

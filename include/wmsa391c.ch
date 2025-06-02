@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Revertir producto volumen"
+	#define STR0002 "Ítem volumen"
+	#define STR0003 "Solo es posible revertir ítems del montaje actual."
+	#define STR0004 "Producto no puede revertirse, porque está facturado."
+	#define STR0005 "¡Documento no puede revertirse, pues tiene control de ubicación!"
+	#define STR0006 "Primero revierta el control de ubicación."
+	#define STR0007 "Documento está liberado y no puede revertirse por esta rutina (DC5_LIBPED)."
+	#define STR0008 "La liberación está definida como DC5_LIBPED = '"
+	#define STR0009 "Ítem del volumen tiene verificación de expedición, primero revierta la verificación."
+	#define STR0010 "Volumen tiene verificación de expedición, primero revierta la verificación."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Reverse Product Volume"
+		#define STR0002 "Volume Items"
+		#define STR0003 "You can only reverse items form current assembly."
+		#define STR0004 "Product cannot be reversed, as there is invoiced item!"
+		#define STR0005 "Document cannot be reversed because it has addressing!"
+		#define STR0006 "First reverse the addressing."
+		#define STR0007 "Document already released and cannot be reversed by this routine (DC5_LIBPED)."
+		#define STR0008 "Release already defined as DC5_LIBPED = '"
+		#define STR0009 "Volume item has verification of dispatch, reverse verification first!"
+		#define STR0010 "Volume has verification of dispatch, first, reverse verification!"
+	#else
+		#define STR0001 "Estornar Produto Volume"
+		#define STR0002 "Iten Volume"
+		#define STR0003 "Só é possível estornar itens da montagem corrente."
+		#define STR0004 "Produto não pode ser estornado, pois está faturado!"
+		#define STR0005 "Documento não pode ser estornado, pois possui endereçamento!"
+		#define STR0006 "Estorne primeiramente o endereçamento."
+		#define STR0007 "Documento já está liberado e não pode ser estornado por esta rotina (DC5_LIBPED)."
+		#define STR0008 "Liberação está definida como DC5_LIBPED = '"
+		#define STR0009 "Item do volume possui conferência de expedição, estorne a conferência primeiramente!"
+		#define STR0010 "Volume possui conferência de expedição, primeiro estorne a conferência!"
+	#endif
+#endif

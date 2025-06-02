@@ -1,0 +1,123 @@
+#ifdef SPANISH
+	#define STR0001 "Todos"
+	#define STR0002 "Puestos/Caravanas"
+	#define STR0003 "Productos"
+	#define STR0004 "Bienes"
+	#define STR0005 "Pruebas del WebService del cliente"
+	#define STR0006 "Servicio:"
+	#define STR0007 "Servicios"
+	#define STR0008 "Empresa:"
+	#define STR0009 "Grabar en:"
+	#define STR0010 "Ubicar"
+	#define STR0011 "Mensaje recibida: "
+	#define STR0012 "Error de ejecución: "
+	#define STR0013 "Se ejecuto con exito"
+	#define STR0014 " servicio."
+	#define STR0015 "Se ejecutaron con exito "
+	#define STR0016 " servicios."
+	#define STR0017 "No se ejecuto ningun servicio."
+	#define STR0018 "Camino"
+	#define STR0019 "Seleccione el directorio"
+	#define STR0020 "Complete el directorio..."
+	#define STR0021 "Atencion"
+	#define STR0022 "Directorio no existe..."
+	#define STR0023 "Abastecimiento"
+	#define STR0024 "Sucursal:"
+	#define STR0025 "Puesto:"
+	#define STR0026 "Tienda:"
+	#define STR0027 "Secuencial:"
+	#define STR0028 "De Fecha:"
+	#define STR0029 "A Fecha:"
+	#define STR0030 "No se importo ningun registro."
+	#define STR0031 "Abastecimentos/Lubricantes"
+	#define STR0032 "Se importaron "
+	#define STR0033 " registros."
+	#define STR0035 "Error de Ejecucion: "
+	#define STR0036 "¡'Puesto' y 'Tienda' deben completarse!"
+	#define STR0037 "'¡Secuencial' o 'De/A Fecha' debe completarse!"
+	#define STR0038 "¡'De/A Fecha' debe completarse!"
+	#define STR0039 "La Empresa es invalida."
+	#define STR0040 "La Empresa/Sucursal es invalida."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "All"
+		#define STR0002 "Posts/Trains"
+		#define STR0003 "Products"
+		#define STR0004 "Assets"
+		#define STR0005 "Client WebService Test"
+		#define STR0006 "Service:"
+		#define STR0007 "Services"
+		#define STR0008 "Company:"
+		#define STR0009 "Save in:"
+		#define STR0010 "Find"
+		#define STR0011 "Received Message: "
+		#define STR0012 "Running error: "
+		#define STR0013 "Successfully performed. "
+		#define STR0014 " service."
+		#define STR0015 "Successfully performed. "
+		#define STR0016 " Services"
+		#define STR0017 "No service was executed."
+		#define STR0018 "Path:"
+		#define STR0019 "Select the Directory"
+		#define STR0020 "Fill out the directory..."
+		#define STR0021 "Attention"
+		#define STR0022 "Directory does not exist..."
+		#define STR0023 "Refueling"
+		#define STR0024 "Branch:"
+		#define STR0025 "Station:"
+		#define STR0026 "Store:"
+		#define STR0027 "Sequential:"
+		#define STR0028 "From Date:"
+		#define STR0029 "To Date:"
+		#define STR0030 "No record was imported."
+		#define STR0031 "Refueling/Lubricants"
+		#define STR0032 "Imported: "
+		#define STR0033 " registers."
+		#define STR0035 "Running error: "
+		#define STR0036 "'Gas' Station' and 'Store' must be filled out!"
+		#define STR0037 "'Sequential' or 'From/To Date' must be filled out!"
+		#define STR0038 "'From/To Date' must be filled out!"
+		#define STR0039 "The Company is not valid."
+		#define STR0040 "The Company/Branch is not valid."
+	#else
+		#define STR0001 "Todos"
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Est.Serv./Comboios", "Postos/Comboios" )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Artigos", "Produtos" )
+		#define STR0004 "Bens"
+		#define STR0005 "Teste do WebService do cliente"
+		#define STR0006 "Serviço:"
+		#define STR0007 "Serviços"
+		#define STR0008 "Empresa:"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Gravar em:", "Salvar em:" )
+		#define STR0010 "Localizar"
+		#define STR0011 "Mensagem recebida: "
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Erro de execução: ", "Erro de Execução: " )
+		#define STR0013 "Foi executado com sucesso "
+		#define STR0014 " serviço."
+		#define STR0015 "Foram executados com sucesso "
+		#define STR0016 " serviços."
+		#define STR0017 "Nenhum serviço foi executado."
+		#define STR0018 "Caminho"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Seleccione o directório", "Selecione o Diretório" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Preencha o directório...", "Preencha o diretório..." )
+		#define STR0021 "Atenção"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Directório não existe...", "Diretório não existe..." )
+		#define STR0023 "Abastecimento"
+		#define STR0024 "Filial:"
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Est. Serv.:", "Posto:" )
+		#define STR0026 "Loja:"
+		#define STR0027 "Sequencial:"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "De data:", "De Data:" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Até data:", "Até Data:" )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Não foi importado nenhum registo.", "Não foi importado nenhum registro." )
+		#define STR0031 "Abastecimentos/Lubrificantes"
+		#define STR0032 "Foram importados "
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", " registos.", " registros." )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Erro de execução: ", "Erro de Execução: " )
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "'Est.Serv.' e 'Loja' deverão ser preenchidas.", "'Posto' e 'Loja' deverão ser preenchidos!" )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "'Sequencial' ou 'De/Até data' deverá ser preenchido.", "'Sequencial' ou 'De/Até Data' deverá ser preenchido!" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "'De/Até data' deverá ser preenchido.", "'De/Até Data' deverá ser preenchido!" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "A empresa é inválida.", "A Empresa é inválida." )
+		#define STR0040 "A Empresa/Filial é inválida."
+	#endif
+#endif

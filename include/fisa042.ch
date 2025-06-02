@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de ajustes de credito SPED PIS y COFINS"
+	#define STR0002 "Ajuste de reduccion"
+	#define STR0003 "Ajuste de aumento"
+	#define STR0004 "¡Tabla CF5 no registrada en el sistema!"
+	#define STR0005 "Visualizar"
+	#define STR0006 "Incluir"
+	#define STR0007 "Modificar"
+	#define STR0008 "Borrar"
+	#define STR0009 "Ajuste de creditos PIS y Cofins"
+	#define STR0010 "¡Ind. de Ajuste, Pis o COFINS, Cod. de Ajuste y fecha referencial registrados!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Register of SPED PIS and COFINS Credit Adjustments"
+		#define STR0002 "Reduction Adjustment"
+		#define STR0003 "Addition Adjustment"
+		#define STR0004 "CF5 Table not registered in system!"
+		#define STR0005 "View"
+		#define STR0006 "Add"
+		#define STR0007 "Edit"
+		#define STR0008 "Delete"
+		#define STR0009 "PIS and Cofins Credit Adjustment"
+		#define STR0010 "Adjustment Index, PIS or COFINS, Adjustment Code and Reference Date already registered!"
+	#else
+		#define STR0001 "Cadastro de Ajustes de Credito SPED PIS e COFINS"
+		#define STR0002 "Ajuste de Redução"
+		#define STR0003 "Ajuste de Acréscimo"
+		#define STR0004 "Tabela CF5 não cadastrada no sistema!"
+		#define STR0005 "Visualizar"
+		#define STR0006 "Incluir"
+		#define STR0007 "Alterar"
+		#define STR0008 "Excluir"
+		#define STR0009 "Ajuste de Creditos PIS e Cofins"
+		#define STR0010 "Ind. de Ajuste, Pis ou COFINS, Cod. de Ajuste e Data Referencial já cadastrados!"
+	#endif
+#endif

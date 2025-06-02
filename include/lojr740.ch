@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de ventas perdidas - Analitico"
+	#define STR0002 "Informe de ventas perdidas - Sintetico"
+	#define STR0003 "Venta Perdida"
+	#define STR0004 "Cliente"
+	#define STR0005 "Vendedor"
+	#define STR0006 "Producto"
+	#define STR0007 "Motivo"
+	#define STR0008 "Justificacion:"
+	#define STR0009 "¿Enviar aviso ?"
+	#define STR0010 "Total de movimientos en el periodo"
+	#define STR0011 "TOTAL OTRAS VENTAS PERDIDAS"
+	#define STR0012 "Documento"
+	#define STR0013 "¿Enviar aviso?"
+	#define STR0014 "No hay avisos disponibles."
+	#define STR0015 "Fecha de aviso"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of lost sales - Analytical"
+		#define STR0002 "Report of lost sales - Synthetic"
+		#define STR0003 "Lost Sales"
+		#define STR0004 "Customer"
+		#define STR0005 "Sales Representative"
+		#define STR0006 "Product"
+		#define STR0007 "Reason"
+		#define STR0008 "Explanation"
+		#define STR0009 "Send notice ?"
+		#define STR0010 "Movement total in the period"
+		#define STR0011 "LOST SALES TOTAL"
+		#define STR0012 "Document"
+		#define STR0013 "Send notice?"
+		#define STR0014 "There are no warnings available."
+		#define STR0015 "Date of Notice"
+	#else
+		#define STR0001 "Relatório de vendas perdidas - Analítico"
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Relatório de vendas perdidas - Analítico", "Relatório de vendas perdidas - Sintético" )
+		#define STR0003 "Venda Perdida"
+		#define STR0004 "Cliente"
+		#define STR0005 "Vendedor"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Artigo", "Produto" )
+		#define STR0007 "Motivo"
+		#define STR0008 "Justificativa"
+		#define STR0009 "Enviar aviso ?"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Total de movimentos no período", "Total de movimentos no periodo" )
+		#define STR0011 "TOTAL DE VENDAS PERDIDAS"
+		#define STR0012 "Documento"
+		#define STR0013 "Enviar aviso ?"
+		#define STR0014 "Não há avisos disponíveis."
+		#define STR0015 "Data do aviso"
+	#endif
+#endif

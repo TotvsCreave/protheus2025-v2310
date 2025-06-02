@@ -1,0 +1,66 @@
+#ifdef SPANISH
+	#define STR0001 "Este programa tiene como objetivo imprimir informe "
+	#define STR0002 "de acuerdo con los parametros informados por el usuario."
+	#define STR0003 "Candidatos aprobados por materia"
+	#define STR0004 "Candidatos aprobados"
+	#define STR0005 "Alfabetica"
+	#define STR0006 "Clasificacion"
+	#define STR0007 "A rayas"
+	#define STR0008 "Administracion"
+	#define STR0009 "Este informe debe utilizarse solamente en version Top Connect"
+	#define STR0010 "Atencion"
+	#define STR0011 "Candidato  "
+	#define STR0012 "Inscripcion  "
+	#define STR0013 "Documento  "
+	#define STR0014 "Nacimiento "
+	#define STR0015 "Nota Final    "
+	#define STR0016 "Clasificación "
+	#define STR0017 "Materia "
+	#define STR0018 "Ponderación "
+	#define STR0019 "Nota "
+	#define STR0020 "*** ANULADO POR EL OPERADOR ***"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "This program prints the report "
+		#define STR0002 "according to parameters informed by user."
+		#define STR0003 "Candidates approved by subject"
+		#define STR0004 "Candidates approved"
+		#define STR0005 "Alphabetical"
+		#define STR0006 "Classification"
+		#define STR0007 "Z-form"
+		#define STR0008 "Administration"
+		#define STR0009 "This report must be used only in Top Connect version"
+		#define STR0010 "Attention"
+		#define STR0011 "Candidate  "
+		#define STR0012 "Registration  "
+		#define STR0013 "Document  "
+		#define STR0014 "Birth date "
+		#define STR0015 "Final invoice    "
+		#define STR0016 "Classification "
+		#define STR0017 "Subject "
+		#define STR0018 "Weight "
+		#define STR0019 "Grade "
+		#define STR0020 "*** CANCELLED BY OPERATOR ***"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Este programa tem como objectivo imprimir relatório ", "Este programa tem como objetivo imprimir relatorio " )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "de acordo com os parâmetros informados pelo utilizador.", "de acordo com os parametros informados pelo usuario." )
+		#define STR0003 "Candidatos aprovados por disciplina"
+		#define STR0004 "Candidatos aprovados"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Alfabética", "Alfabetica" )
+		#define STR0006 "Classificação"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Código de Barras", "Zebrado" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Este relatório deve ser utilizado somente em versão Top Connect", "Este relatório deve ser utilizado somente em versäo Top Connect" )
+		#define STR0010 "Atenção"
+		#define STR0011 "Candidato  "
+		#define STR0012 "Inscrição  "
+		#define STR0013 "Documento  "
+		#define STR0014 "Nascimento "
+		#define STR0015 "Nota Final    "
+		#define STR0016 "Classificação "
+		#define STR0017 "Disciplina "
+		#define STR0018 "Peso "
+		#define STR0019 "Nota "
+		#define STR0020 "*** CANCELADO PELO OPERADOR ***"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 'Plantilla del grupo de reserva en cargo comisionado por categoria'
+	#define STR0002 'Informes cuantitativos mensuales actualizados, siempre que hay modificacion en la plantilla de ocupacion de los cargos comisionados, efectivos y miembros'
+	#define STR0003 'Sucursales'
+	#define STR0004 'Servidores'
+	#define STR0005 'Denominacion de los cargos'
+	#define STR0006 'Número de vacantes'
+	#define STR0007 'Efectivo'
+	#define STR0008 'Comisión'
+	#define STR0009 'Vacantes'
+	#define STR0010 'Simbolo'
+#else
+	#ifdef ENGLISH
+		#define STR0001 'Providing Group Board in Commissioned Position by Category'
+		#define STR0002 'Monthly quantitative reports, updated by changes in position occupation board of commissioned positions and members'
+		#define STR0003 'Branches'
+		#define STR0004 'Servants'
+		#define STR0005 'Position Denomination'
+		#define STR0006 'Number of Vacancies'
+		#define STR0007 'Effective'
+		#define STR0008 'Commission'
+		#define STR0009 'Vacant'
+		#define STR0010 'Symbol'
+	#else
+		#define STR0001 'Quadro do Grupo de Provimento em Cargo Comissionado por Categoria'
+		#define STR0002 'Relatórios quantitativos mensais atualizados sempre que há alteração no quadro de ocupação dos cargos comissionados, efetivos e membros'
+		#define STR0003 'Filiais'
+		#define STR0004 'Servidores'
+		#define STR0005 'Denominação dos Cargos'
+		#define STR0006 'Número de Vagas'
+		#define STR0007 'Efetivo'
+		#define STR0008 'Comissão'
+		#define STR0009 'Vagos'
+		#define STR0010 'Símbolo'
+	#endif
+#endif

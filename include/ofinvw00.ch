@@ -1,0 +1,132 @@
+#ifdef SPANISH
+	#define STR0001 "El programa importa toda la informacion"
+	#define STR0002 "de integracion VW incluida en un determinado"
+	#define STR0003 "archivo texto seleccionado por el usuario."
+	#define STR0004 "Textos (TXT)"
+	#define STR0005 "INFORMATIVO DE LISTA"
+	#define STR0006 "FACTURACION DIARIA DE VEHICULOS"
+	#define STR0007 "TS CONSISTENCIA"
+	#define STR0008 "TPR TIEMPO ESTANDAR DE REPARACION"
+	#define STR0009 "SGS ACEPTADAS"
+	#define STR0010 "SGS EQUIVOADAS"
+	#define STR0011 "SGS CREDITOS Y DEBITOS"
+	#define STR0012 "CONSISTENCIA EN EL COMPROBANTE"
+	#define STR0013 "COMPROBANTE REVISION CREDITOS Y DEBITOS"
+	#define STR0014 "LISTA DE PRECIOS Y DATOS DE REGISTRO DE LA PIEZA"
+	#define STR0015 "RECONOCIMIENTO DEL PEDIDO DE PIEZAS"
+	#define STR0016 "ESTATUS DE BACK ORDER"
+	#define STR0017 "ITEMS ESPERANDO FACTURACION"
+	#define STR0018 "BACK ORDER ANULADO"
+	#define STR0019 "INFORME ANALISIS PPA"
+	#define STR0020 "DATOS GLOBALES DE LISTA"
+	#define STR0021 "CONFORMACION DE RECEPCION AUTOPARTES"
+	#define STR0022 "INFORMES AUTOSERVICE"
+	#define STR0023 "FACTURAS EMITIDAS DEBITO/CREDITO C/C"
+	#define STR0024 "ADQUISICION DE AUTOS"
+	#define STR0025 "ADQUISICION A PLAZO"
+	#define STR0026 "DESCUENTOS POR COMPRA AL CONTADO"
+	#define STR0027 "FONDO APOLO"
+	#define STR0028 "EXTRACTO C/C DIARIO"
+	#define STR0029 "INFORMATIVO FACT CREDITO"
+	#define STR0030 "CUENTA CORRIENTE MENSUAL"
+	#define STR0031 "TIPOS DE DOCUMENTOS DEL C/C"
+	#define STR0032 "FACTURAS Y NOTAS DE DEBITO"
+	#define STR0033 "El archivo '"
+	#define STR0034 "' no se encontro."
+	#define STR0035 "' ya se proceso anteriormente. ¿Desea reprocesar?"
+	#define STR0036 "Atencion"
+	#define STR0037 "Asunto"
+	#define STR0038 "Descripcion"
+	#define STR0039 "Panel de importacion de rutinas de integracion VW"
+	#define STR0040 "OFINVW00 - Panel de integracion Volkswagen"
+	#define STR0041 "PIEZAS A DEVOLVER - CTG"
+	#define STR0042 "LISTAS VK - REVISIONES VWBR. AUTO / CAM"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "The program imports all information"
+		#define STR0002 "of VW integration within a certain"
+		#define STR0003 "text file chosen by the user."
+		#define STR0004 "Texts (TXT)"
+		#define STR0005 "LIST INFORMATION"
+		#define STR0006 "DAILY VEHICLE INVOICING"
+		#define STR0007 "CONSISTENCY TS"
+		#define STR0008 "TPR  DEFAULT REPAIR TIME"
+		#define STR0009 "SGS ACCEPTED"
+		#define STR0010 "WRONG SGS"
+		#define STR0011 "SGS CREDIT AND DEBIT"
+		#define STR0012 "CONSISTENCY IN RECEIPT"
+		#define STR0013 "CREDIT AND DEBIT REVISION RECEIPT"
+		#define STR0014 "PRICE LIST AND REGISTRATION DATA OF THE PART"
+		#define STR0015 "PART ORDER RECOGNITION"
+		#define STR0016 "BACK ORDER STATUS"
+		#define STR0017 "ITEMS AWAITING INVOICING"
+		#define STR0018 "BACK ORDER CANCELED"
+		#define STR0019 "PPA ANALYSIS REPORT"
+		#define STR0020 "BORDEREAU GLOBAL DATA"
+		#define STR0021 "AUTOPART RECEIPT CONFIRMATION"
+		#define STR0022 "AUTOSERVICE REPORTS"
+		#define STR0023 "NF INVOICED DEBIT/CREDIT CH.ACC."
+		#define STR0024 "VEHICLE ACQUISITION"
+		#define STR0025 "ACQUISITION BY CREDIT"
+		#define STR0026 "DISCOUNTS PER PURCHASE IN CASH"
+		#define STR0027 "APOLO FUND"
+		#define STR0028 "DAILY CH.ACC. STATEMENT"
+		#define STR0029 "CREDIT INV. INF."
+		#define STR0030 "MONTHLY CHECKING ACCOUNT"
+		#define STR0031 "TYPES OF CH.ACC. DOCUMENTS"
+		#define STR0032 "INVOICES AND DEBIT NOTES"
+		#define STR0033 "The file '"
+		#define STR0034 "' was not found."
+		#define STR0035 "' already processed. Process it again?"
+		#define STR0036 "Attention"
+		#define STR0037 "Subject"
+		#define STR0038 "Description"
+		#define STR0039 "VW Integration Routine Import Panel"
+		#define STR0040 "OFINVW00 - Volkswagen Integration Panel"
+		#define STR0041 "PARTS TO RETURN - CTG"
+		#define STR0042 "VK LISTS - VWBR REVISIONS. AUTO / CAM"
+	#else
+		#define STR0001 "O programa importa todas as informações"
+		#define STR0002 "de integração VW contidas em um determinado"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "ficheiro texto escolhido pelo utilizador.", "arquivo texto escolhido pelo usuário." )
+		#define STR0004 "Textos (TXT)"
+		#define STR0005 "INFORMATIVO DE LISTA"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "FACTURAÇÃO DIÁRIA DE VEÍCULOS", "FATURAMENTO DIÁRIO DE VEÍCULOS" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "TS CONSISTÊNCIA", "TS CONSISTENCIA" )
+		#define STR0008 "TPR TEMPO PADRÃO DE REPARO"
+		#define STR0009 "SGS ACEITAS"
+		#define STR0010 "SGS ERRADAS"
+		#define STR0011 "SGS CRÉDITOS E DÉBITOS"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "CONSISTÊNCIA NO CUPÃO", "CONSISTENCIA NO CUPOM" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "CUPÃO REVISÃO CRÉDITOS E DÉBITOS", "CUPOM REVISAO CRÉDITOS E DÉBITOS" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "LISTA DE PREÇOS E DADOS DE REGISTO DA PEÇA", "LISTA DE PREÇOS E DADOS CADASTRAIS DA PECA" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "RECONHECIMENTO DO PEDIDO DE PEÇAS", "RECONHECIMENTO DO PEDIDO DE PECAS" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "ESTADO DE BACK ORDER", "STATUS DE BACK ORDER" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "ITENS A AGUARDAR FACTURAÇÃO", "ITENS AGUARDANDO FATURAMENTO" )
+		#define STR0018 "BACK ORDER CANCELADO"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "RELATÓRIO ANÁLISE PPA", "RELATORIO ANALISE PPA" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "DADOS GLOBAIS DE BORDERÔ", "DADOS GLOBAIS DE BORDERO" )
+		#define STR0021 "CONFORMAÇÃO DE RECEBIMENTO AUTOPART"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "RELATÓRIOS AUTOSERVICE", "RELATORIOS AUTOSERVICE" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "FACT. FACTURADAS DÉBITO/CRÉDITO C/C", "NF FATURADAS DEBITO/CREDITO C/C" )
+		#define STR0024 "AQUISIÇÃO DE AUTOS"
+		#define STR0025 "AQUISIÇÃO A PRAZO"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "DESCONTOS POR COMPRA À VISTA", "DESCONTOS POR COMPRA A VISTA" )
+		#define STR0027 "FUNDO APOLO"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "EXTRACTO C/C DIÁRIO", "EXTRATO C/C DIÁRIO" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "INFORMATIVO FACT. CRÉDITO", "INFORMATIVO NF CREDITO" )
+		#define STR0030 "CONTA CORRENTE MENSAL"
+		#define STR0031 "TIPOS DE DOCUMENTOS DO C/C"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "FACTURAS E DE DÉBITO", "NOTAS FISCAIS E DE DEBITO" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "O ficheiro '", "O arquivo '" )
+		#define STR0034 "' não foi encontrado."
+		#define STR0035 "' já foi processado anteriormente. Deseja reprocessar?"
+		#define STR0036 "Atenção"
+		#define STR0037 "Assunto"
+		#define STR0038 "Descrição"
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Painel de Importação de Procedimentos de Integração VW", "Painel de Importação de Rotinas de Integração VW" )
+		#define STR0040 "OFINVW00 - Painel de Integração Volkswagen"
+		#define STR0041 "PEÇAS A DEVOLVER - CTG"
+		#define STR0042 "LISTAS VK - REVISÕES VWBR. AUTO / CAM"
+	#endif
+#endif

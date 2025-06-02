@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Búsqueda"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Copiar"
+	#define STR0008 "Datos del archivo de barcos"
+	#define STR0009 "Existe este código registrado para este proveedor."
+	#define STR0010 "Archivo de navíos"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Print"
+		#define STR0007 "Copy"
+		#define STR0008 "Data of Ships Register"
+		#define STR0009 "This Code is already registered for this Supplier."
+		#define STR0010 "Ships Register"
+	#else
+		#define STR0001 "Pesquisa"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Copiar"
+		#define STR0008 "Dados do Cadastro de  Navios"
+		#define STR0009 "Já Existe este Código cadastrado para este Fornecedor."
+		#define STR0010 "Cadastro de Navios"
+	#endif
+#endif

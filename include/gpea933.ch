@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Observaciones del contrato de trabajo"
+	#define STR0002 "Empleados"
+	#define STR0003 "Buscar"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Atención"
+	#define STR0008 "Registro en tránsito"
+	#define STR0009 "No se registraron los campos de cumplimentación obligatoria para el eSocial en el Archivo de empleados."
+	#define STR0010 "No fue posible realizar la integración con el TAF."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Notes of Work Contract"
+		#define STR0002 "Employees"
+		#define STR0003 "Search"
+		#define STR0004 "View"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Attention"
+		#define STR0008 "Record in Transit"
+		#define STR0009 "The fields of mandatory completion for eSocial in the Employee Register were not filled out."
+		#define STR0010 "No integration executed with TAF!"
+	#else
+		#define STR0001 "Observações Contrato de Trabalho"
+		#define STR0002 "Funcionários"
+		#define STR0003 "Pesquisar"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Atencao"
+		#define STR0008 "Registro em Transito"
+		#define STR0009 "Os campos de preenchimento obrigatório para o eSocial no Cadastro de Funcionário não foram preenchidos."
+		#define STR0010 "Não foi possivel realizar a integração com o TAF!"
+	#endif
+#endif

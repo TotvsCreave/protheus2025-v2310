@@ -1,0 +1,183 @@
+#ifdef SPANISH
+	#define STR0001 "Comprobante mensual de pago de PIS/PASEP y COFINS."
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Manual"
+	#define STR0005 "Automatica"
+	#define STR0006 "Informe la fecha inicial por procesarse."
+	#define STR0007 "¿De Fecha?"
+	#define STR0008 "Informe el nombre del archivo modelo con la "
+	#define STR0009 "extension. Ej.: CARTA.DOT                 "
+	#define STR0010 "Este archivo debe constar en el directorio"
+	#define STR0011 "SIGAADV.                                "
+	#define STR0012 "Nombre arch. modelo"
+	#define STR0013 "Especifique el directorio en el que se encuen-"
+	#define STR0014 "tra el archivo modelo(DOT).              "
+	#define STR0015 "Ej: C:\AP7\SIGAADV\                     "
+	#define STR0016 "Diretório .DOT"
+	#define STR0017 "Informe el nombre del responsable por las in- "
+	#define STR0018 "formaciones contenidas en el documento que se   "
+	#define STR0019 "generarse.                                 "
+	#define STR0020 "Nombre responsable"
+	#define STR0021 "Informe el codigo inicial del proveedor.  "
+	#define STR0022 "por considerarse en el filtro del Browser  "
+	#define STR0023 "De Proveedor"
+	#define STR0024 "Informe el codigo final del proveedor.    "
+	#define STR0025 "por considerarse en el filtro del Browser  "
+	#define STR0026 "A  proveedor"
+	#define STR0027 "Informe la tienda inicial del proveedor    "
+	#define STR0028 "por considerarse en el filtro del Browser  "
+	#define STR0029 "De Tienda"
+	#define STR0030 "Informe la tienda final del proveedor      "
+	#define STR0031 "por considerarse en el filtro del Browser  "
+	#define STR0032 "A tienda"
+	#define STR0033 "¡Sin movimiento de retención para este proveedor!"
+	#define STR0034 "Solamente sera posible el procesamiento de esta rutina con la creacion del campo E5_AGLIMP (Char/6) en la tabla SE5"
+	#define STR0035 "¡Atencion!"
+	#define STR0036 "¡Sin movimiento para generar este comprobante!"
+	#define STR0037 "Define si se imprimira automaticamente"
+	#define STR0038 "o grabado automaticamente en el directorio"
+	#define STR0039 "siguiente los documentos generados por la ruti-"
+	#define STR0040 "na a traves de la opcion automatica."
+	#define STR0041 "Con respecto a la opcion automatica"
+	#define STR0042 "Imprime"
+	#define STR0043 "Graba"
+	#define STR0044 "Define el directorio de generacion de los do-"
+	#define STR0045 "cumentos creados por la rutina automatica"
+	#define STR0046 "si se hubiera seleccionado GRABA en la opcion anterior."
+	#define STR0047 "Directorio destino"
+	#define STR0048 "Informe la fecha final por procesarse."
+	#define STR0049 "A fecha"
+	#define STR0050 "¡MS-WORD no encontrado en esta máquina!"
+	#define STR0051 "¡Archivo de modelo no encontrado!"
+	#define STR0052 "Indica si la fecha de filtro informada"
+	#define STR0053 "en las dos primeras preguntas debe "
+	#define STR0054 "aplicarse en la emision de titulos "
+	#define STR0055 "de retencion o en el vencimiento."
+	#define STR0056 "¿Filtrar por?"
+	#define STR0057 "Emision"
+	#define STR0058 "Vencimiento"
+	#define STR0059 "Verificar el movimiento del periodo y si todos tienen codigo de retencion vinculado."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Monthly statement of PIS/PASEP and COFINS withholding."
+		#define STR0002 "Search "
+		#define STR0003 "View "
+		#define STR0004 "Manual"
+		#define STR0005 "Automatic "
+		#define STR0006 "Enter initial date to be processed. "
+		#define STR0007 "From date?"
+		#define STR0008 "Enter model file name with    "
+		#define STR0009 "extension. Example: LETTER.DOT                 "
+		#define STR0010 "This file must exist in the directory"
+		#define STR0011 "SIGAADV.                                "
+		#define STR0012 "Model file name "
+		#define STR0013 "Specify the directory in which is found the"
+		#define STR0014 "model file (DOT) is.               "
+		#define STR0015 "E.g. C:\AP7\SIGAADV\                    "
+		#define STR0016 "Directory .DOT"
+		#define STR0017 "Enter the name of the person in charge of the "
+		#define STR0018 "information found in the document to be   "
+		#define STR0019 "generated.                              "
+		#define STR0020 "Name of person in charge"
+		#define STR0021 "Enter the initial code of supplier  "
+		#define STR0022 "to be considered in the Browser filter  "
+		#define STR0023 "From supplier"
+		#define STR0024 "Enter the final code of supplier    "
+		#define STR0025 "to be considered in the Browser filter  "
+		#define STR0026 "Supplier to"
+		#define STR0027 "Enter supplier initial store     "
+		#define STR0028 "to be considered in the Browser filter  "
+		#define STR0029 "From store"
+		#define STR0030 "Enter supplier final store       "
+		#define STR0031 "to be considered in the Browser filter  "
+		#define STR0032 "Store to"
+		#define STR0033 "No withholding transaction for this supplier!"
+		#define STR0034 "Processing this routine will be possible only by creating the field E5_AGLIMP (Char/6) in table SE5"
+		#define STR0035 "Warning"
+		#define STR0036 "No transaction to generate this receipt!"
+		#define STR0037 "Defines whether it will be automatically printed"
+		#define STR0038 "or automatically saved in directory"
+		#define STR0039 "under the documents generated by the "
+		#define STR0040 "routine through the automatic option."
+		#define STR0041 "Automatic option "
+		#define STR0042 "Print "
+		#define STR0043 "Save "
+		#define STR0044 "Defines directory to generate the     "
+		#define STR0045 "documents created by the automatic routine"
+		#define STR0046 "if SAVE is selected in the above option"
+		#define STR0047 "Target directory "
+		#define STR0048 "Enter final date to be processed. "
+		#define STR0049 "Date to?"
+		#define STR0050 "MS-WORD not found in this computer!!"
+		#define STR0051 "Model file not found!!"
+		#define STR0052 "It indicates if the filter date entered"
+		#define STR0053 "in the first two questions must "
+		#define STR0054 "be applied in the generation of bills"
+		#define STR0055 "of withholding or in the due date."
+		#define STR0056 "Filter by? "
+		#define STR0057 "Issue date"
+		#define STR0058 "Due date"
+		#define STR0059 "Check transactions of the period and if all have a withholding code related. "
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Comprovativo Mensal De Retenção De Pis/pasep E Cofins.", "Comprovante mensal de retencao de PIS/PASEP e COFINS." )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Manual"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Automática", "Automatica" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Indicar a data inicial a ser processada.", "Informe a data inicial a ser processada." )
+		#define STR0007 "Data de ?"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Indicar o nome do ficheiro modelo com a  ", "Informe o nome do arquivo modelo com a  " )
+		#define STR0009 "extensão. Ex: CARTA.DOT                 "
+		#define STR0010 "Este arquivo deverá constar no diretório"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Sigaadv.                                ", "SIGAADV.                                " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Nome do ficheiro modelo", "Nome arq. modelo" )
+		#define STR0013 "Especifique o diretório em que se encon-"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Tra o ficheiro modelo(dot).              ", "tra o arquivo modelo(DOT).              " )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Ex: c:\ap7\sigaadv\                     ", "Ex: C:\AP7\SIGAADV\                     " )
+		#define STR0016 "Diretório .DOT"
+		#define STR0017 "Informe o nome do responsável pelas in- "
+		#define STR0018 "formações contidas no documento a ser   "
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Criado.                                 ", "gerado.                                 " )
+		#define STR0020 "Nome responsável"
+		#define STR0021 "Informe o código inicial do fornecedor  "
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "A ser considerado no filtro do browser  ", "a ser considerado no filtro do Browser  " )
+		#define STR0023 "Fornecedor de"
+		#define STR0024 "Informe o código final do fornecedor    "
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "A ser considerado no filtro do browser  ", "a ser considerado no filtro do Browser  " )
+		#define STR0026 "Fornecedor até"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Indicar a loja inicial do fornecedor    ", "Informe a loja inicial do fornecedor    " )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "A ser considerado no filtro do browser  ", "a ser considerado no filtro do Browser  " )
+		#define STR0029 "Loja de"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Indicar a loja final do fornecedor      ", "Informe a loja final do fornecedor      " )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "A ser considerado no filtro do browser  ", "a ser considerado no filtro do Browser  " )
+		#define STR0032 "Loja até"
+		#define STR0033 "Sem movimento de retenção para este fornecedor !"
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "O Processamento Deste Procedimento  Só Será Possível Com A Criação Do Campo E5_aglimp (char/6) Na Tabela Se5", "Somente será possível o processamento desta rotina com a criação do campo E5_AGLIMP (Char/6) na tabela SE5" )
+		#define STR0035 "Atenção"
+		#define STR0036 "Sem movimentação para gerar este comprovante !"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Definir se será impresso automaticamente", "Define se será impresso automáticamente" )
+		#define STR0038 "ou gravado automáticamente no diretório"
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Abaixo os documentos criados pela roti-", "abaixo os documentos gerados pela roti-" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Na através da opção automática.", "na através da opção automática." )
+		#define STR0041 "Quanto a opção automática"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Imprimir", "Imprime" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Gravar", "Grava" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Definir o directório de criação dos do-", "Define o diretório de gerarção dos do-" )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Cumentos criados pelo procedimento  automática", "cumentos criados pela rotina automática" )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Caso seleccionado gravação na opção acima.", "caso selecionado GRAVA na opção acima." )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Directório de destino", "Diretório destino" )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Indique a data final a ser processada.", "Informe a data final a ser processada." )
+		#define STR0049 "Data até ?"
+		#define STR0050 "MS-WORD não encontrado nessa máquina !!"
+		#define STR0051 "Arquivo de Modelo não encontrado !!"
+		#define STR0052 "Indica se a data de filtro informada"
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "Nas duas primeiras perguntas deverá ", "nas duas primeiras perguntas deverá " )
+		#define STR0054 If( cPaisLoc $ "ANG|PTG", "Ser aplicada na emissão dos títulos ", "ser aplicada na emissão dos títulos " )
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "De retenção ou na validade.", "de retenção ou no vencimento." )
+		#define STR0056 "Filtrar por ?"
+		#define STR0057 "Emissão"
+		#define STR0058 "Vencimento"
+		#define STR0059 "Verificar o movimento do período e se todos possuem código de retenção relacionado."
+	#endif
+#endif

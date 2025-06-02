@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Datos de la Solicitud"
+	#define STR0002 "Documento:"
+	#define STR0003 "Seleccione el documento deseado:"
+	#define STR0004 "Observacion:"
+	#define STR0005 "Reprobar"
+	#define STR0006 "Aprobar"
+	#define STR0007 "Guardar"
+	#define STR0008 "Volver"
+	#define STR0009 "¡Existe una solicitud de certificado pendiente!"
+	#define STR0010 "Espere que se haga efectiva la solicitud."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Data of Request"
+		#define STR0002 "Document:"
+		#define STR0003 "Select document wanted:"
+		#define STR0004 "Note:"
+		#define STR0005 "Reject"
+		#define STR0006 "Approve"
+		#define STR0007 "Save"
+		#define STR0008 "Back"
+		#define STR0009 "There is a pending certificate request!"
+		#define STR0010 "Await request confirmation."
+	#else
+		#define STR0001 "Dados da Solicitacao"
+		#define STR0002 "Documento:"
+		#define STR0003 "Selecione o documento desejado:"
+		#define STR0004 "Observacao:"
+		#define STR0005 "Reprovar"
+		#define STR0006 "Aprovar"
+		#define STR0007 "Salvar"
+		#define STR0008 "Voltar"
+		#define STR0009 "Existe uma solicitacao de certidao pendente!"
+		#define STR0010 "Aguarde a efetivacao da solicitacao."
+	#endif
+#endif

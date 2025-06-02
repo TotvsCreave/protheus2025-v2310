@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Centro de costo"
+	#define STR0002 "Aprobación"
+	#define STR0003 "El parámetro MV_CTTAPV no está cumplimentado"
+	#define STR0004 "No existe aprobador en el Fluig - "
+	#define STR0005 "Borrado por el sistema"
+	#define STR0006 "Campo Motivo del bloqueo no se informó"
+	#define STR0007 'Proceso'
+	#define STR0008 'Inclusión'
+	#define STR0009 'Modificación'
+	#define STR0010 'Solicitante'
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Cost Center"
+		#define STR0002 "Approval"
+		#define STR0003 "Parameter MV_CTTAPV is not filled out"
+		#define STR0004 "There is no approver on Fluig - "
+		#define STR0005 "Deleted by the system"
+		#define STR0006 "Blocking Reason field not filled out"
+		#define STR0007 'Process'
+		#define STR0008 'Addition'
+		#define STR0009 'Edition'
+		#define STR0010 'Requester'
+	#else
+		#define STR0001 "Centro de Custo"
+		#define STR0002 "Aprovação"
+		#define STR0003 "O Parâmetro MV_CTTAPV não esta preenchido"
+		#define STR0004 "Não existe aprovador no Fluig - "
+		#define STR0005 "Excluido pelo sistema"
+		#define STR0006 "Campo Motivo do Bloqueio não foi preenchido"
+		#define STR0007 'Processo'
+		#define STR0008 'Inclusão'
+		#define STR0009 'Alteração'
+		#define STR0010 'Solicitante'
+	#endif
+#endif

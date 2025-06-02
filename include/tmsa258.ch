@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Previa del contrato por pagar por período"
+	#define STR0002 "Contrato de transportista"
+	#define STR0003 "Creando tablas intermediarias ..."
+	#define STR0004 "Seleccionando proveedores..."
+	#define STR0005 "Seleccionando viajes ..."
+	#define STR0006 "Seleccionando gastos ..."
+	#define STR0007 "Buscar"
+	#define STR0008 "Generar"
+	#define STR0009 "Eliminando tablas intermediarias ..."
+	#define STR0010 "Seleccionando títulos..."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Prior Agreement Payable by Period"
+		#define STR0002 "Carrier Contract"
+		#define STR0003 "Creating intermediate tables..."
+		#define STR0004 "Selecting suppliers..."
+		#define STR0005 "Selecting trips..."
+		#define STR0006 "Selecting expenses..."
+		#define STR0007 "Search"
+		#define STR0008 "Generate"
+		#define STR0009 "Deleting intermediate tables..."
+		#define STR0010 "Selecting bills..."
+	#else
+		#define STR0001 "Previa do Contrato a Pagar por Período"
+		#define STR0002 "Contrato de Carreteiro"
+		#define STR0003 "Criando tabelas intermediarias ..."
+		#define STR0004 "Selecionando fornecedores ..."
+		#define STR0005 "Selecionando viagens ..."
+		#define STR0006 "Selecionando despesas ..."
+		#define STR0007 "Pesquisar"
+		#define STR0008 "Gerar"
+		#define STR0009 "Excluindo tabelas intermediarias ..."
+		#define STR0010 "Selecionando titulos ..."
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Visualizar"
+	#define STR0002 "Incluir"
+	#define STR0003 "Modificar"
+	#define STR0004 "Borrar"
+	#define STR0005 "Imprimir"
+	#define STR0006 "Copiar"
+	#define STR0007 "Archivo de motomensajero"
+	#define STR0008 "Datos del motomensajero"
+	#define STR0009 "Código inválido"
+	#define STR0010 "El código está en uso, por favor informe otro valor."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "View"
+		#define STR0002 "Add"
+		#define STR0003 "Edit"
+		#define STR0004 "Delete"
+		#define STR0005 "Print"
+		#define STR0006 "Copy"
+		#define STR0007 "Motor boy Register"
+		#define STR0008 "Motor boy Data"
+		#define STR0009 "Invalid code"
+		#define STR0010 "Code is in use, please, enter other value."
+	#else
+		#define STR0001 "Visualizar"
+		#define STR0002 "Incluir"
+		#define STR0003 "Alterar"
+		#define STR0004 "Excluir"
+		#define STR0005 "Imprimir"
+		#define STR0006 "Copiar"
+		#define STR0007 "Cadastro de Motoboy"
+		#define STR0008 "Dados do Motoboy"
+		#define STR0009 "Código inválido"
+		#define STR0010 "O código está em uso, por favor informe outro valor."
+	#endif
+#endif

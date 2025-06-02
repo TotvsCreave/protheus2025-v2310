@@ -1,0 +1,75 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Voto"
+	#define STR0004 "Leyenda"
+	#define STR0005 "Voto Autoborrado"
+	#define STR0006 "Cod. Barra"
+	#define STR0007 "Voto"
+	#define STR0008 "Por favor rellene el parametro MV_MOTDESC, con la razon estandar para el descarte de las muestras."
+	#define STR0009 "Atencion"
+	#define STR0010 "Validacion de Parametro"
+	#define STR0011 "La razón para descarte que se informo en el parametro MV_MOTDES, no esta registrada."
+	#define STR0012 "No hay donacion registrada. Por favor anule o adicione donaciones."
+	#define STR0013 "Validacion de Voto"
+	#define STR0014 "Esta atencion ya se adiciono."
+	#define STR0015 "Esta atencion no existe."
+	#define STR0016 "Validacion de Atencion"
+	#define STR0017 "No hay muestras para esta atencion."
+	#define STR0018 "Validacion de Muestras"
+	#define STR0019 "Voto Pendiente"
+	#define STR0020 "No Autorizado"
+	#define STR0021 "Autorizado"
+	#define STR0022 "Para informar el voto debe ser SI o NO."
+	#define STR0023 "Validacion de voto"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search   "
+		#define STR0002 "View "
+		#define STR0003 "Vote"
+		#define STR0004 "Caption"
+		#define STR0005 "Vote self-exclusion"
+		#define STR0006 "Barcode "
+		#define STR0007 "Vote"
+		#define STR0008 "Please, fill in the parameter MV_MOTDESC with the standard reason for discard of samples."
+		#define STR0009 "Attention"
+		#define STR0010 "Validation of parameter"
+		#define STR0011 "Discard reason entered in the parameter MV_MOTDES not registered. "
+		#define STR0012 "No donation entered. Please, cancel or add donations. "
+		#define STR0013 "Validation of vote"
+		#define STR0014 "Attendance already added. "
+		#define STR0015 "Nonexistent attendance. "
+		#define STR0016 "Validation of attendance"
+		#define STR0017 "No samples for this attendance. "
+		#define STR0018 "Validation of samples"
+		#define STR0019 "Pending vote "
+		#define STR0020 "Not authorized"
+		#define STR0021 "Authorized"
+		#define STR0022 "To inform, vote must be YES or NO."
+		#define STR0023 "Validation of vote"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Voto"
+		#define STR0004 "Legenda"
+		#define STR0005 "Voto Auto Exclusão"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Cód. Barras", "Cod. Barra" )
+		#define STR0007 "Voto"
+		#define STR0008 "Por favor preencha o parâmetro MV_MOTDESC, com o motivo padrão para descarte das amostras."
+		#define STR0009 "Atenção"
+		#define STR0010 "Validação de Parâmetro"
+		#define STR0011 "O motivo de descarte informado no parâmetro MV_MOTDES, não está cadastrado."
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Não há doação movida. por favor cancele ou adicione doações.", "Não há doação lançada. Por favor cancele ou adicione doações." )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Validação De Voto", "Validação de Voto" )
+		#define STR0014 "Este atendimento já foi adicionado."
+		#define STR0015 "Este atendimento não existe."
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Validação De Atendimento", "Validação de Atendimento" )
+		#define STR0017 "Não há amostras para este atendimento."
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Validação De Amostras", "Validação de Amostras" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Voto Em Aberto", "Voto em Aberto" )
+		#define STR0020 "Não Autorizado"
+		#define STR0021 "Autorizado"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Para Indicar O Voto Deve Ser Sim Ou Não.", "Para informar o voto deve ser SIM ou NAO." )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Validação De Voto", "Validação de Voto" )
+	#endif
+#endif

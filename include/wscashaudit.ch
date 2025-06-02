@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Integracion Protheus vs. Pos - Verificacion de caja"
+	#define STR0002 "Envio de la verificacion de caja al Protheus."
+	#define STR0003 "Ejecucion del metodo "
+	#define STR0004 "Realizando validación..."
+	#define STR0005 "Montando string XML..."
+	#define STR0006 "Grabando verificacion en la tabla intermedia..."
+	#define STR0007 "Final de la ejecucion del metodo"
+	#define STR0008 "Estacion no registrada."
+	#define STR0009 "Forma de pago no registrada."
+	#define STR0010 "Administradora financiera no registrada."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Protheus Integration x POS - Cash Checking"
+		#define STR0002 "Sending of cash checking to Protheus."
+		#define STR0003 "Method execution "
+		#define STR0004 "Validating..."
+		#define STR0005 "Assembling XML string..."
+		#define STR0006 "Saving the checking on intermediary table..."
+		#define STR0007 "End of method execution"
+		#define STR0008 "Station not registered!"
+		#define STR0009 "Payment method not registered!"
+		#define STR0010 "Financial Company not registered!"
+	#else
+		#define STR0001 "Integracao Protheus x Pos - Conferencia de Caixa"
+		#define STR0002 "Envio da conferência de caixa para o Protheus."
+		#define STR0003 "Execucao do metodo "
+		#define STR0004 "Realizando validacao..."
+		#define STR0005 "Montando string XML..."
+		#define STR0006 "Gravando a conferencia na tabela intermediaria..."
+		#define STR0007 "Fim da execucao do metodo"
+		#define STR0008 "Estacao nao cadastrada!"
+		#define STR0009 "Forma de pagamento nao cadastrada!"
+		#define STR0010 "Administradora Financeira nao cadastrada!"
+	#endif
+#endif

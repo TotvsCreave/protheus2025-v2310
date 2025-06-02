@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "ISS Instituciones financieras"
+	#define STR0002 "Modelo de datos - ISS Instituciones financieras"
+	#define STR0003 "Buscar"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Valor contable total"
+	#define STR0009 "Valor total ISS"
+	#define STR0010 "¡Atención!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "ISS Financial Institutions"
+		#define STR0002 "Data Model - ISS Financial Institutions"
+		#define STR0003 "Search"
+		#define STR0004 "View"
+		#define STR0005 "Add"
+		#define STR0006 "Edit"
+		#define STR0007 "Delete"
+		#define STR0008 "Total Accounting Value"
+		#define STR0009 "ISS Total Value"
+		#define STR0010 "Attention!"
+	#else
+		#define STR0001 "ISS Instituições Financeiras"
+		#define STR0002 "Modelo de Dados - ISS Instituições Financeiras"
+		#define STR0003 "Pesquisar"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 "Excluir"
+		#define STR0008 "Valor Contábil Total"
+		#define STR0009 "Valor Total ISS"
+		#define STR0010 "Atenção!"
+	#endif
+#endif

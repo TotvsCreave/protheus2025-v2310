@@ -1,0 +1,48 @@
+#ifdef SPANISH
+	#define STR0001 "NO IDENTIFICADO"
+	#define STR0002 "PEDIDO NORMAL"
+	#define STR0003 "UNIDAD PARADA"
+	#define STR0004 "LIBRE DE DEBITO"
+	#define STR0005 "INICIAL"
+	#define STR0006 "PROMOCION"
+	#define STR0007 "PEDIDO NORMAL EXPORTACION"
+	#define STR0008 "UNIDAD PARADA EXPORTACION"
+	#define STR0009 "AUTOPART"
+	#define STR0010 "SUBASTA VIRTUAL"
+	#define STR0011 "PEDIDO CON ESTATUS DE CONSIST."
+	#define STR0012 " Procesamiento:"
+	#define STR0013 " Cant: "
+	#define STR0014 " Valor Unitario: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "NOT IDENTIFIED"
+		#define STR0002 "REGULAR ORDER"
+		#define STR0003 "UNIT STOPPED"
+		#define STR0004 "DEBT FREE"
+		#define STR0005 "INITIAL"
+		#define STR0006 "PROMOTION"
+		#define STR0007 "REGULAR ORDER EXPORT"
+		#define STR0008 "UNIT STOPPED EXPORT"
+		#define STR0009 "AUTOPART"
+		#define STR0010 "VIRTUAL AUCTION"
+		#define STR0011 "ORDER WITH CONSIST. STATUS"
+		#define STR0012 " Processing:"
+		#define STR0013 " Qty: "
+		#define STR0014 " Unit Value: "
+	#else
+		#define STR0001 "NÃO IDENTIFICADO"
+		#define STR0002 "PEDIDO NORMAL"
+		#define STR0003 "UNIDADE PARADA"
+		#define STR0004 "LIVRE DE DÉBITO"
+		#define STR0005 "INICIAL"
+		#define STR0006 "PROMOÇÃO"
+		#define STR0007 "PEDIDO NORMAL EXPORTAÇÃO"
+		#define STR0008 "UNIDADE PARADA EXPORTAÇÃO"
+		#define STR0009 "AUTOPART"
+		#define STR0010 "LEILÃO VIRTUAL"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "PEDIDO COM ESTADO DE CONSIST.", "PEDIDO COM STATUS DE CONSIST." )
+		#define STR0012 " Processamento:"
+		#define STR0013 " Qtd: "
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", " Valor unitário: ", " Valor Unitário: " )
+	#endif
+#endif

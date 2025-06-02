@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Grupo de Emitentes"
+	#define STR0002 "Buscar"
+	#define STR0003 "AxPesqui"
+	#define STR0004 "Visualizar"
+	#define STR0005 "VIEWDEF.GFEA011"
+	#define STR0006 "Incluir"
+	#define STR0007 "Modificar"
+	#define STR0008 "Borrar"
+	#define STR0009 "Copiar"
+	#define STR0010 "Imprimir"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Issuer Group"
+		#define STR0002 "Search"
+		#define STR0003 "AxPesqui"
+		#define STR0004 "View"
+		#define STR0005 "VIEWDEF.GFEA011"
+		#define STR0006 "Add"
+		#define STR0007 "Change"
+		#define STR0008 "Delete"
+		#define STR0009 "Copy"
+		#define STR0010 "Print"
+	#else
+		#define STR0001 "Grupo de Emitentes"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "AxPesqui"
+		#define STR0004 "Visualizar"
+		#define STR0005 "VIEWDEF.GFEA011"
+		#define STR0006 "Incluir"
+		#define STR0007 "Alterar"
+		#define STR0008 "Excluir"
+		#define STR0009 "Copiar"
+		#define STR0010 "Imprimir"
+	#endif
+#endif

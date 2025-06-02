@@ -1,0 +1,81 @@
+#ifdef SPANISH
+	#define STR0001 "Nota de Debito/Credito"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Aprobar"
+	#define STR0008 "Leyenda"
+	#define STR0009 "Estatus"
+	#define STR0010 "Pendiente"
+	#define STR0011 "Aprobada"
+	#define STR0012 "Anulada"
+	#define STR0013 "Imprimir"
+	#define STR0014 "Borrar"
+	#define STR0015 "Nota de "
+	#define STR0016 "debito"
+	#define STR0017 "credito"
+	#define STR0018 " con estatus: "
+	#define STR0019 "¡Documento invalido!"
+	#define STR0020 "No se permite la operacion de debito para documetos de transporte nacional!"
+	#define STR0021 "¡Documento facturado!"
+	#define STR0022 "El valor de debito es superior al permitido"
+	#define STR0023 "Informe nueva situacion de la nota de "
+	#define STR0024 " por el campo [Estatus]"
+	#define STR0025 "Informe la observacion de anulacion de la nota de "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Debit/Credit Note"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Include"
+		#define STR0005 "Change"
+		#define STR0006 "Exclude"
+		#define STR0007 "Approve"
+		#define STR0008 "Caption"
+		#define STR0009 "Status"
+		#define STR0010 "Pending"
+		#define STR0011 "Approved"
+		#define STR0012 "Canceled"
+		#define STR0013 "Print"
+		#define STR0014 "Exclude"
+		#define STR0015 "Note of "
+		#define STR0016 "debit"
+		#define STR0017 "credit"
+		#define STR0018 " with status: "
+		#define STR0019 "Invalid document!"
+		#define STR0020 "Debit operation is not allowed for documents of national transportantion!"
+		#define STR0021 "Document already invoiced!"
+		#define STR0022 "Debit value is higher than what is allowed"
+		#define STR0023 "Indicate the new situation of the note of "
+		#define STR0024 " by field [Status]"
+		#define STR0025 "Indicate observation of cancellation of the note of "
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Fact.de Débito/Crédito", "Nota de Débito/Crédito" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Aprovar"
+		#define STR0008 "Legenda"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0010 "Pendente"
+		#define STR0011 "Aprovada"
+		#define STR0012 "Cancelada"
+		#define STR0013 "Imprimir"
+		#define STR0014 "Excluir"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Fact.de ", "Nota de " )
+		#define STR0016 "débito"
+		#define STR0017 "crédito"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", " com estado: ", " com status: " )
+		#define STR0019 "Documento inválido !"
+		#define STR0020 "Não é permitida a operação de débito para documetos do transporte nacional !"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Documento já facturado !", "Documento já faturado !" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "O valor de débito é maior que o permitido", "O valor de débito e maior que o permitido" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Informe nova situação da fact. de ", "Informe nova situação da nota de " )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", " pelo campo [Estado]", " pelo campo [Status]" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Informe a observação de cancelamento da fact. de ", "Informe a observação de cancelamento da nota de " )
+	#endif
+#endif

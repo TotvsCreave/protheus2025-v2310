@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Tareas"
+	#define STR0004 "Tareas del Candidato"
+	#define STR0005 "Atencion"
+	#define STR0006 "Existen tareas relacionadas a este candidato."
+	#define STR0007 "¿Que desea hacer?"
+	#define STR0008 "Copiar"
+	#define STR0009 "Finalizar"
+	#define STR0010 "La fecha inicial debe ser menor o igual a la fecha final."
+	#define STR0011 "La Fecha inicial debe completarse."
+	#define STR0012 "La fecha inicial debe ser mayor o igual a la fecha de implementación de la ficha médica."
+	#define STR0013 "ATENCIÓN"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Tasks"
+		#define STR0004 "Candidate Tasks"
+		#define STR0005 "Attention"
+		#define STR0006 "Tasks are related to this candidate."
+		#define STR0007 "What do you want to do?"
+		#define STR0008 "Copy"
+		#define STR0009 "Finish"
+		#define STR0010 "Initial date must be earlier than or equal to final date."
+		#define STR0011 "Start Date must be completed."
+		#define STR0012 "Start date must be later than or equal to record form implementation."
+		#define STR0013 "ATTENTION"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Tarefas"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Tarefas do candidato", "Tarefas do Candidato" )
+		#define STR0005 "Atenção"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Existem tarefas relacionadas a este candidato.", "Existem tarefas relacionadas á este candidato." )
+		#define STR0007 "O que deseja fazer?"
+		#define STR0008 "Copiar"
+		#define STR0009 "Finalizar"
+		#define STR0010 "A data inicial deve ser menor ou igual a data final."
+		#define STR0011 "A data inicial deve ser preenchida."
+		#define STR0012 "A data inicial deve ser maior ou igual a data de implementação da ficha médica."
+		#define STR0013 "ATENÇÃO"
+	#endif
+#endif

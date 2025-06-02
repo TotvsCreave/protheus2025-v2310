@@ -1,0 +1,90 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "C.I.D."
+	#define STR0007 "Medicamentos"
+	#define STR0008 "Importar"
+	#define STR0009 "CSV(delimitado por coma)     | *.CSV"
+	#define STR0010 "Esta rutina tiene como objetivo importar las Subcategorias del C.I.D. "
+	#define STR0011 "por archivo CSV, disponible en la pagina web www.datasus.gov.br."
+	#define STR0012 "Antes de confirmar la ejecución del proceso, haga una copia de seguridad de la tabla TMR."
+	#define STR0013 "En caso de que ocurra algun problema durante el proceso, las copias de seguridad deberan ser recuperadas."
+	#define STR0014 "Este proceso podra llevar algun tiempo para ejecutarse."
+	#define STR0015 "¿Desea anular el procesamiento?"
+	#define STR0016 "Atencion"
+	#define STR0017 "Seleccione el archivo CSV que se importara"
+	#define STR0018 "Archivo "
+	#define STR0019 " no encontrado."
+	#define STR0020 "El proceso sera anulado."
+	#define STR0021 "Importando Archivo"
+	#define STR0022 "Importando registro: "
+	#define STR0023 "El archivo informado para la importacion es invalido."
+	#define STR0024 "Para el procesamiento es necesario que el encabezamiento(Primera Linea) "
+	#define STR0025 "del archivo defina los campos: '"
+	#define STR0026 "' para el codigo del C.I.D. y "
+	#define STR0027 "' para la descripcion de la enfermedad."
+	#define STR0028 "¡Importacion concluida con exito!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "I.C.D."
+		#define STR0007 "Medications"
+		#define STR0008 "Import"
+		#define STR0009 "CSV (delimited by comma)     | *.CSV"
+		#define STR0010 "This routine aims at importing ICD Subcategories "
+		#define STR0011 "through CSV file, available on www.datasus.gov.br."
+		#define STR0012 "Before confirming process execution, make a backup of TMR table."
+		#define STR0013 "If any problem occurs during process, backup copies must be restored."
+		#define STR0014 "This process may take a while to be performed."
+		#define STR0015 "Do you want to perform processing?"
+		#define STR0016 "Attention"
+		#define STR0017 "Select CSV file to be imported"
+		#define STR0018 "File "
+		#define STR0019 " not found."
+		#define STR0020 "Process will be cancelled."
+		#define STR0021 "Importing file"
+		#define STR0022 "Importing record: "
+		#define STR0023 "File entered for import is invalid."
+		#define STR0024 "For processing, file header (First Row) "
+		#define STR0025 "must define fields: '"
+		#define STR0026 "' for ICD code and "
+		#define STR0027 "' for disease description."
+		#define STR0028 "Import successfully completed!"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "C.i.d.", "C.I.D." )
+		#define STR0007 "Medicamentos"
+		#define STR0008 "Importar"
+		#define STR0009 "CSV(delimitado por vírgula)     | *.CSV"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Este procedimento tem como objectivo importar as Subcategorias do C.I.D. ", "Esta rotina tem como objetivo importar as Subategorias do C.I.D. " )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "via ficheiro CSV, disponibilizado no site do www.datasus.gov.br.", "via arquivo CSV, disponibilizado no site do www.datasus.gov.br." )
+		#define STR0012 "Antes de confirmar a execução do processo, fazer uma cópia de segurança da tabela TMR."
+		#define STR0013 "Caso ocorra algum problema durante o processo as cópias de segurança deverão ser restauradas."
+		#define STR0014 "Este processo poderá levar algum tempo para ser executado."
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Deseja efectuar o processamento?", "Deseja efetuar o processamento?" )
+		#define STR0016 "Atenção"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Seleccione o ficheiro CSV a ser Importado", "Selecione o arquivo CSV a ser Importado" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Ficheiro ", "Arquivo " )
+		#define STR0019 " não encontrado."
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "O processo será cancelado.", "O processo sera cancelado." )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "A importar ficheiro", "Importando Arquivo" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "A Importar Registo: ", "Importando registro: " )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "O ficheiro informado para a importação é inválido.", "O arquivo informado para a importação é inválido." )
+		#define STR0024 "Para o processamento é necessário que o cabeçalho(Primeira Linha) "
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "do ficheiro esteja definindo os campos: '", "do arquivo esteja definindo os campos: '" )
+		#define STR0026 "' para o código do C.I.D. e "
+		#define STR0027 "' para a descrição da doença."
+		#define STR0028 "Importação concluída com sucesso!"
+	#endif
+#endif

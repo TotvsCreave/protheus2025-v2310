@@ -1,0 +1,87 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de auditoria."
+	#define STR0002 "Disponible solamente en la version TReport."
+	#define STR0003 "Funcion disponible solamente para entorno Top Conect."
+	#define STR0004 "Sucursal "
+	#define STR0005 "Total de "
+	#define STR0006 "Moneda"
+	#define STR0007 "Debitos"
+	#define STR0008 "Creditos"
+	#define STR0009 "Total de la sucursal: "
+	#define STR0010 "TOTAL GENERAL"
+	#define STR0011 "Entidad contable. "
+	#define STR0012 "Contabilidad de Gestion."
+	#define STR0013 "Contabilidad"
+	#define STR0014 "Arch."
+	#define STR0015 "Documento"
+	#define STR0016 "Valor doc."
+	#define STR0017 "Cuenta debito."
+	#define STR0018 "Cuenta credito."
+	#define STR0019 "Fecha"
+	#define STR0020 "Saldo"
+	#define STR0021 "Lote/SubLote/Doc/Linea"
+	#define STR0022 "Valor"
+	#define STR0023 "Estatus"
+	#define STR0024 "OK"
+	#define STR0025 "Desbalanceado"
+	#define STR0026 "No verificado"
+	#define STR0027 "Verificado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Audit Report"
+		#define STR0002 "Available in TReport version only."
+		#define STR0003 "Function available for TopConnect environment only."
+		#define STR0004 "Branch "
+		#define STR0005 "Total of "
+		#define STR0006 "Currency"
+		#define STR0007 "Debit"
+		#define STR0008 "Credit"
+		#define STR0009 "Branch Total: "
+		#define STR0010 "GRAND TOTAL"
+		#define STR0011 "Accounting Entity "
+		#define STR0012 "Management Accounting"
+		#define STR0013 "Accounting"
+		#define STR0014 "File:"
+		#define STR0015 "Document"
+		#define STR0016 "Doc. Value"
+		#define STR0017 "Debit Account"
+		#define STR0018 "Credit Account"
+		#define STR0019 "Date"
+		#define STR0020 "Balance"
+		#define STR0021 "Lot/Sub-lot/Doc/Row"
+		#define STR0022 "Value"
+		#define STR0023 "Status"
+		#define STR0024 "OK"
+		#define STR0025 "Unbalanced"
+		#define STR0026 "Not Checked"
+		#define STR0027 "Checked"
+	#else
+		#define STR0001 "Relatório de Auditoria"
+		#define STR0002 "Disponível somente na versão TReport."
+		#define STR0003 "Função disponível apenas para ambiente TopConnect."
+		#define STR0004 "Filial "
+		#define STR0005 "Total de "
+		#define STR0006 "Moeda"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Débitos", "Debitos" )
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Créditos", "Creditos" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Total da filial: ", "Total da Filial: " )
+		#define STR0010 "TOTAL GERAL"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Entidade Contabilística ", "Entidade Contábil " )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Contabilidade de Gestão", "Contabilidade Gerencial" )
+		#define STR0013 "Contabilidade"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Fic.", "Arq." )
+		#define STR0015 "Documento"
+		#define STR0016 "Valor Doc."
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Conta débito", "Conta Débito" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Conta crédito", "Conta Crédito" )
+		#define STR0019 "Data"
+		#define STR0020 "Saldo"
+		#define STR0021 "Lote/SubLote/Doc/Linha"
+		#define STR0022 "Valor"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0024 "OK"
+		#define STR0025 "Desbalanceado"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Não confer.", "Ñ Conferid" )
+		#define STR0027 "Conferido"
+	#endif
+#endif

@@ -1,0 +1,87 @@
+#ifdef SPANISH
+	#define STR0001 "Documentos de Carga"
+	#define STR0002 "Serie"
+	#define STR0003 "Numero del Documento"
+	#define STR0004 "Tipo Documento"
+	#define STR0005 "Emisor del Documento"
+	#define STR0006 "Nombre del Emisor"
+	#define STR0007 "Remitente"
+	#define STR0008 "Destinatario :"
+	#define STR0009 "Adicionar"
+	#define STR0010 "Filtrar"
+	#define STR0011 "Seleccione Documentos de Carga "
+	#define STR0012 "Borrar"
+	#define STR0013 "Visualizar"
+	#define STR0014 "Simular Calculo"
+	#define STR0015 "Documentos de Carga Relacionados "
+	#define STR0016 "Sucursal"
+	#define STR0017 "Nr Calculo:"
+	#define STR0018 "Remitente:"
+	#define STR0019 "Numero"
+	#define STR0020 "Tipo Doc"
+	#define STR0021 "Emisor"
+	#define STR0022 "Nombre Emisor"
+	#define STR0023 "Nombre"
+	#define STR0024 "Cod Dest"
+	#define STR0025 "Destinatario"
+	#define STR0026 "Procesando informacion"
+	#define STR0027 "Espere"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Shipping Documents"
+		#define STR0002 "Series"
+		#define STR0003 "Document Number"
+		#define STR0004 "Document Type"
+		#define STR0005 "Document Issuer"
+		#define STR0006 "Issuer Document"
+		#define STR0007 "Sender"
+		#define STR0008 "Recipient"
+		#define STR0009 "Add"
+		#define STR0010 "Filter"
+		#define STR0011 "Select Shipping Documents "
+		#define STR0012 "Delete"
+		#define STR0013 "View"
+		#define STR0014 "Simulate Calculation"
+		#define STR0015 "Related Shipping Documents "
+		#define STR0016 "Branch"
+		#define STR0017 "Calculation No.:"
+		#define STR0018 "Sender:"
+		#define STR0019 "Number"
+		#define STR0020 "Doc. Type"
+		#define STR0021 "Issuer"
+		#define STR0022 "Issuer Name"
+		#define STR0023 "Name"
+		#define STR0024 "Recip. Code"
+		#define STR0025 "Recipient"
+		#define STR0026 "Processing information"
+		#define STR0027 "Wait"
+	#else
+		#define STR0001 "Documentos de Carga"
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Série", "Serie" )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Número do Documento", "Numero do Documento" )
+		#define STR0004 "Tipo Documento"
+		#define STR0005 "Emissor do Documento"
+		#define STR0006 "Nome do Emissor"
+		#define STR0007 "Remetente"
+		#define STR0008 "Destinatário"
+		#define STR0009 "Adicionar"
+		#define STR0010 "Filtrar"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Seleccione documentos de carga ", "Selecione Documentos de Carga " )
+		#define STR0012 "Excluir"
+		#define STR0013 "Visualzar"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Simular cálculo", "Simular Calculo" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Documentos de carga relacionados ", "Documentos de Carga Relacionados " )
+		#define STR0016 "Filial"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Nr.Cálculo:", "Nr Calculo:" )
+		#define STR0018 "Remetente:"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Número", "Numero" )
+		#define STR0020 "Tipo Doc."
+		#define STR0021 "Emissor"
+		#define STR0022 "Nome Emissor"
+		#define STR0023 "Nome"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Cód. Dest.", "Cod Dest" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Destinatário", "Destinatario" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "A processar informações", "Processando informações" )
+		#define STR0027 "Aguarde"
+	#endif
+#endif

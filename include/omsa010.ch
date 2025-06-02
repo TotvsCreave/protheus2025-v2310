@@ -1,0 +1,123 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Mantenimiento de Tabla de Precios"
+	#define STR0007 "Reajuste"
+	#define STR0008 "Reajuste de Tabla de precios"
+	#define STR0009 "Esta rutina efectuara el reajuste de tablas de precio, de acuerdo con los parametros "
+	#define STR0010 "solicitados."
+	#define STR0011 "Tabla"
+	#define STR0012 "Copiar"
+	#define STR0013 "Generar"
+	#define STR0014 "Busca producto en la tabla"
+	#define STR0015 "Leyenda"
+	#define STR0016 "Tabla Inactiva"
+	#define STR0017 "Tabla Activa"
+	#define STR0018 "Tabla Activa Especial"
+	#define STR0019 "Busqueda"
+	#define STR0020 "¿ Actualiza Precio Venta Producto ?"
+	#define STR0021 "Si va a Reaplicar el factor por 'Precio Base'"
+	#define STR0022 "valida se debera actualizar o no el precio"
+	#define STR0023 "de Venta en el registro del Producto.         "
+	#define STR0024 "No se permite registrar productos con precio de venta en cero. Corrija el item "
+	#define STR0025 "Espere"
+	#define STR0026 "Anotando registros para integracion"
+	#define STR0027 "Ejecutando integracion"
+	#define STR0028 "Panel de gestion habilitado, para modificaciones de precios o nuevos productos utilice la publicacion de precios."
+	#define STR0029 "No se permite registrar articulos con codigo de producto, grilla de productos, o grupo nulo. Corrija el elemento."
+	#define STR0030 "Anotaciones"
+	#define STR0031 "Tablas de precios activas"
+	#define STR0032 "Tablas de precios inactivas"
+	#define STR0033 "Total de registros"
+	#define STR0034 "¡Espere! Cargando los datos..."
+	#define STR0035 "¡Espere! Actualizando los datos..."
+	#define STR0036 "No es posible grabar una lista de precios sin informar algún ítem válido."
+	#define STR0037 "Validando Lista de precio....."
+	#define STR0038 "El(los) producto(s) - "
+	#define STR0039 "está(n) bloqueado(s) para uso, y no se utilizará(n) en la lista de precio generada"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Price Table Maintenance"
+		#define STR0007 "Readjustment"
+		#define STR0008 "Price Table Readjustment"
+		#define STR0009 "This routine will readjust the price tables, according to the "
+		#define STR0010 "selected parameters."
+		#define STR0011 "Table"
+		#define STR0012 "Copy"
+		#define STR0013 "Generate"
+		#define STR0014 "Search product on table"
+		#define STR0015 "Caption"
+		#define STR0016 "Inactive Table"
+		#define STR0017 "Active Table"
+		#define STR0018 "Special Active Table"
+		#define STR0019 "Search"
+		#define STR0020 "Update Product Sale Price?"
+		#define STR0021 "If Reapply the factor by 'Base Price'"
+		#define STR0022 "valid is price must be updated or not"
+		#define STR0023 "of Sale in the Product file.         "
+		#define STR0024 "Products with zeroed sale price cannot be registered. Correct the item. "
+		#define STR0025 "Wait"
+		#define STR0026 "Annotating records for integration"
+		#define STR0027 "Running integration"
+		#define STR0028 "Managerial Panel Enabled, for prices or new products editing, use the Price Publication."
+		#define STR0029 "Items with voided product codes, product grid or groups cannot be registered. Correct the element."
+		#define STR0030 "Annotations"
+		#define STR0031 "Active Price Lists"
+		#define STR0032 "Inactive Price Lists"
+		#define STR0033 "Total of Records"
+		#define STR0034 "Wait! Loading data..."
+		#define STR0035 "Wait! Updating data..."
+		#define STR0036 "Unable to register a price table, without entering any valid item."
+		#define STR0037 "Validating Price Table..."
+		#define STR0038 "The product(s) - "
+		#define STR0039 "is block for used, and will not be used in the price table generated"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Manutenção da tabela de preços", "Manutencao da tabela de precos" )
+		#define STR0007 "Reajuste"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Reajuste da tabela de preços", "Reajuste da Tabela de precos" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Este procedimento  irá efectuar o reajuste das tabelas de preço conforme os parâmetros ", "Esta rotina efetuara o reajuste das tabelas de preco, conforme os parametros " )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Solicitados.", "solicitados." )
+		#define STR0011 "Tabela"
+		#define STR0012 "Copiar"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Criar", "Gerar" )
+		#define STR0014 "Busca produto na tabela"
+		#define STR0015 "Legenda"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Tabela Inactiva", "Tabela Inativa" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Tabela Activa", "Tabela Ativa" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Tabela Activa Especial", "Tabela Ativa Especial" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Pesquisa", "Busca" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Actualiza Preço Venda Artigo?", "Atualiza Preco Venda Produto?" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Se For Reaplicar O Factor Pelo 'preço Base'", "Se for Reaplicar o fator pelo 'Preco Base'" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "valida se deverá actualizar ou não o preço", "valida se devera atualizar ou nao o preco" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "De venda no registo do artigo.         ", "de Venda no cadastro do Produto.         " )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Não é permitido registar artigos com preço de venda nulo. Corrija o elemento. ", "Não é permitido cadastrar produtos com preço de venda zerado. Corrija o item " )
+		#define STR0025 "Aguarde"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "A anotar registos para integração", "Anotando registros para integracao" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "A executar integração", "Executando integracao" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Painel de Gestão habilitado. Para alterações de preços ou novos artigos, utilizar a Publicação de Preços.", "Painel de Gestão Habilitado, para alterações de preços ou novos produtos, utilizar a Publicação de Preços." )
+		#define STR0029 "Não é permitido registar artigos com código de produto, grade de produtos, ou grupo nulos. Corrija o elemento."
+		#define STR0030 "Anotações"
+		#define STR0031 "Tabelas de Preços Ativas"
+		#define STR0032 "Tabelas de Preços Inativas"
+		#define STR0033 "Total de Registros"
+		#define STR0034 "Aguarde! Carregando os dados..."
+		#define STR0035 "Aguarde! Atualizando os dados..."
+		#define STR0036 "Não é possível gravar uma tabela de preços, sem informar algum item valido."
+		#define STR0037 "Validando Tabela de Preço....."
+		#define STR0038 "O(s) produto(s) - "
+		#define STR0039 "estão bloqueado(s) para uso, e não serão utilizados na tabela de preço gerada"
+	#endif
+#endif

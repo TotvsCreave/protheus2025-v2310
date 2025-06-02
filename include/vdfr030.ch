@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de servidores en horario especial"
+	#define STR0002 "Servidores"
+	#define STR0003 "Sucursales"
+	#define STR0004 "Matricula"
+	#define STR0005 "Nombre del Servidor"
+	#define STR0006 "Capacidad"
+	#define STR0007 "Cargo"
+	#define STR0008 "Curso"
+	#define STR0009 "Semestre/Ano"
+	#define STR0010 "Periodo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of Servers in Special Time"
+		#define STR0002 "Servers"
+		#define STR0003 "Branches"
+		#define STR0004 "Registration"
+		#define STR0005 "Public servant name"
+		#define STR0006 "Capacity"
+		#define STR0007 "Position"
+		#define STR0008 "Course"
+		#define STR0009 "Semester/Year"
+		#define STR0010 "Period"
+	#else
+		#define STR0001 "Relatório de Servidores em Horário Especial"
+		#define STR0002 "Servidores"
+		#define STR0003 "Filiais"
+		#define STR0004 "Matrícula"
+		#define STR0005 "Nome do Servidor"
+		#define STR0006 "Lotação"
+		#define STR0007 "Cargo"
+		#define STR0008 "Curso"
+		#define STR0009 "Semestre/Ano"
+		#define STR0010 "Período"
+	#endif
+#endif

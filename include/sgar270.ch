@@ -1,0 +1,75 @@
+#ifdef SPANISH
+	#define STR0001 "Informe IBAMA de Licencias Ambientales"
+	#define STR0002 "SGAR270"
+	#define STR0003 "A rayas"
+	#define STR0004 "Administracion"
+	#define STR0005 "Informe IBAMA - Licencias Ambientales"
+	#define STR0006 "Procesando Registros..."
+	#define STR0007 "Ano   Licencia      Resumen                                   Nº del Proceso         Organo Expedidor                                     Emision     Vencimiento  Situacion"
+	#define STR0008 "Espere"
+	#define STR0009 "Procesando Registros"
+	#define STR0010 "No existen datos para elaborar el informe."
+	#define STR0011 "Ano"
+	#define STR0012 "Licencia"
+	#define STR0013 "Resumen"
+	#define STR0014 "Nº de Proceso"
+	#define STR0015 "Organo"
+	#define STR0016 "Vigencia"
+	#define STR0017 "Vencimiento"
+	#define STR0018 "Situacion"
+	#define STR0019 "¿Ano ?"
+	#define STR0020 "¿Situacion ?"
+	#define STR0021 "Activos"
+	#define STR0022 "Anulados"
+	#define STR0023 "Todos"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "IBAMA Report on Environmental Licenses"
+		#define STR0002 "SGAR270"
+		#define STR0003 "Z-form"
+		#define STR0004 "Administration"
+		#define STR0005 "IBAMA Report - Environmental Licenses"
+		#define STR0006 "Processing records..."
+		#define STR0007 "Year   License       Amendment                                    Process No.         Issuing Body                                     Issue     Validity  Status"
+		#define STR0008 "Wait"
+		#define STR0009 "Processing records"
+		#define STR0010 "There are no data to generate the report."
+		#define STR0011 "Year"
+		#define STR0012 "License"
+		#define STR0013 "Syllabus"
+		#define STR0014 "Process Number"
+		#define STR0015 "Body"
+		#define STR0016 "Effectiveness"
+		#define STR0017 "Due Date"
+		#define STR0018 "Status"
+		#define STR0019 "Year?"
+		#define STR0020 "Status?"
+		#define STR0021 "Assets"
+		#define STR0022 "Canceled"
+		#define STR0023 "All"
+	#else
+		#define STR0001 "Relatório IBAMA de Licenças Ambientais"
+		#define STR0002 "SGAR270"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0004 "Administração"
+		#define STR0005 "Relatório IBAMA - Licenças Ambientais"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "A processar registos...", "Processando Registros..." )
+		#define STR0007 "Ano   Licença       Ementa                                    Nº do Processo         Orgão Expedidor                                     Emissão     Vencimento  Situação"
+		#define STR0008 "Aguarde"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "A processar registos", "Processando Registros" )
+		#define STR0010 "Não existem dados para montar o relatório."
+		#define STR0011 "Ano"
+		#define STR0012 "Licença"
+		#define STR0013 "Ementa"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Nº do processo", "Nº do Processo" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Órgão", "Orgão" )
+		#define STR0016 "Vigência"
+		#define STR0017 "Vencimento"
+		#define STR0018 "Situação"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Ano?", "Ano ?" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Situação?", "Situação ?" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Activos", "Ativos" )
+		#define STR0022 "Cancelados"
+		#define STR0023 "Todos"
+	#endif
+#endif

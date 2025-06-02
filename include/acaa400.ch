@@ -1,0 +1,126 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Registro de Faltas del Profesor"
+	#define STR0007 "Indexando Archivo de Trabajo"
+	#define STR0008 "Justificacion"
+	#define STR0009 "Negada"
+	#define STR0010 "Aceptada"
+	#define STR0011 "Hora 1"
+	#define STR0012 "Hora 2"
+	#define STR0013 "Tipo"
+	#define STR0014 "No se grabara ningun registro, porque no se registro ninguna falta para ese profesor."
+	#define STR0015 "Remunerado"
+	#define STR0016 "Codigo"
+	#define STR0017 "Descripcion"
+	#define STR0018 "Periodo Lectivo"
+	#define STR0019 "Grupo"
+	#define STR0020 "Habilitacion"
+	#define STR0021 "Atraso Maximo"
+	#define STR0022 "Ctd. Hora Aula"
+	#define STR0023 "Atraso Real"
+	#define STR0024 "Atraso"
+	#define STR0025 "Devolucion Faltas"
+	#define STR0026 "Ctd. Hor.Aula"
+	#define STR0027 "Max. Atraso"
+	#define STR0028 "El limite de atraso definido es "
+	#define STR0029 ", el definido en el campo Maximo de Atraso fue "
+	#define STR0030 ", en este caso, como el valor digitado es mayor que el del parametro, se considerara como falta no justificada ! "
+	#define STR0031 "¡Al confirmar la operacion, la Falta respectivamente seleccionada se borrara automaticamente de la Grilla, no generandose posteriormente en la Base de Datos! ¿Desea proseguir con la operacion?"
+	#define STR0032 "¿Confirma la inclusion del Tipo de Falta "
+	#define STR0033 " para el referido Profesor?"
+	#define STR0034 "Domingo"
+	#define STR0035 "Lunes"
+	#define STR0036 "Martes"
+	#define STR0037 "Miercoles"
+	#define STR0038 "Jueves"
+	#define STR0039 "Vienes"
+	#define STR0040 "Sabado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Insert"
+		#define STR0004 "Change"
+		#define STR0005 "Delete"
+		#define STR0006 "Teacher´s Absence Registration"
+		#define STR0007 "Indexing Work File"
+		#define STR0008 "Excused"
+		#define STR0009 "Not justified"
+		#define STR0010 "Justified"
+		#define STR0011 "Hour 1"
+		#define STR0012 "Hour 2"
+		#define STR0013 "Type"
+		#define STR0014 "No record will be entered as no absence was registered for this teacher."
+		#define STR0015 "Guarant"
+		#define STR0016 "Code  "
+		#define STR0017 "Description"
+		#define STR0018 "School Year"
+		#define STR0019 "Class"
+		#define STR0020 "Capacitation"
+		#define STR0021 "Maximum Delay"
+		#define STR0022 "Qty. Class Hr."
+		#define STR0023 "Actual Delay"
+		#define STR0024 "Delay "
+		#define STR0025 "Absences Returns"
+		#define STR0026 "Qty. Class Hr"
+		#define STR0027 "Max. Delay "
+		#define STR0028 "The delay limit stablished is "
+		#define STR0029 ", the one defined in the Delay Max field was of "
+		#define STR0030 ", in this case, since the entered value is higher than the parameter, it will be considered as Unjustified Absence ! "
+		#define STR0031 "When confirming the operation, the Absence selected is automatically deleted from the Grid, so it is not generated afterwards in the Database! Do you want to proceed with the operation?"
+		#define STR0032 "Confirm the addition of Absence Type "
+		#define STR0033 " to the Teacher in question ? "
+		#define STR0034 "Sunday "
+		#define STR0035 "Monday "
+		#define STR0036 "Tuesday"
+		#define STR0037 "Wednesday"
+		#define STR0038 "Thursday"
+		#define STR0039 "Friday"
+		#define STR0040 "Saturday"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Apontamento De Faltas Do Professor", "Apontamento de Faltas do Professor" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "A Indexar Ficheiro De Trabalho", "Indexando Arquivo de Trabalho" )
+		#define STR0008 "Justificativa"
+		#define STR0009 "Não Justificada"
+		#define STR0010 "Justificada"
+		#define STR0011 "Hora 1"
+		#define STR0012 "Hora 2"
+		#define STR0013 "Tipo"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Não será guardado nenhum registo, pois nenhuma falta foi apontada para este professor.", "Não será gravado nenhum registro, pois nenhuma falta foi apontada para esse professor." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Regularização por ausência", "Abonada" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Código", "Codigo" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Período Lectivo", "Periodo Letivo" )
+		#define STR0019 "Turma"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Activação", "Habilicao" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Atraso Máximo", "Atraso Maximo" )
+		#define STR0022 "Qtd. Hora Aula"
+		#define STR0023 "Atraso Real"
+		#define STR0024 "Atraso"
+		#define STR0025 "Devolução Faltas"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Qtd. Hor.aula", "Qtd. Hor.Aula" )
+		#define STR0027 "Max. Atraso"
+		#define STR0028 "O limite de atraso estipulado é de "
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", ", o definido no campo máximo de atraso foi de ", ", o definido no campo Máximo de Atraso foi de " )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", ", neste caso, como o valor digitado é superior ao do parâmetro, será considerado como falta injustificada ! ", ", neste caso, como o valor digitado é superior ao do parametro, será considerado como Falta Injustificada ! " )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Ao confirmar a operação a falta respectivamente seleccionada, será automaticamente eliminada da tabela, não sendo posteriormente criada na base de dados ! deseja prosseguir a operação ?", "Ao confirmar a operação a Falta respetivamente selecionada, será automaticamente eliminada do Grid, não sendo posteriormente gerada na Base de Dados ! Deseja prosseguir com a operação ?" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Confirmar a inclusão do tipo de falta ", "Confirma a inclusão do Tipo de Falta " )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", " para o professor em questão ?", " para o Professor em questão ?" )
+		#define STR0034 "Domingo"
+		#define STR0035 "Segunda"
+		#define STR0036 "Terça"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Quarta-feira", "Quarta" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Quinta-feira", "Quinta" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Sexta-feira", "Sexta" )
+		#define STR0040 "Sábado"
+	#endif
+#endif

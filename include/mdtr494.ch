@@ -1,0 +1,195 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de Costos de Examenes por Proveedor"
+	#define STR0002 "A traves de los parametros, el usuario podra seleccionar tanto el proveedor"
+	#define STR0003 "como el examen, y obtener los costos de los examenes realizados en el periodo."
+	#define STR0004 "A Rayas"
+	#define STR0005 "Administracion"
+	#define STR0006 "Costos de los Exames por Proveedor"
+	#define STR0007 "Codigo  Tienda  Nombre del Proveedor"
+	#define STR0008 "  Examen       Nombre del Examen                                               Cantidad            Costo"
+	#define STR0009 "ANULADO POR EL OPERADOR"
+	#define STR0010 "Total del Proveedor"
+	#define STR0011 "Imprimir informe:"
+	#define STR0012 "Sintetico"
+	#define STR0013 "Analitico"
+	#define STR0014 "Codigo  Tienda  Nombre del Proveedor"
+	#define STR0015 "         Matrícula   Ficha Med.   Nombre                                    C.Costo               Realizacion"
+	#define STR0016 "Cantidad del Examen:"
+	#define STR0017 "Costo Examen:"
+	#define STR0018 "Exam.: "
+	#define STR0019 "Nombre Examen: "
+	#define STR0020 "Cantidad del Examen:"
+	#define STR0021 "Costo del Exam:"
+	#define STR0022 "Total Gen.:"
+	#define STR0023 "Procesando Archivo..."
+	#define STR0024 "Proveedor"
+	#define STR0025 "Codigo"
+	#define STR0026 "Tienda"
+	#define STR0027 "Nombre del Proveedor"
+	#define STR0028 "Examen"
+	#define STR0029 "Nombre del Examen"
+	#define STR0030 "Cantidad"
+	#define STR0031 "Costo"
+	#define STR0032 "Matricula"
+	#define STR0033 "Ficha Med."
+	#define STR0034 "Nombre"
+	#define STR0035 "C.Costo"
+	#define STR0036 "Descripcion"
+	#define STR0037 "Realizacion"
+	#define STR0038 "Costo del Examen"
+	#define STR0039 "Total del Examen"
+	#define STR0040 "Cant."
+	#define STR0041 "¿De Cliente?"
+	#define STR0042 "Codigo del cliente. El campo puede permanecer vacio para considerar desde el primer codigo."
+	#define STR0043 "Tienda"
+	#define STR0044 "Codigo de la tienda del cliente. El campo puede permanecer vacio para considerar desde el primer codigo."
+	#define STR0045 "¿A Cliente?"
+	#define STR0046 "Codigo del cliente. El campo puede rellenarse con la letra Z hasta el final para considerar el ultimo codigo."
+	#define STR0047 "Codigo de la tienda del cliente. El campo puede rellenarse con la letra Z hasta el final para considerar el ultimo codigo."
+	#define STR0048 "¿Imprimir informe: ?"
+	#define STR0049 "¿A Centro de Costo ?"
+	#define STR0050 "¿De Centro de Costo ?"
+	#define STR0051 "¿A Fecha Resultado     ?"
+	#define STR0052 "¿De Fecha Resultado ?"
+	#define STR0053 "¿A Examen ?"
+	#define STR0054 "¿De Examen ?"
+	#define STR0055 "¿A  Proveedor ?"
+	#define STR0056 "¿De Proveedor ?"
+	#define STR0057 "De Sucursal?"
+	#define STR0058 "¿A Sucursal         ?"
+	#define STR0059 "No existen datos para imprimir en el informe"
+	#define STR0060 "Cliente/Tienda: "
+	#define STR0061 "Total del Cliente:"
+	#define STR0062 "Cliente"
+	#define STR0063 "Empleado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of Exams Costs per Supplier                        "
+		#define STR0002 "Through the parameters the user can select the supplier or the "
+		#define STR0003 "exam  and obtain the costs of exams executed within the period.  "
+		#define STR0004 "Z. Form"
+		#define STR0005 "Management"
+		#define STR0006 "Exams Costs per Supplier"
+		#define STR0007 "Code                Unit  Supplier Name"
+		#define STR0008 "  Exam.........Exam Name                                                Quantity            Cost"
+		#define STR0009 "CANCELED BY OPERATORDOR"
+		#define STR0010 "Supplier´s Total   "
+		#define STR0011 "Print report:      "
+		#define STR0012 "Summarized"
+		#define STR0013 "Detailed "
+		#define STR0014 "Code                Unit  Supplier Name"
+		#define STR0015 "         Registration...Medical File   Name                                      Cost C.               Execution"
+		#define STR0016 "Quantity of exam:   "
+		#define STR0017 "Cost of Exam:  "
+		#define STR0018 "Exam:  "
+		#define STR0019 "Name of Exam:  "
+		#define STR0020 "Quantity of exam:   "
+		#define STR0021 "Cost of Exam:  "
+		#define STR0022 "Grand total:"
+		#define STR0023 "Processing files..."
+		#define STR0024 "Supplier"
+		#define STR0025 "Code"
+		#define STR0026 "UNit"
+		#define STR0027 "Supplier Name"
+		#define STR0028 "Exam"
+		#define STR0029 "Exam Name"
+		#define STR0030 "Quantity"
+		#define STR0031 "Cost"
+		#define STR0032 "Reg.Number"
+		#define STR0033 "Med. Record"
+		#define STR0034 "Name"
+		#define STR0035 "C.Center"
+		#define STR0036 "Description"
+		#define STR0037 "Accomplishment"
+		#define STR0038 "Exam Cost"
+		#define STR0039 "Exam Total"
+		#define STR0040 "Qty."
+		#define STR0041 "From Customer?"
+		#define STR0042 "Customer code. Field can remain blank to consider from the first code on."
+		#define STR0043 "Unit"
+		#define STR0044 "Customer unit code. Field can remain blank to consider from the first code on."
+		#define STR0045 "To Customer?"
+		#define STR0046 "Customer code. Field can be filled with Z until the end in order to consider the last code."
+		#define STR0047 "Customer's unit code. Field can be filled with Z until the end in order to consider the last code."
+		#define STR0048 "Print report ?"
+		#define STR0049 "To Cost Center?"
+		#define STR0050 "From Cost Center?"
+		#define STR0051 "To Result Date?"
+		#define STR0052 "From Result Date?"
+		#define STR0053 "To Exam?"
+		#define STR0054 "From Exam?"
+		#define STR0055 "To Supplier?"
+		#define STR0056 "From Supplier?"
+		#define STR0057 "From Branch?"
+		#define STR0058 "To Branch?"
+		#define STR0059 "There is nothing to print in the report."
+		#define STR0060 "Custom./Unit: "
+		#define STR0061 "Customer Total:"
+		#define STR0062 "Customer"
+		#define STR0063 "Employee"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Relatório de custos de exames por fornecedor              ", "Relatorio de Custos de Exames por Fornecedor              " )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Através dos parâmetro s o utilizador poderá selecionar o fornecedor,", "Atraves dos parametros o usuario podera selecionar o fornecedor," )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Ou o exame, e obterar os custos dos exames realizados no período.", "ou o exame, e obterar os custos dos exames realizados no periodo." )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Custos Dos Exames Por Fornecedor", "Custos dos Exames por Fornecedor" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Código                Loja  Nome do Fornecedor", "Codigo                Loja  Nome do Fornecedor" )
+		#define STR0008 "  Exame       Nome do Exame                                                Quantidade            Custo"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Cancelado Pelo Operador", "CANCELADO PELO OPERADOR" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Total Do Fornecedor", "Total do Fornecedor" )
+		#define STR0011 "Imprimir relatório:"
+		#define STR0012 "Sintético"
+		#define STR0013 "Analítico"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Código               Loja  Nome do Fornecedor", "Codigo               Loja  Nome do Fornecedor" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "         Matrícula   Ficha Méd.   Nome                                      C.Custo               Realização", "         Matrícula   Ficha Med.   Nome                                      C.Custo               Realização" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Quantidade Do Exame:", "Quantidade do Exame:" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Custo Do Exame:", "Custo do Exame:" )
+		#define STR0018 "Exame: "
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Nome do exame: ", "Nome do Exame: " )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Quantidade Do Exame:", "Quantidade do Exame:" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Custo Do Exame:", "Custo do Exame:" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Total Crial:", "Total Geral:" )
+		#define STR0023 "Processando Arquivo..."
+		#define STR0024 "Fornecedor"
+		#define STR0025 "Código"
+		#define STR0026 "Loja"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Nome Do Fornecedor", "Nome do Fornecedor" )
+		#define STR0028 "Exame"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Nome Do Exame", "Nome do Exame" )
+		#define STR0030 "Quantidade"
+		#define STR0031 "Custo"
+		#define STR0032 "Matrícula"
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Ficha Méd.", "Ficha Med." )
+		#define STR0034 "Nome"
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "C.custo", "C.Custo" )
+		#define STR0036 "Descrição"
+		#define STR0037 "Realização"
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Custo Do Exame", "Custo do Exame" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Total Do Exame", "Total do Exame" )
+		#define STR0040 "Qtde"
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "De cliente ?", "De Cliente ?" )
+		#define STR0042 "Código do cliente. O campo pode permanecer vazio para considerar desde o primeiro código."
+		#define STR0043 "Loja"
+		#define STR0044 "Código da loja do cliente. O campo pode permanecer vazio para considerar desde o primeiro código."
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Até cliente ?", "Até Cliente ?" )
+		#define STR0046 "Código do cliente. O campo pode ser preenchido com a letra Z até o final para considerar o último código."
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Código  da loja do cliente. o campo pode ser preenchido com a letra z até  o final para considerar o último código.", "Código da loja do cliente. O campo pode ser preenchido com a letra Z até o final para considerar o último código." )
+		#define STR0048 "Imprimir relatório ?"
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Até Centro Custo ?", "Ate Centro Custo ?" )
+		#define STR0050 "De Centro Custo ?"
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "Até Data Resultado ?", "Ate Data Resultado ?" )
+		#define STR0052 "De  Data Resultado ?"
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "Até Exame ?", "Ate Exame ?" )
+		#define STR0054 "De  Exame ?"
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "Até Fornecedor ?", "Ate Fornecedor ?" )
+		#define STR0056 "De  Fornecedor ?"
+		#define STR0057 "De Filial ?"
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Até Filial ?", "Ate Filial ?" )
+		#define STR0059 "Não há nada para imprimir no relatório."
+		#define STR0060 "Cliente/Loja: "
+		#define STR0061 "Total do Cliente:"
+		#define STR0062 "Cliente"
+		#define STR0063 If( cPaisLoc $ "ANG|PTG", "Empregado", "Funcionário" )
+	#endif
+#endif

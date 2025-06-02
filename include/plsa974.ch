@@ -1,0 +1,141 @@
+#ifdef SPANISH
+	#define STR0001 "Envio XML TISS"
+	#define STR0002 "Acatado"
+	#define STR0003 "No acatado"
+	#define STR0004 "Procesado"
+	#define STR0005 "No Procesado"
+	#define STR0006 "Buscar"
+	#define STR0007 "Enviar XML TISS"
+	#define STR0008 "Importacion XML TISS"
+	#define STR0009 "Informe de Critica"
+	#define STR0010 "Leyenda"
+	#define STR0011 "Estatus"
+	#define STR0012 "Mensajes"
+	#define STR0013 "Criticas"
+	#define STR0014 "No fue posible crear el directorio; ["
+	#define STR0015 "La transferencia del archivo se interrumpira."
+	#define STR0016 "Ningun archivo XML se encontro en el directorio seleccionado."
+	#define STR0017 "Archivo"
+	#define STR0018 "Selecione o diretório de arquivos XML"
+	#define STR0019 "Selecione el o los archivos a procesar"
+	#define STR0020 "Fecha"
+	#define STR0021 "Hora"
+	#define STR0022 "Tamano"
+	#define STR0023 "Directorio no encontrado: "
+	#define STR0024 ", y no fue posible crearlo."
+	#define STR0025 "Todos los archivos seleccionados se procesaran como si fueran de la RDA: "
+	#define STR0026 "¿Confirma el procesamiento?"
+	#define STR0027 "Procesando archivos"
+	#define STR0028 "Red de atencion seleccionada en el parametro es invalida."
+	#define STR0029 "No fue posible copiar el archivo de ["
+	#define STR0030 "Para"
+	#define STR0031 "no acatado debido a inconsistencias detectadas."
+	#define STR0032 "Archivos procesados"
+	#define STR0033 "Archivos no procesados"
+	#define STR0034 "Informe"
+	#define STR0035 "Informacion"
+	#define STR0036 "Imprimir"
+	#define STR0037 "Informe de archivos procesados"
+	#define STR0038 "Informe de archivos procesados"
+	#define STR0039 "Archivo procesado pero tiene criticas."
+	#define STR0040 "Archivo seleccionado ya se trato, situacion: "
+	#define STR0041 "Protocolo"
+	#define STR0042 "ESTADO DEMOSTRATIVO DE CRITICAS ENCONTRADAS EN ARCHIVO XML/TISS"
+	#define STR0043 "Red de atencion"
+	#define STR0044 "Archivo acatado"
+	#define STR0045 "Falla en la actualizacion del archivo de salida"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "TISS XML sending"
+		#define STR0002 "Accepted"
+		#define STR0003 "Not accepted"
+		#define STR0004 "Processed"
+		#define STR0005 "Not processed"
+		#define STR0006 "Search"
+		#define STR0007 "Send TISS XML"
+		#define STR0008 "Import TISS XML"
+		#define STR0009 "Criticism Report"
+		#define STR0010 "Caption"
+		#define STR0011 "Status"
+		#define STR0012 "Messages"
+		#define STR0013 "Criticisms"
+		#define STR0014 "Directory could not be created: ["
+		#define STR0015 "File transfer will be stopped."
+		#define STR0016 "No XML file found in the selected directory."
+		#define STR0017 "File"
+		#define STR0018 "Select the XML file directory"
+		#define STR0019 "Select the files to process"
+		#define STR0020 "Date"
+		#define STR0021 "Time"
+		#define STR0022 "Size"
+		#define STR0023 "Directory not found: "
+		#define STR0024 ", and it was not possible to create it."
+		#define STR0025 "All selected files are processed as from the RDA: "
+		#define STR0026 "Confirm processing?"
+		#define STR0027 "Processing files"
+		#define STR0028 "Service network selected in the parameter is invalid."
+		#define STR0029 "Cannot copy file from"
+		#define STR0030 "To"
+		#define STR0031 "not accepted due to inconsistencies."
+		#define STR0032 "Files processed"
+		#define STR0033 "Files not processed"
+		#define STR0034 "Report"
+		#define STR0035 "Information"
+		#define STR0036 "Print"
+		#define STR0037 "Report of files processed"
+		#define STR0038 "Report of files not processed"
+		#define STR0039 "File already processed but contains criticism."
+		#define STR0040 "Selected file already submitted, status: "
+		#define STR0041 "Protocol"
+		#define STR0042 "STATEMENT OF CRITICISM FOUND IN XML/TISS FILE"
+		#define STR0043 "Service Network"
+		#define STR0044 "File accepted"
+		#define STR0045 "Error in output file update"
+	#else
+		#define STR0001 "Envio XML TISS"
+		#define STR0002 "Acatado"
+		#define STR0003 "Não acatado"
+		#define STR0004 "Processado"
+		#define STR0005 "Não processado"
+		#define STR0006 "Pesquisar"
+		#define STR0007 "Enviar XML TISS"
+		#define STR0008 "Importação XML TISS"
+		#define STR0009 "Relatório de Crítica"
+		#define STR0010 "Legenda"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Estado", "Status" )
+		#define STR0012 "Mensagens"
+		#define STR0013 "Críticas"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Não foi possível criar o directório: [", "Não foi possível criar o diretório: [" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "A transferência do ficheiro será interrompida.", "A transferência do arquivo será interrompido." )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Nenhum ficheiro XML foi encontrado no directório seleccionado.", "Nenhum arquivo XML foi encontrado no diretório selecionado." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Ficheiro", "Arquivo" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Seleccione o directório de ficheiros XML", "Selecione o diretório de arquivos XML" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Seleccione o(s) ficheiro(s) a ser(em) processado(s)", "Selecione o(s) arquivos(s) a ser(em) processado(s)" )
+		#define STR0020 "Data"
+		#define STR0021 "Hora"
+		#define STR0022 "Tamanho"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Directório não encontrado: ", "Diretório não encontrado: " )
+		#define STR0024 ", e não foi possível criá-lo."
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Todos os ficheiros seleccionados serão processados como sendo da RDA: ", "Todos os arquivos selecionados serão processados como sendo da RDA: " )
+		#define STR0026 "Confirma o processamento?"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "A processar ficheiros", "Processsando arquivos" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "A rede de atendimento seleccionada no parâmetro é inválida.", "Rede de atendimento selecionada no parâmetro é inválida." )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Não foi possível copiar o ficheiro de [", "Não foi possível copiar o arquivo de [" )
+		#define STR0030 "Para"
+		#define STR0031 "não acatado devido a inconsistências detectadas."
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Ficheiros processados", "Arquivos processados" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Ficheiros não processados", "Arquivos não processados" )
+		#define STR0034 "Relatório"
+		#define STR0035 "Informações"
+		#define STR0036 "Imprimir"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Relatório de ficheiros processados", "Relatório de arquivos procesados" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Relatório de ficheiros não processados", "Relatório de arquivos não processados" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Ficheiro já processado, mas contém críticas.", "Arquivo já processado mas contém críticas." )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "O ficheiro seleccionado já foi submetido, situação: ", "Arquivo selecionado já foi submetido, situação: " )
+		#define STR0041 "Protocolo"
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "DEMONSTRATIVO DE CRÍTICAS ENCONTRADAS EM FICHEIRO XML/TISS", "DEMONSTRATIVO DE CRÍTICAS ENCONTRADAS EM ARQUIVO XML/TISS" )
+		#define STR0043 "Rede de atendimento"
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Ficheiro acatado", "Arquivo acatado" )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Falha na actualização do ficheiro de saída", "Falha na atualização do arquivo de saída" )
+	#endif
+#endif

@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Listas"
+	#define STR0002 "Consultar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Existe vinculo para este registro ok... No podra borrarlo."
+	#define STR0008 " "
+	#define STR0009 "í Yá existe esta lista !"
+	#define STR0010 "Atencion"
+	#define STR0011 "Lista se esta usando en el registro de farmacos"
+	#define STR0012 "Validacion de inclusion"
+	#define STR0013 "Validacion de borrado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Lists"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add "
+		#define STR0005 "Edit "
+		#define STR0006 "Delete "
+		#define STR0007 "There is already a relationship for this record OK ... It cannot be deleted."
+		#define STR0008 " "
+		#define STR0009 "List already exists!"
+		#define STR0010 "Attention"
+		#define STR0011 "List in use in the drug file "
+		#define STR0012 "Validation of addition"
+		#define STR0013 "Validation of deletion"
+	#else
+		#define STR0001 "Listas"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Já existe relacionamento para este registo ok... não poderá excluí-lo.", "Ja existe relacionamento para este registro ok... Nao podera exclui-lo." )
+		#define STR0008 " "
+		#define STR0009 "Já existe esta lista!"
+		#define STR0010 "Atenção"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Lista está a ser usada no registo de fármaco", "Lista esta sendo usada no cadastro de farmaco" )
+		#define STR0012 "Validação de inclusão"
+		#define STR0013 "Validação de exclusão"
+	#endif
+#endif

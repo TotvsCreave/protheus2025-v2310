@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Informe los representantes de esta Familia/Tipo Servicio."
+	#define STR0007 "Centros de Costo del Representante"
+	#define STR0008 "Estos son los centro de costo registrados en el sistema."
+	#define STR0009 "Seleccione lo que desea relacionar al representante."
+	#define STR0010 "Uno o más campos obligatorios no se registraron en el objeto Grilla."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Enter operators of this Family/Service Type."
+		#define STR0007 "Attendant Cost Center"
+		#define STR0008 "They are the Cost Centers registered in the system."
+		#define STR0009 "Select what you wish to relate to the attendant."
+		#define STR0010 "One or more mandatory fields were not registered in Grid object."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Informe os atendentes desta Família/Tipo Serviço."
+		#define STR0007 "Centros de Custo do Atendente"
+		#define STR0008 "Estes são os centros de custo cadastrados no sistema."
+		#define STR0009 "Selecione o que deseja relacionar ao atendente."
+		#define STR0010 "Um ou mais campos obrigatórios não foram cadastrados no objeto Grid."
+	#endif
+#endif

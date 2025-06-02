@@ -1,0 +1,57 @@
+#ifdef SPANISH
+	#define STR0001 "Equipo"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Excluir"
+	#define STR0007 "¡Atencao!"
+	#define STR0008 "Este equipo no se debe borrar porque se esta utilizando en una estructura de negocio."
+	#define STR0009 "Ok"
+	#define STR0010 "HELP"
+	#define STR0011 "Acceso CRM"
+	#define STR0012 "Opcion no disponible para el modulo CRM. Para bloquear el acceso, retire la opcione del menu CRM."
+	#define STR0013 "Anotaciones"
+	#define STR0014 "Equipos de venta activas"
+	#define STR0015 "Equipos de venta inactivas"
+	#define STR0016 'Total de registros'
+	#define STR0017 "Usuarios"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Team"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Attention !"
+		#define STR0008 "You cannot delete this team, because a business structure is using it."
+		#define STR0009 "OK"
+		#define STR0010 "HELP"
+		#define STR0011 "CRM Access"
+		#define STR0012 "Unavailable option for CRM module. To block access, please remove the option from CRM menu."
+		#define STR0013 "Annotations"
+		#define STR0014 "Active Sales Teams"
+		#define STR0015 "Inactive Sales Teams"
+		#define STR0016 'Total of Records'
+		#define STR0017 "Users"
+	#else
+		#define STR0001 "Equipe"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Atenção !", "Atencao !" )
+		#define STR0008 "Esta equipe não pode ser excluída, pois está sendo utilizada em uma estrutura de negócios."
+		#define STR0009 "Ok"
+		#define STR0010 "HELP"
+		#define STR0011 "Acesso CRM"
+		#define STR0012 "Opção indisponível para o módulo CRM. Para bloquear o acesso, por favor retire a opção do menu CRM."
+		#define STR0013 "Anotações"
+		#define STR0014 "Equipes de Venda Ativas"
+		#define STR0015 "Equipes de Venda Inativas"
+		#define STR0016 'Total de Registros'
+		#define STR0017 "Usuários"
+	#endif
+#endif

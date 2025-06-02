@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Comisión de tipo de recurso por agencia"
+	#define STR0002 "Genera el informe de comisión de tipo de recurso por agencia"
+	#define STR0003 "Código Colab."
+	#define STR0004 "Nombre del colaborador"
+	#define STR0005 "Total informatizado"
+	#define STR0006 "Total incorporado"
+	#define STR0007 "Total manual"
+	#define STR0008 "Valor total"
+	#define STR0009 "Totales de la agencia"
+	#define STR0010 "Agencia: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Comissão de Tipo de Recurso por Agência"
+		#define STR0002 "Gera o relatório de comissão de tipo de recurso por agência"
+		#define STR0003 "Código Colab."
+		#define STR0004 "Nome do Colaborador"
+		#define STR0005 "Total Informatizado"
+		#define STR0006 "Total Embarcada"
+		#define STR0007 "Total Manual"
+		#define STR0008 "Valor Total"
+		#define STR0009 "Totais da Agência"
+		#define STR0010 "Agência: "
+	#else
+		#define STR0001 "Comissão de Tipo de Recurso por Agência"
+		#define STR0002 "Gera o relatório de comissão de tipo de recurso por agência"
+		#define STR0003 "Código Colab."
+		#define STR0004 "Nome do Colaborador"
+		#define STR0005 "Total Informatizado"
+		#define STR0006 "Total Embarcada"
+		#define STR0007 "Total Manual"
+		#define STR0008 "Valor Total"
+		#define STR0009 "Totais da Agência"
+		#define STR0010 "Agência: "
+	#endif
+#endif

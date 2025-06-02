@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de Operacion Alternativa"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Imprimir"
+	#define STR0008 "Copiar"
+	#define STR0009 "Modelo de Datos de la Operacion Alternativa"
+	#define STR0010 "Datos de la Operacion Alternativa"
+	#define STR0011 "Datos de la Herramienta"
+	#define STR0012 "Datos de Consumible"
+	#define STR0013 "Datos de Narrativa"
+	#define STR0014 "Datos del Tutorial"
+	#define STR0015 "Herramienta"
+	#define STR0016 "Consumible"
+	#define STR0017 "Narrativa"
+	#define STR0018 "Tutorial"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Alternate Operation Register"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Print"
+		#define STR0008 "Copy"
+		#define STR0009 "Alternate Operation Data Model"
+		#define STR0010 "Alternate Operation Data"
+		#define STR0011 "Tool Data"
+		#define STR0012 "Data of Consumable"
+		#define STR0013 "Narrative Data"
+		#define STR0014 "Tutorial Data"
+		#define STR0015 "Tool"
+		#define STR0016 "Consumable"
+		#define STR0017 "Narrative"
+		#define STR0018 "Tutorial"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Registo de Operação Alternativa", "Cadastro de Operação Alternativa" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Imprimir"
+		#define STR0008 "Copiar"
+		#define STR0009 "Modelo de Dados da Operação Alternativa"
+		#define STR0010 "Dados da Operação Alternativa"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Dados da ferramenta", "Dados da Ferramenta" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Dados do consumível", "Dados do Consumível" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Dados da narrativa", "Dados da Narrativa" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Dados do tutorial", "Dados do Tutorial" )
+		#define STR0015 "Ferramenta"
+		#define STR0016 "Consumível"
+		#define STR0017 "Narrativa"
+		#define STR0018 "Tutorial"
+	#endif
+#endif

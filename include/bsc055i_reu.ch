@@ -1,0 +1,81 @@
+#ifdef SPANISH
+	#define STR0001 "Error en la creacion del archivo ["
+	#define STR0002 "Operacion interrumpida"
+	#define STR0003 "Libro Estrategico - Reunion"
+	#define STR0004 "Reunion"
+	#define STR0005 "Horario Inicial"
+	#define STR0006 "Horario Final"
+	#define STR0007 "Lugar"
+	#define STR0008 "Detalles"
+	#define STR0009 "Lista de Personas Convocadas"
+	#define STR0010 "Nombre"
+	#define STR0011 "Cargo"
+	#define STR0012 "Lista de Pautas"
+	#define STR0013 "Pauta"
+	#define STR0014 "Estrategia"
+	#define STR0015 "Descripcion"
+	#define STR0016 "Detalles"
+	#define STR0017 "Lista de Retornos"
+	#define STR0018 "Retorno"
+	#define STR0019 "Fecha"
+	#define STR0020 "Hora"
+	#define STR0021 "Responsable"
+	#define STR0022 "Lista de Documentos"
+	#define STR0023 "Documento"
+	#define STR0024 "Link"
+	#define STR0025 "Organizacion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Error creating file ["
+		#define STR0002 "Operation aborted"
+		#define STR0003 "Strategic book - Meeting "
+		#define STR0004 "Meeting"
+		#define STR0005 "Start time "
+		#define STR0006 "End time "
+		#define STR0007 "Place"
+		#define STR0008 "Details "
+		#define STR0009 "List of people summoned"
+		#define STR0010 "Name"
+		#define STR0011 "Position"
+		#define STR0012 "Agendas list "
+		#define STR0013 "Agenda"
+		#define STR0014 "Strategy "
+		#define STR0015 "Description"
+		#define STR0016 "Details "
+		#define STR0017 "Returns list "
+		#define STR0018 "Return "
+		#define STR0019 "Date"
+		#define STR0020 "Time"
+		#define STR0021 "Responsible"
+		#define STR0022 "Documents list "
+		#define STR0023 "Document "
+		#define STR0024 "Link"
+		#define STR0025 "Organization"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Erro na criação do ficheiro [", "Erro na criação do arquivo [" )
+		#define STR0002 "Operação abortada"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Livro estratégico - reunião", "Book Estratégico - Reuniao" )
+		#define STR0004 "Reunião"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Horário de início", "Horário de Inicio" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Horário de fim", "Horário de Término" )
+		#define STR0007 "Local"
+		#define STR0008 "Detalhes"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Lista De Pessoas Convocadas", "Lista de Pessoas Convocadas" )
+		#define STR0010 "Nome"
+		#define STR0011 "Cargo"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Lista De Pautas", "Lista de Pautas" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Lista", "Pauta" )
+		#define STR0014 "Estratégia"
+		#define STR0015 "Descrição"
+		#define STR0016 "Detalhes"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Lista De Retornos", "Lista de Retornos" )
+		#define STR0018 "Retorno"
+		#define STR0019 "Data"
+		#define STR0020 "Hora"
+		#define STR0021 "Responsável"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Lista De Documentos", "Lista de Documentos" )
+		#define STR0023 "Documento"
+		#define STR0024 "Link"
+		#define STR0025 "Organização"
+	#endif
+#endif

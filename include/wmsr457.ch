@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de productos por distribuir"
+	#define STR0002 "Emite la lista de los productos que esperan la distribución a sus ubicaciones físicas específicas."
+	#define STR0003 "Saldo por ubicar"
+	#define STR0004 "Cantidad"
+	#define STR0005 "Original"
+	#define STR0006 "Saldo por"
+	#define STR0007 "Distribuir"
+	#define STR0008 "Orig."
+	#define STR0009 "Número"
+	#define STR0010 "Secuencia"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of Products to Distribute"
+		#define STR0002 "Issue the list of products waiting distribution for their specific physical locations."
+		#define STR0003 "Balance to Address"
+		#define STR0004 "Quantity"
+		#define STR0005 "Original"
+		#define STR0006 "Balance to"
+		#define STR0007 "Distribute"
+		#define STR0008 "Orig."
+		#define STR0009 "Number"
+		#define STR0010 "Sequence"
+	#else
+		#define STR0001 "Relatório de Produtos a Distribuir"
+		#define STR0002 "Emite a relação dos produtos que aguardam distribuição para suas localizações físicas específicas."
+		#define STR0003 "Saldos à Endereçar"
+		#define STR0004 "Quantidade"
+		#define STR0005 "Original"
+		#define STR0006 "Saldo à"
+		#define STR0007 "Distribuir"
+		#define STR0008 "Orig."
+		#define STR0009 "Número"
+		#define STR0010 "Sequência"
+	#endif
+#endif

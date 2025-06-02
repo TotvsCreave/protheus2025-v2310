@@ -1,0 +1,111 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de Busquedas"
+	#define STR0002 "Constructor de Filtros"
+	#define STR0003 "No existen entidades configuradas en esta sucursal para utilizar el Constructor de Filtros"
+	#define STR0004 "Entidad"
+	#define STR0005 "Apodo "
+	#define STR0006 "Buscar"
+	#define STR0007 "Visualizar"
+	#define STR0008 "Incluir"
+	#define STR0009 "Modificar"
+	#define STR0010 "Borrar"
+	#define STR0011 "Funcion disponible solamente para el campo Lista"
+	#define STR0012 "Intervalo de horas invalido, verifique la hora inicial y final"
+	#define STR0013 "Periodo de fechas invalido, verifique la fecha inicial y final"
+	#define STR0014 "¿Confirma desactivacion de la busqueda?"
+	#define STR0015 "No se podra borrar porque esta busqueda se encuentra activa "
+	#define STR0016 "¿Desea realmente borrar la pesquisa y toda su jerarquia?"
+	#define STR0017 "Se encontraron las siguientes informaciones vinculadas a la busqueda: "
+	#define STR0018 "Cuestionario(s)"
+	#define STR0019 "Pregunta(s)"
+	#define STR0020 "Respuesta(s)"
+	#define STR0021 "Verificando datos de la busqueda"
+	#define STR0022 "Espere... Borrando la busqueda y toda su jerarquia..."
+	#define STR0023 "Leyenda"
+	#define STR0024 "Disponible en la Web"
+	#define STR0025 "Destinada a la Web sin periodo definido"
+	#define STR0026 "Correo Electronico"
+	#define STR0027 "Impresa"
+	#define STR0028 "Autorizada para modificaciones"
+	#define STR0029 "Vencida"
+	#define STR0030 "Busquedas"
+	#define STR0031 "¿Desea realmente copiar la busqueda y toda su jerarquia?"
+	#define STR0032 "Copiar"
+	#define STR0033 "Enviando e-mail a los destinatarios de la investigacion..."
+	#define STR0034 "Cons. Suc."
+	#define STR0035 "Bloqueo a Modificaciones"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search File"
+		#define STR0002 "Filter Builder    "
+		#define STR0003 "There are no parameterized entities in this branch for use with the Filter Constructor "
+		#define STR0004 "Entity"
+		#define STR0005 "Nickname"
+		#define STR0006 "Search"
+		#define STR0007 "View"
+		#define STR0008 "Add "
+		#define STR0009 "Edit"
+		#define STR0010 "Delete"
+		#define STR0011 "Function available only for the Waiting List field"
+		#define STR0012 "Invalid hour interval, check the initial and final time"
+		#define STR0013 "Invalid date period, check  the initial and final dates"
+		#define STR0014 "Confirm the search disablement? "
+		#define STR0015 "Deletion cannot be executed as this search is active "
+		#define STR0016 "Do you really want to delete the search and all its hierarchy? "
+		#define STR0017 "The following information linked to the search has been found: "
+		#define STR0018 "Questionnaire(s)"
+		#define STR0019 "Question(s)"
+		#define STR0020 "Answer(s)"
+		#define STR0021 "Checking the search data"
+		#define STR0022 "Please wait... Deleting the search and its hierarchy..."
+		#define STR0023 "Caption"
+		#define STR0024 "Available on the Web"
+		#define STR0025 "Destined to the Web with no specific period "
+		#define STR0026 "E-mail "
+		#define STR0027 "Printed"
+		#define STR0028 "Released for changes   "
+		#define STR0029 "Expired"
+		#define STR0030 "Searches"
+		#define STR0031 "Do you really want copy the search and all its hierarchy? "
+		#define STR0032 "Copy"
+		#define STR0033 "Sending email to the survey addressees ..."
+		#define STR0034 "Cons. Branch"
+		#define STR0035 "Block Changes"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Registo De Pesquisas", "Cadastro de Pesquisas" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Constructor De Filtros", "Construtor de Filtros" )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Não Existem Entidades Especializadas Nesta Filial Para A Utilização Do Constructor De Filtros", "Não existem entidades parametrizadas nesta filial para a utilização do Construtor de Filtros" )
+		#define STR0004 "Entidade"
+		#define STR0005 "Apelido"
+		#define STR0006 "Pesquisar"
+		#define STR0007 "Visualizar"
+		#define STR0008 "Incluir"
+		#define STR0009 "Alterar"
+		#define STR0010 "Excluir"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Função Disponível Somente Para O Campo Lista", "Função disponível somente para o campo Lista" )
+		#define STR0012 "Intervalo de horas inválido, verifique a hora inicial e final"
+		#define STR0013 "Período de datas inválido, verifique a data inicial e final"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Confirma a inactivação da pesquisa ?", "Confirma a inativação da pesquisa ?" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "A exclusão não poderá ser efectuada, pois esta pesquisa encontra-se activa", "A exclusão não poderá ser efetuada, pois esta pesquisa encontra-se ativa" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Deseja realmente efectuar o processo de exclusão da pesquisa e de toda sua hierarquia ?", "Deseja realmente efetuar o processo de exclusão da pesquisa e toda sua hierarquia ?" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", 'FOram encontradas atreladas à pesquisa as seguintes informações:', "Foram encontradas atreladas à pesquisa as seguintes informações: " )
+		#define STR0018 "Questionário(os)"
+		#define STR0019 "Questão(ões)"
+		#define STR0020 "Resposta(as)"
+		#define STR0021 "Verificando dados da pesquisa"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Aguarde...encontra-se a excluir a pesquisa e toda a sua hierarquia...", "Aguarde... Excluindo a pesquisa e toda sua hierarquia..." )
+		#define STR0023 "Legenda"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Disponível Na Web", "Disponível na Web" )
+		#define STR0025 "Destinada à Web sem período definido"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Correio Eletrónico", "Correio Eletrônico" )
+		#define STR0027 "Impressa"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Dispensada de modificacões", "Liberada a modificações" )
+		#define STR0029 "Vencida"
+		#define STR0030 "Pesquisas"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Deseja realmente efectuar a cópia da pesquisa e de toda sua hierarquia?", "Deseja realmente efetuar a cópia da pesquisa e toda sua hierarquia ?" )
+		#define STR0032 "Copiar"
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "A enviar e-mail aos destinatários da pesquisa...", "Enviando e-mail aos destinatarios da pesquisa..." )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Cons.fil.", "Cons.Fil." )
+		#define STR0035 "Bloqueio a Modificacoes"
+	#endif
+#endif

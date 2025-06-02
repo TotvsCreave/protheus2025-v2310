@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Calendarios para APS"
+	#define STR0007 "Herramienta"
+	#define STR0008 "Grupo de recursos"
+	#define STR0009 "Recurso"
+	#define STR0010 "Domingo"
+	#define STR0011 "Lunes  "
+	#define STR0012 "Martes "
+	#define STR0013 "Miercoles"
+	#define STR0014 "Jueves "
+	#define STR0015 "Viernes"
+	#define STR0016 "Sabado "
+	#define STR0017 "Incidir:"
+	#define STR0018 "Usar fecha"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Calendars for APS"
+		#define STR0007 "Tool"
+		#define STR0008 "Resources Group"
+		#define STR0009 "Resource"
+		#define STR0010 "Sunday"
+		#define STR0011 "Monday"
+		#define STR0012 "Tuesday"
+		#define STR0013 "Wednesday"
+		#define STR0014 "Thursday"
+		#define STR0015 "Friday"
+		#define STR0016 "Saturday"
+		#define STR0017 "Levy:"
+		#define STR0018 "Use Date"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Calendários Para Aps", "Calendarios para APS" )
+		#define STR0007 "Ferramenta"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Grupo De Recursos", "Grupo de Recursos" )
+		#define STR0009 "Recurso"
+		#define STR0010 "Domingo"
+		#define STR0011 "Segunda-feira"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Terça-feira", "Terca-feira" )
+		#define STR0013 "Quarta-feira"
+		#define STR0014 "Quinta-feira"
+		#define STR0015 "Sexta-feira"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Sábado", "Sabado" )
+		#define STR0017 "Incidir:"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Utilizar Data", "Usar Data" )
+	#endif
+#endif

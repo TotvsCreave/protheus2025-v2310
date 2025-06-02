@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "[GTPR500A] - Informe de divergencias Recaudación vs. Tesorería"
+	#define STR0002 "Este informe imprimirá Informe de divergencias Recaudación vs. Tesorería"
+	#define STR0003 "Divergencias - Pasajes"
+	#define STR0004 "Código billete"
+	#define STR0005 "Valor total ficha"
+	#define STR0006 "Ajuste recaudación"
+	#define STR0007 "Divergencia"
+	#define STR0008 "Divergencias - Tasas"
+	#define STR0009 "Código tasa"
+	#define STR0010 "Tipo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "[GTPR500A] - Collection Divergences x Treasury Report"
+		#define STR0002 "This report will print Collection Divergences x Treasury Report"
+		#define STR0003 "Divergences - Tickets"
+		#define STR0004 "Ticket Code"
+		#define STR0005 "Form Total Value"
+		#define STR0006 "Collection Adjustment"
+		#define STR0007 "Divergence"
+		#define STR0008 "Divergences - Rates"
+		#define STR0009 "Rate Code"
+		#define STR0010 "Type"
+	#else
+		#define STR0001 "[GTPR500A] - Relatório de Divergências Arrecadação x Tesouraria"
+		#define STR0002 "Este relatório irá imprimir Relatório de Divergências Arrecadação x Tesouraria"
+		#define STR0003 "Divergências - Passagens"
+		#define STR0004 "Código Bilhete"
+		#define STR0005 "Valor Total Ficha"
+		#define STR0006 "Acerto Arrecadação"
+		#define STR0007 "Divergência"
+		#define STR0008 "Divergencias - Taxas"
+		#define STR0009 "Código Taxa"
+		#define STR0010 "Tipo"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Esta rutina solo debe llamarse por medio de la conciliación terrestre."
+	#define STR0002 "Factura vs. Anticipo"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Hubo movimientos en el título de anticipo, revierta los movimientos antes de borrar el anticipo."
+	#define STR0008 "Conciliación ya efectuada."
+	#define STR0009 "Ya existe un título de anticipo para esta factura."
+	#define STR0010 "Acción de modificación no permitida, borre el anticipo e inclúyalo nuevamente."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "This routine must be only called through reconciliation - land."
+		#define STR0002 "Invoice x Prepayment"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Transaction in prepayment bill, reverse transactions before deleting prepayment."
+		#define STR0008 "Conciliation already executed."
+		#define STR0009 "There already is prepayment bill for this invoice."
+		#define STR0010 "Change action not allowed, delete prepayment and add it again."
+	#else
+		#define STR0001 "Esta rotina deve ser chamda somente através da conciliação - terrestre."
+		#define STR0002 "Fatura x Antecipação"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Houve movimentação no título de antecipação, estorne as movimentações antes de excluir a antecipação."
+		#define STR0008 "Conciliação já efetivada."
+		#define STR0009 "Já existe título de antecipação para esta fatura."
+		#define STR0010 "Ação de alteração não permitida, exclua a antecipação e insira novamente."
+	#endif
+#endif

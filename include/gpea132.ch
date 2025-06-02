@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Historial de Tickets"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Datos de registro"
+	#define STR0005 "Búsqueda"
+	#define STR0006 "Año/Mes"
+	#define STR0007 "Ticket transporte"
+	#define STR0008 "Ticket restaurante"
+	#define STR0009 "Ticket canasta"
+	#define STR0010 "Período"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Allowances History"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Registration Data"
+		#define STR0005 "Search"
+		#define STR0006 "Year/Month"
+		#define STR0007 "Transportation Allowance"
+		#define STR0008 "Meal Allowance"
+		#define STR0009 "Food Allowance"
+		#define STR0010 "Period"
+	#else
+		#define STR0001 "Histórico de Vales"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Dados Cadastrais"
+		#define STR0005 "Pesquisa"
+		#define STR0006 "Ano/Mês"
+		#define STR0007 "Vale Transporte"
+		#define STR0008 "Vale Refeição"
+		#define STR0009 "Vale Alimentação"
+		#define STR0010 "Período"
+	#endif
+#endif

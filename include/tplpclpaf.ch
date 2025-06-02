@@ -1,0 +1,153 @@
+#ifdef SPANISH
+	#define STR0001 "Tanque"
+	#define STR0002 "Bomba"
+	#define STR0003 "Boquerel"
+	#define STR0004 "EI"
+	#define STR0005 "EF"
+	#define STR0006 "Vol."
+	#define STR0007 "Litros"
+	#define STR0008 "Atencion"
+	#define STR0009 "Problemas en la apertura del comprobante."
+	#define STR0010 "¿Ejecuta la impresion nuevamente ?"
+	#define STR0011 "Si"
+	#define STR0012 "No"
+	#define STR0013 "Falla al obtener el numero del comprobante fiscal"
+	#define STR0014 "Falla al obtener el numero del PDV"
+	#define STR0015 "Falla en registrar item."
+	#define STR0016 "Falla en el registro del descuento en el total."
+	#define STR0017 "Falla en el registro de pago."
+	#define STR0018 "Presupuesto:"
+	#define STR0019 "Falla en el cierre del comprobante."
+	#define STR0020 "PV"
+	#define STR0021 "CONTROL DE FINALES"
+	#define STR0022 "ABASTECIMIENTOS PENDIENTES"
+	#define STR0023 "VP"
+	#define STR0024 "Error al crear archivo: "
+	#define STR0025 "No se localizo abastecimiento Pendiente"
+	#define STR0026 "No pudo realizarse la consulta RPC. Verifique las configuraciones / disponibilidad de conexion RPC con la Retaguardia"
+	#define STR0027 "¡Necesario informar el abastecimiento!"
+	#define STR0028 "¡Necesario informar el abastecimiento utilizado para Verificacion!"
+	#define STR0029 "¿Desea realizar comparacion del o de los abastecimientos seleccionados?"
+	#define STR0030 "No se localizo el Campo: L2_BICO/LR_BICO. Es necesario aplicar los procedimientos del Boletin del Template de Puesto Off-Line"
+	#define STR0031 "Solo se permite el registro de un abastecimiento por Venta"
+	#define STR0032 "Cargamento de Abastecimientos"
+	#define STR0033 "Actualizar"
+	#define STR0034 "Verificacion "
+	#define STR0035 "Codigo"
+	#define STR0036 "Hora"
+	#define STR0037 "Descripcion"
+	#define STR0038 "Vl.Total"
+	#define STR0039 "Verificando Abastecimiento Pendiente..."
+	#define STR0040 "Relacion de Abastecimiento Pendiente"
+	#define STR0041 "Abastecimiento Codigo:"
+	#define STR0042 " ¡Indisponible! Verifique si el abastecimiento se registro en otro terminal."
+	#define STR0043 " se registro en otra venta no finalizada. ¿Desea continuar?"
+	#define STR0044 "Abastecimiento ya registrado en la venta actual"
+	#define STR0045 "Abastecimiento registrado en otra venta no finalizada. ¿Desea continuar?"
+	#define STR0046 "Abastecimiento"
+	#define STR0047 "Leyenda"
+	#define STR0048 "La pantalla de abastecimiento no puede cargarse Existe un item que se esta registrando, finalice o elimine la linea en blanco."
+	#define STR0049 "AUTO"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Tank"
+		#define STR0002 "Pump"
+		#define STR0003 "Nozzle"
+		#define STR0004 "EI"
+		#define STR0005 "EF"
+		#define STR0006 "Vol."
+		#define STR0007 "Liters"
+		#define STR0008 "Attention"
+		#define STR0009 "Problems in receipt opening."
+		#define STR0010 "Print it again?"
+		#define STR0011 "Yes"
+		#define STR0012 "No"
+		#define STR0013 "Failure to get receipt number"
+		#define STR0014 "Failure to get POS number"
+		#define STR0015 "Failure to register item."
+		#define STR0016 "Failure to register discount in total."
+		#define STR0017 "Failure to register payment."
+		#define STR0018 "Quotation:"
+		#define STR0019 "Failure to close receipt."
+		#define STR0020 "PV"
+		#define STR0021 "CONTROL OF CLOSING PERSON"
+		#define STR0022 "PENDING FUELING"
+		#define STR0023 "VP"
+		#define STR0024 "Error creating file "
+		#define STR0025 "It was not found in the Pending supply."
+		#define STR0026 "Change could not be executed. Check the configuration/availability of the RPC connection with the  Back Office."
+		#define STR0027 "Informing the supply is needed!"
+		#define STR0028 "Informing the supply used for Determination is needed!"
+		#define STR0029 "Want to do the Determination of the selected Supplying ?"
+		#define STR0030 "The following field was not found: L2_BICO/LR_BICO. Applying the procedures of the Off-Line Post Template Bulletin"
+		#define STR0031 "It is only allowed the register of one supply per Sale."
+		#define STR0032 "Loading Quotations"
+		#define STR0033 "Update"
+		#define STR0034 "Determination"
+		#define STR0035 "Code"
+		#define STR0036 "Time"
+		#define STR0037 "Description"
+		#define STR0038 "Vl.Total"
+		#define STR0039 "Check Pending Supply..."
+		#define STR0040 "Pending Supply List"
+		#define STR0041 "Code Supply:"
+		#define STR0042 " not available! Check if supply was registered in another terminal."
+		#define STR0043 " was registered in other not finished sale. Continue?"
+		#define STR0044 "Supply already registered in current sale"
+		#define STR0045 "Supply registered in other not finished sale. Continue?"
+		#define STR0046 "Supply"
+		#define STR0047 "Subtitle"
+		#define STR0048 "Refueling screen cannot be loaded. There is an item being registered, finish it or remove the blank line."
+		#define STR0049 "AUTO"
+	#else
+		#define STR0001 "Tanque"
+		#define STR0002 "Bomba"
+		#define STR0003 "Bico"
+		#define STR0004 "EI"
+		#define STR0005 "EF"
+		#define STR0006 "Vol."
+		#define STR0007 "Litros"
+		#define STR0008 "Atenção"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Problemas na abertura do cupão.", "Problemas na abertura do cupom." )
+		#define STR0010 "Executa a impressão novamente ?"
+		#define STR0011 "Sim"
+		#define STR0012 "Não"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Falha ao obter o número do cupão fiscal", "Falha ao obter o numero do cupom fiscal" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Falha ao obter o número do PDV", "Falha ao obter o numero do PDV" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Falha em registar item.", "Falha em registrar item." )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Falha no registo do desconto no total.", "Falha no registro do desconto no total." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Falha no registo de pagamento.", "Falha no registro de pagamento." )
+		#define STR0018 "Orçamento:"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Falha no fechamento do cupão.", "Falha no fechamento do cupom." )
+		#define STR0020 "PV"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "CONTROLO DE ENCERRANTES", "CONTROLE DE ENCERRANTES" )
+		#define STR0022 "ABASTECIMENTOS PENDENTES"
+		#define STR0023 "VP"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Erro ao criar ficheiro: ", "Erro ao criar arquivo: " )
+		#define STR0025 "Não foi localizado abastecimento Pendente"
+		#define STR0026 "Não foi possível realizar consulta RPC. Verifique as configurações/disponibilidade de conexão RPC com a Retaguarda"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "É necessário informar o abastecimento.", "Necessário informar o abastecimento!" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "É necessário informar o abastecimento utilizado para aferição.", "Necessário informar o abastecimento utilizado para Aferição!" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Deseja realizar Aferição do(s) Abastecimento(s) seleccionados ?", "Deseja realizar Aferição do(s) Abastecimento(s) selecionados ?" )
+		#define STR0030 "Não foi localizado o Campo: L2_BICO/LR_BICO. É necessário aplicar os procedimentos do Boletim do Template de Posto Off-Line"
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Só é permitido o registo de um abastecimento por Venda", "Só é permitido o registro de um abastecimento por Venda" )
+		#define STR0032 "Carregamento de Abastecimentos"
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Actualizar", "Atualizar" )
+		#define STR0034 "Aferição"
+		#define STR0035 "Código"
+		#define STR0036 "Hora"
+		#define STR0037 "Descrição"
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Vlr.Total", "Vl.Total" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "A verificar abastecimento pendente...", "Verificando Abastecimento Pendente..." )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Relação de abastecimento pendente", "Relação de Abastecimento Pendente" )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Abastecimento código:", "Abastecimento Código:" )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", " indisponível. Verifique se o abastecimento foi registado em outro terminal.", " indisponível! Verifique se o abastecimento foi registrado em outro terminal." )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", " foi registado em outra venda não finalizada. Deseja continuar?", " foi registrado em outra venda não finalizada. Deseja continuar?" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Abastecimento já registado na venda Actual", "Abastecimento já registrado na venda Atual" )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Abastecimento registado em outra venda não finalizada. Deseja continuar?", "Abastecimento registrado em outra venda não finalizada. Deseja continuar?" )
+		#define STR0046 "Abastecimento"
+		#define STR0047 "Legenda"
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "O ecrã de abastecimento não pode ser carregado. Existe um item a ser registado. Finalize ou remova a linha em branco.", "Tela de abastecimento não pode ser carregada. Existe um item sendo registrado, finalize ou remova a linha em branco." )
+		#define STR0049 "AUTO"
+	#endif
+#endif

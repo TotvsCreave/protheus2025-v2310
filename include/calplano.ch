@@ -1,0 +1,126 @@
+#ifdef SPANISH
+	#define STR0001 "Calculo del Plan de Salud"
+	#define STR0002 "Este Programa calculara los valores de los Planes de Salud"
+	#define STR0003 "¡Informe una fecha de Referencia mayor o igual a la Competencia de la Planilla de Haberes!"
+	#define STR0004 "Calculando Plan de Salud de:"
+	#define STR0005 "Calculo del Plan de Salud"
+	#define STR0006 "¡Filtrar Competencia!"
+	#define STR0007 "Inicio del procesamiento"
+	#define STR0008 "Fin del procesamiento"
+	#define STR0009 "Tabla no Registrada o Valores fuera del Rango"
+	#define STR0010 "Codigo:"
+	#define STR0011 "As. Medica"
+	#define STR0012 "As. Odontologica"
+	#define STR0013 "del Tipo"
+	#define STR0014 "Rango Salarial"
+	#define STR0015 "Rango Etario"
+	#define STR0016 "Valor Fijo"
+	#define STR0017 "Porcentaje sobre Salario"
+	#define STR0018 "Dependientes y Agregados calculados con valores en CEROS"
+	#define STR0019 "LOG de Calculo de Plan de Salud"
+	#define STR0020 "Sec Dependiente:"
+	#define STR0021 "Sec Agregado: "
+	#define STR0022 "Atencion"
+	#define STR0023 "Ejecute la opcion de compatibilizador referente al Nuevo Plan de Salud. Para mayores informaciones, verifique respectivo Boletin Tecnico."
+	#define STR0024 "OK"
+	#define STR0025 "Enter a period greater or equal to Last Period pending in Payroll!"
+	#define STR0026 "Titular posee mas de un plan con mismo Proveedor"
+	#define STR0027 "Titular no posee plan de salud activo para el Mes y Ano del calculo"
+	#define STR0028 "El titular posee plan de salud con Periodo Inicial y Final divergente del Mes y Ano del calculo"
+	#define STR0029 "Sucursal: "
+	#define STR0030 "Proceso: "
+	#define STR0031 " Inicio: "
+	#define STR0032 " Fin: "
+	#define STR0033 "Sueldo/Etaria"
+	#define STR0034 "Coparticipacion o reembolso calculado aunque el plan de salud esta expirado"
+	#define STR0035 " Proveedor: "
+	#define STR0036 " Fecha de ocurrencia: "
+	#define STR0037 " Observacion: "
+	#define STR0038 "Archivo de empleados con informacion de que el empleado tiene seguro de salud, sin embargo no existe seguro activo."
+	#define STR0039 "Archivo de dependientes con informacion de que tiene seguro de salud, sin embargo no existe seguro activo."
+	#define STR0040 "Empleado está despedido y tiene asientos modificados. Cálculo no se realizó."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Health Plan Calculation"
+		#define STR0002 "This Program calculates Health Plan values"
+		#define STR0003 "Enter a Reference date later or equal to Payroll Jurisdiction!"
+		#define STR0004 "Calculating Health Plan of:"
+		#define STR0005 "Health Plan Calculation"
+		#define STR0006 "Filter Jurisdiction!"
+		#define STR0007 "Start of processing"
+		#define STR0008 "Processing end"
+		#define STR0009 "Table not Registered or values out of Range"
+		#define STR0010 "Code:"
+		#define STR0011 "Plan Medical"
+		#define STR0012 "Plan Dental"
+		#define STR0013 "of Type"
+		#define STR0014 "Salary Range"
+		#define STR0015 "Age Range"
+		#define STR0016 "Fixed Amount"
+		#define STR0017 "Percentage upon Salary"
+		#define STR0018 "Dependant and Aggregate values calculated with ZEROS"
+		#define STR0019 "Health Plan Calculation LOG"
+		#define STR0020 "Dependant Sequence:"
+		#define STR0021 "Aggregate Sequence: "
+		#define STR0022 "Attention"
+		#define STR0023 "Run the compatibilizer option related to the New Health Plan. For more information, check the respective Technical Newsletter."
+		#define STR0024 "OK"
+		#define STR0025 "Enter a period greater or equal to Last Period pending in Payroll!"
+		#define STR0026 "Owner has more than one plan with the same Supplier"
+		#define STR0027 "Holder does not have any active health care plan for the calculation month and year."
+		#define STR0028 "Holder has a health care plan with Initial and Final Period different from  the calculation Month and Year"
+		#define STR0029 "Branch: "
+		#define STR0030 "Process: "
+		#define STR0031 " Start: "
+		#define STR0032 " End: "
+		#define STR0033 "Salary/Age"
+		#define STR0034 "Co-participation or reimbursement calculated with expiring health insurance plan"
+		#define STR0035 " Supplier: "
+		#define STR0036 " Date of Occurrence: "
+		#define STR0037 " Note: "
+		#define STR0038 "Employees file with information that employee has health care plan, but it is not active."
+		#define STR0039 "Dependents file with information that dependent has health care plan, but it is not active."
+		#define STR0040 "Employee was dismissed and has altered entries. Not calculated."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Cálculo do plano de saúde", "Calculo do Plano de Saude" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Este programa calculará os valores dos Planos de Saude", "Este Programa calculará os valores dos Planos de Saude" )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Informe uma data de referência maior ou igual à competência da Folha de Pagamento.", "Informe uma data de Referência maior ou igual à Competência da Folha de Pagamento!" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "A calcular Plano de Saúde de:", "Calculando Plano de Saude de:" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Cálculo do Plano de Saúde", "Calculo do Plano de Saude" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Filtrar competência.", "Filtrar Competência!" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Início do processamento", "Inicio do processamento" )
+		#define STR0008 "Fim do processamento"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Tabela não registada ou valores fora da faixa", "Tabela não Cadastrada ou Valores fora da Faixa" )
+		#define STR0010 "Código:"
+		#define STR0011 "As. Médica"
+		#define STR0012 "As. Odontológica"
+		#define STR0013 "do Tipo"
+		#define STR0014 "Faixa Salarial"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Faixa etária", "Faixa Etária" )
+		#define STR0016 "Valor Fixo"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Porcentagem sobre salário", "Porcentagem sobre Salario" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Dependentes e agregados calculados com valores com ZEROS", "Dependentes e Agregados calculados com valores com ZEROS" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "LOG de Cálculo de Plano de Saúde", "LOG de Calculo de Plano de Saude" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Seq.Dependente:", "Seq Dependente:" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Seq.Agregado: ", "Seq Agregado: " )
+		#define STR0022 "Atenção"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Execute a opção do compatibilizador referente ao Novo Plano de Saúde. Para mais informações, verifique respectivo Boletim Técnico.", "Execute a opção do compatibilizador referente ao Novo Plano de Saúde. Para maiores informações, verifique respectivo Boletim Técnico." )
+		#define STR0024 "OK"
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Informe um período maior ou igual ao último período em aberto da folha.", "Informe um periodo maior ou igual ao Ultimo Periodo em aberto da Folha!" )
+		#define STR0026 "Titular possui mais de um plano com mesmo Fornecedor"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "O titular não possui plano de saúde activo para o mês e ano do cálculo", "Titular nao possui plano de saúde ativo para o Mês e Ano do cálculo" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Titular possui plano de saúde com período inicial e final divergente do mês e ano do cálculo", "Titular possui plano de saúde com Período Inicial e Final divergente do Mês e Ano do cálculo" )
+		#define STR0029 "Filial: "
+		#define STR0030 "Processo: "
+		#define STR0031 " Início: "
+		#define STR0032 " Fim: "
+		#define STR0033 "Salarial/Etária"
+		#define STR0034 "Co-participação ou reembolso calculado mesmo com plano de saude expirado"
+		#define STR0035 " Fornecedor: "
+		#define STR0036 " Data de Ocorrencia: "
+		#define STR0037 " Observação: "
+		#define STR0038 "Cadastro de funcionários com informação de que funcionário possui plano de saúde, porém não existe plano ativo."
+		#define STR0039 "Cadastro de dependentes com informação de que possui plano de saúde, porém não existe plano ativo."
+		#define STR0040 "Funcionário esta demitido e possui lançamentos alterados. Cálculo não foi realizado."
+	#endif
+#endif

@@ -1,0 +1,102 @@
+#ifdef SPANISH
+	#define STR0001 "Salir"
+	#define STR0002 "Confirma"
+	#define STR0003 "Reescribe"
+	#define STR0004 "Buscar"
+	#define STR0005 "Visualizar"
+	#define STR0006 "Cuestionario"
+	#define STR0007 "Laudo"
+	#define STR0008 "Incluir"
+	#define STR0009 "Modificar"
+	#define STR0010 "Borrar"
+	#define STR0011 "Laudos vs. Pregun."
+	#define STR0012 "Descripcion"
+	#define STR0013 "Realizacion"
+	#define STR0014 "Nombre"
+	#define STR0015 "Laudos"
+	#define STR0016 "Este Cuestionario no pertenece al cliente."
+	#define STR0017 "Espere...procesando"
+	#define STR0018 "Realizacion"
+	#define STR0019 "1=Activo"
+	#define STR0020 "2=Inactivo"
+	#define STR0021 "Fecha"
+	#define STR0022 "Codigo del Cuestionario"
+	#define STR0023 "La fecha del cuestionario no puede ser mayor que la fecha actual."
+	#define STR0024 "Ya existe un Cuestionario para esta Fecha"
+	#define STR0025 "El campo Fecha del examen es obligatorio."
+	#define STR0026 "El campo Tipo de examen es obligatorio."
+	#define STR0027 "¡Hay preguntas que aun no fueron respondidas!"
+	#define STR0028 "Atencion"
+	#define STR0029 "Sí"
+	#define STR0030 "No"
+	#define STR0031 "¿Bloquea campo Observación?"
+	#define STR0032 "Al seleccionar la opción Sí, el sistema podrá bloquear el campo de Observación del cuestionario de acuerdo con la opción seleccionada. En caso contrario, con la opción No, el sistema permitirá que el usuario informe respuestas en el campo de Observación."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Quit"
+		#define STR0002 "Confirm"
+		#define STR0003 "Retype"
+		#define STR0004 "Search"
+		#define STR0005 "View"
+		#define STR0006 "Questionnaire"
+		#define STR0007 "Report"
+		#define STR0008 "Add"
+		#define STR0009 "Edit"
+		#define STR0010 "Delete"
+		#define STR0011 "Reports x Quest."
+		#define STR0012 "Descript."
+		#define STR0013 "Realization"
+		#define STR0014 "Name"
+		#define STR0015 "Reports"
+		#define STR0016 "This Questionnaire does not belong to customer."
+		#define STR0017 "Wait ... Processing"
+		#define STR0018 "Execution"
+		#define STR0019 "1=Active"
+		#define STR0020 "2=Inactive"
+		#define STR0021 "Date"
+		#define STR0022 "Questionnaire Code"
+		#define STR0023 "The questionnaire date cannot be after current date."
+		#define STR0024 "There is already a Questionnaire for this Date"
+		#define STR0025 "Examination Date field is mandatory."
+		#define STR0026 "Examination Type field is mandatory."
+		#define STR0027 "There are unanswered questions!"
+		#define STR0028 "Attention"
+		#define STR0029 "Yes"
+		#define STR0030 "No"
+		#define STR0031 "Block Note field?"
+		#define STR0032 "By selecting Yes, the system may block the Note field of the questionnaire according to the option selected. By selecting No, the system allows the user to enter answers in the Note field."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Abandonar", "Abandona" )
+		#define STR0002 "Confirma"
+		#define STR0003 "Redigita"
+		#define STR0004 "Pesquisar"
+		#define STR0005 "Visualizar"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Questionário", "Questionario" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Relatório", "Laudo" )
+		#define STR0008 "Incluir"
+		#define STR0009 "Alterar"
+		#define STR0010 "Excluir"
+		#define STR0011 "Laudos x Quest."
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Realização", "Realizacao" )
+		#define STR0014 "Nome"
+		#define STR0015 "Laudos"
+		#define STR0016 "Este Questionário não pertence ao cliente."
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Aguarde ... A processar", "Aguarde ..Processando" )
+		#define STR0018 "Realização"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "1=Activo", "1=Ativo" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "2=Inactivo", "2=Inativo" )
+		#define STR0021 "Data"
+		#define STR0022 "Código do Questionário"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "A data do questionário não pode ser maior que a data actual.", "A data do questionário não pode ser maior que a data atual." )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Já existe um questionário para essa data", "Já existe um Questionário para essa Data" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "O campo data do exame é obrigatório.", "O campo Data do exame é obrigatório." )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "O campo tipo de exame é obrigatório.", "O campo Tipo de exame é obrigatório." )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Há perguntas que ainda não foram respondidas.", "Há perguntas que ainda não foram respondidas!" )
+		#define STR0028 "Atenção"
+		#define STR0029 "Sim"
+		#define STR0030 "Não"
+		#define STR0031 "Bloqueia campo Observação?"
+		#define STR0032 "Ao selecionar a opção Sim, o sistema poderá bloquear o campo de Observação do questionário conforme a opção selecionada. Caso contrário, com a opção Não, o sistema permitirá que o usuário informe respostas no campo de Observação."
+	#endif
+#endif

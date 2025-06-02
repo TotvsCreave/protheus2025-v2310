@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Recolección y entrega del equipamiento"
+	#define STR0002 "Consulta la información de los equipamientos que se entregaron y el período de inicio de su asignación"
+	#define STR0003 "Contrato"
+	#define STR0004 "Asignación"
+	#define STR0005 "Local de atención"
+	#define STR0006 "Tp. Flete"
+	#define STR0007 "Cliente"
+	#define STR0008 "Teléfono"
+	#define STR0009 "Doc. Salida"
+	#define STR0010 "Producto"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Equipment collection and delivery"
+		#define STR0002 "Query information of delivered equipment and start of its lease period. "
+		#define STR0003 "Contract"
+		#define STR0004 "Rental"
+		#define STR0005 "Service Location"
+		#define STR0006 "Tp. Freight"
+		#define STR0007 "Customer"
+		#define STR0008 "Phone Number"
+		#define STR0009 "Doc. Outflow"
+		#define STR0010 "Product"
+	#else
+		#define STR0001 "Coleta e entrega do equipamento"
+		#define STR0002 "Consulta as informações dos equipamentos que foram entregues e o período de início da sua locação"
+		#define STR0003 "Contrato"
+		#define STR0004 "Locação"
+		#define STR0005 "Local de Atendimento"
+		#define STR0006 "Tp. Frete"
+		#define STR0007 "Cliente"
+		#define STR0008 "Telefone"
+		#define STR0009 "Doc. Saída"
+		#define STR0010 "Produto"
+	#endif
+#endif

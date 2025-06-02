@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Genera pago"
+	#define STR0004 "Pago extracto de correspondiente"
+	#define STR0005 "Espere. . ."
+	#define STR0006 "Modelo de datos de pago de extractos de correspondientes"
+	#define STR0007 "Datos de pago de extractos de correspondientes"
+	#define STR0008 "Grilla de pago de extractos de correspondientes"
+	#define STR0009 "Generando pago de registros seleccionados"
+	#define STR0010 "No existen registros para procesarse"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Generates payment"
+		#define STR0004 "Correspondent Statement Payment"
+		#define STR0005 "Wait. . ."
+		#define STR0006 "Corresponding Statement Payment Data Model"
+		#define STR0007 "Corresponding Statement Payment Data"
+		#define STR0008 "Corresponding Statement Payment Grid"
+		#define STR0009 "Generating payment of selected records"
+		#define STR0010 "There are no records to process."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Gera pagamento"
+		#define STR0004 "Pagamento extrato de correspondente"
+		#define STR0005 "Aguarde. . ."
+		#define STR0006 "Modelo de Dados de Pagamento Extratos de Correspondentes"
+		#define STR0007 "Dados de Pagamento Extratos de Correspondentes"
+		#define STR0008 "Grid do Pagamento Extratos de Correspondentes"
+		#define STR0009 "Gerando pagamento dos registros selecionados"
+		#define STR0010 "Não existem registros a serem processados"
+	#endif
+#endif

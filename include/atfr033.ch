@@ -1,0 +1,117 @@
+#ifdef SPANISH
+	#define STR0001 "Funcion disponible solamente para entornos TopConnect"
+	#define STR0002 "Funcion disponible solamente en TReport"
+	#define STR0003 "Deben seleccionarse cinco monedas como maximo"
+	#define STR0004 "Ficha de Activo - Modelo 2"
+	#define STR0005 "Nombre Proveed."
+	#define STR0006 "Desc. Tipo"
+	#define STR0007 "Clasif. Tipo"
+	#define STR0008 "Metodo Depr."
+	#define STR0009 "Desc. Extendida"
+	#define STR0010 "Vida Util"
+	#define STR0011 "Valor Original    "
+	#define STR0012 "Vlr. Depr. Acum."
+	#define STR0013 "Vlr. Residual"
+	#define STR0014 "Baja"
+	#define STR0015 "Vlr. Residual"
+	#define STR0016 "Totales"
+	#define STR0017 "Vlr Baja"
+	#define STR0018 "Creando Archivo Temporal..."
+	#define STR0019 "Posicion Valorizada de los Bienes en la Fecha"
+	#define STR0020 "Total por Codigo Base: "
+	#define STR0021 " ref. Ent. Contab.: "
+	#define STR0022 "Total por Codigo Base: "
+	#define STR0023 "Total por Cuenta Contable: "
+	#define STR0024 "Total del Centro de Costo: "
+	#define STR0025 "Total por Item Contable: "
+	#define STR0026 "Total por Clase de Valor: "
+	#define STR0027 "Total por Sucursal: "
+	#define STR0028 "Total General: "
+	#define STR0029 " ******FISCAL****** "
+	#define STR0030 " *****GERENCIAL***** "
+	#define STR0031 " ****INCENTIVADO**** "
+	#define STR0032 "Valor Ampliacion"
+	#define STR0033 "Ficha do Activo"
+	#define STR0034 "Tipo              :"
+	#define STR0035 "Valores"
+	#define STR0036 "Estado Demostrativo del Activo Fijo"
+	#define STR0037 "Cod. Indice"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Funtion only available in TopConnect environments."
+		#define STR0002 "Function only available in TReport"
+		#define STR0003 "Five currencies are the maximum to associate."
+		#define STR0004 "Asset Form - Model 2"
+		#define STR0005 "Supplier Name"
+		#define STR0006 "Desc. Type"
+		#define STR0007 "Catg.Type"
+		#define STR0008 "Depr.Method"
+		#define STR0009 "Full Descrip."
+		#define STR0010 "Useful Life"
+		#define STR0011 "Source Value"
+		#define STR0012 "Acr.Depr.Vl."
+		#define STR0013 "Resid.Value"
+		#define STR0014 "Posting"
+		#define STR0015 "Resid.Value"
+		#define STR0016 "Total"
+		#define STR0017 "Posting Vl."
+		#define STR0018 "Creating temporary file..."
+		#define STR0019 "Asset Valued Position on the Date"
+		#define STR0020 "Total by Base Code: "
+		#define STR0021 " Concerning Accounting Entity: "
+		#define STR0022 "Total by Base Code: "
+		#define STR0023 "Total by Ledger Account: "
+		#define STR0024 "Total by Cost Center: "
+		#define STR0025 "Total by Accounting Item: "
+		#define STR0026 "Total by Value Category: "
+		#define STR0027 "Total by Branch: "
+		#define STR0028 "Grand Total: "
+		#define STR0029 " ******TAX****** "
+		#define STR0030 " *****MANAGEMENT***** "
+		#define STR0031 " ****INCENTIVED**** "
+		#define STR0032 "Increased Value"
+		#define STR0033 "Asset Form"
+		#define STR0034 "Data Type"
+		#define STR0035 "Values"
+		#define STR0036 "Fixed Assets Statement"
+		#define STR0037 "Code Index"
+	#else
+		#define STR0001 "Função disponível apenas para ambientes TopConnect"
+		#define STR0002 "Função disponível apenas em TReport"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Devem ser seleccionadas no máximo cinco moedas", "Devem ser selecionadas no máximo cinco moedas" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Ficha de Activo - Modelo 2", "Ficha de Ativo - Modelo 2" )
+		#define STR0005 "Nome Fornec."
+		#define STR0006 "Desc. Tipo"
+		#define STR0007 "Class. Tipo"
+		#define STR0008 "Método Depr."
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Desc. Estendida", "Desc. Extendida" )
+		#define STR0010 "Vida Útil"
+		#define STR0011 "Valor Original"
+		#define STR0012 "Vlr. Depr. Acum."
+		#define STR0013 "Vlr. Residual"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Liquidação", "Baixa" )
+		#define STR0015 "Vlr. Residual"
+		#define STR0016 "Totais"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Vlr.Liquidação", "Vlr Baixa" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "A criar ficheiro temporário...", "Criando Arquivo Temporário..." )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Posição valorizada dos bens na data", "Posicao Valorizada dos Bens na Data" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Total por código base: ", "Total por Codigo Base: " )
+		#define STR0021 " ref. Ent. Contab.: "
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Total por código base: ", "Total por Codigo Base: " )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Total por conta contabilística: ", "Total por Conta Contabil: " )
+		#define STR0024 "Total por Centro de Custo: "
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Total por Item Contabilístico: ", "Total por Item Contabil: " )
+		#define STR0026 "Total por Classe de Valor: "
+		#define STR0027 "Total por Filial: "
+		#define STR0028 "Total Geral: "
+		#define STR0029 " ******FISCAL****** "
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", " *****DE GESTÃO***** ", " *****GERENCIAL***** " )
+		#define STR0031 " ****INCENTIVADO**** "
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Valor ampliação", "Valor Ampliação" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Ficha do Activo", "Ficha do Ativo" )
+		#define STR0034 "Dados Tipo"
+		#define STR0035 "Valores"
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "Demonstrativo de Activo Fixo", "Demonstrativo de Ativo Fixo" )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Cód. Índice", "Cod. Índice" )
+	#endif
+#endif

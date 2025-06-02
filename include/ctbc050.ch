@@ -1,0 +1,171 @@
+#ifdef SPANISH
+	#define STR0001 "Datos generales"
+	#define STR0002 "Valores de la cancelacion"
+	#define STR0003 "Principal"
+	#define STR0004 "Titulo"
+	#define STR0005 "Emision"
+	#define STR0006 "Vencto.actual"
+	#define STR0007 "Proveed."
+	#define STR0008 "Hist.emision"
+	#define STR0009 "Portador"
+	#define STR0010 "Banco"
+	#define STR0011 "Agencia"
+	#define STR0012 "Cuenta"
+	#define STR0013 "Fecha Cobr."
+	#define STR0014 "Hist.Canc."
+	#define STR0015 "Cheque Num."
+	#define STR0016 "Beneficiario"
+	#define STR0017 "Mot.Canc."
+	#define STR0018 "Valor Original"
+	#define STR0019 "- Rebajas"
+	#define STR0020 "- Pagos Parciales"
+	#define STR0021 "- Descuentos"
+	#define STR0022 "+ Multa"
+	#define STR0023 "+ Ts.Permanenc."
+	#define STR0024 "= Valor Pagado"
+	#define STR0025 "Valor "
+	#define STR0026 "+ Corr.Monetaria"
+	#define STR0027 "Canc. por Pagar"
+	#define STR0028 "Canc. por Cobrar"
+	#define STR0029 "Cliente"
+	#define STR0030 "Situacion"
+	#define STR0031 "= Valor Cobrado"
+	#define STR0032 "Compensar Titulos a Pagar"
+	#define STR0033 "Prefijo"
+	#define STR0034 "Numero"
+	#define STR0035 "Cuota"
+	#define STR0036 "Tipo"
+	#define STR0037 "Fecha"
+	#define STR0038 "Documento"
+	#define STR0039 "Sec"
+	#define STR0040 "Valor del Titulo"
+	#define STR0041 "Valor Compensado"
+	#define STR0042 "Proveedor"
+	#define STR0043 "Tienda"
+	#define STR0044 "Compensar Titulos por Cobrar"
+	#define STR0045 "Facturas por Pagar"
+	#define STR0046 "Total de Facturas"
+	#define STR0047 "Valor de la Factura"
+	#define STR0048 "Seleccionando Registros..."
+	#define STR0049 "Facturas por Cobrar"
+	#define STR0050 "Transferencias titulos por cobrar"
+	#define STR0051 "Situacion Actual"
+	#define STR0052 "Transferir para"
+	#define STR0053 "Contrato"
+	#define STR0054 "Portador"
+	#define STR0055 "Num. Portador"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "General Data"
+		#define STR0002 "Posting Values"
+		#define STR0003 "Main"
+		#define STR0004 "Bill"
+		#define STR0005 "Issue"
+		#define STR0006 "Curr.Due Dt."
+		#define STR0007 "Suppl."
+		#define STR0008 "Issue Hist."
+		#define STR0009 "Bearer"
+		#define STR0010 "Bank"
+		#define STR0011 "Branch"
+		#define STR0012 "Account"
+		#define STR0013 "Receiv.Dt."
+		#define STR0014 "Pst.Hist."
+		#define STR0015 "Check No."
+		#define STR0016 "Beneficiary"
+		#define STR0017 "Pst.Reas."
+		#define STR0018 "Original Value"
+		#define STR0019 "- Allowances"
+		#define STR0020 "- Partial Paym."
+		#define STR0021 "- Discounts"
+		#define STR0022 "+ Fee"
+		#define STR0023 "+ Perman.Fee"
+		#define STR0024 "= Paid Val."
+		#define STR0025 "Value "
+		#define STR0026 "+ Monet.Corr."
+		#define STR0027 "Postings Payable"
+		#define STR0028 "Postings Receivable"
+		#define STR0029 "Customer"
+		#define STR0030 "Status"
+		#define STR0031 "= Received Value"
+		#define STR0032 "Clearance of Bills payable"
+		#define STR0033 "Prefix"
+		#define STR0034 "Number"
+		#define STR0035 "Installment"
+		#define STR0036 "Type"
+		#define STR0037 "Date"
+		#define STR0038 "Document"
+		#define STR0039 "Seq"
+		#define STR0040 "Bill´s Value"
+		#define STR0041 "Cleared Value"
+		#define STR0042 "Supplier"
+		#define STR0043 "Shop"
+		#define STR0044 "Clearance of Bills receivable"
+		#define STR0045 "Invoices Payable"
+		#define STR0046 "Invoices Total"
+		#define STR0047 "Invoice Value"
+		#define STR0048 "Selecting Files..."
+		#define STR0049 "Invoices Receivable"
+		#define STR0050 "Transfer of Bills Receivable"
+		#define STR0051 "Current Status"
+		#define STR0052 "Transfer to"
+		#define STR0053 "Contract"
+		#define STR0054 "Bearer"
+		#define STR0055 "Bearer No."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Dados Criais", "Dados Gerais" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Valores Da Liquidação", "Valores da Baixa" )
+		#define STR0003 "Principal"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Título", "Titulo" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Emissão", "Emissao" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Venc. .actual", "Vencto.Atual" )
+		#define STR0007 "Fornec."
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Historial da emissão", "Hist.Emissao" )
+		#define STR0009 "Portador"
+		#define STR0010 "Banco"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Agência", "Agencia" )
+		#define STR0012 "Conta"
+		#define STR0013 "Data Receb."
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Historial da liquidação", "Hist.Baixa" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Cheque Nr.", "Cheque No." )
+		#define STR0016 "Beneficiário"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Mot.liquidação", "Mot.Baixa" )
+		#define STR0018 "Valor Original"
+		#define STR0019 "- Abatimentos"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "- Pagamentos Parciais", "- Pagtos.Parciais" )
+		#define STR0021 "- Descontos"
+		#define STR0022 "+ Multa"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "+ Tx.permanenc.", "+ Tx.Permanenc." )
+		#define STR0024 "= Valor Pago"
+		#define STR0025 "Valor "
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "+ Corr. Monetária", "+ Corr.Monetaria" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Baixas A Pagar", "Baixas a Pagar" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Baixas A Receber", "Baixas a Receber" )
+		#define STR0029 "Cliente"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Situação", "Situacao" )
+		#define STR0031 "= Valor Recebido"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Compensação De Títulos A Pagar", "Compensacao Titulos a Pagar" )
+		#define STR0033 "Prefixo"
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Número", "Numero" )
+		#define STR0035 "Parcela"
+		#define STR0036 "Tipo"
+		#define STR0037 "Data"
+		#define STR0038 "Documento"
+		#define STR0039 "Seq"
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Valor Do Título", "Valor do Titulo" )
+		#define STR0041 "Valor Compensado"
+		#define STR0042 "Fornecedor"
+		#define STR0043 "Loja"
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Compensação De Títulos A Receber", "Compensacao Titulos a Receber" )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Facturas A Pagar", "Faturas a Pagar" )
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Total De Notas", "Total de Notas" )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Valor Da Factura", "Valor da Fatura" )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "A Seleccionar Registos...", "Selecionando Registros..." )
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Facturas A Receber", "Faturas a Receber" )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Transferência De Títulos A Receber", "Transferencias Titulos Receber" )
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "Posição Actual", "Posicao Atual" )
+		#define STR0052 "Transferir para"
+		#define STR0053 "Contrato"
+		#define STR0054 "Portador"
+		#define STR0055 "Nro Portador"
+	#endif
+#endif

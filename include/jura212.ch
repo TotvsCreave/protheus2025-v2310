@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Causa raíz"
+	#define STR0008 "Modelo de datos de la causa raíz"
+	#define STR0009 "Datos de la causa raíz"
+	#define STR0010 "Datos de la clasificación de la causa raíz"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Print"
+		#define STR0007 "Root Cause"
+		#define STR0008 "Model of Root Cause Data"
+		#define STR0009 "Root Cause Data"
+		#define STR0010 "Root Cause Classification Data"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Causa Raiz"
+		#define STR0008 "Modelo de Dados de Causa Raiz"
+		#define STR0009 "Dados da Causa Raiz"
+		#define STR0010 "Dados da Classificação da Causa Raiz"
+	#endif
+#endif

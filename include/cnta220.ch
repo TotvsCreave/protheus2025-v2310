@@ -1,0 +1,60 @@
+#ifdef SPANISH
+	#define STR0001 "Evaluacion Proveedor vs. Contrato"
+	#define STR0002 "Contrato"
+	#define STR0003 "Revision"
+	#define STR0004 "Cod. Prov."
+	#define STR0005 "Tienda Prov."
+	#define STR0006 "Nombre Prov."
+	#define STR0007 "Historial del Contrato"
+	#define STR0008 "Proveedores"
+	#define STR0009 "Todos los proveedores deben ser evaluados"
+	#define STR0010 "¿Desea realmente anular la evaluacion de los proveedores?"
+	#define STR0011 "Si"
+	#define STR0012 "No"
+	#define STR0013 "Imposible ejecutar la rutina de evaluacion de los proveedores, tabla 'CNM' inexiste en la estructura del SX3."
+	#define STR0014 "Historial del Proveedor"
+	#define STR0015 "Imposible ejecutar rutina, pues se trata de un contrato para cliente"
+	#define STR0016 "¡El contrato no tiene evaluacion!"
+	#define STR0017 "¡El proveedor no tiene evaluacion!"
+	#define STR0018 "Atencion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Supplier vs. Contract evaluation"
+		#define STR0002 "Contract"
+		#define STR0003 "Review "
+		#define STR0004 "Supplier code"
+		#define STR0005 "Supplier store"
+		#define STR0006 "Supplier name"
+		#define STR0007 "Contract history "
+		#define STR0008 "Suppliers "
+		#define STR0009 "All supppliers must be evaluated "
+		#define STR0010 "Will you really cancel the supplier evaluation? "
+		#define STR0011 "Yes"
+		#define STR0012 "No "
+		#define STR0013 "Unable to execute the suppliers analysis routine, table 'CNM' not existing in SX3 structure."
+		#define STR0014 "Supplier history "
+		#define STR0015 "Unable to execute the routine because it is a contract for a client "
+		#define STR0016 "Contract without evaluation!"
+		#define STR0017 "Vendor without evaluation!"
+		#define STR0018 "Attention"
+	#else
+		#define STR0001 "Avaliação Fornecedor X Contrato"
+		#define STR0002 "Contrato"
+		#define STR0003 "Revisão"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Cód. Forn.", "Cod. Forn." )
+		#define STR0005 "Loja Forn."
+		#define STR0006 "Nome Forn."
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Histórico Do Contrato", "Histórico do Contrato" )
+		#define STR0008 "Fornecedores"
+		#define STR0009 "Todos os fornecedores devem ser avaliados"
+		#define STR0010 "Deseja realmente cancelar a avaliação dos fornecedores?"
+		#define STR0011 "Sim"
+		#define STR0012 "Não"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Impossível Executar Procedimento De Avaliação Dos Fornecedores, Tabela 'cnm' Inexistente Na Estrutura Do Sx3.", "Impossível executar rotina de avaliação dos fornecedores, tabela 'CNM' inexistente na estrutura do SX3." )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Histórico Do Fornecedor", "Histórico do Fornecedor" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Impossível executar operação pois trata-se de um contrato para cliente", "Impossível executar rotina pois se trata de um contrato para cliente" )
+		#define STR0016 "O contrato não possui avaliação!"
+		#define STR0017 "O fornecedor não possui avaliação!"
+		#define STR0018 "Atenção"
+	#endif
+#endif

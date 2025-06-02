@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "CheckList"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Efectiva"
+	#define STR0007 "Copiar"
+	#define STR0008 "Vigente"
+	#define STR0009 "Pendiente"
+	#define STR0010 "Obsoleto"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Checklist"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Effective"
+		#define STR0007 "Copy"
+		#define STR0008 "In Force"
+		#define STR0009 "Pending"
+		#define STR0010 "Obsolete"
+	#else
+		#define STR0001 "Checklist"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Efetiva"
+		#define STR0007 "Copiar"
+		#define STR0008 "Vigente"
+		#define STR0009 "Pendente"
+		#define STR0010 "Obsoleto"
+	#endif
+#endif

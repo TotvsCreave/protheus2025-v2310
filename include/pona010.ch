@@ -1,0 +1,171 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Archivo de Marcaciones"
+	#define STR0007 "Ya existen Marcaciones registrados para este empleado. Seleccione la opcion Modificacion"
+	#define STR0008 "Leyenda"
+	#define STR0009 "No fue posible crear el Calendario de Marcaciones para el periodo informado"
+	#define STR0010 "Aviso de Inconsistencia"
+	#define STR0011 "El Orden informado es invalido para o periodo"
+	#define STR0012 "El periodo informado es invalido"
+	#define STR0013 "Ordenar Marcaciones <F5>"
+	#define STR0014 "Ordenando Marcaciones..."
+	#define STR0015 "Calendario de Marcaciones <F6>..."
+	#define STR0016 "Creando el Calendario..."
+	#define STR0017 "Elaborando el Calendario..."
+	#define STR0018 "Limpiar Ordenes <F7>..."
+	#define STR0019 "Limpiando Ordenes..."
+	#define STR0020 "Periodo:"
+	#define STR0021 "Inicial:"
+	#define STR0022 "Final:"
+	#define STR0023 "Si"
+	#define STR0024 "No"
+	#define STR0025 "¿Limpiar Ordenes de Items Informados/Modificados?"
+	#define STR0026 "¿Considerar el Periodo de Apunte o la Fecha?"
+	#define STR0027 "Periodo"
+	#define STR0028 "Fecha"
+	#define STR0029 "Ordenar Marcacion <F4>..."
+	#define STR0030 "Ordenando Marcacion..."
+	#define STR0031 "Indexar Registros <F8>..."
+	#define STR0032 "Indexando Registros..."
+	#define STR0033 "Indexacion:"
+	#define STR0034 "Indexar los Registros de Marcaciones en orden:"
+	#define STR0035 "Ascendiente"
+	#define STR0036 "Descendiente"
+	#define STR0037 "Borrar, ademas de los apuntes calculados por el sistema, ¿los apuntes informados por el usuario?"
+	#define STR0038 "Grabando Marcaciones..."
+	#define STR0039 "Borrando Marcaciones..."
+	#define STR0040 "Borrando Apuntes..."
+	#define STR0041 ""
+	#define STR0042 "Filtrar Registros <F9>..."
+	#define STR0043 "Filtro Registros de Marcaciones:"
+	#define STR0044 "No ordenadas"
+	#define STR0045 "Ordenadas e impares"
+	#define STR0046 "Duplicadas"
+	#define STR0047 "Considerar el periodo:"
+	#define STR0048 "Despues de seleccionar pulse la tecla <TAB> para habilitar la digitacion del periodo"
+	#define STR0049 "No existen informaciones a disposicion"
+	#define STR0050 "¿Desea seleccionar periodo?"
+	#define STR0113 "Ordenar"
+	#define STR0115 "Calend."
+	#define STR0118 "Limpiar"
+	#define STR0131 "Indexar"
+	#define STR0142 "Filtrar"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Insert"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Time Record File"
+		#define STR0007 "There are already time records registered for this employee. Select the option Editing"
+		#define STR0008 "Caption"
+		#define STR0009 "No Time Record calendar was possible to be created for the informed period"
+		#define STR0010 "Inconsistency Warning"
+		#define STR0011 "The Informed Order is not valid for the period"
+		#define STR0012 "Period informed is invalid"
+		#define STR0013 "Order Time Records <F5>..."
+		#define STR0014 "Ordering Time Records."
+		#define STR0015 "Time Record Calendar <F6>..."
+		#define STR0016 "Creating Calendar..."
+		#define STR0017 "Structuring a Calendar.."
+		#define STR0018 "Clear Orders <F7>..."
+		#define STR0019 "Cleaning the Orders.."
+		#define STR0020 "Period:"
+		#define STR0021 "Initial:"
+		#define STR0022 "Final:"
+		#define STR0023 "Yes"
+		#define STR0024 "No"
+		#define STR0025 "Clean Informed/Changed Items Orders"
+		#define STR0026 "Consider the Date or Period Registered"
+		#define STR0027 "Periodo"
+		#define STR0028 "Date"
+		#define STR0029 "Order Time Record <F4>..."
+		#define STR0030 "Ordering Time Records"
+		#define STR0031 "Index Entries <F8>..."
+		#define STR0032 "Indexing Entries..."
+		#define STR0033 "Indexing:"
+		#define STR0034 "Index the Time Records Entries in order:"
+		#define STR0035 "Increasing"
+		#define STR0036 "Descreasing"
+		#define STR0037 "Delete the records informed by the user besides the ones calculated by the system"
+		#define STR0038 "Recording Time Records"
+		#define STR0039 "Deleting Time Records."
+		#define STR0040 "Deleting Registrations..."
+		#define STR0041 ""
+		#define STR0042 "Filter Entries <F9>..."
+		#define STR0043 "Filter Time Records Entries:"
+		#define STR0044 "Not ordered"
+		#define STR0045 "Orded and Odd numbers"
+		#define STR0046 "Trade Notes"
+		#define STR0047 "Consider period:"
+		#define STR0048 "After selecting press the key <TAB> to enable the period typing"
+		#define STR0049 "There is no information to be made available"
+		#define STR0050 "Do you require to select the period"
+		#define STR0113 "Order"
+		#define STR0115 "Calendar"
+		#define STR0118 "Clean"
+		#define STR0131 "Index"
+		#define STR0142 "Filter"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Registo De Marcações", "Cadastro de Marcaçöes" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Já Existem Marcaçöes cadastradas para este empregado. Selecione a opçäo de Alteraçäo", "Já Existem Marcaçöes cadastradas para este funcionário. Selecione a opçäo de Alteraçäo" )
+		#define STR0008 "Legenda"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Não foi possível criar o calendário de Marcaçöes para o período informado", "Näo foi possível criar o calendário de Marcaçöes para o período informado" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Aviso De Inconsistência", "Aviso de Inconsistência" )
+		#define STR0011 "A Ordem informada näo é válida para o período"
+		#define STR0012 "O período informado näo é válido"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Ordenar marcações <f5>...", "Ordenar Marcaçöes <F5>" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "A Ordenar Marcações...", "Ordenando Marcaçöes..." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Calendário de marcações <f6>...", "Calendário de Marcaçöes <F6>" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "A Criar O Calendário...", "Criando o Calendário..." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "A Construir O Calendário...", "Montando o Calendário..." )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Limpar as ordens <f7>...", "Limpar as Ordens <F7>" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "A Limpar As Ordens...", "Limpando as Ordens..." )
+		#define STR0020 "Período:"
+		#define STR0021 "Inicial:"
+		#define STR0022 "Final:"
+		#define STR0023 "Sim"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Não", "Näo" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Limpar Ordens De Itens Introduzidos/modificados?", "Limpar Ordens de Itens Informados/Modificados?" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Considerar O Período De Registo Ou A Data?", "Considerar o Periodo de Apontamento ou a Data?" )
+		#define STR0027 "Período"
+		#define STR0028 "Data"
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Ordenar Marcaçäo <F4>...", "Ordenar Marcaçäo Atual <F4>" )
+		#define STR0030 "Ordenando Marcaçäo..."
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Indexar movimentos <f8>...", "Indexar Lançamentos <F8>" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "A Indexar Movimentos...", "Indexando Lançamentos..." )
+		#define STR0033 "Indexaçäo:"
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Indexar os movimentos de marcações em ordem:", "Indexar os Lançamentos de Marcaçöes em ordem:" )
+		#define STR0035 "Ascendente"
+		#define STR0036 "Descendente"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Excluir, além dos registos calculados pelo sistema, os registos introduzidos pelo utilizador?", "Excluir, alêm dos apontamentos calculados pelo sistema, os apontamentos informados pelo usuário?" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "A Gravar Marcações...", "Gravando Marcaçöes..." )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "A Eliminar Marcações...", "Excluindo Marcaçöes..." )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "A Eliminar Registos...", "Excluindo Apontamentos..." )
+		#define STR0041 ""
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Filtrar movimentos <f9>...", "Filtrar Lançamentos <F9>" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Filtro Movimentos De Marcações:", "Filtro Lançamentos de Marcaçöes:" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Não ordenadas", "Näo ordenadas" )
+		#define STR0045 "Ordenadas e ímpares"
+		#define STR0046 "Duplicadas"
+		#define STR0047 "Considerar o período:"
+		#define STR0048 "Após selecionar pressione a tecla <TAB> para habilitar a digitaçäo do período"
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Não existem informações a serem disponibilizadas", "Näo existem informaçöes a serem disponibilizadas" )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Deseja seleccionar período?", "Deseja selecionar período?" )
+		#define STR0113 "Ordenar"
+		#define STR0115 "Calend."
+		#define STR0118 "Limpar"
+		#define STR0131 "Indexar"
+		#define STR0142 "Filtrar"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Mapa de separacion consolidado"
+	#define STR0002 "Espere..."
+	#define STR0003 "No fue posible encontrar algun mapa de separacion con base en los parametros seleccionados."
+	#define STR0004 "Movimientos por direccion"
+	#define STR0005 "Carga: "
+	#define STR0006 "Pedido: "
+	#define STR0007 "Direcc. Servicio: __________"
+	#define STR0008 "Fraccionado"
+	#define STR0009 "Empaquetado"
+	#define STR0010 "Marca/Desmarca todos"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Consolidated Separation Map"
+		#define STR0002 "Wait..."
+		#define STR0003 "Could not find a separation map based on selected parameters!"
+		#define STR0004 "Transactions by Address"
+		#define STR0005 "Shipment: "
+		#define STR0006 "Order: "
+		#define STR0007 "Service Addr.: __________"
+		#define STR0008 "Split"
+		#define STR0009 "Packed"
+		#define STR0010 "Check/Uncheck All"
+	#else
+		#define STR0001 "Mapa de Separação Consolidado"
+		#define STR0002 "Aguarde..."
+		#define STR0003 "Não foi possível encontrar nenhum mapa de separação com base nos parâmetros selecionados!"
+		#define STR0004 "Movimentos por Endereço"
+		#define STR0005 "Carga: "
+		#define STR0006 "Pedido: "
+		#define STR0007 "End. Serviço: __________"
+		#define STR0008 "Fracionado"
+		#define STR0009 "Embalado"
+		#define STR0010 "Marca/Desmarca todos"
+	#endif
+#endif

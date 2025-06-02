@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Vehiculos en viajes"
+	#define STR0002 "Matricula del camion"
+	#define STR0003 "Vehiculo"
+	#define STR0004 "Sucursal de origen"
+	#define STR0005 "Numero del viaje"
+	#define STR0006 "Visualizar"
+	#define STR0007 "Ultimo dia"
+	#define STR0008 "Ultimos 7 dias"
+	#define STR0009 "Ultimos 30 dias"
+	#define STR0010 "Ultimos 365 dias"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Vehicles in Trips"
+		#define STR0002 "Truck License Plate"
+		#define STR0003 "Vehicle"
+		#define STR0004 "Origin branch"
+		#define STR0005 "Trip Number"
+		#define STR0006 "View"
+		#define STR0007 "Last day"
+		#define STR0008 "Last 7 days"
+		#define STR0009 "Last 30 days"
+		#define STR0010 "Last 365 days"
+	#else
+		#define STR0001 "Veículos em Viagens"
+		#define STR0002 "Placa do Caminhao"
+		#define STR0003 "Veiculo"
+		#define STR0004 "Filial de Origem"
+		#define STR0005 "Numero da Viagem"
+		#define STR0006 "Visualizar"
+		#define STR0007 "Ultimo dia"
+		#define STR0008 "Ultimos 7 dias"
+		#define STR0009 "Ultimos 30 dias"
+		#define STR0010 "Ultimos 365 dias"
+	#endif
+#endif

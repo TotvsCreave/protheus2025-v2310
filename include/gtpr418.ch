@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Comisión de tipo de recurso por período"
+	#define STR0002 "Genera el informe de comisión de tipo de recurso por período"
+	#define STR0003 "Código Colab."
+	#define STR0004 "Nombre del colaborador"
+	#define STR0005 "Tipo de recurso"
+	#define STR0006 "Fecha de la Venta"
+	#define STR0007 "% Comisión"
+	#define STR0008 "Valor base"
+	#define STR0009 "Valor comisión"
+	#define STR0010 "Totales del colaborador"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Comissão de Tipo de Recurso por Período"
+		#define STR0002 "Gera o relátorio de comissão de tipo de recurso por período"
+		#define STR0003 "Código Colab."
+		#define STR0004 "Nome do Colaborador"
+		#define STR0005 "Tipo de Recurso"
+		#define STR0006 "Data da Venda"
+		#define STR0007 "% Comissão"
+		#define STR0008 "Valor Base"
+		#define STR0009 "Valor Comissão"
+		#define STR0010 "Totais do Colaborador"
+	#else
+		#define STR0001 "Comissão de Tipo de Recurso por Período"
+		#define STR0002 "Gera o relátorio de comissão de tipo de recurso por período"
+		#define STR0003 "Código Colab."
+		#define STR0004 "Nome do Colaborador"
+		#define STR0005 "Tipo de Recurso"
+		#define STR0006 "Data da Venda"
+		#define STR0007 "% Comissão"
+		#define STR0008 "Valor Base"
+		#define STR0009 "Valor Comissão"
+		#define STR0010 "Totais do Colaborador"
+	#endif
+#endif

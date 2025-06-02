@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Pesquisar"
+	#define STR0002 "Incluir"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Alterar"
+	#define STR0005 "Excluir"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Redutores"
+	#define STR0008 "Dados dos Redutores"
+	#define STR0009 "Já existem registros com as informações utilizadas"
+	#define STR0010 "Verificar os seguintes campos: Código Tipo Assunto Jurídico, Código da Área e Código Assunto."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Incluir"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Redutores"
+		#define STR0008 "Dados dos Redutores"
+		#define STR0009 "Já existem registros com as informações utilizadas"
+		#define STR0010 "Verificar os seguintes campos: Código Tipo Assunto Jurídico, Código da Área e Código Assunto."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Incluir"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Redutores"
+		#define STR0008 "Dados dos Redutores"
+		#define STR0009 "Já existem registros com as informações utilizadas"
+		#define STR0010 "Verificar os seguintes campos: Código Tipo Assunto Jurídico, Código da Área e Código Assunto."
+	#endif
+#endif

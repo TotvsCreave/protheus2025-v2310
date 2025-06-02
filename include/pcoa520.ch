@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Sale"
+	#define STR0007 "Confirma"
+	#define STR0008 "Redigita"
+	#define STR0009 "Grupos de aprobacion"
+	#define STR0010 "Código"
+	#define STR0011 "Descripcion"
+	#define STR0012 "El código de grupo de aprobación '"
+	#define STR0013 "' está registrado. Informe otro código de grupo de aprobación."
+	#define STR0014 "No es posible registrar el grupo de aprobacion sin Usuario. Informe un usuario."
+	#define STR0015 "No es possible registrar el grupo de aprobacion sin Nivel. Informe un nivel."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Quit"
+		#define STR0007 "Confirm"
+		#define STR0008 "Reenter"
+		#define STR0009 "Approval Groups"
+		#define STR0010 "Code"
+		#define STR0011 "Description"
+		#define STR0012 "The code of approval group '"
+		#define STR0013 "' is already registered. Enter another approval group code."
+		#define STR0014 "You cannot register the approval group without a User. Enter a user."
+		#define STR0015 "You cannot register the approval group without a Level. Enter a level."
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Abandona"
+		#define STR0007 "Confirma"
+		#define STR0008 "Redigita"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Grupos de Aprovação", "Grupos de Aprovacao" )
+		#define STR0010 "Codigo"
+		#define STR0011 "Descrição"
+		#define STR0012 "O código de grupo de aprovação '"
+		#define STR0013 "' já está cadastrado. Informe outro código de grupo de aprovação."
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Não é possível registar o grupo de aprovação sem Utilizador. Informe um utilizador.", "Não é possivel cadastrar o grupo de aprovação sem Usuário. Informe um usuário." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Não é possível registar o grupo de aprovação sem Nível. Informe um nível.", "Não é possivel cadastrar o grupo de aprovação sem Nível. Informe um nível." )
+	#endif
+#endif

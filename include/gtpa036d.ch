@@ -1,0 +1,96 @@
+#ifdef SPANISH
+	#define STR0001 "Asistente de Importación/Exportación DARUMA"
+	#define STR0002 "Asistente"
+	#define STR0003 "Lista de agencias"
+	#define STR0004 "Estructura Fake del encabezado"
+	#define STR0005 "Código GI6"
+	#define STR0006 "Código GI6"
+	#define STR0007 "Arch. Post venta"
+	#define STR0008 "Directorio de los archivos post ventas"
+	#define STR0009 "Arch. Sin formato"
+	#define STR0010 "Directorio de los archivos sin formateos"
+	#define STR0011 "Arch. Flash"
+	#define STR0012 "Directorio de los archivos Flash"
+	#define STR0013 "Seleccionar"
+	#define STR0014 "Arch. Post venta"
+	#define STR0015 "Directorio de los archivos post ventas"
+	#define STR0016 "Directorio de los archivos post ventas"
+	#define STR0017 "Arch. Sin formato"
+	#define STR0018 "Directorio de los archivos sin formateos"
+	#define STR0019 "Directorio de los archivos sin formateos"
+	#define STR0020 "Arch. Flash"
+	#define STR0021 "Directorio de los archivos Flash"
+	#define STR0022 "Directorio de los archivos Flash"
+	#define STR0023 "Seleccionar"
+	#define STR0024 "Sentido que se seleccionará"
+	#define STR0025 'La línea seleccionada se encuentra bloqueada'
+	#define STR0026 'Verifique el archivo de líneas '
+	#define STR0027 "Sentido"
+	#define STR0028 "1=Ida"
+	#define STR0029 '2=Vuelta'
+	#define STR0030 '3-Ambos'
+#else
+	#ifdef ENGLISH
+		#define STR0001 "DARUMA import/export wizard"
+		#define STR0002 "Wizard"
+		#define STR0003 "Agency List"
+		#define STR0004 "Header Fake Structure"
+		#define STR0005 "Code GI6"
+		#define STR0006 "Code GI6"
+		#define STR0007 "Arq. After-sale files"
+		#define STR0008 "Directory of after-sale files"
+		#define STR0009 "File without format"
+		#define STR0010 "Directory of files without formatting"
+		#define STR0011 "Arq. Flash files"
+		#define STR0012 "Directory of Flash files"
+		#define STR0013 "Select"
+		#define STR0014 "Arq. After-sale files"
+		#define STR0015 "Directory of after-sale files"
+		#define STR0016 "Directory of after-sale files"
+		#define STR0017 "File without format"
+		#define STR0018 "Directory of files without formatting"
+		#define STR0019 "Directory of files without formatting"
+		#define STR0020 "Arq. Flash files"
+		#define STR0021 "Directory of Flash files"
+		#define STR0022 "Directory of Flash files"
+		#define STR0023 "Select"
+		#define STR0024 "Direction to select"
+		#define STR0025 'Line selected is blocked'
+		#define STR0026 'Check line registers '
+		#define STR0027 "Direction"
+		#define STR0028 "1=Go"
+		#define STR0029 '2=Back'
+		#define STR0030 '3=Both'
+	#else
+		#define STR0001 "Assistente de Importacao/Exportacao DARUMA"
+		#define STR0002 "Assistente"
+		#define STR0003 "Lista de Agencias"
+		#define STR0004 "Estrutura Fake do Cabeçalho"
+		#define STR0005 "Código GI6"
+		#define STR0006 "Código GI6"
+		#define STR0007 "Arq. Pós-Venda"
+		#define STR0008 "Diretório dos arquivos Pós-Vendas"
+		#define STR0009 "Arq. Sem Formato"
+		#define STR0010 "Diretório dos arquivos sem formatações"
+		#define STR0011 "Arq. Flash"
+		#define STR0012 "Diretório dos arquivos Flash"
+		#define STR0013 "Selecionar"
+		#define STR0014 "Arq. Pos-Venda"
+		#define STR0015 "Diretorio dos arquivos Pos-Vendas"
+		#define STR0016 "Diretorio dos arquivos Pos-Vendas"
+		#define STR0017 "Arq. Sem Formato"
+		#define STR0018 "Diretorio dos arquivos sem formatacoes"
+		#define STR0019 "Diretorio dos arquivos sem formatacoes"
+		#define STR0020 "Arq. Flash"
+		#define STR0021 "Diretorio dos arquivos Flash"
+		#define STR0022 "Diretorio dos arquivos Flash"
+		#define STR0023 "Selecionar"
+		#define STR0024 "Sentido a ser selecionado"
+		#define STR0025 'Linha selecionada se encontra bloqueada'
+		#define STR0026 'Verifique o cadastros de linhas '
+		#define STR0027 "Sentido"
+		#define STR0028 "1=Ida"
+		#define STR0029 '2=Volta'
+		#define STR0030 '3=Ambos'
+	#endif
+#endif

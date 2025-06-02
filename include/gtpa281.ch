@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Parámetros del módulo"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Rellene Cont."
+	#define STR0004 "Incluir"
+	#define STR0005 "Excluir"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Parámetros del módulo"
+	#define STR0008 "¡Parámetro ya registrado!"
+	#define STR0009 "¡Valor inválido! ¡Digite .T. o .F. !"
+	#define STR0010 "¡Valor inválido! Digite solo valores numéricos."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Module Parameters"
+		#define STR0002 "View"
+		#define STR0003 "Completes Cont."
+		#define STR0004 "Add"
+		#define STR0005 "Delete"
+		#define STR0006 "Print"
+		#define STR0007 "Module Parameters"
+		#define STR0008 "Parameter already registered!"
+		#define STR0009 "Invalid value! Enter .T. or .F. !"
+		#define STR0010 "Invalid value! Enter only numerical values."
+	#else
+		#define STR0001 "Parâmetros do Módulo"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Preenche Cont."
+		#define STR0004 "Incluir"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Parâmetros do Módulo"
+		#define STR0008 "Parâmetro já cadastrado!"
+		#define STR0009 "Valor inválido! Digite .T. ou .F. !"
+		#define STR0010 "Valor inválido! Digite apenas valores numéricos."
+	#endif
+#endif

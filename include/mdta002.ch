@@ -1,0 +1,327 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de empleados"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Resumen"
+	#define STR0005 "Leyenda"
+	#define STR0006 "Incluir"
+	#define STR0007 "Modificar"
+	#define STR0008 "Borrar"
+	#define STR0009 "Examenes"
+	#define STR0010 "Todos los empleados."
+	#define STR0011 "Hist. Funciones"
+	#define STR0012 "Empleados do Cliente: "
+	#define STR0013 "ATENCION"
+	#define STR0014 "El centro de costo no pertence al Cliente/Loja: "
+	#define STR0015 "La funcion no pertenece al Cliente/Tienda: "
+	#define STR0016 "Licencias"
+	#define STR0017 "Matricula:"
+	#define STR0018 "Nombre:"
+	#define STR0019 "Ingreso:"
+	#define STR0020 "Existe licencia sin fecha de retorno"
+	#define STR0021 "No puede existir registro diferente para la misma fecha o mismo intervalo de licencia"
+	#define STR0022 "No pueden existir licencias posteriores a una licencia sin fecha de retorno"
+	#define STR0023 "Tipo de licencia obligatoria"
+	#define STR0024 "Mantenimiento del Historial de C.Costos"
+	#define STR0025 "Fch. Transfer"
+	#define STR0026 "Empr. Origen"
+	#define STR0027 "Suc. Origen "
+	#define STR0028 "Mat. Origen "
+	#define STR0029 "C.C. Origen "
+	#define STR0030 "Empr.Destino"
+	#define STR0031 "Suc. Destino"
+	#define STR0032 "Mat. Destino"
+	#define STR0033 "C.C. Destino"
+	#define STR0034 "Fecha de la transferencia en el historial:"
+	#define STR0035 "Origen"
+	#define STR0036 "Destino"
+	#define STR0037 "Empresa:"
+	#define STR0038 "Sucursal:"
+	#define STR0039 "Matricula:"
+	#define STR0040 "C.Costo:"
+	#define STR0041 "El centro de costo no pertenece a la Empresa donde trabaja el empleado. "
+	#define STR0042 "Seleccione solamente centro de costo que tenga el siguiente prefijo: "
+	#define STR0043 "El centro de costo origen y destino no pueden ser los mismos."
+	#define STR0044 "Busq. Por nombre"
+	#define STR0045 "Busqueda"
+	#define STR0046 "Transferencia"
+	#define STR0047 "Transferen"
+	#define STR0048 "No se permite punto(.) y guion(-) en el campo R.G."
+	#define STR0049 "Nombre del empleado"
+	#define STR0050 "Matricula"
+	#define STR0051 "D.I."
+	#define STR0052 "Ingreso"
+	#define STR0053 "Despido"
+	#define STR0054 "Cliente"
+	#define STR0055 "Tienda"
+	#define STR0056 "Nombre"
+	#define STR0057 "Buscar datos del empleado en otro cliente/tienda"
+	#define STR0058 "Busqueda por nombre"
+	#define STR0059 "Los principales datos del empleado seleccionado se copiaran a esta pantalla. ¿Confirma?"
+	#define STR0060 "No se encontro ningun empleado con este nombre en todas las empresas."
+	#define STR0061 "Borrado no permitido. Existe registro en otro archivo"
+	#define STR0062 "que utiliza esta informacion. "
+	#define STR0063 "El empleado no tiene Ficha medica."
+	#define STR0064 "La fecha de ingreso del empleado no puede ser superior a la fecha actual."
+	#define STR0065 "El DI de este empleado esta registrado para un empleado despedido."
+	#define STR0066 "Datos del empleado registrado: "
+	#define STR0067 "  Nombre: "
+	#define STR0068 "  Matricula: "
+	#define STR0069 "  Ficha medica: "
+	#define STR0070 "  Fch. Ingreso: "
+	#define STR0071 "  Fch. Demo: "
+	#define STR0072 "¿Desea crear un vinculo entre estas dos matriculas, actualizando el historico de este trabajador?"
+	#define STR0073 "Atencion"
+	#define STR0074 "El DI de este empleado esta registrado para otro empleado."
+	#define STR0075 "El RCPF de este empleado esta registrado para otro empleado."
+	#define STR0076 "Resumen de los empleados - "
+	#define STR0077 "Fecha de referencia: "
+	#define STR0078 "Actualizar datos"
+	#define STR0079 "Resumen de la unidad"
+	#define STR0080 "Total de empleados:"
+	#define STR0081 "Empleados activos:"
+	#define STR0082 "Empleados despedidos:"
+	#define STR0083 "Empleados de licencia:"
+	#define STR0084 "Empleados de vacaciones:"
+	#define STR0085 "Empleados transferidos:"
+	#define STR0086 "Empleados ingresados en el mes:"
+	#define STR0087 "Empleados despedidos en el mes:"
+	#define STR0088 "Resumen de la Empresa"
+	#define STR0089 "Total de Empleados: "
+	#define STR0090 "Empleados Activos: "
+	#define STR0091 "Empleados Demitidos: "
+	#define STR0092 "Empleados en Licencia: "
+	#define STR0093 "Empleados en Vacaciones: "
+	#define STR0094 "Empleados Transferidos: "
+	#define STR0095 "Salir"
+	#define STR0096 "Seleccione Resumen de la Unidad y/o Resumen de la Empresa."
+	#define STR0097 "Ya existe empleado registrado con este Nombre y Fecha de Nacimiento."
+	#define STR0098 " Fc. Nac.: "
+	#define STR0099 "¿Quiere continuar?"
+	#define STR0100 "Situacion Normal"
+	#define STR0101 "Transferido"
+	#define STR0102 "Demitido"
+	#define STR0103 "En Licencia"
+	#define STR0104 "Vacaciones"
+	#define STR0105 "Empleados"
+	#define STR0106 "Esta rutina solo podra utilizarse en modalidad Prestador de Servicio."
+	#define STR0107 "Toda Base - Empleados"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Employees Register"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Summary"
+		#define STR0005 "Caption"
+		#define STR0006 "Add"
+		#define STR0007 "Edit"
+		#define STR0008 "Delete"
+		#define STR0009 "Examinations"
+		#define STR0010 "All Employees"
+		#define STR0011 "Hist. Functions"
+		#define STR0012 "Customer Employees: "
+		#define STR0013 "ATTENTION"
+		#define STR0014 "Cost center does not belong to Customer/Unit: "
+		#define STR0015 "The function does not belong to Customer/Unit: "
+		#define STR0016 "Leaves of Absence"
+		#define STR0017 "Registration:"
+		#define STR0018 "Name:"
+		#define STR0019 "Hiring Date:"
+		#define STR0020 "There is a Leave Without a Return Date"
+		#define STR0021 "There cannot be a different entry for the same date or leave interval"
+		#define STR0022 "There cannot be leaves posterior to a leave without a return date"
+		#define STR0023 "Mandatory leave type"
+		#define STR0024 "Cost Center History Maintenance"
+		#define STR0025 "Dt. Transfer"
+		#define STR0026 "Comp. Origin"
+		#define STR0027 "Bran. Origin "
+		#define STR0028 "Mat. Origin "
+		#define STR0029 "Origin C.C. "
+		#define STR0030 "Destination Company"
+		#define STR0031 "Bran. Destination"
+		#define STR0032 "Mat. Destination"
+		#define STR0033 "Destination C.C."
+		#define STR0034 "Date of Transfer in History:"
+		#define STR0035 "Origin"
+		#define STR0036 "Destination"
+		#define STR0037 "Company:"
+		#define STR0038 "Branch:"
+		#define STR0039 "Registration:"
+		#define STR0040 "Cost Center:"
+		#define STR0041 "Cost center does not belong to company where employee works. "
+		#define STR0042 "Select only cost center with the following prefix: "
+		#define STR0043 "Origin and destination cost centers cannot be the same."
+		#define STR0044 "Search By Name"
+		#define STR0045 "Search"
+		#define STR0046 "Transfer"
+		#define STR0047 "Transfer"
+		#define STR0048 "Use of (.) and (-) characters not allowed in R.G. Field."
+		#define STR0049 "Employee Name"
+		#define STR0050 "Registration"
+		#define STR0051 "R.G."
+		#define STR0052 "Hiring"
+		#define STR0053 "Dismissal"
+		#define STR0054 "Customer"
+		#define STR0055 "Unit"
+		#define STR0056 "Name"
+		#define STR0057 "Search employee data in another customer/unit"
+		#define STR0058 "Search by Name"
+		#define STR0059 "The main data of selected employee will be copied to this screen. Do you confirm it?"
+		#define STR0060 "No employee with this name has been found in all companies."
+		#define STR0061 "Deletion not allowed. There is a record in another file"
+		#define STR0062 "utilizing this information. "
+		#define STR0063 "Employee has no Medical Record."
+		#define STR0064 "Employee admission date cannot be later than current date."
+		#define STR0065 "This employee's RG is already registered for a dismissed employee."
+		#define STR0066 "Employee data already registered: "
+		#define STR0067 "  Name: "
+		#define STR0068 "  Registration: "
+		#define STR0069 "  Medical Record: "
+		#define STR0070 "  Dt. Hiring Date: "
+		#define STR0071 "  Dt. Dismissal "
+		#define STR0072 "Do you wish to create a link between these two registrations and update this worker's history?"
+		#define STR0073 "Attention"
+		#define STR0074 "This employee's RG is already registered for a dismissed employee."
+		#define STR0075 "This employee's CPF is already registered for a dismissed employee."
+		#define STR0076 "Summary of Employees - "
+		#define STR0077 "Reference Date: "
+		#define STR0078 "Update Data"
+		#define STR0079 "Unit Summary"
+		#define STR0080 "Total of Employees:"
+		#define STR0081 "Active Employees:"
+		#define STR0082 "Dismissed Employees:"
+		#define STR0083 "Employees on Leave:"
+		#define STR0084 "Employees on Vacation:"
+		#define STR0085 "Transfered Employees:"
+		#define STR0086 "Employees Admitted in Month:"
+		#define STR0087 "Employees Dismissed in Month:"
+		#define STR0088 "Company Summary"
+		#define STR0089 "Total of Employees: "
+		#define STR0090 "Active Employees: "
+		#define STR0091 "Fired Employees: "
+		#define STR0092 "Employees on Leave: "
+		#define STR0093 "Employees on Vacation: "
+		#define STR0094 "Transfered Employees: "
+		#define STR0095 "Exit"
+		#define STR0096 "Select Unit Summary and/or Company Summary"
+		#define STR0097 "There already is an employee registered with this Name and Date of Birth"
+		#define STR0098 "  Birth Date: "
+		#define STR0099 "Do you want to continue?"
+		#define STR0100 "Normal Status"
+		#define STR0101 "Transferred"
+		#define STR0102 "Dismissed"
+		#define STR0103 "Leave"
+		#define STR0104 "Vacation"
+		#define STR0105 "Employees"
+		#define STR0106 "This routine can only be used in Service Provider mode."
+		#define STR0107 "Whole Base - Employees"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Registo de colaboradores", "Cadastro de Funcionarios" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Resumo"
+		#define STR0005 "Legenda"
+		#define STR0006 "Incluir"
+		#define STR0007 "Alterar"
+		#define STR0008 "Excluir"
+		#define STR0009 "Exames"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Todos colaboradores", "Todos Funcionár." )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Hist. Funções", "Hist. Funcoes" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Colaboradores do cliente: ", "Funcionarios do Cliente: " )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "ATENÇÃO", "ATENCAO" )
+		#define STR0014 "O centro de custo não pertence ao Cliente/Loja: "
+		#define STR0015 "A função não pertence ao Cliente/Loja: "
+		#define STR0016 "Afastamentos"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Matrícula:", "Matricula:" )
+		#define STR0018 "Nome:"
+		#define STR0019 "Admissão:"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Existe afastamento sem data de retorno", "Existe Afastamento Sem Data de Retorno" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Não pode existir lançamento diferente para a mesma data ou mesmo intervalo de afastamento", "Nao pode existir lancamento diferente para a mesma data ou mesmo intervalo de afastamento" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Não podem existir afastamentos posteriores a um afastamento sem data de retorno", "Nao pode existir afastamentos posteriores a um afastamento sem data de retorno" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Tipo de afastamento obrigatório", "Tipo de afastamento obrigatorio" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Manutenção do Histórico de C.Custos", "Manutencao do Historico de C.Custos" )
+		#define STR0025 "Dt. Transfer"
+		#define STR0026 "Empr. Origem"
+		#define STR0027 "Fil. Origem "
+		#define STR0028 "Mat. Origem "
+		#define STR0029 "C.C. Origem "
+		#define STR0030 "Empr.Destino"
+		#define STR0031 "Fil. Destino"
+		#define STR0032 "Mat. Destino"
+		#define STR0033 "C.C. Destino"
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Data da transferência no histórico:", "Data da Transferencia no Historico:" )
+		#define STR0035 "Origem"
+		#define STR0036 "Destino"
+		#define STR0037 "Empresa:"
+		#define STR0038 "Filial :"
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Matrícula :", "Matricula :" )
+		#define STR0040 "C.Custo :"
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "O centro de custo não pertence à empresa em que o colaborador trabalha. ", "O centro de custo não pertence à Empresa em que o funcionário trabalha. " )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Seleccione apenas o centro de custo que tenha o seguinte prefixo: ", "Selecione apenas centro de custo que tenha o seguinte prefixo: " )
+		#define STR0043 "O centro de custo origem e destino não podem ser os mesmos."
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Pesq. por nome", "Pesq. Por Nome" )
+		#define STR0045 "Pesquisa"
+		#define STR0046 "Transferência"
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Transfer.", "Transferên" )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Não é permitido ponto(.) e traço(-) no campo D.I.", "Não é permitido ponto(.) e traço(-) no campo R.G." )
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Nome colaborador", "Nome Funcionario" )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Matrícula", "Matricula" )
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "D.I.", "R.G." )
+		#define STR0052 "Admissão"
+		#define STR0053 "Demissão"
+		#define STR0054 "Cliente"
+		#define STR0055 "Loja"
+		#define STR0056 "Nome"
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Buscar dados do colaborador em outro cliente/loja", "Buscar dados do funcionário em outro cliente/loja" )
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Busca por nome", "Busca por Nome" )
+		#define STR0059 If( cPaisLoc $ "ANG|PTG", "Os principais dados do colaborador seleccionado serão copiados para este ecrã. Confirma?", "Os principais dados do funcionário selecionado serão copiados para esta tela. Confirma?" )
+		#define STR0060 If( cPaisLoc $ "ANG|PTG", "Não foi encontrado nenhum colaborador com este nome em todas as empresas.", "Não foi encontrado nenhum funcionários com este nome em todas as empresas." )
+		#define STR0061 If( cPaisLoc $ "ANG|PTG", "Exclusão não permitida. Existe registo em outro ficheiro", "Exclusão não permitida. Existe registro em outro arquivo" )
+		#define STR0062 "que utiliza esta informação. "
+		#define STR0063 If( cPaisLoc $ "ANG|PTG", "O colaborador não possui ficha médica.", "O funcionário não possui Ficha Médica." )
+		#define STR0064 If( cPaisLoc $ "ANG|PTG", "A data de admissão do colaborador não pode ser superior à data actual.", "A data de admissão do funcionário não pode ser superior à data atual." )
+		#define STR0065 If( cPaisLoc $ "ANG|PTG", "O D.I. deste colaborador já está registado para um colaborador demitido.", "O RG deste funcionário já está cadastrado para um funcionário demitido." )
+		#define STR0066 If( cPaisLoc $ "ANG|PTG", "Dados do colaborador já registado: ", "Dados do funcionário já cadastrado: " )
+		#define STR0067 "  Nome: "
+		#define STR0068 "  Matrícula: "
+		#define STR0069 If( cPaisLoc $ "ANG|PTG", "  Ficha médica: ", "  Ficha Médica: " )
+		#define STR0070 "  Dt. Admissão: "
+		#define STR0071 "  Dt. Demissão: "
+		#define STR0072 If( cPaisLoc $ "ANG|PTG", "Deseja criar um vínculo entre estas duas matrículas, actualizando o histórico deste trabalhador?", "Deseja criar um vínculo entre estas duas matrículas, atualizando o histórico deste trabalhador?" )
+		#define STR0073 "Atenção"
+		#define STR0074 If( cPaisLoc $ "ANG|PTG", "O D.I. deste colaborador já está registado para outro colaborador.", "O RG deste funcionário já está cadastrado para outro funcionário." )
+		#define STR0075 If( cPaisLoc $ "ANG|PTG", "O No.Contr. deste colaborador já está registado para outro colaborador.", "O CPF deste funcionário já está cadastrado para outro funcionário." )
+		#define STR0076 If( cPaisLoc $ "ANG|PTG", "Resumo dos colaboradores - ", "Resumo dos Funcionários - " )
+		#define STR0077 If( cPaisLoc $ "ANG|PTG", "Data de referência: ", "Data de Referência: " )
+		#define STR0078 If( cPaisLoc $ "ANG|PTG", "Actualizar dados", "Atualizar Dados" )
+		#define STR0079 If( cPaisLoc $ "ANG|PTG", "Resumo da unidade", "Resumo da Unidade" )
+		#define STR0080 If( cPaisLoc $ "ANG|PTG", "Total de colaboradores:", "Total de Funcionários:" )
+		#define STR0081 If( cPaisLoc $ "ANG|PTG", "Colaboradores activos:", "Funcionários Ativos:" )
+		#define STR0082 If( cPaisLoc $ "ANG|PTG", "Colaboradores demitidos:", "Funcionários Demitidos:" )
+		#define STR0083 If( cPaisLoc $ "ANG|PTG", "Colaboradores afastados:", "Funcionários Afastados:" )
+		#define STR0084 If( cPaisLoc $ "ANG|PTG", "Colaboradores em férias:", "Funcionários em Férias:" )
+		#define STR0085 If( cPaisLoc $ "ANG|PTG", "Colaboradores transferidos:", "Funcionários Transferidos:" )
+		#define STR0086 If( cPaisLoc $ "ANG|PTG", "Colaboradores admitidos no mês:", "Funcionários Admitidos no Mês:" )
+		#define STR0087 If( cPaisLoc $ "ANG|PTG", "Colaboradores demitidos no mês:", "Funcionários Demitidos no Mês:" )
+		#define STR0088 If( cPaisLoc $ "ANG|PTG", "Resumo da empresa", "Resumo da Empresa" )
+		#define STR0089 If( cPaisLoc $ "ANG|PTG", "Total de colaboradores: ", "Total de Funcionários: " )
+		#define STR0090 If( cPaisLoc $ "ANG|PTG", "Colaboradores activos: ", "Funcionários Ativos: " )
+		#define STR0091 If( cPaisLoc $ "ANG|PTG", "Colaboradores demitidos: ", "Funcionários Demitidos: " )
+		#define STR0092 If( cPaisLoc $ "ANG|PTG", "Colaboradores afastados: ", "Funcionários Afastados: " )
+		#define STR0093 If( cPaisLoc $ "ANG|PTG", "Colaboradores em férias: ", "Funcionários em Férias: " )
+		#define STR0094 If( cPaisLoc $ "ANG|PTG", "Colaboradores transferidos: ", "Funcionários Transferidos: " )
+		#define STR0095 "Sair"
+		#define STR0096 If( cPaisLoc $ "ANG|PTG", "Seleccione Resumo da Unidade e/ou Resumo da Empresa.", "Selecione Resumo da Unidade e/ou Resumo da Empresa." )
+		#define STR0097 If( cPaisLoc $ "ANG|PTG", "Já existe um colaborador registado com este nome e data de nascimento.", "Já existe funcionário cadastrado com este Nome e Data de Nascimento." )
+		#define STR0098 "  Dt. Nasc.: "
+		#define STR0099 "Deseja continuar?"
+		#define STR0100 If( cPaisLoc $ "ANG|PTG", "Situação normal", "Situação Normal" )
+		#define STR0101 "Transferido"
+		#define STR0102 "Demitido"
+		#define STR0103 "Afastado"
+		#define STR0104 "Férias"
+		#define STR0105 If( cPaisLoc $ "ANG|PTG", "Colaboradores", "Funcionários" )
+		#define STR0106 If( cPaisLoc $ "ANG|PTG", "Este procedimento somente poderá ser utilizado em modo Prestador de Serviço.", "Esta rotina somente poderá ser utilizada em modo Prestador de Serviço." )
+		#define STR0107 "Toda Base - Funcionários"
+	#endif
+#endif

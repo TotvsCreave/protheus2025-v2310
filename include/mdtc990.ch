@@ -1,0 +1,168 @@
+#ifdef SPANISH
+	#define STR0001 "Historial Pregreso"
+	#define STR0002 "ATENCION"
+	#define STR0003 "Opcion no disponible para Prestador de servicio."
+	#define STR0004 "Por favor, entre en contacto con el administrador del sistema."
+	#define STR0005 "Empresa"
+	#define STR0006 "Sucursal"
+	#define STR0007 "Nombre"
+	#define STR0008 "Fch. Inicial"
+	#define STR0009 "Fch. Final"
+	#define STR0010 "Matricula"
+	#define STR0011 "Analisis"
+	#define STR0012 "Prog. Salud"
+	#define STR0013 "Certif. Med."
+	#define STR0014 "CSO"
+	#define STR0015 "Diag. Med."
+	#define STR0016 "Cuestionarios"
+	#define STR0017 "Atenc. Enfer."
+	#define STR0018 "Vacunas"
+	#define STR0019 "Restricciones"
+	#define STR0020 "Enfermedades"
+	#define STR0021 "Accidentes"
+	#define STR0022 "No hay datos para montaje da consulta."
+	#define STR0023 "Procesando registros"
+	#define STR0024 "Datos de la Ficha medica"
+	#define STR0025 "Lista de las sucursales del empleado"
+	#define STR0026 "Resultado"
+	#define STR0027 "Medicamentos"
+	#define STR0028 "Busqueda"
+	#define STR0029 "Historial"
+	#define STR0030 "Visualizar item"
+	#define STR0031 "Imprimir"
+	#define STR0032 "Seleccione el Modelo del informe"
+	#define STR0033 "Modelo del informe"
+	#define STR0034 "Lista"
+	#define STR0035 "Archivo"
+	#define STR0036 "Para utilizar esta funcionalidad:"
+	#define STR0037 "El parametro MV_NG2TRAN debe estar desactivado."
+	#define STR0038 "No conformidad"
+	#define STR0039 "Lista de los registros"
+	#define STR0040 "Archivo del registro"
+	#define STR0041 "Por medio de este informe es posible retirar una lista de los registros mostrados."
+	#define STR0042 "Por medio de este informe es posible visualizar el archivo del registro."
+	#define STR0043 "A rayas"
+	#define STR0044 "Administracion"
+	#define STR0045 "Buscar"
+	#define STR0046 "Visualizar"
+	#define STR0047 "Incluir"
+	#define STR0048 "Modificar"
+	#define STR0049 "Borrar"
+	#define STR0050 "Medicamentos utilizados"
+	#define STR0051 "Analisis no tiene resultado."
+	#define STR0052 "El resultado solo se mostrara para analisis con 'Fecha de resultado' completada."
+	#define STR0053 "No existen medicamentos."
+	#define STR0054 "Para este diagnístico no se entregaron/recetaron medicamentos."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Past History"
+		#define STR0002 "ATTENTION"
+		#define STR0003 "Option not available for Service Provider."
+		#define STR0004 "Please contact system administrator."
+		#define STR0005 "Company"
+		#define STR0006 "Branch"
+		#define STR0007 "Name"
+		#define STR0008 "Start Dt"
+		#define STR0009 "Final Dt"
+		#define STR0010 "Registration"
+		#define STR0011 "Tests"
+		#define STR0012 "Health Prog."
+		#define STR0013 "Medical Certificate"
+		#define STR0014 "ASO's"
+		#define STR0015 "Med. Diag."
+		#define STR0016 "Questionnaires"
+		#define STR0017 "Nurs. Serv."
+		#define STR0018 "Vaccines"
+		#define STR0019 "Restrictions"
+		#define STR0020 "Illnesses"
+		#define STR0021 "Accidents"
+		#define STR0022 "There is no data to assemble the appointment."
+		#define STR0023 "Processing records"
+		#define STR0024 "Medical Form Data"
+		#define STR0025 "List of the Employee's Branch"
+		#define STR0026 "Result"
+		#define STR0027 "Medication"
+		#define STR0028 "Search"
+		#define STR0029 "History"
+		#define STR0030 "View Item"
+		#define STR0031 "Print"
+		#define STR0032 "Select report model."
+		#define STR0033 "Report Model"
+		#define STR0034 "Listing"
+		#define STR0035 "Register"
+		#define STR0036 "To use this feature:"
+		#define STR0037 "The parameter MV_NG2TRAN must be disabled."
+		#define STR0038 "Non-conformance"
+		#define STR0039 "Records List"
+		#define STR0040 "Record Registration"
+		#define STR0041 "Through this report it is possible to generate a list of records displayed."
+		#define STR0042 "With this report you can view the record registration."
+		#define STR0043 "Z-form"
+		#define STR0044 "Management"
+		#define STR0045 "Search"
+		#define STR0046 "View"
+		#define STR0047 "Add"
+		#define STR0048 "Edit"
+		#define STR0049 "Delete"
+		#define STR0050 "Medications Used"
+		#define STR0051 "Examination has no result."
+		#define STR0052 "The result will only appear for exams with 'Result Date' filled."
+		#define STR0053 "There is no medication."
+		#define STR0054 "For this diagnosis no medication was administered/prescribed."
+	#else
+		#define STR0001 "Histórico Pregresso"
+		#define STR0002 "ATENÇÃO"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Opção não disponível para Prestador de serviço.", "Opção não disponível para Prestador de Serviço." )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Por favor, contacte o administrador de sistema.", "Favor contate administrador de sistema." )
+		#define STR0005 "Empresa"
+		#define STR0006 "Filial"
+		#define STR0007 "Nome"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Dt. Início", "Dt. Inicio" )
+		#define STR0009 "Dt. Final"
+		#define STR0010 "Matrícula"
+		#define STR0011 "Exames"
+		#define STR0012 "Prog. Saúde"
+		#define STR0013 "Atest. Med."
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "ASO", "ASO's" )
+		#define STR0015 "Diag. Med."
+		#define STR0016 "Questionários"
+		#define STR0017 "Atend. Enfer."
+		#define STR0018 "Vacinas"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Restricções", "Restrições" )
+		#define STR0020 "Doenças"
+		#define STR0021 "Acidentes"
+		#define STR0022 "Não há dados para montagem da consulta."
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "A processar registos", "Processando Registros" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Dados da ficha médica", "Dados da Ficha Médica" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Listagem das filiais do colaborador", "Listagem das Filiais do Funcionário" )
+		#define STR0026 "Resultado"
+		#define STR0027 "Medicamentos"
+		#define STR0028 "Pesquisa"
+		#define STR0029 "Histórico"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Visualizar item", "Visualizar Item" )
+		#define STR0031 "Imprimir"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Seleccione o modelo do relatório", "Selecione o Modelo do Relatório" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Modelo do relatório", "Modelo do Relatório" )
+		#define STR0034 "Listagem"
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "Registo", "Cadastro" )
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "Para utilizar esta funcionalidade:", "Para utilização desta funcionalidade:" )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "O parâmetro MV_NG2TRAN deve estar desactivado.", "O parâmetro MV_NG2TRAN deve estar desativado." )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Não conformidade", "Não Conformidade" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Listagem dos registos", "Listagem dos Registros" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Ficheiro do registo", "Cadastro do Registro" )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Através deste relatório é possível retirar uma listagem dos registos exibidos.", "Através deste relatório é possível retirar uma listagem dos registros exibidos." )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Através deste relatório é possível visualizar o ficheiro do registo.", "Através deste relatório é possível visualizar o cadastro do registro." )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0045 "Pesquisar"
+		#define STR0046 "Visualizar"
+		#define STR0047 "Incluir"
+		#define STR0048 "Alterar"
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Eliminar", "Excluir" )
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "Medicamentos utilizados", "Medicamentos Utilizados" )
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "O exame não possui resultado.", "Exame não possui resultado." )
+		#define STR0052 If( cPaisLoc $ "ANG|PTG", "O resultado apenas será apresentado para exames com 'Data de resultado' preenchida.", "O resultado apenas será apresentado para exames com 'Data de Resultado' preenchida." )
+		#define STR0053 "Não existem medicamentos."
+		#define STR0054 If( cPaisLoc $ "ANG|PTG", "Para este diagnóstico não foram ministrados/receitados medicamentos.", "Para este diagnístico não foram ministrados/receitados medicamentos." )
+	#endif
+#endif

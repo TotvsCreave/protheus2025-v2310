@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Principal"
+	#define STR0002 "Clientes"
+	#define STR0003 "Cons. Productos"
+	#define STR0004 "Mensaje"
+	#define STR0005 "Cons. Parametros"
+	#define STR0006 "Salir"
+	#define STR0007 "Diario"
+	#define STR0008 "Visitas de Negocios"
+	#define STR0009 "Cierre del Dia"
+	#define STR0010 "Retorno mercaderias"
+	#define STR0011 "Sync"
+	#define STR0012 "Fast Delivery Automation"
+	#define STR0013 "for PalmOS SI"
+	#define STR0014 "for PocketPC"
+	#define STR0015 "Version 7.0."
+	#define STR0016 "Fecha: 23/06/2004"
+	#define STR0017 "Microsiga Intelligence"
+	#define STR0018 "Vendedor Invalido"
+	#define STR0019 "Acceso"
+	#define STR0020 "Contrasena del Usuario"
+	#define STR0021 "Vendedor :"
+	#define STR0022 "Codigo: "
+	#define STR0023 "Contrasena :"
+	#define STR0024 "Avanzar"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Principal"
+		#define STR0002 "Clients"
+		#define STR0003 "Cons. Products"
+		#define STR0004 "Message"
+		#define STR0005 "Query Parameters"
+		#define STR0006 "Exit"
+		#define STR0007 "Daily "
+		#define STR0008 "Business Visits"
+		#define STR0009 "Day closing"
+		#define STR0010 "Goods Returns"
+		#define STR0011 "Sync"
+		#define STR0012 "Fast Delivery Automation"
+		#define STR0013 "for PalmOS SI"
+		#define STR0014 "for PocketPC"
+		#define STR0015 "Version 7.0."
+		#define STR0016 "Date: 06/23/2004"
+		#define STR0017 "Microsiga Intelligence"
+		#define STR0018 "Invalid sales rep."
+		#define STR0019 "Access"
+		#define STR0020 "User password   "
+		#define STR0021 "Sales rep.:"
+		#define STR0022 "Code: "
+		#define STR0023 "Password:"
+		#define STR0024 "Next"
+	#else
+		#define STR0001 "Principal"
+		#define STR0002 "Clientes"
+		#define STR0003 "Cons. Produtos"
+		#define STR0004 "Mensagem"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Cons. Parâmetro S", "Cons. Parametros" )
+		#define STR0006 "Sair"
+		#define STR0007 "Diário"
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Visitas de negocios", "Visitas de Negócios" )
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Fecho Do Dia", "Fechamento do Dia" )
+		#define STR0010 "Retorno mercadorias"
+		#define STR0011 "Sync"
+		#define STR0012 "Fast Delivery Automation"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "For Palmos Si", "for PalmOS SI" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "For Pocketpc", "for PocketPC" )
+		#define STR0015 "Versão 7.0."
+		#define STR0016 "Data: 23/06/2004"
+		#define STR0017 "Microsiga Intelligence"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Vendedor inválido", "Vendedor Inválido" )
+		#define STR0019 "Acesso"
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Senha Do Utilizador", "Senha do Usuario" )
+		#define STR0021 "Vendedor :"
+		#define STR0022 "Código: "
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Palavra-passe :", "Senha :" )
+		#define STR0024 "Avançar"
+	#endif
+#endif

@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Gastos vs. Cuentas Contables por Vehiculo"
+	#define STR0002 "Buscar"
+	#define STR0003 "AxPesqui"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Tipos de Documentos - <F5>"
+	#define STR0009 "Tp.Docto."
+	#define STR0010 "Tipos de Servicio - <F6>"
+	#define STR0011 "Tp.Servicio"
+	#define STR0012 "Tipos de Transporte - <F7>"
+	#define STR0013 "Tp.Transp"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Expenses X Ledger Accounts per Vehicle"
+		#define STR0002 "Search"
+		#define STR0003 "AxSearch"
+		#define STR0004 "View"
+		#define STR0005 "Add"
+		#define STR0006 "Edit"
+		#define STR0007 "Delete"
+		#define STR0008 "Document Types - <F5>"
+		#define STR0009 "Doc. Tp."
+		#define STR0010 "Service Types - <F6>"
+		#define STR0011 "ServiceTp."
+		#define STR0012 "Transport Types - <F7>"
+		#define STR0013 "Transp.Tp."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Despesas X Contas Contabilísticas por veículo", "Despesas X Contas Contabeis por Veiculo" )
+		#define STR0002 "Pesquisar"
+		#define STR0003 "AxPesqui"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 "Excluir"
+		#define STR0008 "Tipos de Documentos - <F5>"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Tp.Doc.", "Tp.Docto." )
+		#define STR0010 "Tipos de Serviço - <F6>"
+		#define STR0011 "Tp.Serviço"
+		#define STR0012 "Tipos de Transporte - <F7>"
+		#define STR0013 "Tp.Transp"
+	#endif
+#endif

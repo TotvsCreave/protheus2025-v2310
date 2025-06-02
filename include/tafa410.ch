@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Diccionario incompatible"
+	#define STR0002 "Finalizar"
+	#define STR0003 "Complemento Eventos Periódicos"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Información del cálculo"
+	#define STR0006 "Informaciones Sustitución Patronal"
+	#define STR0007 "Informaciones infoActiv. Complem."
+	#define STR0008 "Informaciones complementarias a los eventos periódicos"
+	#define STR0009 "Comprobante de transmisión"
+	#define STR0010 "Información sustitución patronal operadores portuarios"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Dictionary Not Compatible"
+		#define STR0002 "Close"
+		#define STR0003 "Periodic Events Complement"
+		#define STR0004 "View"
+		#define STR0005 "Calculation Data"
+		#define STR0006 "Employer Substitution Information"
+		#define STR0007 "Concom. Activ. Information"
+		#define STR0008 "Information Complementary to Periodic Events"
+		#define STR0009 "Transmission Protocol"
+		#define STR0010 "Information Substitution Employer Port Workers"
+	#else
+		#define STR0001 "Dicionário Incompatível"
+		#define STR0002 "Encerrar"
+		#define STR0003 "Complemento Eventos Periódicos"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Informações de Apuração"
+		#define STR0006 "Informações Substituição Patronal"
+		#define STR0007 "Informações infoAtiv. Concom."
+		#define STR0008 "Informações Complementares aos Eventos Periódicos"
+		#define STR0009 "Protocolo de Transmissão"
+		#define STR0010 "Informações Substituição Patronal Operadores Portuários"
+	#endif
+#endif

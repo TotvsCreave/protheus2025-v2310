@@ -1,0 +1,87 @@
+#ifdef SPANISH
+	#define STR0001 "Negociacion de la tabla de flete"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Copiar"
+	#define STR0008 "Imprimir"
+	#define STR0009 "Comp. Estandar"
+	#define STR0010 "Rutas"
+	#define STR0011 "Rangos/Tipo Vehic."
+	#define STR0012 "Tarifas"
+	#define STR0013 "Valor del Rango debe ser inferior al valor de rango posterior"
+	#define STR0014 "Valor del Rango debe ser superior al valor de rango anterior"
+	#define STR0015 "Negociacion de la tabla de flete"
+	#define STR0016 "Rango Entrega Tab. Flete"
+	#define STR0017 "Rango de Entrega"
+	#define STR0018 "Ya existe campo con Base Peaje activo"
+	#define STR0019 "Ya existe registro con claves informadas"
+	#define STR0020 "Fecha de vigencia final inferior a la fecha inicial"
+	#define STR0021 "En Negociacion"
+	#define STR0022 "Aprobado"
+	#define STR0023 "Componentes Tab. Flete"
+	#define STR0024 "Rutas Tab. Flete"
+	#define STR0025 "Rango/Tipo Vehiculo"
+	#define STR0026 "Componente de Flete"
+	#define STR0027 "Rango/Tipo Vehiculo"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Negotiation of Freight Table"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Change"
+		#define STR0006 "Delete"
+		#define STR0007 "Copy"
+		#define STR0008 "Print"
+		#define STR0009 "Default Comp."
+		#define STR0010 "Routes"
+		#define STR0011 "Ranges/Vehic. Type"
+		#define STR0012 "Fees"
+		#define STR0013 "Range value must be lower than the value of future range"
+		#define STR0014 "Range value must be higher than the value of previous range"
+		#define STR0015 "Negotiation of Freight Table"
+		#define STR0016 "Delivery Range - Freight Table"
+		#define STR0017 "Delivery Range"
+		#define STR0018 "There is field with active Toll Base."
+		#define STR0019 "There is already a record with the keys entered."
+		#define STR0020 "End effective date lower than start date"
+		#define STR0021 "In Negotiation"
+		#define STR0022 "Released"
+		#define STR0023 "Freight Table Components"
+		#define STR0024 "Freight Table Routes"
+		#define STR0025 "Range/Vehicle Type"
+		#define STR0026 "Freight Component "
+		#define STR0027 "Range/Vehicle Type"
+	#else
+		#define STR0001 "Negociação da tabela de frete"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Copiar"
+		#define STR0008 "Imprimir"
+		#define STR0009 "Comp. Padrão"
+		#define STR0010 "Rotas"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Faixas/Tipo Veíc.", "Faixas/Tipo Veic." )
+		#define STR0012 "Tarifas"
+		#define STR0013 "Valor da Faixa deve ser menor que o valor da faixa posterior"
+		#define STR0014 "Valor da Faixa deve ser maior que o valor da faixa anterior"
+		#define STR0015 "Negociação da tabela de frete"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Faixa entrega tab. frete", "Faixa Entrega Tab. Frete" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Faixa de entrega", "Faixa de Entrega" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Já existe campo com Base Pedágio activo", "Já existe campo com Base Pedágio ativo" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Já existe registo com chaves informadas", "Já existe registro com chaves informadas" )
+		#define STR0020 "Data de vigência final menor que data inicial"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Em negociação", "Em Negociação" )
+		#define STR0022 "Liberado"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Componentes tab. frete", "Componentes Tab. Frete" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Rotas tab. frete", "Rotas Tab. Frete" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Faixa/Tipo Veículo", "Faixa/Tipo Veiculo" )
+		#define STR0026 "Componente de Frete"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Faixa/Tipo Veículo", "Faixa/Tipo Veiculo" )
+	#endif
+#endif

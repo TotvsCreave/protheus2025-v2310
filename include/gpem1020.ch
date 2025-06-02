@@ -1,0 +1,318 @@
+#ifdef SPANISH
+	#define STR0001 "Proceso de Calculo"
+	#define STR0002 "Este programa realiza procesos de calculo"
+	#define STR0003 "Calcular"
+	#define STR0004 "Salir"
+	#define STR0005 "Atencion"
+	#define STR0006 "Modificar filtro"
+	#define STR0007 "Incluir filtro"
+	#define STR0008 "Filtro rapido"
+	#define STR0009 "Procesando"
+	#define STR0010 "Parametros"
+	#define STR0011 "¿Confirma configuracion de parametros?"
+	#define STR0012 "¡Periodo no registrado!"
+	#define STR0013 "¡Nº Pago no registrado para este periodo!"
+	#define STR0014 "¡Ningun procedimiento registrado con este periodo!"
+	#define STR0015 "¡No se selecciono ningun filtro! ¿Procesar toda la tabla?"
+	#define STR0016 "Log de ocurrencias en el Proceso de Calculo"
+	#define STR0017 "¡Ningun procedimiento seleccionado!"
+	#define STR0018 "Utiliza periodo para la ejecucion del procedimiento"
+	#define STR0019 "El procedimiento seleccionado para calculo es invalido:"
+	#define STR0020 "Falta definir el archivo principal para el procedimiento:"
+	#define STR0021 "Archivos no procesados"
+	#define STR0022 "Final del proceso de calculo:"
+	#define STR0023 "de"
+	#define STR0024 "Duracion del proceso de calculo:"
+	#define STR0025 "Tiempo medio de calculo:"
+	#define STR0026 "Numero de archivos procesados:"
+	#define STR0027 "Anulado por el usuario el:"
+	#define STR0028 "a las"
+	#define STR0029 "Registro      "
+	#define STR0030 "Calculando procedimiento"
+	#define STR0031 "Informaciones del proceso de calculo"
+	#define STR0032 "Inicio del proceso de calculo:"
+	#define STR0033 "Expresion de filtro utilizada en el calculo:"
+	#define STR0034 "Calculo finalizado por FinalCalc() o por EndCalc()"
+	#define STR0035 "Ultimo registro procesado"
+	#define STR0036 "¿Desea continuar el proceso de calculo?"
+	#define STR0037 "¡Periodo seleccionado en el parametro esta cerrado!"
+	#define STR0038 "¡El periodo seleccionado es diferente del ultimo periodo pendiente!"
+	#define STR0039 "Tabla Medios de Transporte esta vacia - VALE TRANSPORTE NO CALCULADO"
+	#define STR0040 "Tablas que no tienen indice igual a clave unica (SX2)"
+	#define STR0041 "compromete el desempeno de calculo"
+	#define STR0042 "No fue possivel abrir el archivo de log de registros"
+	#define STR0043 "Falla en la creacion del objeto GridClient. Imposible ejecutar proceso en GRID."
+	#define STR0044 "Ningun agente del GRID disponible en el momento."
+	#define STR0045 "Solicitud: "
+	#define STR0046 "OK"
+	#define STR0047 "Informaciones no procesadas en el GRID"
+	#define STR0048 "No fue posible abrir archivo de registro de ocurrencias."
+	#define STR0049 "Informaciones del calculo con GRID"
+	#define STR0050 "El procesamiento realizado en:"
+	#define STR0051 "no se concluyo con exito."
+	#define STR0052 "Los ultimos empleados procesados fueron: "
+	#define STR0053 "Solicitud"
+	#define STR0054 "Sucursal"
+	#define STR0055 "Matricula"
+	#define STR0056 "Nombre"
+	#define STR0057 "Ningun empleado procesado en esta solicitud"
+	#define STR0058 "¿Desea continuar con el calculo?"
+	#define STR0059 "No fue posible abrir la tabla auxiliar para calculo de multiples vinculos."
+	#define STR0060 "No fue posible compilar las formulas para el calculo."
+	#define STR0061 "Espere..."
+	#define STR0062 "Preparando informaciones para el GRID..."
+	#define STR0063 "Finalizando el calculo con GRID..."
+	#define STR0064 "¡No se informo la fecha de pago del aguinaldo! "
+	#define STR0065 "Es necesario ejecutar el compatibilizador RHUPDMOD / SIGAGPE, opciones 136 y 137."
+	#define STR0066 "¡Ningun Periodo Activo para este Procedimiento!"
+	#define STR0067 "Registros No Procesados - Periodo Bloqueado para Sucursal"
+	#define STR0068 "Existen procedimientos que no se integraron con la planilla. Ejecute la integracion antes del calculo"
+	#define STR0069 "Registros No Procesados - Periodo Bloqueado para Sucursal"
+	#define STR0070 "La nomina del periodo anterior aun no se cerro, no se podra calcular el anticipo de este periodo"
+	#define STR0071 "El período activo del procedimiento seleccionado se integró."
+	#define STR0072 "Procedimiento de anticipo de este periodo aún no se encerró, ¡por favor, verifique!"
+	#define STR0073 "Existen procedimientos del tipo 3 (vacaciones) que tienen cálculo y no se integraron. Ejecute la integración antes de calcular este procedimiento."
+	#define STR0074 "Procedimiento/Período ya integrado. El cálculo no se debe realizar."
+	#define STR0075 "Ninguno de los procedimiento aptos para cálculo tienen período activo."
+	#define STR0076 "Cálculo unificado"
+	#define STR0077 "Seleccione los filtros para cálculo"
+	#define STR0078 "Filtrar cálculo"
+	#define STR0079 "Calculando "
+	#define STR0080 "Log del cálculo automático -> Sucursal: "
+	#define STR0081 "Proceso: "
+	#define STR0082 "Procedimiento: "
+	#define STR0083 "Período: "
+	#define STR0084 "Núm. Pago: "
+	#define STR0085 "Fecha inválida. El intervalo de fecha debe pertenecer al periodo seleccionado para cálculo."
+	#define STR0086 "¿Desea utilizar multi-threads en el proceso de cálculo?"
+	#define STR0087 "Cantidad de Threads"
+	#define STR0088 "Cantidad máxima de threads permitidas para esta operación es "
+	#define STR0089 "El parámetro MV_DF13NEG esta cumplimentado con 'S' y no existe concepto con ID 0348, debe registrarse el concepto o modificar el parámetro."
+	#define STR0090 "Rutina no disponible."
+	#define STR0091 "Inconsistencias"
+	#define STR0092 "Empleado "
+	#define STR0093 " está con un centro de costo inválido, actualice el archivo."
+	#define STR0094 "Debe informarse la fecha de pago."
+	#define STR0095 "Debe informarse las fechas de filtro de la programación de vacaciones."
+	#define STR0096 "(Despedido)"
+	#define STR0097 "Contrato intermitente"
+	#define STR0098 "Filtrando empleados..."
+	#define STR0099 "Primera cuota del aguinaldo"
+	#define STR0100 "Segunda cuota del aguinaldo"
+	#define STR0101 "Vacaciones programadas"
+	#define STR0102 "Ticket transporte"
+	#define STR0103 "Ticket restaurante"
+	#define STR0104 "Ticket canasta"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Calculation Process"
+		#define STR0002 "This program provides calculation processes. "
+		#define STR0003 "Calculate"
+		#define STR0004 "Exit"
+		#define STR0005 "Warning"
+		#define STR0006 "Change filter."
+		#define STR0007 "Add filter."
+		#define STR0008 "Fast Filter"
+		#define STR0009 "Processing"
+		#define STR0010 "Parameters"
+		#define STR0011 "Do you confirm the parameter configuration?"
+		#define STR0012 "Period not registered!"
+		#define STR0013 "Payment number not registered for this period!"
+		#define STR0014 "No procedure registered with this period!"
+		#define STR0015 "No filter selected! Do you want to process the whole table?"
+		#define STR0016 "Occurrence Log in the Calculation Process"
+		#define STR0017 "No procedure selected!"
+		#define STR0018 "Use period in order to perform procedure."
+		#define STR0019 "Invalid the procedure selected for calculation:"
+		#define STR0020 "Define the main file for procedure:"
+		#define STR0021 "Records not processed."
+		#define STR0022 "End of calculation process:"
+		#define STR0023 "of"
+		#define STR0024 "Duration of calculation process:"
+		#define STR0025 "Average time for calculation:"
+		#define STR0026 "Number of records processed:"
+		#define STR0027 "Cancelled by the User on:"
+		#define STR0028 "at"
+		#define STR0029 "Record        "
+		#define STR0030 "Calculating Procedure"
+		#define STR0031 "Information of Calculation Process"
+		#define STR0032 "Beginning of calculation process:"
+		#define STR0033 "Filter expression used in calculation:"
+		#define STR0034 "Calculation completed by FinalCalc() or by EndCalc()."
+		#define STR0035 "Last record processed."
+		#define STR0036 "Do you want to continue the calculation process?"
+		#define STR0037 "Period selected or parameter is closed!"
+		#define STR0038 "The selected period is different from the last open period!"
+		#define STR0039 "Means of transportation table is empty -  TRANSPORTATION TICKET NOT CALCULATED"
+		#define STR0040 "Tables that do not have index like single key (SX2)"
+		#define STR0041 "endangers calculation performance."
+		#define STR0042 "Unable to open the Registry Log file."
+		#define STR0043 "Failure while creating Object GridClient. Unable to execute in GRID process."
+		#define STR0044 "No GRID Agent available at the moment."
+		#define STR0045 "Requisition: "
+		#define STR0046 "OK"
+		#define STR0047 "Information not processed in GRID."
+		#define STR0048 "Unable to open the occurrence registry file."
+		#define STR0049 "GRID calculation information"
+		#define STR0050 "Processing done in/on:"
+		#define STR0051 "was not successfully completed."
+		#define STR0052 "Last employees were processed: "
+		#define STR0053 "Requisition"
+		#define STR0054 "Branch"
+		#define STR0055 "Registration"
+		#define STR0056 "Name"
+		#define STR0057 "No employee processed in this requisition."
+		#define STR0058 "Do you want to continue the calculation?"
+		#define STR0059 "Unable to open the auxiliary table for calculating multiple relations."
+		#define STR0060 "Unable to compile formulas for calculation."
+		#define STR0061 "Please, wait..."
+		#define STR0062 "Preparing information for GRID..."
+		#define STR0063 "Concluding calculation with GRID..."
+		#define STR0064 "Year-end bonus payment date not informed! "
+		#define STR0065 "You must run RHUPDMOD / SIGAGPE compatibilizer options 136 and 137."
+		#define STR0066 "No active period for this script!"
+		#define STR0067 "Records Not Processed - Period Blocked for Branch"
+		#define STR0068 "There are scripts not integrated with payroll. Run integration before calculation"
+		#define STR0069 "Records Not Processed - Period Blocked for Branch"
+		#define STR0070 "The previous period payroll was not yet closed, it is not possible to calculate advance of this period"
+		#define STR0071 "The selected active script period is already integrated."
+		#define STR0072 "Advance Route of this period is not closed yet, please check!"
+		#define STR0073 "There are routes of type 3 (Vacations) that have calculation and were not integrated. Run the integration before calculating this route."
+		#define STR0074 "Route/Period already integrated. Calculation cannot be executed."
+		#define STR0075 "Not one of the scripts fit for calculation has active period."
+		#define STR0076 "Unified Calculation"
+		#define STR0077 "Select filters for calculation"
+		#define STR0078 "Filter Calculation"
+		#define STR0079 "Calculating "
+		#define STR0080 "Automatic calculation log -> Branch: "
+		#define STR0081 "Process: "
+		#define STR0082 "Procedure: "
+		#define STR0083 "Period: "
+		#define STR0084 "Payment No.: "
+		#define STR0085 "Date not valid! Date range must be within the period selected for calculation"
+		#define STR0086 "Use multi threads in calculation process?"
+		#define STR0087 "Amount of threads"
+		#define STR0088 "Maximum amount of threads allowed for this operation is "
+		#define STR0089 "Parameter MV_DF13NEG is filled with 'S' and there is no budget with ID 0348. Register one or change the parameter."
+		#define STR0090 "Routine unavailable"
+		#define STR0091 "Inconsistencies"
+		#define STR0092 "Employee "
+		#define STR0093 " has cost center invalid, update register."
+		#define STR0094 "Payment date must be entered."
+		#define STR0095 "Filter dates of vacation schedule must be entered."
+		#define STR0096 "(Dismissed)"
+		#define STR0097 "Intermittent contract"
+		#define STR0098 "Filtering employees..."
+		#define STR0099 "First Installment 13"
+		#define STR0100 "Second Installment 13"
+		#define STR0101 "Scheduled Vacation"
+		#define STR0102 "Transportation Allowance"
+		#define STR0103 "Meal Allowance"
+		#define STR0104 "Meal allowance"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Processo De Cálculo", "Processo de Calculo" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Este programa realiza processos de cálculos", "Este programa realiza processos de calculos" )
+		#define STR0003 "Calcular"
+		#define STR0004 "Sair"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Atenção", "Atencäo" )
+		#define STR0006 "Alterar Filtro"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Inserir Filtro", "Incluir Filtro" )
+		#define STR0008 "Filtro Rapido"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "A processar", "Processando" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Parâmetros", "Parametros" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Confirma configuração dos parâmetros?", "Confirma configuracäo dos parametros?" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Período  Não Registado!", "Periodo nao Cadastrado!" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Nr Pagamento Não Registado Para Este Período !", "No. Pagamento nao Cadastrado para este Periodo!" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Nenhum Guião Registado Com Este Período !", "Nenhum Roteiro Cadastrado com este Periodo!" )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Nenhum filtro foi seleccionado! processar toda a tabela?", "Nenhum filtro foi selecionado! Processar toda a tabela?" )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Diário De Ocorrências No Processo De Cálculo", "Log de Ocorrencias no Processo de Calculo" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Nenhum Guião Seleccionado!", "Nenhum Roteiro Selecionado!" )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Utiliza Período  Para A Execução  Do Guião", "Utiliza Periodo para a Execucao do Roteiro" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "O guião seleccionado para cálculo e inválido:", "O Roteiro Selecionado para Calculo e invalido:" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Falta Definir O Ficheiro Mestre Para O Guião:", "Falta Definir o Arquivo Mestre para o Roteiro:" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Registos Não Processados", "Registros Nao Processados" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Final Do Processo De Cálculo:", "Final do Processo de Calculo:" )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "De", "de" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Duração Do Processo De Cálculo:", "Duracao do Processo de Calculo:" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Tempo Médio De Cálculo:", "Tempo Medio de Calculo:" )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Número  De Registos Processados:", "Numero de Registros Processados:" )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Anulado pelo utilizador em:", "Cancelado Pelo Usuario em:" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "às", "as" )
+		#define STR0029 If( cPaisLoc $ "ANG|PTG", "Registo      ", "Registro      " )
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Calculando Guião", "Calculando Roteiro" )
+		#define STR0031 If( cPaisLoc $ "ANG|PTG", "Introduções Do Processo De Cálculo", "Informacoes do Processo de Calculo" )
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "Início Do Processo De Cálculo:", "Inicio do Processo de Calculo:" )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Expressão De Filtro Utilizada No Cálculo:", "Expressao de Filtro Utilizada no Calculo:" )
+		#define STR0034 If( cPaisLoc $ "ANG|PTG", "Cálculo Finalizado Pela Finalcalc() Ou Pela Endcalc()", "Calculo Finalizado Pela FinalCalc() ou Pela EndCalc()" )
+		#define STR0035 If( cPaisLoc $ "ANG|PTG", "último Registo Processado", "Ultimo Registro Processado" )
+		#define STR0036 If( cPaisLoc $ "ANG|PTG", "Deseja continuar o processo de cálculo ?", "Deseja Continuar o Processo de Calculo ?" )
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Período  seleccionado no parâmetro  esta fechado ! ", "Periodo Selecionado no Parametro esta fechado ! " )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "O período  seleccionado e diferente do último período  em aberto!", "O Periodo Selecionado é diferente do Último Período em Aberto!" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Tabela De Meios De Transporte Esta Vazia - Vale Transporte Não Calculado", "Tabela de meios de transporte esta vazia - VALE TRANSPORTE NAO CALCULADO" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Tabelas que não possuem indice igual a chave unica (sx2)", "Tabelas que nao possuem indice igual a chave unica (SX2)" )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Compromete a performance de cálculo", "compromete a performance de calculo" )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Não Foi Possível Abrir O Ficheiro De Diário De Registos", "Nao foi possivel abrir o Arquivo de Log de Registros" )
+		#define STR0043 If( cPaisLoc $ "ANG|PTG", "Falha Na Criação Do Objecto Gridclient. Impossível Executar Processo Em Grelha.", "Falha na criacao do Objeto GridClient. Impossivel executar processo em GRID." )
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "Nenhum Agente Da Grelha Disponível No Momento.", "Nenhum Agente do GRID disponivel no Momento." )
+		#define STR0045 "Requisição: "
+		#define STR0046 If( cPaisLoc $ "ANG|PTG", "Ok", "OK" )
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Introduções não processadas no grid", "Informações não processadas no GRID" )
+		#define STR0048 If( cPaisLoc $ "ANG|PTG", "Não foi possível abrir ficheiro de registo de ocorrências.", "Nao foi possivel abrir arquivo de registro de ocorrencias." )
+		#define STR0049 If( cPaisLoc $ "ANG|PTG", "Introduções do cálculo com grid", "Informações do calculo com GRID" )
+		#define STR0050 "O processamento realizado em:"
+		#define STR0051 If( cPaisLoc $ "ANG|PTG", "Não Foi Concluído Com Sucesso.", "não foi concluído com Sucesso." )
+		#define STR0052 "Os últimos funcionários processados foram: "
+		#define STR0053 If( cPaisLoc $ "ANG|PTG", "Requisição", "Requisicao" )
+		#define STR0054 "Filial"
+		#define STR0055 If( cPaisLoc $ "ANG|PTG", "Registo", "Matricula" )
+		#define STR0056 "Nome"
+		#define STR0057 If( cPaisLoc $ "ANG|PTG", "Nenhum Empregado Processado Nesta Requisição", "Nenhum Funcionário Processado nessa Requisição" )
+		#define STR0058 If( cPaisLoc $ "ANG|PTG", "Deseja Continuar Com O Cálculo?", "Deseja Continuar com o Calculo?" )
+		#define STR0059 If( cPaisLoc $ "ANG|PTG", "Não foi possível abrir a tabela auxiliar para cálculo de multiplos vinculos.", "Não foi possível abrir a tabela Auxiliar para Calculo de Multiplos Vinculos." )
+		#define STR0060 If( cPaisLoc $ "ANG|PTG", "Não foi possível compilar as fórmulas para o cálculo.", "Não foi possível compilar as fórmulas para o Cálculo." )
+		#define STR0061 "Aguarde..."
+		#define STR0062 If( cPaisLoc $ "ANG|PTG", "A Preparar Informações Para A Grelha...", "Preparando Informações para o GRID..." )
+		#define STR0063 If( cPaisLoc $ "ANG|PTG", "Finalizando O Cálculo Com Grid...", "Finalizando o Calculo com GRID..." )
+		#define STR0064 If( cPaisLoc $ "ANG|PTG", "Data de pagamento do 13o. Salário não informada! ", "Data de Pagamento do 13o Salario nao Informada! " )
+		#define STR0065 If( cPaisLoc $ "ANG|PTG", "É necessário executar o compatibilizador RHUPDMOD / SIGAGPE, opções 136 e 137.", "Necessário executar o compatibilizador RHUPDMOD / SIGAGPE opções 136 e 137." )
+		#define STR0066 If( cPaisLoc $ "ANG|PTG", "Nenhum período activo para este roteiro.", "Nenhum Periodo Ativo para este Roteiro!" )
+		#define STR0067 "Registros Nao Processados - Periodo Bloqueado para Filial"
+		#define STR0068 "Existem roteiros que nao foram integrados com a folha. Execute a integração antes do cálculo"
+		#define STR0069 "Registros Não Processados - Período Bloqueado para Filial"
+		#define STR0070 "A folha do periodo anterior ainda não foi fechada, não poderá calcular o adiantamento deste período"
+		#define STR0071 "O período ativo do roteiro selecionado já foi integrado."
+		#define STR0072 "Roteiro de Adiantamento desse periodo ainda não foi fechado, favor verificar!"
+		#define STR0073 "Existem roteiros do tipo 3 (Ferias) que possuem cálculo e não foram integrados. Execute a integração antes do cálculo deste roteiro."
+		#define STR0074 "Roteiro/Período já integrado. O cálculo não pode ser realizado."
+		#define STR0075 "Nenhum dos roteiro aptos para cálculo possuem período ativo."
+		#define STR0076 "Cálculo Unificado"
+		#define STR0077 "Selecione os filtros para cálculo"
+		#define STR0078 "Filtrar Cálculo"
+		#define STR0079 "Calculando "
+		#define STR0080 "Log do cálculo automático -> Filial: "
+		#define STR0081 "Processo: "
+		#define STR0082 "Roteiro: "
+		#define STR0083 "Período: "
+		#define STR0084 "Núm. Pagto: "
+		#define STR0085 "Data inválida! A range de data deve pertencer ao periodo selecionado para cálculo"
+		#define STR0086 "Deseja utilizar multi-threads no processo de cálculo?"
+		#define STR0087 "Quantidade de Threads"
+		#define STR0088 "Quantidade máxima de threads permitidas para esta operação é "
+		#define STR0089 "O parâmetro MV_DF13NEG esta preenchido com 'S' e não existe verba com ID 0348, deverá cadastrar a verba ou alterar o parâmetro."
+		#define STR0090 "Rotina não disponivel."
+		#define STR0091 "Inconsistências"
+		#define STR0092 "Funcionário "
+		#define STR0093 " está com um centro de custo inválido, atualize o cadastro."
+		#define STR0094 "A Data de Pagamento deve ser informada."
+		#define STR0095 "As datas de filtro da programação de férias devem ser informadas."
+		#define STR0096 "(Demitido)"
+		#define STR0097 "Contrato intermitente"
+		#define STR0098 "Filtrando funcionários..."
+		#define STR0099 "Primeira Parcela 13°"
+		#define STR0100 "Segunda Parcela 13°"
+		#define STR0101 "Férias Programadas"
+		#define STR0102 "Vale Transporte"
+		#define STR0103 "Vale Refeição"
+		#define STR0104 "Vale alimenção"
+	#endif
+#endif

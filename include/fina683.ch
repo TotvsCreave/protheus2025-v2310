@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Grupos de Acceso"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Informacion del Grupo de Acceso"
+	#define STR0007 "Participantes del Grupo de Acceso"
+	#define STR0008 "Responsable invalido. Esta persona ya es responsable del siguiente grupo: "
+	#define STR0009 "Este participante ya esta incluido en el siguiente grupo: "
+	#define STR0010 "Participante no registrado."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Access Groups"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Access Group Information"
+		#define STR0007 "Access Group Participants"
+		#define STR0008 "Person in Charge Not Valid. This person is already in charge of the following group: "
+		#define STR0009 "This participant is already added to the following group: "
+		#define STR0010 "Participant not registered."
+	#else
+		#define STR0001 "Grupos de Acesso"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Informações do Grupo de Acesso"
+		#define STR0007 "Participantes do Grupo de Acesso"
+		#define STR0008 "Responsável inválido. Essa pessoa já é responsável pelo seguinte grupo: "
+		#define STR0009 "Esse participante já está incluso no seguinte grupo: "
+		#define STR0010 "Participante não cadastrado."
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Informe de Comisión vs Financiero"
+	#define STR0002 "Emisión del informe de Comisión vs Financiero"
+	#define STR0003 "Por Sucursal+Vendedor"
+	#define STR0004 "Comisión vs Financiero"
+	#define STR0005 "Financiero - Base"
+	#define STR0006 "Comisión"
+	#define STR0007 "Comisión - Base"
+	#define STR0008 "Comisión"
+	#define STR0009 "Porcentaje"
+	#define STR0010 "Comisión vs Financiero"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Report of Commission x Financial"
+		#define STR0002 "Issue of Report of Commission x Financial"
+		#define STR0003 "By Branch+Sales Representative"
+		#define STR0004 "Commission x Financial"
+		#define STR0005 "Financial - Base"
+		#define STR0006 "Commission"
+		#define STR0007 "Commission - Base"
+		#define STR0008 "Commission"
+		#define STR0009 "Percentage"
+		#define STR0010 "Commission x Financial"
+	#else
+		#define STR0001 "Relatório de Comissão x Financeiro"
+		#define STR0002 "Emissão do Relatório de Comissão x Financeiro"
+		#define STR0003 "Por Filial+Vendedor"
+		#define STR0004 "Comissão x Financeiro"
+		#define STR0005 "Financeiro - Base"
+		#define STR0006 "Comissão"
+		#define STR0007 "Comissão - Base"
+		#define STR0008 "Comissão"
+		#define STR0009 "Percentual"
+		#define STR0010 "Comissão x Financeiro"
+	#endif
+#endif

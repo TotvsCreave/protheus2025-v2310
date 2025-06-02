@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Iniciando procesamiento..."
+	#define STR0002 "Realizando "
+	#define STR0003 "la apertura"
+	#define STR0004 "el cierre"
+	#define STR0005 " de la caja."
+	#define STR0006 "No se pudo realizar "
+	#define STR0007 "Apertura"
+	#define STR0008 "Cierre"
+	#define STR0009 " realizado con exito."
+	#define STR0010 "Fin de procesamiento."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Starting processing..."
+		#define STR0002 "Performing "
+		#define STR0003 "the opening"
+		#define STR0004 "the closing"
+		#define STR0005 " of the cashier."
+		#define STR0006 "Not possible to perform "
+		#define STR0007 "Opening"
+		#define STR0008 "Closing"
+		#define STR0009 " successfully performed."
+		#define STR0010 "End of Processing."
+	#else
+		#define STR0001 "Iniciando processamento..."
+		#define STR0002 "Realizando "
+		#define STR0003 "a abertura"
+		#define STR0004 "o fechamento"
+		#define STR0005 " do caixa."
+		#define STR0006 "Nao foi possivel realizar "
+		#define STR0007 "Abertura"
+		#define STR0008 "Fechamento"
+		#define STR0009 " realizado com sucesso."
+		#define STR0010 "Fim de processamento."
+	#endif
+#endif

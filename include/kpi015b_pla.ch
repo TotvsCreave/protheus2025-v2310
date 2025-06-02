@@ -1,0 +1,87 @@
+#ifdef SPANISH
+	#define STR0001 "Real"
+	#define STR0002 "Valores"
+	#define STR0003 "Planillas"
+	#define STR0004 "Planilla"
+	#define STR0005 "Meta"
+	#define STR0006 "Ano"
+	#define STR0007 "Semestre"
+	#define STR0008 "Cuadrimestre"
+	#define STR0009 "Trimestre"
+	#define STR0010 "Bimestre"
+	#define STR0011 "Mes"
+	#define STR0012 "Quincena"
+	#define STR0013 "Semestre"
+	#define STR0014 "Semana"
+	#define STR0015 "Dia"
+	#define STR0016 "Previa"
+	#define STR0017 "Fecha invalida."
+	#define STR0018 "PREVIA - A partir de "
+	#define STR0019 "REAL - A partir de "
+	#define STR0020 "META - A partir de "
+	#define STR0021 " a "
+	#define STR0022 "Usuario sin autorizacion para incluir registro en la planilla de valores."
+	#define STR0023 "Inclusion permitida para: "
+	#define STR0024 "(Todos)"
+	#define STR0025 "El plazo para actualizar los valores de este periodo foi sobrepasado."
+	#define STR0026 "Plazo:"
+	#define STR0027 "Periodo:"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Actual"
+		#define STR0002 "Values "
+		#define STR0003 "Worksheets"
+		#define STR0004 "Worksheet "
+		#define STR0005 "Target"
+		#define STR0006 "Year"
+		#define STR0007 "Semester"
+		#define STR0008 "Quatrimester"
+		#define STR0009 "Quarter "
+		#define STR0010 "Bimester"
+		#define STR0011 "Month"
+		#define STR0012 "Fortnight"
+		#define STR0013 "Semester"
+		#define STR0014 "Week "
+		#define STR0015 "Day"
+		#define STR0016 "Previous"
+		#define STR0017 "Invalid date. "
+		#define STR0018 "ESTIMATED - From "
+		#define STR0019 "ACTUAL - From "
+		#define STR0020 "TARGET - From "
+		#define STR0021 " to "
+		#define STR0022 "User has no permission to add record to Values Worksheet."
+		#define STR0023 "Addition allowed for: "
+		#define STR0024 "(All)"
+		#define STR0025 "The term for the value update of this period is outdated."
+		#define STR0026 "Term:"
+		#define STR0027 "Period:"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Euro", "Real" )
+		#define STR0002 "Valores"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Folhas de cálculo", "Planillas" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Folha de cálculo", "Planilla" )
+		#define STR0005 "Meta"
+		#define STR0006 "Ano"
+		#define STR0007 "Semestre"
+		#define STR0008 "Quadrimestre"
+		#define STR0009 "Trimestre"
+		#define STR0010 "Bimestre"
+		#define STR0011 "Mês"
+		#define STR0012 "Quinzena"
+		#define STR0013 "Semestre"
+		#define STR0014 "Semana"
+		#define STR0015 "Dia"
+		#define STR0016 "Prévia"
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Data inválida.", "Data invalida." )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Prévia - a partir de ", "PRÉVIA - A partir de " )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Real - a partir de ", "REAL - A partir de " )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Meta - a partir de ", "META - A partir de " )
+		#define STR0021 " até "
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Utilizador sem autorização para incluir registo na folha de cálculo de valores.", "Usuário sem permissão para incluir registro na Planilha de Valores." )
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Inserção permitida para: ", "Inclusão permitida para: " )
+		#define STR0024 "(Todos)"
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "O prazo para actualização de valores deste período foi ultrapassado.", "O prazo para atualização de valores deste periodo foi ultrapassado." )
+		#define STR0026 "Prazo:"
+		#define STR0027 "Período:"
+	#endif
+#endif

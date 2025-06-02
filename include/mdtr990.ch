@@ -1,0 +1,108 @@
+#ifdef SPANISH
+	#define STR0001 "Historial de Registro"
+	#define STR0002 "A traves de este informe es posible verificar todo el historial del registro deseado. "
+	#define STR0003 "A rayas"
+	#define STR0004 "Administracion"
+	#define STR0005 "Usuario                       Campo              Titulo            Operacion       Fecha           Hora       Contenido Inicial                                 Contenido Modificacion"
+	#define STR0006 "No hay datos para el montaje del informe."
+	#define STR0007 "Falla Conexion en la Base - Error:"
+	#define STR0008 "IP"
+	#define STR0009 "Puerto"
+	#define STR0010 "DBMS/Base de Datos"
+	#define STR0011 "Contacte el Administrador de Sistemas."
+	#define STR0012 "Falla de base de Datos"
+	#define STR0013 "Tabla"
+	#define STR0014 "Registro Actual"
+	#define STR0015 "Historial"
+	#define STR0016 "Modificacion"
+	#define STR0017 "Borrado"
+	#define STR0018 "Operacion"
+	#define STR0019 "Inclusion"
+	#define STR0020 "Verdadero"
+	#define STR0021 "Falso"
+	#define STR0022 "Este archivo no posee datos que fueron auditados"
+	#define STR0023 "ATENCION"
+	#define STR0024 "DBMS/Base de Datos informada en  el parametro MV_NG2PRIP invalido."
+	#define STR0025 "Informe en el siguiente formato: DBMS/Base de Datos (MSSQL7/Auditoria)."
+	#define STR0026 "Puerto/IP informado en el parametro MV_NG2DBAU invalido."
+	#define STR0027 "Informe en el siguiente formato: IP/PUERTO (127.0.0.1/7890)."
+	#define STR0028 "Opcion no disponible para Prestador de Servicio."
+	#define STR0029 "Por favor contacte administrador de sistema."
+	#define STR0030 "Opcion no disponible en el modo de Inclusion."
+	#define STR0031 "Para acceder a esta opcion, visualizar/modificar/borrar el registro."
+	#define STR0032 "Parametro de auditoria no activado."
+	#define STR0033 "Para utilizacion de este recurso es necesaria la activacion del parametro MV_NG2AUDI junto con la auditoria del sistema."
+	#define STR0034 "Funcionalidad solo disponible para entornos TOP CONNECT."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Record History"
+		#define STR0002 "This report allows checking the entire history of the desired record."
+		#define STR0003 "Z-form"
+		#define STR0004 "Management"
+		#define STR0005 "User                          Field              Title             Operation      Date           Time       Initial Content                                  Changed Content   "
+		#define STR0006 "There is no data to assemble the report."
+		#define STR0007 "Failure Connection in Base - Error"
+		#define STR0008 "IP"
+		#define STR0009 "Port"
+		#define STR0010 "DBMS/Database"
+		#define STR0011 "Contact the system administrator."
+		#define STR0012 "Database Failure"
+		#define STR0013 "Table"
+		#define STR0014 "Current Register"
+		#define STR0015 "History"
+		#define STR0016 "Change"
+		#define STR0017 "Deletion"
+		#define STR0018 "Operation"
+		#define STR0019 "Inclusion"
+		#define STR0020 "True"
+		#define STR0021 "False"
+		#define STR0022 "This register has no audited data"
+		#define STR0023 "ATTENTION"
+		#define STR0024 "DBMS/Database indicated in the MV_NG2PRIP parameter is invalid."
+		#define STR0025 "Enter it in the following format: DBMS/Database (MSSQL7/Audit)."
+		#define STR0026 "Port/IP indicated in the MV_NG2DBAU parameter invalid."
+		#define STR0027 "Enter it in the following format: IP/PORT (127.0.0.1/7890)."
+		#define STR0028 "Option not available for Service Provider."
+		#define STR0029 "Please contact system administrator."
+		#define STR0030 "Option not available in Inclusion mode."
+		#define STR0031 "To access this option, please view/change/delete the register."
+		#define STR0032 "Audit parameter not activated."
+		#define STR0033 "To use this resource, you must activated parameter MV_NG2AUDI together with system audit."
+		#define STR0034 "Functionality available for TOP CONNECT environments only."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Histórico de registo", "Histórico de Registro" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Através deste relatório é possível verificar todo o histórico do registo desejado.", "Através deste relatório é possível verificar todo o histórico do resgitro desejado." )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Utilizador                       Campo              Título            Operação       Data           Hora       Conteúdo inicial                                 Conteúdo alteração", "Usuario                       Campo              Titulo            Operação       Data           Hora       Conteúdo Inicial                                 Conteúdo Alteração" )
+		#define STR0006 "Não há dados para a montagem do relatório."
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Falha conexão na base - Erro", "Falha Conexao na Base - Erro" )
+		#define STR0008 "IP"
+		#define STR0009 "Porta"
+		#define STR0010 "DBMS/Base de Dados"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Contacte o administrador de sistemas.", "Contate o Administrador de Sistemas." )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Falha de base de dados", "Falha de Banco de Dados" )
+		#define STR0013 "Tabela"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Registo actual", "Registro Atual" )
+		#define STR0015 "Histórico"
+		#define STR0016 "Alteração"
+		#define STR0017 "Exclusão"
+		#define STR0018 "Operação"
+		#define STR0019 "Inclusão"
+		#define STR0020 "Verdadeiro"
+		#define STR0021 "Falso"
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Este registo não possui dados auditorados", "Este registro não possui dados auditorados" )
+		#define STR0023 "ATENÇÃO"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "DBMS/Base de dados informada no parâmetro MV_NG2PRIP inválido.", "DBMS/Base de Dados informada no parametro MV_NG2PRIP invalido." )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Informe no seguinte formato: DBMS/Base de Dados (MSSQL7/Auditoria).", "Informe no seguinte formanto: DBMS/Base de Dados (MSSQL7/Auditoria)." )
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Porta/IP informada no parâmetro MV_NG2DBAU inválido.", "Porta/IP informada no parametro MV_NG2DBAU inválido." )
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Informe no seguinte formato: IP/PORTA (127.0.0.1/7890).", "Informe no seguinte formanto: IP/PORTA (127.0.0.1/7890)." )
+		#define STR0028 "Opção não disponível para Prestador de Serviço."
+		#define STR0029 "Favor contate administrador de sistema."
+		#define STR0030 "Opção não disponível no modo de Inclusão."
+		#define STR0031 "Para acessar esta opção, favor visualizar/alterar/excluir o registro."
+		#define STR0032 "Parâmetro de auditoria não ativado."
+		#define STR0033 "Para utilização deste recurso é necessaria a ativacao do parametro MV_NG2AUDI juntamente com a auditoria de sistema."
+		#define STR0034 "Funcionalidade apenas disponível para ambientes TOP CONNECT."
+	#endif
+#endif

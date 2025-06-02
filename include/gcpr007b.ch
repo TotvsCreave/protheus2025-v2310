@@ -1,0 +1,63 @@
+#ifdef SPANISH
+	#define STR0001 "Este programa tiene el objetivo de imprimir informe "
+	#define STR0002 "de acuerdo con los parametros informados por el usuario."
+	#define STR0003 "Informe de relacion de licitacion por modalidad"
+	#define STR0004 "Hora "
+	#define STR0005 "Empresa: "
+	#define STR0006 " / Sucursal: "
+	#define STR0007 "Relacion de licitaciones por modalidad: Periodo "
+	#define STR0008 " A "
+	#define STR0009 " Modalidad: "
+	#define STR0010 "Fch. Ref. "
+	#define STR0011 "Nº PROC. LIC"
+	#define STR0012 "Nº PROC."
+	#define STR0013 "PUBL IN"
+	#define STR0014 "OBJETO"
+	#define STR0015 "VALOR"
+	#define STR0016 "VENCEDOR"
+	#define STR0017 "Nº CONTRATO"
+	#define STR0018 "FECHA PED/C."
+	#define STR0019 "Pagina: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "This program aims at printing the report"
+		#define STR0002 "according to parameters entered by the user."
+		#define STR0003 "Bidding List Report per modality"
+		#define STR0004 "Hour:"
+		#define STR0005 "Company:"
+		#define STR0006 "/Branch:"
+		#define STR0007 "Bidding List per modality: Period"
+		#define STR0008 "to"
+		#define STR0009 "modality:"
+		#define STR0010 "Ref. Dt"
+		#define STR0011 "N. BID. PROC"
+		#define STR0012 "PROC. N"
+		#define STR0013 "IN. PUBL"
+		#define STR0014 "OBJECT"
+		#define STR0015 "VALUE"
+		#define STR0016 "WINNER"
+		#define STR0017 "CONTRACT NUMBER"
+		#define STR0018 "DATE ORD/C"
+		#define STR0019 "PAGE"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Este programa imprime relatório ", "Este programa tem como objetivo imprimir relatorio " )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "de acordo com os parâmetros informados pelo usuário.", "de acordo com os parametros informados pelo usuario." )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Relatório de relaçãod de licitação por modalidade", "Relatorio de relaçãod de licitação por modalidade" )
+		#define STR0004 "Hora: "
+		#define STR0005 "Empresa: "
+		#define STR0006 " / Filial: "
+		#define STR0007 "Relação de licitações por modalidade: Período "
+		#define STR0008 " até "
+		#define STR0009 " Modalidade: "
+		#define STR0010 "Dt. Ref.: "
+		#define STR0011 "Nº PROC. LIC."
+		#define STR0012 "Nº PROC."
+		#define STR0013 "PUBL. IN"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "OBJECTO", "OBJETO" )
+		#define STR0015 "VALOR"
+		#define STR0016 "VENCEDOR"
+		#define STR0017 "Nº CONTRATO"
+		#define STR0018 "DATA PED/C"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Página: ", "Pagina: " )
+	#endif
+#endif

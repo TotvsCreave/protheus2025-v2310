@@ -1,0 +1,42 @@
+#ifdef SPANISH
+	#define STR0001 "Buscar"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Archivo vinculo"
+	#define STR0007 "Atencion"
+	#define STR0008 "Confirma borrado de la vinculacion: "
+	#define STR0009 "¿Desea efectuar el vínculo de los ítems?"
+	#define STR0010 " ¿Esta seguro? "
+	#define STR0011 "Sí"
+	#define STR0012 "No"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Search"
+		#define STR0002 "View"
+		#define STR0003 "Insert"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Binding File"
+		#define STR0007 "Attention"
+		#define STR0008 "Confirm deletion of binding: "
+		#define STR0009 "Bind items?"
+		#define STR0010 " Are you sure ? "
+		#define STR0011 "Yes"
+		#define STR0012 "No"
+	#else
+		#define STR0001 "Pesquisar"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Registo de Associação", "Cadastro Amarracao" )
+		#define STR0007 "Atenção"
+		#define STR0008 "Confirma a exclusão da amarracao : "
+		#define STR0009 "Deseja efetuar a amarracao dos itens?"
+		#define STR0010 " Tem Certeza ? "
+		#define STR0011 "Sim"
+		#define STR0012 "Não"
+	#endif
+#endif

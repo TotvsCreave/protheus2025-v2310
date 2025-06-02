@@ -1,0 +1,90 @@
+#ifdef SPANISH
+	#define STR0001 "Calculo de la base para IETU"
+	#define STR0002 "Ejecutar"
+	#define STR0003 "Anular"
+	#define STR0004 "Atencion"
+	#define STR0005 "Es necesario ejecutar la reversion para continuar esta operacion"
+	#define STR0006 "Desea ejecutar la reversion a"
+	#define STR0007 "Para ejecutar su cierre es necesario revertir el cierre de los meses posteriores"
+	#define STR0008 "Proceso finalizado"
+	#define STR0009 "Desea emitir el informe"
+	#define STR0010 "No se encontro datos para el cierre"
+	#define STR0011 "Preparando las informaciones sobre pagos"
+	#define STR0012 "Mes / Ano"
+	#define STR0013 "cierre"
+	#define STR0014 "invalido"
+	#define STR0015 "Informelos correctamente"
+	#define STR0016 "ya se finalizo"
+	#define STR0017 "es inferior al ultimo mes finalizado"
+	#define STR0018 "Preparando las informaciones sobre cobranzas"
+	#define STR0019 "Ejecutando el calculo de los pagos efectuados"
+	#define STR0020 "Espere"
+	#define STR0021 "Calculo de los pagos efectuados finalizado"
+	#define STR0022 "Ejecutando el calculo de las cobranzas"
+	#define STR0023 "Calculo de la cobranza finalizado"
+	#define STR0024 "Ejecutando el cierre"
+	#define STR0025 "Actualizando la base de datos"
+	#define STR0026 "Cierre finalizado"
+	#define STR0027 "El periodo informado es invalido para el calculo de la base de IETU"
+	#define STR0028 "Informe un periodo a partir de"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Base calculation for IETU"
+		#define STR0002 "Execute"
+		#define STR0003 "Cancel"
+		#define STR0004 "Attention"
+		#define STR0005 "In order to continue this operation, executing reversion is necessary"
+		#define STR0006 "Do you want to execute reversion to"
+		#define STR0007 "In order to execute closing, reverting previous months' closings is necessary"
+		#define STR0008 "Finished process"
+		#define STR0009 "Do you want to print the report"
+		#define STR0010 "No information for closing was found."
+		#define STR0011 "Preparing information about payments"
+		#define STR0012 "Month / Year ?"
+		#define STR0013 "invalid"
+		#define STR0014 "closing"
+		#define STR0015 "Enter them correctly"
+		#define STR0016 "was already finished"
+		#define STR0017 "is prior to last finished month"
+		#define STR0018 "Preparing information about receipts"
+		#define STR0019 "Calculating payments made"
+		#define STR0020 "Wait"
+		#define STR0021 "Calculation of payments made was finished"
+		#define STR0022 "Calculating receipts"
+		#define STR0023 "Receipt calculation was finished"
+		#define STR0024 "Executing closing"
+		#define STR0025 "Updating database"
+		#define STR0026 "Closing process was finished"
+		#define STR0027 "Period entered is not valid to calculate base for IETU"
+		#define STR0028 "Enter a period from"
+	#else
+		#define STR0001 "Cálculo da base para IETU"
+		#define STR0002 "Executar"
+		#define STR0003 "Cancelar"
+		#define STR0004 "Atenção"
+		#define STR0005 "É necessário executar a reversão para continuar esta operação"
+		#define STR0006 "Deseja executar a reversão para"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Para executar seu fechamento, é necessário reverter o fechamento dos meses posteriores.", "Para executar seu fechamento é necessário reverter o fechamento dos meses posteriores" )
+		#define STR0008 "Processo encerrado"
+		#define STR0009 "Deseja emitir o relatório"
+		#define STR0010 "Não se encontrou dados para o fechamento"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A preparar as informações sobre pagamentos", "Preparando as informações sobre pagamentos" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Mês / Ano", "Mes / Ano" )
+		#define STR0013 "fechamento"
+		#define STR0014 "inválido"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Informe-os correctamente", "Informe-os corretamente" )
+		#define STR0016 "já foi encerrado"
+		#define STR0017 "é inferior ao último mês encerrado"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "A preparar as informações sobre recebimentos", "Preparando as informações sobre recebimentos" )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "A executar o cálculo dos pagamentos efectuados", "Executando o cálculo dos pagamentos efetuados" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Aguarde...", "Aguarde" )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Cálculo dos pagamentos efectuados encerrado", "Cálculo dos pagamentos efetuados encerrado" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "A executar o cálculo dos recebimentos", "Executando o cálculo dos recebimentos" )
+		#define STR0023 "Cálculo dos recebimentos encerrado"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "A executar o fechamento", "Executando o fechamento" )
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "A actualizar base de dados", "Atualizando a base de dados" )
+		#define STR0026 "Fechamento encerrado"
+		#define STR0027 "O período informado não é válido para o cálculo da base de IETU"
+		#define STR0028 "Informe um período a partir de"
+	#endif
+#endif

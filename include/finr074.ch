@@ -1,0 +1,90 @@
+#ifdef SPANISH
+	#define STR0001 "El objetivo de este programa es imprimir un informe"
+	#define STR0002 "segun los parametros informados por el usuario.     "
+	#define STR0003 "Informe de diferencias de cambio de cuentas por cobrar"
+	#define STR0004 "Cliente     Tienda Venc.      Emision          Naturaleza   Prefijo/Numero/Cuota.      Tipo      Valor "
+	#define STR0005 "Cliente"
+	#define STR0006 "Prefijo+Numero"
+	#define STR0007 "Modalidad"
+	#define STR0008 "Emision"
+	#define STR0009 "Vencim."
+	#define STR0010 "Lineas"
+	#define STR0011 "Administrac. "
+	#define STR0012 "     Valor Orig Moneda  Tasa"
+	#define STR0013 "Ajuste"
+	#define STR0014 "Diferencia de cambio  ->"
+	#define STR0015 "Documento ajustado ->"
+	#define STR0016 "Valor ajustado : "
+	#define STR0017 "***ANULADO POR EL OPERADOR***"
+	#define STR0018 "Cliente"
+	#define STR0019 "Tienda"
+	#define STR0020 "Venc."
+	#define STR0021 "Emision"
+	#define STR0022 "Modalidad"
+	#define STR0023 "Prefijo/Numero/Cuot."
+	#define STR0024 "Tipo"
+	#define STR0025 "Valor"
+	#define STR0026 "Valor Orig"
+	#define STR0027 "Tasa"
+	#define STR0028 "Mon."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "The purpose of this report is to print a report    "
+		#define STR0002 "according to the parameters entered by the user.    "
+		#define STR0003 "Report of accounts receivable exchange rate difference"
+		#define STR0004 "Custom.     Expir.Store      Issue            Nature     Prefix/Number/Instal.      Type      Value "
+		#define STR0005 "Custom."
+		#define STR0006 "Prefix+Number "
+		#define STR0007 "Class    "
+		#define STR0008 "Issue  "
+		#define STR0009 "Due date   "
+		#define STR0010 "Lines "
+		#define STR0011 "Administrat. "
+		#define STR0012 "     Orig Amount Currency Rate"
+		#define STR0013 "Adjustm."
+		#define STR0014 "Exchange difference ->"
+		#define STR0015 "Document adjusted ->"
+		#define STR0016 "Amount adjusted: "
+		#define STR0017 "***CANCELLED BY THE OPERATOR***"
+		#define STR0018 "Customer"
+		#define STR0019 "Unit"
+		#define STR0020 "Due Date"
+		#define STR0021 "Issue"
+		#define STR0022 "Class"
+		#define STR0023 "Prefix/Number/Part."
+		#define STR0024 "Type"
+		#define STR0025 "Value"
+		#define STR0026 "Original Value"
+		#define STR0027 "Rate"
+		#define STR0028 "Mon."
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Este programa tem como objetivo imprimir relatório ", "Este programa tem como objetivo imprimir relatorio " )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "De acordo com os parâmetro s informados pelo utilizador.", "de acordo com os parámetros informados pelo usuario." )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Relatório de diferenças de câmbio de contas a receber", "Relatorio de diferencias de cambio do contas a receber" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Cliente     Loja Venc.      Emissão          Natureza   Prefixo/Número/Prest.      Tipo      Valor ", "Cliente     Loja Venc.      Emissao          Natureza   Prefixo/Numero/Parc.      Tipo      Valor " )
+		#define STR0005 "Cliente"
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Prefixo+número", "Prefixo+Numero" )
+		#define STR0007 "Natureza "
+		#define STR0008 If( cPaisLoc $ "ANG|PTG", "Emissão", "Emissao" )
+		#define STR0009 "Vencimento "
+		#define STR0010 "Linhas"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0012 "     Valor Orig Moeda   Taxa"
+		#define STR0013 "Ajuste"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Diferença de câmbio  ->", "Diferenca de cambio  ->" )
+		#define STR0015 "Documento ajustado ->"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Valor acordado : ", "Valor ajustado : " )
+		#define STR0017 "*** CANCELADO PELO OPERADOR ***"
+		#define STR0018 "Cliente"
+		#define STR0019 "Loja"
+		#define STR0020 "Venc."
+		#define STR0021 "Emissão"
+		#define STR0022 "Natureza"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Prefixo/Número/Parc.", "Prefixo/Numero/Parc." )
+		#define STR0024 "Tipo"
+		#define STR0025 "Valor"
+		#define STR0026 If( cPaisLoc $ "ANG|PTG", "Valor Orig.", "Valor Orig" )
+		#define STR0027 "Taxa"
+		#define STR0028 "Mon."
+	#endif
+#endif

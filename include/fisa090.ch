@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "¡Tabla CLI no registrada en el sistema!"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Copiar"
+	#define STR0007 "Cepom"
+	#define STR0008 "Ya existe registro con estos datos"
+	#define STR0009 "Formulario de registro CEPOM"
+	#define STR0010 "Informe el proveedor"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "CLI table not registered in the system!"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Copy"
+		#define STR0007 "Cepom"
+		#define STR0008 "There already is a record with these data"
+		#define STR0009 "CEPOM register form"
+		#define STR0010 "Enter the Supplier"
+	#else
+		#define STR0001 "Tabela CLI não cadastrada no sistema!"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Copiar"
+		#define STR0007 "Cepom"
+		#define STR0008 "Já existe registro com esses dados"
+		#define STR0009 "Formulário de cadastro CEPOM"
+		#define STR0010 "Informe o Fornecedor"
+	#endif
+#endif

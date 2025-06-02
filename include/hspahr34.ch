@@ -1,0 +1,96 @@
+#ifdef SPANISH
+	#define STR0001 "Este programa tiene como objetivo imprimir informe "
+	#define STR0002 "de acuerdo con los parametros informados por el usuario."
+	#define STR0003 "Estadistica Reserva Medico/Proc./Convenio"
+	#define STR0004 "A rayas"
+	#define STR0005 "Administracion"
+	#define STR0006 " Ene"
+	#define STR0007 " Feb"
+	#define STR0008 " Mar"
+	#define STR0009 " Abr"
+	#define STR0010 " May"
+	#define STR0011 " Jun"
+	#define STR0012 " Jul"
+	#define STR0013 " Ago"
+	#define STR0014 " Sep"
+	#define STR0015 " Oct"
+	#define STR0016 " Nov"
+	#define STR0017 " Dic"
+	#define STR0018 "Total"
+	#define STR0019 "Promedio"
+	#define STR0020 "Ningun dato se encontro para la seleccion efectuada."
+	#define STR0021 "Mes Referencia"
+	#define STR0022 "R E S U M E N"
+	#define STR0023 "Medico:"
+	#define STR0024 "Total del Medico"
+	#define STR0025 "Cantidad"
+	#define STR0026 "Atencion"
+	#define STR0027 "Informes estadisticos"
+	#define STR0028 "Medico/Proc./Convenio"
+	#define STR0029 "Procedimiento:"
+	#define STR0030 "Total del Procedimiento"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "The purpose of this program is to print reports "
+		#define STR0002 "according to parameters entered by the user."
+		#define STR0003 "Statistics of Doctor/Proc./H.C.Ins. Reservation"
+		#define STR0004 "Z.Form"
+		#define STR0005 "Administration"
+		#define STR0006 " Jan"
+		#define STR0007 " Feb"
+		#define STR0008 " Mar"
+		#define STR0009 " Apr"
+		#define STR0010 " May"
+		#define STR0011 " Jun"
+		#define STR0012 " Jul"
+		#define STR0013 " Aug"
+		#define STR0014 " Sep"
+		#define STR0015 " Oct"
+		#define STR0016 " Nov"
+		#define STR0017 " Dec"
+		#define STR0018 "Total"
+		#define STR0019 "Average"
+		#define STR0020 "No data found for the current selection."
+		#define STR0021 "Reference Month"
+		#define STR0022 "S U M M A R Y"
+		#define STR0023 "Doctor:"
+		#define STR0024 "Doctor Total"
+		#define STR0025 "Quantity"
+		#define STR0026 "Attention"
+		#define STR0027 "Statistic Reports"
+		#define STR0028 "Doctor/Proc./H.Care Ins."
+		#define STR0029 "Procedure:"
+		#define STR0030 "Procedure Total"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Este programa tem como objetivo imprimir relatório ", "Este programa tem como objetivo imprimir relatorio " )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "De acordo com os parâmetro s informados pelo utilizador.", "de acordo com os parametros informados pelo usuario." )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Estatística Reserva Médico/proc./acordo", "Estatistica Reserva Médico/Proc./Convênio" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Código de barras", "Zebrado" )
+		#define STR0005 "Administração"
+		#define STR0006 " Jan"
+		#define STR0007 " Fev"
+		#define STR0008 " Mar"
+		#define STR0009 " Abr"
+		#define STR0010 " Mai"
+		#define STR0011 " Jun"
+		#define STR0012 " Jul"
+		#define STR0013 " Ago"
+		#define STR0014 " Set"
+		#define STR0015 " Out"
+		#define STR0016 " Nov"
+		#define STR0017 " Dez"
+		#define STR0018 "Total"
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Média", "Media" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Nenhum dado foi encontrado para a selecção efectuada.", "Nenhum dado foi encontrado para a selecao efetuada." )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Mês Referência", "Mës Referëncia" )
+		#define STR0022 "R E S U M O"
+		#define STR0023 If( cPaisLoc $ "ANG|PTG", "Mèdico:", "Médico:" )
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Total Do Médico", "Total do Médico" )
+		#define STR0025 "Quantidade"
+		#define STR0026 "Atenção"
+		#define STR0027 If( cPaisLoc $ "ANG|PTG", "Relatórios estatísticos", "Relatórios estatisticos" )
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Médico/proc./acordo", "Médico/Proc./Convênio" )
+		#define STR0029 "Procedimento:"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Total Do Procedimento", "Total do Procedimento" )
+	#endif
+#endif

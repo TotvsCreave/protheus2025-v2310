@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Ticket Cambio - Seleccion de Productos"
+	#define STR0002 "Digite el numero del item"
+	#define STR0003 "Relacion de productos con ticket cambio:"
+	#define STR0004 "Volver a"
+	#define STR0005 "Registro de Items"
+	#define STR0006 "Limpiar Seleccion"
+	#define STR0007 "¡Este item fue cancelado!"
+	#define STR0008 "¡Item ya seleccionado!"
+	#define STR0009 "Item nº "
+	#define STR0010 "Producto: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Change Voucher - Product Selection"
+		#define STR0002 "Enter item number"
+		#define STR0003 "List of products with change voucher:"
+		#define STR0004 "Return to"
+		#define STR0005 "Item Registry"
+		#define STR0006 "Clear Selection"
+		#define STR0007 "This item was canceled!"
+		#define STR0008 "Item already selected."
+		#define STR0009 "Item No. "
+		#define STR0010 "Product: "
+	#else
+		#define STR0001 "Vale Troca - Seleção de Produtos"
+		#define STR0002 "Digite o número do item"
+		#define STR0003 "Relação de produtos com vale troca:"
+		#define STR0004 "Voltar para"
+		#define STR0005 "Registro de Itens"
+		#define STR0006 "Limpar Seleção"
+		#define STR0007 "Este item foi cancelado!"
+		#define STR0008 "Item já selecionado!"
+		#define STR0009 "Item nº "
+		#define STR0010 "Produto: "
+	#endif
+#endif

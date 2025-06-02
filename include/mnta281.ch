@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Grabación no procesada por inconsistencias en los registros. Para más información consulte el Log: "
+	#define STR0002 "¡Error en la grabación de imagen de la S.S. importada uMov.me!"
+	#define STR0003 "Error en la importación de la imagen uMov.me: "
+	#define STR0004 "======================================================="
+	#define STR0005 "**********UMOV.ME - ERROR AL PROCESAR ARCHIVO**********"
+	#define STR0006 "Error: "
+	#define STR0007 "Registro "
+	#define STR0008 " tiene inconsistencias:"
+	#define STR0009 " procesado con éxito."
+	#define STR0010 "Atención"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Unable to save due to record inconsistencies.  For further information, refer to the Log: "
+		#define STR0002 "Error saving the imported S.S. uMov.me image."
+		#define STR0003 "Error importing uMov.me image: "
+		#define STR0004 "======================================================="
+		#define STR0005 "**********UMOV.ME - ERRO AO PROCESSAR ARQUIVO**********"
+		#define STR0006 "Error: "
+		#define STR0007 "Record "
+		#define STR0008 " has inconsistencies:"
+		#define STR0009 " successfully processed"
+		#define STR0010 "Attention"
+	#else
+		#define STR0001 "Gravação não processada por inconsistências nos registros. Para mais informações consultar o Log: "
+		#define STR0002 "Erro na gravação de imagem da S.S. importada uMov.me!"
+		#define STR0003 "Erro na importação da imagem uMov.me: "
+		#define STR0004 "======================================================="
+		#define STR0005 "**********UMOV.ME - ERRO AO PROCESSAR ARQUIVO**********"
+		#define STR0006 "Erro: "
+		#define STR0007 "Registro "
+		#define STR0008 " possui inconsistências:"
+		#define STR0009 " processado com sucesso."
+		#define STR0010 "Atenção"
+	#endif
+#endif

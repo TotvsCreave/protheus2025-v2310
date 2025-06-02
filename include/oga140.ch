@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Motivos modificación cantidad en contrato"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Excluir"
+	#define STR0007 "Imprimir"
+	#define STR0008 "Copiar"
+	#define STR0009 "Motivo modificación contrato"
+	#define STR0010 "Datos del motivo modificación"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Reasons Alteration Amount in Contract"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit"
+		#define STR0006 "Delete"
+		#define STR0007 "Print"
+		#define STR0008 "Copy"
+		#define STR0009 "Reason Contract Alteration"
+		#define STR0010 "Alteration Reason Data"
+	#else
+		#define STR0001 "Motivos Alteração Quantidade em Contrato"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Imprimir"
+		#define STR0008 "Copiar"
+		#define STR0009 "Motivo Alteração Contrato"
+		#define STR0010 "Dados do Motivo Alteração"
+	#endif
+#endif

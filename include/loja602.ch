@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Rervertir"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Ventas realizadas"
+	#define STR0005 "Pedidos encerrados"
+	#define STR0006 "Devoluciones pendientes"
+	#define STR0007 "Para utilizar la rutina de reversion; es necesario crear los campos L4_ESTORN y L1_STATUES, de acuerdo con el FNC 000000225902010"
+	#define STR0008 "Ventas revertidas"
+	#define STR0009 "Items"
+	#define STR0010 "Pago"
+	#define STR0011 "Espere..."
+	#define STR0012 "Realizando la comunicacion con la retaguardia"
+	#define STR0013 "Espere, generando factura de devolucion..."
+	#define STR0014 "Atencion"
+	#define STR0015 "¡Factura de devolucion generada con exito!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Reverse"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Sales made"
+		#define STR0005 "Closed orders"
+		#define STR0006 "Pending returns"
+		#define STR0007 "To use the reversal routine, create fields: L4_ESTORN and L1_STATUES, according to FNC 000000225902010"
+		#define STR0008 "Sales reversed"
+		#define STR0009 "Items"
+		#define STR0010 "Payment"
+		#define STR0011 "Wait..."
+		#define STR0012 "Communicating with back office"
+		#define STR0013 "Wait, generating return invoice..."
+		#define STR0014 "Attention"
+		#define STR0015 "Return invoice successfully generated!"
+	#else
+		#define STR0001 "Estornar"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Vendas efectuadas", "Vendas efetuadas" )
+		#define STR0005 "Pedidos encerrados"
+		#define STR0006 "Devoluções pendentes"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Para utilizar o procedimento de estorno, faz-se necessária a criação dos campos L4_ESTORN e L1_STATUES, conforme a FNC 000000225902010", "Para utilização da rotina de estorno; faz-se necessária a criacao dos campos L4_ESTORN e L1_STATUES, conforme FNC 000000225902010" )
+		#define STR0008 "Vendas estornadas"
+		#define STR0009 "Itens"
+		#define STR0010 "Pagamento"
+		#define STR0011 "Aguarde..."
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "A efectuar comunicação com retaguarda", "Efetuando comunicação com retaguarda" )
+		#define STR0013 "Aguarde, gerando nota de devolução..."
+		#define STR0014 "Atenção"
+		#define STR0015 "Nota de devolução gerada com sucesso!"
+	#endif
+#endif

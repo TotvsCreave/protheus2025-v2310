@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "No Permite Modificacion"
+	#define STR0002 "Permite Modificacion"
+	#define STR0003 "Buscar"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Incluir"
+	#define STR0006 "Modificar"
+	#define STR0007 "Borrar"
+	#define STR0008 "Imprimir"
+	#define STR0009 "Reglas de Rellenado"
+	#define STR0010 "Modelo de Datos de Reglas de Rellenado"
+	#define STR0011 "Datos de Reglas de Rellenado"
+	#define STR0012 "No se permite la exclusion de estos datos."
+	#define STR0013 "Operacion no permitida."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Changes not allowed"
+		#define STR0002 "Changes allowed"
+		#define STR0003 "Search"
+		#define STR0004 "View"
+		#define STR0005 "Add"
+		#define STR0006 "Edit"
+		#define STR0007 "Delete"
+		#define STR0008 "Print"
+		#define STR0009 "Rules of Filling Out"
+		#define STR0010 "Data Model of Rules of Filling Out"
+		#define STR0011 "Data of Rules of Filling Out"
+		#define STR0012 "These data cannot be deleted."
+		#define STR0013 "Operation not allowed."
+	#else
+		#define STR0001 "Não Permite Alteração"
+		#define STR0002 "Permite Alteração"
+		#define STR0003 "Pesquisar"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Incluir"
+		#define STR0006 "Alterar"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Eliminar", "Excluir" )
+		#define STR0008 "Imprimir"
+		#define STR0009 "Regras de Preenchimento"
+		#define STR0010 "Modelo de Dados de Regras de Preenchimento"
+		#define STR0011 "Dados de Regras de Preenchimento"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Não é permitido eliminar estes dados.", "Não é permitida a exclusão destes dados." )
+		#define STR0013 "Operação não permitida."
+	#endif
+#endif

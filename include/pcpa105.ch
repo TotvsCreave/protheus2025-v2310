@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Familia Tecnica"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Imprimir"
+	#define STR0007 "Copiar"
+	#define STR0008 "Familia tecnica ya registrada."
+	#define STR0009 "Familia tecnica ya utilizada en una ficha tecnica, no puede borrarse."
+	#define STR0010 "Familia tecnica ya utilizada en un producto, no puede borrarse."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Technical Family"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Print"
+		#define STR0007 "Copy"
+		#define STR0008 "Already registered technical family."
+		#define STR0009 "Technical family already used in a technical form, it cannot be deleted."
+		#define STR0010 "Technical family already used in a product, it cannot be deleted."
+	#else
+		#define STR0001 "Família Técnica"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Imprimir"
+		#define STR0007 "Copiar"
+		#define STR0008 "Família técnica já cadastrada."
+		#define STR0009 "Família técnica já utilizada em uma ficha técnica, não pode ser excluída."
+		#define STR0010 "Família técnica já utilizada em um produto, não pode ser excluída."
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "DIOPS Flujo de caja trimestral"
+	#define STR0002 "Esta rutina efectúa la exportación del archivo CSV de DIOPS - Flujo de caja trimestral."
+	#define STR0003 "Antes de ejecutar la rutina, informe los parámetros."
+	#define STR0004 "Procesando DIOPS - Flujo de caja trimestral"
+	#define STR0005 "Buscando información..."
+	#define STR0006 "Parámetros no informados, por favor informe."
+	#define STR0007 "Espere..."
+	#define STR0008 "Generación finalizada. El archivo se generó el:"
+	#define STR0009 "Es necesario vincular un plan vinculado al libro seleccionado."
+	#define STR0010 "TOTVS"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Quarterly Cash Flow DIOPS"
+		#define STR0002 "This routine exports CSV file of DIOPS - Quarterly cash flow."
+		#define STR0003 "Before executing the routine, enter parameters."
+		#define STR0004 "Processing DIOPS - Quarterly Cash Flow"
+		#define STR0005 "Searching Data..."
+		#define STR0006 "Parameters not entered, enter!"
+		#define STR0007 "Wait ..."
+		#define STR0008 "Generation finished. File generated in:"
+		#define STR0009 "You must attach a referential plan to the selected book."
+		#define STR0010 "TOTVS"
+	#else
+		#define STR0001 "DIOPS Fluxo de Caixa Trimestral"
+		#define STR0002 "Esta rotina efetua a exportacão do arquivo CSV da DIOPS - Fluxo de Caixa Trimestral."
+		#define STR0003 "Antes de executar a rotina, informar os parâmetros."
+		#define STR0004 "Processando DIOPS - Fluxo de Caixa Trimestral"
+		#define STR0005 "Buscando informações..."
+		#define STR0006 "Parâmetros não informados, por favor informar!"
+		#define STR0007 "Aguarde ..."
+		#define STR0008 "Geração Finalizada. O arquivo foi gerado em:"
+		#define STR0009 "É necessário vincular um plano referencial ao livro selecionado."
+		#define STR0010 "TOTVS"
+	#endif
+#endif

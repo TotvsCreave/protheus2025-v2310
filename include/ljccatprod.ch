@@ -1,0 +1,63 @@
+#ifdef SPANISH
+	#define STR0001 "Codigo"
+	#define STR0002 "Descripcion"
+	#define STR0003 "Cantidad"
+	#define STR0004 "Busqueda de Productos"
+	#define STR0005 "Seleccionar Categorias"
+	#define STR0006 "Categoria Superior"
+	#define STR0007 "Categoria Hijo"
+	#define STR0008 "Adicionar"
+	#define STR0009 "Filtro de Busqueda"
+	#define STR0010 "Borrar"
+	#define STR0011 "Buscar"
+	#define STR0012 "Resultado"
+	#define STR0013 "Inserir"
+	#define STR0014 "Productos Equivalentes"
+	#define STR0015 "CATEGORIA SUPERIOR"
+	#define STR0016 "DESCRIPCION:"
+	#define STR0017 "CATEGORIA INFERIOR"
+	#define STR0018 "No Hay Categorias Registradas."
+	#define STR0019 "Limpia"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Code"
+		#define STR0002 "Description"
+		#define STR0003 "Amount"
+		#define STR0004 "Products Search"
+		#define STR0005 "Select Categories"
+		#define STR0006 "Superior Category"
+		#define STR0007 "Son Category"
+		#define STR0008 "Add"
+		#define STR0009 "Search Filter"
+		#define STR0010 "Delete"
+		#define STR0011 "Search"
+		#define STR0012 "Result"
+		#define STR0013 "Add"
+		#define STR0014 "Equivalent Products"
+		#define STR0015 "SUPERIOR CATEGORY:"
+		#define STR0016 "DESCRIPTION:"
+		#define STR0017 "INFERIOR CATEGORY:"
+		#define STR0018 "There is no category registered."
+		#define STR0019 "Clean"
+	#else
+		#define STR0001 "Código"
+		#define STR0002 "Descrição"
+		#define STR0003 "Quantidade"
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "Pesquisa de Artigos", "Pesquisa de Produtos" )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Seleccionar Categorias", "Selecionar Categorias" )
+		#define STR0006 "Categoria Superior"
+		#define STR0007 "Categoria Filho"
+		#define STR0008 "Adicionar"
+		#define STR0009 "Filtro de Busca"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Eliminar", "Excluir" )
+		#define STR0011 "Buscar"
+		#define STR0012 "Resultado"
+		#define STR0013 "Inserir"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Artigos Equivalentes", "Produtos Equivalentes" )
+		#define STR0015 "CATEGORIA SUPERIOR:"
+		#define STR0016 "DESCRIÇÃO:"
+		#define STR0017 "CATEGORIA INFERIOR:"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Não existem categorias registadas.", "Não Existe Categorias Cadastradas." )
+		#define STR0019 "Limpa"
+	#endif
+#endif

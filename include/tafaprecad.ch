@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Procesando el cálculo "
+	#define STR0002 "Seleccionando los datos que se calcularán"
+	#define STR0003 "Grabando registros"
+	#define STR0004 "Grabando"
+	#define STR0005 "Inconsistencia en la grabación del registro con la clave: "
+	#define STR0006 "El cálculo se anuló porque este registro ya se transmitió y está esperando devolución del RET, por lo tanto, no se puede modificar."
+	#define STR0007 "No se encontraron registros que se ajusten a los parámetros seleccionados para el procesamiento del cálculo."
+	#define STR0008 "Proceso número "
+	#define STR0009 "no encontrado en la tabla de cálculo del evento R-1070. Regla de predecesión no atendida."
+	#define STR0010 "Detalles del error: "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Processing calculation "
+		#define STR0002 "Selecting data to be calculated"
+		#define STR0003 "Saving records"
+		#define STR0004 "Saving"
+		#define STR0005 "Inconsistency when saving record with key: "
+		#define STR0006 "Calculation canceled because the record was transmitted and is waiting for return from RET, so it cannot be changed."
+		#define STR0007 "Could not find records that meet the parameters selected for calculation processing"
+		#define STR0008 "Process number "
+		#define STR0009 "not found in event R-1070 calculation table. Predecessor rule not followed"
+		#define STR0010 "Error details: "
+	#else
+		#define STR0001 "Processando apuração "
+		#define STR0002 "Selecionando dados a serem apurados"
+		#define STR0003 "Gravando registros"
+		#define STR0004 "Gravando"
+		#define STR0005 "Inconsistência na gravação do registro contendo a chave: "
+		#define STR0006 "A apuração foi cancelada pois este registro já foi transmitido e está aguardando retorno do RET, portanto não pode ser modificado."
+		#define STR0007 "Não foram localizados registros que atendam os parâmetros selecionados para processamento da apuração."
+		#define STR0008 "Processo número "
+		#define STR0009 "não localizado na tabela de apurações do evento R-1070. Regra de predecessão não atendida."
+		#define STR0010 "Detalhes do Erro: "
+	#endif
+#endif

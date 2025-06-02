@@ -1,0 +1,132 @@
+#ifdef SPANISH
+	#define STR0001 "Consulta Vericaciones de Bomba"
+	#define STR0002 "Puesto"
+	#define STR0003 "Tienda"
+	#define STR0004 "Tanque"
+	#define STR0005 "Fecha Inicio"
+	#define STR0006 "Hora Inicio"
+	#define STR0007 "Contador Inicio"
+	#define STR0008 "Fecha Fin"
+	#define STR0009 "Hora Fin"
+	#define STR0010 "Contador Fin"
+	#define STR0011 "Ctd. Registrada"
+	#define STR0012 "Ctd. Abastecida"
+	#define STR0013 "Ctd. Salida"
+	#define STR0014 "Seleccionando Registros..."
+	#define STR0015 "Informe a partir de que Fecha desea visualizar los registros de combustibles."
+	#define STR0016 "Informe hasta que Fecha desea visualizar los registros de combustibles."
+	#define STR0017 "Informe a partir de que Puesto Interno desea visualizar los registros de combustibles."
+	#define STR0018 "Informe a partir de que Tienda perteneciente al Puesto Interno informado anteriormente desea visualizar los registros de combustibles."
+	#define STR0019 "Informe hasta que Puesto Interno desea visualizar los registros de combustibles."
+	#define STR0020 "Informe hasta que Tienda perteneciente al Puesto Interno informado anteriormente desea visualizar los registros de combustibles."
+	#define STR0021 "Aguarde... Cargando."
+	#define STR0022 "Buscar"
+	#define STR0023 "Abastecimientos"
+	#define STR0024 "Salidas"
+	#define STR0025 "Informe"
+	#define STR0026 "Informe de Verificaciones"
+	#define STR0027 "A rayas"
+	#define STR0028 "Administracion"
+	#define STR0029 "______________Inicial______________   ______________Final______________   _______________________Litros______________________"
+	#define STR0030 "Fecha        Hora          Contador   Fecha        Hora        Contador   Registrados   Abastecidos       Salidas   Diferencia"
+	#define STR0031 "Puesto : "
+	#define STR0032 "Tanque: "
+	#define STR0033 "Bomba: "
+	#define STR0034 "Visualizar"
+	#define STR0035 "Filtro"
+	#define STR0036 "Salidas"
+	#define STR0037 "Salida: "
+	#define STR0038 "ATENCION"
+	#define STR0039 "Puesto Interno final no puede estar vacio."
+	#define STR0040 "Puesto Interno final informado es invalido."
+	#define STR0041 "Informe el Codigo del Puesto"
+	#define STR0042 "Informe el Codigo del Puesto"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Query Gas Pumps Measurements"
+		#define STR0002 "Gas Station"
+		#define STR0003 "Unit"
+		#define STR0004 "Tank"
+		#define STR0005 "Initial Date"
+		#define STR0006 "Initial Time"
+		#define STR0007 "Initial Counter"
+		#define STR0008 "Final Date"
+		#define STR0009 "Final Time"
+		#define STR0010 "Final Counter"
+		#define STR0011 "Amount Recorded"
+		#define STR0012 "Amount Filled"
+		#define STR0013 "Amount Out"
+		#define STR0014 "Selecting Records..."
+		#define STR0015 "Enter from which Date you want to view the fuel records."
+		#define STR0016 "Enter up to which Date you want to view the fuel records."
+		#define STR0017 "Enter from which Internal Station you want to view the fuel records."
+		#define STR0018 "Enter from which Unit belonging to the Internal Station previously entered you want to view the fuel records."
+		#define STR0019 "Enter up to which Internal Station you want to view the fuel records."
+		#define STR0020 "Enter up to which Unit belonging to the Internal Station previously entered you want to view the fuel records."
+		#define STR0021 "Please, wait... Loading."
+		#define STR0022 "Search"
+		#define STR0023 "Fillings"
+		#define STR0024 "Outflows"
+		#define STR0025 "Report"
+		#define STR0026 "Measurements Report"
+		#define STR0027 "Z-form"
+		#define STR0028 "Management"
+		#define STR0029 "______________Initial______________   ______________Final______________   _______________________Liters______________________"
+		#define STR0030 "Date         Time          Counter    Date         Time        Counter    Recorded      Filled            Outflow   Difference"
+		#define STR0031 "Gas Station: "
+		#define STR0032 "Tank: "
+		#define STR0033 "Gas Pump: "
+		#define STR0034 "View"
+		#define STR0035 "Filter"
+		#define STR0036 "Outflows"
+		#define STR0037 "Outflow: "
+		#define STR0038 "ATTENTION"
+		#define STR0039 "Final Internal Station cannot be empty."
+		#define STR0040 "Entered final internal station invalid."
+		#define STR0041 "Enter Gas Station Code"
+		#define STR0042 "Enter Gas Station Code"
+	#else
+		#define STR0001 "Consulta de Aferições da Bomba"
+		#define STR0002 "Posto"
+		#define STR0003 "Loja"
+		#define STR0004 "Tanque"
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Data início", "Data Inicio" )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Hora início", "Hora Inicio" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Contador Início", "Contador Inicio" )
+		#define STR0008 "Data Fim"
+		#define STR0009 "Hora Fim"
+		#define STR0010 "Contador Fim"
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Qtd. Registada", "Qtde. Registrada" )
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Qtd. Abastecida", "Qtde. Abastecida" )
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Qtd. Saída", "Qtde. Saida" )
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "A seleccionar registos ...", "Selecionando Registros..." )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Informe a partir de qual data deseja visualizar os registos de combustíveis.", "Informe a partir de qual Data deseja visualizar os registros de combustíveis." )
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Informe até qual data deseja visualizar os registos de combustíveis.", "Informe até qual Data deseja visualizar os registros de combustíveis." )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "Informe a partir de qual posto interno deseja visualizar os registos de combustíveis.", "Informe a partir de qual Posto Interno deseja visualizar os registros de combustíveis." )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Informe a partir de qual loja pertencente ao posto interno informado anteriormente deseja visualizar os registos de combustíveis.", "Informe a partir de qual Loja pertencente ao Posto Interno informado anteriormente deseja visualizar os registros de combustíveis." )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Informe até qual posto interno deseja visualizar os registos de combustíveis.", "Informe até qual Posto Interno deseja visualizar os registros de combustíveis." )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "Informe até qual loja pertencente ao posto interno informado anteriormente deseja visualizar os registos de combustíveis.", "Informe até qual Loja pertencente ao Posto Interno informado anteriormente deseja visualizar os registros de combustíveis." )
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Aguarde... A Carregar.", "Aguarde... Carregando." )
+		#define STR0022 "Pesquisar"
+		#define STR0023 "Abastecimentos"
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Saídas", "Saidas" )
+		#define STR0025 "Relatório"
+		#define STR0026 "Relatório de Aferições"
+		#define STR0027 "Zebrado"
+		#define STR0028 If( cPaisLoc $ "ANG|PTG", "Administração", "Administracao" )
+		#define STR0029 "______________Inicial______________   ______________Final______________   _______________________Litros______________________"
+		#define STR0030 If( cPaisLoc $ "ANG|PTG", "Data         Hora          Contador   Data         Hora        Contador   Registados   Abastecidos       Saídas    Diferença", "Data         Hora          Contador   Data         Hora        Contador   Registrados   Abastecidos       Saídas    Diferença" )
+		#define STR0031 "Posto : "
+		#define STR0032 "Tanque: "
+		#define STR0033 "Bomba: "
+		#define STR0034 "Visualizar"
+		#define STR0035 "Filtro"
+		#define STR0036 "Saídas"
+		#define STR0037 "Saída: "
+		#define STR0038 "ATENÇÃO"
+		#define STR0039 "Posto Interno final não pode ser vazio."
+		#define STR0040 "Posto Interno final informado é inválido."
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Digite o código do posto.", "Informe o Codigo do Posto" )
+		#define STR0042 If( cPaisLoc $ "ANG|PTG", "Informe o código do posto", "Informe o Código do Posto" )
+	#endif
+#endif

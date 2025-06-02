@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Reunión"
+	#define STR0002 "Reuniones"
+	#define STR0003 "Asunto"
+	#define STR0004 "Fecha"
+	#define STR0005 "Inicio"
+	#define STR0006 "Lugar"
+	#define STR0007 "Termino"
+	#define STR0008 "Responsable"
+	#define STR0009 "Detalles"
+	#define STR0010 "Pauta de la reunion"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Meeting"
+		#define STR0002 "Meeting"
+		#define STR0003 "Subject"
+		#define STR0004 "Date"
+		#define STR0005 "Start"
+		#define STR0006 "Place"
+		#define STR0007 "End"
+		#define STR0008 "Person in Charge"
+		#define STR0009 "Details "
+		#define STR0010 "Meeting Agenda"
+	#else
+		#define STR0001 "Reunião"
+		#define STR0002 "Reuniões"
+		#define STR0003 "Assunto"
+		#define STR0004 "Data"
+		#define STR0005 "Início"
+		#define STR0006 "Local"
+		#define STR0007 "Término"
+		#define STR0008 "Responsável"
+		#define STR0009 "Detalhes"
+		#define STR0010 "Pauta da Reunião"
+	#endif
+#endif

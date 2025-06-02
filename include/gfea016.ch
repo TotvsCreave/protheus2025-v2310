@@ -1,0 +1,45 @@
+#ifdef SPANISH
+	#define STR0001 "Util"
+	#define STR0002 "No Util"
+	#define STR0003 "Buscar"
+	#define STR0004 "Visualizar"
+	#define STR0005 "Generar"
+	#define STR0006 "Modificar"
+	#define STR0007 "Imprimir"
+	#define STR0008 "Calendario referente al ano de "
+	#define STR0009 " ya se registro."
+	#define STR0010 "Calendario creado con exito."
+	#define STR0011 "Generando Calendario..."
+	#define STR0012 "Espere"
+	#define STR0013 "Calendario"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Business Day"
+		#define STR0002 "Non-business Day"
+		#define STR0003 "Search"
+		#define STR0004 "View"
+		#define STR0005 "Generate"
+		#define STR0006 "Change"
+		#define STR0007 "Print"
+		#define STR0008 "Calendar concerning "
+		#define STR0009 " was already registered."
+		#define STR0010 "Calendar successfully created."
+		#define STR0011 "Generating Calendar..."
+		#define STR0012 "Wait"
+		#define STR0013 "Calendar"
+	#else
+		#define STR0001 "Útil"
+		#define STR0002 "Não-Útil"
+		#define STR0003 "Pesquisar"
+		#define STR0004 "Visualizar"
+		#define STR0005 "Gerar"
+		#define STR0006 "Alterar"
+		#define STR0007 "Imprimir"
+		#define STR0008 "Calendário referente ao ano de "
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", " já foi registado.", " já foi cadastrado." )
+		#define STR0010 "Calendário criado com sucesso."
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "A Gerar Calendário...", "Gerando Calendário..." )
+		#define STR0012 "Aguarde"
+		#define STR0013 "Calendário"
+	#endif
+#endif

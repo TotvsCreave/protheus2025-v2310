@@ -1,0 +1,42 @@
+#ifdef SPANISH
+	#define STR0001 "Ruta da tabla de flete"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "Copiar"
+	#define STR0008 "Imprimir"
+	#define STR0009 "Campos vinculados a los Tipos 'Origen' y 'Destino' deben rellenarse"
+	#define STR0010 "Distancia Destino Inicial debe ser inferior o igual a Distancia Destino Final."
+	#define STR0011 "Distancia Origen Inicial debe ser inferior o igual a Distancia Origen Final."
+	#define STR0012 "No se permite el registroo de rutas con origen y destino registrados "
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Route of freight table"
+		#define STR0002 "Search"
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Change"
+		#define STR0006 "Delete"
+		#define STR0007 "Copy"
+		#define STR0008 "Print"
+		#define STR0009 "Fields related to types 'Source' and 'Destination' must be filled out."
+		#define STR0010 "Initial Destination Distance must be the same as Final Destination Distance or smaller."
+		#define STR0011 "Initial Origin Distance must be the same as Final Origin Distance or smaller."
+		#define STR0012 "You cannot register routes whose origin and destination are already registered. "
+	#else
+		#define STR0001 "Rota da tabela de frete"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Copiar"
+		#define STR0008 "Imprimir"
+		#define STR0009 "Campos relacionados aos Tipos 'Origem' e 'Destino' devem ser preenchidos."
+		#define STR0010 "Distância Destino Inicial deve ser menor ou igual à Distância Destino Final."
+		#define STR0011 "Distância Origem Inicial deve ser menor ou igual à Distância Origem Final."
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Não é permitido registar rotas com origem e destino já registado. ", "Não é permitido o cadastramento de rotas com origem e destino já cadastradas " )
+	#endif
+#endif

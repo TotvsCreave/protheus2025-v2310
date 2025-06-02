@@ -1,0 +1,78 @@
+#ifdef SPANISH
+	#define STR0001 "Almacenes"
+	#define STR0002 "Sucursal:"
+	#define STR0003 "Nro O.S.:"
+	#define STR0004 "Grupo:"
+	#define STR0005 "Cod. Item:"
+	#define STR0006 "<<FILTRAR>>"
+	#define STR0007 "<<    SALIR     >>"
+	#define STR0008 "<<LIMPIAR FILTRO>>"
+	#define STR0009 "Todos"
+	#define STR0010 "Pendientes de Solicitud"
+	#define STR0011 "Solicitadas"
+	#define STR0012 "Sucursal"
+	#define STR0013 "Grupo"
+	#define STR0014 "Codigo Pieza"
+	#define STR0015 "Descripcion"
+	#define STR0016 "Cant"
+	#define STR0017 "Nro O.S."
+	#define STR0018 "Pendientes de Solicitud"
+	#define STR0019 "Grupo invalido"
+	#define STR0020 "Atencion"
+	#define STR0021 "Codigo del item invalido."
+	#define STR0022 "Consulta OS"
+	#define STR0023 "TOTAL DE PIEZAS: "
+	#define STR0024 "¡No hay datos para esta Consulta!"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Warehouses"
+		#define STR0002 "Branch:"
+		#define STR0003 "SO Nr"
+		#define STR0004 "Group"
+		#define STR0005 "Item Code:"
+		#define STR0006 "<<FILTER>>"
+		#define STR0007 "<<    EXIT    >>"
+		#define STR0008 "<<CLEAR FILTER>>"
+		#define STR0009 "All"
+		#define STR0010 "Pending Request"
+		#define STR0011 "Requested"
+		#define STR0012 "Branch"
+		#define STR0013 "Group"
+		#define STR0014 "Part Code"
+		#define STR0015 "Description"
+		#define STR0016 "Quant"
+		#define STR0017 "S.O. Nr"
+		#define STR0018 "Request Pending"
+		#define STR0019 "Invalid Group"
+		#define STR0020 "Attention"
+		#define STR0021 "Item code invalid"
+		#define STR0022 "Query SO"
+		#define STR0023 "TOTAL PARTS: "
+		#define STR0024 "There is no data for this query!"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Armazéns", "Armazens" )
+		#define STR0002 "Filial:"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "No. O.S.:", "Nro O.S.:" )
+		#define STR0004 "Grupo:"
+		#define STR0005 "Cód. Item:"
+		#define STR0006 "<<FILTRAR>>"
+		#define STR0007 "<<    SAIR     >>"
+		#define STR0008 "<<LIMPAR FILTRO>>"
+		#define STR0009 "Todos"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Pendentes de requisição", "Pendentes de Requisição" )
+		#define STR0011 "Requisitadas"
+		#define STR0012 "Filial"
+		#define STR0013 "Grupo"
+		#define STR0014 "Código Peça"
+		#define STR0015 "Descrição"
+		#define STR0016 If( cPaisLoc $ "ANG|PTG", "Qtd.", "Quant" )
+		#define STR0017 If( cPaisLoc $ "ANG|PTG", "No. O.S.", "Nro O.S." )
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Pendentes requisição", "Pendentes Requisição" )
+		#define STR0019 "Grupo inválido"
+		#define STR0020 "Atenção"
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Código do item inválido", "Código do Item inválido" )
+		#define STR0022 "Consulta OS"
+		#define STR0023 "TOTAL DE PEÇAS: "
+		#define STR0024 If( cPaisLoc $ "ANG|PTG", "Não existem dados para esta consulta.", "Não existe dados para esta consulta!" )
+	#endif
+#endif

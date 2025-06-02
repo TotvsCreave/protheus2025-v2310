@@ -1,0 +1,72 @@
+#ifdef SPANISH
+	#define STR0001 "Confirma"
+	#define STR0002 "Reescribe"
+	#define STR0003 "Salir"
+	#define STR0004 "Buscar"
+	#define STR0005 "Visualizar"
+	#define STR0006 "Incluir"
+	#define STR0007 "Modificar"
+	#define STR0008 "Borrar"
+	#define STR0009 "Historial movimentos"
+	#define STR0010 "H. Movimiento"
+	#define STR0011 "Incluido"
+	#define STR0012 "Modificado"
+	#define STR0013 "Matricula:"
+	#define STR0014 "Nombre:"
+	#define STR0015 "Ingreso:"
+	#define STR0016 "Imprimir"
+	#define STR0017 "Proceso: "
+	#define STR0018 "Puesto: "
+	#define STR0019 "Leyenda"
+	#define STR0020 "Mantenimiento"
+	#define STR0021 "Tabla "
+	#define STR0022 "No se encontro el empleado con datos arriba"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "OK     "
+		#define STR0002 "Retype "
+		#define STR0003 "Quit   "
+		#define STR0004 "Search "
+		#define STR0005 "View   "
+		#define STR0006 "Add   "
+		#define STR0007 "Edit   "
+		#define STR0008 "Delete "
+		#define STR0009 "Movement History"
+		#define STR0010 "Movement Hist."
+		#define STR0011 "Added"
+		#define STR0012 "Edited"
+		#define STR0013 "Registrat.:"
+		#define STR0014 "Name:"
+		#define STR0015 "Admission:"
+		#define STR0016 "Print"
+		#define STR0017 "Process:  "
+		#define STR0018 "Position:"
+		#define STR0019 "Caption"
+		#define STR0020 "Maintenance"
+		#define STR0021 "Table "
+		#define STR0022 "Employee not found with data above"
+	#else
+		#define STR0001 "Confirma"
+		#define STR0002 "Redigita"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "Abandonar", "Abandona" )
+		#define STR0004 "Pesquisar"
+		#define STR0005 "Visualizar"
+		#define STR0006 "Incluir"
+		#define STR0007 "Alterar"
+		#define STR0008 "Excluir"
+		#define STR0009 If( cPaisLoc $ "ANG|PTG", "Histórica Encomendas", "Historico Movimentos" )
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "H.movimento", "H.Movimento" )
+		#define STR0011 If( cPaisLoc $ "ANG|PTG", "Incluído", "Incluido" )
+		#define STR0012 "Modificado"
+		#define STR0013 If( cPaisLoc $ "ANG|PTG", "Registo:", "Matricula:" )
+		#define STR0014 "Nome:"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Admissão:", "Admissäo:" )
+		#define STR0016 "Imprimir"
+		#define STR0017 "Processo: "
+		#define STR0018 "Posto: "
+		#define STR0019 "Legenda"
+		#define STR0020 "Manutenção"
+		#define STR0021 "Tabela "
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Colaborador não encontrado com os dados acima", "Funcionário não encontrado com dados acima" )
+	#endif
+#endif

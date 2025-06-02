@@ -1,0 +1,66 @@
+#ifdef SPANISH
+	#define STR0001 "Kits"
+	#define STR0002 "Buscar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Modificar"
+	#define STR0006 "Borrar"
+	#define STR0007 "I&mportar"
+	#define STR0008 "Procesando.."
+	#define STR0009 "Marcar"
+	#define STR0010 "Descripcion"
+	#define STR0011 "Items"
+	#define STR0012 "Item"
+	#define STR0013 "Cantidad"
+	#define STR0014 "Generando Kits"
+	#define STR0015 "¿Esta seguro que desea interrumpir esta operacion?"
+	#define STR0016 "Atencion"
+	#define STR0017 "Importando Kits -"
+	#define STR0018 "El item elegido es el kit. Imposible continuar."
+	#define STR0019 "El grupo del KIT informado no existe."
+	#define STR0020 "El codigo del KIT informado no existe."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Kits "
+		#define STR0002 "Search   "
+		#define STR0003 "View"
+		#define STR0004 "Add"
+		#define STR0005 "Edit   "
+		#define STR0006 "Delete "
+		#define STR0007 "I&mport"
+		#define STR0008 "Processing..."
+		#define STR0009 "Check "
+		#define STR0010 "Descript."
+		#define STR0011 "Items"
+		#define STR0012 "Item"
+		#define STR0013 "Quantity  "
+		#define STR0014 "Generating kits"
+		#define STR0015 "Are you sure you want to abort this operation?"
+		#define STR0016 "Attention"
+		#define STR0017 "Importing kits   -"
+		#define STR0018 "Chosen item is the kit itself. Continuing is impossible."
+		#define STR0019 "KIT Group entered does not exist!"
+		#define STR0020 "KIT Code entered does not exist!"
+	#else
+		#define STR0001 "Kit's"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "I&mportar"
+		#define STR0008 "Processando.."
+		#define STR0009 "Marcar"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "Descrição", "Descricao" )
+		#define STR0011 "Itens"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Elemento", "Item" )
+		#define STR0013 "Quantidade"
+		#define STR0014 "Gerando Kit's"
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Tem certeza que deseja abortar esta operação ?", "Tem certeza que deseja abortar esta operacao ?" )
+		#define STR0016 "Atenção"
+		#define STR0017 "Importando Kit's -"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "O item escolhido e' o proprio kit. Impossível continuar.", "O item escolhido e' o proprio kit. Impossivel continuar." )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "O grupo do KIT informado não existe.", "O Grupo do KIT informado não existe!" )
+		#define STR0020 If( cPaisLoc $ "ANG|PTG", "O código do KIT informado não existe.", "O Código do KIT informado não existe!" )
+	#endif
+#endif

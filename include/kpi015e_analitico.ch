@@ -1,0 +1,63 @@
+#ifdef SPANISH
+	#define STR0001 "Analitico"
+	#define STR0002 "Analíticos"
+	#define STR0003 "La Estructura de Datos Analiticos se Compone de:"
+	#define STR0004 "La Estructura de Datos Analiticos no es valida."
+	#define STR0005 "No hay informe analitico vinculado a este indicador en el periodo informado."
+	#define STR0006 "Indicadores Secundarios"
+	#define STR0007 "Se pueden mostrar solo 250 items por pagina. Por favor aplique un filtro."
+	#define STR0008 " lineas"
+	#define STR0009 " columnas"
+	#define STR0010 "Cantidad de Ocurrencias: "
+	#define STR0011 "Valor"
+	#define STR0012 "Ocurrencias"
+	#define STR0013 "Valores con ocurrencia unica"
+	#define STR0014 " valores aparecen una unica vez en la columna "
+	#define STR0015 "Sintesis"
+	#define STR0016 "Pagina "
+	#define STR0017 " de "
+	#define STR0018 "Informe Multiple"
+	#define STR0019 "Sintetizar"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Detailed"
+		#define STR0002 "Detailed"
+		#define STR0003 "The strucutre of detailed data is made by:"
+		#define STR0004 "Invalid detailed data structure."
+		#define STR0005 "There is no analytical report associated to this index in the period enter."
+		#define STR0006 "Secondary Indicators"
+		#define STR0007 "Only 250 items can be displayed per page. Apply a filter."
+		#define STR0008 " rows"
+		#define STR0009 " columns"
+		#define STR0010 "Amount of Occurrences: "
+		#define STR0011 "Value"
+		#define STR0012 "Events"
+		#define STR0013 "Values with a single occurrence"
+		#define STR0014 " values show only once in the column "
+		#define STR0015 "Synthesis"
+		#define STR0016 "Page "
+		#define STR0017 " of "
+		#define STR0018 "Multiple Report"
+		#define STR0019 "Synthesize"
+	#else
+		#define STR0001 "Analítico"
+		#define STR0002 "Analíticos"
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "A estrutura de dados analíticos é composta por:", "A Estrutura de Dados Analíticos é Composta Por:" )
+		#define STR0004 If( cPaisLoc $ "ANG|PTG", "A estrutura de dados analíticos é inválida.", "A Estrutura de Dados Analíticos é Inválida." )
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Não há relatório analítico associado a este indicador no período informado.", "Não há relatório analítico associodo a este indicador no período informado." )
+		#define STR0006 If( cPaisLoc $ "ANG|PTG", "Indicadores filhos", "Indicadores Filhos" )
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Apenas 250 itens podem ser exibidos por página. Por favor, aplique um filtro.", "Apenas 250 itens podem ser exibidos por página. Por favor aplique um filtro." )
+		#define STR0008 " linhas"
+		#define STR0009 " colunas"
+		#define STR0010 "Quantidade de Ocorrências: "
+		#define STR0011 "Valor"
+		#define STR0012 "Ocorrências"
+		#define STR0013 "Valores com ocorrência única"
+		#define STR0014 " valores aparecem uma única vez na coluna "
+		#define STR0015 "Síntese"
+		#define STR0016 "Página "
+		#define STR0017 " de "
+		#define STR0018 "Relatório Múltiplo"
+		#define STR0019 "Sintetizar"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "LIVRO_SAIDA_P2A"
+	#define STR0002 " Libro de Salida P2A "
+	#define STR0003 "No se selecciono ninguna sucursal para el procesamiento. Se considerara la sucursal corriente."
+	#define STR0004 " Ejecutando Query de la Sucursal "
+	#define STR0005 " Montando archivo de Trabajo... "
+	#define STR0006 " Generando Libro de Salida P2A... "
+	#define STR0007 "Informe anulado por el usuario."
+	#define STR0008 "FACTURA ANULADA"
+	#define STR0009 "NOTA SERVICIO"
+	#define STR0010 "FACTURA DE ENTRADA"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "LIVRO_SAIDA_P2A"
+		#define STR0002 " Outflow book P2A "
+		#define STR0003 "No branch was selected for this processing. The current branch will be considered."
+		#define STR0004 " Executing Branch Query "
+		#define STR0005 " Assembling Work file... "
+		#define STR0006 " Generating Outflow book P2A... "
+		#define STR0007 "Report canceled by user"
+		#define STR0008 "INVOICE CANCELLED"
+		#define STR0009 "SERVICE INVOICE"
+		#define STR0010 "INFLOW INVOICE"
+	#else
+		#define STR0001 "LIVRO_SAIDA_P2A"
+		#define STR0002 " Livro de Saída P2A "
+		#define STR0003 "Nenhuma filial foi selecionada para o processamento. Será considerada a filial corrente."
+		#define STR0004 " Executando Query da Filial "
+		#define STR0005 " Montando arquivo de Trabalho... "
+		#define STR0006 " Gerando Livro de Saída P2A... "
+		#define STR0007 "Relatório cancelado pelo usuário."
+		#define STR0008 "NOTA CANCELADA"
+		#define STR0009 "NOTA SERVICO"
+		#define STR0010 "NOTA DE ENTRADA"
+	#endif
+#endif

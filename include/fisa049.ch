@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Stock de apertura"
+	#define STR0002 "No Existe la Tabla CF9, procesar compatibilizador UPDFIS"
+	#define STR0003 "Ya existe un archivo con mismo codigo de base de calculo, periodo de ingreso en el regimen No Acumulativo, CST de PIS/COFINS, alicuota de PIS/COFINS y Cuenta contable, verifique archivo."
+	#define STR0004 "Help"
+	#define STR0005 "Investigar"
+	#define STR0006 "Visualizar"
+	#define STR0007 "Incluir"
+	#define STR0008 "Modificar"
+	#define STR0009 "Borrar"
+	#define STR0010 "Imprimir"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Opening stock"
+		#define STR0002 "CF9 table does not exist, process UPDFIS compatibility program"
+		#define STR0003 "There already a record with the same calculation base code, entry period in Non Cumulative regime, CST of PIS/COFINS, PIS/COFINS aliquot and Ledger Account, check record."
+		#define STR0004 "Help"
+		#define STR0005 "Search"
+		#define STR0006 "View"
+		#define STR0007 "Add"
+		#define STR0008 "Edit"
+		#define STR0009 "Delete"
+		#define STR0010 "Print"
+	#else
+		#define STR0001 "Estoque de abertura"
+		#define STR0002 "Não Existe a  tabela CF9, processar compatibilizador UPDFIS"
+		#define STR0003 "Já existe um cadastro com mesmo código da base de cálculo, período de ingresso no regime Não Cumulativo, CST de PIS/COFINS, alíquota de PIS/COFINS e Conta contábil, verifique cadastro."
+		#define STR0004 "Help"
+		#define STR0005 "Pesquisar"
+		#define STR0006 "Visualizar"
+		#define STR0007 "Incluir"
+		#define STR0008 "Alterar"
+		#define STR0009 "Excluir"
+		#define STR0010 "Imprimir"
+	#endif
+#endif

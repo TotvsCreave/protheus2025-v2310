@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "El campo '[VAR01]' debe completarse para productos con control de WMS."
+	#define STR0002 "El campo '[VAR01]' debe completarse siempre que una producción genere servicios de WMS."
+	#define STR0003 "Servicio '[VAR01]' debe ser de operación Control de ubicación o Ubicación Crossdocking."
+	#define STR0004 "Servicio '[VAR01]' no existe en el archivo de Servicio vs. Tarea (DC5)."
+	#define STR0005 "Ubicación origen no se completó para el control de ubicación del WMS."
+	#define STR0006 "La orden de producción [VAR01] tiene requisiciones pendientes de atención en órdenes de servicio de separación en el WMS."
+	#define STR0007 "Espere a la finalización de la separación o borre la integración de las requisiciones con el WMS para realizar esta operación."
+	#define STR0008 "Ubicación origen no informada para la integración con WMS."
+	#define STR0009 "Servicio no informado para la integración con WMS."
+	#define STR0010 "Apunte integrado al SIGAWMS"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "The field '[VAR01]' must be completed for products with WMS control."
+		#define STR0002 "The field '[VAR01]' must be completed whenever a production generates WMS service."
+		#define STR0003 "Service '[VAR01]' must be Addressing or Crossdocking Addressing operation."
+		#define STR0004 "Service '[VAR01]' does not exist in the register of Service x Task (DC5)."
+		#define STR0005 "Origin Address was not completed for the WMS addressing."
+		#define STR0006 "The production order [VAR01] has pending requests of services in service order of separation in the WMS."
+		#define STR0007 "Wait the finalization of separation or delete the integration of requests with WMS to perform this operation."
+		#define STR0008 "Origin Address not entered for integration with WMS."
+		#define STR0009 "Service not entered for integration with WMS."
+		#define STR0010 "Annotation integrated to SIGAWMS"
+	#else
+		#define STR0001 "O campo '[VAR01]' deve ser preenchido para produtos com controle de WMS."
+		#define STR0002 "O campo '[VAR01]' deve ser preenchido sempre que uma produção gerar serviço de WMS."
+		#define STR0003 "Serviço '[VAR01]' deve ser de operação Endereçamento ou Endereçamento Crossdocking."
+		#define STR0004 "Serviço '[VAR01]' não existe no cadastro de Serviço x Tarefa (DC5)."
+		#define STR0005 "Endereço Origem não foi preenchido para o endereçamento do WMS."
+		#define STR0006 "A ordem de produção [VAR01] possui requisições pendentes de atendimento em ordens de serviço de separação no WMS."
+		#define STR0007 "Aguarde a finalização da separação ou exclua a integração das requisições com o WMS para realizar esta operação."
+		#define STR0008 "Endereço Origem não informado para integração com WMS."
+		#define STR0009 "Serviço não informado para integração com WMS."
+		#define STR0010 "Apontamento integrado ao SIGAWMS"
+	#endif
+#endif

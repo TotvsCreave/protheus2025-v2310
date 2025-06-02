@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Consulta de indemnizaciones"
+	#define STR0002 "Consulta las indemnizaciones"
+	#define STR0003 "Indemnización"
+	#define STR0004 "SIGATEC"
+	#define STR0005 "SIGAMNT"
+	#define STR0006 "Movimiento/Equipamiento"
+	#define STR0007 "Cobranza"
+	#define STR0008 "Facturación"
+	#define STR0009 "Diferencia"
+	#define STR0010 "Val. Facturación"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Compensation query"
+		#define STR0002 "Query compensations"
+		#define STR0003 "Compensation"
+		#define STR0004 "SIGATEC"
+		#define STR0005 "SIGAMNT"
+		#define STR0006 "Transaction/Equipment"
+		#define STR0007 "Billing"
+		#define STR0008 "Invoicing"
+		#define STR0009 "Difference"
+		#define STR0010 "Invoicing Value"
+	#else
+		#define STR0001 "Consulta de indenizações"
+		#define STR0002 "Consulta as indenizações"
+		#define STR0003 "Indenização"
+		#define STR0004 "SIGATEC"
+		#define STR0005 "SIGAMNT"
+		#define STR0006 "Movimento/Equipamento"
+		#define STR0007 "Cobrança"
+		#define STR0008 "Faturamento"
+		#define STR0009 "Diferença"
+		#define STR0010 "Vlr.Faturamento"
+	#endif
+#endif

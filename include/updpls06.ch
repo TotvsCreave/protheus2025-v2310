@@ -1,0 +1,162 @@
+#ifdef SPANISH
+	#define STR0001 "Compatibilizador de Diccionarios vs. Base de datos"
+	#define STR0002 "Esta rutina efectuara la compatibilizacion de los diccionarios, base de datos "
+	#define STR0003 "y otros ajustes referente a la siguiente fnc:"
+	#define STR0004 "   Referencia: "
+	#define STR0005 "Atencion: efectuar backup de los diccionarios y de la base de datos previamente "
+	#define STR0006 "Compatibilizador"
+	#define STR0007 "¿Desea confirmar el procesamiento del compatibilizador?"
+	#define STR0008 "Si"
+	#define STR0009 "No"
+	#define STR0010 "Actualizando estructuras. Espere... ["
+	#define STR0011 "¡Atencion!"
+	#define STR0012 "Ocurrio un error desconocido durante la actualizacion de la tabla: "
+	#define STR0013 "Empresa: "
+	#define STR0014 "Ocurrio un error desconocido durante la actualizacion de la estructura de la tabla: "
+	#define STR0015 "Actualizacion concluida"
+	#define STR0016 ". Verifique la integridad del diccionario y de la tabla."
+	#define STR0017 "Continuar"
+	#define STR0018 "Log. de actualizacion "
+	#define STR0019 "No se selecciono ninguna empresa para Actualizacion"
+	#define STR0020 "   FNC: "
+	#define STR0021 "Seleccione la(s) Empresa(s) que se Actualizara(n)"
+	#define STR0022 "No existen bases para consultar"
+	#define STR0023 "SX3 - Diccionario de Campos"
+	#define STR0024 "Vigencias para Valor Pelicula."
+	#define STR0025 "Archivos Texto (*.TXT) |*.txt|"
+	#define STR0026 "Grupo Emp"
+	#define STR0027 "Descripcion"
+	#define STR0028 "Codigo"
+	#define STR0029 "Empresa"
+	#define STR0030 "Unidad"
+	#define STR0031 "Sucursal"
+	#define STR0032 "Actualizando Diccionario de Datos..."
+	#define STR0033 "Se modificaron las estructuras de las siguientes tablas: "
+	#define STR0034 "Creandose/modificandose los siguientes campos: "
+	#define STR0035 "Sec Rel"
+	#define STR0036 "Secuencia Relacionada"
+	#define STR0037 "Indica la secuencia relacionada al primer nivel - BP8"
+	#define STR0038 "Secuencial"
+	#define STR0039 "Secuencial del archivo"
+	#define STR0040 "Indica el secuencial vinculado del registro."
+	#define STR0041 "Sec. Relacionada + Cod. Grupo"
+	#define STR0042 "Sec. Relacionada + Operadora"
+	#define STR0043 "Indice "
+	#define STR0044 "Actualizando diccionario de indices..."
+	#define STR0045 "Indices actualizados: "
+	#define STR0046 "Pelicula"
+	#define STR0047 "Secuencia de la Pelicula"
+	#define STR0048 "Fecha Inicial Vigenc."
+	#define STR0049 "Fecha Final Vigencia"
+	#define STR0050 "Actualizando diccionario de consultas..."
+	#define STR0051 "Se modificaron/crearon las siguientes consultas: "
+	#define STR0052 "Marca/Desmarca"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Compatibility Program of Dictionaries x Database"
+		#define STR0002 "This routine makes dictionaries and database compatible,"
+		#define STR0003 "as well as other adjustments concerning the following FNC:"
+		#define STR0004 "   Reference: "
+		#define STR0005 "Attention: Previously back up dictionaries and database "
+		#define STR0006 "Compatibility Program"
+		#define STR0007 "Do you want to confirm compatibility program processing?"
+		#define STR0008 "Yes"
+		#define STR0009 "No"
+		#define STR0010 "Updating structures. Wait... ["
+		#define STR0011 "Attention!"
+		#define STR0012 "There was an unknown error during table update: "
+		#define STR0013 "Company: "
+		#define STR0014 "There was an unknown error during table structure update: "
+		#define STR0015 "Update completed."
+		#define STR0016 ". Check dictionary and table integrity."
+		#define STR0017 "Continue"
+		#define STR0018 "Update Log "
+		#define STR0019 "No company was selected for update"
+		#define STR0020 "   FNC: "
+		#define STR0021 "Choose companies to be updated"
+		#define STR0022 "There are no banks to be queried"
+		#define STR0023 "SX3 -  Field Dictionary"
+		#define STR0024 "Validity for Film Value."
+		#define STR0025 "Text files (*.TXT) |*.txt|"
+		#define STR0026 "Comp Group"
+		#define STR0027 "Description"
+		#define STR0028 "Code"
+		#define STR0029 "Company "
+		#define STR0030 "Unit"
+		#define STR0031 "Branch"
+		#define STR0032 "Updating Data Dictionary..."
+		#define STR0033 "Structures of the following tables were changed:  "
+		#define STR0034 "The following fields were created/changed: "
+		#define STR0035 "Rel Seq"
+		#define STR0036 "Related Sequence"
+		#define STR0037 "Indicates the sequence related to the first level - BP8"
+		#define STR0038 "Sequence"
+		#define STR0039 "File sequence"
+		#define STR0040 "Indicates linked sequence of the record."
+		#define STR0041 "Related Seq. + Group Code"
+		#define STR0042 "Related Seq. + Cooperative"
+		#define STR0043 "Index "
+		#define STR0044 "Updating index dictionary..."
+		#define STR0045 "Updated indexes: "
+		#define STR0046 "Film"
+		#define STR0047 "Film Sequence"
+		#define STR0048 "Initial Effective Date"
+		#define STR0049 "Final Effective Date"
+		#define STR0050 "Updating query dictionary..."
+		#define STR0051 "The following queries were changed/created: "
+		#define STR0052 "Select/Clear"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Compatibilizador de Dicionários x Banco de Dados", "Compatibilizador de Dicionários x Banco de dados" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Esta rotina irá efectuar a compatibilização dos dicionários e banco de dados,", "Esta rotina irá efetuar a compatibilização dos dicionários e banco de dados," )
+		#define STR0003 If( cPaisLoc $ "ANG|PTG", "e demais ajustes referente a FNC abaixo:", "e demais ajustes referente a fnc abaixo:" )
+		#define STR0004 "   Referência: "
+		#define STR0005 If( cPaisLoc $ "ANG|PTG", "Atenção: Efectuar o backup dos dicionários e do banco de dados previamente ", "Atenção: efetuar backup dos dicionários e do banco de dados previamente " )
+		#define STR0006 "Compatibilizador"
+		#define STR0007 If( cPaisLoc $ "ANG|PTG", "Deseja confirmar o processamento do compatibilizador?", "Deseja confirmar o processamento do compatibilizador ?" )
+		#define STR0008 "Sim"
+		#define STR0009 "Não"
+		#define STR0010 If( cPaisLoc $ "ANG|PTG", "A actualizar as estruturas. Aguarde... [", "Atualizando estruturas. Aguarde... [" )
+		#define STR0011 "Atenção!"
+		#define STR0012 If( cPaisLoc $ "ANG|PTG", "Ocorreu um erro desconhecido durante a actualização da tabela: ", "Ocorreu um erro desconhecido durante a atualização da tabela: " )
+		#define STR0013 "Empresa: "
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "Ocorreu um erro desconhecido durante a actualização da estrutura da tabela: ", "Ocorreu um erro desconhecido durante a atualização da estrutura da tabela: " )
+		#define STR0015 If( cPaisLoc $ "ANG|PTG", "Actualização concluída.", "Atualização concluída." )
+		#define STR0016 ". Verifique a integridade do dicionário e da tabela."
+		#define STR0017 "Continuar"
+		#define STR0018 If( cPaisLoc $ "ANG|PTG", "Log. da actualização ", "Log. da atualização " )
+		#define STR0019 If( cPaisLoc $ "ANG|PTG", "Não foram seleccionadas nenhuma empresa para Actualização", "Não foram selecionadas nenhuma empresa para Atualização" )
+		#define STR0020 "   FNC: "
+		#define STR0021 If( cPaisLoc $ "ANG|PTG", "Escolha a(s) Empresa(s) que será(ão) Actualizada(s)", "Escolha a(s) Empresa(s) que será(ão) Atualizada(s)" )
+		#define STR0022 If( cPaisLoc $ "ANG|PTG", "Não existem bancos a consultar", "Não existe bancos a consultar" )
+		#define STR0023 "SX3 - Dicionário de Campos"
+		#define STR0024 "Vigências para Valor Filme."
+		#define STR0025 If( cPaisLoc $ "ANG|PTG", "Registos Texto (*.TXT) |*.txt|", "Arquivos Texto (*.TXT) |*.txt|" )
+		#define STR0026 "Grupo Emp"
+		#define STR0027 "Descrição"
+		#define STR0028 "Código"
+		#define STR0029 "Empresa"
+		#define STR0030 "Unidade"
+		#define STR0031 "Filial"
+		#define STR0032 If( cPaisLoc $ "ANG|PTG", "A actualizar o Dicionário de Dados...", "Atualizando Dicionário de Dados..." )
+		#define STR0033 If( cPaisLoc $ "ANG|PTG", "Foram alteradas as estruturas das seguintes tabelas: ", "Foram alteradas as estruturas das seguintes tabelas : " )
+		#define STR0034 "Sendo criados/alterados os seguintes campos: "
+		#define STR0035 "Seq Rel"
+		#define STR0036 "Seqüência Relacionada"
+		#define STR0037 If( cPaisLoc $ "ANG|PTG", "Indica a sequência relacionada ao primeiro nível - BP8", "Indica a seqüência relacionada ao primeiro nível - BP8" )
+		#define STR0038 If( cPaisLoc $ "ANG|PTG", "Sequencial", "Seqüencial" )
+		#define STR0039 If( cPaisLoc $ "ANG|PTG", "Sequencial do registo", "Seqüencial do arquivo" )
+		#define STR0040 If( cPaisLoc $ "ANG|PTG", "Indica o sequencial vinculado do registo.", "Indica o seqüencial vinculado do registro." )
+		#define STR0041 If( cPaisLoc $ "ANG|PTG", "Seq. Relacionada + Cód. Grupo", "Seq. Relacionada + Cod. Grupo" )
+		#define STR0042 "Seq. Relacionada + Operadora"
+		#define STR0043 "Índice "
+		#define STR0044 If( cPaisLoc $ "ANG|PTG", "A actualizar o dicionário de índices...", "Atualizando dicionário de índices..." )
+		#define STR0045 If( cPaisLoc $ "ANG|PTG", "Índices actualizados  : ", "Índices atualizados  : " )
+		#define STR0046 "Filme"
+		#define STR0047 If( cPaisLoc $ "ANG|PTG", "Sequência do Filme", "Seqüência do Filme" )
+		#define STR0048 "Data Inicial Vigênc."
+		#define STR0049 "Data Final Vigência"
+		#define STR0050 If( cPaisLoc $ "ANG|PTG", "A actualizar o dicionário de consultas...", "Atualizando dicionário de consultas..." )
+		#define STR0051 "Foram alteradas/criadas as seguintes consultas: "
+		#define STR0052 "Marca/Desmarca"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "[GTPR500] - Informe de asuntos pendientes de recaudación"
+	#define STR0002 "Este informe imprimirá asuntos pendientes de recaudación"
+	#define STR0003 "Pasajes"
+	#define STR0004 "Código billete"
+	#define STR0005 "Estatus"
+	#define STR0006 "Tasas"
+	#define STR0007 "Código tasa"
+	#define STR0008 "No verificado"
+	#define STR0009 "Rechazado"
+	#define STR0010 "Verificado"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "[GTPR500] - Collection Pendencies Report"
+		#define STR0002 "This report will print Collection Pendencies"
+		#define STR0003 "Tickets"
+		#define STR0004 "Ticket Code"
+		#define STR0005 "Status"
+		#define STR0006 "Rates"
+		#define STR0007 "Rate Code"
+		#define STR0008 "Not checked"
+		#define STR0009 "Rejected"
+		#define STR0010 "Checked"
+	#else
+		#define STR0001 "[GTPR500] - Relatório de Pendências de Arrecadação"
+		#define STR0002 "Este relatório irá imprimir Pendências de Arrecadação"
+		#define STR0003 "Passagens"
+		#define STR0004 "Código Bilhete"
+		#define STR0005 "Status"
+		#define STR0006 "Taxas"
+		#define STR0007 "Código Taxa"
+		#define STR0008 "Não Conferido"
+		#define STR0009 "Rejeitado"
+		#define STR0010 "Conferido"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Cadastro de locais"
+	#define STR0002 "Pesquisar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Incluir"
+	#define STR0005 "Alterar"
+	#define STR0006 "Excluir"
+	#define STR0007 "Internacional"
+	#define STR0008 "Nacional Aereo"
+	#define STR0009 "Nacional Rodoviario"
+	#define STR0010 "Chave informada já existe."
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Cadastro de locais"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Internacional"
+		#define STR0008 "Nacional Aereo"
+		#define STR0009 "Nacional Rodoviario"
+		#define STR0010 "Chave informada já existe."
+	#else
+		#define STR0001 "Cadastro de locais"
+		#define STR0002 "Pesquisar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Incluir"
+		#define STR0005 "Alterar"
+		#define STR0006 "Excluir"
+		#define STR0007 "Internacional"
+		#define STR0008 "Nacional Aereo"
+		#define STR0009 "Nacional Rodoviario"
+		#define STR0010 "Chave informada já existe."
+	#endif
+#endif

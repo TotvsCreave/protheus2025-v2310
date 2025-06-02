@@ -1,0 +1,51 @@
+#ifdef SPANISH
+	#define STR0001 "Apuntes Pendientes"
+	#define STR0002 "Mantenimiento de Actividades y Pasantias"
+	#define STR0003 "Lista de e-mails para reenvio"
+	#define STR0004 "Impresion del Protocolo"
+	#define STR0005 "Lugar"
+	#define STR0006 "Curso"
+	#define STR0007 "Grupo"
+	#define STR0008 "Materia"
+	#define STR0009 "AASS"
+	#define STR0010 "Turno"
+	#define STR0011 "Codigo de la Materia"
+	#define STR0012 "filtrar"
+	#define STR0013 "limpiar filtro"
+	#define STR0014 "si desea listar algunas materias especificas, digitelas en la caja anterior separadas por ; , y seleccione una de las materias"
+	#define STR0015 "PORTAL DEL COORDINADOR"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Pending Notes"
+		#define STR0002 "Maintenance of Activities and Internship"
+		#define STR0003 "List of e-mails to be sent"
+		#define STR0004 "Printing of Protocol"
+		#define STR0005 "Location"
+		#define STR0006 "Course"
+		#define STR0007 "Class"
+		#define STR0008 "Subject"
+		#define STR0009 "AASS"
+		#define STR0010 "Period"
+		#define STR0011 "Subject Code"
+		#define STR0012 "filter"
+		#define STR0013 "clean Filter"
+		#define STR0014 "if you want to list subjects specifically, type them in the box above separated by ; , and select one of the subjects"
+		#define STR0015 "COORDINATOR PORTAL"
+	#else
+		#define STR0001 If( cPaisLoc $ "ANG|PTG", "Registo Pendentes", "Apontamentos Pendentes" )
+		#define STR0002 If( cPaisLoc $ "ANG|PTG", "Manutenção de Actividades e Estágios", "Manutenção de Atividades e Estágios" )
+		#define STR0003 "Lista de e-mails para reenvio"
+		#define STR0004 "Impressäo do Protocolo"
+		#define STR0005 "Local"
+		#define STR0006 "Curso"
+		#define STR0007 "Turma"
+		#define STR0008 "Disciplina"
+		#define STR0009 "AASS"
+		#define STR0010 "Turno"
+		#define STR0011 "Código da Disciplina"
+		#define STR0012 "filtrar"
+		#define STR0013 "limpar filtro"
+		#define STR0014 If( cPaisLoc $ "ANG|PTG", "caso queira listar algumas disciplinas em específico, digite-os na caixa acima separados por ; , e seleccione uma das disciplinas", "caso queira listar algumas disciplinas em específico, digite-os na caixa acima separados por ; , e selecione uma das disciplinas" )
+		#define STR0015 "PORTAL DO COORDENADOR"
+	#endif
+#endif

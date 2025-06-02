@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Archivo de scripts de evaluación del territorio"
+	#define STR0002 "Visualizar"
+	#define STR0003 "Incluir"
+	#define STR0004 "Modificar"
+	#define STR0005 "Borrar"
+	#define STR0006 "Funciones"
+	#define STR0007 "No se puede informar rutina de usuario"
+	#define STR0008 "No informe paréntesis () al final de la rutina"
+	#define STR0009 "Rutina informada no encontrada"
+	#define STR0010 "Script"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Script Register of Territory Evaluation"
+		#define STR0002 "View"
+		#define STR0003 "Add"
+		#define STR0004 "Edit"
+		#define STR0005 "Delete"
+		#define STR0006 "Functions"
+		#define STR0007 "Unable to enter user routine"
+		#define STR0008 "Do not enter parenthesis () on the end of the routine"
+		#define STR0009 "Routine entered not found"
+		#define STR0010 "Script"
+	#else
+		#define STR0001 "Cadastro de Scripts de Avaliação do Território"
+		#define STR0002 "Visualizar"
+		#define STR0003 "Incluir"
+		#define STR0004 "Alterar"
+		#define STR0005 "Excluir"
+		#define STR0006 "Funções"
+		#define STR0007 "Não é permitido informar rotina de usuário"
+		#define STR0008 "Não informar parênteses () no final da rotina"
+		#define STR0009 "Rotina informada não encontrada"
+		#define STR0010 "Script"
+	#endif
+#endif

@@ -1,0 +1,36 @@
+#ifdef SPANISH
+	#define STR0001 "Incluir"
+	#define STR0002 "Alterar"
+	#define STR0003 "Visualizar"
+	#define STR0004 "Excluir"
+	#define STR0005 "Planejamento de Demanda"
+	#define STR0006 "Demandas"
+	#define STR0007 "Origem"
+	#define STR0008 "Destino"
+	#define STR0009 "Código"
+	#define STR0010 "Código da demanda"
+#else
+	#ifdef ENGLISH
+		#define STR0001 "Incluir"
+		#define STR0002 "Alterar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Excluir"
+		#define STR0005 "Planejamento de Demanda"
+		#define STR0006 "Demandas"
+		#define STR0007 "Origem"
+		#define STR0008 "Destino"
+		#define STR0009 "Código"
+		#define STR0010 "Código da demanda"
+	#else
+		#define STR0001 "Incluir"
+		#define STR0002 "Alterar"
+		#define STR0003 "Visualizar"
+		#define STR0004 "Excluir"
+		#define STR0005 "Planejamento de Demanda"
+		#define STR0006 "Demandas"
+		#define STR0007 "Origem"
+		#define STR0008 "Destino"
+		#define STR0009 "Código"
+		#define STR0010 "Código da demanda"
+	#endif
+#endif
