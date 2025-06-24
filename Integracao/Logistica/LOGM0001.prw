@@ -1,11 +1,9 @@
-#include "totvs.ch"
+#include "protheus.ch"
 #include "parmtype.ch"
 #include "prtopdef.ch"
 #Include "rwmake.ch"
 #Include "topconn.ch"
 #Include "sigawin.ch"
-#Include "Protheus.ch"
-#Include "PRTOPDEF.ch"
 
 /*
 --------------------------------------------------------------------------------
@@ -29,8 +27,8 @@ Alterações:
 
 user function LOGM0001()
 
-	Local bAcao 	:= {|| Atualiza() }
-	Local cTitulo 	:= 'Atualizando movimentação de caixas ...'
+	Local bAcao 	:= {|| MovtoSaidas() }
+	Local cTitulo 	:= 'Atualizando movimentação de caixas, saídas...'
 	Local cMsgProc 	:= 'Processando ....'
 	Local lAborta 	:= .T.
 
@@ -114,6 +112,20 @@ user function LOGM0001()
 
 	Processa( bAcao, cTitulo, cMsgProc, lAborta )
 
+	bAcao 	:= {|| BaixaCaixas() }
+	cTitulo 	:= 'Atualizando movimentação de caixas, entradas ...'
+	cMsgProc 	:= 'Processando ....'
+	lAborta 	:= .T.
+
+	Processa( bAcao, cTitulo, cMsgProc, lAborta )
+
+	bAcao 	:= {|| AtuSaldos() }
+	cTitulo 	:= 'Atualizando saldos dos clientes ...'
+	cMsgProc 	:= 'Processando ....'
+	lAborta 	:= .T.
+
+	Processa( bAcao, cTitulo, cMsgProc, lAborta )
+
 	cMsg := "***(Final)" + cFlin
 
 	FWrite(nHandImp,cMsg)
@@ -128,11 +140,16 @@ user function LOGM0001()
 
 Return()
 
-Static Function Atualiza()
+Static Function MovtoSaidas()
+
+	//Grava caixas expedidas
+	//Parte 1
 
 	ProcRegua(TMPAPP->(RecCount()))
 
 	Do while TMPAPP->(!eof())
+
+		IncProc('Processando ... Inserindo movimentos de saída.')
 
 		cQryM := ''
 		cQryM += "Select * "
@@ -182,7 +199,7 @@ Static Function Atualiza()
 
 			End Transaction
 		Else
-			cMsg := "Erro de gravação, registro já existe --> " + cFlin 
+			cMsg := "Erro de gravação, registro já existe --> " + cFlin
 			cMsg += "Data-> " + DtoC(STOD(TMPAPP->CXENTREGA)) + " Cliente: " + TMPAPP->CXCODCLI + "/" + TMPAPP->CXLOJA + " Carga: " + TMPAPP->C9_CARGA + cFlin
 			cMsg += "Pedido: " + TMPAPP->CXPEDIDO + " Nota/Serie:" + TMPAPP->C9_NFISCAL + "/" + TMPAPP->C9_SERIENF + cFlin + cFlin
 			FWrite(nHandErr,cMsg)
@@ -195,11 +212,243 @@ Static Function Atualiza()
 		Loop
 
 	EndDo
+	//Fim grava caixas expedidas
+Return()
 
+Static Function BaixaCaixas()
+
+	//Parte 2
 	//Relizar baixas vindas do APPENTREGAS
-	//
+	//Caixas recebidas APPENTREGA_RECEBCAIXA
 
+	cQryBaixa := ''
+	cQryBaixa += "Select ID, CARGA, CLIENTE, LOJA, CAIXA, CREATEDAPP, CREATEDSYS, IDUSER, SEQUENCIA, SERIE, NOTA "
+	cQryBaixa += "from APPENTREGA_RECEBCAIXA "
+	cQryBaixa += "Where Substr(CREATEDAPP,1,8) between '" + cDataDe + "' and '" + cDataate + "' "
+	cQryBaixa += "Order by CREATEDAPP,CARGA,CLIENTE,LOJA,NOTA,SERIE"
 
+	cMsg := "********************************* Realizando baixas de caixas recebidas *******************************************************" + cFlin
+	cMsg += "Data de Baixa: " + cDataDe + " até " + cDataate + cFlin
+	FWrite(nHandImp,cMsg + cQryBaixa + cFlin)
+
+	//Verifica se existe registros a serem baixados
+	If Alias(Select("TMPBAIXA")) = "TMPBAIXA"
+		TMPBAIXA->(dBCloseArea())
+	Endif
+
+	TCQUERY cQryBaixa NEW ALIAS "TMPBAIXA"
+	DBSelectArea("TMPBAIXA")
+
+	TMPBAIXA->(DBGoTop())
+
+	If TMPBAIXA->(eof())
+		cMsg := "Não há caixas recebidas no período de " + cDatade + " até " + cDataate + cFlin
+		FWrite(nHandImp,cMsg)
+		Return()
+	Endif
+
+	ProcRegua(TMPBAIXA->(RecCount()))
+
+	Do while TMPBAIXA->(!eof())
+
+		IncProc('Processando ... Inserindo movimentos de entrada.')
+
+		cQryM := ''
+		cQryM += "Select * "
+		cQryM += "from WEBLOG_CTRLCX_MOVTO "
+		cQryM += "Where Trim(DATA_MOVTO) = '" + substr(TMPBAIXA->CREATEDAPP,1,8) + "' and "
+		cQryM += "Trim(CLIENTE_MOVTO) = '" + Trim(TMPBAIXA->CLIENTE) + "' and Trim(LOJA_MOVTO) = '" + Trim(TMPBAIXA->LOJA) + "' and "
+		cQryM += "Trim(TIPO_MOVTO) = 'R' and "
+		cQryM += "Trim(CARGA_MOVTO) = '" + Trim(TMPBAIXA->CARGA) + "' and "
+		cQryM += "Trim(NFE_MOVTO) = '"+ Trim(TMPBAIXA->NOTA) + "' and Trim(SERIENFE_MOVTO) = '" + Trim(TMPBAIXA->SERIE) + "' "
+		//cQryM += "QTD_MOVTO <> 0 "
+		cQryM += "Order by DATA_MOVTO, CARGA_MOVTO, CLIENTE_MOVTO, LOJA_MOVTO, PEDIDO_MOVTO, NFE_MOVTO, SERIENFE_MOVTO "
+
+		cMsg := "********************** Verificando se registro ja foi inserido ***************************************************" + cFlin
+		FWrite(nHandImp,cMsg + cQryM + cFlin)
+
+		If Alias(Select("TMPMOVTO")) = "TMPMOVTO"
+			TMPMOVTO->(dBCloseArea())
+		Endif
+
+		TCQUERY cQryM NEW ALIAS "TMPMOVTO"
+
+		DBSelectArea("TMPMOVTO")
+		TMPMOVTO->(DBGoTop())
+
+		If TMPMOVTO->(eof())
+
+			cQryInsert := ''
+			cQryInsert += "Insert into WEBLOG_CTRLCX_MOVTO "
+			cQryInsert += "(DATA_MOVTO, CLIENTE_MOVTO, LOJA_MOVTO, CARGA_MOVTO, QTD_MOVTO, TIPO_MOVTO, USERCREATED_MOVTO, DATECREATED_MOVTO, "
+			cQryInsert += "USERMODIFY_MOVTO, DATEMODIFY_MOVTO, SEQUENCIACARGA_MOVTO, PEDIDO_MOVTO, NFE_MOVTO, SERIENFE_MOVTO, QTD_RETORNO) "
+			cQryInsert += "Values ( '" + substr(TMPBAIXA->CREATEDAPP,1,8) + "', "
+			cQryInsert += "'" + Trim(TMPBAIXA->CLIENTE) + "', '" + Trim(TMPBAIXA->LOJA) + "', "
+			cQryInsert += "'" + Trim(TMPBAIXA->CARGA) + "', 0, "
+			cQryInsert += "'R', 'IMPORT', "
+			cQryInsert += "'" + DtoS(dDataBase) + "', '', '', '', 'ZZZZZZ', "
+			cQryInsert += "'" + Trim(TMPBAIXA->NOTA) + "', '" + Trim(TMPBAIXA->SERIE) + "', "
+			cQryInsert += Strzero((Val(TMPBAIXA->CAIXA)),5) + ") "
+
+			Begin Transaction
+
+				cMsg := "**************************** Inserindo retorno das caixas ******************************************************" + cFlin
+				FWrite(nHandImp,cMsg + cFlin + cQryInsert + cFlin)
+
+				If TCSQLExec( cQryInsert ) <> 0
+					cMsg := "Erro ao inserir o registro na WEBLOG_CTRL_MOVTO" + cFlin
+					FWrite(nHandErr,cMsg)
+				Else
+					cMsg := "Registro inserido com sucesso na WEBLOG_CTRL_MOVTO" + cFlin
+					FWrite(nHandImp,cMsg)
+				Endif
+
+			End Transaction
+
+		Else
+
+			cMsg := "Erro de gravação, registro já existe --> " + cFlin
+			cMsg += "Data-> " + DtoC(STOD(substr(TMPBAIXA->CREATEDAPP,1,8))) + " Cliente: " + Trim(TMPBAIXA->CLIENTE) + "/" + Trim(TMPBAIXA->LOJA) + " Carga: " + Trim(TMPBAIXA->CARGA) + cFlin
+			cMsg += "Nota/Serie:" + Trim(TMPBAIXA->NOTA) + "/" + Trim(TMPBAIXA->SERIE) + cFlin
+			FWrite(nHandErr,cMsg)
+
+		Endif
+
+		TMPMOVTO->(dBCloseArea())
+
+		DBSelectArea("TMPBAIXA")
+		DbSkip()
+		Loop
+
+	EndDo
+
+Return()
+
+Static Function AtuSaldos()
+
+	//Parte 3
+	//Atualizar saldos dos clientes
+	//Calcular saldo de caixas
+
+	cMsg := "********************************* Atualizando saldo de caixas na tabela weblog_ctrlcx_saldos *******************************************************" + cFlin
+
+	cQrySoma  := ''
+	cQrySoma += "Select CLIENTE_MOVTO, LOJA_MOVTO, Sum(QTD_MOVTO) as Saidas, Sum(QTD_RETORNO) as Entradas, Max(to_char(sysdate,'YYYYMMDD')) as datasaldo "
+	cQrySoma += "from weblog_ctrlcx_movto "
+	cQrySoma += "Group by CLIENTE_MOVTO, LOJA_MOVTO "
+	cQrySoma += "Order by CLIENTE_MOVTO, LOJA_MOVTO "
+
+	If Alias(Select("TMPSOMA")) = "TMPSOMA"
+		TMPSOMA->(dBCloseArea())
+	Endif
+
+	TCQUERY cQrySoma NEW ALIAS "TMPSOMA"
+
+	DBSelectArea("TMPSOMA")
+	TMPSOMA->(DBGoTop())
+
+	ProcRegua(TMPSOMA->(RecCount()))
+
+	FWrite(nHandImp,cMsg + cQrySoma + cFlin)
+	cMsg := "****************************************************************************************" + cFlin
+
+	Do While TMPSOMA->(!eof())
+
+		cQryInsert := cQryUpdate := ''
+
+		IncProc('Processando ... Atualizando saldos.')
+
+		SALDO_MOVTO := TMPSOMA->Saidas + TMPSOMA->Entradas
+
+		cQrySaldos := ''
+		cQrySaldos += "Select ID_CTRLCX,CLIENTE_CTRLCX,LOJACLIENTE_CTRLCX,QTD_CTRLCX,ULTIMOMOVTO_CTRLCX "
+		cQrySaldos += "from weblog_ctrlcx_saldos "
+		cQrySaldos += "Where (ULTIMOMOVTO_CTRLCX) <= '" + TMPSOMA->datasaldo + "' "
+		cQrySaldos += "and CLIENTE_CTRLCX = '" + TMPSOMA->CLIENTE_MOVTO + "' "
+		cQrySaldos += "and LOJACLIENTE_CTRLCX = '" + TMPSOMA->LOJA_MOVTO + "' "
+		cQrySaldos += "Order by ULTIMOMOVTO_CTRLCX, CLIENTE_CTRLCX, LOJACLIENTE_CTRLCX "
+
+		If Alias(Select("TMPSALDO")) = "TMPSALDO"
+			TMPSALDO->(dBCloseArea())
+		Endif
+
+		TCQUERY cQrySaldos NEW ALIAS "TMPSALDO"
+
+		DBSelectArea("TMPSALDO")
+		TMPSALDO->(DBGoTop())
+
+		cMsg := "********************** Verificando se saldo ja foi inserido ***************************************************" + cFlin
+		FWrite(nHandImp,cMsg + cQrySaldos + cFlin)
+
+		If TMPSALDO->(eof())
+
+			cQryInsert := cQryUpdate := ''
+			cQryInsert += "Insert into weblog_ctrlcx_saldos "
+			cQryInsert += "(CLIENTE_CTRLCX, LOJACLIENTE_CTRLCX, QTD_CTRLCX, ULTIMOMOVTO_CTRLCX) "
+			cQryInsert += "Values ( '" + TMPSOMA->CLIENTE_MOVTO + "', '" + TMPSOMA->LOJA_MOVTO + "', "
+			cQryInsert += Strzero((TMPSOMA->Entradas + TMPSOMA->Saidas),6) + ", '" + TMPSOMA->datasaldo + "') "
+
+			Begin Transaction
+
+				cMsg := "**************************** Inserindo saldo de caixas ******************************************************" + cFlin
+				FWrite(nHandImp,cMsg + cFlin + cQryInsert + cFlin)
+
+				Err_Insert := TCSQLExec( cQryInsert )
+
+				If Err_Insert <> 0
+					cMsg := "Erro ao inserir o registro na WEBLOG_CTRL_SALDOS. Erro " + Alltrim(Str(Err_Insert)) + cFlin
+					FWrite(nHandErr,cMsg)
+				Else
+					cMsg := "Registro inserido com sucesso na WEBLOG_CTRL_SALDOS" + cFlin
+					FWrite(nHandImp,cMsg)
+				Endif
+
+			End Transaction
+
+		Else
+
+			cMsg := "Erro de gravação, registro já existe --> " + cFlin
+			cMsg += "Cliente: " + TMPSOMA->CLIENTE_MOVTO + "/" + TMPSOMA->LOJA_MOVTO + cFlin
+			FWrite(nHandErr,cMsg)
+
+			If TMPSALDO->QTD_CTRLCX = (TMPSOMA->Entradas - TMPSOMA->Saidas)
+				cMsg := "Saldo já atualizado, não será necessário atualizar novamente." + cFlin
+				FWrite(nHandImp,cMsg)
+			Else
+				cMsg := "Saldo desatualizado, será necessário atualizar novamente." + cFlin
+				FWrite(nHandImp,cMsg)
+
+				//Atualizando o saldo
+				cQryUpdate := 'Update weblog_ctrlcx_saldos '
+				cQryUpdate += "Set QTD_CTRLCX = " + Strzero((TMPSOMA->Entradas + TMPSOMA->Saidas),6)
+				cQryUpdate += "where ID_CTRLCX = " + Alltrim(Str(TMPSALDO->ID_CTRLCX))
+
+				Begin Transaction
+
+					cMsg := "**************************** Atualizando saldo de caixas ******************************************************" + cFlin
+					FWrite(nHandImp,cMsg + cFlin + cQryUpdate + cFlin)
+
+					Err_Insert := TCSQLExec( cQryUpdate )
+
+					If Err_Insert <> 0
+						cMsg := "Erro ao inserir o registro na WEBLOG_CTRL_SALDOS. Erro " + Alltrim(Str(Err_Insert)) + cFlin
+						FWrite(nHandErr,cMsg)
+					Else
+						cMsg := "Registro inserido com sucesso na WEBLOG_CTRL_SALDOS" + cFlin
+						FWrite(nHandImp,cMsg)
+					Endif
+
+				End Transaction
+
+			Endif
+
+		Endif
+
+		DBSelectArea("TMPSOMA")
+		DbSkip()
+		Loop
+
+	EndDo
 
 return()
 
