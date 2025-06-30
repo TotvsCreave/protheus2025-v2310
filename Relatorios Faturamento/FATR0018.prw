@@ -67,8 +67,8 @@ Static Function MontaQry()
 	cQry   += "Case when A1_XTROCAM = '1' then 'Sim' else 'Não' End as Aceita_Troca, A1_XVARIAI as Inferior, A1_XVARIAS as Superior, A1_XDDENTR as Dias_Entrega, "
 //--Informações do SC6
 	cQry   += "C6_PRODUTO as Produto, Trim(B1_DESC) as Desc_Produto, "
-	cQry   += "Case when c6_segum <> ' ' then C6_XQTVEN else 0 End as Qtd_Vendida_Un2, C6_SEGUM Unidade_2, "
-	cQry   += "C6_QTDVEN as Qtd_Vendida_Un1, C6_UM as Unidade_1, "
+	cQry   += "Case when c6_segum <> ' ' then C6_XQTVEN else 0 End as QtdVendUn2, C6_SEGUM Unidade_2, "
+	cQry   += "C6_QTDVEN as QtdVendUn1, C6_UM as Unidade_1, "
 	cQry   += "C6_PRCVEN as Valor_Unit, C6_VALOR as Total, "
 	cQry   += "C6_TES as TES, C6_cf as CFOP, Case when F4_DUPLIC = 'S' then 'Sim' Else 'Não' End as Gera_fin, c6_num as Pedido, c6_item as Item, "
 	cQry   += "C6_NOTA as Nota, C6_SERIE as Serie, "
@@ -100,8 +100,9 @@ Static Function MontaQry()
 
 	//Criando a Tabela
 	oFWMsExcel:AddTable(cAba01,cTitTab)
-//EMISSAO, ENTREGA, TIPO, CODVENDEDOR, VENDEDOR, CLIENTE, LOJA, NOME, FANTASIA, ACEITA_TROCA, INFERIOR, SUPERIOR, DIAS_ENTREGA, PRODUTO, DESC_PRODUTO, 
-//QTD_VENDIDA_UN2, UNIDADE_2, QTD_VENDIDA_UN1, UNIDADE_1, VALOR_UNIT, TOTAL, TES, CFOP, GERA_FIN, PEDIDO, ITEM, NOTA, SERIE, GRUPO, DESC_GRUPO, GRUPO_BI, OBSERVACAO
+	
+	//EMISSAO, ENTREGA, TIPO, CODVENDEDOR, VENDEDOR, CLIENTE, LOJA, NOME, FANTASIA, ACEITA_TROCA, INFERIOR, SUPERIOR, DIAS_ENTREGA, PRODUTO, DESC_PRODUTO, 
+	//QTD_VENDIDA_UN2, UNIDADE_2, QTD_VENDIDA_UN1, UNIDADE_1, VALOR_UNIT, TOTAL, TES, CFOP, GERA_FIN, PEDIDO, ITEM, NOTA, SERIE, GRUPO, DESC_GRUPO, GRUPO_BI, OBSERVACAO
 	oFWMsExcel:AddColumn(cAba01,cTitTab,"EMISSAO",1,1,.f.)
 	oFWMsExcel:AddColumn(cAba01,cTitTab,"ENTREGA",1,1,.f.)
 	oFWMsExcel:AddColumn(cAba01,cTitTab,"TIPO",1,1,.f.)
@@ -135,7 +136,6 @@ Static Function MontaQry()
 	oFWMsExcel:AddColumn(cAba01,cTitTab,"GRUPO_BI",1,1,.f.)
 	oFWMsExcel:AddColumn(cAba01,cTitTab,"OBSERVACAO",1,1,.f.)
 
-
 	//Criando as Linhas... Enquanto não for fim da query
 	While !(QRYPRO->(EoF()))
 		oFWMsExcel:AddRow(cAba01,cTitTab,;
@@ -154,9 +154,9 @@ Static Function MontaQry()
 			QRYPRO->DIAS_ENTREGA    ,;
 			QRYPRO->PRODUTO         ,;
 			QRYPRO->DESC_PRODUTO    ,;
-			QRYPRO->QTD_VENDIDA_UN2 ,;
+			QRYPRO->QtdVendUn2 		,;
 			QRYPRO->UNIDADE_2       ,;
-			QRYPRO->QTD_VENDIDA_UN1 ,;
+			QRYPRO->QtdVendUn1 		,;
 			QRYPRO->UNIDADE_1       ,;
 			QRYPRO->VALOR_UNIT      ,;
 			QRYPRO->TOTAL           ,;

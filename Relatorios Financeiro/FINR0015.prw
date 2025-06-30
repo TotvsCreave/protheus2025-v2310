@@ -1,3 +1,4 @@
+#include 'TOTVS.ch'
 #include 'prtopdef.ch'
 #include 'protheus.ch'
 #include 'parmtype.ch'
@@ -88,7 +89,7 @@ user function FINR0015()
 //mostrar período no relaTÓRIO e devoluções
 
 	cQry := ""
-	cQry += "select "
+	cQry += "select F2_VEND1 as Vendedor, "
 	cQry += "D2_CLIENTE as Cod_Cliente, D2_LOJA as Loja, Max(A1_NOME) as Razao, Max(A1_NREDUZ) as Fantasia, D2_DOC as Nfe, D2_SERIE as Serie, "
 	cQry += "Sum(D2_TOTAL) as Total, Max(Trim(D2_CF)||'/'||D2_TES) As Tes, "
 	cQry += "Max(D2_PEDIDO) as Pedido, "
@@ -104,9 +105,10 @@ user function FINR0015()
 	cQry += "Where E1_NUM = D2_DOC and E1_PREFIXO = D2_SERIE and E1_SALDO <> 0 and SE1.D_E_L_E_T_ <> '*' group by E1_NUM, E1_PREFIXO)) End "
 	cQry += "as Saldo "
 	cQry += "from SD2000 SD2 "
-	cQry += "Inner Join SA1000 SA1 on A1_COD = D2_CLIENTE and A1_LOJA = D2_LOJA "
-	cQry += "Left  Join ACY000 ACY on ACY_GRPVEN = A1_XGRPCLI "
-	cQry += "Left  Join SF4000 SF4 on F4_CODIGO = D2_TES "
+	cQry += "Left  Join SA1000 SA1 on A1_COD = D2_CLIENTE and A1_LOJA = D2_LOJA and SA1.D_E_L_E_T_ <> '*' "
+	cQry += "Left  Join ACY000 ACY on ACY_GRPVEN = A1_XGRPCLI and ACY.D_E_L_E_T_ <> '*' "
+	cQry += "Left  Join SF4000 SF4 on F4_CODIGO = D2_TES and SF4.D_E_L_E_T_ <> '*' "
+	cQry += "Left  Join SF2000 SF2 on F2_DOC = D2_DOC and F2_SERIE = D2_SERIE and SF2.D_E_L_E_T_ <> '*' "	
 	cQry += "Where  "
 	cQry += "SD2.d_e_l_e_t_ <> '*' "
 	cQry += "and D2_TIPO <> 'D' "
@@ -119,8 +121,8 @@ user function FINR0015()
 		cQry += "and A1_XGRPCLI between '" + cGpCliIni + "' and '" + cGpCliFin + "' "
 	Endif
 
-	cQry += "Group by D2_CLIENTE, D2_LOJA, D2_EMISSAO, D2_DOC, D2_SERIE "
-	cQry += "Order by D2_CLIENTE, D2_LOJA, D2_EMISSAO, D2_DOC, D2_SERIE"
+	cQry += "Group by F2_VEND1, D2_CLIENTE, D2_LOJA, D2_EMISSAO, D2_DOC, D2_SERIE "
+	cQry += "Order by F2_VEND1, D2_CLIENTE, D2_LOJA, D2_EMISSAO, D2_DOC, D2_SERIE"
 
 	If cTipoRel = 1
 		U_RelXML(cTitulo,cPerg,cQry,aQuebra,aTotais,.t.,aCamEsp)

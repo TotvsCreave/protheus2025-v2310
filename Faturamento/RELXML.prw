@@ -1,9 +1,17 @@
-#INCLUDE "PROTHEUS.CH"
-#INCLUDE "TOPCONN.CH" 
+
 #INCLUDE "TOTVS.CH"
-#INCLUDE "FILEIO.CH"
 #INCLUDE "TbiConn.ch"
 #include "shell.ch"
+#include 'prtopdef.ch'
+#include 'protheus.ch'
+#include 'parmtype.ch'
+#include "RWMAKE.CH"
+#include "TOPCONN.CH"
+#include "FWPrintSetup.ch"
+#include "RPTDEF.CH"
+#include "fileio.ch"
+#Include "sigawin.ch"
+#INCLUDE "TBICONN.CH"
 
 /*/$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  
@@ -732,7 +740,7 @@ FWrite(nHandle,'   </Row> <Row/>'+CRLF)
 If !Empty(cPerg)
 	
 	aSx1 := FWSX1Util():GetGroup(cPerg)
-
+Alert(Len(aSx1))
 	//DbSelectArea("SX1")
 	//DbSetOrder(1)
 	//If MsSeek(Padr(cPerg,Len(X1_GRUPO),""))
