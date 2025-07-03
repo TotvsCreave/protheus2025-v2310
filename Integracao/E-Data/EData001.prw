@@ -22,8 +22,8 @@ user Function EDATA001()
     local aPergs:={}
     local xPar1:=date()
     local xPar2:=date()
-    local xPar3:=space(15)
-    local xPar4:=Replicate("Z",15)
+    local xPar3:='999001'
+    local xPar4:='999001'
     local xPar5:=space(6)
     local xPar6:=Replicate("Z",6)
     private aRecnos:={}
@@ -125,7 +125,7 @@ static function MontQry(cRegistro)
     cQry += "'DA3_MOTORI' as DriverNo, "//ajusto depois na consulta em DA3
     cQry += "C2_PRODUTO as AnimalMaterialNo, "
     cQry += "C2_QTSEGUM as AnimalQty, "
-    cQry += "0 as VehicleGrossWeight, "//ajusto depois na consulta em DA3
+    cQry += "15980 as VehicleGrossWeight, "//ajusto depois na consulta em DA3
     cQry += "'' as CageQty, "
     cQry += "1 as AnimalAge, "
     cQry += "'' as Notes, "
@@ -209,9 +209,9 @@ static function GeraJson(aTable)
                         DA3->(DBSetOrder(3))//3	DA3_FILIAL+DA3_PLACA	Placa
                         xExp:=Xfilial('DA3')+Replace(QRY_AUX->PLACA,' ','')
                         if DA3->(DBSeek(xExp))
-                            cInformacao:= DA3->DA3_TRANSP
+                            cInformacao:= DA3->DA3_PLACA
                         else
-                            cLogExec+= 'DA3_TRANSP não encontrada, filial+veiculo: '+xExp+CRLF
+                            cLogExec+= 'DA3_PLACA não encontrada, filial+veiculo: '+xExp+CRLF
                         EndIf
                     elseif aProprit[1]=='DriverNo' //ajusto se for dados de veiculo
                         DbSelectArea("DA3")

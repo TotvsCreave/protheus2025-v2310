@@ -2108,7 +2108,7 @@ Begin Transaction
 		Next x                                              		        
 			
 	If nDinheiro > 0
-		
+   
 	//	Pergunte(cPerg,.F.)					                         
 		aFINA100 := { {"E5_DATA"   , dData        , Nil},;
 					  {"E5_MOEDA"  , "M1"         , Nil},;  

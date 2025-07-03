@@ -1,4 +1,9 @@
 #Include 'Protheus.ch'
+#include 'PRTOPDEF.ch'
+#include 'parmtype.ch'
+#include "RWMAKE.CH"
+#include "TOPCONN.CH"
+#include "tbiconn.ch"
 
 #DEFINE USADO CHR(0)+CHR(0)+CHR(1)
 
@@ -644,15 +649,17 @@ User Function MT103FIM()
 				{'C2_ITEM'      ,"01"                   ,NIL},;
 				{'C2_SEQUEN'    ,"001"                  ,NIL},;
 				{'C2_QUANT'     ,SD1->D1_QUANT          ,NIL},;
-                {'C2_QTSEGUM'   ,SD1->D1_XQTDSEG        ,NIL},;
+				{'C2_QTSEGUM'   ,SD1->D1_XQTDSEG        ,NIL},;
 				{'C2_LOCAL'     ,SD1->D1_LOCAL          ,NIL},;
 				{'C2_EMISSAO'   ,SD1->D1_EMISSAO        ,NIL},;
 				{'C2_XFORNEC'   ,SF1->F1_FORNECE        ,NIL},;
 				{'C2_XLOJA'     ,SF1->F1_LOJA           ,NIL},;
 				{'C2_XDOCSER'   ,SF1->F1_SERIE          ,NIL},;
 				{'C2_XDOCTCX'   ,SF1->F1_DOC            ,NIL},;
-                {'',,NIL},;
-			}
+				{'C2_XCARRO'	,Iif(Empty(SF1->F1_PLACA),SF1->F1_VEICUL2,SF1->F1_PLACA)			,NIL},;
+				{'C2_MOTORTA'   ,BuscaMoto(Iif(Empty(SF1->F1_PLACA),SF1->F1_VEICUL2,SF1->F1_PLACA))	,NIL},;
+				{'',,NIL},;
+				}
 
 
 			msExecAuto({|x,Y| Mata650(x,Y)},aMata650,nOpc)
@@ -714,3 +721,24 @@ Return
 //***************************************************************************************************************************************//
 // FIM - Desmontagem de produtos                                                                                                         //
 //***************************************************************************************************************************************//
+
+Static Function BuscaMoto(cPlaca)
+
+	cCodMot := Posicione("DA3",3,xFilial("DA3")+cPlaca,"DA3_MOTORI")
+
+	If Empty(cCodMot)
+
+		cMotorista := '000034'
+		Alert("Não foi possível localizar o motorista para a placa " + cPlaca + "." + chr(10) + chr(13) + ;
+			"Será utilizado o motorista padrão 000034 (MOTORISTA CREAVE). " + chr(10) + chr(13) + ;
+			"Voce poderá alterar o motorista no cadastro da OP.")
+	
+	Else
+		cMotorista := Posicione("DA4",1,xFilial("DA4")+cCodMot,"DA4_COD") //"000034" // Motorista padrão (MOTORISTA CREAVE)
+
+	EndIf
+
+	TMPDA3->(DBCloseArea())
+	// Retorna o código do motorista encontrado ou o padrão
+
+Return(cMotorista)
