@@ -105,8 +105,7 @@ static function MontQry(cRegistro)
     /*
 	Método Webservice PostAddLoad
 	Descrição: Criação de carga
-
-
+    ---------------------------------------------------------
     BranchNo        String(25)
     LoadDate        DataHora
     VehiclePlateNo           String(8)
@@ -118,12 +117,13 @@ static function MontQry(cRegistro)
     SalesOrderCode      String(25)
     LoadNo   String(25)
     LoadType   String(12)
-    IsLoadGroup Boolean
+    ----------------------------------------------------------
     */
+    // Monta a consulta SQL para obter os dados necessários
     cQry += "Select "
     cQry += " DAK_COD as LoadNo,"
     cQry += " 'ltSalesOrder' AS LoadType,"
-    cQry += " 'true' AS IsLoadGroup,"
+    //cQry += " 'true' AS IsLoadGroup,"
     cQry += " '01' AS BranchNo,"
     cQry += " DAK_DATA as LoadDate,"
     cQry += " DAK_HORA AS HORACARGA,"
@@ -131,7 +131,8 @@ static function MontQry(cRegistro)
     cQry += " 'false' AS Blocked,"
     cQry += " 'SalesOrderList' AS SalesOrderList,"
     cQry += " DAK_MOTORI as DriverNo,"
-    cQry += " case when DAK_TRANSP=' ' then '000004' else DAK_TRANSP end AS TransporterNo "
+    cQry += " '006931' AS TransporterNo "
+    //cQry += " case when DAK_TRANSP=' ' then '000004' else DAK_TRANSP end AS TransporterNo "
     cQry += " from "+retsqlname("DAK")+" DAK "
     cQry += " Left Join "+retsqlname("DA4")+" DA4 On (DA4_COD = DAK.DAK_MOTORI and DA4.D_E_L_E_T_ <> '*') "
     cQry += " Where DAK.R_E_C_N_O_ ="+cvaltochar(cRegistro)
