@@ -124,7 +124,7 @@ static function MontQry(cRegistro)
     cQry += " DAK_COD as LoadNo,"
     cQry += " 'ltSalesOrder' AS LoadType,"
     cQry += " 'true' AS IsLoadGroup,"
-    cQry += " '1' AS BranchNo,"
+    cQry += " '01' AS BranchNo,"
     cQry += " DAK_DATA as LoadDate,"
     cQry += " DAK_HORA AS HORACARGA,"
     cQry += " DAK_CAMINH as VehiclePlateNo,"

@@ -1,7 +1,7 @@
-#Include "rwmake.ch"
+#Include "TOTVS.ch"
+#Include "protheus.ch"
 #Include "topconn.ch"
 #Include "sigawin.ch"
-#Include "protheus.ch"
 #IFNDEF WINDOWS
 	#DEFINE PSAY SAY
 #ENDIF
@@ -57,7 +57,7 @@ Private cCombo1 := ""
 Private cCombo2 := ""
 
 Private oMemo, cObs
-Private cControle, nSelec, nJuros, nMulta, nDesc, nAcresc, nAcertos, nPagar, nBaixar, nFornec, nDinheiro, nTroco, cContaRec, cCaixinha, nPercJuros, nVlCheque
+Private cControle, nSelec, nJuros, nMulta, nDesc, nAcresc, nAcertos, nPagar, nBaixar, nFornec, nDinheiro, nTroco, cContaRec, cCaixinha, nPercJuros, nVlCheque:=0
 Private lMsErroAuto := .F.
 Private lMsHelpAuto := .T.   				
 Private dData       := dDataBase
@@ -1379,7 +1379,7 @@ Local lRet := .T.
 		dbSelectArea("SA1")
 		SA1->(DbSetOrder(1)) 
 		If !SA1->(DbSeek(xFilial("SA1") + cCliente)) 
-			Msgbox("Cliente Inexistente!")		
+			FWAlertInfo("Cliente Inexistente!",'Aviso')	
 			cCliente := Space(06)	
 			cLoja    := Space(02)		
 			lRet     := .F.				 									
@@ -1403,48 +1403,48 @@ Static Function Grava()
 	If cOpc = "I"     
 	
 		If nPagar = 0	
-			Msgbox("Nenhum Título Informado!!!")
+			FWAlertInfo("Nenhum Título Informado!!!",'Aviso')
 			Return
 		Endif         	
 
 //		If Empty(cVend)
-//			Msgbox("Vendedor Não Informado!!!")
+//			FWAlertInfo("Vendedor Não Informado!!!")
 //			oGetVend:SetFocus()
 //			Return
 //		Endif 
 //		
 //		If Empty(cMot)
-//			Msgbox("Motorista Não Informado!!!")
+//			FWAlertInfo("Motorista Não Informado!!!")
 //			oGetMotorista:SetFocus()
 //			Return
 //		Endif    
 //		
 //		If Empty(cAjud)
-//			Msgbox("Ajudante Não Informado!!!")
+//			FWAlertInfo("Ajudante Não Informado!!!")
 //			oGetAjudante:SetFocus()
 //			Return
 //		Endif            				
 
 		If Round((nFornec + nDinheiro),2) <> Round((nPagar - nDesp),2)
 			
-			Msgbox("ATENÇÃO!!!"+chr(10)+chr(10)+;					 
+			FWAlertInfo("ATENÇÃO!!!"+chr(10)+chr(10)+;					 
 				   "O Valor Recebido é DIFERENTE do Valor dos Títulos!!!"+chr(10)+;
 		           "Favor baixar parcialmente algum título selecionado "+chr(10)+;
-		           "ou ajustar os valores recebidos.")					 
+		           "ou ajustar os valores recebidos.",'Aviso')					 
 		  	_cMsg := "Confirma Inclusão com diferença ?"
 		  	
 		Else
 			_cMsg := "Confirma Inclusão ?" 
 		Endif                                                                                            		
 					         
-		If MsgYesNo(_cMsg)                           	
+		If FWAlertNoYes(_cMsg,'Confirma')                           	
 			Inclusao()
 		Else
 			Return				
 		Endif
 		
 	ElseIF cOpc = "E"       
-		If MsgYesNo(OemToAnsi("Confirma Exclusão ?"))                           	
+		If FWAlertNoYes(OemToAnsi("Confirma Exclusão ?"),'Confirma')                           	
 			Exclusao()				
 		Else
 			Return
@@ -1462,7 +1462,7 @@ Static Function Fecha()
 Return                   
 
 Static Function Inclui_Cheque()                            
-Local nTotalCheq,x := 0
+Local nTotalCheq:=0,x := 0
 
 	If cOpc <> "I"
 		Return
@@ -1470,13 +1470,13 @@ Local nTotalCheq,x := 0
 
 	If Empty(_cBanco)   .or. Empty(_cAgencia) .or. Empty(_cConta) .or. Empty(cNumero) .or. Empty(nVlCheque) .or. ;
 	   Empty(dEmissao) .or. Empty(dBomPara) //.or. Empty(cTitular)
-		Msgbox("Cheque Inválido!")
+		FWAlertInfo("Cheque Inválido!",'Aviso')
 		oGetBanco:SetFocus()	
 		Return
 	Endif             
 	
 	If Empty(cCliente) 
-		Msgbox("Cliente Não Informado!")
+		FWAlertInfo("Cliente Não Informado!",'Aviso')
 		oGetCliente:SetFocus()	
 		Return
 	Endif             	       
@@ -1870,7 +1870,7 @@ Begin Transaction
 
 			For x:=1 to Len(aCheques)
 													
-				//Pergunte(cPerg,.F.)				
+				Pergunte(cPerg,.F.)				
 				aFINA100 := { {"E5_DATA"   , dData        , Nil},;
 							  {"E5_TIPO"   , "CH"         , Nil},;	
 							  {"E5_MOEDA"  , "M1"         , Nil},;
@@ -2108,8 +2108,9 @@ Begin Transaction
 		Next x                                              		        
 			
 	If nDinheiro > 0
-   
-	//	Pergunte(cPerg,.F.)					                         
+		
+		Pergunte(cPerg,.F.)		
+				                         
 		aFINA100 := { {"E5_DATA"   , dData        , Nil},;
 					  {"E5_MOEDA"  , "M1"         , Nil},;  
 	      	          {"E5_NATUREZ", GetMV("MV_NATDINH"), Nil},;
@@ -2123,6 +2124,21 @@ Begin Transaction
                       {"E5_HISTOR" , "Dinheiro Ref. Rec. "+cNum, Nil}}
 
 		MSExecAuto({|x,y,z| FinA100(x,y,z)},0,aFINA100,4) // 4=RECEBER
+		/*
+		     aFINA100 := {;
+			        {"E5_DATA"   , dData        , Nil},;
+                         {"E5_MOEDA"      ,"M1"                      ,Nil},;
+                    {"E5_VALOR"  , nDinheiro    , Nil},;
+                    {"E5_NATUREZ", GetMV("MV_NATDINH"), Nil},;
+                    {"E5_BANCO"  , MV_PAR04     , Nil},;
+					{"E5_AGENCIA", MV_PAR05     , Nil},;
+					{"E5_CONTA"  , MV_PAR06     , Nil},; 
+                         {"E5_VENCTO"     ,dDataBase                 ,Nil},;
+                         {"E5_BENEF"      ,"TESTE AUTO - BENEF"      ,Nil},;
+                    {"E5_HISTOR" , "Dinheiro Ref. Rec. "+cNum, Nil}}
+     
+        MSExecAuto({|x,y,z| FinA100(x,y,z)},0,aFINA100,4)
+		*/
 
 		If lMsErroAuto
 			Alert("Erro na movimentação bancária de dinheiro. Verifique!!!.") 
@@ -2138,7 +2154,7 @@ Begin Transaction
 	
 		If !oMovBan:aCols[x][_nColDelM] .and. oMovBan:aCols[x][_nColVlDesp] > 0
 													
-			//Pergunte(cPerg,.F.)
+			Pergunte(cPerg,.F.)
 							
 				aFINA100 := { {"E5_DATA"   , dData        , Nil},;
 							  {"E5_MOEDA"  , "M1"         , Nil},;
@@ -2170,7 +2186,7 @@ Begin Transaction
 	
 		If !oMovRec:aCols[y][_nRColDel] .and. oMovRec:aCols[y][_nColVlRec] > 0
 	
-				//Pergunte(cPerg,.F.)
+				Pergunte(cPerg,.F.)
 				aFINA100 := { {"E5_DATA"   , dData        , Nil},;
 							  {"E5_MOEDA"  , "M1"         , Nil},;
 			            	  {"E5_VALOR"  , oMovRec:aCols[y][_nColVlRec], Nil},; 
@@ -2452,14 +2468,14 @@ Static Function LeCodBar()
 		DbSelectArea("SE1")                      
 		DbSetOrder(1)
 		If !DbSeek(xFilial()+cPrefixo+cTitulo+cParc,.F.) //Robson
-			Msgbox("Título Não encontrado!!!")
+			FWAlertInfo("Título Não encontrado!!!",'Aviso')
 			cCodBar := Space(13)
 			oGetCodBar:SetFocus()
 			Return
 		Else
 		                              
 			If SE1->E1_SALDO = 0
-				Msgbox("Título já baixado!!!")
+				FWAlertInfo("Título já baixado!!!",'Aviso')
 				oGetCodBar:SetFocus()
 				Return			
 			Endif
@@ -2469,7 +2485,7 @@ Static Function LeCodBar()
 				Ind := aScan( aTitulos, { |X| X[2] + X[3] + X[9] = SE1->E1_NUM + SE1->E1_PREFIXO + SE1->E1_PARCELA } )
 			//Endif
 			If Ind <> 0                      
-				Msgbox("Título já informado!!!")
+				FWAlertInfo("Título já informado!!!",'Aviso')
 				oGetCodBar:SetFocus()
 				Return			
 			Else
@@ -2521,12 +2537,12 @@ Local nX := oTitulos:nAt
 		DbSelectArea("SE1")                      
 		DbSetOrder(1)
 		If !DbSeek(xFilial()+M->ESPECIE+oTitulos:aCols[nX][_nColNum]+oTitulos:aCols[nX][_nColPrc],.F.)		
-			Msgbox("Título Inexistente!!!")
+			FWAlertInfo("Título Inexistente!!!",'Aviso')
 			M->ESPECIE := Space(3)
 			lRet := .F.
 		Else                    
 			If SE1->E1_SALDO = 0
-				Msgbox("Título já baixado!!!")
+				FWAlertInfo("Título já baixado!!!",'Aviso')
 				M->ESPECIE := Space(3)
 				lRet := .F.
 			Else
@@ -2548,7 +2564,7 @@ Local nX := oTitulos:nAt
 		                                 		                       
    		// 04/09/2018
 		If M->BAIXA > (oTitulos:aCols[nX][_nColValor]+oTitulos:aCols[nX][_nColAcreD]) .and. oTitulos:aCols[nX][_nColAcerto] = 0				                                 		
-			Msgbox("Valor da Baixa Maior que o Valor do Título!!!")
+			FWAlertInfo("Valor da Baixa Maior que o Valor do Título!!!",'Aviso')
 			oTitulos:aCols[nX][_nColBaixa] := oTitulos:aCols[nX][_nColValor]
 			lRet := .F.
 		Else
@@ -2563,7 +2579,7 @@ Local nX := oTitulos:nAt
 			dbSelectArea("SED")
 			SED->(DbSetOrder(1)) 
 			If !SED->(DbSeek(xFilial("SED") + M->CODNAT)) 
-				Msgbox("Natureza Inexistente!")		
+				FWAlertInfo("Natureza Inexistente!",'Aviso')	
 				M->CODNAT := Space(10) 					   
 				oMovBan:aCols[nX][_nColDscNat] := Space(30)		
 				lRet  := .F.										
@@ -2580,7 +2596,7 @@ Local nX := oTitulos:nAt
 			dbSelectArea("SED")
 			SED->(DbSetOrder(1)) 
 			If !SED->(DbSeek(xFilial("SED") + M->CODNATR)) 
-				Msgbox("Natureza Inexistente!")		
+				FWAlertInfo("Natureza Inexistente!",'Aviso')		
 				M->CODNATR := Space(10) 					   
 				oMovRec:aCols[nX][_nColDscRec] := Space(30)		
 				lRet  := .F.										
@@ -2602,7 +2618,7 @@ Local lRet := .T.
 		dbSelectArea("SA3")
 		SA3->(DbSetOrder(1)) 
 		If !SA3->(DbSeek(xFilial("SA3") + cVend)) 
-			Msgbox("Vendedor Inexistente!")		
+			FWAlertInfo("Vendedor Inexistente!",'Aviso')
 			cVend := Space(06)	   
 			cNome := Space(30)		
 			//lRet  := .F.										
@@ -2624,7 +2640,7 @@ Local lRet := .T.
 		dbSelectArea("DA4")
 		DA4->(DbSetOrder(1)) 
 		If !DA4->(DbSeek(xFilial("DA4") + cMot)) 
-			Msgbox("Motorista Inexistente!")		
+			FWAlertInfo("Motorista Inexistente!",'Aviso')
 			cMot := Space(06)	   
 			cNomMot := Space(40)		
 			//lRet  := .F.										
@@ -2646,7 +2662,7 @@ Local lRet := .T.
 		dbSelectArea("DAU")
 		DAU->(DbSetOrder(1)) 
 		If !DAU->(DbSeek(xFilial("DAU") + cAjud)) 
-			Msgbox("Ajudante Inexistente!")		
+			FWAlertInfo("Ajudante Inexistente!",'Aviso')
 			cAjud := Space(06)	   
 			cNomAju := Space(40)		
 			//lRet  := .F.										
@@ -2669,17 +2685,17 @@ Local lRet := .T.
 		If !oTitulos:aCols[nY][_nColDelT]
 	
 			If Empty(oTitulos:aCols[nY][_nColNum])
-				Msgbox("Título Não Informado!!!")
+				FWAlertInfo("Título Não Informado!!!",'Aviso')
 				lRet := .F.
 			Endif 
 			
 			If Empty(oTitulos:aCols[nY][_nColPref])
-				Msgbox("Prefixo Não Informado!!!")
+				FWAlertInfo("Prefixo Não Informado!!!",'Aviso')
 				lRet := .F.
 			Endif              
 			
 			If oTitulos:aCols[nY][_nColBaixa] <= 0
-				Msgbox("Valor da Baixa Não Informado!!!")
+				FWAlertInfo("Valor da Baixa Não Informado!!!",'Aviso')
 				lRet := .F.
 			Endif
 			
@@ -2694,17 +2710,17 @@ Local lRet := .T.
 			_nColNat := aScan(aCabMov, {|x| AllTrim(x[2]) == "CODNAT" })  		
 	        //Ajuste Robson                                        
 //			If Empty(oMovBan:aCols[nY][_nColVlDesp])
-//				Msgbox("Valor Não Informado!!!")
+//				FWAlertInfo("Valor Não Informado!!!")
 //				lRet := .F.
 //			Endif
 //	
 //			If Empty(oMovBan:aCols[nY][_nColCodNat])
-//				Msgbox("Natureza Não Informada!!!")
+//				FWAlertInfo("Natureza Não Informada!!!")
 //				lRet := .F.
 //			Endif                          
 //			
 //			If Empty(oMovBan:aCols[nY][_nColHistor])
-//				Msgbox("Histórico Não Informado!!!")
+//				FWAlertInfo("Histórico Não Informado!!!")
 //				lRet := .F.
 //			Endif
 			

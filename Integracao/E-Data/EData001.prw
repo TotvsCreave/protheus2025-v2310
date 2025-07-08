@@ -111,7 +111,7 @@ static function MontQry(cRegistro)
     */
 
     cQry += "Select C2_NUM as ReceivingNo, "
-    cQry += "'1' as BranchNo, " //código externo da filial
+    cQry += "'01' as BranchNo, " //código externo da filial
     cQry += "C2_NUM as AnimalWeighingOrderNo, "
     cQry += "'21-91021-1' as LotNo, " // lote composto definido no Edata
     cQry += "C2_EMISSAO  as ReceivingDate, "

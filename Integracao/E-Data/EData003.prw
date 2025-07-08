@@ -135,7 +135,7 @@ static function MontQry(cRegistro)
 
     cQry += "Select distinct "
     cQry += " C5_NUM as NOSalesOrderNo, "
-    cQry += " '1' as BranchNo, "
+    cQry += " '01' as BranchNo, "
     cQry += " C5_CLIENTE||C5_LOJACLI AS CustomerNo, "
     cQry += " C5_EMISSAO AS SalesOrderDate, "
     cQry += " C6_ENTREG AS DeliveryDate, "
