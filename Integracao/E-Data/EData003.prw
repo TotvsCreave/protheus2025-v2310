@@ -294,6 +294,7 @@ static function fProdutos(cPV)
             else
                 oJsonInt["Qty"] :=SC6->C6_QTDVEN// 100
             endif
+            oJsonInt["PackageQty"] := 
             oJsonInt["UnitValue"] :=SC6->C6_PRCVEN
             AAdd(aItens,oJsonInt)
             FreeObj(oJsonInt)
