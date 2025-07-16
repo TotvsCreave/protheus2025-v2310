@@ -129,8 +129,9 @@ Static Function TrabArray()
 
 	nPedidos := Len(aConteudo)
 
-	cPedido := cItem := cProd := ''
-	cQtd 	:= nPeso := nTara := nPesoReal := 0
+	cPedido := cItem 	:= cProd 	:= ''
+	nQtd 	:= nPeso 	:= nTara 	:= nPesoReal 	:= 0
+	nTQtd 	:= nTPeso 	:= nTTara 	:= nTPesoReal 	:= 0
 
 	If nPedidos > 0
 		For i := 1 To nPedidos
@@ -139,20 +140,24 @@ Static Function TrabArray()
 			For j := 1 To nItens
 				cItem		:= aConteudo[i]["ItemList"][j]["ItemNo"]
 				cProd		:= aConteudo[i]["ItemList"][j]["ProdutoNo"]
-				cQtd		:= aConteudo[i]["ItemList"][j]["DispatchQty"]
+				nQtd		:= aConteudo[i]["ItemList"][j]["DispatchQty"]
 				nPeso		:= aConteudo[i]["ItemList"][j]["DispatchWeight"]
 				nTara		:= aConteudo[i]["ItemList"][j]["DispatchTare"]
 				nPesoReal	:= aConteudo[i]["ItemList"][j]["DispatchRealWeight"]
-				cMsg := "Carga: " + cCarga + CRLF +
-						"Pedido: " + cPedido + CRLF +
-						"Item: " + cItem + CRLF +
-						"Produto: " + cProd + CRLF +
-						"Quantidade: " + Str(cQtd) + CRLF +
-						"Peso: " + Str(nPeso) + CRLF +
-						"Tara: " + Str(nTara) + CRLF +
+
+				cMsg := "Carga: " + cCarga + CRLF + ;
+						"Pedido: " + cPedido + CRLF +;
+						"Item: " + cItem + CRLF +;
+						"Produto: " + cProd + CRLF +;
+						"Quantidade: " + Str(nQtd) + CRLF +;
+						"Peso: " + Str(nPeso) + CRLF +;
+						"Tara: " + Str(nTara) + CRLF +;
 						"Peso Real: " + Str(nPesoReal)
+
 				FWrite(nHandImp,cMsg + chr(13) + chr(10))
-				AtuPedido(cCarga,cPedido, cItem, cProd, cQtd, nPeso, nTara, nPesoReal)
+
+				AtuPedido(cCarga, cPedido, cItem, cProd, cQtd, nPeso, nTara, nPesoReal)
+
 			Next
 		Next
 	Else
@@ -162,10 +167,30 @@ Static Function TrabArray()
 
 Return()
 
-Static Function AtuPedido(cCarga, cPedido, cItem, cProd, cQtd, nPeso, nTara, nPesoReal)
+Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPesoReal)
 
 	// Aqui você pode implementar a lógica para atualizar o pedido no Protheus
 	// Exemplo: Atualizar tabela de pedidos com os dados recebidos
+
+	nTQtd 		+= nQtd
+	nTPeso 		+= nPeso
+	nTTara 		+= nTara
+	nTPesoReal 	+= nPesoReal
+
+	cMsg := "Atualizando Pedido: " + cPedido + CRLF +;
+			"Carga: " + cCarga + CRLF +;
+			"Item: " + cItem + CRLF +;
+			"Produto: " + cProd + CRLF +;
+			"Quantidade Total: " + Str(nTQtd) + CRLF +;
+			"Peso Total: " + Str(nTPeso) + CRLF +;
+			"Tara Total: " + Str(nTTara) + CRLF +;
+			"Peso Real Total: " + Str(nTPesoReal)
+
+	FWrite(nHandImp,cMsg + chr(13) + chr(10))
+
+	// Aqui você pode chamar uma função para atualizar os dados no Protheus
+
+
 
 
 Static Function printJson(aJson, niv)
