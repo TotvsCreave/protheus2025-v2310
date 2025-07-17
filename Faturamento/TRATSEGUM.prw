@@ -634,7 +634,58 @@ User Function MT103FIM()
 		EndIf
 	EndIf
 
-Return (NIL)
+	If SF1->F1_TIPO == 'N' .and. SF1->F1_SERIE = 'TCK' .and. nConfirma == 1 .and. nOpcao == 3
+
+		dbSelectArea("SD1")
+		SD1->(dbSetOrder(1))
+		SD1->(dbSeek(xFilial("SD1")+SF1->(F1_DOC+F1_SERIE+F1_FORNECE+F1_LOJA)))
+
+		If !SD1->(Eof()) .and. SD1->(D1_FILIAL +  D1_DOC + D1_SERIE + D1_FORNECE + D1_LOJA) = SF1->(F1_FILIAL +  F1_DOC + F1_SERIE + F1_FORNECE + F1_LOJA)
+
+
+			// Cria OP
+			lMsErroAuto := .F.
+
+			_aVetor := {	{"C2_NUM"    , GetNumSC2()		, Nil},;
+				{"C2_ITEM"   , "01"				, Nil},;
+				{"C2_SEQUEN" , "001"			, Nil},;
+				{"C2_PRODUTO", "999001"		   	, Nil},;
+				{"C2_QUANT"  , SD1->D1_QUANT	, Nil},;
+				{"C2_CC"     , "002002007"		, Nil},;
+				{"C2_LOCAL"  , SD1->D1_LOCAL  	, Nil},;
+				{"C2_DATPRI" , dDataBase		, Nil},;
+				{"C2_DATPRF" , dDataBase		, Nil},;
+				{"C2_EMISSAO", dDataBase		, Nil},;
+				{"C2_PRIOR"  , "500"			, Nil},;
+				{"C2_QUJE"   , SD1->D1_QUANT	, Nil},;
+				{"C2_QTSEGUM", SD1->D1_QTSEGUM	, Nil},;
+				{"C2_XCARRO" , SF1->F1_PLACA	, Nil},;
+				{"C2_XDOCTCK", SF1->F1_DOC		, Nil},;
+				{"C2_XDOCSER", SF1->F1_SERIE	, Nil},;
+				{"C2_XFORNEC", SF1->F1_FORNECE	, Nil},;
+				{"C2_XLOJA"  , SF1->F1_LOJA		, Nil},;
+				{"AUTEXPLODE", "N"				, Nil}  }
+
+				Begin Transaction()
+
+				lMsErroAuto := .F.
+
+				MSExecAuto({|x, y| mata650(x, y)}, _aVetor, 3)	// Inclusao
+
+				If lMsErroAuto
+					MostraErro()
+					Alert("Erro ao criar a OP para o TCK. A OP para este TCK deverá ser criada manualmente.")
+				Else
+					Alert("OP para o TCK foi criada automaticamente.")
+				Endif
+
+				DisarmTransaction()
+
+			Endif
+
+		Endif
+
+		Return (NIL)
 //***************************************************************************************************************************************//
 // FIM - Devolução de Documento de Saída                                                                                                 //
 //***************************************************************************************************************************************//
