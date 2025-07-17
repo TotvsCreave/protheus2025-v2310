@@ -4,11 +4,26 @@
 #include "fileio.ch"
 #DEFINE CRLF Chr(13)+Chr(10)
 
-/*/{Protheus.doc} User Function
+/*
+|=============================================================================|
+| PROGRAMA..: EDATA001 |   ANALISTA: Sidnei Lempk   |      DATA: 28/05/2025   |
+|=============================================================================|
+| DESCRICAO.: Interface com a API E-Data PostAnimalReceiving.                 |
+| Entrada de animais vivos - Registro de recebimento de animais vivos.        |
+|=============================================================================|
+| PARÂMETROS:                                                                 |
+|                                                                             |
+|                                                                             |
+|=============================================================================|
+| USO......: ComprEstoque / Faturamento                                       |
+|=============================================================================|
+
+{Protheus.doc} User Function
 Interface com a API E-Data PostAnimalReceiving
 @author Gustavo (Ápia)
 @since 28/05/2025
-/*/
+
+*/
 
 Static cMetodoApi:= 'PostAnimalReceiving'
 Static cFilePath := "\protheus_data\system\edata\" // Caminho do arquivo onde será salvo o retorno

@@ -34,8 +34,6 @@ User Function EDATA005()
 	nHandImp    := FCreate(CX_IMPORT)
 
 	cMsg := "***(Início) Versão: 02/05/2025 - 10:00" + chr(13) + chr(10)
-	cMsg += 'Tipo de execução --> ' + cUsrGrv + chr(13) + chr(10)
-
 	FWrite(nHandImp,cMsg + chr(13) + chr(10))
 
 	//adicionando perguntes
@@ -146,17 +144,17 @@ Static Function TrabArray()
 				nPesoReal	:= aConteudo[i]["ItemList"][j]["DispatchRealWeight"]
 
 				cMsg := "Carga: " + cCarga + CRLF + ;
-						"Pedido: " + cPedido + CRLF +;
-						"Item: " + cItem + CRLF +;
-						"Produto: " + cProd + CRLF +;
-						"Quantidade: " + Str(nQtd) + CRLF +;
-						"Peso: " + Str(nPeso) + CRLF +;
-						"Tara: " + Str(nTara) + CRLF +;
-						"Peso Real: " + Str(nPesoReal)
+					"Pedido: " + cPedido + CRLF +;
+					"Item: " + cItem + CRLF +;
+					"Produto: " + cProd + CRLF +;
+					"Quantidade: " + Str(nQtd) + CRLF +;
+					"Peso: " + Str(nPeso) + CRLF +;
+					"Tara: " + Str(nTara) + CRLF +;
+					"Peso Real: " + Str(nPesoReal)
 
 				FWrite(nHandImp,cMsg + chr(13) + chr(10))
 
-				AtuPedido(cCarga, cPedido, cItem, cProd, cQtd, nPeso, nTara, nPesoReal)
+				lAtualiza := AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPesoReal)
 
 			Next
 		Next
@@ -178,18 +176,20 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 	nTPesoReal 	+= nPesoReal
 
 	cMsg := "Atualizando Pedido: " + cPedido + CRLF +;
-			"Carga: " + cCarga + CRLF +;
-			"Item: " + cItem + CRLF +;
-			"Produto: " + cProd + CRLF +;
-			"Quantidade Total: " + Str(nTQtd) + CRLF +;
-			"Peso Total: " + Str(nTPeso) + CRLF +;
-			"Tara Total: " + Str(nTTara) + CRLF +;
-			"Peso Real Total: " + Str(nTPesoReal)
+		"Carga: " + cCarga + CRLF +;
+		"Item: " + cItem + CRLF +;
+		"Produto: " + cProd + CRLF +;
+		"Quantidade Total: " + Str(nTQtd) + CRLF +;
+		"Peso Total: " + Str(nTPeso) + CRLF +;
+		"Tara Total: " + Str(nTTara) + CRLF +;
+		"Peso Real Total: " + Str(nTPesoReal)
 
 	FWrite(nHandImp,cMsg + chr(13) + chr(10))
 
 	// Aqui você pode chamar uma função para atualizar os dados no Protheus
 
+	
+Return(.T.)
 
 
 

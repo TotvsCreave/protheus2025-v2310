@@ -326,3 +326,37 @@ WSMETHOD GET RequestQuery WSRECEIVE RequestNumber WSRESTFUL SalesOrder
     (cViewSC5)->(dbCloseArea())
   
 Return(lRet)
+/*
+Local aPergs   := {}
+Local cArquivo := Space(100)
+Local cProdDe  := Space(TamSX3("B1_COD")[01])
+Local cProdAt  := Space(TamSX3("B1_COD")[01])
+Local dDataDe  := FirstDate(Date())
+Local dDataAt  := LastDate(Date())
+Local nQuant   := 0
+Local nValor   := 0
+Local nTipo    := 1
+Local nVinc    := 1
+ 
+aAdd(aPergs, {1, "Arquivo",     cArquivo, "",             ".T.",        "",    ".T.", 120, .T.})
+aAdd(aPergs, {1, "Produto De",  cProdDe,  "",             ".T.",        "SB1", ".T.", 80,  .F.})
+aAdd(aPergs, {1, "Produto Até", cProdAt,  "",             ".T.",        "SB1", ".T.", 80,  .T.})
+aAdd(aPergs, {1, "Data De",  dDataDe,  "",             ".T.",        "",    ".T.", 80,  .F.})
+aAdd(aPergs, {1, "Data Até", dDataAt,  "",             ".T.",        "",    ".T.", 80,  .T.})
+aAdd(aPergs, {1, "Qtde",        nQuant,   "@E 9,999",     "Positivo()", "",    ".T.", 80,  .F.})
+aAdd(aPergs, {1, "Valor",       nValor,   "@E 99,999.99", "Positivo()", "",    ".T.", 80,  .F.})
+aAdd(aPergs, {2, "Tipo Importação",               nTipo, {"1=Pré Nota",              "2=Classificação em Documento de Entrada"},     122, ".T.", .F.})
+aAdd(aPergs, {2, "Vincula Pedido de Compra",      nVinc, {"1=Sim (Automaticamente)", "2=Não"},                                       090, ".T.", .F.})
+ 
+If ParamBox(aPergs, "Informe os parâmetros")
+    Alert(MV_PAR01)
+    Alert(MV_PAR02)
+    Alert(MV_PAR03)
+    Alert(MV_PAR04)
+    Alert(MV_PAR05)
+    Alert(MV_PAR06)
+    Alert(MV_PAR07)
+    Alert(MV_PAR08)
+    Alert(MV_PAR09)
+EndIf
+*/
