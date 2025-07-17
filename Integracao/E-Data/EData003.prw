@@ -144,9 +144,9 @@ static function MontQry(cRegistro)
 	cQry += " 'BillingAddress' BillingAddress, "
 	cQry += " case when C5_TPFRETE ='C' then 'ftShipper' when C5_TPFRETE ='F' then 'ftRemittee' else  '   ' end  as FreightType, "//    (CIF/FOB)
 	cQry += " 'ItemList' as ItemList ,"
-	cQry += " C5_VEND1 AS SellerNo "
+	cQry += " C5_VEND1 AS SellerNo, "
+    cQry += " 'true' AS OverwriteIfExists "
 	//cQry += " C6_PRODUTO as ProductNo "
-
 	cQry += " from "+retsqlname("SC6")+" SC6 "
 	cQry += "  Join "+retsqlname("SC5")+" SC5 On (C6_FILIAL=C5_FILIAL and C6_NUM=C5_NUM and SC5.D_E_L_E_T_ <> '*') "
 	cQry += " Where SC5.R_E_C_N_O_ ="+cvaltochar(cRegistro)
