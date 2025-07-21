@@ -636,56 +636,11 @@ User Function MT103FIM()
 
 	If SF1->F1_TIPO == 'N' .and. SF1->F1_SERIE = 'TCK' .and. nConfirma == 1 .and. nOpcao == 3
 
-		dbSelectArea("SD1")
-		SD1->(dbSetOrder(1))
-		SD1->(dbSeek(xFilial("SD1")+SF1->(F1_DOC+F1_SERIE+F1_FORNECE+F1_LOJA)))
+		IncluiOp()
 
-		If !SD1->(Eof()) .and. SD1->(D1_FILIAL +  D1_DOC + D1_SERIE + D1_FORNECE + D1_LOJA) = SF1->(F1_FILIAL +  F1_DOC + F1_SERIE + F1_FORNECE + F1_LOJA)
+	Endif
 
-
-			// Cria OP
-			lMsErroAuto := .F.
-
-			_aVetor := {	{"C2_NUM"    , GetNumSC2()		, Nil},;
-				{"C2_ITEM"   , "01"				, Nil},;
-				{"C2_SEQUEN" , "001"			, Nil},;
-				{"C2_PRODUTO", "999001"		   	, Nil},;
-				{"C2_QUANT"  , SD1->D1_QUANT	, Nil},;
-				{"C2_CC"     , "002002007"		, Nil},;
-				{"C2_LOCAL"  , SD1->D1_LOCAL  	, Nil},;
-				{"C2_DATPRI" , dDataBase		, Nil},;
-				{"C2_DATPRF" , dDataBase		, Nil},;
-				{"C2_EMISSAO", dDataBase		, Nil},;
-				{"C2_PRIOR"  , "500"			, Nil},;
-				{"C2_QUJE"   , SD1->D1_QUANT	, Nil},;
-				{"C2_QTSEGUM", SD1->D1_QTSEGUM	, Nil},;
-				{"C2_XCARRO" , SF1->F1_PLACA	, Nil},;
-				{"C2_XDOCTCK", SF1->F1_DOC		, Nil},;
-				{"C2_XDOCSER", SF1->F1_SERIE	, Nil},;
-				{"C2_XFORNEC", SF1->F1_FORNECE	, Nil},;
-				{"C2_XLOJA"  , SF1->F1_LOJA		, Nil},;
-				{"AUTEXPLODE", "N"				, Nil}  }
-
-				Begin Transaction()
-
-				lMsErroAuto := .F.
-
-				MSExecAuto({|x, y| mata650(x, y)}, _aVetor, 3)	// Inclusao
-
-				If lMsErroAuto
-					MostraErro()
-					Alert("Erro ao criar a OP para o TCK. A OP para este TCK deverá ser criada manualmente.")
-				Else
-					Alert("OP para o TCK foi criada automaticamente.")
-				Endif
-
-				DisarmTransaction()
-
-			Endif
-
-		Endif
-
-		Return (NIL)
+Return (NIL)
 //***************************************************************************************************************************************//
 // FIM - Devolução de Documento de Saída                                                                                                 //
 //***************************************************************************************************************************************//
@@ -733,22 +688,95 @@ Return
 // FIM - Desmontagem de produtos                                                                                                         //
 //***************************************************************************************************************************************//
 
-Static Function BuscaMoto(cPlaca)
+Static Function IncluiOp()
 
-	cCodMot := Posicione("DA3",3,xFilial("DA3")+cPlaca,"DA3_MOTORI")
+	Local nOpcao    := PARAMIXB[1]   // Opção Escolhida pelo usuario no aRotina
 
-	If Empty(cCodMot)
+	lRet := .F.
 
-		cMotorista := '000034'
-		Alert("Não foi possível localizar o motorista para a placa " + cPlaca + "." + chr(10) + chr(13) + ;
-			"Será utilizado o motorista padrão 000034 (MOTORISTA CREAVE). " + chr(10) + chr(13) + ;
-			"Voce poderá alterar o motorista no cadastro da OP.")
+	//Criar OP automaticamente após a entrada do TCK
 
-	Else
-		cMotorista := Posicione("DA4",1,xFilial("DA4")+cCodMot,"DA4_COD") //"000034" // Motorista padrão (MOTORISTA CREAVE)
+	If MsgYesNo('Criar OP automaticamente?','Atenção')
 
-	EndIf
+		aMATA650 := {}
+		nOpc := nOpcao
+		lMsErroAuto   := .F.
 
-	// Retorna o código do motorista encontrado ou o padrão
+		cDataBase := DtoS(dDataBase) // Data base do sistema, utilizada para o campo C2_DATPRI e C2_DATPRF
 
-Return(cMotorista)
+		If Empty(SF1->F1_PLACA)
+			cPlaca := 'TST0000' // Placa padrão para teste
+			Alert("Placa do veículo não informada!! " + chr(10) + chr(13) + "Por favor informe a placa na Aba Informações DANFE. ")
+			Return(lRet)
+		Endif
+
+		cPlaca 		:= SF1->F1_PLACA // Placa do veículo, se não informado, será utilizado TST0000
+		If Posicione("DA3",3,xFilial("DA3")+cPlaca,"DA3_MSBLQL")=='1'
+			Alert("Placa do veículo " + cPlaca + " já está bloqueada para movimentação. ")
+			Return(lRet)
+		Else
+			cMotorista 	:= Posicione("DA3",3,xFilial("DA3")+cPlaca,"DA3_MOTORI")
+			If Posicione("DA4",3,xFilial("DA4")+cMotorista,"DA4_MSBLQL")=='1'
+				Alert("Motorista " + cMotorista + " está bloqueado para movimentação. ")
+				Return(lRet)
+			Endif
+		Endif
+
+		If cPlaca == 'TST0000'
+
+			cMotorista 	:= '000034' // Motorista padrão (MOTORISTA CREAVE)
+
+		Else
+
+			cMotorista := Posicione("DA3",3,xFilial("DA3")+cPlaca,"DA3_MOTORI") // Busca o motorista através da placa do veículo
+
+		Endif
+
+		cNumOp := GetSXENum("SC2","C2_NUM")
+
+		// Cria OP
+		lMsErroAuto := .F.
+
+		_aVetor := { ;
+			{'C2_FILIAL'    ,xFilial("SC2")         ,NIL},;
+			{'C2_PRODUTO'   ,"999001"               ,NIL},;
+			{'C2_NUM'       ,cNumOp		            ,NIL},;
+			{"C2_EMISSAO"	,dDataBase				,Nil},;
+			{'C2_DATPRI' 	,dDataBase 				,NIL},;
+			{'C2_DATPRF' 	,dDataBase				,NIL},;
+			{'C2_ITEM'      ,"01"                   ,NIL},;
+			{'C2_SEQUEN'    ,"001"                  ,NIL},;
+			{'C2_QUANT'     ,SD1->D1_QUANT          ,NIL},;
+			{'C2_QTSEGUM'   ,SD1->D1_XQTDSEG        ,NIL},;
+			{"C2_PRIOR"  	,"500"					,Nil},;
+			{"C2_QUJE"   	,SD1->D1_QUANT			,Nil},;
+			{'C2_LOCAL'     ,SD1->D1_LOCAL          ,NIL},;
+			{'C2_XFORNEC'   ,SF1->F1_FORNECE        ,NIL},;
+			{'C2_XLOJA'     ,SF1->F1_LOJA           ,NIL},;
+			{'C2_XDOCSER'   ,SF1->F1_SERIE          ,NIL},;
+			{'C2_XDOCTCK'   ,SF1->F1_DOC            ,NIL},;
+			{'C2_XCARRO'	,cPlaca					,NIL},;
+			{'C2_MOTORTA'   ,cMotorista				,NIL},;
+			{'C2_TPOP'		,'F'					,NIL},;
+			{'C2_TPPR'		,'I'					,NIL},;
+			{"C2_CC"     	, "002002007"			,Nil},;
+			{"AUTEXPLODE"	, "N"					,Nil}}
+
+		Begin Transaction
+
+			MSExecAuto({|x, y| mata650(x, y)}, _aVetor, 3)	// Inclusao
+
+			If lMsErroAuto
+				MostraErro()
+				Alert("Erro ao criar a OP para o TCK. " + chr(10) + chr(13) + "A OP para este TCK deverá ser criada manualmente.")
+				DisarmTransaction()
+			Else
+				Alert("OP para o TCK foi criada automaticamente.")
+			Endif
+
+		End Transaction()
+
+	Endif
+
+Return(lRet)
+
