@@ -767,10 +767,12 @@ Static Function IncluiOp()
 			MSExecAuto({|x, y| mata650(x, y)}, _aVetor, 3)	// Inclusao
 
 			If lMsErroAuto
+				roolbackSx8()
 				MostraErro()
 				Alert("Erro ao criar a OP para o TCK. " + chr(10) + chr(13) + "A OP para este TCK deverá ser criada manualmente.")
 				DisarmTransaction()
 			Else
+				confirmSx8()
 				Alert("OP para o TCK foi criada automaticamente.")
 			Endif
 
