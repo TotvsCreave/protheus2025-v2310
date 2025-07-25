@@ -12,6 +12,10 @@ Interface com a API E-Data PostAnimalReceiving
 @author Sidnei
 @since 10/07/2025
 /*/
+Static cMetodoApi:= 'GetLoadInfo'
+Static cFilePath := "\protheus_data\system\edata\" // Caminho do arquivo onde será salvo o retorno
+Static cUrl      := "http://192.168.1.210:8060/datasnap/rest/RESTWebServiceMethods"
+Static nTimeOut  := 120
 
 User Function EDATA005()
 
@@ -19,9 +23,11 @@ User Function EDATA005()
 	LOCAL cMetodoApi	:= "GetLoadInfo"
 	LOCAL cLogExec 		:= "EData005 - Retorno da carga - GetLoadInfo"
 	LOCAL cResponse 	:= ""
+
 	local aPergs		:= {}
 	local xPar1			:= space(6)
-	local xPar2			:= xPar3 := 0
+	local xPar2			:= 0 
+	local xPar3 		:= 0
 
 	Private aConteudo 	:= {}
 	Private cMsg 		:= ""
@@ -33,11 +39,8 @@ User Function EDATA005()
 	Private nTQtd 		:= nTPeso 	:= nTTara 	:= nTPesoReal 	:= 0
 
 	// Definindo o caminho do arquivo de log
-	Static cFilePath 	:= "\protheus_data\system\edata\" // Caminho do arquivo onde será salvo o retorno
-	Static cUrl      	:= "http://192.168.1.210:8060/datasnap/rest/RESTWebServiceMethods"
-	Static nTimeOut    	:= 120
 
-	CX_IMPORT   := cFilePath + "\Log_RetornoCargaEdata005_" + dtos(date()) + "_" + subs(time(),1,2) + "-" + subs(time(),4,2) + "-" + subs(time(),7,2) + ".txt"
+	CX_IMPORT   := cFilePath + "Log_RetornoCargaEdata005_" + dtos(date()) + "_" + subs(time(),1,2) + "" + subs(time(),4,2) + "" + subs(time(),7,2) + ".txt"
 
 	nHandImp    := FCreate(CX_IMPORT)
 
@@ -46,23 +49,24 @@ User Function EDATA005()
 
 	//adicionando perguntes
 
-
-	aAdd(aPergs, {1, "Carga nº.....:         ", xPar1,  ""     , ".T."       , "DAK", ".T.", 80,  .F.})
-	aAdd(aPergs, {2, "Caixas vazias:         ", xPar2,  "@E 99", "POSITIVO()", ""   , ".T.", 80,  .F.})
-	aAdd(aPergs, {2, "Caixas c/gelo:         ", xPar3,  "@E 99", "POSITIVO()", ""   , ".T.", 80,  .F.})
+	aAdd(aPergs, {1, "Carga nº.....:         ", xPar1,  ""      , ".T."       , "DAK", ".T.", 80,  .F.})
+	aAdd(aPergs, {2, "Caixas vazias:         ", xPar2,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
+	aAdd(aPergs, {2, "Caixas c/gelo:         ", xPar3,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
 
 	//Se a pergunta for confirma, chama a tela
-	If ParamBox(aPergs, cMetodoApi , /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
+	//If ParamBox(aPergs, cMetodoApi, /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
+	
 		// Envia o POST para a API
-		cCarga 		:= 	MV_PAR01 // MV_PAR01 é o valor da pergunta 1
-		nCxVazias 	:= 	MV_PAR02 // MV_PAR02 é o valor da pergunta 2
-
+		cCarga 		:= 	'055753' //MV_PAR01 // MV_PAR01 é o valor da pergunta 1
+		nCxVazias 	:= 	2        //MV_PAR02 // MV_PAR02 é o valor da pergunta 2
+		nCxGelo 	:= 	1        //MV_PAR03 // MV_PAR03 é o valor da pergunta 3
+		
 		cJson 		:= '{"LoadNo":"'+cCarga+'", "BranchNo":"01"}' //'{"LoadNo":"'+xPar3+'", "BranchNo":"01"}'
 		Urlbase 	:= cUrl + "/%22"+cMetodoApi+"%22"
 		cLogExec	+='URL: '+Urlbase+CRLF+'JSON: '+cJson+CRLF
 		cResponse 	:= WebClientPost(Urlbase, cJson)
 		cLogExec	+='Retorno: ' + cResponse + CRLF
-	EndIf
+	//EndIf
 
 RETURN NIL
 
@@ -382,7 +386,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		TMPTAB->(dBCloseArea())
 		//Atualiza SC9
 
-		cTabAtu := "Select * from SC9000 SC9 where C9_NUM = '" + cPedido + "' and C9_ITEM = '" + cItem + "' and SC9.D_E_L_E_T_ <> '*'"
+		cTabAtu := "Select * from SC9000 SC9 where C9_PEDIDO = '" + cPedido + "' and C9_ITEM = '" + cItem + "' and SC9.D_E_L_E_T_ <> '*'"
 
 		If Alias(Select("TMPTAB")) = "TMPTAB"
 			TMPTAB->(dBCloseArea())
