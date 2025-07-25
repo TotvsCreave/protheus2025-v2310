@@ -26,6 +26,7 @@ user Function EDATA003()
 	local xPar4:=Replicate("Z",15)
 	local xPar5:=space(6)
 	local xPar6:=Replicate("Z",6)
+	pRIVATE nHandle
 	private aRecnos:={}
 	Private cLogExec:=''
 
@@ -36,6 +37,24 @@ user Function EDATA003()
 	aAdd(aPergs, {1, "Até Produto", xPar4,  "", ".T.", "SB1", ".T.", 80,  .F.})
 	aAdd(aPergs, {1, "Do Pedido venda", xPar5,  "", ".T.", "SC5", ".T.", 80,  .F.})
 	aAdd(aPergs, {1, "Até Pedido venda", xPar6,  "", ".T.", "SC5", ".T.", 80,  .F.})
+
+
+	cTipoLog := 'Execução'
+	cArqCaminho := GetSrvProfString("Startpath","")
+	dDteHr 		:= dtos(date())+"_"+SUBSTR(TIME(), 1, 2)+SUBSTR(TIME(), 4, 2)+SUBSTR(TIME(), 7, 2)
+	MakeDir(cArqCaminho+'EDATA\' )
+	cArqCaminho := AllTrim(cArqCaminho+'EDATA\') + "log_Edata_"+cTipoLog+'_'+cMetodoApi+'_'+dDteHr+".txt"
+
+	nHandle := FCREATE(cArqCaminho)
+
+	If nHandle != Nil
+		FWrite(nHandle, 'iNício da execução do '+cMetodoApi+CRLF)
+		//FClose(nHandle)
+		//MsgInfo("Resposta gravada no arquivo com sucesso."+CRLF+cArqCaminho, "Sucesso")
+	Else
+		//MsgInfo("Erro ao abrir o arquivo para gravação.", "Erro")
+	EndIf
+
 
 	//Se a pergunta for confirma, chama a tela
 	If ParamBox(aPergs, cMetodoApi , /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
@@ -84,6 +103,9 @@ user Function EDATA003()
 			cLogExec+='Nenhum dado encontrado na consulta. '+CRLF
 		EndIf
 	next
+
+	FClose(nHandle)
+
 	MsgInfo("Execução do "+cMetodoApi+ " finalizado."+CRLF+;
 		"logs em:"+GetSrvProfString("Startpath","")+'EDATA\', "Aviso")
 
@@ -112,6 +134,7 @@ Static function fBuscaCanditados()
 	cQry += "and C6_PRODUTO  between '" + MV_PAR03 + "' and '" + MV_PAR04 + "' "
 	cQry += "and C5_NUM  between '" + MV_PAR05 + "' and '" + MV_PAR06 + "' "
 	cQry += "and C5_FILIAL = '"+Xfilial('SC6')+"' "
+	cQry += "and C6_PRODUTO NOT IN ('402400','402500','402600','402700') "
 
 	aRecnos := QryArray(cQry)
 return
@@ -292,12 +315,14 @@ static function fProdutos(cPV)
 			if SC6->C6_UM="KG"
 				If Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_SEGUM") = ' '
 					oJsonInt["Weight"] := SC6->C6_QTDVEN
+					oJsonInt["PackageQty"] := Round(SC6->C6_QTDVEN,0)
 				Else
-					oJsonInt["PackageQty"] := SC6->C6_XQTVEN
+					//oJsonInt["Weight"] := SC6->C6_QTDVEN
+					oJsonInt["PackageQty"] := Round(SC6->C6_XQTVEN,0)
 				Endif
 			else
 				//oJsonInt["Qty"] :=SC6->C6_QTDVEN// 100
-				oJsonInt["PackageQty"] :=SC6->C6_XQTVEN
+				oJsonInt["PackageQty"] := Round(SC6->C6_XQTVEN,0)
 			endif
 			//oJsonInt["PackageQty"] := 0
 			oJsonInt["UnitValue"] :=SC6->C6_PRCVEN
@@ -310,6 +335,9 @@ static function fProdutos(cPV)
 return aItens//cRetorn
 
 static Function GravarRespostaEmArquivo(cResposta,cTipoLog)
+
+	FWrite(nHandle, cResposta)
+	/*
 	Local nHandle
 
 	Sleep(1000)//Pausa o processamento por 1 segundos
@@ -328,6 +356,7 @@ static Function GravarRespostaEmArquivo(cResposta,cTipoLog)
 	Else
 		//MsgInfo("Erro ao abrir o arquivo para gravação.", "Erro")
 	EndIf
+	*/
 return
 
 static function DePara(cPropriety) //devido case sensitive
