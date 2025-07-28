@@ -91,7 +91,6 @@ User Function EDATA006()
 
 	If InfMims->(Eof())
 
-		Alert()
 		cMsg += 'Tabela temporária com Informações Mims está vazia.' + cUsrGrv + CRLF
 		FWrite(nHandImp,cMsg + CRLF)
 
@@ -113,7 +112,11 @@ User Function EDATA006()
 
 		InfMims->(DbGoTop())
 
-		Processa( bAcao, cTitulo, cMsg, lAborta )
+		If !lSched
+			Processa( bAcao, cTitulo, cMsg, lAborta )
+		else
+			AtuSZZ()
+		Endif
 
 		cMsg += "Processamento concluído com sucesso!" + CRLF + ;
 			"Registros processados: " + StrZero(nAtu,5) + CRLF + ;
@@ -143,7 +146,9 @@ Return()
 
 Static Function AtuSZZ()
 
-	ProcRegua(InfMims->(RecCount()))
+	If !lSched
+		ProcRegua(InfMims->(RecCount()))
+	Endif
 
 	nratu := 0
 
