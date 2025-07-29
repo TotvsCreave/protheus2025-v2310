@@ -8,7 +8,7 @@
 #DEFINE CRLF Chr(13)+Chr(10)
 
 /*/{Protheus.doc} User Function
-Interface com a API E-Data PostAnimalReceiving
+Interface com a API E-Data "GetLoadInfo"
 @author Sidnei
 @since 10/07/2025
 /*/
@@ -49,24 +49,27 @@ User Function EDATA005()
 
 	//adicionando perguntes
 
-	aAdd(aPergs, {1, "Carga nº.....:         ", xPar1,  ""      , ".T."       , "DAK", ".T.", 80,  .F.})
-	aAdd(aPergs, {2, "Caixas vazias:         ", xPar2,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
-	aAdd(aPergs, {2, "Caixas c/gelo:         ", xPar3,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
+	aAdd(aPergs, {1, "Carga nº.....:", xPar1,  "", ".T.", "DAK", ".T.", 80,  .F.})
+	aAdd(aPergs, {1, "Caixas vazias:", xPar2,  "@E 999,999", "POSITIVO()", "", ".T.", 80,  .F.})
+	aAdd(aPergs, {1, "Caixas c/gelo:", xPar3,  "@E 999,999", "POSITIVO()", "", ".T.", 80,  .F.})
+
+//	aAdd(aPergs, {2, "Caixas vazias:         ", xPar2,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
+//	aAdd(aPergs, {2, "Caixas c/gelo:         ", xPar3,  "@E 999", "POSITIVO()", ""   , ".T.", 80,  .F.})
 
 	//Se a pergunta for confirma, chama a tela
-	//If ParamBox(aPergs, cMetodoApi, /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
+	If ParamBox(aPergs, cMetodoApi, /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
 	
 		// Envia o POST para a API
-		cCarga 		:= 	'055753' //MV_PAR01 // MV_PAR01 é o valor da pergunta 1
-		nCxVazias 	:= 	2        //MV_PAR02 // MV_PAR02 é o valor da pergunta 2
-		nCxGelo 	:= 	1        //MV_PAR03 // MV_PAR03 é o valor da pergunta 3
+		cCarga 		:= 	MV_PAR01 // MV_PAR01 é o valor da pergunta 1
+		nCxVazias 	:= 	MV_PAR02 // MV_PAR02 é o valor da pergunta 2
+		nCxGelo 	:= 	MV_PAR03 // MV_PAR03 é o valor da pergunta 3
 		
 		cJson 		:= '{"LoadNo":"'+cCarga+'", "BranchNo":"01"}' //'{"LoadNo":"'+xPar3+'", "BranchNo":"01"}'
 		Urlbase 	:= cUrl + "/%22"+cMetodoApi+"%22"
 		cLogExec	+='URL: '+Urlbase+CRLF+'JSON: '+cJson+CRLF
 		cResponse 	:= WebClientPost(Urlbase, cJson)
 		cLogExec	+='Retorno: ' + cResponse + CRLF
-	//EndIf
+	EndIf
 
 RETURN NIL
 
@@ -200,7 +203,7 @@ Static Function TrabArray()
 
 				cUpdTAB := "UPDATE DAI000 SET "
 				cUpdTAB += "DAI_PESO    = " + Str(nTPesoReal, 10, 2)
-				cUpdTAB += " WHERE DAI_COD = '" + cCarga + "' AND DAI_PEDIDO = '" + cPedido + "' and DAI.D_E_L_E_T_ <> '*'"
+				cUpdTAB += " WHERE DAI_COD = '" + cCarga + "' AND DAI_PEDIDO = '" + cPedido + "' and D_E_L_E_T_ <> '*'"
 
 				cMsg := "Atualizando DAI000 para a carga: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
 
@@ -327,10 +330,10 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		// Verifica se o produto é do tipo KG ou UN
 		If TMPTAB->C6_UM = "UN"
 
-			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_XQEMB")
-			nCaixas  := nQtd / Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_XQEMB")
+			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
+			nCaixas  := nQtd / Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
 
-			If Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_SEGUM") = ' '
+			If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_SEGUM") = ' '
 				nQTDVEN := nPeso
 				nXQTVEN := 0
 			Else
@@ -339,12 +342,12 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			Endif
 		else
 
-			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_XQEMB")
+			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
 			nCaixas  := nQtd
 
 			If TMPTAB->C6_UM="KG"
 
-				If Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_SEGUM") = ' '
+				If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_SEGUM") = ' '
 					nQTDVEN := nPeso
 					nXQTVEN := 0
 				Else
@@ -403,12 +406,12 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 		Else
 
-			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+SC9->C9_PRODUTO,"B1_XQEMB")
+			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C9_PRODUTO,"B1_XQEMB")
 			nCaixas  := nQtd
 
-			If TMPTAB->C6_UM="KG"
+			If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C9_PRODUTO,"B1_UM")="KG"
 
-				If Posicione("SB1",1,xFilial("SB1")+SC9->C9_PRODUTO,"B1_SEGUM") = ' '
+				If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C9_PRODUTO,"B1_SEGUM") = ' '
 					nQTDVEN := nPeso
 					nXQTVEN := 0
 				Else
