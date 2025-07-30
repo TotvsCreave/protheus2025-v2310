@@ -28,7 +28,7 @@ User Function EDATA005()
 	local xPar1			:= space(6)
 	local xPar2			:= 0
 	local xPar3 		:= 0
-	
+
 	Private ArqLog
 
 	Private aConteudo 	:= {}
@@ -51,10 +51,8 @@ User Function EDATA005()
 
 	ArqLog    := FCreate(cArqCaminho)
 
-	If ArqLog != Nil
-		MsgInfo("Resposta gravada no arquivo com sucesso."+CRLF+cArqCaminho, "Sucesso")
-	Else
-		MsgInfo("Erro ao abrir o arquivo para gravação.", "Erro")
+	If ArqLog = Nil
+		MsgInfo("Erro ao abrir o arquivo para gravação. Em " + cArqCaminho, "Erro")
 	EndIf
 
 	cMsg := "***(Início) Versão: 02/05/2025 - 10:00" + chr(13) + chr(10)
@@ -83,6 +81,8 @@ User Function EDATA005()
 		cResponse 	:= WebClientPost(Urlbase, cJson)
 		cLogExec	+='Retorno: ' + cResponse + CRLF
 	EndIf
+
+	FClose(ArqLog)
 
 RETURN NIL
 
@@ -345,7 +345,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		If TMPTAB->C6_UM = "UN"
 
 			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
-			nCaixas  := nQtd / Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
+			nCaixas  := nQtd 
 
 			If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_SEGUM") = ' '
 				nQTDVEN := nPeso
@@ -354,6 +354,31 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 				nQTDVEN := nPeso
 				nXQTVEN := nQtdProd
 			Endif
+			
+			//Tratar no futuro o tamanho da caixa.
+			cUpdTAB := "UPDATE SC6000 SET "
+			cUpdTAB += "  C6_QTDVEN    = " + Str(nQTDVEN, 10, 2)
+			cUpdTAB += ", C6_XQTVEN    = " + Str(nXQTVEN, 10, 2)
+			cUpdTAB += ", C6_VALOR     = " + Str(nQTDVEN*TMPTAB->C6_PRCVEN, 10, 2)
+			cUpdTAB += ", C6_XCXAPEQ   = " + Str(nCaixas, 10, 0)
+			cUpdTAB += " WHERE C6_FILIAL = '00' AND C6_NUM = '" + cPedido + "' AND C6_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
+
+			cMsg := "Atualizando SC6000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
+
+			nRet := TCSQLExec(cUpdTAB)
+
+			If(nRet < 0 )
+				cMsg := "******* Erro ao atualizar SC6000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				lRet := .F.
+				Return(lRet)
+			Else
+				cMsg := "SC6000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			EndIf
+
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+
 		else
 
 			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
@@ -445,6 +470,8 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			cUpdTAB += "  C9_QTDLIB    = " + Str(nQTDVEN, 10, 2)
 			cUpdTAB += ", C9_QTDLIB2   = " + Str(nXQTVEN, 10, 2)
 			cUpdTAB += ", C9_XQTVEN    = " + Str(nXQTVEN, 10, 2)
+			cUpdTAB += ", C9_BLEST     = ' '"
+			cUpdTAB += ", C9_BLCRED    = ' '"
 			cUpdTAB += " WHERE C9_PEDIDO = '" + cPedido + "' AND C9_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando SC9000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB

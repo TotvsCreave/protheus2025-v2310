@@ -526,7 +526,7 @@ Static Function GrvC5C6()
 			cMsgTroca := ''
 
 			aadd(aLinha,{"C6_ITEM"   ,cItem           ,Nil})
-
+/*
 			IF cTpPed = 'B'
 
 				Do CASE
@@ -552,8 +552,8 @@ Static Function GrvC5C6()
 				aadd(aLinha,{"C6_PRODUTO",TMPGZB->ZB_PRODUTO ,Nil})
 
 			ENDIF
-
-			//aadd(aLinha,{"C6_PRODUTO",TMPGZB->ZB_PRODUTO ,Nil})
+*/
+			aadd(aLinha,{"C6_PRODUTO",TMPGZB->ZB_PRODUTO ,Nil})
 
 			aadd(aLinha,{"C6_XQTVEN" ,TMPGZB->ZB_XQTVEN,Nil})
 

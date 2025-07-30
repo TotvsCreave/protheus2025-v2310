@@ -29,6 +29,10 @@ Static nTimeOut    	:= 120
 // Função para enviar dados para a API
 user Function EDATAC01()
 
+	Local cQuery := ""
+	Local cJson := ""
+	Local aArea := GetArea()
+
 	Private cJson, cQry, cResponse, nHandle
 	Private nTotAux:=0,nX:=1
 	Private aPergs:={}
@@ -73,210 +77,92 @@ Static Function MontaQry(nOpcAtu)
 	lTrue := 'true'
 	lfalse := 'false'
 
-	cCli:= ;
-		"SELECT JSON_OBJECT(                                                                                                    " + ;
-		"	'CustomerNo' VALUE Trim(A1_COD||A1_LOJA),                                                                           " + ;
-		"	'CorporateName' VALUE TRIM(A1_NOME),                                                                                " + ;
-		"	'BusinessName' VALUE TRIM(A1_NREDUZ),                                                                               " + ;
-		"	'ShortName' VALUE Substr(TRIM(A1_NREDUZ),1,15),                                                                     " + ;
-		"	'GroupNo' VALUE TRIM(A1_XGRPCLI),                                                                                   " + ;
-		"	'Phone' VALUE TRIM(A1_DDD)||Trim(A1_TEL),                                                                           " + ;
-		"	'Email' VALUE TRIM(A1_EMAIL),                                                                                       " + ;
-		"	'FoundationDate' VALUE Substr(A1_PRICOM,1,4)||'-'||Substr(A1_PRICOM,5,2)||'-'||Substr(A1_PRICOM,7,2),               " + ;
-		"	'RegisterDate' VALUE Substr(A1_PRICOM,1,4)||'-'||Substr(A1_PRICOM,5,2)||'-'||Substr(A1_PRICOM,7,2)||'T'||'08:00:00'," + ;
-		"	'FederalRegisterNo' VALUE TRIM(A1_CGC),                                                                             " + ;
-		"	'StateRegisterNo' VALUE TRIM(A1_INSCR),                                                                             " + ;
-		"	'Notes' VALUE ' ',                                                                                                  " + ;
-		"	'ShelflifeMinPercentage' VALUE 0,                                                                                   " + ;
-		"	'ShelflifeMaxPercentage' VALUE 0,                                                                                   " + ;
-		"	'LocationAddress' VALUE JSON_OBJECT(                                                                                " + ;
-		"	'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),                                                           " + ;
-		"	'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1))),                        " + ;
-		"	'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),                                           " + ;
-		"	'District' VALUE Trim(A1_BAIRRO),                                                                                   " + ;
-		"	'ZIPCode' VALUE Trim(A1_CEP),                                                                                       " + ;
-		"	'City' VALUE TRIM(A1_MUN),                                                                                          " + ;
-		"	'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),                    " + ;
-		"	'StateInitials' VALUE A1_EST,                                                                                       " + ;
-		"	'Country' VALUE 'Brasil',                                                                                           " + ;
-		"	'SubLogisticRegionNo' VALUE ' ',                                                                                    " + ;
-		"	'PersonAdressNo' VALUE ' '),                                                                                        " + ;
-		"	'DeliveryAddress' VALUE JSON_OBJECT(                                                                                " + ;
-		"	'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),                                                           " + ;
-		"	'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1))),                                       " + ;
-		"	'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),                                           " + ;
-		"	'District' VALUE Trim(A1_BAIRRO),                                                                                   " + ;
-		"	'ZIPCode' VALUE Trim(A1_CEP),                                                                                       " + ;
-		"	'City' VALUE TRIM(A1_MUN),                                                                                          " + ;
-		"	'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),                    " + ;
-		"	'StateInitials' VALUE A1_EST,                                                                                       " + ;
-		"	'Country' VALUE 'Brasil',                                                                                           " + ;
-		"	'SubLogisticRegionNo' VALUE ' ',                                                                                    " + ;
-		"	'PersonAdressNo' VALUE ' '),                                                                                        " + ;
-		"	'BillingAddress' VALUE JSON_OBJECT(                                                                                 " + ;
-		"	'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),                                                           " + ;
-		"	'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1))),                                       " + ;
-		"	'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),                                           " + ;
-		"	'District' VALUE Trim(A1_BAIRRO),                                                                                   " + ;
-		"	'ZIPCode' VALUE Trim(A1_CEP),                                                                                       " + ;
-		"	'City' VALUE TRIM(A1_MUN),                                                                                          " + ;
-		"	'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),                    " + ;
-		"	'StateInitials' VALUE A1_EST,                                                                                       " + ;
-		"	'Country' VALUE 'Brasil',                                                                                           " + ;
-		"	'SubLogisticRegionNo' VALUE ' ',                                                                                    " + ;
-		"	'PersonAdressNo' VALUE ' '),                                                                                        " + ;
-		"	'PersonType' VALUE Case when A1_PESSOA = 'J' Then 'ptCompany' else 'ptPerson' End,                                  " + ;
-		"	'IsInactiveCustomer' VALUE Case when A1_MSBLQL = '1' Then '"+lTrue+"' else '"+lfalse+"' End,                        " + ;
-		"	'HasAdministrativeBlocked' VALUE Case when A1_MSBLQL = '1' Then '"+lTrue+"' else '"+lfalse+"' End,                  " + ;
-		"	'IsRuralProducer' VALUE Case when A1_TIPO = 'L' Then '"+lTrue+"' else '"+lfalse+"' End,                             " + ;
-		"	'RegisterRuralProducerNo' VALUE TRIM(A1_INSCRUR),                                                                   " + ;
-		"	'SuframaNo' VALUE ' ',                                                                                              " + ;
-		"	'SellerNo' VALUE TRIM(A1_VEND),                                                                                     " + ;
-		"	'PriceTableNo' VALUE TRIM(A1_TABELA),                                                                               " + ;
-		"	'PromotionalPriceTableNo' VALUE TRIM(A1_TABELA),                                                                    " + ;
-		"	'PaymentMethodNo' VALUE TRIM(A1_COND),                                                                              " + ;
-		"	'SubLogisticRegionNo' VALUE ' ',                                                                                    " + ;
-		"	'OverwriteIfExists' VALUE '"+lTrue+"'                                                                               " + ;
-		"	) as PostAddCustomer                                                                                                " + ;
-		"	FROM SA1000 SA1                                                                                                     " + ;
-		"	WHERE SA1.d_e_l_e_t_ <> '*'                                                                                         " + ;
-		"	AND A1_VEND <> 'Z99999'                                                                                             " + ;
-		"	AND A1_ULTCOM <> ' '                                                                                                " + ;
-		"	AND A1_CGC <> ' '                                                                                                   " + ;
-		"	AND A1_ULTALT >= '"+cDtUltAlt+"'                                                                                    " + ;
-		"	and A1_MSBLQL <> '1'                                                                                                " + ;
-		"	ORDER BY A1_COD                                                                                                     "
+// Monta a query SQL
+	cQuery := "SELECT JSON_OBJECT("
+	cQuery += "'CustomerNo' VALUE Trim(A1_COD||A1_LOJA),"
+	cQuery += "'CorporateName' VALUE TRIM(A1_NOME),"
+	cQuery += "'BusinessName' VALUE TRIM(A1_NREDUZ),"
+	cQuery += "'ShortName' VALUE Substr(TRIM(A1_NREDUZ),1,15),"
+	cQuery += "'GroupNo' VALUE TRIM(A1_XGRPCLI),"
+	cQuery += "'Phone' VALUE TRIM(A1_DDD)||Trim(A1_TEL),"
+	cQuery += "'Email' VALUE TRIM(A1_EMAIL),"
+	cQuery += "'FoundationDate' VALUE Substr(A1_PRICOM,1,4)||'-'||Substr(A1_PRICOM,5,2)||'-'||Substr(A1_PRICOM,7,2),"
+	cQuery += "'RegisterDate' VALUE Substr(A1_PRICOM,1,4)||'-'||Substr(A1_PRICOM,5,2)||'-'||Substr(A1_PRICOM,7,2)||'T'||'08:00:00',"
+	cQuery += "'FederalRegisterNo' VALUE TRIM(A1_CGC),"
+	cQuery += "'StateRegisterNo' VALUE TRIM(A1_INSCR),"
+	cQuery += "'Notes' VALUE ' ',"
+	cQuery += "'ShelflifeMinPercentage' VALUE 0,"
+	cQuery += "'ShelflifeMaxPercentage' VALUE 0,"
+	cQuery += "'LocationAddress' VALUE JSON_OBJECT("
+	cQuery += "'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),"
+	cQuery += "'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1)),"
+	cQuery += "'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),"
+	cQuery += "'District' VALUE Trim(A1_BAIRRO),"
+	cQuery += "'ZIPCode' VALUE Trim(A1_CEP),"
+	cQuery += "'City' VALUE TRIM(A1_MUN),"
+	cQuery += "'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),"
+	cQuery += "'StateInitials' VALUE A1_EST,"
+	cQuery += "'Country' VALUE 'Brasil',"
+	cQuery += "'SubLogisticRegionNo' VALUE ' ',"
+	cQuery += "'PersonAdressNo' VALUE ' '),"
+	cQuery += "'DeliveryAddress' VALUE JSON_OBJECT("
+	cQuery += "'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),"
+	cQuery += "'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1)),"
+	cQuery += "'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),"
+	cQuery += "'District' VALUE Trim(A1_BAIRRO),"
+	cQuery += "'ZIPCode' VALUE Trim(A1_CEP),"
+	cQuery += "'City' VALUE TRIM(A1_MUN),"
+	cQuery += "'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),"
+	cQuery += "'StateInitials' VALUE A1_EST,"
+	cQuery += "'Country' VALUE 'Brasil',"
+	cQuery += "'SubLogisticRegionNo' VALUE ' ',"
+	cQuery += "'PersonAdressNo' VALUE ' '),"
+	cQuery += "'BillingAddress' VALUE JSON_OBJECT("
+	cQuery += "'AddressType' VALUE Substr(A1_END,1,InStr(A1_END,' ',1)),"
+	cQuery += "'Address' VALUE Trim(Substr(A1_END,InStr(A1_END,' ',1),InStr(A1_END,',',1)-InStr(A1_END,' ',1)),"
+	cQuery += "'Number' VALUE Trim(Substr(A1_END,InStr(A1_END,',',1)+1,Length(A1_END))),"
+	cQuery += "'District' VALUE Trim(A1_BAIRRO),"
+	cQuery += "'ZIPCode' VALUE Trim(A1_CEP),"
+	cQuery += "'City' VALUE TRIM(A1_MUN),"
+	cQuery += "'State' VALUE TRIM((select X5_DESCRI from SX5000 where X5_tabela = '12' and X5_CHAVE = A1_EST)),"
+	cQuery += "'StateInitials' VALUE A1_EST,"
+	cQuery += "'Country' VALUE 'Brasil',"
+	cQuery += "'SubLogisticRegionNo' VALUE ' ',"
+	cQuery += "'PersonAdressNo' VALUE ' '),"
+	cQuery += "'PersonType' VALUE Case when A1_PESSOA = 'J' Then 'ptCompany' else 'ptPerson' End,"
+	cQuery += "'IsInactiveCustomer' VALUE Case when A1_MSBLQL = '1' Then 'true' else 'false' End,"
+	cQuery += "'HasAdministrativeBlocked' VALUE Case when A1_MSBLQL = '1' Then 'true' else 'false' End,"
+	cQuery += "'IsRuralProducer' VALUE Case when A1_TIPO = 'L' Then 'true' else 'false' End,"
+	cQuery += "'RegisterRuralProducerNo' VALUE TRIM(A1_INSCRUR),"
+	cQuery += "'SuframaNo' VALUE ' ',"
+	cQuery += "'SellerNo' VALUE TRIM(A1_VEND),"
+	cQuery += "'PriceTableNo' VALUE TRIM(A1_TABELA),"
+	cQuery += "'PromotionalPriceTableNo' VALUE TRIM(A1_TABELA),"
+	cQuery += "'PaymentMethodNo' VALUE TRIM(A1_COND),"
+	cQuery += "'SubLogisticRegionNo' VALUE ' ',"
+	cQuery += "'OverwriteIfExists' VALUE 'true') as PostAddCustomer "
+	cQuery += "FROM SA1000 SA1 "
+	cQuery += "WHERE SA1.d_e_l_e_t_ <> '*'"
 
+// Executa a query e obtém o JSON
+	TcQuery cQuery New Alias "TMPJSON"
+	TMPJSON->(DbGoTop())
 
-	Do case
+	While !TMPJSON->(Eof())
+		cJson := TMPJSON->POSTADDCUSTOMER
 
-	Case nqry = 1 //Clientes
-		cQry := cCli
-	Case nqry = 2 //Fornecedores
-		cQry := cFor
-	Case nqry = 3 //Veículos
-		cQry := cVeic
-	Case nqry = 4 //Motoristas
-		cQry := cMoto
-	Case nqry = 5 //Vendedores
-		cQry := cVend
-	Endcase
+		// Exemplo de como você pode postar o JSON
+		ConOut("JSON Gerado:")
+		ConOut(cJson)
 
-	If Alias(Select("TMPATU")) = "TMPATU"
-		TMPATU->(dBCloseArea())
-	Endif
+		// Aqui você pode adicionar o código para enviar o JSON para um endpoint
+		// Exemplo:
+		// HTTPPost(cUrl, cJson, "application/json")
 
-	TCQUERY cQry NEW ALIAS "TMPATU"
-
-	If !TMPATU->(Eof())
-
-		EnvJson()
-
-	Else
-
-		Alert("Nenhum registro encontrado para atualização.")
-
-	Endif
-
-Return()
-
-Static function EnvJson()
-
-	Do while !TMPATU->(Eof())
-
-		cJson := TMPATU->PostAddCustomer
-
-		//Pega o texto e transforma em objeto
-		oJson := JsonObject():New()
-		cErro := oJson:FromJson(cJson)
-		
-
-		cMetodoApi := 'PostAddCustomer'
-
-		Urlbase   := cUrl + "/%22"+cMetodoApi+"%22"
-		cLogExec  := 'URL: ' + Urlbase + CRLF + 'JSON: ' + cJson + CRLF
-		cResponse := WebClientPost(Urlbase, cJson)
-		cLogExec  +='Retorno: '+cResponse+CRLF
-
-		TMPATU->(DbSkip())
+		TMPJSON->(DbSkip())
 	EndDo
 
-	// Exibir log de execução
-	Alert(cLogExec)
+	TMPJSON->(DbCloseArea())
+	RestArea(aArea)
 
-
-Return()
-
-Static function WebClientPost(cUrl, cJson)
-	Local aHeadOut := {}
-	Local cHeadRet := ""
-	Local cPostRet := ""
-	local cPostParms:= cJson
-	local cFileCert:=''
-	local cFileKey:=''
-
-	AAdd(aHeadOut,	'Content-Type: application/json')
-	AAdd(aHeadOut, 	'User-Agent: Mozilla/4.0 (compatible; Protheus ' + GetBuild() + ')')
-
-	cPostRet := HTTPSPost( cURL, cFileCert, cFileKey, "", "", cPostParms, nTimeOut, aHeadOut, @cHeadRet )
-	varinfo("Header", cHeadRet)
-
-	cTextoTxt:='HEADER'+cHeadRet
-	cTextoTxt+=cPostRet
-
-	oJson := JsonObject():new()
-	if !empty( cPostRet )
-		conout( "HttpPost Ok" )
-		varinfo( "WebPage", cPostRet )
-
-		if '200 OK' $ cHeadRet // teve sucesso na requisição
-			cStatus:=''
-			oJson:fromJson(cPostRet)
-			if valType(oJson['WebServiceReturn'])=='J'
-				cStatus:=oJson['WebServiceReturn']['Status']
-
-			endif
-			cErro:='Status: '+cStatus+ CRLF+ cPostRet
-			if cStatus<>'wrsSuccess'
-				GravarRespostaEmArquivo(cErro,'Erro')
-			endif
-		Else
-			cErro:='Erro: '+ CRLF +;
-				cPostRet+ CRLF +;
-				cHeadRet+ CRLF
-			GravarRespostaEmArquivo(cErro,'Erro')
-		EndIf
-	else
-		cErro:='Erro: '+ CRLF +;
-			cPostRet+ CRLF +;
-			cHeadRet+ CRLF
-		GravarRespostaEmArquivo(cErro,'Erro')
-	endif
-
-	FreeObj( oJson )
-
-return cErro
-static Function GravarRespostaEmArquivo(cResposta,cTipoLog)
-
-	FWrite(nHandle, cResposta)
-	/*
-	Local nHandle
-
-	Sleep(1000)//Pausa o processamento por 1 segundos
-
-	cArqCaminho := GetSrvProfString("Startpath","")
-	dDteHr := dtos(date())+"_"+SUBSTR(TIME(), 1, 2)+SUBSTR(TIME(), 4, 2)+SUBSTR(TIME(), 7, 2)
-	MakeDir(cArqCaminho+'EDATA\' )
-	cArqCaminho := AllTrim(cArqCaminho+'EDATA\') + "log_Edata_"+cTipoLog+'_'+cMetodoApi+'_'+dDteHr+".txt"
-
-	nHandle := FCREATE(cArqCaminho)
-
-	If nHandle != Nil
-		FWrite(nHandle, cResposta)
-		FClose(nHandle)
-		//MsgInfo("Resposta gravada no arquivo com sucesso."+CRLF+cArqCaminho, "Sucesso")
-	Else
-		//MsgInfo("Erro ao abrir o arquivo para gravação.", "Erro")
-	EndIf
-	*/
-return
+Return
