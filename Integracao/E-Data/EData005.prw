@@ -26,26 +26,39 @@ User Function EDATA005()
 
 	local aPergs		:= {}
 	local xPar1			:= space(6)
-	local xPar2			:= 0 
+	local xPar2			:= 0
 	local xPar3 		:= 0
+	
+	Private ArqLog
 
 	Private aConteudo 	:= {}
 	Private cMsg 		:= ""
 	Private lRet 		:= .F.
 
-	Private nCxVazias 	:= nPedidos := nCxGelo  := 0
-	Private cPedido 	:= cItem 	:= cProd 	:= cCarga 		:= ""
+	Private nCxVazias 	:= nPedidos := nCxGelo  :=  0
+	Private cPedido 	:= cItem 	:= cProd 	:= cCarga 		:=  ""
 	Private nQtd 		:= nPeso 	:= nTara 	:= nPesoReal 	:= 0
 	Private nTQtd 		:= nTPeso 	:= nTTara 	:= nTPesoReal 	:= 0
 
 	// Definindo o caminho do arquivo de log
+	CX_IMPORT   := "Log_RetornoCargaEdata005_" + dtos(date()) + "_" + subs(time(),1,2) + "" + subs(time(),4,2) + "" + subs(time(),7,2) + ".txt"
 
-	CX_IMPORT   := cFilePath + "Log_RetornoCargaEdata005_" + dtos(date()) + "_" + subs(time(),1,2) + "" + subs(time(),4,2) + "" + subs(time(),7,2) + ".txt"
+	cTipoLog := 'Execução'
+	cArqCaminho := GetSrvProfString("Startpath","")
 
-	nHandImp    := FCreate(CX_IMPORT)
+	MakeDir(cArqCaminho+'EDATA\' )
+	cArqCaminho := AllTrim(cArqCaminho+'EDATA\') + CX_IMPORT + ".txt"
+
+	ArqLog    := FCreate(cArqCaminho)
+
+	If ArqLog != Nil
+		MsgInfo("Resposta gravada no arquivo com sucesso."+CRLF+cArqCaminho, "Sucesso")
+	Else
+		MsgInfo("Erro ao abrir o arquivo para gravação.", "Erro")
+	EndIf
 
 	cMsg := "***(Início) Versão: 02/05/2025 - 10:00" + chr(13) + chr(10)
-	FWrite(nHandImp,cMsg + chr(13) + chr(10))
+	FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 	//adicionando perguntes
 
@@ -58,12 +71,12 @@ User Function EDATA005()
 
 	//Se a pergunta for confirma, chama a tela
 	If ParamBox(aPergs, cMetodoApi, /*aRet*/, /*bOk*/, /*aButtons*/, /*lCentered*/, /*nPosx*/, /*nPosy*/, /*oDlgWizard*/, /*cLoad*/, .F., .F.)
-	
+
 		// Envia o POST para a API
 		cCarga 		:= 	MV_PAR01 // MV_PAR01 é o valor da pergunta 1
 		nCxVazias 	:= 	MV_PAR02 // MV_PAR02 é o valor da pergunta 2
 		nCxGelo 	:= 	MV_PAR03 // MV_PAR03 é o valor da pergunta 3
-		
+
 		cJson 		:= '{"LoadNo":"'+cCarga+'", "BranchNo":"01"}' //'{"LoadNo":"'+xPar3+'", "BranchNo":"01"}'
 		Urlbase 	:= cUrl + "/%22"+cMetodoApi+"%22"
 		cLogExec	+='URL: '+Urlbase+CRLF+'JSON: '+cJson+CRLF
@@ -92,7 +105,7 @@ Static function WebClientPost(cUrl, cJson)
 	cTextoTxt+=cPostRet
 
 	cMsg := cTextoTxt
-	FWrite(nHandImp,cMsg + chr(13) + chr(10))
+	FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 	// Cria um objeto Json para manipular a resposta
 	oJsonObj	:= JsonObject():New()
@@ -113,7 +126,7 @@ Static function WebClientPost(cUrl, cJson)
 			if cStatus<>'wrsSuccess'
 				Alert(cErro,'Erro')
 				cMsg := "Erro ao processar a requisição: " + cStatus + CRLF + cErro
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			Else
 				If valType(oJsonObj["LoadInfoData"]["SalesOrderList"])=="A"
 					aConteudo := oJsonObj["LoadInfoData"]["SalesOrderList"]
@@ -126,7 +139,7 @@ Static function WebClientPost(cUrl, cJson)
 				cHeadRet+ CRLF
 			Alert(cErro,'Erro')
 			cMsg := "Erro ao processar a requisição: " + CRLF + cErro
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 		EndIf
 	else
 		cErro:='Erro: '+ CRLF +;
@@ -134,7 +147,7 @@ Static function WebClientPost(cUrl, cJson)
 			cHeadRet+ CRLF
 		Alert(cErro,'Erro')
 		cMsg := "Post retornou vazio: " + CRLF + cErro
-		FWrite(nHandImp,cMsg + chr(13) + chr(10))
+		FWrite(ArqLog,cMsg + chr(13) + chr(10))
 	endif
 
 	FreeObj( oJsonObj )
@@ -173,7 +186,7 @@ Static Function TrabArray()
 					"Tara......: " + Str(nTara) + CRLF +;
 					"Peso Real.: " + Str(nPesoReal)
 
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 				lAtualiza := AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPesoReal)
 
@@ -196,7 +209,7 @@ Static Function TrabArray()
 
 				cMsg := "***** Nenhum registro encontrado para a carga: " + cCarga
 
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 				lRet := .F.
 
 			Else
@@ -207,17 +220,17 @@ Static Function TrabArray()
 
 				cMsg := "Atualizando DAI000 para a carga: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
 
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 				nRet := TCSQLExec(cUpdTAB)
 
 				If(nRet < 0 )
 					cMsg := "******* Erro ao atualizar DAI000: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
-					FWrite(nHandImp,cMsg + chr(13) + chr(10))
+					FWrite(ArqLog,cMsg + chr(13) + chr(10))
 					lRet := .F.
 				Else
 					cMsg := "DAI000 atualizado com sucesso para a carga: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
-					FWrite(nHandImp,cMsg + chr(13) + chr(10))
+					FWrite(ArqLog,cMsg + chr(13) + chr(10))
 				EndIf
 
 			Endif
@@ -240,7 +253,7 @@ Static Function TrabArray()
 
 			cMsg := "***** Nenhum registro encontrado para a carga: " + cCarga
 
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			lRet := .F.
 
 		Else
@@ -249,21 +262,22 @@ Static Function TrabArray()
 			cUpdTAB += "DAK_XCXVAZ = " + Str(nCxVazias , 10, 2) + ", "
 			cUpdTAB += "DAK_XCXGEL = " + Str(nCxGelo   , 10, 2) + ", "
 			cUpdTAB += "DAK_PESO   = " + Str(nTPesoReal, 10, 2) + ", "
-			cUpdTAB += "WHERE DAK_COD = '" + cCarga + "' and DAK.D_E_L_E_T_ <> '*'"
+			cUpdTAB += "DAK_XLIBFT = 'S' "
+			cUpdTAB += "WHERE DAK_COD = '" + cCarga + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando DAK000 para a carga: " + cCarga + CRLF + " SQL: " + cUpdTAB
 
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 			nRet := TCSQLExec(cUpdTAB)
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar DAK000: " + cCarga + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 				lRet := .F.
 			Else
 				cMsg := "DAK000 atualizado com sucesso para a carga: " + cCarga + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			EndIf
 		Endif
 
@@ -296,7 +310,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		"Tara Total: " + Str(nTTara) + CRLF +;
 		"Peso Real Total: " + Str(nTPesoReal)
 
-	FWrite(nHandImp,cMsg + chr(13) + chr(10))
+	FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 	// Aqui você pode chamar uma função para atualizar os dados no Protheus
 	// Tabelas a atualizar:
@@ -320,7 +334,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 		cMsg := "***** Nenhum registro encontrado para o pedido: " + cPedido + " e item: " + cItem
 
-		FWrite(nHandImp,cMsg + chr(13) + chr(10))
+		FWrite(ArqLog,cMsg + chr(13) + chr(10))
 		lRet := .F.
 
 	Else
@@ -366,6 +380,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			cUpdTAB += "  C6_QTDVEN    = " + Str(nQTDVEN, 10, 2)
 			cUpdTAB += ", C6_XQTVEN    = " + Str(nXQTVEN, 10, 2)
 			cUpdTAB += ", C6_VALOR     = " + Str(nQTDVEN*TMPTAB->C6_PRCVEN, 10, 2)
+			cUpdTAB += ", C6_XCXAPEM   = " + Str(nCaixas, 10, 0)
 			cUpdTAB += " WHERE C6_FILIAL = '00' AND C6_NUM = '" + cPedido + "' AND C6_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando SC6000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
@@ -374,15 +389,15 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar SC6000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 				lRet := .F.
 				Return(lRet)
 			Else
 				cMsg := "SC6000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			EndIf
 
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 
 		Endif
 
@@ -401,7 +416,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 			cMsg := "***** Nenhum registro encontrado para o pedido: " + cPedido + " e item: " + cItem
 
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			lRet := .F.
 
 		Else
@@ -433,17 +448,17 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			cUpdTAB += " WHERE C9_PEDIDO = '" + cPedido + "' AND C9_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando SC9000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-			FWrite(nHandImp,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			nRet := TCSQLExec(cUpdTAB)
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar SC9000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 				lRet := .F.
 				Return(lRet)
 			Else
 				cMsg := "SC9000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(nHandImp,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + chr(13) + chr(10))
 			EndIf
 
 		Endif
