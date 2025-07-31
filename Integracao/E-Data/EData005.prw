@@ -193,7 +193,7 @@ Static Function TrabArray()
 			Next
 
 			// Atualiza DAI Itens da carga
-
+ 
 			cTabAtu := "Select * from DAI000 DAI Where "
 			cTabAtu += "DAI_COD = '" + cCarga + "' "
 			cTabAtu += "and DAI_PEDIDO = '" + cPedido + "' "

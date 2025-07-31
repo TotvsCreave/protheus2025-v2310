@@ -314,7 +314,7 @@ static function fProdutos(cPV)
 			oJsonInt["ItemNo"] :=SC6->C6_ITEM// "01"
 			if SC6->C6_UM="KG"
 				If Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_SEGUM") = ' '
-					oJsonInt["Weight"] := SC6->C6_QTDVEN
+					oJsonInt["Weight"]     := SC6->C6_QTDVEN
 					oJsonInt["PackageQty"] := Round(SC6->C6_QTDVEN,0)
 				Else
 					//oJsonInt["Weight"] := SC6->C6_QTDVEN
@@ -336,7 +336,7 @@ return aItens//cRetorn
 
 static Function GravarRespostaEmArquivo(cResposta,cTipoLog)
 
-	FWrite(nHandle, cResposta)
+	FWrite(nHandle, cResposta + CRLF)
 	/*
 	Local nHandle
 
