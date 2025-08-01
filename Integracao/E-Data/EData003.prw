@@ -204,18 +204,18 @@ Static function WebClientPost(cUrl, cJson)
 			if valType(oJson['WebServiceReturn'])=='J'
 				cStatus:=oJson['WebServiceReturn']['Status']
 			endif
-			cErro:='Status: '+cStatus+ CRLF+ cPostRet
+			cErro:=CRLF+ CRLF+ 'Status: '+cStatus+ CRLF+ cPostRet
 			if cStatus<>'wrsSuccess'
 				GravarRespostaEmArquivo(cErro,'Erro')
 			endif
 		Else
-			cErro:='Erro: '+ CRLF +;
+			cErro:=CRLF+ 'Erro: '+ CRLF +;
 				cPostRet+ CRLF +;
 				cHeadRet+ CRLF
 			GravarRespostaEmArquivo(cErro,'Erro')
 		EndIf
 	else
-		cErro:='Erro: '+ CRLF +;
+		cErro:=CRLF+ 'Erro: '+ CRLF +;
 			cPostRet+ CRLF +;
 			cHeadRet+ CRLF
 		GravarRespostaEmArquivo(cErro,'Erro')

@@ -405,7 +405,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			cUpdTAB += "  C6_QTDVEN    = " + Str(nQTDVEN, 10, 2)
 			cUpdTAB += ", C6_XQTVEN    = " + Str(nXQTVEN, 10, 2)
 			cUpdTAB += ", C6_VALOR     = " + Str(nQTDVEN*TMPTAB->C6_PRCVEN, 10, 2)
-			cUpdTAB += ", C6_XCXAPEM   = " + Str(nCaixas, 10, 0)
+			cUpdTAB += ", C6_XCXAPEQ   = " + Str(nCaixas, 10, 0)
 			cUpdTAB += " WHERE C6_FILIAL = '00' AND C6_NUM = '" + cPedido + "' AND C6_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando SC6000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
