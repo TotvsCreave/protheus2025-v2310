@@ -212,6 +212,7 @@ Static function WebClientPost(cUrl, cJson)
 			cErro:=CRLF+ 'Erro: '+ CRLF +;
 				cPostRet+ CRLF +;
 				cHeadRet+ CRLF
+				
 			GravarRespostaEmArquivo(cErro,'Erro')
 		EndIf
 	else
@@ -299,6 +300,7 @@ static function fEntrega(cClILoja)
 		// FreeObj(oJsonInt)
 	endif
 return oJsonInt
+
 static function fProdutos(cPV)
 	local aItens:={}
 	//Local cRetorn:=''
@@ -312,6 +314,7 @@ static function fProdutos(cPV)
 			oJsonInt := JSonObject():New()
 			oJsonInt["ProductNo"] :=alltrim(SC6->C6_PRODUTO)//"056000",
 			oJsonInt["ItemNo"] :=SC6->C6_ITEM// "01"
+			
 			if SC6->C6_UM="KG"
 				If Posicione("SB1",1,xFilial("SB1")+SC6->C6_PRODUTO,"B1_SEGUM") = ' '
 					oJsonInt["Weight"]     := SC6->C6_QTDVEN

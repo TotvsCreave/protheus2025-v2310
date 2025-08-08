@@ -112,12 +112,12 @@ user Function EDATA001()
 	//PostAnimalReceivingTruckWeight
 	//Registro de pesagem da saída do caminhão
 
-	cDtSaida := DtoS(MV_PAR01)
-	cDtAjuste := Substr(cDtSaida,1,4) + "-" + Substr(cDtSaida,5,2) + "-" + Substr(cDtSaida,7,2) + "T00:00:00"
-	cPesoSaida := '{"ReceivingNo":"'
-	cPesoSaida += MV_PAR05 + '"'
-	cPesoSaida += ',"VehicleTare":' + Alltrim(Str(MV_PAR07)) // Peso bruto do caminhão
-	cPesoSaida += ',"WeighingDate":"' + cDtAjuste + '"}'
+	cDtSaida 	:= DtoS(MV_PAR01)
+	cDtAjuste 	:= Substr(cDtSaida,1,4) + "-" + Substr(cDtSaida,5,2) + "-" + Substr(cDtSaida,7,2) + "T00:00:00"
+	cPesoSaida 	:= '{"ReceivingNo":"'
+	cPesoSaida 	+= MV_PAR05 + '"'
+	cPesoSaida 	+= ',"VehicleTare":' + Alltrim(Str(MV_PAR07)) // Peso bruto do caminhão
+	cPesoSaida	+= ',"WeighingDate":"' + cDtAjuste + '"}'
 
 	cMetodoApi := 'PostAnimalReceivingTruckWeight'
 

@@ -55,8 +55,8 @@ User Function EDATA005()
 		MsgInfo("Erro ao abrir o arquivo para gravação. Em " + cArqCaminho, "Erro")
 	EndIf
 
-	cMsg := "***(Início) Versão: 02/05/2025 - 10:00" + chr(13) + chr(10)
-	FWrite(ArqLog,cMsg + chr(13) + chr(10))
+	cMsg := "***(Início) Versão: 02/05/2025 - 10:00" + CRLF
+	FWrite(ArqLog,cMsg + CRLF)
 
 	//adicionando perguntes
 
@@ -105,7 +105,7 @@ Static function WebClientPost(cUrl, cJson)
 	cTextoTxt+=cPostRet
 
 	cMsg := cTextoTxt
-	FWrite(ArqLog,cMsg + chr(13) + chr(10))
+	FWrite(ArqLog,cMsg + CRLF)
 
 	// Cria um objeto Json para manipular a resposta
 	oJsonObj	:= JsonObject():New()
@@ -126,7 +126,7 @@ Static function WebClientPost(cUrl, cJson)
 			if cStatus<>'wrsSuccess'
 				Alert(cErro,'Erro')
 				cMsg := "Erro ao processar a requisição: " + cStatus + CRLF + cErro
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 			Else
 				If valType(oJsonObj["LoadInfoData"]["SalesOrderList"])=="A"
 					aConteudo := oJsonObj["LoadInfoData"]["SalesOrderList"]
@@ -139,7 +139,7 @@ Static function WebClientPost(cUrl, cJson)
 				cHeadRet+ CRLF
 			Alert(cErro,'Erro')
 			cMsg := "Erro ao processar a requisição: " + CRLF + cErro
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 		EndIf
 	else
 		cErro:='Erro: '+ CRLF +;
@@ -147,7 +147,7 @@ Static function WebClientPost(cUrl, cJson)
 			cHeadRet+ CRLF
 		Alert(cErro,'Erro')
 		cMsg := "Post retornou vazio: " + CRLF + cErro
-		FWrite(ArqLog,cMsg + chr(13) + chr(10))
+		FWrite(ArqLog,cMsg + CRLF)
 	endif
 
 	FreeObj( oJsonObj )
@@ -186,14 +186,27 @@ Static Function TrabArray()
 					"Tara......: " + Str(nTara) + CRLF +;
 					"Peso Real.: " + Str(nPesoReal)
 
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				nQtdZero := nQtd + nPeso +nTara + nPesoReal
+				If nQtdZero <= 0
 
-				lAtualiza := AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPesoReal)
+					cMsg := "***** Pedido: " + cPedido + " e item: " + cItem + " não possui quantidade válida para atualização." + CRLF + "Este item será excluído."
+					FWrite(ArqLog,cMsg + CRLF)
+
+					ExcluiItem(cCarga, cPedido, cItem)
+
+				Else
+
+					FWrite(ArqLog,cMsg + CRLF)
+
+					lAtualiza := AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPesoReal)
+
+				Endif
+
 
 			Next
 
 			// Atualiza DAI Itens da carga
- 
+
 			cTabAtu := "Select * from DAI000 DAI Where "
 			cTabAtu += "DAI_COD = '" + cCarga + "' "
 			cTabAtu += "and DAI_PEDIDO = '" + cPedido + "' "
@@ -209,7 +222,7 @@ Static Function TrabArray()
 
 				cMsg := "***** Nenhum registro encontrado para a carga: " + cCarga
 
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 				lRet := .F.
 
 			Else
@@ -220,17 +233,17 @@ Static Function TrabArray()
 
 				cMsg := "Atualizando DAI000 para a carga: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
 
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 
 				nRet := TCSQLExec(cUpdTAB)
 
 				If(nRet < 0 )
 					cMsg := "******* Erro ao atualizar DAI000: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
-					FWrite(ArqLog,cMsg + chr(13) + chr(10))
+					FWrite(ArqLog,cMsg + CRLF)
 					lRet := .F.
 				Else
 					cMsg := "DAI000 atualizado com sucesso para a carga: " + cCarga + " e pedido: " + cPedido + CRLF + " SQL: " + cUpdTAB
-					FWrite(ArqLog,cMsg + chr(13) + chr(10))
+					FWrite(ArqLog,cMsg + CRLF)
 				EndIf
 
 			Endif
@@ -253,7 +266,7 @@ Static Function TrabArray()
 
 			cMsg := "***** Nenhum registro encontrado para a carga: " + cCarga
 
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 			lRet := .F.
 
 		Else
@@ -267,17 +280,17 @@ Static Function TrabArray()
 
 			cMsg := "Atualizando DAK000 para a carga: " + cCarga + CRLF + " SQL: " + cUpdTAB
 
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 
 			nRet := TCSQLExec(cUpdTAB)
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar DAK000: " + cCarga + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 				lRet := .F.
 			Else
 				cMsg := "DAK000 atualizado com sucesso para a carga: " + cCarga + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 			EndIf
 		Endif
 
@@ -310,15 +323,15 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		"Tara Total: " + Str(nTTara) + CRLF +;
 		"Peso Real Total: " + Str(nTPesoReal)
 
-	FWrite(ArqLog,cMsg + chr(13) + chr(10))
+	FWrite(ArqLog,cMsg + CRLF)
 
 	// Aqui você pode chamar uma função para atualizar os dados no Protheus
 	// Tabelas a atualizar:
 	// - SC5 (Pedido de Venda)
 	// - SC6 (Pedido de Venda - Itens)
 	// - SC9 (Pedido de Venda - Liberação - Detalhes)
-	// - DAK (Carga)
 	// - DAI (Carga - Itens)
+	// - DAK (Carga)
 
 	//Atualiza SC6
 
@@ -334,7 +347,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 		cMsg := "***** Nenhum registro encontrado para o pedido: " + cPedido + " e item: " + cItem
 
-		FWrite(ArqLog,cMsg + chr(13) + chr(10))
+		FWrite(ArqLog,cMsg + CRLF)
 		lRet := .F.
 
 	Else
@@ -345,7 +358,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 		If TMPTAB->C6_UM = "UN"
 
 			nQtdProd := nQtd * Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_XQEMB")
-			nCaixas  := nQtd 
+			nCaixas  := nQtd
 
 			If Posicione("SB1",1,xFilial("SB1")+TMPTAB->C6_PRODUTO,"B1_SEGUM") = ' '
 				nQTDVEN := nPeso
@@ -354,7 +367,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 				nQTDVEN := nPeso
 				nXQTVEN := nQtdProd
 			Endif
-			
+
 			//Tratar no futuro o tamanho da caixa.
 			cUpdTAB := "UPDATE SC6000 SET "
 			cUpdTAB += "  C6_QTDVEN    = " + Str(nQTDVEN, 10, 2)
@@ -369,15 +382,15 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar SC6000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 				lRet := .F.
 				Return(lRet)
 			Else
 				cMsg := "SC6000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 			EndIf
 
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 
 		else
 
@@ -414,15 +427,15 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar SC6000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 				lRet := .F.
 				Return(lRet)
 			Else
 				cMsg := "SC6000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 			EndIf
 
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 
 		Endif
 
@@ -441,7 +454,7 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 
 			cMsg := "***** Nenhum registro encontrado para o pedido: " + cPedido + " e item: " + cItem
 
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 			lRet := .F.
 
 		Else
@@ -475,29 +488,41 @@ Static Function AtuPedido(cCarga, cPedido, cItem, cProd, nQtd, nPeso, nTara, nPe
 			cUpdTAB += " WHERE C9_PEDIDO = '" + cPedido + "' AND C9_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
 
 			cMsg := "Atualizando SC9000 para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-			FWrite(ArqLog,cMsg + chr(13) + chr(10))
+			FWrite(ArqLog,cMsg + CRLF)
 			nRet := TCSQLExec(cUpdTAB)
 
 			If(nRet < 0 )
 				cMsg := "******* Erro ao atualizar SC9000: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 				lRet := .F.
 				Return(lRet)
 			Else
 				cMsg := "SC9000 atualizado com sucesso para o pedido: " + cPedido + " e item: " + cItem + CRLF + " SQL: " + cUpdTAB
-				FWrite(ArqLog,cMsg + chr(13) + chr(10))
+				FWrite(ArqLog,cMsg + CRLF)
 			EndIf
 
 		Endif
 
 	Endif
 
-
-
-
 Return(lRet)
 
+	Static Funciton ExcluiItem(cCarga, cPedido, cItem)
 
+	cMsg := "Excluindo item: " + cItem + " do pedido: " + cPedido + " da carga: " + cCarga
+
+	FWrite(ArqLog,cMsg + CRLF)
+
+	// Implementar a lógica de exclusão aqui
+	// Exemplo: TCSQLExec("DELETE FROM SC6000 WHERE C6_NUM = '" + cPedido + "' AND C6_ITEM = '" + cItem + "'")
+	// - SC5 (Pedido de Venda)
+	// - SC6 (Pedido de Venda - Itens)
+	// - SC9 (Pedido de Venda - Liberação - Detalhes)
+	// - DAI (Carga - Itens)
+
+	cDelTAB := "DELETE FROM SC6000 WHERE C6_NUM = '" + cPedido + "' AND C6_ITEM = '" + cItem + "' and D_E_L_E_T_ <> '*'"
+
+Return()
 
 Static Function printJson(aJson, niv)
 
